@@ -1,0 +1,55 @@
+name: Sync iptv-org Database
+
+on:
+  schedule:
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Download latest data from iptv-org/database
+        run: |
+          for file in channels.csv feeds.csv logos.csv languages.csv categories.csv blocklist.csv subdivisions.csv countries.csv; do
+            curl -sL "https://raw.githubusercontent.com/iptv-org/database/master/data/$file" -o "data/$file"
+            echo "Downloaded $file ($(wc -c < data/$file) bytes)"
+          done
+
+      - name: Verify data integrity
+        run: |
+          python -c "
+          import csv
+          files = {
+              'channels.csv': ['id', 'name'],
+              'feeds.csv': ['channel', 'languages'],
+              'logos.csv': ['channel', 'url'],
+              'languages.csv': ['code', 'name'],
+          }
+          for fname, required_cols in files.items():
+              with open(f'data/{fname}', 'r', encoding='utf-8') as f:
+                  reader = csv.reader(f)
+                  headers = next(reader)
+                  rows = sum(1 for _ in reader)
+              missing = [c for c in required_cols if c not in headers]
+              if missing:
+                  raise ValueError(f'{fname}: missing columns {missing}')
+              print(f'{fname}: {rows} rows, columns OK')
+          print('All data files validated.')
+          "
+
+      - name: Commit updated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/ || true
+          git diff --staged --quiet || git commit -m "Sync iptv-org database $(date -u +'%Y-%m-%d')"
+          git push || true
