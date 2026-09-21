@@ -19,9 +19,10 @@ jobs:
 
       - name: Sync iptv-org database
         run: |
+          mkdir -p data
           for file in channels.csv feeds.csv logos.csv languages.csv categories.csv blocklist.csv; do
             curl -sL "https://raw.githubusercontent.com/iptv-org/database/master/data/$file" -o "data/$file"
-            echo "Synced $file"
+            echo "Synced $file ($(wc -c < data/$file) bytes)"
           done
 
       - name: Set up Python 3.12

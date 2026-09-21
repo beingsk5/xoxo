@@ -19,6 +19,7 @@ jobs:
 
       - name: Download latest data from iptv-org/database
         run: |
+          mkdir -p data
           for file in channels.csv feeds.csv logos.csv languages.csv categories.csv blocklist.csv subdivisions.csv countries.csv; do
             curl -sL "https://raw.githubusercontent.com/iptv-org/database/master/data/$file" -o "data/$file"
             echo "Downloaded $file ($(wc -c < data/$file) bytes)"
