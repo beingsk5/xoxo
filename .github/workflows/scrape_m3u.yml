@@ -4,63 +4,272 @@ on:
   schedule:
     - cron: '0 6 * * 1,4'
   workflow_dispatch:
+    inputs:
+      force_fresh:
+        description: 'Force fresh data sync'
+        required: false
+        default: false
+        type: boolean
 
 permissions:
   contents: write
 
+concurrency:
+  group: scrape-iptv
+  cancel-in-progress: true
+
+env:
+  PYTHON: '3.12'
+
 jobs:
-  scrape:
+  # ═══════════════════════════════════════════════════════════════
+  # SYNC: Download data files + channel lists (runs once)
+  # ═══════════════════════════════════════════════════════════════
+  sync-data:
+    name: Sync Database
     runs-on: ubuntu-latest
-    timeout-minutes: 90
-
+    timeout-minutes: 10
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Sync iptv-org database
+      - name: Download iptv-org CSVs
         run: |
           mkdir -p data
-          for file in channels.csv feeds.csv logos.csv languages.csv categories.csv blocklist.csv; do
-            curl -sL "https://raw.githubusercontent.com/iptv-org/database/master/data/$file" -o "data/$file"
-            echo "Synced $file ($(wc -c < data/$file) bytes)"
+          for file in channels.csv feeds.csv logos.csv languages.csv categories.csv blocklist.csv subdivisions.csv countries.csv; do
+            curl -sSfL --retry 3 --retry-delay 5 \
+              "https://raw.githubusercontent.com/iptv-org/database/master/data/$file" \
+              -o "data/$file" && echo "  $file OK" || echo "  WARN: $file failed"
           done
 
-      - name: Set up Python 3.12
-        uses: actions/setup-python@v5
+      - name: Validate
+        run: |
+          python3 -c "
+          import csv, sys
+          checks = {'channels.csv': ['id'], 'feeds.csv': ['channel'], 'languages.csv': ['code']}
+          for f, cols in checks.items():
+              try:
+                  with open(f'data/{f}') as fh:
+                      h = next(csv.reader(fh))
+                  ok = all(c in h for c in cols)
+                  print(f'  {f}: {\"OK\" if ok else \"MISSING COLS\"} ')
+              except FileNotFoundError:
+                  print(f'  {f}: NOT FOUND')
+          "
+
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/ || true
+          git diff --staged --quiet || git commit -m "sync(iptv-org): $(date -u +'%Y-%m-%d')" && git push
+
+  sync-channels:
+    name: Sync Channel Lists
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
         with:
-          python-version: '3.12'
-          cache: 'pip'
+          python-version: ${{ env.PYTHON }}
+          cache: pip
 
-      - name: Install dependencies
+      - run: pip install requests beautifulsoup4 lxml pymupdf
+
+      - name: Refresh from Wikipedia + Airtel PDF
         run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          python3 -c "
+          import sys; sys.path.insert(0, '.')
+          from channel_lists import ChannelListManager
+          import logging
+          logging.basicConfig(level=logging.INFO, format='%(message)s')
+          m = ChannelListManager()
+          ch = m.refresh(force=True)
+          print(f'\nTotal: {len(ch)} channels')
+          "
 
-      - name: Run scraper
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add channel_lists/ || true
+          git diff --staged --quiet || git commit -m "sync(channel-lists): $(date -u +'%Y-%m-%d')" && git push
+
+  # ═══════════════════════════════════════════════════════════════
+  # SCRAPE: Fan-out — one job per language (parallel)
+  # ═══════════════════════════════════════════════════════════════
+  scrape-language:
+    name: Scrape ${{ matrix.language }}
+    needs: [sync-data, sync-channels]
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      matrix:
+        language:
+          - Hindi
+          - Tamil
+          - Telugu
+          - Malayalam
+          - Kannada
+          - Bengali
+          - Marathi
+          - Punjabi
+          - Gujarati
+          - Odia
+          - Urdu
+          - Bhojpuri
+          - Assamese
+          - English
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON }}
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Scrape ${{ matrix.language }} channels
+        run: python -m scrapers.language "${{ matrix.language }}"
         env:
-          GITHUB_TOKEN: ${{ secrets.PAT }}
-        run: python scraper.py
+          PYTHONUNBUFFERED: '1'
 
-      - name: List results
+      - name: Show results
+        if: always()
         run: |
-          find output/ -type f -name "*.m3u" | head -30
-          echo "---"
-          find output/ -type d | head -20
+          if [ -f "output/raw/${{ matrix.language }}.json" ]; then
+            python3 -c "
+          import json
+          d = json.load(open('output/raw/${{ matrix.language }}.json'))
+          print(f\"${{ matrix.language }}: {len(d.get('channels', []))} channels found\")
+          print(f\"  Queries: {d.get('queries_sent', 0)}\")
+          print(f\"  URLs found: {d.get('urls_found', 0)}\")
+          print(f\"  URLs valid: {d.get('urls_valid', 0)}\")
+          "
+          else
+            echo "No output file for ${{ matrix.language }}"
+          fi
 
-      - name: Upload artifacts
+      - name: Upload raw results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: raw-${{ matrix.language }}
+          path: output/raw/${{ matrix.language }}.json
+          retention-days: 5
+          if-no-files-found: warn
+
+  # ═══════════════════════════════════════════════════════════════
+  # MERGE: Fan-in — combine all raw JSONs → M3U output
+  # ═══════════════════════════════════════════════════════════════
+  merge:
+    name: Merge & Package
+    needs: [scrape-language]
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON }}
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Download all raw artifacts
+        uses: actions/download-artifact@v4
+        with:
+          pattern: raw-*
+          path: output/raw
+          merge-multiple: true
+
+      - name: Show raw inputs
+        run: |
+          echo "=== Raw files ==="
+          ls -lh output/raw/ 2>/dev/null || echo "No raw files"
+          echo ""
+          python3 -c "
+          import json, os
+          total = 0
+          for f in sorted(os.listdir('output/raw')):
+              if f.endswith('.json'):
+                  d = json.load(open(f'output/raw/{f}'))
+                  n = len(d.get('channels', []))
+                  total += n
+                  print(f'  {f:30s} {n:5d} channels')
+          print(f'  {\"TOTAL\":30s} {total:5d} channels')
+          "
+
+      - name: Merge into M3U
+        run: python merge.py
+
+      - name: Validate output
+        run: |
+          python3 -c "
+          import os, sys
+          india = 'output/India.m3u'
+          if not os.path.exists(india):
+              print('ERROR: India.m3u not generated')
+              sys.exit(1)
+          with open(india) as f:
+              count = sum(1 for l in f if l.startswith('#EXTINF'))
+          print(f'India.m3u: {count} channels')
+
+          lang_dir = 'output/Language'
+          if os.path.exists(lang_dir):
+              langs = [f for f in os.listdir(lang_dir) if f.endswith('.m3u')]
+              print(f'Language files: {len(langs)}')
+          src_dir = 'output/Source'
+          if os.path.exists(src_dir):
+              srcs = [f for f in os.listdir(src_dir) if f.endswith('.m3u')]
+              print(f'Source files: {len(srcs)}')
+          "
+
+      - name: Upload final artifacts
         uses: actions/upload-artifact@v4
         with:
           name: india-iptv-${{ github.run_id }}
           path: |
-            output/*/India.m3u
-            output/*/Language/*.m3u
-            output/*/Source/*.m3u
+            output/India.m3u
+            output/Language/*.m3u
+            output/Source/*.m3u
+            output/stats.json
           retention-days: 60
+          if-no-files-found: error
 
       - name: Commit results
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add output/ || true
-          git diff --staged --quiet || git commit -m "Update Indian IPTV channels $(date -u +'%Y-%m-%d %H:%M UTC')"
-          git push || true
+          if ! git diff --staged --quiet; then
+            CHANNELS=$(grep -c '^#EXTINF' output/India.m3u 2>/dev/null || echo "0")
+            git commit -m "scrape: $CHANNELS channels $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git push
+          fi
+
+      - name: Summary
+        if: always()
+        run: |
+          echo "## Scrape Results" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          if [ -f output/stats.json ]; then
+            python3 -c "
+          import json
+          s = json.load(open('output/stats.json'))
+          print(f'| Metric | Value |')
+          print(f'|--------|-------|')
+          print(f'| Channels | {s[\"total_channels\"]} |')
+          print(f'| Languages | {len(s[\"languages\"])} |')
+          print(f'| Sources | {len(s[\"sources\"])} |')
+          print()
+          print('### By Language')
+          for lang, count in sorted(s['languages'].items(), key=lambda x: -x[1]):
+              print(f'| {lang} | {count} |')
+          " >> "$GITHUB_STEP_SUMMARY"
+          fi
