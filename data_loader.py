@@ -147,11 +147,17 @@ class IPTVDatabase:
                     })
 
     def _load_blocklist(self):
-        """Load NSFW channels from two sources:
-        1. channels.csv where is_nsfw=TRUE
-        2. channels.csv where categories contain 'xxx'
-        blocklist.csv is NOT used (it contains DMCA/geo-block, not NSFW).
-        """
+        """Load NSFW channels from blocklist.csv (reason='nsfw') and channels.csv (is_nsfw/xxx category)."""
+        # 1. blocklist.csv — only reason='nsfw'
+        path = os.path.join(self.data_dir, "blocklist.csv")
+        if os.path.exists(path):
+            with open(path, "r", encoding="utf-8") as f:
+                reader = csv.DictReader(f)
+                for row in reader:
+                    reason = row.get("reason", "").lower()
+                    if "nsfw" in reason:
+                        self.blocked.add(row.get("channel", ""))
+        # 2. channels.csv — is_nsfw=TRUE or xxx category
         for cid, ch in self.channels.items():
             if ch.get("is_nsfw"):
                 self.blocked.add(cid)

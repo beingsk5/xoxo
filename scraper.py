@@ -31,6 +31,7 @@ from ddgs import DDGS
 from bs4 import BeautifulSoup
 
 from data_loader import get_database
+from channel_lists import ChannelListFetcher
 
 # ─────────────────────────── Logging ───────────────────────────
 logging.basicConfig(
@@ -44,7 +45,6 @@ logging.getLogger("urllib3").setLevel(logging.WARNING)
 
 # ─────────────────────────── Constants ─────────────────────────
 OUTPUT_DIR = "output"
-TS = datetime.now().strftime("%Y%m%d_%H%M%S")
 MAX_CHECKPOINT_INTERVAL = 100
 
 HEADERS = [
@@ -56,6 +56,63 @@ HEADERS = [
 M3U_RE = re.compile(r"""(?:"|')?(https?://[^\s"'<>]+\.m3u8?[^\s"'<>]*)("|'|\s|$)""", re.IGNORECASE)
 EXTINF_RE = re.compile(r"#EXTINF:(.*?),(.*?)$", re.MULTILINE | re.IGNORECASE)
 EXTINF_ATTR_RE = re.compile(r'(\w[\w-]*)="([^"]*)"')
+
+# All IPTV streaming protocols
+STREAM_PROTOCOLS = (
+    r"https?://", r"rtsp://", r"rtmp://", r"rtmps://",
+    r"srt://", r"udp://", r"rtp://", r"p2p://",
+    r"acestream://", r"webrtc://", r"wss?://",
+    r"mms://", r"rist://",
+)
+
+# Stream URL patterns — protocols + common IPTV extensions
+STREAM_URL_RE = re.compile(
+    r"""(?:"|')?("""
+    + "|".join(STREAM_PROTOCOLS)
+    + r""")[^\s"'<>]+("""
+    + r"\.m3u8?"
+    + r"|\.ts"
+    + r"|\.mpd"
+    + r"|\.mp4"
+    + r"|\.fmp4"
+    + r"|\.flv"
+    + r"|\.m4v"
+    + r"|\.mkv"
+    + r"|\.avi"
+    + r"|\.mov"
+    + r"|\.wmv"
+    + r"|\.3gp"
+    + r"|\.asf"
+    + r"|\.ism/Manifest"
+    + r"|\.manifest"
+    + r"|/playlist\.m3u8"
+    + r"|/index\.m3u8"
+    + r"|/Manifest"
+    + r"|[?&]token="
+    + r"|[?&]auth_username="
+    + r"|[?&]output=ts"
+    + r"|[?&]output=m3u8"
+    + r""")("|'|\s|$)""",
+    re.IGNORECASE,
+)
+
+# Broad URL extractor — catches any URL-like string
+ANY_URL_RE = re.compile(
+    r"""(?:"|')?(https?://[^\s"'<>]+|rtsp://[^\s"'<>]+|rtmp://[^\s"'<>]+|"""
+    r"""rtmps://[^\s"'<>]+|srt://[^\s"'<>]+|udp://[^\s"'<>]+|"""
+    r"""rtp://[^\s"'<>]+|p2p://[^\s"'<>]+|acestream://[^\s"'<>]+|"""
+    r"""webrtc://[^\s"'<>]+|wss?://[^\s"'<>]+|mms://[^\s"'<>]+|"""
+    r"""rist://[^\s"'<>]+)("|'|\s|$)""",
+    re.IGNORECASE,
+)
+
+# Xtream Codes / Stalker / Enigma2 API patterns
+XTREAM_API_RE = re.compile(
+    r"(get\.php|player_api\.php|xmltv\.php|/portal\.php|/c/|"
+    r"stalker_portal|panel_api|enigma22_script|"
+    r"auth_username|auth_password|device_mac|output=ts|output=m3u8)",
+    re.IGNORECASE,
+)
 
 # ─────────────────────────── Indian Filter ─────────────────────
 INDIAN_KEYWORDS = [
@@ -598,20 +655,64 @@ def has_indian_country_code(extinf_attrs, extinf_line=""):
 
 
 def is_m3u(text):
-    return bool(
-        EXTINF_RE.search(text)
-        or "#EXTM3U" in text
-        or sum(1 for line in text.split("\n") if line.strip().startswith(("#EXTINF", "#EXTM3U", "#EXTVLCOPT"))) >= 2
-    )
+    """Detect if text is a playlist file (M3U, JSON, XML, XSPF, Enigma2, etc.)."""
+    text_lower = text[:5000].lower()
+    # M3U/M3U8 format
+    if "#extm3u" in text_lower or "#extinf" in text_lower:
+        return True
+    # XSPF format
+    if "<playlist" in text_lower and "xspf" in text_lower:
+        return True
+    # JSON playlist (Xtream Codes / Stalker API)
+    if text_lower.lstrip().startswith("{") and ("channel_id" in text_lower or "stream_id" in text_lower or "epg_id" in text_lower):
+        return True
+    # XML format
+    if text_lower.lstrip().startswith("<?xml") or "<tv" in text_lower:
+        return True
+    # ASX format
+    if "<asx" in text_lower:
+        return True
+    # PLS format
+    if "[playlist]" in text_lower:
+        return True
+    # Enigma2 userbouquet
+    if "userbouquet" in text_lower or "#SERVICE" in text_lower:
+        return True
+    # Xtream Codes API response
+    if XTREAM_API_RE.search(text_lower):
+        return True
+    # Generic: multiple stream URLs found
+    url_count = len(ANY_URL_RE.findall(text))
+    if url_count >= 2:
+        return True
+    return False
 
 
 def extract_links(text):
+    """Extract all streaming URLs from text — supports all IPTV protocols and extensions."""
     links = set()
-    for m in M3U_RE.finditer(text):
+    # Primary: extract all URL-like strings
+    for m in ANY_URL_RE.finditer(text):
         link = m.group(1).rstrip(".,;:!?)")
-        if len(link) >= 12:
+        if len(link) >= 8:
+            links.add(link)
+    # Fallback: broad URL regex for anything missed
+    for m in re.finditer(r'(?:"|\'|\s)(https?://[^\s"\'<>]+)', text):
+        link = m.group(1).rstrip(".,;:!?)")
+        if len(link) >= 8:
             links.add(link)
     return links
+
+
+def extract_xtream_api_urls(text):
+    """Extract Xtream Codes / Stalker API base URLs from text."""
+    urls = set()
+    for m in re.finditer(
+        r'(https?://[^\s"\'<>]+(?:get\.php|player_api\.php|portal\.php|/c/)[^\s"\'<>]*)',
+        text, re.IGNORECASE
+    ):
+        urls.add(m.group(1).rstrip(".,;:!?)"))
+    return urls
 
 
 def extract_extinf_blocks(text):
@@ -622,13 +723,12 @@ def extract_extinf_blocks(text):
         m = EXTINF_RE.search(line)
         if m and i + 1 < len(lines):
             url_line = lines[i + 1].strip()
-            if url_line.startswith("http"):
+            # Support all IPTV protocols
+            if any(url_line.startswith(p) for p in STREAM_PROTOCOLS) or url_line.startswith("http"):
                 parsed = parse_extinf(line.strip())
                 tvg_id = parsed["attrs"].get("tvg-id", "")
-                # Derive channel_id from tvg-id (e.g. "StarPlus.in@HD" -> "StarPlus.in")
                 channel_id = ""
                 if tvg_id and ".in" in tvg_id.lower():
-                    # Extract the .in part
                     import re as _re
                     id_match = _re.search(r'([\w.-]+\.in)', tvg_id, _re.IGNORECASE)
                     if id_match:
@@ -644,6 +744,9 @@ def extract_extinf_blocks(text):
 
 
 def safe_get(url, timeout=10, retries=2, stream=False):
+    """Fetch a URL with retries. Supports http/https. Other protocols are skipped."""
+    if not url.startswith(("http://", "https://")):
+        return None
     for attempt in range(retries):
         try:
             h = random.choice(HEADERS).copy()
@@ -664,22 +767,23 @@ def safe_get(url, timeout=10, retries=2, stream=False):
 
 
 def check_link(url):
-    """Validate a URL: fetch content, check M3U format, check if Indian."""
+    """Validate a URL: fetch content, check playlist format, check if Indian."""
     try:
         h = random.choice(HEADERS).copy()
         h["Accept"] = "*/*"
-        resp = requests.get(url, headers=h, timeout=8, stream=True, allow_redirects=True)
+        resp = requests.get(url, headers=h, timeout=10, stream=True, allow_redirects=True)
         if resp.status_code >= 400:
             return False, False, ""
-        ct = resp.headers.get("Content-Type", "")
-        if "html" in ct.lower():
+        ct = resp.headers.get("Content-Type", "").lower()
+        # Allow HTML only if it looks like an API response
+        if "html" in ct and not XTREAM_API_RE.search(url):
             return False, False, ""
         content = b""
         sz = 0
         for chunk in resp.iter_content(8192):
             content += chunk
             sz += len(chunk)
-            if sz > 200000:
+            if sz > 500000:
                 break
         resp.close()
         text = content.decode("utf-8", errors="ignore")
@@ -712,19 +816,67 @@ class ScraperState:
             return
 
         self.indian_count += 1
-        category = classify_channel(url, extinf_line, extinf_name)
         name = extinf_name.strip() if extinf_name else urlparse(url).netloc.replace(".", " ")
 
-        # Try database category fallback
+        # Try to find channel_id by name if not provided
         if not channel_id:
-            # Try to match by name
             matches = db.get_channel_id_by_name(name)
             if matches:
                 channel_id = matches[0]
+
+        # Get category from database first (authoritative source)
+        category = "Other"
         if channel_id:
             db_cat = db.get_channel_category(channel_id)
-            if db_cat and category == "Other":
-                category = db_cat
+            if db_cat:
+                # Map database categories to our display categories
+                cat_map = {
+                    "General": "Entertainment",
+                    "Entertainment": "Entertainment",
+                    "News": "News",
+                    "Sports": "Sports",
+                    "Movies": "Movies",
+                    "Kids": "Kids",
+                    "Music": "Music",
+                    "Religious": "Religious",
+                    "Education": "Knowledge/Education",
+                    "Science": "Knowledge/Education",
+                    "Documentary": "Knowledge/Education",
+                    "Lifestyle": "Lifestyle",
+                    "Travel": "Lifestyle",
+                    "Cooking": "Lifestyle",
+                    "Auto": "Lifestyle",
+                    "Culture": "Lifestyle",
+                    "Family": "Entertainment",
+                    "Series": "Entertainment",
+                    "Comedy": "Entertainment",
+                    "Animation": "Kids",
+                    "Classic": "Entertainment",
+                    "Outdoor": "Lifestyle",
+                    "Weather": "Knowledge/Education",
+                    "Shop": "Shopping",
+                    "Business": "News",
+                    "Public": "Entertainment",
+                    "Interactive": "Entertainment",
+                    "Relax": "Lifestyle",
+                    "Legislative": "News",
+                    "Telugu": "Telugu",
+                    "Tamil": "Tamil",
+                    "Malayalam": "Malayalam",
+                    "Kannada": "Kannada",
+                    "Bengali": "Bengali",
+                    "Marathi": "Marathi",
+                    "Punjabi": "Punjabi",
+                    "Gujarati": "Gujarati",
+                    "Bhojpuri": "Bhojpuri",
+                    "Odia": "Odisha",
+                    "Urdu": "Urdu",
+                }
+                category = cat_map.get(db_cat, db_cat)
+
+        # Fallback to regex-based classification if database has no category
+        if category == "Other":
+            category = classify_channel(url, extinf_line, extinf_name)
 
         lang = detect_language(f"{name} {extinf_line}", category, url, channel_id)
         src = detect_source_name(url) if not source else source
@@ -788,7 +940,7 @@ def write_sorted_m3u(filepath, channels):
 
 def write_all_output(state):
     """Write all output files: India.m3u, Language/*.m3u, Source/*.m3u."""
-    base = os.path.join(OUTPUT_DIR, TS)
+    base = OUTPUT_DIR
     os.makedirs(base, exist_ok=True)
 
     # 1. India.m3u - all channels
@@ -887,6 +1039,10 @@ def phase_github_api(state, token):
         "live tv india m3u8", "free iptv india",
         "star plus m3u", "sony tv m3u", "zee tv m3u",
         "dd national m3u", "sun tv m3u", "ipl m3u8",
+        "india channel list txt", "india playlist xspf",
+        "india iptv xml", "india stream ts",
+        "get.php india iptv", "player_api.php india",
+        "srt:// india", "rtsp:// india",
     ]
 
     rate_limited = False
@@ -977,6 +1133,7 @@ def phase_known_sources(state):
     known = [
         "https://raw.githubusercontent.com/iptv-org/iptv/master/countries/in.m3u",
         "https://iptv-org.github.io/iptv/countries/in.m3u",
+        "https://raw.githubusercontent.com/iptv-org/iptv/master/countries/in.unsorted.m3u",
     ]
     for url in known:
         log.info(f"Fetching: {url[:70]}")
@@ -995,8 +1152,53 @@ def phase_known_sources(state):
                     )
 
 
+def phase_channel_lists(state):
+    """Phase 4: Search using comprehensive Indian channel lists from Wikipedia."""
+    log.info("\n--- PHASE 4: Channel Lists (Wikipedia) ---")
+
+    fetcher = ChannelListFetcher()
+    all_channels = fetcher.fetch_all_channels()
+
+    total_channels = sum(len(chs) for chs in all_channels.values())
+    log.info(f"Loaded {total_channels} channel names from Wikipedia")
+
+    # Generate search queries from channel names
+    queries = []
+    for language, channels in all_channels.items():
+        for ch in channels[:50]:  # Limit per language to avoid too many queries
+            queries.append(f'"{ch}" m3u8')
+            queries.append(f'"{ch}" stream')
+            queries.append(f'"{ch}" iptv')
+
+    # Deduplicate queries
+    seen = set()
+    unique_queries = []
+    for q in queries:
+        if q not in seen:
+            seen.add(q)
+            unique_queries.append(q)
+
+    log.info(f"Generated {len(unique_queries)} search queries from channel lists")
+
+    engines = [("Bing", search_bing), ("DuckDuckGo", search_ddg), ("Brave", search_brave)]
+
+    for i, q in enumerate(unique_queries[:200]):  # Limit total queries
+        if i % 50 == 0:
+            log.info(f"Channel lists query [{i + 1}/{min(len(unique_queries), 200)}]...")
+        for name, func in engines:
+            try:
+                results = func(q, max_results=5)
+                if results:
+                    state.all_urls.update(results)
+            except Exception:
+                pass
+            time.sleep(random.uniform(0.3, 0.8))
+
+    log.info(f"Channel lists phase found {len(state.all_urls)} total URLs")
+
+
 def phase_search_engines(state):
-    """Phase 4: Search the web for M3U files."""
+    """Phase 5: Search the web for M3U files."""
     log.info("\n--- PHASE 4: Search Engines ---")
     engines = [("Bing", search_bing), ("DuckDuckGo", search_ddg), ("Brave", search_brave)]
 
@@ -1017,6 +1219,12 @@ def phase_search_engines(state):
         'site:github.com "punjabi" m3u8',
         'site:github.com "odia" m3u8',
         'site:pastebin.com "m3u" india',
+        'site:github.com "get.php" india iptv',
+        'site:github.com "player_api.php" india',
+        'site:github.com "playlist" india "rtsp://"',
+        'site:github.com "playlist" india "srt://"',
+        'site:github.com india xspf playlist',
+        'site:github.com india txt playlist channel',
         '"#EXTM3U" "india"',
         '"iptv" "m3u8" india',
         '"star plus" "m3u8"',
@@ -1025,6 +1233,9 @@ def phase_search_engines(state):
         '"hindi" "m3u8"',
         '"tamil" "m3u8"',
         '"ipl" "m3u8"',
+        '"india" "get.php" iptv',
+        '"india" "player_api" iptv',
+        '"india" "rtsp://" channel',
     ]
 
     for i, q in enumerate(queries):
@@ -1041,7 +1252,7 @@ def phase_search_engines(state):
 
 
 def phase_validate(state):
-    """Phase 5: Validate discovered URLs."""
+    """Phase 6: Validate discovered URLs."""
     log.info(f"\n--- PHASE 5: Validation ({len(state.all_urls)} URLs) ---")
     urls_to_check = [u for u in state.all_urls if u not in state.visited]
     state.visited.update(urls_to_check)
@@ -1091,13 +1302,14 @@ def run():
     phase_github_api(state, token)
     phase_github_gists(state, token)
     phase_known_sources(state)
+    phase_channel_lists(state)
     phase_search_engines(state)
     phase_validate(state)
 
     # Final write + summary
     write_all_output(state)
 
-    base = os.path.join(OUTPUT_DIR, TS)
+    base = OUTPUT_DIR
     log.info(f"\n{'=' * 60}")
     log.info("  CATEGORY SUMMARY")
     log.info(f"{'=' * 60}")
