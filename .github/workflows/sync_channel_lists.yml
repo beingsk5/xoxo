@@ -1,0 +1,60 @@
+name: Sync Channel Lists from Wikipedia
+
+on:
+  schedule:
+    - cron: '0 4 * * *'  # Run daily at 4 AM UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install requests beautifulsoup4 lxml
+
+      - name: Fetch channel lists from Wikipedia
+        run: |
+          python -c "
+          import sys
+          sys.path.insert(0, '.')
+          from channel_lists import ChannelListFetcher
+          
+          fetcher = ChannelListFetcher()
+          all_channels = fetcher.fetch_all_channels()
+          
+          total = sum(len(chs) for chs in all_channels.values())
+          print(f'Total channels fetched: {total}')
+          
+          for language, channels in all_channels.items():
+              print(f'{language}: {len(channels)} channels')
+          "
+
+      - name: Verify cache files
+        run: |
+          ls -la data/channel_lists/
+          echo "---"
+          for f in data/channel_lists/*.json; do
+            echo \"$f: $(python -c \"import json; d=json.load(open('$f')); print(len(d.get('channels', [])), 'channels')\")\"
+          done
+
+      - name: Commit updated channel lists
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/channel_lists/ || true
+          git diff --staged --quiet || git commit -m "Sync Wikipedia channel lists $(date -u +'%Y-%m-%d')"
+          git push || true
