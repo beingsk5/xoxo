@@ -1,0 +1,11 @@
+#EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
+#EXTINF:-1 tvg-name="Friends TV (1080p)" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Friends_TV.png" group-title="Entertainment",Friends TV (1080p)
+https://server.playontv.in/friendstv/index.m3u8
+#EXTINF:-1 tvg-name="Akhon Kolkata (478p)" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/ekhonkolkata.png" group-title="News",Akhon Kolkata (478p)
+https://server.playontv.in/ekhonkolkata/ekhonkolkata/index.m3u8
+#EXTINF:-1 tvg-name="Nation News (720p)" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Nation_NE.png" group-title="News",Nation News (720p)
+https://server.playontv.in/nationnews/index.m3u8
+#EXTINF:-1 tvg-name="Raatdin Bangla (720p)" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/raatdinbangla.png" group-title="News",Raatdin Bangla (720p)
+https://server.playontv.in/raatdinbangla/index.m3u8
+#EXTINF:-1 tvg-name="Swastik TV (720p)" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/swastiktv.png" group-title="Religious",Swastik TV (720p)
+https://server.playontv.in/swastiktv/index.m3u8
