@@ -53,6 +53,8 @@ class IPTVDatabase:
         self.logos = {}          # channel_id -> [url, ...]
         self.blocked = set()     # set of blocked channel IDs
         self.lang_codes = {}     # iso639-3 -> language name
+        self._name_index = {}    # name_lower -> channel_id
+        self._alt_index = {}     # alt_name_lower -> channel_id
         self._loaded = False
 
     def load(self):
@@ -103,6 +105,15 @@ class IPTVDatabase:
                         "closed": row.get("closed", ""),
                         "website": row.get("website", ""),
                     }
+                    name = row.get("name", "").lower().strip()
+                    if name:
+                        self._name_index[name] = cid
+                    alt = row.get("alt_names", "")
+                    if alt:
+                        for an in alt.split(";"):
+                            an = an.strip().lower()
+                            if an:
+                                self._alt_index[an] = cid
 
     def _load_feeds(self):
         path = os.path.join(self.data_dir, "feeds.csv")
@@ -310,6 +321,45 @@ class IPTVDatabase:
             if cat:
                 result[ch["name"].lower()] = cat
         return result
+
+    # ── Fast lookup methods (used by scrapers) ──
+
+    def get_channel_id_by_exact_name(self, name):
+        """O(1) exact match by channel name."""
+        return self._name_index.get(name.lower().strip())
+
+    def get_channel_id_by_alt_name(self, name):
+        """O(1) exact match by alt name."""
+        return self._alt_index.get(name.lower().strip())
+
+    def get_channel_id_fast(self, name):
+        """Fast channel ID lookup: exact name -> alt name -> partial match."""
+        name_lower = name.lower().strip()
+        cid = self._name_index.get(name_lower)
+        if cid:
+            return cid
+        cid = self._alt_index.get(name_lower)
+        if cid:
+            return cid
+        for known_name, known_id in self._name_index.items():
+            if name_lower in known_name or known_name in name_lower:
+                return known_id
+        return None
+
+    def is_name_blocked(self, name):
+        """Check if a channel name is on the NSFW blocklist."""
+        cid = self.get_channel_id_fast(name)
+        if cid:
+            return cid in self.blocked
+        return False
+
+    def get_alt_names(self, channel_id):
+        """Get list of alt names for a channel."""
+        ch = self.channels.get(channel_id)
+        if not ch:
+            return []
+        alt = ch.get("alt_names", "")
+        return [a.strip() for a in alt.split(";") if a.strip()] if alt else []
 
 
 # Singleton instance
