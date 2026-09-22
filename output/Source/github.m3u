@@ -18,9 +18,9 @@ https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main
 #EXTINF:-1 tvg-name="NDTV India (720p)" tvg-logo="https://dtil.tmsimg.com/assets/s157588_ld_h15_aa.png?lock=720x540" group-title="News",NDTV India (720p)
 https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/in/YuppTV/NDTVIndia.m3u8
 #EXTINF:-1 tvg-name="raw githubusercontent com" group-title="News",raw githubusercontent com
-https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/in/YuppTV/NDTV24x7.m3u8
-#EXTINF:-1 tvg-name="raw githubusercontent com" group-title="News",raw githubusercontent com
 https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/in/YuppTV/NDTVIndia.m3u8
+#EXTINF:-1 tvg-name="raw githubusercontent com" group-title="News",raw githubusercontent com
+https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/in/YuppTV/NDTV24x7.m3u8
 #EXTINF:-1 tvg-name="Republic Bharat (1080p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/R.Bharat.png" group-title="News",Republic Bharat (1080p)
 https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/in/YuppTV/RepublicBharat.m3u8
 #EXTINF:-1 tvg-name="Republic TV (1080p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Public%20TV.png" group-title="News",Republic TV (1080p)
@@ -32,10 +32,14 @@ https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main
 #EXTINF:-1 tvg-name="github com" group-title="Religious",github com
 https://github.com/fawazahmed0/tiger/raw/master/peace/urdu.jpg
 #EXTINF:-1 tvg-name="github com" group-title="Religious",github com
-https://github.com/ProTechEx/IPTV-Panel/blob/master/get.php
+https://github.com/xtream-ui-org/xtream-ui-install/blob/master/files/player_api.php
 #EXTINF:-1 tvg-name="github com" group-title="Religious",github com
-https://github.com/gustavo03v/iptv/blob/main/get.php
-#EXTINF:-1 tvg-name="raw githubusercontent com" group-title="Religious",raw githubusercontent com
-https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/in/YuppTV/AsianetHD.m3u8
+https://github.com/gtaman92/XtreamCodesExtendAPI/blob/master/player_api.php
+#EXTINF:-1 tvg-name="github com" group-title="Religious",github com
+https://github.com/bmg1/phpXtreamCodes/blob/main/player_api.php
+#EXTINF:-1 tvg-name="github com" group-title="Religious",github com
+https://github.com/davewood2013/XtreamCodes16API/blob/master/player_api.php
 #EXTINF:-1 tvg-name="raw githubusercontent com" group-title="Religious",raw githubusercontent com
 https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/in/YuppTV/ZeeBiharJharkhand.m3u8
+#EXTINF:-1 tvg-name="raw githubusercontent com" group-title="Religious",raw githubusercontent com
+https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/in/YuppTV/AsianetHD.m3u8
