@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-09-22T23:11:13.227042",
-  "total": 1094,
+  "timestamp": "2026-09-22T23:13:42.162086",
+  "total": 1268,
   "channels": [
     {
       "name": "&TV",
@@ -51,6 +51,15 @@
       ]
     },
     {
+      "name": "10 TV",
+      "languages": [
+        "Telugu"
+      ],
+      "categories": [
+        "General"
+      ]
+    },
+    {
       "name": "24 January",
       "languages": [
         "Bengali"
@@ -86,6 +95,13 @@
       "categories": []
     },
     {
+      "name": "9XO",
+      "languages": [],
+      "categories": [
+        "Music"
+      ]
+    },
+    {
       "name": "9x Jalwa",
       "languages": [],
       "categories": [
@@ -97,7 +113,9 @@
       "languages": [
         "Marathi"
       ],
-      "categories": []
+      "categories": [
+        "General"
+      ]
     },
     {
       "name": "A-Plus Entertainment",
@@ -112,6 +130,31 @@
         "Urdu"
       ],
       "categories": []
+    },
+    {
+      "name": "AAJ TAK HD",
+      "languages": [
+        "Hindi"
+      ],
+      "categories": [
+        "News"
+      ]
+    },
+    {
+      "name": "AAKASH Aath",
+      "languages": [
+        "Bengali"
+      ],
+      "categories": [
+        "General"
+      ]
+    },
+    {
+      "name": "AASTHA",
+      "languages": [],
+      "categories": [
+        "Religious"
+      ]
     },
     {
       "name": "ABC Australia",
@@ -139,13 +182,23 @@
       ]
     },
     {
+      "name": "ABN Andhra Jyoti",
+      "languages": [
+        "Telugu"
+      ],
+      "categories": [
+        "General"
+      ]
+    },
+    {
       "name": "ABP Ananda",
       "languages": [
         "Bengali",
         "Gujarati"
       ],
       "categories": [
-        "News"
+        "News",
+        "General"
       ]
     },
     {
@@ -153,11 +206,15 @@
       "languages": [
         "Gujarati"
       ],
-      "categories": []
+      "categories": [
+        "General"
+      ]
     },
     {
       "name": "ABP Ganga",
-      "languages": [],
+      "languages": [
+        "Hindi"
+      ],
       "categories": [
         "News"
       ]
@@ -169,7 +226,8 @@
         "Gujarati"
       ],
       "categories": [
-        "News"
+        "News",
+        "General"
       ]
     },
     {
@@ -255,11 +313,38 @@
       "categories": []
     },
     {
+      "name": "ANB News",
+      "languages": [
+        "Hindi"
+      ],
+      "categories": [
+        "News"
+      ]
+    },
+    {
+      "name": "ANGEL TV",
+      "languages": [
+        "Tamil"
+      ],
+      "categories": [
+        "General"
+      ]
+    },
+    {
       "name": "ANI",
       "languages": [
         "Gujarati"
       ],
       "categories": []
+    },
+    {
+      "name": "AP 24x7",
+      "languages": [
+        "Telugu"
+      ],
+      "categories": [
+        "General"
+      ]
     },
     {
       "name": "ARY Digital",
@@ -304,6 +389,15 @@
       "categories": []
     },
     {
+      "name": "ATE TV",
+      "languages": [
+        "Malayalam"
+      ],
+      "categories": [
+        "General"
+      ]
+    },
+    {
       "name": "ATN Bangla",
       "languages": [
         "Bengali"
@@ -346,6 +440,15 @@
       "categories": []
     },
     {
+      "name": "Aaho Music",
+      "languages": [
+        "Hindi"
+      ],
+      "categories": [
+        "General"
+      ]
+    },
+    {
       "name": "Aaj Entertainment",
       "languages": [
         "Urdu"
@@ -377,11 +480,22 @@
       "categories": []
     },
     {
+      "name": "Aaseervatham TV",
+      "languages": [
+        "Tamil"
+      ],
+      "categories": [
+        "General"
+      ]
+    },
+    {
       "name": "Aastha Bhajan",
       "languages": [
         "Hindi"
       ],
-      "categories": []
+      "categories": [
+        "Religious"
+      ]
     },
     {
       "name": "Aastha TV",
@@ -485,6 +599,13 @@
       "categories": []
     },
     {
+      "name": "Aljazeera",
+      "languages": [],
+      "categories": [
+        "News"
+      ]
+    },
+    {
       "name": "All Time Movies",
       "languages": [
         "Hindi"
@@ -518,6 +639,15 @@
         "Bhojpuri"
       ],
       "categories": []
+    },
+    {
+      "name": "Amrita TV",
+      "languages": [
+        "Malayalam"
+      ],
+      "categories": [
+        "General"
+      ]
     },
     {
       "name": "Anand TV",
@@ -555,6 +685,15 @@
         "English"
       ],
       "categories": []
+    },
+    {
+      "name": "Anjan TV",
+      "languages": [
+        "Bhojpuri"
+      ],
+      "categories": [
+        "General"
+      ]
     },
     {
       "name": "Anmol Cinema",
@@ -599,11 +738,27 @@
       "categories": []
     },
     {
+      "name": "Aradana TV",
+      "languages": [
+        "Telugu"
+      ],
+      "categories": [
+        "General"
+      ]
+    },
+    {
       "name": "Argus News",
       "languages": [
         "Odia"
       ],
       "categories": []
+    },
+    {
+      "name": "Arihant",
+      "languages": [],
+      "categories": [
+        "Religious"
+      ]
     },
     {
       "name": "Armenia",
@@ -673,9 +828,12 @@
     {
       "name": "Asianet News",
       "languages": [
-        "Gujarati"
+        "Gujarati",
+        "Malayalam"
       ],
-      "categories": []
+      "categories": [
+        "General"
+      ]
     },
     {
       "name": "Asianet Plus",
@@ -712,7 +870,9 @@
       "languages": [
         "Assamese"
       ],
-      "categories": []
+      "categories": [
+        "General"
+      ]
     },
     {
       "name": "Assamese",
@@ -791,6 +951,16 @@
         "Bhojpuri"
       ],
       "categories": [
+        "Movies",
+        "General"
+      ]
+    },
+    {
+      "name": "B4U Kadak",
+      "languages": [
+        "Hindi"
+      ],
+      "categories": [
         "Movies"
       ]
     },
@@ -863,6 +1033,15 @@
       "categories": []
     },
     {
+      "name": "BTV News 24x7",
+      "languages": [
+        "Kannada"
+      ],
+      "categories": [
+        "General"
+      ]
+    },
+    {
       "name": "BTV World",
       "languages": [
         "Bengali"
@@ -909,6 +1088,24 @@
       "languages": [],
       "categories": [
         "News"
+      ]
+    },
+    {
+      "name": "Balle Balle",
+      "languages": [
+        "Punjabi"
+      ],
+      "categories": [
+        "General"
+      ]
+    },
+    {
+      "name": "Bangla Naaptol",
+      "languages": [
+        "Bengali"
+      ],
+      "categories": [
+        "General"
       ]
     },
     {
@@ -966,7 +1163,9 @@
       "languages": [
         "Telugu"
       ],
-      "categories": []
+      "categories": [
+        "General"
+      ]
     },
     {
       "name": "Bharat 24",
@@ -990,7 +1189,9 @@
       "languages": [
         "Hindi"
       ],
-      "categories": []
+      "categories": [
+        "News"
+      ]
     },
     {
       "name": "Bharat24",
@@ -1021,7 +1222,9 @@
       "languages": [
         "Bhojpuri"
       ],
-      "categories": []
+      "categories": [
+        "General"
+      ]
     },
     {
       "name": "Bhutan",
@@ -1050,6 +1253,24 @@
         "English"
       ],
       "categories": []
+    },
+    {
+      "name": "Big Ganga",
+      "languages": [
+        "Bhojpuri"
+      ],
+      "categories": [
+        "General"
+      ]
+    },
+    {
+      "name": "Big Magic",
+      "languages": [
+        "Hindi"
+      ],
+      "categories": [
+        "Entertainment"
+      ]
     },
     {
       "name": "Big RTL Thrill",
@@ -1135,7 +1356,9 @@
       "languages": [
         "Hindi"
       ],
-      "categories": []
+      "categories": [
+        "General"
+      ]
     },
     {
       "name": "British Indian Ocean Territory",
@@ -1164,6 +1387,33 @@
         "English"
       ],
       "categories": []
+    },
+    {
+      "name": "CHANNEL WIN",
+      "languages": [
+        "Urdu"
+      ],
+      "categories": [
+        "General"
+      ]
+    },
+    {
+      "name": "CHARDIKLA TIMETV",
+      "languages": [
+        "Punjabi"
+      ],
+      "categories": [
+        "General"
+      ]
+    },
+    {
+      "name": "CN News",
+      "languages": [
+        "Bengali"
+      ],
+      "categories": [
+        "General"
+      ]
     },
     {
       "name": "CNA",
@@ -1231,6 +1481,15 @@
       "categories": []
     },
     {
+      "name": "CTVN AKD Plus",
+      "languages": [
+        "Bengali"
+      ],
+      "categories": [
+        "General"
+      ]
+    },
+    {
       "name": "CVR OM",
       "languages": [
         "Telugu"
@@ -1267,6 +1526,15 @@
       ],
       "categories": [
         "News"
+      ]
+    },
+    {
+      "name": "Captain TV",
+      "languages": [
+        "Tamil"
+      ],
+      "categories": [
+        "General"
       ]
     },
     {
@@ -1439,7 +1707,9 @@
     },
     {
       "name": "Cinema TV India",
-      "languages": [],
+      "languages": [
+        "Hindi"
+      ],
       "categories": [
         "Movies"
       ]
@@ -1597,7 +1867,9 @@
       "languages": [
         "Hindi"
       ],
-      "categories": []
+      "categories": [
+        "Entertainment"
+      ]
     },
     {
       "name": "Colors Super",
@@ -1649,6 +1921,15 @@
       "categories": []
     },
     {
+      "name": "DABANGG",
+      "languages": [
+        "Bhojpuri"
+      ],
+      "categories": [
+        "General"
+      ]
+    },
+    {
       "name": "DBC News",
       "languages": [
         "Bengali"
@@ -1667,28 +1948,37 @@
       "languages": [
         "Bengali"
       ],
-      "categories": []
+      "categories": [
+        "General"
+      ]
     },
     {
       "name": "DD Bharati",
       "languages": [
         "Hindi"
       ],
-      "categories": []
+      "categories": [
+        "Entertainment"
+      ]
     },
     {
       "name": "DD Bihar",
       "languages": [
-        "Bhojpuri"
+        "Bhojpuri",
+        "Hindi"
       ],
-      "categories": []
+      "categories": [
+        "News"
+      ]
     },
     {
       "name": "DD Chandana",
       "languages": [
         "Kannada"
       ],
-      "categories": []
+      "categories": [
+        "General"
+      ]
     },
     {
       "name": "DD Free Dish",
@@ -1703,7 +1993,9 @@
       "languages": [
         "Gujarati"
       ],
-      "categories": []
+      "categories": [
+        "General"
+      ]
     },
     {
       "name": "DD Girnar HD",
@@ -1713,13 +2005,33 @@
       "categories": []
     },
     {
+      "name": "DD Imphal",
+      "languages": [
+        "Assamese"
+      ],
+      "categories": [
+        "General"
+      ]
+    },
+    {
       "name": "DD India",
       "languages": [
         "Gujarati",
-        "English"
+        "English",
+        "Hindi"
       ],
       "categories": [
-        "News"
+        "News",
+        "Entertainment"
+      ]
+    },
+    {
+      "name": "DD Kashir",
+      "languages": [
+        "Urdu"
+      ],
+      "categories": [
+        "General"
       ]
     },
     {
@@ -1727,14 +2039,54 @@
       "languages": [
         "Hindi"
       ],
-      "categories": []
+      "categories": [
+        "General"
+      ]
+    },
+    {
+      "name": "DD LOK SABHA",
+      "languages": [
+        "Hindi"
+      ],
+      "categories": [
+        "News"
+      ]
+    },
+    {
+      "name": "DD MP",
+      "languages": [
+        "Hindi"
+      ],
+      "categories": [
+        "News"
+      ]
+    },
+    {
+      "name": "DD Malayalam",
+      "languages": [
+        "Malayalam"
+      ],
+      "categories": [
+        "General"
+      ]
+    },
+    {
+      "name": "DD NE",
+      "languages": [
+        "Assamese"
+      ],
+      "categories": [
+        "General"
+      ]
     },
     {
       "name": "DD National",
       "languages": [
         "Hindi"
       ],
-      "categories": []
+      "categories": [
+        "Entertainment"
+      ]
     },
     {
       "name": "DD News",
@@ -1754,6 +2106,15 @@
       "categories": []
     },
     {
+      "name": "DD ORIYA",
+      "languages": [
+        "Odia"
+      ],
+      "categories": [
+        "General"
+      ]
+    },
+    {
       "name": "DD Odia",
       "languages": [
         "Odia"
@@ -1768,6 +2129,15 @@
       "categories": []
     },
     {
+      "name": "DD PODHIGAI",
+      "languages": [
+        "Tamil"
+      ],
+      "categories": [
+        "General"
+      ]
+    },
+    {
       "name": "DD Podhigai- GEC from Doordharshan for Tamil Nadu",
       "languages": [
         "Tamil"
@@ -1779,14 +2149,36 @@
       "languages": [
         "Punjabi"
       ],
-      "categories": []
+      "categories": [
+        "General"
+      ]
+    },
+    {
+      "name": "DD RAJASTHAN",
+      "languages": [
+        "Hindi"
+      ],
+      "categories": [
+        "News"
+      ]
+    },
+    {
+      "name": "DD RAJYA SABHA",
+      "languages": [
+        "Hindi"
+      ],
+      "categories": [
+        "News"
+      ]
     },
     {
       "name": "DD Sahyadri",
       "languages": [
         "Marathi"
       ],
-      "categories": []
+      "categories": [
+        "General"
+      ]
     },
     {
       "name": "DD Sahyadri HD",
@@ -1802,6 +2194,15 @@
         "Gujarati"
       ],
       "categories": []
+    },
+    {
+      "name": "DD Sapthagiri",
+      "languages": [
+        "Telugu"
+      ],
+      "categories": [
+        "General"
+      ]
     },
     {
       "name": "DD Sports",
@@ -1828,6 +2229,24 @@
       "categories": []
     },
     {
+      "name": "DD UP",
+      "languages": [
+        "Hindi"
+      ],
+      "categories": [
+        "News"
+      ]
+    },
+    {
+      "name": "DD Urdu",
+      "languages": [
+        "Urdu"
+      ],
+      "categories": [
+        "General"
+      ]
+    },
+    {
       "name": "DD Uttar Pradesh",
       "languages": [
         "Bhojpuri"
@@ -1840,7 +2259,32 @@
         "Telugu",
         "Gujarati"
       ],
-      "categories": []
+      "categories": [
+        "General"
+      ]
+    },
+    {
+      "name": "DIVYA TV",
+      "languages": [],
+      "categories": [
+        "Religious"
+      ]
+    },
+    {
+      "name": "DIVYAVANI TV",
+      "languages": [
+        "Telugu"
+      ],
+      "categories": [
+        "General"
+      ]
+    },
+    {
+      "name": "DW TV",
+      "languages": [],
+      "categories": [
+        "News"
+      ]
     },
     {
       "name": "DY 365",
@@ -1854,7 +2298,9 @@
       "languages": [
         "Assamese"
       ],
-      "categories": []
+      "categories": [
+        "General"
+      ]
     },
     {
       "name": "Dabangg TV",
@@ -1897,6 +2343,15 @@
         "Odia"
       ],
       "categories": []
+    },
+    {
+      "name": "Dangal Tv",
+      "languages": [
+        "Hindi"
+      ],
+      "categories": [
+        "Entertainment"
+      ]
     },
     {
       "name": "Dawn News",
@@ -1946,7 +2401,8 @@
         "Bengali"
       ],
       "categories": [
-        "Music"
+        "Music",
+        "General"
       ]
     },
     {
@@ -1955,6 +2411,15 @@
         "Bengali"
       ],
       "categories": []
+    },
+    {
+      "name": "Dighvijay 24X7 News",
+      "languages": [
+        "Kannada"
+      ],
+      "categories": [
+        "General"
+      ]
     },
     {
       "name": "Discovery Channel",
@@ -2013,6 +2478,22 @@
         "Gujarati"
       ],
       "categories": []
+    },
+    {
+      "name": "Disha TV",
+      "languages": [],
+      "categories": [
+        "Religious"
+      ]
+    },
+    {
+      "name": "Dishum",
+      "languages": [
+        "Bhojpuri"
+      ],
+      "categories": [
+        "General"
+      ]
     },
     {
       "name": "Dishum TV",
@@ -2094,11 +2575,27 @@
       "categories": []
     },
     {
+      "name": "E 24",
+      "languages": [],
+      "categories": [
+        "Music"
+      ]
+    },
+    {
       "name": "E24",
       "languages": [],
       "categories": [
         "Music",
         "Movies"
+      ]
+    },
+    {
+      "name": "ENTERR10",
+      "languages": [
+        "Hindi"
+      ],
+      "categories": [
+        "Entertainment"
       ]
     },
     {
@@ -2117,6 +2614,13 @@
         "Hindi"
       ],
       "categories": []
+    },
+    {
+      "name": "ETC",
+      "languages": [],
+      "categories": [
+        "Music"
+      ]
     },
     {
       "name": "ETV",
@@ -2342,11 +2846,29 @@
       "categories": []
     },
     {
+      "name": "Enterr 10 Bangla",
+      "languages": [
+        "Bengali"
+      ],
+      "categories": [
+        "General"
+      ]
+    },
+    {
       "name": "Enterr10 Bangla",
       "languages": [
         "Bengali"
       ],
       "categories": []
+    },
+    {
+      "name": "Epic",
+      "languages": [
+        "Hindi"
+      ],
+      "categories": [
+        "Entertainment"
+      ]
     },
     {
       "name": "Epic Bharat",
@@ -2425,6 +2947,15 @@
       "categories": []
     },
     {
+      "name": "FM NEWS",
+      "languages": [
+        "Hindi"
+      ],
+      "categories": [
+        "News"
+      ]
+    },
+    {
       "name": "Fake news",
       "languages": [
         "Gujarati"
@@ -2436,7 +2967,16 @@
       "languages": [
         "Marathi"
       ],
-      "categories": []
+      "categories": [
+        "General"
+      ]
+    },
+    {
+      "name": "Fashion TV",
+      "languages": [],
+      "categories": [
+        "General"
+      ]
     },
     {
       "name": "FashionTV",
@@ -2469,11 +3009,29 @@
       "categories": []
     },
     {
+      "name": "First India News",
+      "languages": [
+        "Hindi"
+      ],
+      "categories": [
+        "News"
+      ]
+    },
+    {
       "name": "Firstpost",
       "languages": [
         "Gujarati"
       ],
       "categories": []
+    },
+    {
+      "name": "Flowers TV",
+      "languages": [
+        "Malayalam"
+      ],
+      "categories": [
+        "General"
+      ]
     },
     {
       "name": "Flowers TV USA- GEC from Insight Media City",
@@ -2522,7 +3080,9 @@
       "languages": [
         "Hindi"
       ],
-      "categories": []
+      "categories": [
+        "General"
+      ]
     },
     {
       "name": "Foodxp",
@@ -2600,6 +3160,13 @@
         "Urdu"
       ],
       "categories": []
+    },
+    {
+      "name": "GOD TV",
+      "languages": [],
+      "categories": [
+        "Religious"
+      ]
     },
     {
       "name": "GSTV",
@@ -2768,6 +3335,29 @@
       "categories": []
     },
     {
+      "name": "Goodness TV",
+      "languages": [
+        "Malayalam"
+      ],
+      "categories": [
+        "General"
+      ]
+    },
+    {
+      "name": "Goodnews TV",
+      "languages": [],
+      "categories": [
+        "Religious"
+      ]
+    },
+    {
+      "name": "Grace TV",
+      "languages": [],
+      "categories": [
+        "Religious"
+      ]
+    },
+    {
       "name": "Green TV",
       "languages": [
         "Bengali"
@@ -2795,6 +3385,22 @@
         "Gujarati"
       ],
       "categories": []
+    },
+    {
+      "name": "Gulistan News",
+      "languages": [
+        "Urdu"
+      ],
+      "categories": [
+        "General"
+      ]
+    },
+    {
+      "name": "Gyan Darshan",
+      "languages": [],
+      "categories": [
+        "General"
+      ]
     },
     {
       "name": "HBO Defined",
@@ -2971,11 +3577,38 @@
       "categories": []
     },
     {
+      "name": "IBC 24",
+      "languages": [
+        "Hindi"
+      ],
+      "categories": [
+        "News"
+      ]
+    },
+    {
       "name": "IBC Tamil- London based news channel",
       "languages": [
         "Tamil"
       ],
       "categories": []
+    },
+    {
+      "name": "INDIA NEWS NEW",
+      "languages": [
+        "Hindi"
+      ],
+      "categories": [
+        "News"
+      ]
+    },
+    {
+      "name": "ISAIARUVI",
+      "languages": [
+        "Tamil"
+      ],
+      "categories": [
+        "General"
+      ]
     },
     {
       "name": "ITV Choice",
@@ -3034,14 +3667,45 @@
       "languages": [
         "Hindi"
       ],
-      "categories": []
+      "categories": [
+        "News"
+      ]
+    },
+    {
+      "name": "India News MPCG",
+      "languages": [
+        "Hindi"
+      ],
+      "categories": [
+        "News"
+      ]
+    },
+    {
+      "name": "India News Punjab",
+      "languages": [
+        "Punjabi"
+      ],
+      "categories": [
+        "General"
+      ]
     },
     {
       "name": "India News Rajasthan",
       "languages": [
         "Hindi"
       ],
-      "categories": []
+      "categories": [
+        "News"
+      ]
+    },
+    {
+      "name": "India News UP UK",
+      "languages": [
+        "Hindi"
+      ],
+      "categories": [
+        "News"
+      ]
     },
     {
       "name": "India TV",
@@ -3071,11 +3735,29 @@
       ]
     },
     {
+      "name": "India Watch",
+      "languages": [
+        "Hindi"
+      ],
+      "categories": [
+        "News"
+      ]
+    },
+    {
       "name": "Indiavision",
       "languages": [
         "Gujarati"
       ],
       "categories": []
+    },
+    {
+      "name": "Indology",
+      "languages": [
+        "Hindi"
+      ],
+      "categories": [
+        "Entertainment"
+      ]
     },
     {
       "name": "Indonesia",
@@ -3109,9 +3791,12 @@
     {
       "name": "Investigation Discovery HD",
       "languages": [
-        "Telugu"
+        "Telugu",
+        "Hindi"
       ],
-      "categories": []
+      "categories": [
+        "Entertainment"
+      ]
     },
     {
       "name": "Iran",
@@ -3147,6 +3832,31 @@
         "Tamil"
       ],
       "categories": []
+    },
+    {
+      "name": "JINVANI",
+      "languages": [],
+      "categories": [
+        "Religious"
+      ]
+    },
+    {
+      "name": "JK 24x7 News",
+      "languages": [
+        "Hindi"
+      ],
+      "categories": [
+        "News"
+      ]
+    },
+    {
+      "name": "Jai Hind",
+      "languages": [
+        "Malayalam"
+      ],
+      "categories": [
+        "General"
+      ]
     },
     {
       "name": "Jai Maharashtra",
@@ -3198,10 +3908,12 @@
     {
       "name": "Janam TV",
       "languages": [
-        "Gujarati"
+        "Gujarati",
+        "Malayalam"
       ],
       "categories": [
-        "News"
+        "News",
+        "General"
       ]
     },
     {
@@ -3225,6 +3937,15 @@
         "Gujarati"
       ],
       "categories": []
+    },
+    {
+      "name": "Jantantra TV",
+      "languages": [
+        "Hindi"
+      ],
+      "categories": [
+        "News"
+      ]
     },
     {
       "name": "January",
@@ -3290,6 +4011,15 @@
       "categories": []
     },
     {
+      "name": "Jonack",
+      "languages": [
+        "Assamese"
+      ],
+      "categories": [
+        "General"
+      ]
+    },
+    {
       "name": "Jordan",
       "languages": [
         "Gujarati"
@@ -3302,6 +4032,51 @@
         "Malayalam"
       ],
       "categories": []
+    },
+    {
+      "name": "K News",
+      "languages": [
+        "Hindi"
+      ],
+      "categories": [
+        "News"
+      ]
+    },
+    {
+      "name": "KAIRALI NEWS",
+      "languages": [
+        "Malayalam"
+      ],
+      "categories": [
+        "General"
+      ]
+    },
+    {
+      "name": "KALAINGAR",
+      "languages": [
+        "Tamil"
+      ],
+      "categories": [
+        "General"
+      ]
+    },
+    {
+      "name": "KASTURI",
+      "languages": [
+        "Kannada"
+      ],
+      "categories": [
+        "General"
+      ]
+    },
+    {
+      "name": "KAUMUDY TV",
+      "languages": [
+        "Malayalam"
+      ],
+      "categories": [
+        "General"
+      ]
     },
     {
       "name": "KTV",
@@ -3341,6 +4116,13 @@
       "categories": []
     },
     {
+      "name": "Kaatyayani TV",
+      "languages": [],
+      "categories": [
+        "Religious"
+      ]
+    },
+    {
       "name": "Kairali Arabia- GEC from Malayalam Communications Limited",
       "languages": [
         "Malayalam"
@@ -3355,11 +4137,41 @@
       "categories": []
     },
     {
+      "name": "Kairali TV",
+      "languages": [
+        "Malayalam"
+      ],
+      "categories": [
+        "General"
+      ]
+    },
+    {
+      "name": "Kairali WE",
+      "languages": [
+        "Malayalam"
+      ],
+      "categories": [
+        "General"
+      ]
+    },
+    {
+      "name": "Kalaignar Murasu",
+      "languages": [
+        "Tamil"
+      ],
+      "categories": [
+        "General"
+      ]
+    },
+    {
       "name": "Kalaignar Seithigal",
       "languages": [
-        "Gujarati"
+        "Gujarati",
+        "Tamil"
       ],
-      "categories": []
+      "categories": [
+        "General"
+      ]
     },
     {
       "name": "Kalaignar TV",
@@ -3373,7 +4185,9 @@
       "languages": [
         "Odia"
       ],
-      "categories": []
+      "categories": [
+        "General"
+      ]
     },
     {
       "name": "Kalki Kannada",
@@ -3387,7 +4201,9 @@
       "languages": [
         "Odia"
       ],
-      "categories": []
+      "categories": [
+        "General"
+      ]
     },
     {
       "name": "Kannada",
@@ -3396,6 +4212,15 @@
         "Gujarati"
       ],
       "categories": []
+    },
+    {
+      "name": "Kannada Naaptol",
+      "languages": [
+        "Kannada"
+      ],
+      "categories": [
+        "General"
+      ]
     },
     {
       "name": "Kappa TV",
@@ -3451,12 +4276,30 @@
       "categories": []
     },
     {
+      "name": "Khabrein Abhi Tak",
+      "languages": [
+        "Hindi"
+      ],
+      "categories": [
+        "News"
+      ]
+    },
+    {
       "name": "Khushboo Bangla",
       "languages": [
         "Bengali"
       ],
       "categories": [
         "Movies"
+      ]
+    },
+    {
+      "name": "Khushi Tv",
+      "languages": [
+        "Hindi"
+      ],
+      "categories": [
+        "Entertainment"
       ]
     },
     {
@@ -3473,7 +4316,8 @@
         "Gujarati"
       ],
       "categories": [
-        "News"
+        "News",
+        "General"
       ]
     },
     {
@@ -3620,6 +4464,13 @@
       "categories": []
     },
     {
+      "name": "Living India News",
+      "languages": [],
+      "categories": [
+        "News"
+      ]
+    },
+    {
       "name": "Living Travelz",
       "languages": [
         "English"
@@ -3677,7 +4528,18 @@
       "languages": [
         "Odia"
       ],
-      "categories": []
+      "categories": [
+        "General"
+      ]
+    },
+    {
+      "name": "MEDIA ONE",
+      "languages": [
+        "Malayalam"
+      ],
+      "categories": [
+        "General"
+      ]
     },
     {
       "name": "MGM",
@@ -3685,6 +4547,22 @@
         "English"
       ],
       "categories": []
+    },
+    {
+      "name": "MH 1",
+      "languages": [
+        "Punjabi"
+      ],
+      "categories": [
+        "General"
+      ]
+    },
+    {
+      "name": "MH1 SHRADHA",
+      "languages": [],
+      "categories": [
+        "Religious"
+      ]
     },
     {
       "name": "MN +",
@@ -3762,6 +4640,15 @@
       "categories": []
     },
     {
+      "name": "Madha TV",
+      "languages": [
+        "Tamil"
+      ],
+      "categories": [
+        "General"
+      ]
+    },
+    {
       "name": "Magicbricks Now",
       "languages": [
         "English"
@@ -3770,7 +4657,9 @@
     },
     {
       "name": "Maha Movie",
-      "languages": [],
+      "languages": [
+        "Hindi"
+      ],
       "categories": [
         "Movies"
       ]
@@ -3823,7 +4712,8 @@
         "Marathi"
       ],
       "categories": [
-        "Music"
+        "Music",
+        "General"
       ]
     },
     {
@@ -3831,7 +4721,18 @@
       "languages": [
         "Tamil"
       ],
-      "categories": []
+      "categories": [
+        "General"
+      ]
+    },
+    {
+      "name": "Malai Murasu",
+      "languages": [
+        "Tamil"
+      ],
+      "categories": [
+        "General"
+      ]
     },
     {
       "name": "Malayalam",
@@ -3840,6 +4741,15 @@
         "Gujarati"
       ],
       "categories": []
+    },
+    {
+      "name": "Malayalam Naaptol",
+      "languages": [
+        "Malayalam"
+      ],
+      "categories": [
+        "General"
+      ]
     },
     {
       "name": "Malaysia",
@@ -3886,10 +4796,12 @@
     {
       "name": "Manorama News",
       "languages": [
-        "Gujarati"
+        "Gujarati",
+        "Malayalam"
       ],
       "categories": [
-        "News"
+        "News",
+        "General"
       ]
     },
     {
@@ -3946,6 +4858,13 @@
       "categories": []
     },
     {
+      "name": "Masti",
+      "languages": [],
+      "categories": [
+        "Music"
+      ]
+    },
+    {
       "name": "Mastiii",
       "languages": [],
       "categories": [
@@ -3967,6 +4886,15 @@
         "Malayalam"
       ],
       "categories": []
+    },
+    {
+      "name": "Mazhavil Manorma",
+      "languages": [
+        "Malayalam"
+      ],
+      "categories": [
+        "General"
+      ]
     },
     {
       "name": "Media One Gulf- GEC from Madhyamam Broadcasting Ltd",
@@ -4151,6 +5079,15 @@
       "categories": []
     },
     {
+      "name": "Music Fatafati",
+      "languages": [
+        "Bengali"
+      ],
+      "categories": [
+        "General"
+      ]
+    },
+    {
       "name": "Music India",
       "languages": [
         "Hindi"
@@ -4276,11 +5213,29 @@
       "categories": []
     },
     {
+      "name": "NEPAL ONE",
+      "languages": [
+        "Assamese"
+      ],
+      "categories": [
+        "General"
+      ]
+    },
+    {
+      "name": "NEWS X NEW",
+      "languages": [],
+      "categories": [
+        "News"
+      ]
+    },
+    {
       "name": "NHK World",
       "languages": [
         "English"
       ],
-      "categories": []
+      "categories": [
+        "News"
+      ]
     },
     {
       "name": "NKTV Plus",
@@ -4298,7 +5253,17 @@
         "Gujarati"
       ],
       "categories": [
-        "Religious"
+        "Religious",
+        "General"
+      ]
+    },
+    {
+      "name": "Naaptol",
+      "languages": [
+        "Hindi"
+      ],
+      "categories": [
+        "Movies"
       ]
     },
     {
@@ -4307,6 +5272,15 @@
         "Bengali"
       ],
       "categories": []
+    },
+    {
+      "name": "Nambikkai TV",
+      "languages": [
+        "Tamil"
+      ],
+      "categories": [
+        "General"
+      ]
     },
     {
       "name": "Nandighosha TV",
@@ -4375,7 +5349,8 @@
     {
       "name": "National Voice",
       "languages": [
-        "Gujarati"
+        "Gujarati",
+        "Hindi"
       ],
       "categories": [
         "News"
@@ -4425,6 +5400,15 @@
       "categories": []
     },
     {
+      "name": "News 1 India",
+      "languages": [
+        "Hindi"
+      ],
+      "categories": [
+        "News"
+      ]
+    },
+    {
       "name": "News 18 Kannada",
       "languages": [
         "Kannada"
@@ -4444,7 +5428,9 @@
         "Hindi",
         "Gujarati"
       ],
-      "categories": []
+      "categories": [
+        "News"
+      ]
     },
     {
       "name": "News 24 Madhya Pradesh Chhattisgarh",
@@ -4463,9 +5449,12 @@
     {
       "name": "News J",
       "languages": [
-        "Gujarati"
+        "Gujarati",
+        "Tamil"
       ],
-      "categories": []
+      "categories": [
+        "General"
+      ]
     },
     {
       "name": "News Live",
@@ -4474,7 +5463,8 @@
         "Assamese"
       ],
       "categories": [
-        "News"
+        "News",
+        "General"
       ]
     },
     {
@@ -4483,7 +5473,9 @@
         "Hindi",
         "Gujarati"
       ],
-      "categories": []
+      "categories": [
+        "News"
+      ]
     },
     {
       "name": "News Nation Assam",
@@ -4495,6 +5487,15 @@
     {
       "name": "News Nation TV",
       "languages": [],
+      "categories": [
+        "News"
+      ]
+    },
+    {
+      "name": "News State MPCG",
+      "languages": [
+        "Hindi"
+      ],
       "categories": [
         "News"
       ]
@@ -4526,9 +5527,12 @@
     },
     {
       "name": "News Time Bangla",
-      "languages": [],
+      "languages": [
+        "Bengali"
+      ],
       "categories": [
-        "News"
+        "News",
+        "General"
       ]
     },
     {
@@ -4541,7 +5545,8 @@
     {
       "name": "News World India",
       "languages": [
-        "Gujarati"
+        "Gujarati",
+        "Hindi"
       ],
       "categories": [
         "News"
@@ -4584,7 +5589,9 @@
       "languages": [
         "Hindi"
       ],
-      "categories": []
+      "categories": [
+        "News"
+      ]
     },
     {
       "name": "News18 Gujarati",
@@ -4630,6 +5637,15 @@
       "categories": []
     },
     {
+      "name": "News18 MP Chhattisgarh",
+      "languages": [
+        "Hindi"
+      ],
+      "categories": [
+        "News"
+      ]
+    },
+    {
       "name": "News18 Madhya Pradesh Chhattisgarh",
       "languages": [
         "Hindi"
@@ -4666,7 +5682,9 @@
     },
     {
       "name": "News18 Punjab Haryana Himachal",
-      "languages": [],
+      "languages": [
+        "Hindi"
+      ],
       "categories": [
         "News"
       ]
@@ -4691,10 +5709,22 @@
       ]
     },
     {
-      "name": "News18 Urdu",
-      "languages": [],
+      "name": "News18 UP UK",
+      "languages": [
+        "Hindi"
+      ],
       "categories": [
         "News"
+      ]
+    },
+    {
+      "name": "News18 Urdu",
+      "languages": [
+        "Urdu"
+      ],
+      "categories": [
+        "News",
+        "General"
       ]
     },
     {
@@ -4849,10 +5879,12 @@
     {
       "name": "North East Live",
       "languages": [
-        "English"
+        "English",
+        "Assamese"
       ],
       "categories": [
-        "News"
+        "News",
+        "General"
       ]
     },
     {
@@ -4881,7 +5913,9 @@
       "languages": [
         "Odia"
       ],
-      "categories": []
+      "categories": [
+        "General"
+      ]
     },
     {
       "name": "Odia",
@@ -4955,6 +5989,24 @@
       "categories": []
     },
     {
+      "name": "P Plus",
+      "languages": [
+        "Punjabi"
+      ],
+      "categories": [
+        "General"
+      ]
+    },
+    {
+      "name": "P Tunes",
+      "languages": [
+        "Punjabi"
+      ],
+      "categories": [
+        "General"
+      ]
+    },
+    {
       "name": "PIX System",
       "languages": [
         "English"
@@ -4962,19 +6014,77 @@
       "categories": []
     },
     {
+      "name": "POLIMER",
+      "languages": [
+        "Tamil"
+      ],
+      "categories": [
+        "General"
+      ]
+    },
+    {
+      "name": "PRAG",
+      "languages": [
+        "Assamese"
+      ],
+      "categories": [
+        "General"
+      ]
+    },
+    {
+      "name": "PTC Chak de",
+      "languages": [
+        "Punjabi"
+      ],
+      "categories": [
+        "General"
+      ]
+    },
+    {
+      "name": "PTC Music",
+      "languages": [
+        "Punjabi"
+      ],
+      "categories": [
+        "General"
+      ]
+    },
+    {
       "name": "PTC News",
       "languages": [
         "Punjabi",
         "Gujarati"
       ],
-      "categories": []
+      "categories": [
+        "General"
+      ]
     },
     {
       "name": "PTC Punjabi",
       "languages": [
         "Punjabi"
       ],
-      "categories": []
+      "categories": [
+        "General"
+      ]
+    },
+    {
+      "name": "PTC Punjabi Gold",
+      "languages": [
+        "Punjabi"
+      ],
+      "categories": [
+        "General"
+      ]
+    },
+    {
+      "name": "PTC Simran",
+      "languages": [
+        "Punjabi"
+      ],
+      "categories": [
+        "General"
+      ]
     },
     {
       "name": "PTI",
@@ -5040,11 +6150,25 @@
       "categories": []
     },
     {
+      "name": "Paras",
+      "languages": [],
+      "categories": [
+        "Religious"
+      ]
+    },
+    {
       "name": "Pasand TV",
       "languages": [
         "Bhojpuri"
       ],
       "categories": []
+    },
+    {
+      "name": "Peace Of Mind",
+      "languages": [],
+      "categories": [
+        "Religious"
+      ]
     },
     {
       "name": "Peace TV Bangla",
@@ -5087,7 +6211,8 @@
         "Punjabi"
       ],
       "categories": [
-        "Movies"
+        "Movies",
+        "General"
       ]
     },
     {
@@ -5124,7 +6249,9 @@
         "Tamil",
         "Gujarati"
       ],
-      "categories": []
+      "categories": [
+        "General"
+      ]
     },
     {
       "name": "Polimer TV",
@@ -5138,7 +6265,18 @@
       "languages": [
         "Kannada"
       ],
-      "categories": []
+      "categories": [
+        "General"
+      ]
+    },
+    {
+      "name": "Powervision",
+      "languages": [
+        "Malayalam"
+      ],
+      "categories": [
+        "General"
+      ]
     },
     {
       "name": "Prabhat TV",
@@ -5162,7 +6300,18 @@
       "languages": [
         "Kannada"
       ],
-      "categories": []
+      "categories": [
+        "General"
+      ]
+    },
+    {
+      "name": "Prameya News 7",
+      "languages": [
+        "Odia"
+      ],
+      "categories": [
+        "General"
+      ]
     },
     {
       "name": "Prameya News7",
@@ -5194,7 +6343,8 @@
         "Assamese"
       ],
       "categories": [
-        "News"
+        "News",
+        "General"
       ]
     },
     {
@@ -5244,7 +6394,9 @@
       "languages": [
         "Kannada"
       ],
-      "categories": []
+      "categories": [
+        "General"
+      ]
     },
     {
       "name": "Pudhari News",
@@ -5262,6 +6414,15 @@
       "categories": []
     },
     {
+      "name": "Puthiya Thalaimurai",
+      "languages": [
+        "Tamil"
+      ],
+      "categories": [
+        "General"
+      ]
+    },
+    {
       "name": "Puthiya Thalaimurai TV",
       "languages": [],
       "categories": [
@@ -5274,6 +6435,15 @@
         "Gujarati"
       ],
       "categories": []
+    },
+    {
+      "name": "Puthu Yugam",
+      "languages": [
+        "Tamil"
+      ],
+      "categories": [
+        "General"
+      ]
     },
     {
       "name": "Puthuyugam TV",
@@ -5304,10 +6474,46 @@
       "categories": []
     },
     {
+      "name": "R Bharat",
+      "languages": [
+        "Hindi"
+      ],
+      "categories": [
+        "News"
+      ]
+    },
+    {
       "name": "R9 TV",
       "languages": [],
       "categories": [
         "News"
+      ]
+    },
+    {
+      "name": "RAJ MUSIX MALAYALAM",
+      "languages": [
+        "Malayalam"
+      ],
+      "categories": [
+        "General"
+      ]
+    },
+    {
+      "name": "RAJ NEWS MALAYALAM",
+      "languages": [
+        "Malayalam"
+      ],
+      "categories": [
+        "General"
+      ]
+    },
+    {
+      "name": "RANG",
+      "languages": [
+        "Assamese"
+      ],
+      "categories": [
+        "General"
       ]
     },
     {
@@ -5337,6 +6543,15 @@
         "Bengali"
       ],
       "categories": []
+    },
+    {
+      "name": "RUPASHI BANGLA",
+      "languages": [
+        "Bengali"
+      ],
+      "categories": [
+        "General"
+      ]
     },
     {
       "name": "Raapchik",
@@ -5379,7 +6594,8 @@
         "Telugu"
       ],
       "categories": [
-        "Music"
+        "Music",
+        "General"
       ]
     },
     {
@@ -5402,7 +6618,18 @@
         "Kannada",
         "Gujarati"
       ],
-      "categories": []
+      "categories": [
+        "General"
+      ]
+    },
+    {
+      "name": "Raj News Telugu",
+      "languages": [
+        "Telugu"
+      ],
+      "categories": [
+        "General"
+      ]
     },
     {
       "name": "Raj TV",
@@ -5428,6 +6655,15 @@
       ]
     },
     {
+      "name": "Ramdhenu TV",
+      "languages": [
+        "Assamese"
+      ],
+      "categories": [
+        "General"
+      ]
+    },
+    {
       "name": "Rang Tv",
       "languages": [
         "Assamese"
@@ -5447,7 +6683,8 @@
         "Assamese"
       ],
       "categories": [
-        "News"
+        "News",
+        "General"
       ]
     },
     {
@@ -5549,6 +6786,13 @@
       "categories": []
     },
     {
+      "name": "Russia Today",
+      "languages": [],
+      "categories": [
+        "News"
+      ]
+    },
+    {
       "name": "SA TV",
       "languages": [
         "Bengali"
@@ -5561,6 +6805,36 @@
         "Urdu"
       ],
       "categories": []
+    },
+    {
+      "name": "SARTHI",
+      "languages": [],
+      "categories": [
+        "Religious"
+      ]
+    },
+    {
+      "name": "SATHIYAMTV",
+      "languages": [
+        "Tamil"
+      ],
+      "categories": [
+        "General"
+      ]
+    },
+    {
+      "name": "SHUBHSANDESH TV",
+      "languages": [],
+      "categories": [
+        "Religious"
+      ]
+    },
+    {
+      "name": "SONY MIX",
+      "languages": [],
+      "categories": [
+        "Music"
+      ]
     },
     {
       "name": "SS Entertainment",
@@ -5584,10 +6858,22 @@
       "categories": []
     },
     {
-      "name": "SVBC",
-      "languages": [],
+      "name": "SUBHAVARTHA",
+      "languages": [
+        "Telugu"
+      ],
       "categories": [
-        "Religious"
+        "General"
+      ]
+    },
+    {
+      "name": "SVBC",
+      "languages": [
+        "Telugu"
+      ],
+      "categories": [
+        "Religious",
+        "General"
       ]
     },
     {
@@ -5603,7 +6889,8 @@
         "Marathi"
       ],
       "categories": [
-        "News"
+        "News",
+        "General"
       ]
     },
     {
@@ -5613,6 +6900,22 @@
         "Gujarati"
       ],
       "categories": []
+    },
+    {
+      "name": "Sadhna TV",
+      "languages": [],
+      "categories": [
+        "Religious"
+      ]
+    },
+    {
+      "name": "Safari TV",
+      "languages": [
+        "Malayalam"
+      ],
+      "categories": [
+        "General"
+      ]
     },
     {
       "name": "Sahar 2",
@@ -5631,9 +6934,48 @@
     {
       "name": "Sahara Samay",
       "languages": [
-        "Gujarati"
+        "Gujarati",
+        "Hindi"
       ],
-      "categories": []
+      "categories": [
+        "News"
+      ]
+    },
+    {
+      "name": "Sahara Samay Bihar",
+      "languages": [
+        "Hindi"
+      ],
+      "categories": [
+        "News"
+      ]
+    },
+    {
+      "name": "Sahara Samay MP @ FREE",
+      "languages": [
+        "Hindi"
+      ],
+      "categories": [
+        "News"
+      ]
+    },
+    {
+      "name": "Sahara Samay Rajasthan",
+      "languages": [
+        "Hindi"
+      ],
+      "categories": [
+        "News"
+      ]
+    },
+    {
+      "name": "Sahara Samay UP",
+      "languages": [
+        "Hindi"
+      ],
+      "categories": [
+        "News"
+      ]
     },
     {
       "name": "Sakshi TV",
@@ -5643,7 +6985,8 @@
         "Gujarati"
       ],
       "categories": [
-        "News"
+        "News",
+        "General"
       ]
     },
     {
@@ -5672,7 +7015,9 @@
       "languages": [
         "Gujarati"
       ],
-      "categories": []
+      "categories": [
+        "General"
+      ]
     },
     {
       "name": "Sangat di maa di TV",
@@ -5686,21 +7031,27 @@
       "languages": [
         "Bengali"
       ],
-      "categories": []
+      "categories": [
+        "General"
+      ]
     },
     {
       "name": "Sangeet Bhojpuri",
       "languages": [
         "Bhojpuri"
       ],
-      "categories": []
+      "categories": [
+        "General"
+      ]
     },
     {
       "name": "Sangeet Marathi",
       "languages": [
         "Marathi"
       ],
-      "categories": []
+      "categories": [
+        "General"
+      ]
     },
     {
       "name": "Sangsad Bangladesh",
@@ -5731,6 +7082,13 @@
       "categories": []
     },
     {
+      "name": "Sanskar",
+      "languages": [],
+      "categories": [
+        "Religious"
+      ]
+    },
+    {
       "name": "Sanskar TV",
       "languages": [
         "Hindi"
@@ -5752,6 +7110,20 @@
         "Odia"
       ],
       "categories": []
+    },
+    {
+      "name": "Sarv Dharam Sangam",
+      "languages": [],
+      "categories": [
+        "Religious"
+      ]
+    },
+    {
+      "name": "Satsang",
+      "languages": [],
+      "categories": [
+        "Religious"
+      ]
     },
     {
       "name": "Saudi Arabia",
@@ -5782,10 +7154,22 @@
       "categories": []
     },
     {
-      "name": "Shalom",
-      "languages": [],
+      "name": "Shagun Tv",
+      "languages": [
+        "Hindi"
+      ],
       "categories": [
-        "Religious"
+        "News"
+      ]
+    },
+    {
+      "name": "Shalom",
+      "languages": [
+        "Malayalam"
+      ],
+      "categories": [
+        "Religious",
+        "General"
       ]
     },
     {
@@ -5824,6 +7208,20 @@
         "Hindi"
       ],
       "categories": []
+    },
+    {
+      "name": "Showbox",
+      "languages": [],
+      "categories": [
+        "Music"
+      ]
+    },
+    {
+      "name": "Shubh TV",
+      "languages": [],
+      "categories": [
+        "Religious"
+      ]
     },
     {
       "name": "Sidharth Gold",
@@ -5872,7 +7270,9 @@
       "languages": [
         "Tamil"
       ],
-      "categories": []
+      "categories": [
+        "General"
+      ]
     },
     {
       "name": "Somoy TV",
@@ -5968,7 +7368,9 @@
       "languages": [
         "Hindi"
       ],
-      "categories": []
+      "categories": [
+        "Entertainment"
+      ]
     },
     {
       "name": "Sony Pix",
@@ -6151,6 +7553,15 @@
       "categories": []
     },
     {
+      "name": "Sri Sankara",
+      "languages": [
+        "Tamil"
+      ],
+      "categories": [
+        "General"
+      ]
+    },
+    {
       "name": "Sri Sankara TV",
       "languages": [
         "Kannada"
@@ -6185,7 +7596,9 @@
       "languages": [
         "Hindi"
       ],
-      "categories": []
+      "categories": [
+        "Entertainment"
+      ]
     },
     {
       "name": "Star Gold",
@@ -6198,6 +7611,15 @@
     },
     {
       "name": "Star Gold 2",
+      "languages": [
+        "Hindi"
+      ],
+      "categories": [
+        "Movies"
+      ]
+    },
+    {
+      "name": "Star Gold HD",
       "languages": [
         "Hindi"
       ],
@@ -6393,6 +7815,13 @@
       "categories": []
     },
     {
+      "name": "Star Sports 1 Hindi HD",
+      "languages": [],
+      "categories": [
+        "Sports"
+      ]
+    },
+    {
       "name": "Star Sports 1 Kannada",
       "languages": [
         "Kannada"
@@ -6513,7 +7942,9 @@
       "languages": [
         "Hindi"
       ],
-      "categories": []
+      "categories": [
+        "Entertainment"
+      ]
     },
     {
       "name": "Star Utsav Movies",
@@ -6608,6 +8039,13 @@
       "categories": []
     },
     {
+      "name": "Subharti",
+      "languages": [],
+      "categories": [
+        "Religious"
+      ]
+    },
+    {
       "name": "Subhavatha TV",
       "languages": [
         "Telugu"
@@ -6636,7 +8074,9 @@
       "languages": [
         "Bengali"
       ],
-      "categories": []
+      "categories": [
+        "General"
+      ]
     },
     {
       "name": "Sun Direct",
@@ -6797,11 +8237,27 @@
       ]
     },
     {
+      "name": "Superhit Tv",
+      "languages": [
+        "Hindi"
+      ],
+      "categories": [
+        "Movies"
+      ]
+    },
+    {
       "name": "Superstar Josh",
       "languages": [
         "Odia"
       ],
       "categories": []
+    },
+    {
+      "name": "Surya Bhakti",
+      "languages": [],
+      "categories": [
+        "Religious"
+      ]
     },
     {
       "name": "Surya Bhojpuri",
@@ -6815,7 +8271,9 @@
       "languages": [
         "Hindi"
       ],
-      "categories": []
+      "categories": [
+        "Movies"
+      ]
     },
     {
       "name": "Surya Comedy - rebranded as Sun Surya Comedy",
@@ -6864,7 +8322,9 @@
       "languages": [
         "Hindi"
       ],
-      "categories": []
+      "categories": [
+        "News"
+      ]
     },
     {
       "name": "Surya Samchar",
@@ -6890,9 +8350,21 @@
     {
       "name": "Suvarna News",
       "languages": [
-        "Gujarati"
+        "Gujarati",
+        "Kannada"
       ],
-      "categories": []
+      "categories": [
+        "General"
+      ]
+    },
+    {
+      "name": "Swadesh News",
+      "languages": [
+        "Hindi"
+      ],
+      "categories": [
+        "News"
+      ]
     },
     {
       "name": "SwapnaPlus TV",
@@ -6907,6 +8379,15 @@
         "Telugu"
       ],
       "categories": []
+    },
+    {
+      "name": "Swaraj Express",
+      "languages": [
+        "Hindi"
+      ],
+      "categories": [
+        "News"
+      ]
     },
     {
       "name": "Swatantra TV",
@@ -6930,7 +8411,8 @@
         "Gujarati"
       ],
       "categories": [
-        "News"
+        "News",
+        "General"
       ]
     },
     {
@@ -6977,6 +8459,33 @@
       "categories": []
     },
     {
+      "name": "TTV Punjabi",
+      "languages": [
+        "Punjabi"
+      ],
+      "categories": [
+        "General"
+      ]
+    },
+    {
+      "name": "TV 100 @ FREE",
+      "languages": [
+        "Hindi"
+      ],
+      "categories": [
+        "News"
+      ]
+    },
+    {
+      "name": "TV 5",
+      "languages": [
+        "Telugu"
+      ],
+      "categories": [
+        "General"
+      ]
+    },
+    {
       "name": "TV New",
       "languages": [
         "Gujarati"
@@ -6999,6 +8508,13 @@
         "Kannada"
       ],
       "categories": []
+    },
+    {
+      "name": "TV5 Monde",
+      "languages": [],
+      "categories": [
+        "General"
+      ]
     },
     {
       "name": "TV5 News",
@@ -7032,6 +8548,15 @@
       ]
     },
     {
+      "name": "TV9 GUJRATI",
+      "languages": [
+        "Gujarati"
+      ],
+      "categories": [
+        "General"
+      ]
+    },
+    {
       "name": "TV9 Gujarati",
       "languages": [
         "Gujarati"
@@ -7044,14 +8569,18 @@
         "Kannada",
         "Gujarati"
       ],
-      "categories": []
+      "categories": [
+        "General"
+      ]
     },
     {
       "name": "TV9 Maharashtra",
       "languages": [
         "Marathi"
       ],
-      "categories": []
+      "categories": [
+        "General"
+      ]
     },
     {
       "name": "TV9 Marathi",
@@ -7069,7 +8598,8 @@
         "Telugu"
       ],
       "categories": [
-        "News"
+        "News",
+        "General"
       ]
     },
     {
@@ -7107,6 +8637,15 @@
         "Gujarati"
       ],
       "categories": []
+    },
+    {
+      "name": "Tamil Naaptol",
+      "languages": [
+        "Tamil"
+      ],
+      "categories": [
+        "General"
+      ]
     },
     {
       "name": "Tamil One- cable TV, previously known as Tamil TV",
@@ -7181,12 +8720,30 @@
       ]
     },
     {
+      "name": "Tashan",
+      "languages": [
+        "Punjabi"
+      ],
+      "categories": [
+        "General"
+      ]
+    },
+    {
       "name": "Tata Play",
       "languages": [
         "Marathi",
         "Gujarati"
       ],
       "categories": []
+    },
+    {
+      "name": "Tehzeeb TV",
+      "languages": [
+        "Urdu"
+      ],
+      "categories": [
+        "General"
+      ]
     },
     {
       "name": "Telecommunications in India",
@@ -7202,6 +8759,24 @@
         "Gujarati"
       ],
       "categories": []
+    },
+    {
+      "name": "Telugu Naaptol",
+      "languages": [
+        "Telugu"
+      ],
+      "categories": [
+        "General"
+      ]
+    },
+    {
+      "name": "Tez",
+      "languages": [
+        "Hindi"
+      ],
+      "categories": [
+        "News"
+      ]
     },
     {
       "name": "Thailand",
@@ -7225,6 +8800,15 @@
       ],
       "categories": [
         "News"
+      ]
+    },
+    {
+      "name": "Thanti Tv",
+      "languages": [
+        "Tamil"
+      ],
+      "categories": [
+        "General"
       ]
     },
     {
@@ -7536,7 +9120,8 @@
         "Gujarati"
       ],
       "categories": [
-        "News"
+        "News",
+        "General"
       ]
     },
     {
@@ -7556,6 +9141,15 @@
       "categories": []
     },
     {
+      "name": "VTV News",
+      "languages": [
+        "Gujarati"
+      ],
+      "categories": [
+        "General"
+      ]
+    },
+    {
       "name": "Vanitha TV",
       "languages": [
         "Telugu"
@@ -7570,6 +9164,15 @@
       "categories": []
     },
     {
+      "name": "Vasanth",
+      "languages": [
+        "Tamil"
+      ],
+      "categories": [
+        "General"
+      ]
+    },
+    {
       "name": "Vasanth TV",
       "languages": [
         "Gujarati"
@@ -7581,7 +9184,9 @@
       "languages": [
         "Hindi"
       ],
-      "categories": []
+      "categories": [
+        "Religious"
+      ]
     },
     {
       "name": "Vendhar TV",
@@ -7642,6 +9247,22 @@
       ],
       "categories": [
         "News"
+      ]
+    },
+    {
+      "name": "WOW Cinema One",
+      "languages": [
+        "Hindi"
+      ],
+      "categories": [
+        "Movies"
+      ]
+    },
+    {
+      "name": "WOW MUSIC",
+      "languages": [],
+      "categories": [
+        "Music"
       ]
     },
     {
@@ -7725,6 +9346,24 @@
       ]
     },
     {
+      "name": "Zee Anmol",
+      "languages": [
+        "Hindi"
+      ],
+      "categories": [
+        "Entertainment"
+      ]
+    },
+    {
+      "name": "Zee Anmol Cinema",
+      "languages": [
+        "Hindi"
+      ],
+      "categories": [
+        "General"
+      ]
+    },
+    {
       "name": "Zee Bangla",
       "languages": [
         "Bengali"
@@ -7753,10 +9392,12 @@
     {
       "name": "Zee Bihar Jharkhand",
       "languages": [
-        "Hindi"
+        "Hindi",
+        "Bhojpuri"
       ],
       "categories": [
-        "News"
+        "News",
+        "General"
       ]
     },
     {
@@ -7852,6 +9493,15 @@
       "categories": []
     },
     {
+      "name": "Zee Hindustan",
+      "languages": [
+        "Hindi"
+      ],
+      "categories": [
+        "News"
+      ]
+    },
+    {
       "name": "Zee Kannada",
       "languages": [
         "Kannada"
@@ -7880,6 +9530,15 @@
         "Malayalam"
       ],
       "categories": []
+    },
+    {
+      "name": "Zee MPCG",
+      "languages": [
+        "Hindi"
+      ],
+      "categories": [
+        "News"
+      ]
     },
     {
       "name": "Zee Madhya Pradesh Chhattisgarh",
@@ -7999,7 +9658,9 @@
       "languages": [
         "Punjabi"
       ],
-      "categories": []
+      "categories": [
+        "General"
+      ]
     },
     {
       "name": "Zee Rajasthan",
@@ -8013,13 +9674,18 @@
       "languages": [
         "Hindi"
       ],
-      "categories": []
+      "categories": [
+        "News"
+      ]
     },
     {
       "name": "Zee Salaam",
-      "languages": [],
+      "languages": [
+        "Urdu"
+      ],
       "categories": [
-        "News"
+        "News",
+        "General"
       ]
     },
     {
@@ -8140,6 +9806,15 @@
         "English"
       ],
       "categories": []
+    },
+    {
+      "name": "Zee UP UK",
+      "languages": [
+        "Hindi"
+      ],
+      "categories": [
+        "News"
+      ]
     },
     {
       "name": "Zee Uttar Pradesh Uttarakhand",
