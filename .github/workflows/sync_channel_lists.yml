@@ -1,4 +1,4 @@
-name: Sync Channel Lists from Wikipedia
+name: Sync Channel Lists from BroadcastSeva
 
 on:
   schedule:
@@ -24,9 +24,9 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install requests beautifulsoup4 lxml PyMuPDF
+          pip install requests beautifulsoup4 lxml
 
-      - name: Fetch channel lists from Wikipedia
+      - name: Fetch channel lists from BroadcastSeva
         run: python scripts/sync_channel_lists.py
 
       - name: Verify output files
@@ -38,7 +38,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add channel_lists/ || true
           git diff --staged --quiet || {
-            git commit -m "Sync Wikipedia channel lists $(date -u +'%Y-%m-%d')"
+            git commit -m "Sync BroadcastSeva channel lists $(date -u +'%Y-%m-%d')"
             for i in 1 2 3; do
               git pull --rebase --autostash origin main && git push && break
               echo "Push failed (attempt $i), retrying..."

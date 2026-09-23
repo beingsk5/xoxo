@@ -70,9 +70,9 @@ jobs:
           python-version: ${{ env.PYTHON }}
           cache: pip
 
-      - run: pip install requests beautifulsoup4 lxml pymupdf
+      - run: pip install requests beautifulsoup4 lxml
 
-      - name: Refresh from Wikipedia + Airtel PDF
+      - name: Refresh from BroadcastSeva
         run: python scripts/sync_channel_lists.py
 
       - name: Commit
