@@ -59,13 +59,20 @@ class LanguageScraper:
         self.max_queries = max_queries
         self.raw_dir = RAW_OUTPUT_DIR
         self.raw_dir.mkdir(parents=True, exist_ok=True)
-        self.output_path = self.raw_dir / f"{language.lower()}.json"
-        self.resume_path = self.raw_dir / f"{language.lower()}_resume.json"
+        # Keep the exact language name (not lowercased) so the output file matches
+        # the workflow's upload path output/raw/<Language>.json on case-sensitive
+        # Linux runners.
+        self.output_path = self.raw_dir / f"{language}.json"
+        self.resume_path = self.raw_dir / f"{language}_resume.json"
 
     def run(self) -> ScrapeResult:
         """Execute the full scrape pipeline for this language (resume-aware)."""
         result = self._load_existing_result()
         resume = ResumeState.load(str(self.resume_path))
+
+        # Always write the output file immediately so an artifact/merge input
+        # exists even if the job is killed before the first checkpoint.
+        save_checkpoint(result, str(self.output_path))
 
         # Load channel list
         channels = self._load_channel_list()
