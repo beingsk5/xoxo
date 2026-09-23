@@ -1,16 +1,14 @@
 #!/usr/bin/env python3
-"""Fetch Indian TV channel lists from Wikipedia and Airtel PDF.
+"""Fetch Indian TV channel lists from the BroadcastSeva portal.
 
-No hardcoded lists. Sources:
-- Wikipedia language/category pages → per-language JSON files
-- Airtel PDF (channel_lists/airtel_channels.pdf) → merged into results
+No hardcoded lists. Source:
+- https://new.broadcastseva.gov.in satellite-permitted channels table (#satellite)
 - Merged file → all channels with languages + categories
 """
 
 import json
 import logging
 import re
-import time
 from datetime import datetime, timedelta
 from pathlib import Path
 from typing import Dict, List, Optional
@@ -18,238 +16,214 @@ from typing import Dict, List, Optional
 import requests
 from bs4 import BeautifulSoup
 
-try:
-    import pymupdf
-    HAS_PYMUPDF = True
-except ImportError:
-    HAS_PYMUPDF = False
-
 logger = logging.getLogger(__name__)
 
 BASE_DIR = Path(__file__).parent
 CHANNEL_LISTS_DIR = BASE_DIR / "channel_lists"
 CACHE_EXPIRY_HOURS = 24
 
-WIKI_LANGUAGES: Dict[str, str] = {
-    "Hindi":     "https://en.wikipedia.org/wiki/List_of_Hindi_television_channels",
-    "Tamil":     "https://en.wikipedia.org/wiki/List_of_Tamil-language_television_channels",
-    "Telugu":    "https://en.wikipedia.org/wiki/List_of_Telugu-language_television_channels",
-    "Malayalam": "https://en.wikipedia.org/wiki/List_of_Malayalam-language_television_channels",
-    "Kannada":   "https://en.wikipedia.org/wiki/List_of_Kannada-language_television_channels",
-    "Bengali":   "https://en.wikipedia.org/wiki/List_of_Bengali-language_television_channels",
-    "Marathi":   "https://en.wikipedia.org/wiki/List_of_Marathi-language_television_channels",
-    "Punjabi":   "https://en.wikipedia.org/wiki/List_of_Punjabi-language_television_channels",
-    "Gujarati":  "https://en.wikipedia.org/wiki/List_of_Gujarati-language_television_channels",
-    "Odia":      "https://en.wikipedia.org/wiki/List_of_Odia-language_television_channels",
-    "Urdu":      "https://en.wikipedia.org/wiki/List_of_Urdu-language_television_channels",
-    "Bhojpuri":  "https://en.wikipedia.org/wiki/List_of_Bhojpuri-language_television_channels",
-    "Konkani":   "https://en.wikipedia.org/wiki/List_of_Konkani-language_television_channels",
-    "Assamese":  "https://en.wikipedia.org/wiki/List_of_Assamese-language_television_channels",
-    "English":   "https://en.wikipedia.org/wiki/List_of_English-language_television_channels_in_India",
+BROADCASTSEVA_URL = (
+    "https://new.broadcastseva.gov.in/digigov-portal-web-app/webHP"
+    "?requestType=ApplicationRH&actionVal=userInformationSystem&screenId=2"
+)
+
+# Languages the scrape matrix actually uses (file stems: <lower>_channels.json).
+PIPELINE_LANGUAGES = [
+    "Hindi", "Tamil", "Telugu", "Malayalam", "Kannada", "Bengali",
+    "Marathi", "Punjabi", "Gujarati", "Odia", "Urdu", "Bhojpuri",
+    "Konkani", "Assamese", "English",
+]
+
+# 8th-schedule set used by the portal's "All Indian Scheduled langauge" field.
+SCHEDULED_LANGUAGES = {
+    "Assamese", "Bengali", "Bodo", "Dogri", "Gujarati", "Hindi", "Kannada",
+    "Kashmiri", "Konkani", "Maithili", "Malayalam", "Manipuri", "Marathi",
+    "Nepali", "Odia", "Punjabi", "Sanskrit", "Santhali", "Sindhi", "Tamil",
+    "Telugu", "Urdu", "Bhojpuri",
 }
 
-WIKI_CATEGORIES: Dict[str, str] = {
-    "Sports":    "https://en.wikipedia.org/wiki/Category:Sports_television_networks_in_India",
-    "Kids":      "https://en.wikipedia.org/wiki/Category:Children%27s_television_channels_in_India",
-    "Music":     "https://en.wikipedia.org/wiki/Category:Music_television_channels_in_India",
-    "News":      "https://en.wikipedia.org/wiki/Category:24-hour_television_news_channels_in_India",
-    "Movies":    "https://en.wikipedia.org/wiki/Category:Movie_channels_in_India",
-    "Religious": "https://en.wikipedia.org/wiki/Category:Religious_television_channels_in_India",
+LANG_ALIASES = {
+    "oriya": "Odia",
+    "odia": "Odia",
+    "bojpuri": "Bhojpuri",
+    "bhojpuri": "Bhojpuri",
+    "gujrati": "Gujarati",
+    "gujarati": "Gujarati",
+    "assameese": "Assamese",
+}
+
+_CATEGORY_MAP = {
+    "news and current affairs": "News",
+    "non- news and current affairs": "Entertainment",
+    "non-news and current Affairs": "Entertainment",
 }
 
 
-class WikipediaFetcher:
-    """Fetches and parses channel names from Wikipedia."""
+class BroadcastSevaFetcher:
+    """Fetch and parse the satellite-permitted channel table from BroadcastSeva."""
 
-    def __init__(self):
+    def __init__(self, url: str = BROADCASTSEVA_URL):
+        self.url = url
         self.session = requests.Session()
         self.session.headers.update({
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+            "User-Agent": (
+                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                "AppleWebKit/537.36 (KHTML, like Gecko) "
+                "Chrome/124.0.0.0 Safari/537.36"
+            ),
+            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+            "Accept-Language": "en-US,en;q=0.9",
         })
 
-    def fetch(self, url: str) -> Optional[str]:
+    def fetch(self) -> Optional[str]:
         try:
-            r = self.session.get(url, timeout=30)
+            r = self.session.get(self.url, timeout=45)
             r.raise_for_status()
+            if "satellite" not in r.text.lower():
+                logger.error("BroadcastSeva response missing satellite table")
+                return None
             return r.text
         except requests.RequestException as e:
-            logger.error(f"Failed: {url} — {e}")
+            logger.error(f"Failed: {self.url} — {e}")
             return None
 
-    def parse(self, html: str) -> List[str]:
-        """Extract channel names from Wikipedia page HTML."""
-        soup = BeautifulSoup(html, "html.parser")
-        channels = []
+    def parse(self, html: str) -> List[dict]:
+        """Extract rows from table#satellite."""
+        soup = BeautifulSoup(html, "lxml")
+        table = soup.find("table", id="satellite")
+        if not table:
+            logger.error("BroadcastSeva table#satellite not found")
+            return []
 
-        # Skip sections that are never channel lists
-        skip_sections = {"references", "see also", "further reading", "external links",
-                         "notes", "bibliography", "citations"}
-
-        # Process ALL <section> elements anywhere in the page
-        for section in soup.find_all("section"):
-            # Get section heading
-            heading = section.find(["h2", "h3"])
-            if heading:
-                title = heading.get_text(strip=True).lower().replace("[edit]", "").strip()
-                if any(skip in title for skip in skip_sections):
-                    continue
-
-                # Extract from wikitables in this section
-                for table in section.find_all("table", class_="wikitable"):
-                    for row in table.find_all("tr"):
-                        cells = row.find_all(["td", "th"])
-                        if cells:
-                            name = self._clean(cells[0].get_text(strip=True))
-                            if name:
-                                channels.append(name)
-
-                # Extract from lists in this section
-                for lst in section.find_all(["ul", "ol"]):
-                    for item in lst.find_all("li"):
-                        text = item.get_text(strip=True)
-                        name = self._clean(text)
-                        if name:
-                            channels.append(name)
-
-        # Fallback: global wikitables if section parsing found nothing
-        if not channels:
-            for table in soup.find_all("table", class_="wikitable"):
-                for row in table.find_all("tr"):
-                    cells = row.find_all(["td", "th"])
-                    if cells:
-                        name = self._clean(cells[0].get_text(strip=True))
-                        if name:
-                            channels.append(name)
-
-        # Category pages (mw-pages div)
-        cat_div = soup.find("div", id="mw-pages")
-        if cat_div:
-            for link in cat_div.find_all("a"):
-                title = link.get("title", "")
-                if title and not title.startswith(("Category:", "Wikipedia:")):
-                    name = self._clean(title)
-                    if name:
-                        channels.append(name)
-
+        body = table.find("tbody") or table
+        channels: List[dict] = []
+        for tr in body.find_all("tr"):
+            cells = [c.get_text(" ", strip=True) for c in tr.find_all("td")]
+            if len(cells) < 10:
+                continue
+            name = self._clean_name(cells[3])
+            if not name:
+                continue
+            raw_cat = cells[2]
+            raw_lang = cells[8]
+            channels.append({
+                "name": name,
+                "company": cells[1],
+                "category_raw": raw_cat,
+                "categories": self._map_category(raw_cat),
+                "language_raw": raw_lang,
+                "languages": self._parse_languages(raw_lang),
+                "permission_type": cells[6],
+                "satellite": cells[7],
+                "satellite_type": cells[9],
+                "source": "broadcastseva",
+            })
         return self._dedup(channels)
 
-    def _clean(self, name: str) -> Optional[str]:
-        # Split on common separators first (before removing brackets)
-        # Handle "Channel Name- part of..." or "Channel Name | details"
-        name = re.split(r'\s*[-–—]\s*(?:part of|owned by|with|launching|free|paid|SD|HD|FHD|UHD|4K|part of)', name, flags=re.IGNORECASE)[0]
-        name = re.split(r'\s*\|', name)[0]
-
-        name = re.sub(r'\s*\([^)]*\)\s*', ' ', name)
-        name = re.sub(r'\s*\[[^\]]*\]\s*', ' ', name)
-        name = re.sub(r'\s*\d{4}\s*$', '', name)
-        name = re.sub(r'^\s*\d+\.\s*', '', name)
-        name = re.sub(r'\s+', ' ', name).strip()
-        if len(name) < 3:
+    @staticmethod
+    def _clean_name(name: str) -> Optional[str]:
+        name = re.sub(r"\s+", " ", name or "").strip()
+        if not name or len(name) < 2:
             return None
-        if re.match(r'^\d+$', name):
-            return None
-        if re.match(r'^\d+[A-Z]', name):
-            return None
-        if len(name) > 60:
-            return None
-        skip = {"channel", "name", "launch", "video", "owner", "type", "genre",
-                "contents", "see also", "references", "external links",
-                "list of news channels in india"}
-        if name.lower() in skip:
-            return None
-        if re.search(r'(channelsToggle|subsection|defunct|launched|closed)', name, re.IGNORECASE):
+        if name.isdigit():
             return None
         return name
 
-    def _dedup(self, items: List[str]) -> List[str]:
+    @staticmethod
+    def _map_category(raw_cat: str) -> List[str]:
+        key = (raw_cat or "").strip().lower()
+        if key in _CATEGORY_MAP:
+            return [_CATEGORY_MAP[key]]
+        if "news" in key and not key.startswith("non"):
+            return ["News"]
+        return []
+
+    @staticmethod
+    def _parse_languages(raw: str) -> List[str]:
+        """Parse the portal Language cell into explicit language tags only.
+
+        "All Indian Scheduled langauge" is NOT expanded into every language —
+        that would put national/multi-language feeds into every <lang>_channels.json
+        (e.g. Tamil listing AAJ TAK). Only languages named in the cell count
+        for the per-language index; language_raw keeps the full portal string.
+        """
+        if not raw:
+            return []
+        langs: List[str] = []
+        seen = set()
+
+        def add(lang: str):
+            lang = LANG_ALIASES.get(lang.lower(), lang)
+            if lang and lang not in seen:
+                seen.add(lang)
+                langs.append(lang)
+
+        for part in raw.split(","):
+            token = part.strip()
+            if not token:
+                continue
+            low = token.lower()
+            if low in {"na", "n/a", "other", "-", "none"}:
+                continue
+            if "all indian scheduled" in low:
+                # Skip the umbrella phrase; explicit tokens in the same cell
+                # (e.g. "All Indian Scheduled langauge, English, Hindi") still count.
+                continue
+            if token in SCHEDULED_LANGUAGES or token == "English":
+                add(token)
+            else:
+                mapped = LANG_ALIASES.get(low)
+                if mapped:
+                    add(mapped)
+        return langs
+
+    @staticmethod
+    def _dedup(items: List[dict]) -> List[dict]:
         seen = set()
         result = []
         for item in items:
-            key = item.lower()
-            if key not in seen:
-                seen.add(key)
-                result.append(item)
+            key = item["name"].lower()
+            if key in seen:
+                continue
+            seen.add(key)
+            result.append(item)
         return result
 
 
-GENRE_LANG_MAP = {
-    'Hindi Entertainment': ('Hindi', 'Entertainment'),
-    'Hindi Movies': ('Hindi', 'Movies'),
-    'Hindi News': ('Hindi', 'News'),
-    'Sports': (None, 'Sports'),
-    'Music': (None, 'Music'),
-    'Kids': (None, 'Kids'),
-    'Infotainment': (None, 'General'),
-    'LIFESTYLE': (None, 'General'),
-    'News': (None, 'News'),
-    'Marathi': ('Marathi', 'General'),
-    'Punjabi': ('Punjabi', 'General'),
-    'Gujrati': ('Gujarati', 'General'),
-    'Oriya': ('Odia', 'General'),
-    'Urdu': ('Urdu', 'General'),
-    'North East': ('Assamese', 'General'),
-    'Bhojpuri': ('Bhojpuri', 'General'),
-    'Bengali': ('Bengali', 'General'),
-    'Tamil': ('Tamil', 'General'),
-    'Malayalam': ('Malayalam', 'General'),
-    'Telugu': ('Telugu', 'General'),
-    'Kannada': ('Kannada', 'General'),
-    'Devotional': (None, 'Religious'),
-    'Hindi': ('Hindi', 'General'),
-}
+def load_ott_platforms(path: Optional[Path] = None) -> List[str]:
+    """Load MIB OTT platform names for use as search seeds.
 
-
-class AirtelFetcher:
-    """Parse channel list from Airtel PDF."""
-
-    def __init__(self, pdf_path: Path = BASE_DIR / "channel_lists" / "airtel_channels.pdf"):
-        self.pdf_path = pdf_path
-
-    def available(self) -> bool:
-        return HAS_PYMUPDF and self.pdf_path.exists()
-
-    def parse(self) -> List[dict]:
-        if not self.available():
-            return []
-        doc = pymupdf.open(str(self.pdf_path))
-        channels = []
-        for page in doc:
-            lines = page.get_text().strip().split('\n')
-            i = 0
-            while i < len(lines):
-                line = lines[i].strip()
-                if line in GENRE_LANG_MAP and i + 1 < len(lines):
-                    ch_name = lines[i + 1].strip()
-                    if ch_name and not ch_name.replace('.', '').isdigit():
-                        lang, category = GENRE_LANG_MAP[line]
-                        channels.append({
-                            'name': ch_name,
-                            'languages': [lang] if lang else [],
-                            'categories': [category],
-                            'source': 'airtel_pdf',
-                        })
-                        i += 2
-                        continue
-                i += 1
-        # Dedup
-        seen = set()
-        unique = []
-        for ch in channels:
-            key = ch['name'].upper().strip()
-            if key not in seen:
-                seen.add(key)
-                unique.append(ch)
-        return unique
+    File: channel_lists/mib_ott_platforms.json (source: mib.gov.in OTT list).
+    Returns platform display names (unique, order preserved).
+    """
+    p = path or (CHANNEL_LISTS_DIR / "mib_ott_platforms.json")
+    try:
+        with open(p, "r", encoding="utf-8") as f:
+            data = json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError) as e:
+        logger.warning(f"OTT platform list unavailable: {e}")
+        return []
+    names: List[str] = []
+    seen = set()
+    for item in data.get("platforms", []):
+        name = (item.get("name") or "").strip()
+        if not name:
+            continue
+        key = name.lower()
+        if key in seen:
+            continue
+        seen.add(key)
+        names.append(name)
+    return names
 
 
 class ChannelListManager:
-    """Fetches from Wikipedia, saves JSON files, manages cache."""
+    """Fetches from BroadcastSeva, saves JSON files, manages cache."""
 
     def __init__(self, output_dir: Path = CHANNEL_LISTS_DIR):
         self.output_dir = output_dir
         self.output_dir.mkdir(parents=True, exist_ok=True)
-        self.fetcher = WikipediaFetcher()
-        self.airtel = AirtelFetcher()
+        self.fetcher = BroadcastSevaFetcher()
 
     def _write_json(self, path: Path, data: dict):
         with open(path, "w", encoding="utf-8") as f:
@@ -268,52 +242,48 @@ class ChannelListManager:
             return False
 
     def refresh(self, force: bool = False) -> List[dict]:
-        """Fetch from Wikipedia and save all JSON files. Returns merged list."""
+        """Fetch from BroadcastSeva and save all JSON files. Returns merged list."""
         if not force and self._is_cache_valid():
             logger.info("Cache valid, loading from disk")
             return self._load_merged()
 
-        logger.info("Fetching from Wikipedia...")
+        logger.info("Fetching from BroadcastSeva...")
+        html = self.fetcher.fetch()
+        if not html:
+            cached = self._load_merged()
+            if cached:
+                logger.warning("Fetch failed; keeping existing channel lists")
+                return cached
+            raise RuntimeError("BroadcastSeva fetch failed and no cache present")
 
-        # Fetch all language pages
-        languages: Dict[str, List[str]] = {}
-        for lang, url in WIKI_LANGUAGES.items():
-            html = self.fetcher.fetch(url)
-            if html:
-                channels = self.fetcher.parse(html)
-                languages[lang] = channels
-                logger.info(f"{lang}: {len(channels)} channels")
-            else:
-                languages[lang] = []
-            time.sleep(1)
-
-        # Fetch all category pages
-        categories: Dict[str, List[str]] = {}
-        for cat, url in WIKI_CATEGORIES.items():
-            html = self.fetcher.fetch(url)
-            if html:
-                channels = self.fetcher.parse(html)
-                categories[cat] = channels
-                logger.info(f"Category {cat}: {len(channels)} channels")
-            else:
-                categories[cat] = []
-            time.sleep(1)
-
-        # Build category map: channel_name_lower → [categories]
-        cat_map: Dict[str, List[str]] = {}
-        for cat_name, channels in categories.items():
-            for ch in channels:
-                key = ch.lower()
-                if key not in cat_map:
-                    cat_map[key] = []
-                if cat_name not in cat_map[key]:
-                    cat_map[key].append(cat_name)
+        rows = self.fetcher.parse(html)
+        if not rows:
+            cached = self._load_merged()
+            if cached:
+                logger.warning("Parse returned 0 rows; keeping existing channel lists")
+                return cached
+            raise RuntimeError("BroadcastSeva parse returned 0 rows")
 
         timestamp = datetime.now().isoformat()
 
-        # Save per-language files with categories
-        for lang_name, channels in languages.items():
-            entries = [{"name": ch, "categories": cat_map.get(ch.lower(), [])} for ch in channels]
+        # Drop stale per-language files so removed channels do not linger.
+        for path in self.output_dir.glob("*_channels.json"):
+            if path.name != "all_indian_channels.json":
+                path.unlink()
+
+        # Per-language files (pipeline languages only).
+        # Same entry shape as the merged file: name + languages + categories.
+        by_lang: Dict[str, List[dict]] = {lang: [] for lang in PIPELINE_LANGUAGES}
+        for row in rows:
+            for lang in row["languages"]:
+                if lang in by_lang:
+                    by_lang[lang].append({
+                        "name": row["name"],
+                        "languages": list(row["languages"]),
+                        "categories": row["categories"],
+                    })
+
+        for lang_name, entries in by_lang.items():
             entries.sort(key=lambda x: x["name"])
             self._write_json(self.output_dir / f"{lang_name.lower()}_channels.json", {
                 "timestamp": timestamp,
@@ -321,54 +291,30 @@ class ChannelListManager:
                 "total": len(entries),
                 "channels": entries,
             })
+            logger.info(f"{lang_name}: {len(entries)} channels")
 
-        # Save merged file — all channels from languages + categories
-        merged: Dict[str, dict] = {}
-        for lang_name, channels in languages.items():
-            for ch in channels:
-                key = ch.lower()
-                if key not in merged:
-                    merged[key] = {"name": ch, "languages": [], "categories": []}
-                if lang_name not in merged[key]["languages"]:
-                    merged[key]["languages"].append(lang_name)
-                for cat in cat_map.get(key, []):
-                    if cat not in merged[key]["categories"]:
-                        merged[key]["categories"].append(cat)
+        # Merged file — full BroadcastSeva metadata.
+        merged_rows = sorted(rows, key=lambda x: x["name"])
+        merged = [{
+            "name": r["name"],
+            "languages": r["languages"],
+            "categories": r["categories"],
+            "company": r.get("company", ""),
+            "language_raw": r.get("language_raw", ""),
+            "category_raw": r.get("category_raw", ""),
+            "satellite_type": r.get("satellite_type", ""),
+            "permission_type": r.get("permission_type", ""),
+            "source": "broadcastseva",
+        } for r in merged_rows]
 
-        # Add channels from categories that aren't in any language file
-        for cat_name, channels in categories.items():
-            for ch in channels:
-                key = ch.lower()
-                if key not in merged:
-                    merged[key] = {"name": ch, "languages": [], "categories": [cat_name]}
-                elif cat_name not in merged[key]["categories"]:
-                    merged[key]["categories"].append(cat_name)
-
-        # Merge Airtel PDF data
-        if self.airtel.available():
-            airtel_channels = self.airtel.parse()
-            for ach in airtel_channels:
-                key = ach["name"].lower().strip()
-                if key not in merged:
-                    merged[key] = {"name": ach["name"], "languages": ach["languages"], "categories": ach["categories"]}
-                else:
-                    for lang in ach["languages"]:
-                        if lang and lang not in merged[key]["languages"]:
-                            merged[key]["languages"].append(lang)
-                    for cat in ach["categories"]:
-                        if cat and cat not in merged[key]["categories"]:
-                            merged[key]["categories"].append(cat)
-            logger.info(f"Airtel PDF: {len(airtel_channels)} channels merged")
-
-        sorted_channels = sorted(merged.values(), key=lambda x: x["name"])
         self._write_json(self.output_dir / "all_indian_channels.json", {
             "timestamp": timestamp,
-            "total": len(sorted_channels),
-            "channels": sorted_channels,
+            "source": BROADCASTSEVA_URL,
+            "total": len(merged),
+            "channels": merged,
         })
-
-        logger.info(f"Total unique channels: {len(sorted_channels)}")
-        return sorted_channels
+        logger.info(f"Total unique channels: {len(merged)}")
+        return merged
 
     def _load_merged(self) -> List[dict]:
         path = self.output_dir / "all_indian_channels.json"

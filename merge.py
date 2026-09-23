@@ -3,7 +3,7 @@
 Uses:
   output/raw/*.json     → scraped channel data (one per language)
   data/                 → iptv-org database (categories, logos, NSFW filter)
-  channel_lists/        → Wikipedia/Airtel channel lists (language metadata)
+  channel_lists/        → BroadcastSeva channel lists (language metadata)
 
 Writes:
   output/India.m3u           - all channels
@@ -39,6 +39,8 @@ def load_all_results() -> List[Channel]:
         return all_channels
 
     for json_file in sorted(RAW_DIR.glob("*.json")):
+        if json_file.name.endswith("_resume.json"):
+            continue
         try:
             with open(json_file, "r", encoding="utf-8") as f:
                 data = json.load(f)
@@ -214,7 +216,7 @@ def merge():
     # Enrich from iptv-org database (data/channels.csv, feeds.csv, logos.csv)
     enrich_from_database(channels)
 
-    # Enrich from channel_lists/ (Wikipedia/Airtel metadata)
+    # Enrich from channel_lists/ (BroadcastSeva metadata)
     enrich_from_channel_lists(channels)
 
     # Classify uncategorized channels
