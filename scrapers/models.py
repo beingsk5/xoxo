@@ -79,3 +79,56 @@ class ScrapeResult:
         )
         result.channels = [Channel.from_dict(ch) for ch in data.get("channels", [])]
         return result
+
+
+@dataclass
+class ResumeState:
+    """Persisted scraper progress so a failed run can resume where it stopped."""
+    searched_queries: List[str] = field(default_factory=list)
+    pending_urls: List[str] = field(default_factory=list)
+    validated_urls: List[str] = field(default_factory=list)
+
+    def to_dict(self) -> dict:
+        return {
+            "searched_queries": sorted(self.searched_queries),
+            "pending_urls": sorted(self.pending_urls),
+            "validated_urls": sorted(self.validated_urls),
+        }
+
+    def update(self, searched=None, pending=None, validated=None):
+        if searched is not None:
+            self.searched_queries = sorted(searched)
+        if pending is not None:
+            self.pending_urls = sorted(pending)
+        if validated is not None:
+            self.validated_urls = sorted(validated)
+
+    def save(self, path: str):
+        import os
+        os.makedirs(os.path.dirname(path) or ".", exist_ok=True)
+        import json
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(self.to_dict(), f, ensure_ascii=False, indent=2)
+
+    def clear(self, path: str):
+        try:
+            import os
+            os.remove(path)
+        except OSError:
+            pass
+
+    @classmethod
+    def load(cls, path: str) -> "ResumeState":
+        import json, os
+        if not os.path.exists(path):
+            return cls()
+        try:
+            with open(path, "r", encoding="utf-8") as f:
+                data = json.load(f)
+            return cls(
+                searched_queries=data.get("searched_queries", []),
+                pending_urls=data.get("pending_urls", []),
+                validated_urls=data.get("validated_urls", []),
+            )
+        except Exception:
+            return cls()

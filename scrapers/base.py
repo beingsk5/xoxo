@@ -6,6 +6,7 @@ import logging
 import os
 import random
 import re
+import threading
 import time
 from pathlib import Path
 from typing import Dict, List, Optional, Set, Tuple
@@ -221,6 +222,60 @@ def search_brave(query: str, max_results: int = 10) -> Set[str]:
 
 
 ENGINE_LIST = [("Bing", search_bing), ("DuckDuckGo", search_ddg), ("Brave", search_brave)]
+
+
+# ═════════════════════════════════════════════════════════════════
+# Engine tracking: adaptive backoff + circuit breaker
+# ═════════════════════════════════════════════════════════════════
+
+_engine_lock = threading.Lock()
+_engine_stats: Dict[str, dict] = {}
+
+ENGINE_COOLDOWN = 300  # seconds an engine is skipped after tripping
+ENGINE_TRIP_THRESHOLD = 3  # consecutive empty results before cooldown
+
+
+def _engine_stat(name: str) -> dict:
+    with _engine_lock:
+        st = _engine_stats.setdefault(name, {
+            "calls": 0, "hits": 0, "misses": 0, "consec_misses": 0, "cooldown_until": 0.0,
+        })
+        return st
+
+
+def search_with_tracking(name: str, func, query: str, max_results: int = 10) -> Set[str]:
+    """Run one engine search with circuit breaker and adaptive cooldown.
+
+    - 3 consecutive empty results => skip the engine for ENGINE_COOLDOWN secs.
+    - Tracks per-engine hit/miss stats for observability.
+    """
+    st = _engine_stat(name)
+    with _engine_lock:
+        if st["cooldown_until"] > time.time():
+            return set()
+    hits = set()
+    try:
+        hits = func(query, max_results=max_results)
+    except Exception:
+        hits = set()
+    with _engine_lock:
+        st["calls"] += 1
+        if hits:
+            st["hits"] += len(hits)
+            st["consec_misses"] = 0
+        else:
+            st["misses"] += 1
+            st["consec_misses"] += 1
+            if st["consec_misses"] >= ENGINE_TRIP_THRESHOLD:
+                log.warning(f"[search] {name}: {st['consec_misses']} empty results in a row -> cooldown {ENGINE_COOLDOWN}s")
+                st["cooldown_until"] = time.time() + ENGINE_COOLDOWN
+                st["consec_misses"] = 0
+    return hits
+
+
+def engine_stats_summary() -> Dict[str, dict]:
+    with _engine_lock:
+        return {k: dict(v) for k, v in _engine_stats.items()}
 
 
 # ═════════════════════════════════════════════════════════════════
