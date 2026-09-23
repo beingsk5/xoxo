@@ -1,23 +1,9 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
-#EXTINF:-1 tvg-name="DD Urdu (720p)" tvg-logo="https://dtil.tmsimg.com/assets/s142808_ld_h9_aa.png?lock=720x540" group-title="Entertainment",DD Urdu (720p)
-https://cdn.pishow.tv/ott/live/8/master.m3u8
-#EXTINF:-1 tvg-name="4TV News (576p)" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/4_TV.png" group-title="News",4TV News (576p)
-https://cdn.pishow.tv/ott/live/1007/master.m3u8
-#EXTINF:-1 tvg-name="Bharat Express (576p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Bharat-Expess-Transparent.png" group-title="News",Bharat Express (576p)
-https://mumt07.tangotv.in/zHjX9OFlBHARATEXPRESS/index.m3u8
-#EXTINF:-1 tvg-name="Munsif TV (576p)" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Munsif_TV.png" group-title="News",Munsif TV (576p)
-https://live1.ottlive.co.in/munsiftv/munsiftv/index.m3u8
-#EXTINF:-1 tvg-name="News18 Urdu (1080p)" tvg-logo="https://i.imgur.com/8xnwMRR.png" group-title="News",News18 Urdu (1080p)
-https://n18syndication.akamaized.net/bpk-tv/News18_Urdu_NW18_MOB/output01/master.m3u8
-#EXTINF:-1 tvg-name="Salaam TV (720p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Salaam_TV_Hindi_2000_X_1125_transpharent.png" group-title="News",Salaam TV (720p)
-https://d2o3r1shda7xvv.cloudfront.net/index_5.m3u8
-#EXTINF:-1 tvg-name="Channel WIN (720p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Channel-Win-transparent.png" group-title="Religious",Channel WIN (720p)
-https://cdn.pishow.tv/ott/live/229/master.m3u8
-#EXTINF:-1 tvg-name="Peace TV Urdu (1080p)" group-title="Religious",Peace TV Urdu (1080p)
-https://dzkyvlfyge.erbvr.com/PeaceTvUrdu/index.m3u8
-#EXTINF:-1 tvg-name="Zainabia Channel" group-title="Religious",Zainabia Channel
-https://zainabia.livebox.co.in/ZainabiaChannelhls/channel.m3u8
-#EXTINF:-1 tvg-name="dzkyvlfyge erbvr com" group-title="Urdu",dzkyvlfyge erbvr com
-https://dzkyvlfyge.erbvr.com/PeaceTvUrdu/index.m3u8
-#EXTINF:-1 tvg-name="xstreamcp-assets-msp streamready in" group-title="Urdu",xstreamcp-assets-msp streamready in
-https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_DD_URDU/images/LOGO_HD/image.png
+#EXTINF:-1 tvg-name="live" tvg-logo="https://papaji.freetvindia.com/media/channels/asom_live_24x7.png" group-title="News",live
+https://www.youtube.com/c/BOLNewsofficial/live
+#EXTINF:-1 tvg-name="browse" group-title="Other",browse
+https://watch.sling.com/1/channel/e0281a1b23584cf58350c16168f19e3e/browse
+#EXTINF:-1 tvg-name="live m3u8" group-title="Other",live m3u8
+https://www.youtube.com/c/FRANCE24English/live.m3u8
+#EXTINF:-1 tvg-name="n-5xsxf" group-title="Other",n-5xsxf
+https://www.target.com/c/shop-all-categories/-/n-5xsxf

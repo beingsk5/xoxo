@@ -1,0 +1,71 @@
+{
+  "source": "web",
+  "language": "Bengali",
+  "timestamp": "2026-09-23T11:16:46.190598+00:00",
+  "queries_sent": 345,
+  "urls_found": 2573,
+  "urls_valid": 5,
+  "channels": [
+    {
+      "url": "https://www.youtube.com/c/gTVbyUbisoft/videos",
+      "name": "videos",
+      "language": "Bengali",
+      "category": "",
+      "source": "youtube",
+      "logo": "",
+      "extinf": "",
+      "tvg_id": "",
+      "tvg_name": "",
+      "group_title": ""
+    },
+    {
+      "url": "https://raw.githubusercontent.com/iptv-org/iptv/refs/heads/master/streams/us.m3u",
+      "name": "6 Wise Tv (720p)",
+      "language": "Bengali",
+      "category": "",
+      "source": "github",
+      "logo": "",
+      "extinf": "#EXTINF:-1 tvg-id=\"6WiseTv.us@SD\",6 Wise Tv (720p)",
+      "tvg_id": "6WiseTv.us@SD",
+      "tvg_name": "",
+      "group_title": ""
+    },
+    {
+      "url": "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/us_local.m3u",
+      "name": "AABC TV (480p)",
+      "language": "Bengali",
+      "category": "",
+      "source": "github",
+      "logo": "",
+      "extinf": "#EXTINF:-1 tvg-id=\"KIIOLD104.us@SD\",AABC TV (480p)",
+      "tvg_id": "KIIOLD104.us@SD",
+      "tvg_name": "",
+      "group_title": ""
+    },
+    {
+      "url": "https://www.youtube.com/c/Enterr10Rangeela",
+      "name": "Enterr10Rangeela",
+      "language": "Bengali",
+      "category": "",
+      "source": "youtube",
+      "logo": "",
+      "extinf": "",
+      "tvg_id": "",
+      "tvg_name": "",
+      "group_title": ""
+    },
+    {
+      "url": "https://www.youtube.com/c/EKHONTV/search",
+      "name": "search",
+      "language": "Bengali",
+      "category": "",
+      "source": "youtube",
+      "logo": "",
+      "extinf": "",
+      "tvg_id": "",
+      "tvg_name": "",
+      "group_title": ""
+    }
+  ],
+  "errors": []
+}
