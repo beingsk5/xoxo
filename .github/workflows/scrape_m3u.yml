@@ -27,10 +27,10 @@ jobs:
   # ═══════════════════════════════════════════════════════════════
   sync-data:
     name: Sync Database
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04
     timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Download iptv-org CSVs
         run: |
@@ -65,12 +65,12 @@ jobs:
 
   sync-channels:
     name: Sync Channel Lists
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04
     timeout-minutes: 20
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: ${{ env.PYTHON }}
           cache: pip
@@ -102,7 +102,7 @@ jobs:
   scrape-language:
     name: Scrape ${{ matrix.language }}
     needs: [sync-data, sync-channels]
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04
     timeout-minutes: ${{ matrix.timeout }}
     strategy:
       fail-fast: false
@@ -144,9 +144,9 @@ jobs:
             timeout: 60
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: ${{ env.PYTHON }}
           cache: pip
@@ -187,7 +187,7 @@ jobs:
 
       - name: Upload raw results
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: raw-${{ matrix.language }}
           path: output/raw/${{ matrix.language }}.json
@@ -197,15 +197,16 @@ jobs:
   # ═══════════════════════════════════════════════════════════════
   # MERGE: Fan-in — combine all raw JSONs → M3U output
   # ═══════════════════════════════════════════════════════════════
-  merge:
+merge:
     name: Merge & Package
     needs: [scrape-language]
-    runs-on: ubuntu-latest
+    if: ${{ !cancelled() }}
+    runs-on: ubuntu-26.04
     timeout-minutes: 15
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: ${{ env.PYTHON }}
           cache: pip
@@ -213,7 +214,7 @@ jobs:
       - run: pip install -r requirements.txt
 
       - name: Download all raw artifacts
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           pattern: raw-*
           path: output/raw
@@ -262,7 +263,7 @@ jobs:
           "
 
       - name: Upload final artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: india-iptv-${{ github.run_id }}
           path: |
@@ -304,3 +305,6 @@ jobs:
               print(f'| {lang} | {count} |')
           " >> "$GITHUB_STEP_SUMMARY"
           fi
+
+
+

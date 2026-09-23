@@ -10,15 +10,15 @@ permissions:
 
 jobs:
   sync:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04
     timeout-minutes: 15
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7
         with:
           python-version: '3.12'
 
@@ -76,3 +76,6 @@ jobs:
           git add channel_lists/ || true
           git diff --staged --quiet || git commit -m "Sync Wikipedia channel lists $(date -u +'%Y-%m-%d')"
           git push || true
+
+
+
