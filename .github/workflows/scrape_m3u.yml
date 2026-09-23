@@ -42,26 +42,21 @@ jobs:
           done
 
       - name: Validate
-        run: |
-          python3 -c "
-          import csv, sys
-          checks = {'channels.csv': ['id'], 'feeds.csv': ['channel'], 'languages.csv': ['code']}
-          for f, cols in checks.items():
-              try:
-                  with open(f'data/{f}') as fh:
-                      h = next(csv.reader(fh))
-                  ok = all(c in h for c in cols)
-                  print(f'  {f}: {\"OK\" if ok else \"MISSING COLS\"} ')
-              except FileNotFoundError:
-                  print(f'  {f}: NOT FOUND')
-          "
+        run: python scripts/validate_data.py
 
       - name: Commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/ || true
-          git diff --staged --quiet || git commit -m "sync(iptv-org): $(date -u +'%Y-%m-%d')" && git push
+          git diff --staged --quiet || {
+            git commit -m "sync(iptv-org): $(date -u +'%Y-%m-%d')"
+            for i in 1 2 3; do
+              git pull --rebase --autostash origin main && git push && break
+              echo "Push failed (attempt $i), retrying..."
+              sleep 10
+            done
+          }
 
   sync-channels:
     name: Sync Channel Lists
@@ -78,23 +73,21 @@ jobs:
       - run: pip install requests beautifulsoup4 lxml pymupdf
 
       - name: Refresh from Wikipedia + Airtel PDF
-        run: |
-          python3 -c "
-          import sys; sys.path.insert(0, '.')
-          from channel_lists import ChannelListManager
-          import logging
-          logging.basicConfig(level=logging.INFO, format='%(message)s')
-          m = ChannelListManager()
-          ch = m.refresh(force=True)
-          print(f'\nTotal: {len(ch)} channels')
-          "
+        run: python scripts/sync_channel_lists.py
 
       - name: Commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add channel_lists/ || true
-          git diff --staged --quiet || git commit -m "sync(channel-lists): $(date -u +'%Y-%m-%d')" && git push
+          git diff --staged --quiet || {
+            git commit -m "sync(channel-lists): $(date -u +'%Y-%m-%d')"
+            for i in 1 2 3; do
+              git pull --rebase --autostash origin main && git push && break
+              echo "Push failed (attempt $i), retrying..."
+              sleep 10
+            done
+          }
 
   # ═══════════════════════════════════════════════════════════════
   # SCRAPE: Fan-out — one job per language (parallel)
@@ -157,7 +150,7 @@ jobs:
         run: |
           for attempt in 1 2; do
             echo "=== Attempt $attempt ==="
-            if python -m scrapers.language "${{ matrix.language }}"; then
+            if python -m scrapers.language "${{ matrix.language }}" --timeout-minutes "${{ matrix.timeout }}"; then
               echo "SUCCESS on attempt $attempt"
               exit 0
             fi
@@ -171,19 +164,7 @@ jobs:
 
       - name: Show results
         if: always()
-        run: |
-          if [ -f "output/raw/${{ matrix.language }}.json" ]; then
-            python3 -c "
-          import json
-          d = json.load(open('output/raw/${{ matrix.language }}.json'))
-          print(f\"${{ matrix.language }}: {len(d.get('channels', []))} channels found\")
-          print(f\"  Queries: {d.get('queries_sent', 0)}\")
-          print(f\"  URLs found: {d.get('urls_found', 0)}\")
-          print(f\"  URLs valid: {d.get('urls_valid', 0)}\")
-          "
-          else
-            echo "No output file for ${{ matrix.language }}"
-          fi
+        run: python3 scripts/show_results.py "${{ matrix.language }}" || true
 
       - name: Upload raw results
         if: always()
@@ -197,7 +178,7 @@ jobs:
   # ═══════════════════════════════════════════════════════════════
   # MERGE: Fan-in — combine all raw JSONs → M3U output
   # ═══════════════════════════════════════════════════════════════
-merge:
+  merge:
     name: Merge & Package
     needs: [scrape-language]
     if: ${{ !cancelled() }}
@@ -221,46 +202,13 @@ merge:
           merge-multiple: true
 
       - name: Show raw inputs
-        run: |
-          echo "=== Raw files ==="
-          ls -lh output/raw/ 2>/dev/null || echo "No raw files"
-          echo ""
-          python3 -c "
-          import json, os
-          total = 0
-          for f in sorted(os.listdir('output/raw')):
-              if f.endswith('.json'):
-                  d = json.load(open(f'output/raw/{f}'))
-                  n = len(d.get('channels', []))
-                  total += n
-                  print(f'  {f:30s} {n:5d} channels')
-          print(f'  {\"TOTAL\":30s} {total:5d} channels')
-          "
+        run: python3 scripts/show_raw_inputs.py
 
       - name: Merge into M3U
         run: python merge.py
 
       - name: Validate output
-        run: |
-          python3 -c "
-          import os, sys
-          india = 'output/India.m3u'
-          if not os.path.exists(india):
-              print('ERROR: India.m3u not generated')
-              sys.exit(1)
-          with open(india) as f:
-              count = sum(1 for l in f if l.startswith('#EXTINF'))
-          print(f'India.m3u: {count} channels')
-
-          lang_dir = 'output/Language'
-          if os.path.exists(lang_dir):
-              langs = [f for f in os.listdir(lang_dir) if f.endswith('.m3u')]
-              print(f'Language files: {len(langs)}')
-          src_dir = 'output/Source'
-          if os.path.exists(src_dir):
-              srcs = [f for f in os.listdir(src_dir) if f.endswith('.m3u')]
-              print(f'Source files: {len(srcs)}')
-          "
+        run: python3 scripts/validate_output.py
 
       - name: Upload final artifacts
         uses: actions/upload-artifact@v7
@@ -278,33 +226,17 @@ merge:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add output/ || true
+          git add -f output/ || true
           if ! git diff --staged --quiet; then
             CHANNELS=$(grep -c '^#EXTINF' output/India.m3u 2>/dev/null || echo "0")
             git commit -m "scrape: $CHANNELS channels $(date -u +'%Y-%m-%d %H:%M UTC')"
-            git push
+            for i in 1 2 3; do
+              git pull --rebase --autostash origin main && git push && break
+              echo "Push failed (attempt $i), retrying..."
+              sleep 10
+            done
           fi
 
       - name: Summary
         if: always()
-        run: |
-          echo "## Scrape Results" >> "$GITHUB_STEP_SUMMARY"
-          echo "" >> "$GITHUB_STEP_SUMMARY"
-          if [ -f output/stats.json ]; then
-            python3 -c "
-          import json
-          s = json.load(open('output/stats.json'))
-          print(f'| Metric | Value |')
-          print(f'|--------|-------|')
-          print(f'| Channels | {s[\"total_channels\"]} |')
-          print(f'| Languages | {len(s[\"languages\"])} |')
-          print(f'| Sources | {len(s[\"sources\"])} |')
-          print()
-          print('### By Language')
-          for lang, count in sorted(s['languages'].items(), key=lambda x: -x[1]):
-              print(f'| {lang} | {count} |')
-          " >> "$GITHUB_STEP_SUMMARY"
-          fi
-
-
-
+        run: python3 scripts/summary.py

@@ -17,11 +17,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v7
 
-      - name: Set up Python
-        uses: actions/setup-python@v7
-        with:
-          python-version: '3.12'
-
       - name: Download latest data from iptv-org/database
         run: |
           mkdir -p data
@@ -31,34 +26,18 @@ jobs:
           done
 
       - name: Verify data integrity
-        run: |
-          python -c "
-          import csv
-          files = {
-              'channels.csv': ['id', 'name'],
-              'feeds.csv': ['channel', 'languages'],
-              'logos.csv': ['channel', 'url'],
-              'languages.csv': ['code', 'name'],
-          }
-          for fname, required_cols in files.items():
-              with open(f'data/{fname}', 'r', encoding='utf-8') as f:
-                  reader = csv.reader(f)
-                  headers = next(reader)
-                  rows = sum(1 for _ in reader)
-              missing = [c for c in required_cols if c not in headers]
-              if missing:
-                  raise ValueError(f'{fname}: missing columns {missing}')
-              print(f'{fname}: {rows} rows, columns OK')
-          print('All data files validated.')
-          "
+        run: python scripts/validate_data.py --full
 
       - name: Commit updated data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/ || true
-          git diff --staged --quiet || git commit -m "Sync iptv-org database $(date -u +'%Y-%m-%d')"
-          git push || true
-
-
-
+          git diff --staged --quiet || {
+            git commit -m "Sync iptv-org database $(date -u +'%Y-%m-%d')"
+            for i in 1 2 3; do
+              git pull --rebase --autostash origin main && git push && break
+              echo "Push failed (attempt $i), retrying..."
+              sleep 10
+            done
+          }

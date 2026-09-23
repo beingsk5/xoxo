@@ -27,55 +27,21 @@ jobs:
           pip install requests beautifulsoup4 lxml PyMuPDF
 
       - name: Fetch channel lists from Wikipedia
-        run: |
-          python -c "
-          import sys
-          sys.path.insert(0, '.')
-          from channel_lists import ChannelListManager
-
-          manager = ChannelListManager()
-          channels = manager.refresh(force=True)
-
-          print(f'\nTotal unique channels: {len(channels)}')
-
-          # Show language breakdown
-          lang_counts = {}
-          for ch in channels:
-              for lang in ch.get('languages', []):
-                  lang_counts[lang] = lang_counts.get(lang, 0) + 1
-          for lang, count in sorted(lang_counts.items(), key=lambda x: -x[1]):
-              print(f'  {lang}: {count}')
-
-          # Show category breakdown
-          cat_counts = {}
-          for ch in channels:
-              for cat in ch.get('categories', []):
-                  cat_counts[cat] = cat_counts.get(cat, 0) + 1
-          print()
-          for cat, count in sorted(cat_counts.items(), key=lambda x: -x[1]):
-              print(f'  {cat}: {count}')
-          "
+        run: python scripts/sync_channel_lists.py
 
       - name: Verify output files
-        run: |
-          echo "=== Output files ==="
-          ls -la channel_lists/
-          echo ""
-          echo "=== Merged file ==="
-          python -c "import json; d=json.load(open('channel_lists/all_indian_channels.json')); print(f\"Total: {d['total']} channels\")"
-          echo ""
-          echo "=== Language files ==="
-          for f in channel_lists/*_channels.json; do
-            echo "$f: $(python -c "import json; d=json.load(open('$f')); print(d.get('total', 0), 'channels')")"
-          done
+        run: python scripts/verify_channel_lists.py
 
       - name: Commit updated channel lists
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add channel_lists/ || true
-          git diff --staged --quiet || git commit -m "Sync Wikipedia channel lists $(date -u +'%Y-%m-%d')"
-          git push || true
-
-
-
+          git diff --staged --quiet || {
+            git commit -m "Sync Wikipedia channel lists $(date -u +'%Y-%m-%d')"
+            for i in 1 2 3; do
+              git pull --rebase --autostash origin main && git push && break
+              echo "Push failed (attempt $i), retrying..."
+              sleep 10
+            done
+          }
