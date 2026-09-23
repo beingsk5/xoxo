@@ -2,6 +2,7 @@
 
 Uses data_loader.py for all database access (single source of truth).
 """
+import html
 import logging
 import os
 import random
@@ -10,7 +11,7 @@ import threading
 import time
 from pathlib import Path
 from typing import Dict, List, Optional, Set, Tuple
-from urllib.parse import quote_plus, urlparse
+from urllib.parse import quote_plus, unquote, urlparse
 
 import requests
 from bs4 import BeautifulSoup
@@ -35,8 +36,38 @@ EXTINF_ATTR_RE = re.compile(r'(\w[\w-]*)="([^"]*)"')
 STREAM_PROTOCOLS = (
     r"https?://", r"rtsp://", r"rtmp://", r"rtmps://",
     r"srt://", r"udp://", r"rtp://", r"p2p://",
-    r"acestream://", r"webrtc://", r"wss?://",
+    r"acestream://", r"webrtc://", r"ws://", r"wss?://",
     r"mms://", r"rist://",
+)
+
+# Playlist container extensions
+PLAYLIST_EXTS = (
+    ".m3u", ".m3u8", ".m3u_plus", ".txt", ".json", ".xml",
+    ".asx", ".pls", ".xspf", ".tv", ".bqt", ".conf",
+)
+# Direct live-stream extensions (terminal path segment)
+STREAM_EXTS = (
+    ".ts", ".m3u8", ".mpd", ".mp4", ".fmp4", ".flv",
+    ".m4v", ".mkv", ".avi", ".mov", ".wmv", ".3gp",
+    ".asf", ".manifest", "/manifest", "ism/manifest",
+)
+# Xtream/Stalker API + standard stream path identifiers
+API_HINTS = (
+    "/get.php", "player_api.php", "xmltv.php", "/c/",
+    "/portal.php", "stalker_portal", "panel_api",
+    "enigma22_script", "/manifest", "manifest.mpd",
+    "playlist.m3u8", "index.m3u8", "/stream/",
+    "output=m3u8", "output=ts", "auth_username",
+    "auth_password", "device_mac", "?token=",
+)
+# Substring patterns used when harvesting links out of HTML pages
+STREAM_HINTS = PLAYLIST_EXTS + STREAM_EXTS + API_HINTS
+# Generic extensions (.json/.txt/.xml/.tv/...) only count with IPTV context
+GENERIC_EXTS = (".txt", ".json", ".xml", ".tv", ".bqt", ".conf")
+IPTV_CONTEXT_RE = re.compile(
+    r"(m3u|playlist|stream|live|iptv|channel|get\.php|player_api|"
+    r"xtream|manifest|hls|/tv/|bouquet|enigma|playlist)",
+    re.IGNORECASE,
 )
 ANY_URL_RE = re.compile(
     r"""(?:"|')?(https?://[^\s"'<>]+|rtsp://[^\s"'<>]+|rtmp://[^\s"'<>]+|"""
@@ -48,7 +79,7 @@ ANY_URL_RE = re.compile(
 )
 
 XTREAM_API_RE = re.compile(
-    r"(get\.php|player_api\.php|xmltv\.php|/portal\.php|/c/|"
+    r"(get\.php|player_api\.php|xmltv\.php|/portal\.php|"
     r"stalker_portal|panel_api|enigma22_script|"
     r"auth_username|auth_password|device_mac|output=ts|output=m3u8)",
     re.IGNORECASE,
@@ -63,7 +94,7 @@ INDIAN_KEYWORDS = [
     "zee tamil", "zee telugu", "zee kannada", "zee bengali", "zee punjabi",
     "zee anmol", "zee world", "zee bangla", "zee keralam",
     "colors", "colors bangla", "colors marathi", "colors kannada", "colors infinity",
-    "mtv india", "mtv", "andtv", "and tv", "&tv", "rishtey",
+    "mtv india", "andtv", "and tv", "&tv", "rishtey",
     "dd national", "dd news", "dd sports", "dd kisan", "dd bharti", "dd india", "doordarshan",
     "ndtv", "ndtv 24x7", "ndtv india", "ndtv profit",
     "times now", "republic", "republic bharat", "aaj tak", "india today",
@@ -78,11 +109,43 @@ INDIAN_KEYWORDS = [
     "hungama", "shemaroo", "thop tv", "pikashow",
 ]
 
+# Strong Indian network/channel names. Weak global brands (Star/Sony/MTV/Sun)
+# only match with an Indian suffix so foreign feeds are rejected.
 INDIAN_NAMES_RE = re.compile(
-    r"\b(Star\s*\w+|Sony\s*\w*|Zee\s*\w+|Colors?\s*\w*|MTV\s*\w*|DD\s*\w+|"
-    r"NDTV\s*\w*|News18\s*\w*|ABP\s*\w+|TV9\s*\w*|Sun\s*\w+|Jaya\s*\w+|"
+    r"\b(?:"
+    r"Star\s*(?:Plus|Sports|Gold|UTV|Maa|Jalsha|Pravah|Suvarna|Vijay|Bharat|One|Movies|Champions)|"
+    r"Sony\s*(?:TV|SAB|SET|Ten|PIX|SIX|MAX|YAY|Marathi|Pal|Liv|Sports|BBC)|"
+    r"Zee\s*\w+|"
+    r"Colors?(?:\s*\w+)?|"
+    r"MTV\s*(?:India|Indies)|"
+    r"DD\s*\w+|Doordarshan|"
+    r"NDTV\s*\w*|News18\s*\w*|ABP\b(?:\s+\w+)?|TV9\s*\w*|"
+    r"Sun\s*(?:TV|Music|News)|Jaya\s+TV|"
     r"Hindi|Tamil|Telugu|Malayalam|Kannada|Bengali|Marathi|Gujarati|Punjabi|"
-    r"Odia|Bhojpuri|Assamese|Urdu|Rajasthani|Haryanvi|IPL|BCCI|India|Desi|Bollywood)\b",
+    r"Odia|Bhojpuri|Assamese|Urdu|Rajasthani|Haryanvi|IPL|BCCI|India|Desi|Bollywood"
+    r")\b",
+    re.IGNORECASE,
+)
+
+# Multi-word / specific brand keywords: safe as plain substring matches.
+# Short ambiguous tokens need word boundaries (tv9 must not hit cctv9hd).
+_KEYWORD_SUBSTR = [k for k in INDIAN_KEYWORDS if " " in k or len(k) > 6]
+_KEYWORD_WORD = [k for k in INDIAN_KEYWORDS if " " not in k and len(k) <= 6]
+INDIAN_KEYWORDS_RE = re.compile(
+    r"(?<![\w])(" + "|".join(re.escape(k) for k in sorted(_KEYWORD_WORD, key=len, reverse=True)) + r")(?![\w])",
+    re.IGNORECASE,
+)
+
+# Non-live assets that must never become playlist entries.
+NON_LIVE_RE = re.compile(
+    r"(?<![a-z0-9])(?:promo|trailer|teaser|sample|preview|behind[-_]?the[-_]?scenes|"
+    r"episode|full[-_]?show|highlights?|recap|vod|vhs|clip|s\d{1,2}e\d{1,3})(?![a-z0-9])"
+    r"|\.(?:png|jpe?g|gif|webp|svg|ico|bmp)(?:\?|$)",
+    re.IGNORECASE,
+)
+# Vendor VOD/video folders (not live linear streams)
+NON_LIVE_PATH_RE = re.compile(
+    r"/videos?/|/nickjr/|/nickjr\b|/vod/|/assets/videos/",
     re.IGNORECASE,
 )
 
@@ -377,10 +440,27 @@ def extract_extinf_blocks(text: str) -> dict:
 # ═════════════════════════════════════════════════════════════════
 
 def is_indian(text: str) -> bool:
+    if not text:
+        return False
     if INDIAN_NAMES_RE.search(text):
         return True
     tl = text.lower()
-    return any(kw in tl for kw in INDIAN_KEYWORDS)
+    if any(kw in tl for kw in _KEYWORD_SUBSTR):
+        return True
+    if INDIAN_KEYWORDS_RE.search(text):
+        return True
+    # Hyphen/underscore URL forms: zee-tv.m3u8, star_plus.m3u8
+    squashed = re.sub(r"[-_./]+", " ", text)
+    return bool(INDIAN_KEYWORDS_RE.search(squashed) or INDIAN_NAMES_RE.search(squashed))
+
+
+def is_live_candidate(url: str, name: str = "") -> bool:
+    """Reject promo/VOD/clip/trailer one-off assets; keep live channel URLs."""
+    if NON_LIVE_RE.search(name) or NON_LIVE_RE.search(url):
+        return False
+    if NON_LIVE_PATH_RE.search(url):
+        return False
+    return True
 
 
 def detect_source_name(url: str) -> str:
@@ -434,6 +514,114 @@ def check_link(url: str) -> Tuple[bool, bool, str]:
         return True, indian, first_extinf
     except Exception:
         return False, False, ""
+
+
+# ═════════════════════════════════════════════════════════════════
+# Harvesting: mine stream links out of HTML pages
+# ═════════════════════════════════════════════════════════════════
+
+def unwrap_link(link: str) -> str:
+    """Unwrap redirector/encoded links (Google /url?q=, &amp;, json \\u0026...).
+
+    Returns the most likely real target URL.
+    """
+    link = html.unescape(link)
+    # Google redirect: /url?q=<encoded-target>&...
+    m = re.search(r"(?:https?://[^/]+)?/url\?(?:q|url)=([^&]+)", link, re.IGNORECASE)
+    if m:
+        try:
+            link = unquote(m.group(1))
+        except Exception:
+            pass
+    # JSON-escaped sequences inside otherwise raw URLs
+    if "\\u003c" in link or "\\u0026" in link or "\\/" in link or "\\r" in link or "\\n" in link:
+        try:
+            link = link.encode("utf-8").decode("unicode_escape")
+        except Exception:
+            pass
+    # After decoding, trim trailing HTML/JSON junk (</a>, \r\n, quotes, tags)
+    link = re.split(r"[<>\s\"'\\]+", link)[0]
+    return link.rstrip(".,;:!?)]}")
+
+
+def harvest_stream_links(text: str, limit: int = 40) -> Set[str]:
+    """Extract candidate stream/playlist URLs from an HTML (or any) page body.
+
+    Uses the full extension/protocol/API spec to keep links that look like
+    real playlists or direct live streams, then unwraps redirectors.
+    """
+    out: Set[str] = set()
+    for raw in extract_links(text):
+        link = unwrap_link(raw)
+        low = link.lower()
+        # keep if it matches a playlist/stream extension, API hint, or stream protocol
+        hit = any(h in low for h in STREAM_HINTS)
+        # .json/.txt/.xml etc. are generic -> require IPTV context to avoid noise
+        if hit and any(g in low for g in GENERIC_EXTS) and not IPTV_CONTEXT_RE.search(low):
+            hit = False
+        if not hit:
+            # protocol-prefix streams (udp://, rtmp://, etc.)
+            hit = low.startswith(tuple(p.rstrip(":/") + "://" for p in STREAM_PROTOCOLS if "://" in p)) or \
+                  any(scheme in low for scheme in (
+                      "rtsp://", "rtmp://", "rtmps://", "srt://", "udp://", "rtp://",
+                      "p2p://", "acestream://", "webrtc://", "ws://", "wss://",
+                      "mms://", "rist://",
+                  ))
+        if hit and len(link) >= 8:
+            out.add(link)
+            if len(out) >= limit:
+                break
+    return out
+
+
+def probe_url(url: str) -> Tuple[str, bool, str, Set[str], Dict[str, dict]]:
+    """Fetch once and classify.
+
+    Returns (kind, is_indian, first_extinf, harvested_links, blocks):
+      kind = "playlist" -> body is an M3U/playlist; blocks = every EXTINF entry
+             so a multi-channel playlist expands into individual channels
+      kind = "page"      -> HTML page, harvested_links = candidate streams inside
+      kind = "dead"      -> error / nothing useful
+    """
+    try:
+        h = random.choice(HEADERS).copy()
+        h["Accept"] = "*/*"
+        resp = requests.get(url, headers=h, timeout=10, stream=True, allow_redirects=True)
+        if resp.status_code >= 400:
+            return "dead", False, "", set(), {}
+        ct = resp.headers.get("Content-Type", "").lower()
+        content = b""
+        sz = 0
+        for chunk in resp.iter_content(8192):
+            content += chunk
+            sz += len(chunk)
+            if sz > 500000:
+                break
+        resp.close()
+        text = content.decode("utf-8", errors="ignore")
+
+        # Direct playlist / stream body
+        if is_m3u(text) and ("html" not in ct or XTREAM_API_RE.search(url)):
+            first_extinf = ""
+            for line in text.split("\n"):
+                if line.strip().startswith("#EXTINF"):
+                    first_extinf = line.strip()
+                    break
+            # Single-stream manifests often have no EXTINF/channel names in the
+            # body; the URL itself (e.g. 0182.DDNews.in.m3u8) may carry the
+            # Indian marker, so check both.
+            indian = is_indian(text) or is_indian(url)
+            blocks = extract_extinf_blocks(text)
+            return "playlist", indian, first_extinf, set(), blocks
+
+        # HTML (or page-like) body -> harvest embedded stream links
+        if "html" in ct or "<html" in text[:2000].lower() or "<!doctype" in text[:2000].lower():
+            harvested = harvest_stream_links(text)
+            if harvested:
+                return "page", False, "", harvested, {}
+        return "dead", False, "", set(), {}
+    except Exception:
+        return "dead", False, "", set(), {}
 
 
 # ═════════════════════════════════════════════════════════════════

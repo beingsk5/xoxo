@@ -64,13 +64,16 @@ def dedup_channels(channels: List[Channel]) -> List[Channel]:
 
 
 def filter_blocked(channels: List[Channel]) -> List[Channel]:
-    """Remove NSFW/blocked channels using data/blocklist.csv."""
+    """Remove NSFW channels only (blocklist.csv reason='nsfw' + is_nsfw/xxx).
+
+    DMCA and other blocklist reasons are NOT filtered here.
+    """
     db = get_database()
     before = len(channels)
     filtered = [ch for ch in channels if not db.is_name_blocked(ch.name)]
     removed = before - len(filtered)
     if removed:
-        log.info(f"  Filtered {removed} blocked channels")
+        log.info(f"  Filtered {removed} NSFW channels")
     return filtered
 
 

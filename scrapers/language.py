@@ -11,6 +11,7 @@ import json
 import logging
 import os
 import random
+import re
 import sys
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed, FIRST_COMPLETED, wait
@@ -20,7 +21,8 @@ from typing import List, Set
 
 from scrapers.base import (
     ENGINE_LIST, check_link, crawl_website, detect_source_name, engine_stats_summary,
-    get_database, parse_extinf, save_checkpoint, search_with_tracking,
+    get_database, is_indian, is_live_candidate, parse_extinf,
+    probe_url, save_checkpoint, search_with_tracking,
 )
 from scrapers.models import Channel, ResumeState, ScrapeResult
 
@@ -35,6 +37,40 @@ CRAWL_WORKERS = 8           # parallel official-site crawlers
 RESUME_EVERY = 100          # persist resume state every N completed items
 SITES_CAP = 40              # max official websites crawled per run
 URLS_PER_SITE = 300         # max URLs collected from a single site (anti-bloat)
+HARVEST_CAP = 3000          # max stream URLs harvested from HTML search pages
+HARVEST_PER_PAGE = 40       # max stream URLs kept per harvested page
+# Quality/region tokens allowed as extras when token-matching channel names
+# (list "zee tv" accepts "zee tv hd"; never accepts "mtv azerbaijan").
+_SAFE_NAME_EXTRAS = frozenset({
+    "hd", "fhd", "sd", "uhd", "4k", "hls", "live", "online", "hi", "hindi",
+    "india", "in", "tv", "1", "2", "3", "4", "5", "sd1", "hd1", "fhd1",
+    "sdhd", "mux", "hevc", "h264", "h265", "aac", "ac3", "multi", "dual",
+    "audio", "sub", "subs", "clean", "raw", "backup", "alt", "main",
+    "entertainment", "news", "sports", "music", "movies", "cinema", "prime",
+    "plus", "max", "pro", "ultra", "super", "world", "national", "regional",
+    "1080p", "720p", "576p", "540p", "480p", "360p", "240p", "2160p",
+    "1080i", "720i", "576i", "480i", "1440p",
+    "geo-blocked", "geoblocked", "geo", "blocked", "offline", "unavailable",
+    "multi-audio", "dual-audio", "enhanced", "extended", "simulcast",
+})
+
+
+def _norm_channel_name(name: str) -> str:
+    """Strip quality/geo annotations: 'Aaj Tak (1080p)' -> 'aaj tak'."""
+    n = (name or "").lower()
+    n = re.sub(r"\([^)]*\)", " ", n)
+    n = re.sub(r"\[[^\]]*\]", " ", n)
+    n = re.sub(r"\b\d{3,4}[pi]\b", " ", n)
+    n = re.sub(r"[|_/\\-]+", " ", n)
+    return " ".join(n.split())
+
+
+_GEO_BLOCKED_RE = re.compile(r"geo[\s_-]*blocked", re.IGNORECASE)
+
+
+def _is_geo_blocked_name(name: str) -> bool:
+    """True when the channel name carries a Geo-blocked annotation."""
+    return bool(_GEO_BLOCKED_RE.search(name or ""))
 
 
 class _LockSet:
@@ -74,28 +110,57 @@ class LanguageScraper:
         # Linux runners.
         self.output_path = self.raw_dir / f"{language}.json"
         self.resume_path = self.raw_dir / f"{language}_resume.json"
-        self._deadline = 0.0  # absolute epoch time when search must stop
+        self._deadline = 0.0        # absolute epoch time when search must stop
+        self._hard_deadline = 0.0   # absolute epoch time when validation must stop (near job end)
+        self._crawl_deadline = 0.0  # absolute epoch time when official-site crawl must stop
         self._start_t = 0.0   # when run() began
+        self._allowed_names: Set[str] = set()  # lowercased names for this language
 
     # ── Time budget ───────────────────────────────────────────────
 
     def _apply_budget(self, reserve_seconds: int = 300):
-        """Compute the search deadline from the CI timeout.
+        """Compute search + validation deadlines from the CI timeout.
 
-        reserve_seconds is held back for site-crawling, validation and the
-        final checkpoint+save so the job finishes before timeout-minutes.
+        Search stops at (total - reserve) so validation + final save fit in
+        the reserve window. Validation runs until (total - save_buffer),
+        i.e. it may use the whole reserve except a small buffer for the
+        final checkpoint+save. The reserve is capped at half the total
+        budget so a short job still gets a usable search window.
+
+        Official-site crawl gets only a slice of the search window so it
+        cannot starve web search + URL validation.
         Without a configured timeout the scraper runs uncapped (max_queries).
         """
         self._start_t = time.time()
         if self.timeout_minutes:
-            self._deadline = self._start_t + (self.timeout_minutes * 60) - reserve_seconds
+            total = self.timeout_minutes * 60
+            reserve = int(min(reserve_seconds, total * 0.5))
+            save_buffer = int(min(60, total * 0.1))
+            search_window = total - reserve
+            crawl_slice = int(min(75, max(20, search_window * 0.25)))
+            self._deadline = self._start_t + search_window
+            self._crawl_deadline = self._start_t + crawl_slice
+            self._hard_deadline = self._start_t + total - save_buffer
             log.info(
                 f"[{self.language}] time budget: {self.timeout_minutes} min job -> "
-                f"search until ~{max(0, int((self._deadline - self._start_t))) / 60:.1f} min"
+                f"crawl ~{crawl_slice}s, search until ~{max(0, search_window) / 60:.1f} min, "
+                f"validate until ~{max(0, int((self._hard_deadline - self._start_t))) / 60:.1f} min "
+                f"(reserve {reserve}s)"
             )
 
     def _budget_exhausted(self) -> bool:
+        """True when the *search* window has closed."""
         return self._deadline > 0 and time.time() >= self._deadline
+
+    def _crawl_exhausted(self) -> bool:
+        """True when the official-site crawl slice is over (or search is)."""
+        if self._crawl_deadline and time.time() >= self._crawl_deadline:
+            return True
+        return self._budget_exhausted()
+
+    def _validate_exhausted(self) -> bool:
+        """True when the *validation* window has closed (near job end)."""
+        return self._hard_deadline > 0 and time.time() >= self._hard_deadline
 
     def _remaining_seconds(self) -> float:
         if not self._deadline:
@@ -121,6 +186,7 @@ class LanguageScraper:
             return result
 
         log.info(f"[{self.language}] {len(channels)} channels in list")
+        self._allowed_names = self._build_name_index(channels)
 
         # Enrich with database metadata (website, alt_names, network, category)
         channels = self._enrich_with_database(channels)
@@ -138,6 +204,7 @@ class LanguageScraper:
             log.info(f"[{self.language}] all {len(queries)} queries already searched")
 
         # Crawl official channel websites (parallel) for direct stream URLs
+        # (bounded by its own short slice so search still gets time).
         self._crawl_sites_phase(channels, resume, result)
 
         # Search the web (parallel across queries), then validate (parallel)
@@ -221,65 +288,214 @@ class LanguageScraper:
         log.info(f"[{self.language}] {result.urls_found} unique URLs to validate")
 
     def _validate_phase(self, resume: ResumeState, result: ScrapeResult):
-        """Validate URLs in parallel. Add valid Indian channels to result."""
-        validated: Set[str] = set(resume.validated_urls)
-        urls_to_check = list(set(resume.pending_urls) - validated)
-        log.info(f"[{self.language}] validating {len(urls_to_check)} URLs (skipping {len(validated)} done)")
+        """Probe URLs, mine HTML pages for stream links, validate what we find.
 
-        def check_one(url: str):
-            valid, indian, extinf = check_link(url)
-            if valid and indian:
-                return url, extinf
-            return None
+        Every pending URL is probed once. If it's an M3U playlist we keep it.
+        If it's an HTML search-result page we harvest the stream/playlist links
+        embedded inside it and validate those instead of discarding the page.
+        """
+        validated: Set[str] = set(resume.validated_urls)
+        # Work queue: original search results + harvested stream links.
+        pending: Set[str] = set(resume.pending_urls) - validated
+        queue: List[str] = list(pending)
+        harvested: Set[str] = set()
+
+        log.info(f"[{self.language}] probing {len(queue)} URLs (skipping {len(validated)} done)")
 
         done = 0
-        total = len(urls_to_check)
+        idx = 0
+
         # Validate in bounded chunks so an approaching deadline is respected
         # and the final checkpoint always runs (job completes before timeout).
         with ThreadPoolExecutor(max_workers=VALIDATE_WORKERS) as executor:
-            idx = 0
-            while idx < total and not self._budget_exhausted():
-                chunk = urls_to_check[idx: idx + VALIDATE_WORKERS]
+            while idx < len(queue) and not self._validate_exhausted():
+                chunk = queue[idx: idx + VALIDATE_WORKERS]
                 idx += VALIDATE_WORKERS
-                futures = {executor.submit(check_one, url): url for url in chunk}
+                futures = {executor.submit(probe_url, url): url for url in chunk}
+                new_links: List[str] = []
                 for completed in as_completed(futures):
                     url = futures[completed]
-                    item = completed.result()
-                    if item:
-                        _, extinf = item
-                        parsed = {}
-                        if extinf:
-                            parsed = parse_extinf(extinf)
+                    kind, indian, extinf, links, blocks = completed.result()
 
-                        attrs = parsed.get("attrs", {})
-                        name = parsed.get("display_name", "") or url.split("/")[-1].replace(".", " ")
-                        logo = attrs.get("tvg-logo", "")
-
-                        ch = Channel(
-                            url=url,
-                            name=name,
-                            language=self.language,
-                            category="",  # will be enriched in merge
-                            source=detect_source_name(url),
-                            logo=logo,
-                            extinf=extinf,
-                            tvg_id=attrs.get("tvg-id", ""),
-                            tvg_name=attrs.get("tvg-name", ""),
-                            group_title=attrs.get("group-title", ""),
-                        )
-                        result.channels.append(ch)
+                    if kind == "playlist":
+                        if blocks:
+                            # Multi-channel playlist: expand every entry. The
+                            # playlist itself already passed is_indian at probe
+                            # time — keep entries that are live + match this
+                            # language's channel list (or are individually Indian
+                            # when the playlist is mixed).
+                            for entry_url, blk in blocks.items():
+                                ename = blk["name"] or ""
+                                if not is_live_candidate(entry_url, ename):
+                                    continue
+                                # Unnamed entries need Indian/language proof in
+                                # the URL/EXTINF; named entries must match this
+                                # language's list (or be individually Indian).
+                                # Geo-blocked labels are annotations only — never
+                                # a reject reason.
+                                if not self._matches_language(ename, entry_url, blk["extinf"]):
+                                    continue
+                                # Geo-blocked entries already accepted above;
+                                # other named entries need Indian/list proof.
+                                if ename and not _is_geo_blocked_name(ename):
+                                    if not (indian or is_indian(ename) or is_indian(entry_url)):
+                                        if not self._name_in_index(ename):
+                                            continue
+                                self._add_channel(
+                                    result, entry_url, blk["extinf"],
+                                    name=ename, logo=blk["logo"],
+                                )
+                        elif is_live_candidate(url, extinf):
+                            dname = parse_extinf(extinf).get("display_name", "") if extinf else ""
+                            if dname and _is_geo_blocked_name(dname):
+                                self._add_channel(result, url, extinf, name=dname)
+                            elif dname:
+                                if self._matches_language(dname, url, extinf):
+                                    self._add_channel(result, url, extinf, name=dname)
+                            elif is_indian(url) or is_indian(extinf):
+                                self._add_channel(result, url, extinf)
+                    elif kind == "page":
+                        # Mine the page for real stream links, bound per page.
+                        for link in list(links)[:HARVEST_PER_PAGE]:
+                            if link not in validated and link not in pending:
+                                if len(harvested) >= HARVEST_CAP:
+                                    break
+                                new_links.append(link)
+                                pending.add(link)
+                                harvested.add(link)
 
                     validated.add(url)
                     done += 1
                     if done % RESUME_EVERY == 0:
-                        resume.update(searched=set(resume.searched_queries), pending=set(resume.pending_urls), validated=validated)
+                        resume.update(searched=set(resume.searched_queries), pending=set(pending), validated=validated)
                         resume.save(str(self.resume_path))
                         save_checkpoint(result, str(self.output_path))
-                        log.info(f"[{self.language}] Validated [{done}/{total}] - {len(result.channels)} Indian channels")
+                        log.info(
+                            f"[{self.language}] Validated [{done}/{len(queue)}] - "
+                            f"{len(result.channels)} Indian channels, "
+                            f"{len(harvested)} harvested links queued"
+                        )
+
+                # Append freshly harvested links so the loop picks them up.
+                if new_links and not self._validate_exhausted():
+                    queue.extend(new_links)
 
         resume.update(searched=set(resume.searched_queries), pending=set(), validated=validated)
         resume.save(str(self.resume_path))
         result.urls_valid = len(result.channels)
+        if harvested:
+            log.info(f"[{self.language}] harvested {len(harvested)} stream links from HTML pages")
+
+    def _build_name_index(self, channels: List[dict]) -> Set[str]:
+        """Known channel names/alt-names for this language (for accept/reject)."""
+        idx: Set[str] = set()
+        for ch in channels:
+            for key in ("name", "canonical_name"):
+                n = (ch.get(key) or "").strip().lower()
+                if n:
+                    idx.add(n)
+            for an in ch.get("alt_names") or []:
+                an = (an or "").strip().lower()
+                if an:
+                    idx.add(an)
+        return idx
+
+    def _name_in_index(self, name: str) -> bool:
+        """True when the raw name (or its token form) is on this language's list."""
+        n = _norm_channel_name(name)
+        if not n:
+            return False
+        if n in self._allowed_names:
+            return True
+        n_tokens = set(n.split()) - {"", "hd", "fhd", "sd", "uhd", "4k", "p", "i"}
+        for allowed in self._allowed_names:
+            if not allowed:
+                continue
+            a_tokens = set(allowed.split())
+            if n_tokens == a_tokens:
+                return True
+            if a_tokens <= n_tokens and (n_tokens - a_tokens) <= _SAFE_NAME_EXTRAS:
+                return True
+            if n_tokens <= a_tokens and (a_tokens - n_tokens) <= _SAFE_NAME_EXTRAS:
+                return True
+        return False
+
+    @staticmethod
+    def _is_geo_blocked_name(name: str) -> bool:
+        return _is_geo_blocked_name(name)
+
+    def _matches_language(self, name: str, url: str, extinf: str = "") -> bool:
+        """True if a discovered stream plausibly belongs to this language's run.
+
+        Accepts when the language name appears in metadata, or the channel name
+        token-matches the language's known channel list (allowing only quality
+        extras like HD/FHD — not foreign country suffixes).
+        """
+        lang = self.language.lower()
+        # Geo-blocked channels are never filtered out — the label alone keeps them.
+        if _is_geo_blocked_name(name):
+            return True
+        text = f"{name} {url} {extinf}".lower()
+        if lang and lang in text:
+            return True
+        # Indian brand/network names pass even when not on this language list
+        # (mixed playlists, multi-language channel lists).
+        if name and is_indian(name):
+            return True
+        # Normalize: strip (1080p) annotations before token match
+        n = " ".join(re.sub(r"[()\[\]]", " ", (name or "").lower()).split())
+        n = re.sub(r"\b\d{3,4}[pi]\b", " ", n)
+        n = " ".join(n.split())
+        if not n:
+            # Unnamed: require Indian/language proof in the URL or EXTINF
+            # itself — never auto-accept (empty name used to always pass).
+            probe_text = f"{url} {extinf}".lower()
+            return bool(is_indian(url) or is_indian(extinf) or (lang and lang in probe_text))
+        if not self._allowed_names:
+            # No list to match — only keep if Indian/language signal present.
+            return bool(is_indian(name) or is_indian(url) or is_indian(extinf) or (lang and lang in text))
+        if n in self._allowed_names:
+            return True
+        n_tokens = set(n.split()) - {"", "hd", "fhd", "sd", "uhd", "4k", "p", "i"}
+        for allowed in self._allowed_names:
+            if not allowed:
+                continue
+            a_tokens = set(allowed.split())
+            if n_tokens == a_tokens:
+                return True
+            # e.g. list "zee tv" vs discovered "zee tv hd"; never allow
+            # extra tokens like "azerbaijan"/"finland".
+            if a_tokens <= n_tokens and (n_tokens - a_tokens) <= _SAFE_NAME_EXTRAS:
+                return True
+            if n_tokens <= a_tokens and (a_tokens - n_tokens) <= _SAFE_NAME_EXTRAS:
+                return True
+        return False
+
+    def _add_channel(self, result: ScrapeResult, url: str, extinf: str,
+                     name: str = "", logo: str = ""):
+        parsed = {}
+        if extinf:
+            parsed = parse_extinf(extinf)
+
+        attrs = parsed.get("attrs", {})
+        if not name:
+            name = parsed.get("display_name", "") or url.split("/")[-1].replace(".", " ")
+        if not logo:
+            logo = attrs.get("tvg-logo", "")
+
+        ch = Channel(
+            url=url,
+            name=name,
+            language=self.language,
+            category="",  # will be enriched in merge
+            source=detect_source_name(url),
+            logo=logo,
+            extinf=extinf,
+            tvg_id=attrs.get("tvg-id", ""),
+            tvg_name=attrs.get("tvg-name", ""),
+            group_title=attrs.get("group-title", ""),
+        )
+        result.channels.append(ch)
 
     def _load_existing_result(self) -> ScrapeResult:
         """Load channels already found by a previous partial run."""
@@ -384,18 +600,41 @@ class LanguageScraper:
 
         done = 0
         with ThreadPoolExecutor(max_workers=CRAWL_WORKERS) as executor:
-            futures = [executor.submit(crawl_one, s) for s in to_crawl]
-            for completed in as_completed(futures):
-                done += 1
-                completed.result()  # propagate unexpected errors
-                if done % RESUME_EVERY == 0:
-                    resume.update(
-                        searched=set(resume.searched_queries),
-                        pending=pending.as_set(),
-                        validated=set(resume.validated_urls),
-                        crawled=crawled,
-                    )
-                    resume.save(str(self.resume_path))
+            futures = set()
+            site_idx = 0
+            # Submit in waves so an approaching deadline stops new crawls;
+            # the reserve covers validation + final save.
+            def launch():
+                nonlocal site_idx
+                while site_idx < len(to_crawl) and len(futures) < CRAWL_WORKERS:
+                    if self._crawl_exhausted() and futures:
+                        return
+                    futures.add(executor.submit(crawl_one, to_crawl[site_idx]))
+                    site_idx += 1
+
+            launch()
+            while futures:
+                finished, futures = wait(futures, return_when=FIRST_COMPLETED, timeout=10)
+                for completed in finished:
+                    done += 1
+                    completed.result()  # propagate unexpected errors
+                    if done % RESUME_EVERY == 0:
+                        resume.update(
+                            searched=set(resume.searched_queries),
+                            pending=pending.as_set(),
+                            validated=set(resume.validated_urls),
+                            crawled=crawled,
+                        )
+                        resume.save(str(self.resume_path))
+                if futures and not self._crawl_exhausted():
+                    launch()
+                elif futures and self._crawl_exhausted():
+                    # Slice/deadline hit: let in-flight crawls finish, stop new.
+                    finished, futures = wait(futures, return_when=FIRST_COMPLETED, timeout=30)
+                    for completed in finished:
+                        done += 1
+                        completed.result()
+                    break
 
         resume.update(
             searched=set(resume.searched_queries),
