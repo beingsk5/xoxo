@@ -1,0 +1,19 @@
+#EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
+#EXTINF:-1 tvg-name="RZD TV (1080p) [Geo-blocked]" group-title="Other",RZD TV (1080p) [Geo-blocked]
+http://hls.tva.cdnvideo.ru/tva/tvahd.sdp/playlist.m3u8
+#EXTINF:-1 tvg-name="Мир Белогорья (720p) [Geo-blocked]" group-title="Other",Мир Белогорья (720p) [Geo-blocked]
+http://live-mirbelogorya.cdnvideo.ru/mirbelogorya/mirbelogorya1.sdp/playlist.m3u8
+#EXTINF:-1 tvg-name="Ратник (1080p) [Geo-blocked]" group-title="Other",Ратник (1080p) [Geo-blocked]
+http://live-ratnik.cdnvideo.ru/ratnik/ratnik.sdp/playlist.m3u8
+#EXTINF:-1 tvg-name="Регион 29 (Архангельск) (720p) [Geo-blocked]" group-title="Other",Регион 29 (Архангельск) (720p) [Geo-blocked]
+http://live-atkmedia.cdnvideo.ru/atkmedia/atkmedia/playlist.m3u8
+#EXTINF:-1 tvg-name="РЖД ТВ (360p) [Geo-blocked]" group-title="Other",РЖД ТВ (360p) [Geo-blocked]
+http://hls.tva.cdnvideo.ru/tva/tva.sdp/playlist.m3u8
+#EXTINF:-1 tvg-name="РЖД ТВ (720p) [Geo-blocked]" group-title="Other",РЖД ТВ (720p) [Geo-blocked]
+http://hls.tva.cdnvideo.ru/tva/tvahd.sdp/chunklist.m3u8
+#EXTINF:-1 tvg-name="Солнечногорское ТВ (360p) [Geo-blocked]" group-title="Other",Солнечногорское ТВ (360p) [Geo-blocked]
+http://hls.solntv.cdnvideo.ru/solntv/solntv.sdp/playlist.m3u8
+#EXTINF:-1 tvg-name="Шансон ТВ (512p) [Geo-blocked]" group-title="Other",Шансон ТВ (512p) [Geo-blocked]
+http://hls.shansontv.cdnvideo.ru/shansontv/shansontv.sdp/playlist.m3u8
+#EXTINF:-1 tvg-name="Шансон ТВ (576p) [Geo-blocked]" group-title="Other",Шансон ТВ (576p) [Geo-blocked]
+http://hls.shansontv.cdnvideo.ru/shansontv/shansontv.smil/playlist.m3u8

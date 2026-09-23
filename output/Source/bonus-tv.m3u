@@ -1,0 +1,11 @@
+#EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
+#EXTINF:-1 tvg-name="9 Волна (576p) [Geo-blocked]" group-title="Other",9 Волна (576p) [Geo-blocked]
+http://cdn-01.bonus-tv.ru:8080/9volna/playlist.m3u8
+#EXTINF:-1 tvg-name="TVMChannel (576p) [Geo-blocked]" group-title="Other",TVMChannel (576p) [Geo-blocked]
+http://cdn-01.bonus-tv.ru:8080/tvm_edge/playlist.m3u8
+#EXTINF:-1 tvg-name="Вместе-РФ (1080p) [Geo-blocked]" group-title="Other",Вместе-РФ (1080p) [Geo-blocked]
+http://cdn-01.bonus-tv.ru:8080/vmesterf/index.m3u8
+#EXTINF:-1 tvg-name="Конный Мир (576p) [Geo-blocked]" group-title="Other",Конный Мир (576p) [Geo-blocked]
+http://cdn-01.bonus-tv.ru/konnyimir/playlist.m3u8
+#EXTINF:-1 tvg-name="Просвещение (540p) [Geo-blocked]" group-title="Other",Просвещение (540p) [Geo-blocked]
+https://cdn-01.bonus-tv.ru/prosveschenie_edge/playlist.m3u8

@@ -1,4 +1,6 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
+#EXTINF:-1 tvg-name="Sony Yay! (1080p)" tvg-logo="https://dtil.tmsimg.com/assets/s159100_ld_h15_aa.png?lock=720x540" group-title="Animation",Sony Yay! (1080p)
+https://cloudplay-sonyliv.pages.dev/yay.m3u8
 #EXTINF:-1 tvg-name="Sony Aath (1080p)" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG002YP08L.png?lock=720x540" group-title="Entertainment",Sony Aath (1080p)
 https://cloudplay-sonyliv.pages.dev/aath.m3u8
 #EXTINF:-1 tvg-name="Sony Marathi (1080p)" tvg-logo="https://dtil.tmsimg.com/assets/s157970_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Sony Marathi (1080p)
@@ -7,8 +9,6 @@ https://cloudplay-sonyliv.pages.dev/marathi.m3u8
 https://cloudplay-sonyliv.pages.dev/pal.m3u8
 #EXTINF:-1 tvg-name="Sony SAB HD (1080p)" tvg-logo="https://dtil.tmsimg.com/assets/s159099_ld_h15_ab.png?lock=720x540" group-title="Entertainment",Sony SAB HD (1080p)
 https://cloudplay-sonyliv.pages.dev/sabhd.m3u8
-#EXTINF:-1 tvg-name="Sony Yay! (1080p)" tvg-logo="https://dtil.tmsimg.com/assets/s159100_ld_h15_aa.png?lock=720x540" group-title="Kids",Sony Yay! (1080p)
-https://cloudplay-sonyliv.pages.dev/yay.m3u8
 #EXTINF:-1 tvg-name="Sony Max (1080p)" tvg-logo="https://dtil.tmsimg.com/assets/s157590_ld_h15_aa.png?lock=720x540" group-title="Movies",Sony Max (1080p)
 https://cloudplay-sonyliv.pages.dev/max.m3u8
 #EXTINF:-1 tvg-name="Sony Max 2 (1080p)" tvg-logo="https://dtil.tmsimg.com/assets/s157590_ld_h15_aa.png?lock=720x540" group-title="Movies",Sony Max 2 (1080p)
@@ -17,29 +17,7 @@ https://cloudplay-sonyliv.pages.dev/max2.m3u8
 https://cloudplay-sonyliv.pages.dev/maxhd.m3u8
 #EXTINF:-1 tvg-name="Sony Pix HD (1080p)" tvg-logo="https://dtil.tmsimg.com/assets/s143803_ld_h15_aa.png?lock=720x540" group-title="Movies",Sony Pix HD (1080p)
 https://cloudplay-sonyliv.pages.dev/pixhd.m3u8
-#EXTINF:-1 tvg-name="Sony Wah (1080p)" tvg-logo="https://dtil.tmsimg.com/assets/s157974_ld_h15_aa.png?lock=720x540" group-title="Movies",Sony Wah (1080p)
-https://cloudplay-sonyliv.pages.dev/wah.m3u8
-#EXTINF:-1 tvg-name="cloudplay-sonyliv pages dev" group-title="Sports",cloudplay-sonyliv pages dev
-https://cloudplay-sonyliv.pages.dev/ten5.m3u8
-#EXTINF:-1 tvg-name="cloudplay-sonyliv pages dev" group-title="Sports",cloudplay-sonyliv pages dev
-https://cloudplay-sonyliv.pages.dev/max.m3u8
-#EXTINF:-1 tvg-name="cloudplay-sonyliv pages dev" group-title="Sports",cloudplay-sonyliv pages dev
-https://cloudplay-sonyliv.pages.dev/ten5hd.m3u8
-#EXTINF:-1 tvg-name="cloudplay-sonyliv pages dev" group-title="Sports",cloudplay-sonyliv pages dev
-https://cloudplay-sonyliv.pages.dev/yay.m3u8
-#EXTINF:-1 tvg-name="cloudplay-sonyliv pages dev" group-title="Sports",cloudplay-sonyliv pages dev
-https://cloudplay-sonyliv.pages.dev/aath.m3u8
-#EXTINF:-1 tvg-name="cloudplay-sonyliv pages dev" group-title="Sports",cloudplay-sonyliv pages dev
-https://cloudplay-sonyliv.pages.dev/wah.m3u8
-#EXTINF:-1 tvg-name="cloudplay-sonyliv pages dev" group-title="Sports",cloudplay-sonyliv pages dev
-https://cloudplay-sonyliv.pages.dev/maxhd.m3u8
-#EXTINF:-1 tvg-name="cloudplay-sonyliv pages dev" group-title="Sports",cloudplay-sonyliv pages dev
-https://cloudplay-sonyliv.pages.dev/marathi.m3u8
-#EXTINF:-1 tvg-name="cloudplay-sonyliv pages dev" group-title="Sports",cloudplay-sonyliv pages dev
-https://cloudplay-sonyliv.pages.dev/pal.m3u8
-#EXTINF:-1 tvg-name="cloudplay-sonyliv pages dev" group-title="Sports",cloudplay-sonyliv pages dev
-https://cloudplay-sonyliv.pages.dev/bbcearthhd.m3u8
-#EXTINF:-1 tvg-name="Sony BBC Earth HD (1080p)" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Sports",Sony BBC Earth HD (1080p)
+#EXTINF:-1 tvg-name="Sony BBC Earth HD (1080p)" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Other",Sony BBC Earth HD (1080p)
 https://cloudplay-sonyliv.pages.dev/bbcearthhd.m3u8
 #EXTINF:-1 tvg-name="Sony Sports Ten 1 (1080p)" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Sports",Sony Sports Ten 1 (1080p)
 https://cloudplay-sonyliv.pages.dev/ten1.m3u8

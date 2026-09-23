@@ -1,5 +1,7 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
-#EXTINF:-1 tvg-name="Hyder TV (720p)" group-title="Kids",Hyder TV (720p)
-https://cdn.live247stream.com/hyder/tv/playlist.m3u8
-#EXTINF:-1 tvg-name="Gaunda Punjab TV (720p)" group-title="Religious",Gaunda Punjab TV (720p)
-http://cdn6.live247stream.com/gaundapunjab/tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Canada One (720p) [Not 24/7]" group-title="Other",Canada One (720p) [Not 24/7]
+http://cdn8.live247stream.com/canadaone/tv/playlist.m3u8
+#EXTINF:-1 tvg-name="playlist m3u8" group-title="Other",playlist m3u8
+http://cdn9.live247stream.com/punjabitvcanada/tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Urdu TV Toronto" group-title="Other",Urdu TV Toronto
+http://cdn4.live247stream.com/urdu/tv/playlist.m3u8

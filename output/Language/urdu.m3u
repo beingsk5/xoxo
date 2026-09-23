@@ -1,9 +1,121 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
+#EXTINF:-1 tvg-name="Cartoon Network" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_2010_logo.svg/960px-Cartoon_Network_2010_logo.svg.png" group-title="Animation",Cartoon Network
+http://45.132.87.69:8080/cartoon_network/index.m3u8
+#EXTINF:-1 tvg-name="A-Plus TV (576p)" group-title="Entertainment",A-Plus TV (576p)
+http://115.42.65.142:9981/stream/channelid/113328724
+#EXTINF:-1 tvg-name="Aaj Entertainment (1080p)" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Entertainment",Aaj Entertainment (1080p)
+https://ml-pull-dvc-myco.io:2096/AAJ_ENTERTAINMENT/index.m3u8
+#EXTINF:-1 tvg-name="ETV Urdu" group-title="Entertainment",ETV Urdu
+https://etv-urdu.akamaized.net/i/etv_urdu_live_1@373059/index_5_av-p.m3u8
+#EXTINF:-1 tvg-name="Express Entertainment (1080p)" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Entertainment",Express Entertainment (1080p)
+https://ml-pull-dvc-myco.io:2096/EXPRESS_ENTERTAINMENT/index.m3u8
+#EXTINF:-1 tvg-name="FilmRise Black TV" group-title="Entertainment",FilmRise Black TV
+https://aka-live491.delivery.roku.com/8ce67602-c071-4cae-8b5b-e555cf05145f/t2-origin/out/v1/live.m3u8
+#EXTINF:-1 tvg-name="Play Entertainment (576p)" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Entertainment",Play Entertainment (576p)
+http://103.250.28.74:8000/play/a050/index.m3u8
+#EXTINF:-1 tvg-name="Hum TV (720p)" group-title="Music",Hum TV (720p)
+https://g4wlkwx8l23a-hls-live.5centscdn.com/HUM/271ddf829afeece44d8732757fba1a66.sdp/playlist_dvr.m3u8
+#EXTINF:-1 tvg-name="Hum TV SD" group-title="Music",Hum TV SD
+https://cdn4.mjunoon.tv:8087/streamtest/82M/chunks.m3u8
+#EXTINF:-1 tvg-name="_24x7 News" group-title="News",_24x7 News
+http://edge-ind.inapcdn.in:1935/device2/camera2.stream/chunklist.m3u8
+#EXTINF:-1 tvg-name="_92 News" group-title="News",_92 News
+http://92news.vdn.dstreamone.net/92newshd/92hd/playlist.m3u8
+#EXTINF:-1 tvg-name="Aaj News (576p)" group-title="News",Aaj News (576p)
+http://115.42.65.142:9981/stream/channelid/750987367
+#EXTINF:-1 tvg-name="Abb Takk (576p)" group-title="News",Abb Takk (576p)
+http://115.42.65.142:9981/stream/channelid/852828604
+#EXTINF:-1 tvg-name="ARY News" group-title="News",ARY News
+https://cdn07lhr.tamashaweb.com:8087/jazzauth/vsat-arynews-abr/live/vsat-arynews-H/chunks_dvr_timeshift-0-3600.m3u8
+#EXTINF:-1 tvg-name="ARY News" group-title="News",ARY News
+http://158.69.228.195:1935/newsmobile/myStream/playlist.m3u8
+#EXTINF:-1 tvg-name="ATV" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/ATV_INDIA_NEWS.png" group-title="News",ATV
+http://88.212.15.19/live/test_atv_hungary_1200_atk/playlist.m3u8
+#EXTINF:-1 tvg-name="Capital TV" group-title="News",Capital TV
+https://cdn4.mjunoon.tv:8087/streamtest/111M/chunks.m3u8
+#EXTINF:-1 tvg-name="Geo News" group-title="News",Geo News
+http://stream.jeem.tv/geo/geonews/playlist.m3u8
+#EXTINF:-1 tvg-name="Gulistan News" tvg-logo="https://dtil.tmsimg.com/assets/s143097_ld_h15_aa.png?lock=720x540" group-title="News",Gulistan News
+rtsp://edge-ind.inapcdn.in:1935/vivo/sea_7s.stream_aac
+#EXTINF:-1 tvg-name="India TV (IN)" tvg-logo="https://dtil.tmsimg.com/assets/s143199_ld_h15_aa.png?lock=720x540" group-title="News",India TV (IN)
+https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01550-indiatv-indiatvlive-lg-lgin/playlist.m3u8
+#EXTINF:-1 tvg-name="Lahore News" group-title="News",Lahore News
+http://mlive.lahorenews.tv:1935/lahorelive/lnews_1/playlist.m3u8
 #EXTINF:-1 tvg-name="live" tvg-logo="https://papaji.freetvindia.com/media/channels/asom_live_24x7.png" group-title="News",live
 https://www.youtube.com/c/BOLNewsofficial/live
+#EXTINF:-1 tvg-name="NDTV 24x7 (IN)" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/NDTV24x7_Transparent_9b042a6f-d40f-465a-998f-627ee6841919.png" group-title="News",NDTV 24x7 (IN)
+https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01605-ndtvconvergence-ndtv24x7-lgin/playlist.m3u8
+#EXTINF:-1 tvg-name="NDTV India (IN)" tvg-logo="https://dtil.tmsimg.com/assets/s157588_ld_h15_aa.png?lock=720x540" group-title="News",NDTV India (IN)
+https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01605-ndtvconvergence-ndtvindia-lgin/playlist.m3u8
+#EXTINF:-1 tvg-name="PTV News" group-title="News",PTV News
+http://67.231.248.131:1935/live/PTVnews/chunklist_w1281891626.m3u8
+#EXTINF:-1 tvg-name="PTV News (1080p)" group-title="News",PTV News (1080p)
+http://103.250.28.74:8000/play/a017/index.m3u8
+#EXTINF:-1 tvg-name="Such TV" group-title="News",Such TV
+https://video.primexsports.com/suchnews/live/playlist.m3u8
+#EXTINF:-1 tvg-name="TV9 Bangla (IN)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/TV9-Bangla1.png" group-title="News",TV9 Bangla (IN)
+https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01106-associatedbroad-tv9bangla-lgin/playlist.m3u8
+#EXTINF:-1 tvg-name="TV9 Bharatvarsh (IN)" tvg-logo="https://dtil.tmsimg.com/assets/s144027_ld_h15_aa.png?lock=720x540" group-title="News",TV9 Bharatvarsh (IN)
+https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01106-associatedbroad-tv9bharatvarsh-lgin/playlist.m3u8
+#EXTINF:-1 tvg-name="TV9 Kannada (IN)" tvg-logo="https://dtil.tmsimg.com/assets/s144029_ld_h15_aa.png?lock=720x540" group-title="News",TV9 Kannada (IN)
+https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01106-associatedbroad-tv9kannada-lgin/playlist.m3u8
+#EXTINF:-1 tvg-name="TV9 Marathi (IN)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/TV9%20Marathi1.png" group-title="News",TV9 Marathi (IN)
+https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01106-associatedbroad-tv9marathi-lgin/playlist.m3u8
+#EXTINF:-1 tvg-name="TV9 Telugu (IN)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/TV9%20Telugu1.png" group-title="News",TV9 Telugu (IN)
+https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01106-associatedbroad-tv9telugu-lgin/playlist.m3u8
+#EXTINF:-1 tvg-name="Zee Salaam" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Salaam_TV_Hindi_2000_X_1125_transpharent.png" group-title="News",Zee Salaam
+http://z5ams.akamaized.net/zeesalaam/tracks-v1a1/index.m3u8
+#EXTINF:-1 tvg-name="ARY Digital" group-title="Other",ARY Digital
+http://149.202.205.24:1935/DIGITAL/myStream/playlist.m3u8
+#EXTINF:-1 tvg-name="BABY SHARK TV" group-title="Other",BABY SHARK TV
+https://aka-live491.delivery.roku.com/3d5951d2-63f3-45bd-9370-50f524b2ae72/t2-origin/out/v1/live.m3u8
+#EXTINF:-1 tvg-name="Baby Shark TV (AU)" group-title="Other",Baby Shark TV (AU)
+https://newidco-babysharktv-1-au.lg.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Baby Shark TV (CA)" group-title="Other",Baby Shark TV (CA)
+https://newidco-babysharktv-1-ca.lg.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Baby Shark TV (DE)" group-title="Other",Baby Shark TV (DE)
+https://newidco-babysharktv-1-de.lg.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Baby Shark TV (FR)" group-title="Other",Baby Shark TV (FR)
+https://newidco-babysharktv-1-fr.lg.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Baby Shark TV (GB)" group-title="Other",Baby Shark TV (GB)
+https://newidco-babysharktv-1-gb.lg.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Baby Shark TV (IT)" group-title="Other",Baby Shark TV (IT)
+https://newidco-babysharktv-1-it.lg.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Baby Shark TV (US)" group-title="Other",Baby Shark TV (US)
+https://newidco-babysharktv-1-us.lg.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Bollywood HD" group-title="Other",Bollywood HD
+http://iptv.mega.net.ru:8888/Bollywood_HD/index.m3u8
 #EXTINF:-1 tvg-name="browse" group-title="Other",browse
 https://watch.sling.com/1/channel/e0281a1b23584cf58350c16168f19e3e/browse
+#EXTINF:-1 tvg-name="Capital TV HD (1080p)" group-title="Other",Capital TV HD (1080p)
+https://streaming.tvnepal.com:19360/capitaltv/capitaltv.m3u8
+#EXTINF:-1 tvg-name="Capital TV HD HD" group-title="Other",Capital TV HD HD
+https://streaming.tvnepal.com:19360/capitaltv/720p.m3u8
+#EXTINF:-1 tvg-name="Jwand TV" group-title="Other",Jwand TV
+http://dcunilive23-lh.akamaihd.net/i/dclive_1@48939/index_150_av-p.m3u8
 #EXTINF:-1 tvg-name="live m3u8" group-title="Other",live m3u8
 https://www.youtube.com/c/FRANCE24English/live.m3u8
+#EXTINF:-1 tvg-name="LocalNow - Colorado Springs" group-title="Other",LocalNow - Colorado Springs
+https://amg01583-localnow-amg01583c81-lg-us-1484.playouts.now.amagi.tv/playlist/amg01583-localnowfast-localnowcoloradosprings-lgus/playlist.m3u8
+#EXTINF:-1 tvg-name="Masala TV (576p)" group-title="Other",Masala TV (576p)
+http://103.250.28.74:8000/play/a02x/index.m3u8
 #EXTINF:-1 tvg-name="n-5xsxf" group-title="Other",n-5xsxf
 https://www.target.com/c/shop-all-categories/-/n-5xsxf
+#EXTINF:-1 tvg-name="Nazrana TV" group-title="Other",Nazrana TV
+http://linear08hun-lh.akamaihd.net/i/nazrana_1@673935/master.m3u8
+#EXTINF:-1 tvg-name="SPARK TV" group-title="Other",SPARK TV
+https://aka-live491.delivery.roku.com/2c35673e-b8a0-4dcd-bc76-878b79550a16/t2-origin/out/v1/live.m3u8
+#EXTINF:-1 tvg-name="Spark TV - Luz & Amor" group-title="Other",Spark TV - Luz & Amor
+https://aka-live491.delivery.roku.com/ed0fc38d-8885-4413-ad40-a6fb99dab94b/t2-origin/out/v1/live.m3u8
+#EXTINF:-1 tvg-name="Takbeer TV (720p)" group-title="Other",Takbeer TV (720p)
+https://cd198.anystream.uk:9092/iqapp/t5kb86tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Talk TV (GB) Geo" group-title="Other",Talk TV (GB) Geo
+https://amg00738-newsuk-amg00738c1-lg-gb-3426.playouts.now.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Tez" group-title="Other",Tez
+http://stream.jeem.tv/geo/geotezz/playlist.m3u8
+#EXTINF:-1 tvg-name="TRT Arabi" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Other",TRT Arabi
+https://tv-trtarabi.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 tvg-name="Channel Win" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Channel-Win-transparent.png" group-title="Religious",Channel Win
+http://edge-ap2.cloudfrontcdn.in:1935/edge1/mystream.stream_aac/playlist.m3u8
+#EXTINF:-1 tvg-name="PTV Sports (1080p)" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Sports",PTV Sports (1080p)
+http://103.250.28.74:8000/play/a019/index.m3u8

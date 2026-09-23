@@ -1,3 +1,47 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
-#EXTINF:-1 tvg-name="maamusic keralive workers dev" group-title="Music",maamusic keralive workers dev
-https://maamusic.keralive.workers.dev/out/v1/a797c00cba954265ba781f92a57e2cf5/index.m3u8
+#EXTINF:-1 tvg-name="Zee Classic (Zee)" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022J66T.png?lock=720x540" group-title="Classic",Zee Classic (Zee)
+https://jcdn.padmaflixtv.workers.dev/bpk-tv/Zee_Classic_MOB/Fallback/index.m3u8
+#EXTINF:-1 tvg-name="Asianet" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e3/Asianet_2023_logo.png" group-title="Entertainment",Asianet
+https://anet.keralive.workers.dev/v1/master/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/starasianet1_live_https/index.m3u8
+#EXTINF:-1 tvg-name="Asianet Movies (SD)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e3/Asianet_2023_logo.png" group-title="Entertainment",Asianet Movies (SD)
+https://anet.keralive.workers.dev/v1/master/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/asianetmovies_live_https/index.m3u8
+#EXTINF:-1 tvg-name="Asianet Plus" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Asianet%20Plus.png" group-title="Entertainment",Asianet Plus
+https://anet.keralive.workers.dev/v1/master/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/asianetplus_live_https/index.m3u8
+#EXTINF:-1 tvg-name="Zee Bangla Cinema (Zee)" tvg-logo="https://i.imgur.com/zTGTWa8.png" group-title="Entertainment",Zee Bangla Cinema (Zee)
+https://jcdn.padmaflixtv.workers.dev/bpk-tv/Zee_Bangla_Cinema_MOB/Fallback/index.m3u8
+#EXTINF:-1 tvg-name="Zee Ganga (Zee)" tvg-logo="https://i.imgur.com/GLIdQyF.png" group-title="Entertainment",Zee Ganga (Zee)
+https://jcdn.padmaflixtv.workers.dev/bpk-tv/Zee_Ganga_MOB/Fallback/index.m3u8
+#EXTINF:-1 tvg-name="Zee Kannada HD (Zee)" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022S209.png?lock=720x540" group-title="Entertainment",Zee Kannada HD (Zee)
+https://jcdn.padmaflixtv.workers.dev/bpk-tv/Zee_Kannada_HD_MOB/Fallback/index.m3u8
+#EXTINF:-1 tvg-name="Zee Keralam HD (Zee)" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG00239LE2.png?lock=720x540" group-title="Entertainment",Zee Keralam HD (Zee)
+https://jcdn.padmaflixtv.workers.dev/bpk-tv/Zee_Keralam_HD_MOB/Fallback/index.m3u8
+#EXTINF:-1 tvg-name="Zee Punjabi (Zee)" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022JG14.png?lock=720x540" group-title="Entertainment",Zee Punjabi (Zee)
+https://jcdn.padmaflixtv.workers.dev/bpk-tv/Zee_Punjabi_MOB/Fallback/index.m3u8
+#EXTINF:-1 tvg-name="Zee Sarthak (Zee)" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Entertainment",Zee Sarthak (Zee)
+https://jcdn.padmaflixtv.workers.dev/bpk-tv/Zee_Sarthak_MOB/Fallback/index.m3u8
+#EXTINF:-1 tvg-name="Zee Tamil HD (Zee)" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ZEE_TAMIZH/images/LOGO_HD/image.png" group-title="Entertainment",Zee Tamil HD (Zee)
+https://jcdn.padmaflixtv.workers.dev/bpk-tv/Zee_Tamil_HD_MOB/Fallback/index.m3u8
+#EXTINF:-1 tvg-name="Zee Telugu HD (Zee)" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022S99J.png?lock=720x540" group-title="Entertainment",Zee Telugu HD (Zee)
+https://jcdn.padmaflixtv.workers.dev/bpk-tv/Zee_Telugu_HD_MOB/Fallback/index.m3u8
+#EXTINF:-1 tvg-name="Zee TV (Zee)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Zee_TV_Logo_2025.svg/960px-Zee_TV_Logo_2025.svg.png" group-title="Entertainment",Zee TV (Zee)
+https://jcdn.padmaflixtv.workers.dev/bpk-tv/Zee_TV_MOB/Fallback/index.m3u8
+#EXTINF:-1 tvg-name="Zee Yuva (Zee)" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022S9FG.png?lock=720x540" group-title="Entertainment",Zee Yuva (Zee)
+https://jcdn.padmaflixtv.workers.dev/bpk-tv/Zee_Yuva_MOB/Fallback/index.m3u8
+#EXTINF:-1 tvg-name="Sony Pix HD (1080p) [Geo-blocked]" tvg-logo="https://dtil.tmsimg.com/assets/s143803_ld_h15_aa.png?lock=720x540" group-title="Movies",Sony Pix HD (1080p) [Geo-blocked]
+https://sl.vodep39240327.workers.dev/channel/SONY+PIX+HD.m3u8
+#EXTINF:-1 tvg-name="Sony Wah (1080p) [Geo-blocked]" tvg-logo="https://dtil.tmsimg.com/assets/s157974_ld_h15_aa.png?lock=720x540" group-title="Movies",Sony Wah (1080p) [Geo-blocked]
+https://sl.vodep39240327.workers.dev/channel/SONY+WAH.m3u8
+#EXTINF:-1 tvg-name="Zee Action (Zee)" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022K5ZV.png?lock=720x540" group-title="Movies",Zee Action (Zee)
+https://jcdn.padmaflixtv.workers.dev/bpk-tv/Zee_Action_MOB/Fallback/index.m3u8
+#EXTINF:-1 tvg-name="Zee Anmol Cinema (Zee)" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG00260YG8.png?lock=720x540" group-title="Movies",Zee Anmol Cinema (Zee)
+https://jcdn.padmaflixtv.workers.dev/bpk-tv/Zee_Anmol_Cinema_MOB/Fallback/index.m3u8
+#EXTINF:-1 tvg-name="Zee Cinema (Zee)" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022HVX3.png?lock=720x540" group-title="Movies",Zee Cinema (Zee)
+https://jcdn.padmaflixtv.workers.dev/bpk-tv/Zee_Cinema_MOB/Fallback/index.m3u8
+#EXTINF:-1 tvg-name="Zee Cinemalu HD (Zee)" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022HVX3.png?lock=720x540" group-title="Movies",Zee Cinemalu HD (Zee)
+https://jcdn.padmaflixtv.workers.dev/bpk-tv/Zee_Cinemalu_HD_MOB/Fallback/index.m3u8
+#EXTINF:-1 tvg-name="Zee Talkies HD (Zee)" tvg-logo="https://i.imgur.com/GowDXFz.png" group-title="Movies",Zee Talkies HD (Zee)
+https://jcdn.padmaflixtv.workers.dev/bpk-tv/Zee_Talkies_HD_MOB/Fallback/index.m3u8
+#EXTINF:-1 tvg-name="CTV19 (720p)" group-title="Other",CTV19 (720p)
+https://twitch-m3u8.bastypro112.workers.dev/ctv19live/index.m3u8
+#EXTINF:-1 tvg-name="Zee Cafe HD (Zee)" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022ZMMH.png?lock=720x540" group-title="Series",Zee Cafe HD (Zee)
+https://jcdn.padmaflixtv.workers.dev/bpk-tv/Zee_Cafe_HD_MOB/Fallback/index.m3u8

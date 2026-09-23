@@ -1,0 +1,9 @@
+#EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
+#EXTINF:-1 tvg-name="Swantham" tvg-logo="https://i.imgur.com/ye6v4GP.png" group-title="Entertainment",Swantham
+http://cloud.logichost.in:1935/SWANTHAM/live/index.m3u8
+#EXTINF:-1 tvg-name="Kannur Vision" tvg-logo="https://i.imgur.com/FCXqPer.png" group-title="News",Kannur Vision
+https://stream.logichost.in/kannurvision/live/playlist.m3u8
+#EXTINF:-1 tvg-name="Time Vision News" tvg-logo="https://i.imgur.com/qvuOBP7.png" group-title="News",Time Vision News
+http://rtmp.logichost.in:1935/timevision/timevision/playlist.m3u8
+#EXTINF:-1 tvg-name="Ajman TV (1080p)" group-title="Other",Ajman TV (1080p)
+https://cdn1.logichost.in/ajmantv/live/playlist.m3u8

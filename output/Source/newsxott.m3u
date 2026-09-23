@@ -1,0 +1,9 @@
+#EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
+#EXTINF:-1 tvg-name="India News Haryana (1080p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/India%20News.png" group-title="News",India News Haryana (1080p)
+https://newsxott.in/hls/indianewsharyana.m3u8
+#EXTINF:-1 tvg-name="India News Punjab/Himachal (1080p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/India%20News.png" group-title="News",India News Punjab/Himachal (1080p)
+https://newsxott.in/hls/indianewspunjab.m3u8
+#EXTINF:-1 tvg-name="India News Uttar Pradesh (1080p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/India%20News.png" group-title="News",India News Uttar Pradesh (1080p)
+https://newsxott.in/hls/indianewsupuk.m3u8
+#EXTINF:-1 tvg-name="NewsX" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Newsx-Transparent.png" group-title="News",NewsX
+https://newsxott.in/hls/newsx.m3u8
