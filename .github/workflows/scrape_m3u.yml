@@ -103,9 +103,10 @@ jobs:
     name: Scrape ${{ matrix.language }}
     needs: [sync-data, sync-channels]
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: ${{ matrix.timeout }}
     strategy:
       fail-fast: false
+      max-parallel: 3
       matrix:
         language:
           - Hindi
@@ -122,6 +123,25 @@ jobs:
           - Bhojpuri
           - Assamese
           - English
+        timeout:
+          - 95
+        include:
+          - language: Malayalam
+            timeout: 75
+          - language: Kannada
+            timeout: 75
+          - language: Marathi
+            timeout: 75
+          - language: Odia
+            timeout: 75
+          - language: Urdu
+            timeout: 75
+          - language: Punjabi
+            timeout: 60
+          - language: Bhojpuri
+            timeout: 60
+          - language: Assamese
+            timeout: 60
 
     steps:
       - uses: actions/checkout@v4
@@ -133,8 +153,19 @@ jobs:
 
       - run: pip install -r requirements.txt
 
-      - name: Scrape ${{ matrix.language }} channels
-        run: python -m scrapers.language "${{ matrix.language }}"
+      - name: Scrape ${{ matrix.language }} channels (retry once)
+        run: |
+          for attempt in 1 2; do
+            echo "=== Attempt $attempt ==="
+            if python -m scrapers.language "${{ matrix.language }}"; then
+              echo "SUCCESS on attempt $attempt"
+              exit 0
+            fi
+            echo "Attempt $attempt failed, retrying..."
+            sleep 15
+          done
+          echo "Both attempts failed"
+          exit 1
         env:
           PYTHONUNBUFFERED: '1'
 
