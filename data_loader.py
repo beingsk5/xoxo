@@ -346,6 +346,32 @@ class IPTVDatabase:
                 return known_id
         return None
 
+    def get_website(self, channel_id):
+        """Get the official website URL for a channel from channels.csv."""
+        ch = self.channels.get(channel_id)
+        return ch.get("website", "") if ch else ""
+
+    def get_network(self, channel_id):
+        """Get the broadcasting network for a channel from channels.csv."""
+        ch = self.channels.get(channel_id)
+        return ch.get("network", "") if ch else ""
+
+    def get_channel_metadata(self, name):
+        """Resolve full DB metadata for a channel by name.
+        Returns None if the name is unknown; otherwise a dict with
+        channel_id, name, alt_names, website, network, category."""
+        cid = self.get_channel_id_fast(name)
+        if not cid:
+            return None
+        return {
+            "channel_id": cid,
+            "name": self.get_channel_name(cid) or name,
+            "alt_names": self.get_alt_names(cid),
+            "website": self.get_website(cid),
+            "network": self.get_network(cid),
+            "category": self.get_channel_category(cid) or "",
+        }
+
     def is_name_blocked(self, name):
         """Check if a channel name is on the NSFW blocklist."""
         cid = self.get_channel_id_fast(name)

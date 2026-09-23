@@ -87,21 +87,25 @@ class ResumeState:
     searched_queries: List[str] = field(default_factory=list)
     pending_urls: List[str] = field(default_factory=list)
     validated_urls: List[str] = field(default_factory=list)
+    crawled_sites: List[str] = field(default_factory=list)
 
     def to_dict(self) -> dict:
         return {
             "searched_queries": sorted(self.searched_queries),
             "pending_urls": sorted(self.pending_urls),
             "validated_urls": sorted(self.validated_urls),
+            "crawled_sites": sorted(self.crawled_sites),
         }
 
-    def update(self, searched=None, pending=None, validated=None):
+    def update(self, searched=None, pending=None, validated=None, crawled=None):
         if searched is not None:
             self.searched_queries = sorted(searched)
         if pending is not None:
             self.pending_urls = sorted(pending)
         if validated is not None:
             self.validated_urls = sorted(validated)
+        if crawled is not None:
+            self.crawled_sites = sorted(crawled)
 
     def save(self, path: str):
         import os
@@ -129,6 +133,7 @@ class ResumeState:
                 searched_queries=data.get("searched_queries", []),
                 pending_urls=data.get("pending_urls", []),
                 validated_urls=data.get("validated_urls", []),
+                crawled_sites=data.get("crawled_sites", []),
             )
         except Exception:
             return cls()

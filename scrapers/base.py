@@ -437,6 +437,52 @@ def check_link(url: str) -> Tuple[bool, bool, str]:
 
 
 # ═════════════════════════════════════════════════════════════════
+# Official-site crawling
+# ═════════════════════════════════════════════════════════════════
+
+def crawl_website(url: str, timeout: int = 15, max_pages: int = 10) -> Set[str]:
+    """Crawl a channel's official website and extract stream URLs.
+
+    Fetches the homepage, then follows same-domain links (bounded by max_pages)
+    and pulls any .m3u8/.m3u playlist URLs or direct stream links found.
+    Returns a set of candidate stream URLs.
+    """
+    candidates: Set[str] = set()
+    try:
+        host = urlparse(url).netloc.replace("www.", "")
+    except Exception:
+        host = ""
+    if not host:
+        return candidates
+
+    visited: Set[str] = set()
+    queue = [url]
+
+    while queue and len(visited) < max_pages:
+        page_url = queue.pop(0)
+        if page_url in visited:
+            continue
+        visited.add(page_url)
+        resp = safe_get(page_url, timeout=timeout)
+        if not resp:
+            continue
+        # Some sites respond with an m3u8 directly
+        ct = resp.headers.get("Content-Type", "").lower()
+        if ".m3u8" in page_url or (ct and "playlist" in ct):
+            candidates.add(page_url)
+            continue
+        body = resp.text[:500000]
+        for link in extract_links(body):
+            lower = link.lower()
+            if any(k in lower for k in (".m3u8", ".m3u", "playlist.m3u", "index.m3u8", "get.php", "player_api")):
+                candidates.add(link)
+            elif host in link and len(visited) < max_pages:
+                queue.append(link)
+
+    return candidates
+
+
+# ═════════════════════════════════════════════════════════════════
 # Checkpoint
 # ═════════════════════════════════════════════════════════════════
 
