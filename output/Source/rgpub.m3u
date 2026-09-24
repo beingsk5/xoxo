@@ -1,0 +1,5 @@
+#EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
+#EXTINF:-1 tvg-name="en_US json" group-title="Other",en_US json
+https://cdn.rgpub.io/public/live/riotbar/content-manifests/en_US.json
+#EXTINF:-1 tvg-name="lol-rso-pbe en-us js" group-title="Other",lol-rso-pbe en-us js
+https://cdn.rgpub.io/public/live/riotbar/latest/lol-rso-pbe.en-us.js

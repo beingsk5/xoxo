@@ -1,61 +1,11 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
-#EXTINF:-1 tvg-name="Asianet HD (720p)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e3/Asianet_2023_logo.png" group-title="Entertainment",Asianet HD (720p)
-https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/in/YuppTV/AsianetHD.m3u8
-#EXTINF:-1 tvg-name="Colors Gujarati (396p)" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/Colors_Transparent_16069908-8494-4eb4-bd40-5afca3969088.png" group-title="Entertainment",Colors Gujarati (396p)
-https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/in/YuppTV/ColorsGujarati.m3u8
-#EXTINF:-1 tvg-name="Sun TV" tvg-logo="https://sund-images.sunnxt.com/194408/640x360_SunTV_194408_2617a80e-4f90-42fa-b13a-acc8d7c97f9e.jpg" group-title="Entertainment",Sun TV
-https://github.com/sportlive18/jio-tv-auto-update-playlist/blob/main/sun.m3u?raw=true
-#EXTINF:-1 tvg-name="Sun TV" tvg-logo="https://sund-images.sunnxt.com/194408/640x360_SunTV_194408_2617a80e-4f90-42fa-b13a-acc8d7c97f9e.jpg" group-title="Entertainment",Sun TV
-https://github.com/sportlive18/jio-tv-auto-update-playlist/raw/refs/heads/main/sun.m3u
-#EXTINF:-1 tvg-name="Zee Bangla HD (720p)" tvg-logo="https://i.imgur.com/zTGTWa8.png" group-title="Entertainment",Zee Bangla HD (720p)
-https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/in/YuppTV/ZeeBanglaHD.m3u8
-#EXTINF:-1 tvg-name="Zee Marathi HD (720p)" tvg-logo="https://i.imgur.com/vv9ysD3.png" group-title="Entertainment",Zee Marathi HD (720p)
-https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/in/YuppTV/ZeeMarathiHD.m3u8
-#EXTINF:-1 tvg-name="Zee Tamil News (720p)" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ZEE_TAMIZH/images/LOGO_HD/image.png" group-title="Entertainment",Zee Tamil News (720p)
-https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/in/ZMCL/ZeeTamilNews.m3u8
-#EXTINF:-1 tvg-name="Zee TV Asia Pacific (720p)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Zee_TV_Logo_2025.svg/960px-Zee_TV_Logo_2025.svg.png" group-title="Entertainment",Zee TV Asia Pacific (720p)
-https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/sg/YuppTV/ZeeTVHDAPAC.m3u8
-#EXTINF:-1 tvg-name="ZeeTv m3u" group-title="Entertainment",ZeeTv m3u
-https://github.com/jite3008/ZeeTv/raw/refs/heads/main/ZeeTv.m3u
-#EXTINF:-1 tvg-name="ZeeTv m3u?raw=true" group-title="Entertainment",ZeeTv m3u?raw=true
-https://github.com/jite3008/ZeeTv/blob/main/ZeeTv.m3u?raw=true
 #EXTINF:-1 tvg-name="Bollywood HD Russia (576p)" group-title="Movies",Bollywood HD Russia (576p)
 https://xykt-fix.github.io/cinerama_edge01/hls/BOLLYWOOD_RU/Movie009.m3u8
 #EXTINF:-1 tvg-name="Zee Cinema APAC (720p)" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022HVX3.png?lock=720x540" group-title="Movies",Zee Cinema APAC (720p)
 https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/sg/YuppTV/ZeeCinemaAPAC.m3u8
-#EXTINF:-1 tvg-name="CNN" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/CNN%20News18.png" group-title="News",CNN
-https://raw.githubusercontent.com/Alstruit/adaptive-streams/alstruit-10_23_us/streams/us/CNNUSA.us.m3u8
-#EXTINF:-1 tvg-name="NDTV 24x7 (720p)" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/NDTV24x7_Transparent_9b042a6f-d40f-465a-998f-627ee6841919.png" group-title="News",NDTV 24x7 (720p)
-https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/in/YuppTV/NDTV24x7.m3u8
 #EXTINF:-1 tvg-name="NDTV India (720p)" tvg-logo="https://dtil.tmsimg.com/assets/s157588_ld_h15_aa.png?lock=720x540" group-title="News",NDTV India (720p)
 https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/in/YuppTV/NDTVIndia.m3u8
-#EXTINF:-1 tvg-name="News Malayalam" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/NM-Logo_2000_X_1125_Transpharent.png" group-title="News",News Malayalam
-https://raw.githubusercontent.com/ashrafshj/Ashru-TV/master/MLM
 #EXTINF:-1 tvg-name="Republic Bharat (1080p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/R.Bharat.png" group-title="News",Republic Bharat (1080p)
 https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/in/YuppTV/RepublicBharat.m3u8
-#EXTINF:-1 tvg-name="Republic TV (1080p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Public%20TV.png" group-title="News",Republic TV (1080p)
-https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/in/YuppTV/RepublicTV.m3u8
 #EXTINF:-1 tvg-name="Times Now Navbharat (1080p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/TIMES%20NOW.png" group-title="News",Times Now Navbharat (1080p)
 https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/in/YuppTV/TimesNowNavbharat.m3u8
-#EXTINF:-1 tvg-name="Zee Bihar Jharkhand (720p)" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG00230Y44.png?lock=720x540" group-title="News",Zee Bihar Jharkhand (720p)
-https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/in/YuppTV/ZeeBiharJharkhand.m3u8
-#EXTINF:-1 tvg-name=" m3u8" group-title="Other", m3u8
-https://github.com/BANGLABOX/COLORS_TV/raw/refs/heads/main/.m3u8
-#EXTINF:-1 tvg-name=" m3u8?raw=true" group-title="Other", m3u8?raw=true
-https://github.com/BANGLABOX/COLORS_TV/blob/main/.m3u8?raw=true
-#EXTINF:-1 tvg-name="6 Wise Tv (720p)" group-title="Other",6 Wise Tv (720p)
-https://raw.githubusercontent.com/iptv-org/iptv/refs/heads/master/streams/us.m3u
-#EXTINF:-1 tvg-name="AABC TV (480p)" group-title="Other",AABC TV (480p)
-https://raw.githubusercontent.com/iptv-org/iptv/master/streams/us_local.m3u
-#EXTINF:-1 tvg-name="channel_list_3 m3u" group-title="Other",channel_list_3 m3u
-https://github.com/ravikumarbeniwal/IP-TV-M3U-PLAYLIST-INDIA/raw/refs/heads/master/channel_list_3.m3u
-#EXTINF:-1 tvg-name="channel_list_3 m3u?raw=true" group-title="Other",channel_list_3 m3u?raw=true
-https://github.com/ravikumarbeniwal/IP-TV-M3U-PLAYLIST-INDIA/blob/master/channel_list_3.m3u?raw=true
-#EXTINF:-1 tvg-name="Play m3u8" group-title="Other",Play m3u8
-https://github.com/MdFardin857875557/Sony-Yay-toffee/raw/refs/heads/main/Play.m3u8
-#EXTINF:-1 tvg-name="Play m3u8?raw=true" group-title="Other",Play m3u8?raw=true
-https://github.com/MdFardin857875557/Sony-Yay-toffee/blob/main/Play.m3u8?raw=true
-#EXTINF:-1 tvg-name="Star Sports Select 1 HD" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Sports",Star Sports Select 1 HD
-https://github.com/sportlive18/jio-tv-auto-update-playlist/raw/refs/heads/main/Star.m3u
-#EXTINF:-1 tvg-name="Star Sports Select 1 HD" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Sports",Star Sports Select 1 HD
-https://github.com/sportlive18/jio-tv-auto-update-playlist/blob/main/Star.m3u?raw=true
