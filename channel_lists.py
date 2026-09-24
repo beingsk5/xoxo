@@ -217,6 +217,87 @@ def load_ott_platforms(path: Optional[Path] = None) -> List[str]:
     return names
 
 
+MIB_OTT_URL = "https://mib.gov.in/en/node/4054"
+
+
+def ensure_mib_ott_platforms(force: bool = False) -> int:
+    """Fetch MIB OTT platform list if missing/empty (or force=True).
+
+    Returns the platform count now on disk. Safe no-op when the file
+    already has data and force is False.
+    """
+    out = CHANNEL_LISTS_DIR / "mib_ott_platforms.json"
+    CHANNEL_LISTS_DIR.mkdir(parents=True, exist_ok=True)
+
+    if not force and out.exists():
+        try:
+            with open(out, "r", encoding="utf-8") as f:
+                existing = json.load(f)
+            if existing.get("total", 0) > 0:
+                return int(existing["total"])
+        except (json.JSONDecodeError, OSError):
+            pass
+
+    try:
+        resp = requests.get(
+            MIB_OTT_URL,
+            timeout=45,
+            headers={
+                "User-Agent": (
+                    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                    "AppleWebKit/537.36 (KHTML, like Gecko) "
+                    "Chrome/124.0.0.0 Safari/537.36"
+                ),
+                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+            },
+        )
+        resp.raise_for_status()
+    except Exception as e:
+        logger.error(f"MIB OTT fetch failed: {e}")
+        if out.exists():
+            try:
+                with open(out, "r", encoding="utf-8") as f:
+                    return int(json.load(f).get("total", 0))
+            except Exception:
+                pass
+        return 0
+
+    soup = BeautifulSoup(resp.text, "lxml")
+    table = soup.find("table")
+    if not table:
+        logger.error("MIB OTT page has no table")
+        return 0
+
+    platforms: List[dict] = []
+    for row in table.find_all("tr"):
+        cells = row.find_all("td")
+        if len(cells) < 3:
+            continue
+        s_no_raw = cells[0].get_text(strip=True)
+        name = cells[1].get_text(" ", strip=True)
+        entity = cells[2].get_text(" ", strip=True)
+        if not name or not s_no_raw.isdigit():
+            continue
+        platforms.append({"s_no": int(s_no_raw), "name": name, "entity": entity})
+
+    if not platforms:
+        logger.error("MIB OTT table parsed zero platforms")
+        return 0
+
+    payload = {
+        "source": MIB_OTT_URL,
+        "title": "List of OTT platforms",
+        "total": len(platforms),
+        "platforms": platforms,
+        "fetched_at": datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),
+    }
+    with open(out, "w", encoding="utf-8") as f:
+        json.dump(payload, f, ensure_ascii=False, indent=2)
+        f.write("\n")
+    logger.info(f"MIB OTT list written: {len(platforms)} platforms -> {out.name}")
+    return len(platforms)
+
+
 class ChannelListManager:
     """Fetches from BroadcastSeva, saves JSON files, manages cache."""
 
