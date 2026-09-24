@@ -5,6 +5,26 @@ on:
     - cron: '0 6 * * 1,4'
   workflow_dispatch:
     inputs:
+      languages:
+        description: 'Languages to scrape (checkboxes — empty = all)'
+        required: false
+        type: choice
+        multiple: true
+        options:
+          - Hindi
+          - Tamil
+          - Telugu
+          - Malayalam
+          - Kannada
+          - Bengali
+          - Marathi
+          - Punjabi
+          - Gujarati
+          - Odia
+          - Urdu
+          - Bhojpuri
+          - Assamese
+          - English
       force_fresh:
         description: 'Force fresh data sync'
         required: false
@@ -22,6 +42,67 @@ env:
   PYTHON: '3.12'
 
 jobs:
+  # ═══════════════════════════════════════════════════════════════
+  # SELECT: Resolve language list (dispatch menu or full schedule set)
+  # ═══════════════════════════════════════════════════════════════
+  select-languages:
+    name: Select Languages
+    runs-on: ubuntu-26.04
+    timeout-minutes: 5
+    outputs:
+      matrix: ${{ steps.set.outputs.matrix }}
+      list: ${{ steps.set.outputs.list }}
+    steps:
+      - name: Build matrix from selection
+        id: set
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          # type: choice + multiple:true → JSON array string (or empty)
+          SELECTED_JSON: ${{ toJson(inputs.languages) }}
+        run: |
+          python3 <<'PY'
+          import json, os
+
+          # language -> timeout minutes (same as previous static matrix)
+          TIMELOTS = {
+              "Hindi": 95, "Tamil": 95, "Telugu": 95, "Bengali": 95,
+              "English": 95, "Gujarati": 95,
+              "Malayalam": 75, "Kannada": 75, "Marathi": 75,
+              "Odia": 75, "Urdu": 75,
+              "Punjabi": 60, "Bhojpuri": 60, "Assamese": 60,
+          }
+
+          raw = os.environ.get("SELECTED_JSON", "") or ""
+          try:
+              selected = json.loads(raw) if raw else []
+          except json.JSONDecodeError:
+              selected = [s.strip() for s in raw.split(",") if s.strip()]
+          if isinstance(selected, str):
+              selected = [selected]
+
+          # Schedule (or empty dispatch selection) → every language
+          if os.environ.get("EVENT_NAME") != "workflow_dispatch" or not selected:
+              selected = list(TIMELOTS.keys())
+
+          selected = [s for s in selected if s in TIMELOTS]
+          if not selected:
+              selected = list(TIMELOTS.keys())
+
+          include = [
+              {"language": lang, "timeout": TIMELOTS[lang]}
+              for lang in selected
+          ]
+          matrix = {"include": include}
+          list_csv = ",".join(selected)
+
+          out = os.environ["GITHUB_OUTPUT"]
+          with open(out, "a", encoding="utf-8") as f:
+              f.write(f"matrix={json.dumps(matrix)}\n")
+              f.write(f"list={list_csv}\n")
+          print(f"Selected: {list_csv}")
+          print(f"Matrix: {json.dumps(matrix)}")
+          PY
+
   # ═══════════════════════════════════════════════════════════════
   # SYNC: Download data files + channel lists (runs once)
   # ═══════════════════════════════════════════════════════════════
@@ -90,51 +171,17 @@ jobs:
           }
 
   # ═══════════════════════════════════════════════════════════════
-  # SCRAPE: Fan-out — one job per language (parallel)
+  # SCRAPE: Fan-out — one job per *selected* language
   # ═══════════════════════════════════════════════════════════════
   scrape-language:
     name: Scrape ${{ matrix.language }}
-    needs: [sync-data, sync-channels]
+    needs: [select-languages, sync-data, sync-channels]
     runs-on: ubuntu-26.04
     timeout-minutes: ${{ matrix.timeout }}
     strategy:
       fail-fast: false
       max-parallel: 3
-      matrix:
-        language:
-          - Hindi
-          - Tamil
-          - Telugu
-          - Malayalam
-          - Kannada
-          - Bengali
-          - Marathi
-          - Punjabi
-          - Gujarati
-          - Odia
-          - Urdu
-          - Bhojpuri
-          - Assamese
-          - English
-        timeout:
-          - 95
-        include:
-          - language: Malayalam
-            timeout: 75
-          - language: Kannada
-            timeout: 75
-          - language: Marathi
-            timeout: 75
-          - language: Odia
-            timeout: 75
-          - language: Urdu
-            timeout: 75
-          - language: Punjabi
-            timeout: 60
-          - language: Bhojpuri
-            timeout: 60
-          - language: Assamese
-            timeout: 60
+      matrix: ${{ fromJson(needs.select-languages.outputs.matrix) }}
 
     steps:
       - uses: actions/checkout@v7
@@ -145,6 +192,22 @@ jobs:
           cache: pip
 
       - run: pip install -r requirements.txt
+
+      - name: Camoufox package version
+        id: camoufox_ver
+        run: |
+          echo "v=$(python -c "import importlib.metadata as m; print(m.version('camoufox'))")" >> "$GITHUB_OUTPUT"
+
+      - name: Cache Camoufox browser
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/camoufox
+          key: camoufox-${{ runner.os }}-${{ steps.camoufox_ver.outputs.v }}
+          restore-keys: |
+            camoufox-${{ runner.os }}-
+
+      - name: Ensure Camoufox (download only on version change)
+        run: python scripts/ensure_camoufox.py
 
       - name: Ensure MIB OTT search seeds
         run: |
@@ -228,11 +291,11 @@ jobs:
           if-no-files-found: warn
 
   # ═══════════════════════════════════════════════════════════════
-  # MERGE: Fan-in — combine all raw JSONs → M3U output
+  # MERGE: Fan-in — only this run's selected-language artifacts
   # ═══════════════════════════════════════════════════════════════
   merge:
     name: Merge & Package
-    needs: [scrape-language]
+    needs: [select-languages, scrape-language]
     if: ${{ !cancelled() }}
     runs-on: ubuntu-26.04
     timeout-minutes: 15
@@ -253,7 +316,7 @@ jobs:
           rm -rf output/raw
           mkdir -p output/raw
 
-      - name: Download all raw artifacts
+      - name: Download raw artifacts (selected languages only)
         uses: actions/download-artifact@v8
         with:
           pattern: raw-*
@@ -261,7 +324,9 @@ jobs:
           merge-multiple: true
 
       - name: Show raw inputs
-        run: python3 scripts/show_raw_inputs.py
+        run: |
+          echo "Selected languages: ${{ needs.select-languages.outputs.list }}"
+          python3 scripts/show_raw_inputs.py
 
       - name: Merge into M3U
         run: python merge.py
