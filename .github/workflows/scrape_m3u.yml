@@ -148,9 +148,17 @@ jobs:
 
       - name: Scrape ${{ matrix.language }} channels (retry once)
         run: |
+          FORCE_FRESH="${{ github.event.inputs.force_fresh }}"
           for attempt in 1 2; do
             echo "=== Attempt $attempt ==="
-            if python -m scrapers.language "${{ matrix.language }}" --timeout-minutes "${{ matrix.timeout }}"; then
+            # Attempt 1 always starts clean so committed stale raw/resume cannot
+            # short-circuit the run. Attempt 2 resumes attempt 1 via *_resume.json
+            # unless force_fresh was requested.
+            FRESH_FLAG="--fresh"
+            if [ "$attempt" != "1" ] && [ "$FORCE_FRESH" != "true" ]; then
+              FRESH_FLAG=""
+            fi
+            if python -m scrapers.language "${{ matrix.language }}" --timeout-minutes "${{ matrix.timeout }}" $FRESH_FLAG; then
               echo "SUCCESS on attempt $attempt"
               exit 0
             fi
@@ -194,6 +202,13 @@ jobs:
 
       - run: pip install -r requirements.txt
 
+      - name: Clear stale raw outputs
+        run: |
+          # Checkout may contain output/raw/* from a previous force-commit.
+          # Wipe it so only this run's artifacts feed the merge.
+          rm -rf output/raw
+          mkdir -p output/raw
+
       - name: Download all raw artifacts
         uses: actions/download-artifact@v8
         with:
@@ -226,7 +241,12 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add -f output/ || true
+          # Never track scraper state: raw JSON + resume files must not go back
+          # into git or the next "fresh" run will load them and skip search.
+          git rm -r --cached output/raw --ignore-unmatch >/dev/null 2>&1 || true
+          find output -name '*_resume.json' -delete 2>/dev/null || true
+          git add -f output/India.m3u output/stats.json output/Language output/Source 2>/dev/null || true
+          git add -f output/ -- ':!output/raw' 2>/dev/null || true
           if ! git diff --staged --quiet; then
             CHANNELS=$(grep -c '^#EXTINF' output/India.m3u 2>/dev/null || echo "0")
             git commit -m "scrape: $CHANNELS channels $(date -u +'%Y-%m-%d %H:%M UTC')"
