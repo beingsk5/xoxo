@@ -146,6 +146,18 @@ jobs:
 
       - run: pip install -r requirements.txt
 
+      - name: Ensure MIB OTT search seeds
+        run: |
+          # Checkout uses the trigger SHA; same-run sync commits are not visible
+          # here. Regenerate channel_lists/mib_ott_platforms.json if missing.
+          python - <<'PY'
+          from channel_lists import ensure_mib_ott_platforms
+          n = ensure_mib_ott_platforms()
+          print(f"MIB OTT platforms: {n}")
+          if n <= 0:
+              raise SystemExit("mib_ott_platforms.json unavailable")
+          PY
+
       - name: Scrape ${{ matrix.language }} channels (retry once)
         run: |
           FORCE_FRESH="${{ github.event.inputs.force_fresh }}"
