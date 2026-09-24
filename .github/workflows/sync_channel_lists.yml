@@ -29,6 +29,9 @@ jobs:
       - name: Fetch channel lists from BroadcastSeva
         run: python scripts/sync_channel_lists.py
 
+      - name: Ensure MIB OTT list
+        run: python scripts/ensure_mib_ott.py --force
+
       - name: Verify output files
         run: python scripts/verify_channel_lists.py
 
