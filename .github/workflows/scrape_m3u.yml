@@ -285,21 +285,38 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          # Never track scraper state: raw JSON + resume files must not go back
-          # into git or the next "fresh" run will load them and skip search.
+
+          # Untrack scraper state AND delete it from disk.
+          # origin/main may still track output/raw/*; pull --rebase refuses to
+          # checkout those paths while untracked local copies exist.
           git rm -r --cached output/raw --ignore-unmatch >/dev/null 2>&1 || true
+          rm -rf output/raw
           find output -name '*_resume.json' -delete 2>/dev/null || true
+
           git add -f output/India.m3u output/stats.json output/Language output/Source 2>/dev/null || true
           git add -f output/ -- ':!output/raw' 2>/dev/null || true
-          if ! git diff --staged --quiet; then
-            CHANNELS=$(grep -c '^#EXTINF' output/India.m3u 2>/dev/null || echo "0")
-            git commit -m "scrape: $CHANNELS channels $(date -u +'%Y-%m-%d %H:%M UTC')"
-            for i in 1 2 3; do
-              git pull --rebase --autostash origin main && git push && break
-              echo "Push failed (attempt $i), retrying..."
-              sleep 10
-            done
+
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+            exit 0
           fi
+
+          CHANNELS=$(grep -c '^#EXTINF' output/India.m3u 2>/dev/null || echo "0")
+          git commit -m "scrape: $CHANNELS channels $(date -u +'%Y-%m-%d %H:%M UTC')"
+
+          for i in 1 2 3; do
+            # Recover from a half-finished rebase / leftover untracked raw files
+            git rebase --abort 2>/dev/null || true
+            rm -rf output/raw
+            if git pull --rebase --autostash origin main && git push; then
+              echo "Push OK on attempt $i"
+              exit 0
+            fi
+            echo "Push failed (attempt $i), retrying..."
+            sleep 10
+          done
+          echo "Push failed after 3 attempts"
+          exit 1
 
       - name: Summary
         if: always()
