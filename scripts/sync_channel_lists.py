@@ -14,7 +14,7 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(BASE_DIR))
 
-from channel_lists import ChannelListManager
+from channel_lists import ChannelListManager, ensure_mib_ott_platforms
 
 log = logging.getLogger("sync_channel_lists")
 
@@ -35,6 +35,13 @@ def main() -> int:
         channels = manager.refresh(force=True)
     except Exception as e:
         log.error(f"Channel list refresh FAILED: {e}")
+        return 1
+
+    # Always (re)ensure MIB OTT seed list so verify_channel_lists can pass.
+    ott_n = ensure_mib_ott_platforms(force=True)
+    print(f"MIB OTT platforms: {ott_n}")
+    if ott_n <= 0:
+        log.error("MIB OTT platform list empty after ensure")
         return 1
 
     print(f"\nTotal unique channels: {len(channels)}")
