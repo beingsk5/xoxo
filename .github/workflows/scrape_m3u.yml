@@ -5,26 +5,64 @@ on:
     - cron: '0 6 * * 1,4'
   workflow_dispatch:
     inputs:
-      languages:
-        description: 'Languages to scrape (checkboxes — empty = all)'
-        required: false
-        type: choice
-        multiple: true
-        options:
-          - Hindi
-          - Tamil
-          - Telugu
-          - Malayalam
-          - Kannada
-          - Bengali
-          - Marathi
-          - Punjabi
-          - Gujarati
-          - Odia
-          - Urdu
-          - Bhojpuri
-          - Assamese
-          - English
+      # One checkbox per language (GitHub has no native multi-select choice —
+      # actions/runner#2076). All unchecked = run all 14.
+      lang_hindi:
+        description: 'Hindi'
+        type: boolean
+        default: false
+      lang_tamil:
+        description: 'Tamil'
+        type: boolean
+        default: false
+      lang_telugu:
+        description: 'Telugu'
+        type: boolean
+        default: false
+      lang_malayalam:
+        description: 'Malayalam'
+        type: boolean
+        default: false
+      lang_kannada:
+        description: 'Kannada'
+        type: boolean
+        default: false
+      lang_bengali:
+        description: 'Bengali'
+        type: boolean
+        default: false
+      lang_marathi:
+        description: 'Marathi'
+        type: boolean
+        default: false
+      lang_punjabi:
+        description: 'Punjabi'
+        type: boolean
+        default: false
+      lang_gujarati:
+        description: 'Gujarati'
+        type: boolean
+        default: false
+      lang_odia:
+        description: 'Odia'
+        type: boolean
+        default: false
+      lang_urdu:
+        description: 'Urdu'
+        type: boolean
+        default: false
+      lang_bhojpuri:
+        description: 'Bhojpuri'
+        type: boolean
+        default: false
+      lang_assamese:
+        description: 'Assamese'
+        type: boolean
+        default: false
+      lang_english:
+        description: 'English'
+        type: boolean
+        default: false
       force_fresh:
         description: 'Force fresh data sync'
         required: false
@@ -53,47 +91,62 @@ jobs:
       matrix: ${{ steps.set.outputs.matrix }}
       list: ${{ steps.set.outputs.list }}
     steps:
-      - name: Build matrix from selection
+      - name: Build matrix from checkboxes
         id: set
         env:
           EVENT_NAME: ${{ github.event_name }}
-          # type: choice + multiple:true → JSON array string (or empty)
-          SELECTED_JSON: ${{ toJson(inputs.languages) }}
+          LANG_HINDI: ${{ inputs.lang_hindi }}
+          LANG_TAMIL: ${{ inputs.lang_tamil }}
+          LANG_TELUGU: ${{ inputs.lang_telugu }}
+          LANG_MALAYALAM: ${{ inputs.lang_malayalam }}
+          LANG_KANNADA: ${{ inputs.lang_kannada }}
+          LANG_BENGALI: ${{ inputs.lang_bengali }}
+          LANG_MARATHI: ${{ inputs.lang_marathi }}
+          LANG_PUNJABI: ${{ inputs.lang_punjabi }}
+          LANG_GUJARATI: ${{ inputs.lang_gujarati }}
+          LANG_ODIA: ${{ inputs.lang_odia }}
+          LANG_URDU: ${{ inputs.lang_urdu }}
+          LANG_BHOJPURI: ${{ inputs.lang_bhojpuri }}
+          LANG_ASSAMESE: ${{ inputs.lang_assamese }}
+          LANG_ENGLISH: ${{ inputs.lang_english }}
         run: |
           python3 <<'PY'
           import json, os
 
-          # language -> timeout minutes (same as previous static matrix)
-          TIMELOTS = {
-              "Hindi": 95, "Tamil": 95, "Telugu": 95, "Bengali": 95,
-              "English": 95, "Gujarati": 95,
-              "Malayalam": 75, "Kannada": 75, "Marathi": 75,
-              "Odia": 75, "Urdu": 75,
-              "Punjabi": 60, "Bhojpuri": 60, "Assamese": 60,
+          # language -> (env var, timeout minutes)
+          LANGS = {
+              "Hindi":     ("LANG_HINDI",     95),
+              "Tamil":     ("LANG_TAMIL",     95),
+              "Telugu":    ("LANG_TELUGU",    95),
+              "Bengali":   ("LANG_BENGALI",   95),
+              "English":   ("LANG_ENGLISH",   95),
+              "Gujarati":  ("LANG_GUJARATI",  95),
+              "Malayalam": ("LANG_MALAYALAM", 75),
+              "Kannada":   ("LANG_KANNADA",   75),
+              "Marathi":   ("LANG_MARATHI",   75),
+              "Odia":      ("LANG_ODIA",      75),
+              "Urdu":      ("LANG_URDU",      75),
+              "Punjabi":   ("LANG_PUNJABI",   60),
+              "Bhojpuri":  ("LANG_BHOJPURI",  60),
+              "Assamese":  ("LANG_ASSAMESE",  60),
           }
 
-          raw = os.environ.get("SELECTED_JSON", "") or ""
-          try:
-              selected = json.loads(raw) if raw else []
-          except json.JSONDecodeError:
-              selected = [s.strip() for s in raw.split(",") if s.strip()]
-          if isinstance(selected, str):
-              selected = [selected]
+          checked = [
+              lang
+              for lang, (var, _) in LANGS.items()
+              if os.environ.get(var, "").lower() == "true"
+          ]
 
-          # Schedule (or empty dispatch selection) → every language
-          if os.environ.get("EVENT_NAME") != "workflow_dispatch" or not selected:
-              selected = list(TIMELOTS.keys())
-
-          selected = [s for s in selected if s in TIMELOTS]
-          if not selected:
-              selected = list(TIMELOTS.keys())
+          # Schedule (or no checkbox ticked) → every language
+          if os.environ.get("EVENT_NAME") != "workflow_dispatch" or not checked:
+              checked = list(LANGS.keys())
 
           include = [
-              {"language": lang, "timeout": TIMELOTS[lang]}
-              for lang in selected
+              {"language": lang, "timeout": LANGS[lang][1]}
+              for lang in checked
           ]
           matrix = {"include": include}
-          list_csv = ",".join(selected)
+          list_csv = ",".join(checked)
 
           out = os.environ["GITHUB_OUTPUT"]
           with open(out, "a", encoding="utf-8") as f:
