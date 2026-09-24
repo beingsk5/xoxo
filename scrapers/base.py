@@ -30,6 +30,57 @@ HEADERS = [
     {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:127.0) Gecko/20100101 Firefox/127.0", "Accept-Language": "en-US,en;q=0.5"},
 ]
 
+# Search may return these hosts; their links must never enter the playlist.
+# googlevideo.com is YouTube's stream CDN (googlevideo.com/videoplayback).
+BLOCKED_DOMAINS = (
+    "youtube.com",
+    "youtu.be",
+    "youtube-nocookie.com",
+    "googlevideo.com",
+)
+
+
+def is_blocked_domain(url: str) -> bool:
+    """True when the URL host is a banned domain (YouTube and its CDN)."""
+    try:
+        host = (urlparse(url).hostname or "").lower().rstrip(".")
+    except Exception:
+        return False
+    if not host:
+        return False
+    for suffix in BLOCKED_DOMAINS:
+        if host == suffix or host.endswith("." + suffix):
+            return True
+    return False
+
+
+def build_request_headers(
+    url: str, accept: str = "*/*", referer: Optional[str] = None
+) -> dict:
+    """Browser-like headers with Referer/Origin for hotlink-protected CDNs.
+
+    When ``referer`` (the page that linked to this URL) is given, it is sent
+    as Referer and its origin as Origin — browsers do exactly this, and some
+    CDNs only accept the channel-site page rather than the CDN's own host.
+    Falls back to the target URL's own origin when no referer is known.
+    """
+    h = random.choice(HEADERS).copy()
+    h["Accept"] = accept
+    ref = referer
+    try:
+        if not ref:
+            parts = urlparse(url)
+            if parts.scheme in ("http", "https") and parts.netloc:
+                ref = f"{parts.scheme}://{parts.netloc}/"
+        if ref:
+            rparts = urlparse(ref)
+            if rparts.scheme in ("http", "https") and rparts.netloc:
+                h["Referer"] = ref
+                h["Origin"] = f"{rparts.scheme}://{rparts.netloc}"
+    except Exception:
+        pass
+    return h
+
 EXTINF_RE = re.compile(r"#EXTINF:(.*?),(.*?)$", re.MULTILINE)
 EXTINF_ATTR_RE = re.compile(r'(\w[\w-]*)="([^"]*)"')
 
@@ -348,10 +399,14 @@ def engine_stats_summary() -> Dict[str, dict]:
 def safe_get(url: str, timeout: int = 10, retries: int = 2) -> Optional[requests.Response]:
     if not url.startswith(("http://", "https://")):
         return None
+    if is_blocked_domain(url):
+        return None
     for attempt in range(retries):
         try:
-            h = random.choice(HEADERS).copy()
-            h["Accept"] = "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
+            h = build_request_headers(
+                url,
+                accept="text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+            )
             r = requests.get(url, headers=h, timeout=timeout, allow_redirects=True)
             if r.status_code == 429:
                 time.sleep(random.uniform(8, 15))
@@ -485,9 +540,10 @@ def check_link(url: str) -> Tuple[bool, bool, str]:
 
     Returns (is_valid, is_indian, first_extinf_line).
     """
+    if is_blocked_domain(url):
+        return False, False, ""
     try:
-        h = random.choice(HEADERS).copy()
-        h["Accept"] = "*/*"
+        h = build_request_headers(url, accept="*/*")
         resp = requests.get(url, headers=h, timeout=10, stream=True, allow_redirects=True)
         if resp.status_code >= 400:
             return False, False, ""
@@ -553,6 +609,8 @@ def harvest_stream_links(text: str, limit: int = 40) -> Set[str]:
     out: Set[str] = set()
     for raw in extract_links(text):
         link = unwrap_link(raw)
+        if is_blocked_domain(link):
+            continue
         low = link.lower()
         # keep if it matches a playlist/stream extension, API hint, or stream protocol
         hit = any(h in low for h in STREAM_HINTS)
@@ -574,8 +632,14 @@ def harvest_stream_links(text: str, limit: int = 40) -> Set[str]:
     return out
 
 
-def probe_url(url: str) -> Tuple[str, bool, str, Set[str], Dict[str, dict]]:
+def probe_url(
+    url: str, referer: Optional[str] = None
+) -> Tuple[str, bool, str, Set[str], Dict[str, dict]]:
     """Fetch once and classify.
+
+    ``referer`` is the page URL that linked here (stream harvested from a
+    player page) — sent as Referer/Origin so hotlink-protected CDNs accept
+    the request, matching what the real browser sent during interception.
 
     Returns (kind, is_indian, first_extinf, harvested_links, blocks):
       kind = "playlist" -> body is an M3U/playlist; blocks = every EXTINF entry
@@ -583,9 +647,10 @@ def probe_url(url: str) -> Tuple[str, bool, str, Set[str], Dict[str, dict]]:
       kind = "page"      -> HTML page, harvested_links = candidate streams inside
       kind = "dead"      -> error / nothing useful
     """
+    if is_blocked_domain(url):
+        return "dead", False, "", set(), {}
     try:
-        h = random.choice(HEADERS).copy()
-        h["Accept"] = "*/*"
+        h = build_request_headers(url, accept="*/*", referer=referer)
         resp = requests.get(url, headers=h, timeout=10, stream=True, allow_redirects=True)
         if resp.status_code >= 400:
             return "dead", False, "", set(), {}
@@ -661,6 +726,8 @@ def crawl_website(url: str, timeout: int = 15, max_pages: int = 10) -> Set[str]:
             continue
         body = resp.text[:500000]
         for link in extract_links(body):
+            if is_blocked_domain(link):
+                continue
             lower = link.lower()
             if any(k in lower for k in (".m3u8", ".m3u", "playlist.m3u", "index.m3u8", "get.php", "player_api")):
                 candidates.add(link)

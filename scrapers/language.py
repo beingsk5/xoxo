@@ -21,9 +21,10 @@ from typing import List, Set
 
 from scrapers.base import (
     ENGINE_LIST, check_link, crawl_website, detect_source_name, engine_stats_summary,
-    get_database, is_indian, is_live_candidate, parse_extinf,
+    get_database, is_blocked_domain, is_indian, is_live_candidate, parse_extinf,
     probe_url, save_checkpoint, search_with_tracking,
 )
+from scrapers.browser import intercept_stream_urls, shutdown as shutdown_browser
 from scrapers.models import Channel, ResumeState, ScrapeResult
 
 # Repo root on sys.path so channel_lists.py is importable as a top-level module
@@ -257,6 +258,10 @@ class LanguageScraper:
         log.info(f"[{self.language}] DONE: {len(result.channels)} channels found")
         log.info(f"[{self.language}] {result.urls_found} URLs found, {result.urls_valid} valid")
         self._log_engine_stats()
+        try:
+            shutdown_browser()
+        except Exception:
+            pass
         return result
 
     # ── Phases ────────────────────────────────────────────────────
@@ -270,9 +275,9 @@ class LanguageScraper:
         (which resumes via ResumeState) picks them up.
         """
         pending_urls = _LockSet()
-        pending_urls.update(resume.pending_urls)
+        pending_urls.update(u for u in resume.pending_urls if not is_blocked_domain(u))
         proven = _LockSet()
-        proven.update(resume.proven_urls)
+        proven.update(u for u in resume.proven_urls if not is_blocked_domain(u))
         searched_lock = Lock()
         searched: Set[str] = set(resume.searched_queries)
 
@@ -280,6 +285,9 @@ class LanguageScraper:
             proves = self._query_proves_language(q)
             for engine_name, engine_func in ENGINE_LIST:
                 hits = search_with_tracking(engine_name, engine_func, q, max_results=5)
+                # YouTube (and its CDN) is allowed as a search result host only
+                # to discover pages — never as a channel URL in the playlist.
+                hits = {u for u in hits if not is_blocked_domain(u)}
                 pending_urls.update(hits)
                 if proves and hits:
                     proven.update(hits)
@@ -351,9 +359,16 @@ class LanguageScraper:
         validated: Set[str] = set(resume.validated_urls)
         proven: Set[str] = set(resume.proven_urls)
         # Work queue: original search results + harvested stream links.
-        pending: Set[str] = set(resume.pending_urls) - validated
+        pending: Set[str] = {
+            u for u in (set(resume.pending_urls) - validated)
+            if not is_blocked_domain(u)
+        }
         queue: List[str] = list(pending)
         harvested: Set[str] = set()
+        # Stream link -> player page that linked it. Sent as Referer/Origin
+        # on the follow-up probe (hotlink-protected CDNs require the page,
+        # not the CDN host itself).
+        referer_of: Dict[str, str] = {}
 
         log.info(f"[{self.language}] probing {len(queue)} URLs (skipping {len(validated)} done)")
 
@@ -366,7 +381,10 @@ class LanguageScraper:
             while idx < len(queue) and not self._validate_exhausted():
                 chunk = queue[idx: idx + VALIDATE_WORKERS]
                 idx += VALIDATE_WORKERS
-                futures = {executor.submit(probe_url, url): url for url in chunk}
+                futures = {
+                    executor.submit(probe_url, url, referer_of.get(url)): url
+                    for url in chunk
+                }
                 new_links: List[str] = []
                 for completed in as_completed(futures):
                     url = futures[completed]
@@ -421,14 +439,25 @@ class LanguageScraper:
                                     name=self._best_name_for_url(url),
                                 )
                     elif kind == "page":
-                        # Mine the page for real stream links, bound per page.
-                        for link in list(links)[:HARVEST_PER_PAGE]:
+                        # Camoufox is the PRIMARY page path: open the page and
+                        # take stream URLs from live network traffic (XHR/HLS).
+                        # Static harvest from the probe body is only used when
+                        # the browser returned nothing for this URL.
+                        page_links = intercept_stream_urls(url)
+                        if not page_links:
+                            page_links = links
+                        for link in list(page_links)[:HARVEST_PER_PAGE]:
+                            if is_blocked_domain(link):
+                                continue
                             if link not in validated and link not in pending:
                                 if len(harvested) >= HARVEST_CAP:
                                     break
                                 new_links.append(link)
                                 pending.add(link)
                                 harvested.add(link)
+                                # Probe the stream with the player page as
+                                # Referer/Origin (matches browser behavior).
+                                referer_of.setdefault(link, url)
 
                     validated.add(url)
                     done += 1
@@ -801,7 +830,7 @@ class LanguageScraper:
                 urls = crawl_website(site)
                 if len(urls) > URLS_PER_SITE:
                     urls = set(list(urls)[:URLS_PER_SITE])
-                pending.update(urls)
+                pending.update(u for u in urls if not is_blocked_domain(u))
             except Exception:
                 pass
             with crawled_lock:
