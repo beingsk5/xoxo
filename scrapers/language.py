@@ -106,10 +106,17 @@ class LanguageScraper:
     when the deadline approaches so validation + final save always fit.
     """
 
-    def __init__(self, language: str, max_queries: int = 0, timeout_minutes: int = 0):
+    def __init__(
+        self,
+        language: str,
+        max_queries: int = 0,
+        timeout_minutes: int = 0,
+        fresh: bool = False,
+    ):
         self.language = language
         self.max_queries = max_queries if max_queries and max_queries > 0 else 0
         self.timeout_minutes = timeout_minutes if timeout_minutes and timeout_minutes > 0 else 0
+        self.fresh = bool(fresh)
         self.raw_dir = RAW_OUTPUT_DIR
         self.raw_dir.mkdir(parents=True, exist_ok=True)
         # Keep the exact language name (not lowercased) so the output file matches
@@ -175,10 +182,24 @@ class LanguageScraper:
             return -1.0
         return max(0.0, self._deadline - time.time())
 
+    def _wipe_local_state(self):
+        """Delete this language's raw result + resume so the run starts clean."""
+        for path in (self.output_path, self.resume_path):
+            try:
+                if path.exists():
+                    path.unlink()
+                    log.info(f"[{self.language}] wiped {path.name}")
+            except OSError as e:
+                log.warning(f"[{self.language}] could not wipe {path.name}: {e}")
+
     def run(self) -> ScrapeResult:
         """Execute the full scrape pipeline for this language (resume-aware)."""
+        if self.fresh:
+            self._wipe_local_state()
         result = self._load_existing_result()
         resume = ResumeState.load(str(self.resume_path))
+        if self.fresh:
+            log.info(f"[{self.language}] fresh mode: ignoring any prior output/resume")
         self._apply_budget()
 
         # Always write the output file immediately so an artifact/merge input
@@ -919,6 +940,10 @@ def main():
         "--max-queries", type=int, default=0,
         help="optional hard query cap (fallback when no time budget is used)",
     )
+    parser.add_argument(
+        "--fresh", action="store_true",
+        help="discard prior output/resume for this language and search from scratch",
+    )
     args = parser.parse_args()
 
     logging.basicConfig(
@@ -931,6 +956,7 @@ def main():
         args.language,
         max_queries=args.max_queries,
         timeout_minutes=args.timeout_minutes,
+        fresh=args.fresh,
     )
     result = scraper.run()
     print(f"\n[{args.language}] {len(result.channels)} channels, {result.urls_valid} valid URLs")
