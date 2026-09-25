@@ -17,14 +17,15 @@ import time
 from concurrent.futures import ThreadPoolExecutor, as_completed, FIRST_COMPLETED, wait
 from pathlib import Path
 from threading import Lock
-from typing import List, Set
+from typing import Dict, List, Set
 
 from scrapers.base import (
     ENGINE_LIST, check_link, crawl_website, detect_source_name, engine_stats_summary,
     get_database, is_blocked_domain, is_indian, is_live_candidate, parse_extinf,
     probe_url, save_checkpoint, search_with_tracking,
 )
-from scrapers.browser import intercept_stream_urls, shutdown as shutdown_browser
+from scrapers.browser import shutdown as shutdown_browser
+from scrapers.dynamic import dynamic_harvest
 from scrapers.models import Channel, ResumeState, ScrapeResult
 
 # Repo root on sys.path so channel_lists.py is importable as a top-level module
@@ -265,6 +266,9 @@ class LanguageScraper:
 
         # Crawl official channel websites (parallel) for direct stream URLs
         # (bounded by its own short slice so search still gets time).
+        # YuppTV API fast path first: pure HTTP, seconds, high yield.
+        self._yupptv_phase(result)
+        save_checkpoint(result, str(self.output_path))
         self._crawl_sites_phase(channels, resume, result)
 
         # Search the web (parallel across queries), then validate (parallel)
@@ -470,35 +474,21 @@ class LanguageScraper:
                                     result, entry_url, blk["extinf"],
                                     name=ename, logo=blk["logo"],
                                 )
-                        elif is_live_candidate(url, extinf):
-                            dname = parse_extinf(extinf).get("display_name", "") if extinf else ""
-                            if dname and _is_geo_blocked_name(dname):
-                                self._add_channel(result, url, extinf, name=dname)
-                            elif dname:
-                                if self._matches_language(dname, url, extinf):
-                                    self._add_channel(result, url, extinf, name=dname)
-                            elif (
-                                indian
-                                or is_indian(url)
-                                or is_indian(extinf)
-                                or url in proven
-                                or self._url_matches_channel_list(url)
-                            ):
-                                # Prefer the known list name when the URL slug
-                                # matches (avoids "index m3u8" as the channel name).
-                                self._add_channel(
-                                    result, url, extinf,
-                                    name=self._best_name_for_url(url),
-                                )
+                        else:
+                            self._accept_stream_channel(
+                                result, url, extinf, indian, proven,
+                            )
                     elif kind == "page":
-                        # Camoufox is the PRIMARY page path: open the page and
-                        # take stream URLs from live network traffic (XHR/HLS).
-                        # Static harvest from the probe body is only used when
-                        # the browser returned nothing for this URL.
-                        page_links = intercept_stream_urls(url)
-                        if not page_links:
-                            page_links = links
-                        for link in list(page_links)[:HARVEST_PER_PAGE]:
+                        # Site-agnostic dynamic engine is the PRIMARY page
+                        # path: wire capture + response-body sniffing + JS
+                        # state + bounded interaction, then explore same-host
+                        # channel-like links (40 pages/site, 3 play-clicks
+                        # max). Static HTML harvest is only the fallback.
+                        report = dynamic_harvest(url)
+                        page_streams: Dict[str, str] = dict(report.streams)
+                        for link in links:
+                            page_streams.setdefault(link, url)
+                        for link in list(page_streams)[:HARVEST_PER_PAGE]:
                             if is_blocked_domain(link):
                                 continue
                             if link not in validated and link not in pending:
@@ -509,7 +499,7 @@ class LanguageScraper:
                                 harvested.add(link)
                                 # Probe the stream with the player page as
                                 # Referer/Origin (matches browser behavior).
-                                referer_of.setdefault(link, url)
+                                referer_of.setdefault(link, page_streams.get(link, url))
 
                     validated.add(url)
                     done += 1
@@ -769,8 +759,126 @@ class LanguageScraper:
                 return True
         return False
 
+    def _accept_stream_channel(self, result: ScrapeResult, url: str,
+                               extinf: str, indian: bool, proven,
+                               name_hint: str = "", source: str = "") -> bool:
+        """Accept one probed single-stream URL (shared by validate + YuppTV).
+
+        Exact validate-phase semantics: live-candidate check, geo-block labels
+        always kept, named entries must match this language's list (or be
+        Indian), unnamed entries need Indian/language proof.
+        """
+        if not is_live_candidate(url, extinf or name_hint):
+            return False
+        dname = parse_extinf(extinf).get("display_name", "") if extinf else ""
+        if not dname:
+            dname = name_hint
+        if dname and _is_geo_blocked_name(dname):
+            self._add_channel(result, url, extinf, name=dname, source=source)
+            return True
+        if dname:
+            if self._matches_language(dname, url, extinf):
+                self._add_channel(result, url, extinf, name=dname, source=source)
+                return True
+            return False
+        if (
+            indian
+            or is_indian(url)
+            or is_indian(extinf)
+            or url in proven
+            or self._url_matches_channel_list(url)
+        ):
+            # Prefer the known list name when the URL slug matches (avoids
+            # "index m3u8" as the channel name).
+            self._add_channel(
+                result, url, extinf,
+                name=self._best_name_for_url(url), source=source,
+            )
+            return True
+        return False
+
+    def _yupptv_phase(self, result: ScrapeResult) -> None:
+        """YuppTV API fast path (pure HTTP, no browser).
+
+        Catalog comes from /page/content?path=livetv (per-language langCode),
+        per-channel streams from /page/stream. Everything is probed and then
+        accepted through the same quality gates as the validate phase.
+        Failures here never fail the run.
+        """
+        from scrapers import yupptv
+
+        code = yupptv.LANG_TO_CODE.get(self.language.strip().lower())
+        if not code:
+            log.info(f"[{self.language}] YuppTV fast path: no lang code, skipping")
+            return
+        try:
+            entries = yupptv.fetch_catalog(code)
+        except Exception as e:
+            log.warning(f"[{self.language}] YuppTV catalog failed: {e}")
+            return
+        if not entries:
+            log.info(f"[{self.language}] YuppTV fast path: no {code} channels")
+            return
+        existing = {ch.url for ch in result.channels}
+        log.info(f"[{self.language}] YuppTV fast path: {len(entries)} catalog channels")
+
+        def work(entry: dict):
+            try:
+                urls = yupptv.get_stream_urls(entry["path"])
+            except Exception:
+                urls = []
+            probed = []
+            for u in urls[:2]:
+                if u in existing or is_blocked_domain(u):
+                    continue
+                kind, indian, extinf, _links, blocks = probe_url(
+                    u, referer=yupptv.SITE
+                )
+                probed.append((u, kind, indian, extinf, blocks))
+            return entry, probed
+
+        accepted = 0
+        with ThreadPoolExecutor(max_workers=6) as ex:
+            futures = [ex.submit(work, e) for e in entries]
+            for fut in as_completed(futures):
+                try:
+                    entry, probed = fut.result()
+                except Exception:
+                    continue
+                for u, kind, indian, extinf, blocks in probed:
+                    if kind != "playlist" or u in existing:
+                        continue
+                    if blocks:
+                        for entry_url, blk in blocks.items():
+                            ename = blk["name"] or entry["name"]
+                            if not is_live_candidate(entry_url, ename):
+                                continue
+                            if not self._matches_language(
+                                ename, entry_url, blk["extinf"]
+                            ):
+                                continue
+                            if ename and not _is_geo_blocked_name(ename):
+                                if not (indian or is_indian(ename)
+                                        or is_indian(entry_url)):
+                                    if not self._name_in_index(ename):
+                                        continue
+                            self._add_channel(
+                                result, entry_url, blk["extinf"],
+                                name=ename, logo=blk["logo"] or entry.get("logo", ""),
+                                source="yupptv",
+                            )
+                            existing.add(entry_url)
+                            accepted += 1
+                    elif self._accept_stream_channel(
+                        result, u, extinf, indian, set(),
+                        name_hint=entry["name"], source="yupptv",
+                    ):
+                        existing.add(u)
+                        accepted += 1
+        log.info(f"[{self.language}] YuppTV fast path: {accepted} channels accepted")
+
     def _add_channel(self, result: ScrapeResult, url: str, extinf: str,
-                     name: str = "", logo: str = ""):
+                     name: str = "", logo: str = "", source: str = ""):
         parsed = {}
         if extinf:
             parsed = parse_extinf(extinf)
@@ -786,7 +894,7 @@ class LanguageScraper:
             name=name,
             language=self.language,
             category="",  # will be enriched in merge
-            source=detect_source_name(url),
+            source=source or detect_source_name(url),
             logo=logo,
             extinf=extinf,
             tvg_id=attrs.get("tvg-id", ""),
