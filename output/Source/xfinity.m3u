@@ -1,15 +1,3 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
-#EXTINF:-1 tvg-name="base css" group-title="Other",base css
-https://www.xfinity.com/stream/styles/base.css
-#EXTINF:-1 tvg-name="elements js" group-title="Other",elements js
-https://www.xfinity.com/stream/elements.js
-#EXTINF:-1 tvg-name="en-US json" group-title="Other",en-US json
-https://www.xfinity.com/stream/languages/en-US.json
-#EXTINF:-1 tvg-name="errors css" group-title="Other",errors css
-https://www.xfinity.com/stream/styles/errors.css
-#EXTINF:-1 tvg-name="non-polymer-localize js" group-title="Other",non-polymer-localize js
-https://www.xfinity.com/stream/js/non-polymer-localize.js
-#EXTINF:-1 tvg-name="standalone js" group-title="Other",standalone js
-https://www.xfinity.com/stream/vendor_components/sift-web-sdk/standalone.js
-#EXTINF:-1 tvg-name="webcomponents-lite min js" group-title="Other",webcomponents-lite min js
-https://www.xfinity.com/stream/bower_components/webcomponentsjs/webcomponents-lite.min.js
+#EXTINF:-1 tvg-name="polarisglobalnavigation model json" group-title="Other",polarisglobalnavigation model json
+https://content.xfinity.com/cacs/live/content/xfinity-aem-platform/us/en/polaris/home/polarisglobalnavigation.model.json

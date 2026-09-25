@@ -1,5 +1,15 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
+#EXTINF:-1 tvg-name="HKTV (1080p) [Geo-blocked]" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG002Z1SEP.png?lock=720x540" group-title="Movies",HKTV (1080p) [Geo-blocked]
+https://reflect-hktv.cablecast.tv/live-3/live/live.m3u8
 #EXTINF:-1 tvg-name="City of Loveland TV (1080p)" group-title="News",City of Loveland TV (1080p)
 https://reflect-cityofloveland-co.cablecast.tv/live-3/live/live.m3u8
 #EXTINF:-1 tvg-name="City of Fairfield Channel 26 (720p) [Geo-blocked]" group-title="Other",City of Fairfield Channel 26 (720p) [Geo-blocked]
 https://reflect-fairfield-ca.cablecast.tv/live-8/live/live.m3u8
+#EXTINF:-1 tvg-name="CommunityTV Channel 189 (1080p) [Geo-blocked]" group-title="Other",CommunityTV Channel 189 (1080p) [Geo-blocked]
+https://reflect-tacm.cablecast.tv/live-3/live/live.m3u8
+#EXTINF:-1 tvg-name="Contra Costa TV [Geo-blocked]" group-title="Other",Contra Costa TV [Geo-blocked]
+https://reflect-contra-costa.cablecast.tv/live-7/live/live.m3u8
+#EXTINF:-1 tvg-name="Glendale TV (720p) [Geo-blocked]" group-title="Other",Glendale TV (720p) [Geo-blocked]
+https://reflect-gtv6-glendale.cablecast.tv/live-2/live/live.m3u8
+#EXTINF:-1 tvg-name="KFON TV (720p) [Geo-blocked]" group-title="Other",KFON TV (720p) [Geo-blocked]
+https://reflect-watchkfon-fontana.cablecast.tv/live-3/live/live.m3u8

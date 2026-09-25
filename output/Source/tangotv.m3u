@@ -1,4 +1,6 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
+#EXTINF:-1 tvg-name="Food Food (576p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Food%20Food.png" group-title="Cooking",Food Food (576p)
+https://mumt03.tangotv.in/Dsly5z3HFOODFOOD/index.m3u8
 #EXTINF:-1 tvg-name="Andy Haryana (576p)" tvg-logo="https://i.imgur.com/rmCBD3e.png" group-title="Culture",Andy Haryana (576p)
 https://mumt03.tangotv.in/Dsly5z3HANDYHARYANA/index.m3u8
 #EXTINF:-1 tvg-name="BVG (576p)" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/BVG.png" group-title="Education",BVG (576p)
@@ -15,6 +17,8 @@ https://mumt06.tangotv.in/qYyB8fXVMANORANJANPRIME/index.m3u8
 https://mumt05.tangotv.in/87NeALx2NEPAL1/index.m3u8
 #EXTINF:-1 tvg-name="PTC Punjabi (576p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/PTC%20Punjabi.png" group-title="Entertainment",PTC Punjabi (576p)
 https://streams.tangotv.in/PTCPUNJABI/ORIGIN/index.m3u8
+#EXTINF:-1 tvg-name="Shemaroo Umang" tvg-logo="https://dtil.tmsimg.com/assets/s143779_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Shemaroo Umang
+https://mumt04.tangotv.in/m18aqlK4SHEMAROOUMANG/index.m3u8
 #EXTINF:-1 tvg-name="Siri Kannada (576p)" tvg-logo="https://dtil.tmsimg.com/assets/s143790_ld_h9_aa.png?lock=720x540" group-title="Entertainment",Siri Kannada (576p)
 https://mumt03.tangotv.in/Dsly5z3HSIRIKANNADA/index.m3u8
 #EXTINF:-1 tvg-name="Siri Kannada All Time (576p)" tvg-logo="https://dtil.tmsimg.com/assets/s143790_ld_h9_aa.png?lock=720x540" group-title="Entertainment",Siri Kannada All Time (576p)
@@ -27,10 +31,24 @@ https://streams.tangotv.in/B4UKADAK/ORIGIN/index.m3u8
 https://streams.tangotv.in/B4UMOVIES/ORIGIN/index.m3u8
 #EXTINF:-1 tvg-name="Epic Bhojpuri (576p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/FILAMCHI_BHOJPURI_HINDI-transparent.png" group-title="Movies",Epic Bhojpuri (576p)
 https://mumt01.tangotv.in/O5aw8Zn3EPICBHOJPURI/index.m3u8
+#EXTINF:-1 tvg-name="Goldmines (576p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Goldmines%20Logo_Transparent.png" group-title="Movies",Goldmines (576p)
+https://streams.tangotv.in/GOLDMINES/ORIGIN/index.m3u8
+#EXTINF:-1 tvg-name="Goldmines 2 (576p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Goldmines%20Logo_Transparent.png" group-title="Movies",Goldmines 2 (576p)
+https://mumt03.tangotv.in/Dsly5z3HGOLDMINES2/index.m3u8
+#EXTINF:-1 tvg-name="Goldmines Action (576p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Goldmines%20Logo_Transparent.png" group-title="Movies",Goldmines Action (576p)
+https://mumt03.tangotv.in/Dsly5z3HGOLDMINESACTION/index.m3u8
+#EXTINF:-1 tvg-name="Goldmines Bollywood" tvg-logo="https://i.imgur.com/6mNQ9mM.png" group-title="Movies",Goldmines Bollywood
+https://streams.tangotv.in/GOLDMINESBOLLYWOOD/ORIGIN/index.m3u8
 #EXTINF:-1 tvg-name="Goldmines Bollywood (576p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Goldmines%20Logo_Transparent.png" group-title="Movies",Goldmines Bollywood (576p)
 https://mumt03.tangotv.in/Dsly5z3HGOLDMINESBOLLYWOOD/index.m3u8
+#EXTINF:-1 tvg-name="Manoranjan Movies (576p)" tvg-logo="https://dtil.tmsimg.com/assets/s143303_ld_h15_aa.png?lock=720x540" group-title="Movies",Manoranjan Movies (576p)
+https://mumt04.tangotv.in/m18aqlK4MANORANJANMOVIES/index.m3u8
+#EXTINF:-1 tvg-name="MH One Movies (576p)" group-title="Movies",MH One Movies (576p)
+https://mumt03.tangotv.in/Dsly5z3HMHONEMOVIE/index.m3u8
 #EXTINF:-1 tvg-name="Shemaroo Josh (576p)" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/ShemarooJosh_Transparent_3506d79a-bad8-4c99-905d-9b917076ad43.png" group-title="Movies",Shemaroo Josh (576p)
 https://mumt04.tangotv.in/m18aqlK4SHEMAROOJOSH/index.m3u8
+#EXTINF:-1 tvg-name="Epic Music (576p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Showbox-LOGO_2000_X_1125_Transpharent.png" group-title="Music",Epic Music (576p)
+https://mumt04.tangotv.in/m18aqlK4EPICMUSIC/index.m3u8
 #EXTINF:-1 tvg-name="MH One Dil Se (576p)" tvg-logo="https://i.imgur.com/zYbltEk.png" group-title="Music",MH One Dil Se (576p)
 https://streams.tangotv.in/MHONEDILSE/ORIGIN/index.m3u8
 #EXTINF:-1 tvg-name="Music India (576p)" tvg-logo="https://dtil.tmsimg.com/assets/s143563_ld_h15_aa.png?lock=720x540" group-title="Music",Music India (576p)
@@ -39,6 +57,8 @@ https://streams.tangotv.in/MUSICINDIA/ORIGIN/index.m3u8
 https://mumt01.tangotv.in/O5aw8Zn3RAJMUSIXKANDA/index.m3u8
 #EXTINF:-1 tvg-name="Sangeet Bhojpuri (576p)" tvg-logo="https://dtil.tmsimg.com/assets/s143757_ld_h15_aa.png?lock=720x540" group-title="Music",Sangeet Bhojpuri (576p)
 https://mumt01.tangotv.in/O5aw8Zn3SANGEETBHOJPURI/index.m3u8
+#EXTINF:-1 tvg-name="Sharnam TV (576p)" tvg-logo="https://papaji.freetvindia.com/media/channels/SarnamTV.png" group-title="Music",Sharnam TV (576p)
+https://mumt06.tangotv.in/qYyB8fXVSHARNAMTV/index.m3u8
 #EXTINF:-1 tvg-name="Bharat Express (576p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Bharat-Expess-Transparent.png" group-title="News",Bharat Express (576p)
 https://mumt07.tangotv.in/zHjX9OFlBHARATEXPRESS/index.m3u8
 #EXTINF:-1 tvg-name="Bharat Samachar (576p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/9ff26e4cd19e2f6c3ad7de6b58c0326d.jpg" group-title="News",Bharat Samachar (576p)
@@ -49,7 +69,7 @@ https://mumt03.tangotv.in/Dsly5z3H1STINDIANEWS/index.m3u8
 https://mumt03.tangotv.in/Dsly5z3HGUJARATFIRST/index.m3u8
 #EXTINF:-1 tvg-name="IBC 24 (576p)" tvg-logo="https://dtil.tmsimg.com/assets/s143156_ld_h6_aa.png?lock=720x540" group-title="News",IBC 24 (576p)
 https://mumt05.tangotv.in/87NeALx2IBC24/index.m3u8
-#EXTINF:-1 tvg-name="India Ahead (576p)" tvg-logo="https://i.imgur.com/hBkTmf9.png" group-title="News",India Ahead (576p)
+#EXTINF:-1 tvg-name="india tv" tvg-logo="https://dtil.tmsimg.com/assets/s143199_ld_h15_aa.png?lock=720x540" group-title="News",india tv
 https://mumt05.tangotv.in/87NeALx2INDIAAHEAD/index.m3u8
 #EXTINF:-1 tvg-name="Khabar Fast (576p)" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Khabar_Fast.png" group-title="News",Khabar Fast (576p)
 https://mumt04.tangotv.in/m18aqlK4KHABARFAST/index.m3u8
@@ -65,8 +85,6 @@ https://mumt03.tangotv.in/Dsly5z3HNEWSXWORLD/index.m3u8
 https://streams.tangotv.in/PRAGNEWS/ORIGIN/index.m3u8
 #EXTINF:-1 tvg-name="PTC News (576p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/PTC%20News.png" group-title="News",PTC News (576p)
 https://streams.tangotv.in/PTCNEWS/ORIGIN/index.m3u8
-#EXTINF:-1 tvg-name="Pudhari News (576p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Pudhari-Logo_2000_X_1125_Transpharent.png" group-title="News",Pudhari News (576p)
-https://streams.tangotv.in/PUDHARINEWS/ORIGIN/index.m3u8
 #EXTINF:-1 tvg-name="Raj News Kannada (576p)" tvg-logo="https://dtil.tmsimg.com/assets/s143709_ld_h9_ab.png?lock=720x540" group-title="News",Raj News Kannada (576p)
 https://mumt03.tangotv.in/Dsly5z3HRAJNEWSKANDA/index.m3u8
 #EXTINF:-1 tvg-name="Raj News Malayalam (576p)" tvg-logo="https://dtil.tmsimg.com/assets/s143709_ld_h9_ab.png?lock=720x540" group-title="News",Raj News Malayalam (576p)
@@ -81,27 +99,45 @@ https://mumt01.tangotv.in/O5aw8Zn3SANDESHNEWS/index.m3u8
 https://mumt01.tangotv.in/O5aw8Zn3JANAMTVTAMIL/index.m3u8
 #EXTINF:-1 tvg-name="TV5 Kannada (576p)" tvg-logo="https://dtil.tmsimg.com/assets/s144024_ld_h15_aa.png?lock=720x540" group-title="News",TV5 Kannada (576p)
 https://mumt07.tangotv.in/zHjX9OFlTV5KANNADA/index.m3u8
-#EXTINF:-1 tvg-name="tv9 bharatvarsh" tvg-logo="https://dtil.tmsimg.com/assets/s144027_ld_h15_aa.png?lock=720x540" group-title="News",tv9 bharatvarsh
-https://streams.tangotv.in/TV9BHARATVARSH/ORIGIN/index.m3u8
 #EXTINF:-1 tvg-name="TV9 Kannada (576p)" tvg-logo="https://dtil.tmsimg.com/assets/s144029_ld_h15_aa.png?lock=720x540" group-title="News",TV9 Kannada (576p)
 https://streams.tangotv.in/TV9KANNADA/ORIGIN/index.m3u8
 #EXTINF:-1 tvg-name="Aryan TV National (576p)" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ARYAN_TV_NATIONAL/images/LOGO_HD/image.png" group-title="Other",Aryan TV National (576p)
 https://mumt04.tangotv.in/m18aqlK4ARYANTVNATIONAL/index.m3u8
 #EXTINF:-1 tvg-name="index m3u8" group-title="Other",index m3u8
-https://mumt01.tangotv.in/O5aw8Zn3GTC/index.m3u8
+https://mumt04.tangotv.in/m18aqlK4VASANTHTV/index.m3u8
 #EXTINF:-1 tvg-name="index m3u8" group-title="Other",index m3u8
-https://mumt01.tangotv.in/O5aw8Zn3PEARTV/index.m3u8
+https://mumt05.tangotv.in/87NeALx2GYANDARSHAN/index.m3u8
 #EXTINF:-1 tvg-name="index m3u8" group-title="Other",index m3u8
-https://mumt01.tangotv.in/O5aw8Zn3OMTV/index.m3u8
+https://mumt05.tangotv.in/87NeALx2TEHZEEBTV/index.m3u8
+#EXTINF:-1 tvg-name="index m3u8" group-title="Other",index m3u8
+https://mumt01.tangotv.in/O5aw8Zn3SARAVDHARAMSANGAM/index.m3u8
+#EXTINF:-1 tvg-name="Raftaar Media (576p)" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_RAFTAAR_MEDIA/images/LOGO_HD/image.png" group-title="Other",Raftaar Media (576p)
+https://mumt04.tangotv.in/m18aqlK4RAFTAARMEDIA/index.m3u8
 #EXTINF:-1 tvg-name="Ramdhenu (576p)" tvg-logo="https://dtil.tmsimg.com/assets/s143717_ld_h15_aa.png?lock=720x540" group-title="Other",Ramdhenu (576p)
 https://mumt01.tangotv.in/O5aw8Zn3RAMDHENU/index.m3u8
-#EXTINF:-1 tvg-name="Aadinath TV (576p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Aadinath-TV-Transparent.png" group-title="Religious",Aadinath TV (576p)
+#EXTINF:-1 tvg-name="Win TV (576p)" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Win_TV.png" group-title="Other",Win TV (576p)
+https://mumt06.tangotv.in/qYyB8fXVWINTV/index.m3u8
+#EXTINF:-1 tvg-name="aadinath" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Aadinath-TV-Transparent.png" group-title="Religious",aadinath
 https://mumt01.tangotv.in/O5aw8Zn3AADINATHTV/index.m3u8
 #EXTINF:-1 tvg-name="Aastha Gujarati (576p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Aastha.png" group-title="Religious",Aastha Gujarati (576p)
 https://mumt04.tangotv.in/m18aqlK4AASTHAGUJARATI/index.m3u8
 #EXTINF:-1 tvg-name="Awakening TV (576p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Awakening-logo-transparent.png" group-title="Religious",Awakening TV (576p)
 https://mumt03.tangotv.in/Dsly5z3HAWAKENINGTV/index.m3u8
+#EXTINF:-1 tvg-name="Darshan 24 (576p)" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Darshan_24.png" group-title="Religious",Darshan 24 (576p)
+https://mumt05.tangotv.in/87NeALx2DARSHAN24/index.m3u8
 #EXTINF:-1 tvg-name="Hope Channel India (576p)" tvg-logo="https://i.imgur.com/wPzPUrK.png" group-title="Religious",Hope Channel India (576p)
 https://mumt01.tangotv.in/O5aw8Zn3HOPECHANNELINDIA/index.m3u8
+#EXTINF:-1 tvg-name="Ishwar Bhakti TV" tvg-logo="https://dtil.tmsimg.com/assets/s143213_ld_h9_aa.png?lock=720x540" group-title="Religious",Ishwar Bhakti TV
+https://mumt05.tangotv.in/87NeALx2ISHWARBHAKTI/index.m3u8
 #EXTINF:-1 tvg-name="MH One Shraddha (576p)" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG002NFEZK.png?lock=720x540" group-title="Religious",MH One Shraddha (576p)
 https://mumt01.tangotv.in/O5aw8Zn3MHONESHRADDHA/index.m3u8
+#EXTINF:-1 tvg-name="OM TV (576p)" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/OM_TV.png" group-title="Religious",OM TV (576p)
+https://mumt01.tangotv.in/O5aw8Zn3OMTV/index.m3u8
+#EXTINF:-1 tvg-name="paras gold" tvg-logo="https://dtil.tmsimg.com/assets/s143642_ld_h15_aa.png?lock=720x540" group-title="Religious",paras gold
+https://mumt04.tangotv.in/m18aqlK4PARASGOLD/index.m3u8
+#EXTINF:-1 tvg-name="PTC Simran (576p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/PTC%20Simran.png" group-title="Religious",PTC Simran (576p)
+https://streams.tangotv.in/PTCSIMRAN/ORIGIN/index.m3u8
+#EXTINF:-1 tvg-name="Shubhsandesh TV (576p)" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SHUBHSANDESH_TV/images/LOGO_HD/image.png" group-title="Religious",Shubhsandesh TV (576p)
+https://mumt03.tangotv.in/Dsly5z3HSHUBHSANDESH/index.m3u8
+#EXTINF:-1 tvg-name="Vedic (576p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Vedic.png" group-title="Religious",Vedic (576p)
+https://mumt05.tangotv.in/87NeALx2VEDIC/index.m3u8

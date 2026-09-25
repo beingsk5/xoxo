@@ -1,7 +1,17 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
 #EXTINF:-1 tvg-name="BabyTV Turkiye (1080p) [Geo-blocked]" group-title="Kids",BabyTV Turkiye (1080p) [Geo-blocked]
 https://saran-live.ercdn.net/babytv/index.m3u8
+#EXTINF:-1 tvg-name="Disney Jr. (Turkiye) (1080p) [Geo-blocked]" group-title="Kids",Disney Jr. (Turkiye) (1080p) [Geo-blocked]
+https://saran-live.ercdn.net/disneyjunior/index.m3u8
 #EXTINF:-1 tvg-name="24 TV (720p)" group-title="News",24 TV (720p)
 https://turkmedya-live.ercdn.net/tv24/tv24.m3u8
+#EXTINF:-1 tvg-name="a2tv m3u8" group-title="Other",a2tv m3u8
+https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/a2tv/a2tv.m3u8
+#EXTINF:-1 tvg-name="ahaber m3u8" group-title="Other",ahaber m3u8
+https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/ahaber/ahaber.m3u8
+#EXTINF:-1 tvg-name="aspor m3u8" group-title="Other",aspor m3u8
+https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/aspor/aspor.m3u8
+#EXTINF:-1 tvg-name="tv360 m3u8" group-title="Other",tv360 m3u8
+https://turkmedya-live.ercdn.net/tv360/tv360.m3u8
 #EXTINF:-1 tvg-name="Jordan Sport (1080p) [Geo-blocked]" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Sports",Jordan Sport (1080p) [Geo-blocked]
 https://jrtv-live.ercdn.net/jordansporthd/jordansporthd.m3u8

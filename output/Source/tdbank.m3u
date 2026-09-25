@@ -1,0 +1,5 @@
+#EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
+#EXTINF:-1 tvg-name="nav json" group-title="Other",nav json
+https://onlinebanking.tdbank.com/nav.json
+#EXTINF:-1 tvg-name="web_config json" group-title="Other",web_config json
+https://onlinebanking.tdbank.com/web_config.json

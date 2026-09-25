@@ -1,0 +1,7 @@
+#EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
+#EXTINF:-1 tvg-name="hls m3u8" group-title="Other",hls m3u8
+https://video.adpushup.com/instream/content/tech/easyhindityping/hls.m3u8
+#EXTINF:-1 tvg-name="main m3u8" group-title="Other",main m3u8
+https://video.adpushup.com/instream/content/tech/easyhindityping/hls/360p/main.m3u8
+#EXTINF:-1 tvg-name="main m3u8" group-title="Other",main m3u8
+https://video.adpushup.com/instream/content/tech/easyhindityping/hls/eng/main.m3u8

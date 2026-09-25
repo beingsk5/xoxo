@@ -1,3 +1,5 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
 #EXTINF:-1 tvg-name="chaupal json" group-title="Other",chaupal json
 https://paas-init.revlet.net/clients/chaupal/live/chaupal.json
+#EXTINF:-1 tvg-name="loadliveFiles txt?ver=" group-title="Other",loadliveFiles txt?ver=
+https://chaupal-demotv.revlet.net/loadliveFiles.txt?ver=

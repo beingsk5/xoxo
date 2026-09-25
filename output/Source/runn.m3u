@@ -1,23 +1,3 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
-#EXTINF:-1 tvg-name="GTC Punjabi" tvg-logo="https://media.thegtcnetwork.com/uploads/gtc-pujabin-s.jpg" group-title="Entertainment",GTC Punjabi
-https://csm-e-runntvprdlive-eb.runnads.runn.media/csm/extlive/runntvprd01,gtcpunjabividaa.m3u8?yo.up=https%3A//gtc.ottlive.co.in/gtcpunjabi/&yo.eb.fb=aHR0cHM6Ly9ndGMub3R0bGl2ZS5jby5pbi9ndGNwdW5qYWJpL2luZGV4Lm0zdTg=&ads.vidaa_ads_param=1191723366
-#EXTINF:-1 tvg-name="Punjabi Shorts" tvg-logo="https://www.thegtcnetwork.com/punjabi-shorts.jpg" group-title="Movies",Punjabi Shorts
-https://csm-e-runntvprdlive-eb.runnads.runn.media/csm/extlive/runntvprd01,punjabishortsvidaa.m3u8?yo.up=https%3A//gtc.ottlive.co.in/punjabshort/&yo.eb.fb=aHR0cHM6Ly9ndGMub3R0bGl2ZS5jby5pbi9wdW5qYWJzaG9ydC9pbmRleC5tM3U4&ads.vidaa_ads_param=1191723366
-#EXTINF:-1 tvg-name="9X Jalwa" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_9X_JALWA/images/LOGO_HD/image.png" group-title="Music",9X Jalwa
-https://csm-e-runntvprdlive-eb.runnads.runn.media/csm/extlive/runntvprd01,9xjalwavidaa2.m3u8?yo.up=https%3A//vidaa-9x.cdn.runn.tv/9X_Jalwa/&yo.eb.fb=aHR0cHM6Ly92aWRhYS05eC5jZG4ucnVubi50di85WF9KYWx3YS9tYXN0ZXIubTN1OA==&ads.vidaa_ads_param=1191723366
-#EXTINF:-1 tvg-name="9XM" tvg-logo="https://dtil.tmsimg.com/assets/s77447_ld_h15_aa.png?lock=720x540" group-title="Music",9XM
-https://csm-e-runntvprdlive-eb.runnads.runn.media/csm/extlive/runntvprd01,9xmvidaa2.m3u8?yo.up=https%3A//vidaa-9x.cdn.runn.tv/9XM/&yo.eb.fb=aHR0cHM6Ly92aWRhYS05eC5jZG4ucnVubi50di85WE0vbWFzdGVyLm0zdTg=&ads.vidaa_ads_param=1191723366
 #EXTINF:-1 tvg-name="Shemaroo Filmi Gaane (1080p)" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/channel/0d5b07555b2d4415aa9f145273095ed7.png" group-title="Music",Shemaroo Filmi Gaane (1080p)
 https://prod-runn.cdn.runn.tv/shemaroo/stream/smrfgn/playlist.m3u8
-#EXTINF:-1 tvg-name="ABP Ananda" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/ABP_Ananda_logo.svg/500px-ABP_Ananda_logo.svg.png" group-title="News",ABP Ananda
-https://csm-e-runntvprdlive-eb.runnads.runn.media/csm/extlive/runntvprd01,abpbanglavidaa.m3u8?yo.up=https%3A//vidaa-abpnews.cdn.runn.tv/2042873/ananda/&yo.eb.fb=aHR0cHM6Ly92aWRhYS1hYnBuZXdzLmNkbi5ydW5uLnR2LzIwNDI4NzMvYW5hbmRhL21hc3Rlci5tM3U4&ads.vidaa_ads_param=1191723366
-#EXTINF:-1 tvg-name="ABP Asmita" tvg-logo="https://dtil.tmsimg.com/assets/s142519_ld_h15_aa.png?lock=720x540" group-title="News",ABP Asmita
-https://csm-e-runntvprdlive-eb.runnads.runn.media/csm/extlive/runntvprd01,abpasmitavidaa2.m3u8?yo.up=https%3A//vidaa-abpnews.cdn.runn.tv/2042876/asmita/&yo.eb.fb=aHR0cHM6Ly92aWRhYS1hYnBuZXdzLmNkbi5ydW5uLnR2LzIwNDI4NzYvYXNtaXRhL21hc3Rlci5tM3U4&ads.vidaa_ads_param=1191723366
-#EXTINF:-1 tvg-name="ABP Majha" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/ABP_Majha_logo.svg/500px-ABP_Majha_logo.svg.png" group-title="News",ABP Majha
-https://csm-e-runntvprdlive-eb.runnads.runn.media/csm/extlive/runntvprd01,abpmajhavidaa2.m3u8?yo.up=https%3A//vidaa-abpnews.cdn.runn.tv/2042872/majha/&yo.eb.fb=aHR0cHM6Ly92aWRhYS1hYnBuZXdzLmNkbi5ydW5uLnR2LzIwNDI4NzIvbWFqaGEvbWFzdGVyLm0zdTg=&ads.vidaa_ads_param=1191723366
-#EXTINF:-1 tvg-name="ABP NEWS" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/ABP_News_logo.svg/500px-ABP_News_logo.svg.png" group-title="News",ABP NEWS
-https://csm-e-runntvprdlive-eb.runnads.runn.media/csm/extlive/runntvprd01,abpnewsvidaa2.m3u8?yo.up=https%3A//vidaa-abpnews.cdn.runn.tv/2042871-b/abpnews/&yo.eb.fb=aHR0cHM6Ly92aWRhYS1hYnBuZXdzLmNkbi5ydW5uLnR2LzIwNDI4NzEtYi9hYnBuZXdzL21hc3Rlci5tM3U4&ads.vidaa_ads_param=1191723366
-#EXTINF:-1 tvg-name="INDIA TV" tvg-logo="https://dtil.tmsimg.com/assets/s143199_ld_h15_aa.png?lock=720x540" group-title="News",INDIA TV
-https://csm-e-runntvprdlive-eb.runnads.runn.media/csm/extlive/runntvprd01,indiatvvidaa2.m3u8?yo.up=https%3A//vidaa-indiatv.cdn.runn.tv&yo.eb.fb=aHR0cHM6Ly92aWRhYS1pbmRpYXR2LmNkbi5ydW5uLnR2L3YxL3ZnbGl2ZS1zay0yNzQ5MDYvbWFpbi5tM3U4&ads.vidaa_ads_param=1191723366
-#EXTINF:-1 tvg-name="India TV Yoga" tvg-logo="https://dtil.tmsimg.com/assets/s143199_ld_h15_aa.png?lock=720x540" group-title="News",India TV Yoga
-https://csm-e-runntvprdlive-eb.runnads.runn.media/csm/extlive/runntvprd01,indiatvyogavidaa2.m3u8?yo.up=https%3A//vidaa-indiatv.cdn.runn.tv/v1/vglive-sk-385006/&yo.eb.fb=aHR0cHM6Ly92aWRhYS1pbmRpYXR2LmNkbi5ydW5uLnR2L3YxL3ZnbGl2ZS1zay0zODUwMDYvbWFpbi5tM3U4&ads.vidaa_ads_param=1191723366

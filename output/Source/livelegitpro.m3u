@@ -1,10 +1,10 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
+#EXTINF:-1 tvg-name="KTV Bangla (720p)" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG002Z1SEP.png?lock=720x540" group-title="Movies",KTV Bangla (720p)
+https://server.livelegitpro.in:9899/tribetv/tribetv/index.m3u8
 #EXTINF:-1 tvg-name="ANB News (720p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/ANB%20News.png" group-title="News",ANB News (720p)
 https://server.livelegitpro.in:9899/anbnews/anbnews/index.m3u8
 #EXTINF:-1 tvg-name="HNN 24x7 (576p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/HNN_2000_X_1125_Transpharent.png" group-title="News",HNN 24x7 (576p)
 https://ott.livelegitpro.in:9899/hnnnews/hnnnews/index.m3u8
-#EXTINF:-1 tvg-name="i news" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e6/Janasri_News_Channel_Logo.jpg" group-title="News",i news
-https://livelegitpro.in/hls2/newstime/index.m3u8
 #EXTINF:-1 tvg-name="Sudarshan News (1080p)" tvg-logo="https://dtil.tmsimg.com/assets/s143870_ld_h15_aa.png?lock=720x540" group-title="News",Sudarshan News (1080p)
 https://ott.livelegitpro.in/sudarshannews/sudarshannews/tracks-v1/index.fmp4.m3u8
 #EXTINF:-1 tvg-name="TV45 (1080p)" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/TV45.png" group-title="News",TV45 (1080p)

@@ -5,3 +5,11 @@ https://livestream.unlimitedcdn.com/agm-dc/desi-channel/index.m3u8
 https://live-stream.dvb.no/hls/stream_src/index.m3u8
 #EXTINF:-1 tvg-name="TV SUD (1080p) [Geo-blocked]" group-title="News",TV SUD (1080p) [Geo-blocked]
 https://stream2.live-stream.ro/WebRTCApp/streams/118334672595255049029831.m3u8
+#EXTINF:-1 tvg-name="playlist m3u8" group-title="Other",playlist m3u8
+https://player.mslivestream.net/telugu/5d076e5c3d34cb8bb08e54a4bb7e223e.sdp/playlist.m3u8
+#EXTINF:-1 tvg-name="TVE Internacional America HD (1080p) [Geo-blocked]" group-title="Other",TVE Internacional America HD (1080p) [Geo-blocked]
+https://rtvelivestream-rtveplayplus.rtve.es/rtvesec/int/tvei_ame_main_1080.m3u8
+#EXTINF:-1 tvg-name="TVE Internacional Europe (576p) [Geo-blocked]" group-title="Other",TVE Internacional Europe (576p) [Geo-blocked]
+https://rtvelivestream-rtveplayplus.rtve.es/rtvesec/int/tvei_eu_main_576.m3u8
+#EXTINF:-1 tvg-name="TVE Internacional Europe HD (1080p) [Geo-blocked]" group-title="Other",TVE Internacional Europe HD (1080p) [Geo-blocked]
+https://rtvelivestream-rtveplayplus.rtve.es/rtvesec/int/tvei_eu_main_1080.m3u8
