@@ -39,14 +39,41 @@ log = logging.getLogger("scraper")
 BASE_DIR = Path(__file__).parent.parent
 CHANNEL_LISTS_DIR = BASE_DIR / "channel_lists"
 RAW_OUTPUT_DIR = BASE_DIR / "output" / "raw"
-SEARCH_WORKERS = 6          # parallel search engine workers
-VALIDATE_WORKERS = 15       # parallel URL validation workers
+SEARCH_WORKERS = 10          # parallel query workers (3 engines each, pooled)
+VALIDATE_WORKERS = 25        # parallel URL validation workers
 CRAWL_WORKERS = 8           # parallel official-site crawlers
 RESUME_EVERY = 100          # persist resume state every N completed items
 SITES_CAP = 40              # max official websites crawled per run
 URLS_PER_SITE = 300         # max URLs collected from a single site (anti-bloat)
 HARVEST_CAP = 3000          # max stream URLs harvested from HTML search pages
 HARVEST_PER_PAGE = 40       # max stream URLs kept per harvested page
+
+
+def _load_shared_dead_urls() -> Set[str]:
+    """Dead URLs already probed by an earlier language job in this run.
+
+    PROBE_CACHE_DIR holds *.txt files (one URL per line) downloaded from the
+    `deadurls-*` artifacts of jobs that finished before this one started.
+    A URL probed dead minutes ago on the same runner pool yields the same
+    verdict — skipping it is quality-neutral.
+    """
+    d = os.environ.get("PROBE_CACHE_DIR", "")
+    if not d:
+        return set()
+    root = Path(d)
+    if not root.is_dir():
+        return set()
+    urls: Set[str] = set()
+    for f in root.glob("*.txt"):
+        try:
+            for line in f.read_text(encoding="utf-8", errors="ignore").splitlines():
+                u = line.strip()
+                if u.startswith(("http://", "https://")):
+                    urls.add(u)
+        except OSError:
+            continue
+    return urls
+
 # Quality/region tokens allowed as extras when token-matching channel names
 # (list "zee tv" accepts "zee tv hd"; never accepts "mtv azerbaijan").
 _SAFE_NAME_EXTRAS = frozenset({
@@ -102,9 +129,9 @@ class _LockSet:
 class LanguageScraper:
     """Scrapes streams for all channels of a given language.
 
-    The run is bounded by a *time budget* derived from the CI job timeout
-    (see --timeout-minutes) rather than by a fixed query count. Search stops
-    when the deadline approaches so validation + final save always fit.
+    Runs uncapped by default (no time budget): search, crawl and validation
+    continue until their work lists are exhausted. A budget is only applied
+    when an explicit --timeout-minutes value is passed (optional, off in CI).
     """
 
     def __init__(
@@ -281,17 +308,24 @@ class LanguageScraper:
         searched_lock = Lock()
         searched: Set[str] = set(resume.searched_queries)
 
-        def search_one(q: str):
+        def search_one(q: str, pool: ThreadPoolExecutor):
             proves = self._query_proves_language(q)
-            for engine_name, engine_func in ENGINE_LIST:
-                hits = search_with_tracking(engine_name, engine_func, q, max_results=5)
-                # YouTube (and its CDN) is allowed as a search result host only
-                # to discover pages — never as a channel URL in the playlist.
-                hits = {u for u in hits if not is_blocked_domain(u)}
+            # The 3 engines run concurrently (different hosts, no shared rate
+            # limit); results union identically to the old serial pass.
+            futs = [
+                pool.submit(search_with_tracking, name, func, q, 5)
+                for name, func in ENGINE_LIST
+            ]
+            hits: Set[str] = set()
+            for f in as_completed(futs):
+                hits.update(f.result() or set())
+            # YouTube (and its CDN) is allowed as a search result host only
+            # to discover pages — never as a channel URL in the playlist.
+            hits = {u for u in hits if not is_blocked_domain(u)}
+            if hits:
                 pending_urls.update(hits)
-                if proves and hits:
+                if proves:
                     proven.update(hits)
-                time.sleep(random.uniform(0.15, 0.45))
             with searched_lock:
                 searched.add(q)
 
@@ -299,7 +333,10 @@ class LanguageScraper:
         done = 0
         total = len(queries)
 
-        with ThreadPoolExecutor(max_workers=SEARCH_WORKERS) as executor:
+        # Engine pool is sized SEARCH_WORKERS*3 so all engines of every
+        # in-flight query run at once (never a nested-pool bottleneck).
+        with ThreadPoolExecutor(max_workers=SEARCH_WORKERS * 3) as engine_pool, \
+             ThreadPoolExecutor(max_workers=SEARCH_WORKERS) as executor:
             in_flight: Set[object] = set()
 
             def launch():
@@ -309,7 +346,7 @@ class LanguageScraper:
                         q = next(query_iter)
                     except StopIteration:
                         return
-                    fut = executor.submit(search_one, q)
+                    fut = executor.submit(search_one, q, engine_pool)
                     in_flight.add(fut)
                     if len(in_flight) >= SEARCH_WORKERS:
                         return
@@ -363,6 +400,19 @@ class LanguageScraper:
             u for u in (set(resume.pending_urls) - validated)
             if not is_blocked_domain(u)
         }
+        # URLs a sibling job (same run) already probed dead: skip them with
+        # the same verdict instead of re-burning probe time on them.
+        shared_dead = _load_shared_dead_urls()
+        if shared_dead:
+            pre_dead = pending & shared_dead
+            if pre_dead:
+                pending -= pre_dead
+                validated |= pre_dead
+                log.info(
+                    f"[{self.language}] skipping {len(pre_dead)} URLs "
+                    f"known dead from a sibling job"
+                )
+        dead_seen: Set[str] = set()
         queue: List[str] = list(pending)
         harvested: Set[str] = set()
         # Stream link -> player page that linked it. Sent as Referer/Origin
@@ -389,6 +439,8 @@ class LanguageScraper:
                 for completed in as_completed(futures):
                     url = futures[completed]
                     kind, indian, extinf, links, blocks = completed.result()
+                    if kind == "dead":
+                        dead_seen.add(url)
 
                     if kind == "playlist":
                         if blocks:
@@ -485,6 +537,14 @@ class LanguageScraper:
             proven=proven,
         )
         resume.save(str(self.resume_path))
+        # Publish this run's dead verdicts for later sibling jobs.
+        try:
+            RAW_OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+            (RAW_OUTPUT_DIR / f"{self.language}_deadurls.txt").write_text(
+                "\n".join(sorted(shared_dead | dead_seen)), encoding="utf-8"
+            )
+        except OSError:
+            pass
         result.urls_valid = len(result.channels)
         if remaining_pending:
             log.info(

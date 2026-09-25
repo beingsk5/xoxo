@@ -277,11 +277,34 @@ def is_channel_blocked(name: str) -> bool:
 # Search engines
 # ═════════════════════════════════════════════════════════════════
 
+# Reuse HTTP clients across queries: building a CloudScraper/DDGS client per
+# query costs ~0.3-1s (TLS + fingerprint setup). Thread-local => each worker
+# thread builds its client once and reuses it for every query it serves.
+_tl = threading.local()
+
+
+def _cloudscraper():
+    sc = getattr(_tl, "scraper", None)
+    if sc is None:
+        import cloudscraper
+        sc = cloudscraper.create_scraper()
+        _tl.scraper = sc
+    return sc
+
+
+def _ddgs_client():
+    from ddgs import DDGS
+    d = getattr(_tl, "ddgs", None)
+    if d is None:
+        d = DDGS(timeout=10)
+        _tl.ddgs = d
+    return d
+
+
 def search_bing(query: str, max_results: int = 10) -> Set[str]:
     links = set()
     try:
-        import cloudscraper
-        scraper = cloudscraper.create_scraper()
+        scraper = _cloudscraper()
         for start in range(0, max_results, 10):
             r = scraper.get(
                 f"https://www.bing.com/search?q={quote_plus(query)}&count=10&first={start + 1}",
@@ -294,31 +317,32 @@ def search_bing(query: str, max_results: int = 10) -> Set[str]:
                 href = a["href"]
                 if href.startswith("http"):
                     links.add(href)
-            time.sleep(random.uniform(0.5, 1.0))
+            # Throttle only when another page will actually be fetched;
+            # single-page queries (the common case) pay no sleep.
+            if start + 10 < max_results:
+                time.sleep(random.uniform(0.5, 1.0))
     except Exception:
-        pass
+        _tl.scraper = None  # stale/blocked client -> rebuild next query
     return links
 
 
 def search_ddg(query: str, max_results: int = 10) -> Set[str]:
     links = set()
     try:
-        from ddgs import DDGS
-        results = DDGS(timeout=10).text(query, max_results=max_results)
-        for r in results:
+        results = _ddgs_client().text(query, max_results=max_results)
+        for r in results or []:
             href = r.get("href", "")
             if href.startswith("http"):
                 links.add(href)
     except Exception:
-        pass
+        _tl.ddgs = None  # rebuild client next query
     return links
 
 
 def search_brave(query: str, max_results: int = 10) -> Set[str]:
     links = set()
     try:
-        import cloudscraper
-        scraper = cloudscraper.create_scraper()
+        scraper = _cloudscraper()
         r = scraper.get(
             f"https://search.brave.com/search?q={quote_plus(query)}", timeout=12
         )
@@ -331,7 +355,7 @@ def search_brave(query: str, max_results: int = 10) -> Set[str]:
                 if len(links) >= max_results:
                     break
     except Exception:
-        pass
+        _tl.scraper = None
     return links
 
 
