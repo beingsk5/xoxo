@@ -10,6 +10,9 @@ Writes:
   output/Language/<lang>.m3u - per-language
   output/Source/<src>.m3u    - per-source
   output/stats.json          - summary statistics
+  output/merge_manifest.txt  - exact list of files written this run
+                               (CI uploads/stages ONLY these; existing M3U
+                                files not written here are left untouched)
 """
 import json
 import logging
@@ -199,6 +202,8 @@ def merge():
     log.info("MERGE: Combining raw scraper outputs")
     log.info("=" * 50)
 
+    written: List[str] = []
+
     # Load raw scraped data
     channels = load_all_results()
     if not channels:
@@ -224,9 +229,11 @@ def merge():
 
     # Write India.m3u
     write_m3u(str(OUTPUT_DIR / "India.m3u"), channels)
+    written.append("output/India.m3u")
     log.info(f"Wrote India.m3u ({len(channels)} channels)")
 
-    # Write per-language files
+    # Write per-language files (only languages present in this merge —
+    # existing files for unselected languages are never written or removed)
     lang_dir = OUTPUT_DIR / "Language"
     lang_groups = defaultdict(list)
     for ch in channels:
@@ -236,8 +243,10 @@ def merge():
             continue
         fname = lang.lower().replace(" ", "_") + ".m3u"
         write_m3u(str(lang_dir / fname), chs)
+        written.append(f"output/Language/{fname}")
     if "Other" in lang_groups:
         write_m3u(str(lang_dir / "other.m3u"), lang_groups["Other"])
+        written.append("output/Language/other.m3u")
     log.info(f"Wrote {len(lang_groups)} language files")
 
     # Write per-source files
@@ -248,6 +257,7 @@ def merge():
     for src, chs in sorted(src_groups.items()):
         fname = src.lower().replace(" ", "_") + ".m3u"
         write_m3u(str(src_dir / fname), chs)
+        written.append(f"output/Source/{fname}")
     log.info(f"Wrote {len(src_groups)} source files")
 
     # Stats
@@ -265,6 +275,15 @@ def merge():
 
     with open(OUTPUT_DIR / "stats.json", "w", encoding="utf-8") as f:
         json.dump(stats, f, indent=2, ensure_ascii=False)
+    written.append("output/stats.json")
+
+    # Manifest: the exact files this run produced. CI stages/uploads only
+    # these, so M3U files from other runs stay in place, unchanged.
+    written.append("output/merge_manifest.txt")
+    manifest_path = OUTPUT_DIR / "merge_manifest.txt"
+    with open(manifest_path, "w", encoding="utf-8") as f:
+        f.write("\n".join(written) + "\n")
+    log.info(f"Wrote merge_manifest.txt ({len(written)} files this run)")
 
     log.info(f"\n{'=' * 50}")
     log.info(f"MERGE COMPLETE: {len(channels)} channels")
