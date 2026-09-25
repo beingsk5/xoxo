@@ -86,7 +86,6 @@ jobs:
   select-languages:
     name: Select Languages
     runs-on: ubuntu-26.04
-    timeout-minutes: 5
     outputs:
       matrix: ${{ steps.set.outputs.matrix }}
       list: ${{ steps.set.outputs.list }}
@@ -113,39 +112,25 @@ jobs:
           python3 <<'PY'
           import json, os
 
-          # language -> (env var, timeout minutes)
-          LANGS = {
-              "Hindi":     ("LANG_HINDI",     95),
-              "Tamil":     ("LANG_TAMIL",     95),
-              "Telugu":    ("LANG_TELUGU",    95),
-              "Bengali":   ("LANG_BENGALI",   95),
-              "English":   ("LANG_ENGLISH",   95),
-              "Gujarati":  ("LANG_GUJARATI",  95),
-              "Malayalam": ("LANG_MALAYALAM", 75),
-              "Kannada":   ("LANG_KANNADA",   75),
-              "Marathi":   ("LANG_MARATHI",   75),
-              "Odia":      ("LANG_ODIA",      75),
-              "Urdu":      ("LANG_URDU",      75),
-              "Punjabi":   ("LANG_PUNJABI",   60),
-              "Bhojpuri":  ("LANG_BHOJPURI",  60),
-              "Assamese":  ("LANG_ASSAMESE",  60),
-          }
+          # Languages in the canonical matrix order (no per-language time
+          # limits — the scraper runs until its queries are exhausted).
+          LANGS = [
+              "Hindi", "Tamil", "Telugu", "Bengali", "English", "Gujarati",
+              "Malayalam", "Kannada", "Marathi", "Odia", "Urdu",
+              "Punjabi", "Bhojpuri", "Assamese",
+          ]
 
           checked = [
               lang
-              for lang, (var, _) in LANGS.items()
-              if os.environ.get(var, "").lower() == "true"
+              for lang in LANGS
+              if os.environ.get("LANG_" + lang.upper(), "").lower() == "true"
           ]
 
           # Schedule (or no checkbox ticked) → every language
           if os.environ.get("EVENT_NAME") != "workflow_dispatch" or not checked:
-              checked = list(LANGS.keys())
+              checked = list(LANGS)
 
-          include = [
-              {"language": lang, "timeout": LANGS[lang][1]}
-              for lang in checked
-          ]
-          matrix = {"include": include}
+          matrix = {"include": [{"language": lang} for lang in checked]}
           list_csv = ",".join(checked)
 
           out = os.environ["GITHUB_OUTPUT"]
@@ -162,7 +147,6 @@ jobs:
   sync-data:
     name: Sync Database
     runs-on: ubuntu-26.04
-    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v7
 
@@ -195,7 +179,6 @@ jobs:
   sync-channels:
     name: Sync Channel Lists
     runs-on: ubuntu-26.04
-    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v7
 
@@ -230,7 +213,6 @@ jobs:
     name: Scrape ${{ matrix.language }}
     needs: [select-languages, sync-data, sync-channels]
     runs-on: ubuntu-26.04
-    timeout-minutes: ${{ matrix.timeout }}
     strategy:
       fail-fast: false
       max-parallel: 3
@@ -306,6 +288,14 @@ jobs:
           PY
           fi
 
+      - name: Download shared dead-URL cache (earlier jobs in this run)
+        continue-on-error: true
+        uses: actions/download-artifact@v8
+        with:
+          pattern: deadurls-*
+          path: .probe_cache
+          merge-multiple: true
+
       - name: Scrape ${{ matrix.language }} channels (retry once)
         run: |
           FORCE_FRESH="${{ github.event.inputs.force_fresh }}"
@@ -318,7 +308,7 @@ jobs:
             if [ "$attempt" != "1" ] && [ "$FORCE_FRESH" != "true" ]; then
               FRESH_FLAG=""
             fi
-            if python -m scrapers.language "${{ matrix.language }}" --timeout-minutes "${{ matrix.timeout }}" $FRESH_FLAG; then
+            if python -m scrapers.language "${{ matrix.language }}" $FRESH_FLAG; then
               echo "SUCCESS on attempt $attempt"
               exit 0
             fi
@@ -329,6 +319,7 @@ jobs:
           exit 1
         env:
           PYTHONUNBUFFERED: '1'
+          PROBE_CACHE_DIR: .probe_cache
 
       - name: Show results
         if: always()
@@ -343,6 +334,15 @@ jobs:
           retention-days: 5
           if-no-files-found: warn
 
+      - name: Upload dead-URL cache (for later jobs in this run)
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: deadurls-${{ matrix.language }}
+          path: output/raw/${{ matrix.language }}_deadurls.txt
+          retention-days: 1
+          if-no-files-found: ignore
+
   # ═══════════════════════════════════════════════════════════════
   # MERGE: Fan-in — only this run's selected-language artifacts
   # ═══════════════════════════════════════════════════════════════
@@ -351,7 +351,6 @@ jobs:
     needs: [select-languages, scrape-language]
     if: ${{ !cancelled() }}
     runs-on: ubuntu-26.04
-    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v7
 
@@ -362,10 +361,11 @@ jobs:
 
       - run: pip install -r requirements.txt
 
-      - name: Clear stale raw outputs
+      - name: Clear stale raw inputs
         run: |
-          # Checkout may contain output/raw/* from a previous force-commit.
-          # Wipe it so only this run's artifacts feed the merge.
+          # Only raw scraper inputs are cleared (never *.m3u outputs).
+          # output/Language/*.m3u and output/Source/*.m3u from previous runs
+          # stay on disk untouched — this run only UPDATES the files it writes.
           rm -rf output/raw
           mkdir -p output/raw
 
@@ -387,15 +387,26 @@ jobs:
       - name: Validate output
         run: python3 scripts/validate_output.py
 
+      - name: Build file list from merge manifest (selected languages only)
+        id: manifest
+        run: |
+          # merge.py records every file it wrote this run. Anything not in the
+          # manifest (e.g. Language/<unselected>.m3u from an earlier run) is
+          # left untouched and excluded from artifact + commit.
+          test -f output/merge_manifest.txt || { echo "merge_manifest.txt missing"; exit 1; }
+          {
+            echo "files<<EOF"
+            tr -d '\r' < output/merge_manifest.txt
+            echo "EOF"
+          } >> "$GITHUB_OUTPUT"
+          echo "Files produced this run:"
+          tr -d '\r' < output/merge_manifest.txt
+
       - name: Upload final artifacts
         uses: actions/upload-artifact@v7
         with:
           name: india-iptv-${{ github.run_id }}
-          path: |
-            output/India.m3u
-            output/Language/*.m3u
-            output/Source/*.m3u
-            output/stats.json
+          path: ${{ steps.manifest.outputs.files }}
           retention-days: 60
           if-no-files-found: error
 
@@ -411,8 +422,10 @@ jobs:
           rm -rf output/raw
           find output -name '*_resume.json' -delete 2>/dev/null || true
 
-          git add -f output/India.m3u output/stats.json output/Language output/Source 2>/dev/null || true
-          git add -f output/ -- ':!output/raw' 2>/dev/null || true
+          # Stage ONLY the files merge produced this run (selected languages).
+          # Unselected Language/*.m3u files stay tracked and unchanged — no
+          # deletion, no update.
+          tr -d '\r' < output/merge_manifest.txt | xargs -d '\n' git add -f --
 
           if git diff --staged --quiet; then
             echo "No changes to commit"
