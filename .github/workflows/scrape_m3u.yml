@@ -228,21 +228,21 @@ jobs:
 
       - run: pip install -r requirements.txt
 
-      - name: Camoufox package version
-        id: camoufox_ver
+      - name: Patchright package version
+        id: patchright_ver
         run: |
-          echo "v=$(python -c "import importlib.metadata as m; print(m.version('camoufox'))")" >> "$GITHUB_OUTPUT"
+          echo "v=$(python -c "import importlib.metadata as m; print(m.version('patchright'))")" >> "$GITHUB_OUTPUT"
 
-      - name: Cache Camoufox browser
+      - name: Cache Patchright browser
         uses: actions/cache@v4
         with:
-          path: ~/.cache/camoufox
-          key: camoufox-${{ runner.os }}-${{ steps.camoufox_ver.outputs.v }}
+          path: ~/.cache/ms-playwright
+          key: patchright-${{ runner.os }}-${{ steps.patchright_ver.outputs.v }}
           restore-keys: |
-            camoufox-${{ runner.os }}-
+            patchright-${{ runner.os }}-
 
-      - name: Ensure Camoufox (download only on version change)
-        run: python scripts/ensure_camoufox.py
+      - name: Ensure Patchright browser (download only on version change)
+        run: python scripts/ensure_patchright.py
 
       - name: Ensure MIB OTT search seeds
         run: |
