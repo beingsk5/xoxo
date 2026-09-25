@@ -1,11 +1,7 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
-#EXTINF:-1 tvg-name="National Geographic (1080p)" tvg-logo="https://dtil.tmsimg.com/assets/s143574_ld_h15_aa.png?lock=720x540" group-title="Documentary",National Geographic (1080p)
-https://saran-live.ercdn.net/natgeohd/index.m3u8
 #EXTINF:-1 tvg-name="BabyTV Turkiye (1080p) [Geo-blocked]" group-title="Kids",BabyTV Turkiye (1080p) [Geo-blocked]
 https://saran-live.ercdn.net/babytv/index.m3u8
-#EXTINF:-1 tvg-name="Disney Jr. (Turkiye) (1080p) [Geo-blocked]" group-title="Kids",Disney Jr. (Turkiye) (1080p) [Geo-blocked]
-https://saran-live.ercdn.net/disneyjunior/index.m3u8
-#EXTINF:-1 tvg-name="Jordan TV (1080p)" group-title="Other",Jordan TV (1080p)
-https://jrtv-live.ercdn.net/jordanhd/jordanhd.m3u8
+#EXTINF:-1 tvg-name="24 TV (720p)" group-title="News",24 TV (720p)
+https://turkmedya-live.ercdn.net/tv24/tv24.m3u8
 #EXTINF:-1 tvg-name="Jordan Sport (1080p) [Geo-blocked]" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Sports",Jordan Sport (1080p) [Geo-blocked]
 https://jrtv-live.ercdn.net/jordansporthd/jordansporthd.m3u8

@@ -1,6 +1,8 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
 #EXTINF:-1 tvg-name="DD Bharati (720p)" tvg-logo="https://dtil.tmsimg.com/assets/s142779_ld_h15_aa.png?lock=720x540" group-title="Culture",DD Bharati (720p)
 https://cdn.pishow.tv/ott/live/10/master.m3u8
+#EXTINF:-1 tvg-name="Maha Punjabi" tvg-logo="https://i.imgur.com/AWUcSb8.png" group-title="Entertainment",Maha Punjabi
+https://cdn.pishow.tv/ott/live/1521/master.m3u8
 #EXTINF:-1 tvg-name="Manoranjan TV (720p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/anjan-transparent.png" group-title="Entertainment",Manoranjan TV (720p)
 https://cdn.pishow.tv/ott/live/1013/master.m3u8
 #EXTINF:-1 tvg-name="DD Bihar (720p)" tvg-logo="https://dtil.tmsimg.com/assets/s142780_ld_h15_aa.png?lock=720x540" group-title="General",DD Bihar (720p)
@@ -15,19 +17,35 @@ https://cdn.pishow.tv/ott/live/8/master.m3u8
 https://cdn.pishow.tv/ott/live/36/master.m3u8
 #EXTINF:-1 tvg-name="DD Uttarakhand (720p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD-Uttarakhand-Logo_2000_X_1125_Transpharent.png" group-title="General",DD Uttarakhand (720p)
 https://cdn.pishow.tv/ott/live/17/master.m3u8
-#EXTINF:-1 tvg-name="Maha Movie (576p)" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Maha_Movies.png" group-title="Movies",Maha Movie (576p)
-https://cdn.pishow.tv/ott/live/10007/master.m3u8
-#EXTINF:-1 tvg-name="Manoranjan Grand (720p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Manoranjan-Grand-Logo-transparent.png" group-title="Movies",Manoranjan Grand (720p)
-https://cdn.pishow.tv/ott/live/1011/master.m3u8
+#EXTINF:-1 tvg-name="DD Yadagiri (576p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Yadagiri.png" group-title="General",DD Yadagiri (576p)
+https://cdn.pishow.tv/ott/live/21/master.m3u8
+#EXTINF:-1 tvg-name="Oscar Movies Bhojpuri (720p)" tvg-logo="https://dtil.tmsimg.com/assets/s143638_ld_h9_ab.png?lock=720x540" group-title="Movies",Oscar Movies Bhojpuri (720p)
+https://cdn.pishow.tv/ott/live/233/master.m3u8
 #EXTINF:-1 tvg-name="B4U Music (576p)" tvg-logo="https://dtil.tmsimg.com/assets/s158141_ld_h15_aa.png?lock=720x540" group-title="Music",B4U Music (576p)
 https://cdn.pishow.tv/ott/live/415/master.m3u8
+#EXTINF:-1 tvg-name="Raj Musix Malayalam (576p)" tvg-logo="https://dtil.tmsimg.com/assets/s143706_ld_h15_aa.png?lock=720x540" group-title="Music",Raj Musix Malayalam (576p)
+https://cdn.pishow.tv/ott/live/1073/master.m3u8
+#EXTINF:-1 tvg-name="Raj Musix Telugu (720p)" tvg-logo="https://dtil.tmsimg.com/assets/s143708_ld_h15_aa.png?lock=720x540" group-title="Music",Raj Musix Telugu (720p)
+https://cdn.pishow.tv/ott/live/1213/master.m3u8
+#EXTINF:-1 tvg-name="Saam TV" tvg-logo="https://dtil.tmsimg.com/assets/s143735_ld_h15_aa.png?lock=720x540" group-title="Music",Saam TV
+https://cdn.pishow.tv/ott/live/437/master.m3u8
+#EXTINF:-1 tvg-name="Sangeet Marathi (720p)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Sangeet_Marathi.jpg/960px-Sangeet_Marathi.jpg" group-title="Music",Sangeet Marathi (720p)
+https://cdn.pishow.tv/ott/live/1229/master.m3u8
+#EXTINF:-1 tvg-name="4TV News (576p)" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/4_TV.png" group-title="News",4TV News (576p)
+https://cdn.pishow.tv/ott/live/1007/master.m3u8
+#EXTINF:-1 tvg-name="BIG TV (720p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/BIGTV%20Logo_2000_X_1125_Transpharent.png" group-title="News",BIG TV (720p)
+https://cdn.pishow.tv/ott/live/1059/master.m3u8
+#EXTINF:-1 tvg-name="CVR English (720p)" tvg-logo="https://i.imgur.com/k0WTQKi.png" group-title="News",CVR English (720p)
+https://cdn.pishow.tv/ott/live/425/master.m3u8
 #EXTINF:-1 tvg-name="News India 24x7" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/08.INDIA-24x7(NEWS-HINDI)--2000-x-1125--Transpernt.png" group-title="News",News India 24x7
 https://cdn.pishow.tv/ott/live/273/master.m3u8
+#EXTINF:-1 tvg-name="News Tamil 24x7 (576p)" tvg-logo="https://dtil.tmsimg.com/assets/s143623_ld_h15_aa.png?lock=720x540" group-title="News",News Tamil 24x7 (576p)
+https://cdn.pishow.tv/ott/live/1433/master.m3u8
 #EXTINF:-1 tvg-name="Swadesh News (720p)" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Swadesh_News.png" group-title="News",Swadesh News (720p)
 https://cdn.pishow.tv/ott/live/465/master.m3u8
 #EXTINF:-1 tvg-name="master m3u8" group-title="Other",master m3u8
 https://cdn.pishow.tv/ott/live/10006/master.m3u8
 #EXTINF:-1 tvg-name="master m3u8" group-title="Other",master m3u8
-https://cdn.pishow.tv/ott/live/227/master.m3u8
-#EXTINF:-1 tvg-name="Rang (576p)" tvg-logo="https://dtil.tmsimg.com/assets/s143718_ld_h15_aa.png?lock=720x540" group-title="Other",Rang (576p)
 https://cdn.pishow.tv/ott/live/10017/master.m3u8
+#EXTINF:-1 tvg-name="Channel WIN (720p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Channel-Win-transparent.png" group-title="Religious",Channel WIN (720p)
+https://cdn.pishow.tv/ott/live/229/master.m3u8

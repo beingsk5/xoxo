@@ -1,65 +1,7 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
 #EXTINF:-1 tvg-name="Desi Channel (720p)" tvg-logo="https://desichannel.in/wp-content/uploads/2025/01/desi-channel.png" group-title="Entertainment",Desi Channel (720p)
 https://livestream.unlimitedcdn.com/agm-dc/desi-channel/index.m3u8
-#EXTINF:-1 tvg-name="AccessVision Channel 16 (720p)" tvg-logo="https://i.imgur.com/YozqNL3.jpg" group-title="General",AccessVision Channel 16 (720p)
-https://livestream.telvue.com/accvision1/f7b44cfafd5c52223d5498196c8a2e7b.sdp/playlist.m3u8
-#EXTINF:-1 tvg-name="AccessVision Channel 17 (720p)" tvg-logo="https://i.imgur.com/YozqNL3.jpg" group-title="General",AccessVision Channel 17 (720p)
-https://livestream.telvue.com/accvision2/f7b44cfafd5c52223d5498196c8a2e7b.sdp/playlist.m3u8
-#EXTINF:-1 tvg-name="BOKTV (720p) [Not 24/7]" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG002Z1SEP.png?lock=720x540" group-title="Movies",BOKTV (720p) [Not 24/7]
-https://livestream2.bokradio.co.za/hls/Bok5c.m3u8
-#EXTINF:-1 tvg-name="Colors Bangla Cinema" tvg-logo="https://dtil.tmsimg.com/assets/s142748_ld_h15_aa.png?lock=720x540" group-title="Movies",Colors Bangla Cinema
-https://live-stream.utkalbongo.com/hls/livebanglatvstream.m3u8
 #EXTINF:-1 tvg-name="DVB TV (720p) [Geo-blocked]" group-title="News",DVB TV (720p) [Geo-blocked]
 https://live-stream.dvb.no/hls/stream_src/index.m3u8
 #EXTINF:-1 tvg-name="TV SUD (1080p) [Geo-blocked]" group-title="News",TV SUD (1080p) [Geo-blocked]
 https://stream2.live-stream.ro/WebRTCApp/streams/118334672595255049029831.m3u8
-#EXTINF:-1 tvg-name="Access Nashua (720p)" group-title="Other",Access Nashua (720p)
-https://livestream.telvue.com/nashuanh1/f7b44cfafd5c52223d5498196c8a2e7b.sdp/playlist.m3u8
-#EXTINF:-1 tvg-name="AFTV (1080p)" group-title="Other",AFTV (1080p)
-https://livestream.telvue.com/accframingham1/f7b44cfafd5c52223d5498196c8a2e7b.sdp/playlist.m3u8
-#EXTINF:-1 tvg-name="BATV Educational Channel" group-title="Other",BATV Educational Channel
-https://livestream.telvue.com/billerica2/f7b44cfafd5c52223d5498196c8a2e7b.sdp/playlist.m3u8
-#EXTINF:-1 tvg-name="BATV Government Channel" group-title="Other",BATV Government Channel
-https://livestream.telvue.com/billerica3/f7b44cfafd5c52223d5498196c8a2e7b.sdp/playlist.m3u8
-#EXTINF:-1 tvg-name="BATV Public Channel" group-title="Other",BATV Public Channel
-https://livestream.telvue.com/billerica1/f7b44cfafd5c52223d5498196c8a2e7b.sdp/playlist.m3u8
-#EXTINF:-1 tvg-name="Berks Community TV (1080p)" group-title="Other",Berks Community TV (1080p)
-https://livestream.telvue.com/berkscmttv2/f7b44cfafd5c52223d5498196c8a2e7b.sdp/playlist.m3u8
-#EXTINF:-1 tvg-name="Best of BATV Channel" group-title="Other",Best of BATV Channel
-https://livestream.telvue.com/billerica4/f7b44cfafd5c52223d5498196c8a2e7b.sdp/playlist.m3u8
-#EXTINF:-1 tvg-name="BMC-HD TV (720p)" group-title="Other",BMC-HD TV (720p)
-https://livestream.telvue.com/belmontmedia4/f7b44cfafd5c52223d5498196c8a2e7b.sdp/playlist.m3u8
-#EXTINF:-1 tvg-name="CMAP Channel 17 (720p)" group-title="Other",CMAP Channel 17 (720p)
-https://livestream.telvue.com/cmap1/f7b44cfafd5c52223d5498196c8a2e7b.sdp/playlist.m3u8
-#EXTINF:-1 tvg-name="CMAP Channel 18 (720p)" group-title="Other",CMAP Channel 18 (720p)
-https://livestream.telvue.com/cmap3/f7b44cfafd5c52223d5498196c8a2e7b.sdp/playlist.m3u8
-#EXTINF:-1 tvg-name="CMAP Channel 19 (720p)" group-title="Other",CMAP Channel 19 (720p)
-https://livestream.telvue.com/cmap4/f7b44cfafd5c52223d5498196c8a2e7b.sdp/playlist.m3u8
-#EXTINF:-1 tvg-name="CMAP Channel 20 (720p)" group-title="Other",CMAP Channel 20 (720p)
-https://livestream.telvue.com/cmap5/f7b44cfafd5c52223d5498196c8a2e7b.sdp/playlist.m3u8
-#EXTINF:-1 tvg-name="CVTV Channel 192 (1080p)" group-title="Other",CVTV Channel 192 (1080p)
-https://livestream.telvue.com/cvtv2/f7b44cfafd5c52223d5498196c8a2e7b.sdp/playlist.m3u8
-#EXTINF:-1 tvg-name="CVTV Channel 194 (1080p)" group-title="Other",CVTV Channel 194 (1080p)
-https://livestream.telvue.com/cvtv1/f7b44cfafd5c52223d5498196c8a2e7b.sdp/playlist.m3u8
-#EXTINF:-1 tvg-name="Hong Kong International Business Channel (1080p) [Geo-blocked]" group-title="Other",Hong Kong International Business Channel (1080p) [Geo-blocked]
-https://hoytv-live-stream.hoy.tv/ch76/index-fhd.m3u8
-#EXTINF:-1 tvg-name="HOY TV (1080p) [Geo-blocked]" group-title="Other",HOY TV (1080p) [Geo-blocked]
-https://hoytv-live-stream.hoy.tv/ch77/index.m3u8
-#EXTINF:-1 tvg-name="playlist m3u8" group-title="Other",playlist m3u8
-https://player.mslivestream.net/tamil/ac206e74d75b285755ee4924df87d951.sdp/playlist.m3u8
-#EXTINF:-1 tvg-name="TVE Internacional America HD (1080p) [Geo-blocked]" group-title="Other",TVE Internacional America HD (1080p) [Geo-blocked]
-https://rtvelivestream-rtveplayplus.rtve.es/rtvesec/int/tvei_ame_main_1080.m3u8
-#EXTINF:-1 tvg-name="TVE Internacional Asia-Oceania (576p) [Geo-blocked]" group-title="Other",TVE Internacional Asia-Oceania (576p) [Geo-blocked]
-https://rtvelivestream-rtveplayplus.rtve.es/rtvesec/int/tvei_asia_main_576.m3u8
-#EXTINF:-1 tvg-name="TVE Internacional Asia-Oceania HD (1080p) [Geo-blocked]" group-title="Other",TVE Internacional Asia-Oceania HD (1080p) [Geo-blocked]
-https://rtvelivestream-rtveplayplus.rtve.es/rtvesec/int/tvei_asia_main_1080.m3u8
-#EXTINF:-1 tvg-name="TVE Internacional Europe (576p) [Geo-blocked]" group-title="Other",TVE Internacional Europe (576p) [Geo-blocked]
-https://rtvelivestream-rtveplayplus.rtve.es/rtvesec/int/tvei_eu_main_576.m3u8
-#EXTINF:-1 tvg-name="TVE Internacional Europe HD (1080p) [Geo-blocked]" group-title="Other",TVE Internacional Europe HD (1080p) [Geo-blocked]
-https://rtvelivestream-rtveplayplus.rtve.es/rtvesec/int/tvei_eu_main_1080.m3u8
-#EXTINF:-1 tvg-name="Shalom America" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Shalom%20TV.png" group-title="Religious",Shalom America
-https://livestreamcdn.net:444/ShalomTV/ShalomTV/playlist.m3u8
-#EXTINF:-1 tvg-name="SVBC (1080p)" tvg-logo="https://dtil.tmsimg.com/assets/s143889_ld_h9_ab.png?lock=720x540" group-title="Religious",SVBC (1080p)
-https://player.mslivestream.net/telugu/5d076e5c3d34cb8bb08e54a4bb7e223e.sdp/playlist.m3u8
-#EXTINF:-1 tvg-name="SVBC 3" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/SVBG-3-Transparent.png" group-title="Religious",SVBC 3
-https://player.mslivestream.net/svbc/2e628d7e1b65d31254fd7705ff7ee64d.sdp/playlist.m3u8

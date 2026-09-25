@@ -1,0 +1,21 @@
+#EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
+#EXTINF:-1 tvg-name="" tvg-logo="https://dtil.tmsimg.com/assets/s142495_ld_h15_aa.png?lock=720x540" group-title="News",
+https://www.tsk-praha.cz/nase-cinnosti/feed/
+#EXTINF:-1 tvg-name="dropzone min js?ver=5 9 3" group-title="Other",dropzone min js?ver=5 9 3
+https://www.tsk-praha.cz/app/plugins/wpforms/assets/pro/lib/dropzone.min.js?ver=5.9.3
+#EXTINF:-1 tvg-name="embed?url=https%3A%2F%2Fwww tsk-praha cz%2Fo-nas%2Fverejne-zakazky%2F&format=xml" group-title="Other",embed?url=https%3A%2F%2Fwww tsk-praha cz%2Fo-nas%2Fverejne-zakazky%2F&format=xml
+https://www.tsk-praha.cz/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.tsk-praha.cz%2Fo-nas%2Fverejne-zakazky%2F&format=xml
+#EXTINF:-1 tvg-name="phone min js?ver=2 0 1" group-title="Other",phone min js?ver=2 0 1
+https://www.tsk-praha.cz/app/plugins/wpforms/assets/pro/js/frontend/fields/phone.min.js?ver=2.0.1
+#EXTINF:-1 tvg-name="sbi-styles min css?ver=6 12 0" group-title="Other",sbi-styles min css?ver=6 12 0
+https://www.tsk-praha.cz/app/plugins/instagram-feed/css/sbi-styles.min.css?ver=6.12.0
+#EXTINF:-1 tvg-name="Seznam-zpracovatelu-osobnich-udaju_2025 pdf" group-title="Other",Seznam-zpracovatelu-osobnich-udaju_2025 pdf
+https://cdn.tsk-praha.cz/portal/2025/04/Seznam-zpracovatelu-osobnich-udaju_2025.pdf
+#EXTINF:-1 tvg-name="TSK-Zprava-o-nehodovosti-2025 pdf" group-title="Other",TSK-Zprava-o-nehodovosti-2025 pdf
+https://cdn.tsk-praha.cz/portal/2026/08/TSK-Zprava-o-nehodovosti-2025.pdf
+#EXTINF:-1 tvg-name="udi-rocenka-1990-cz pdf" group-title="Other",udi-rocenka-1990-cz pdf
+https://cdn.tsk-praha.cz/portal/2025/03/udi-rocenka-1990-cz.pdf
+#EXTINF:-1 tvg-name="udi-rocenka-2009-cz pdf" group-title="Other",udi-rocenka-2009-cz pdf
+https://cdn.tsk-praha.cz/portal/2025/03/udi-rocenka-2009-cz.pdf
+#EXTINF:-1 tvg-name="Vyrocni_zprava_TSK_za-rok-2018 pdf" group-title="Other",Vyrocni_zprava_TSK_za-rok-2018 pdf
+https://cdn.tsk-praha.cz/portal/2025/04/Vyrocni_zprava_TSK_za-rok-2018.pdf
