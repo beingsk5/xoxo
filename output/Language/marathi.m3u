@@ -1,471 +1,659 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
-#EXTINF:-1 tvg-name="Sony Yay! (1080p)" tvg-logo="https://dtil.tmsimg.com/assets/s159100_ld_h15_aa.png?lock=720x540" group-title="Animation",Sony Yay! (1080p)
-https://cloudplay-sonyliv.pages.dev/yay.m3u8
-#EXTINF:-1 tvg-name="Super Hungama (576p)" tvg-logo="https://dtil.tmsimg.com/assets/s143883_ld_h15_aa.png?lock=720x540" group-title="Animation",Super Hungama (576p)
-http://103.185.24.134:3001/SUPER-HUNGAMA/index.m3u8
-#EXTINF:-1 tvg-name="WOW Kidz Tamil (720p)" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yupptvnew/content/common/channel/logos/mjvezt.png" group-title="Animation",WOW Kidz Tamil (720p)
-https://yuppparoriglin.akamaized.net/181224/smil:wowkidztam.smil/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
-#EXTINF:-1 tvg-name="WOW Kidz Telugu (720p)" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yupptvnew/content/common/channel/logos/mjvezt.png" group-title="Animation",WOW Kidz Telugu (720p)
-https://yuppparoriglin.akamaized.net/181224/smil:wowkidztelgu.smil/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
-#EXTINF:-1 tvg-name="NDTV Profit (1080p)" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_NDTV_PROFIT_PRIME/images/LOGO_HD/image.png" group-title="Business",NDTV Profit (1080p)
-https://ndtvprofit.akamaized.net/hls/live/2107404/ndtvprofit/chunklist_5.m3u8
-#EXTINF:-1 tvg-name="Zee Business (720p)" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/ZEEDIGITAL/LIVECHANNEL/67ed20afb9965350035ecc50/images/LOGO/LOGO_3scYDc5V6_Zbusiness_logo-for-larg.png" group-title="Business",Zee Business (720p)
-https://dwby15d04agvq.cloudfront.net/index_5.m3u8
-#EXTINF:-1 tvg-name="Zee Cine Classic (1080p)" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN21000014R_20260325T012324SQUARE.png" group-title="Classic",Zee Cine Classic (1080p)
-https://amg00862-amg00862c8-amgplt0173.playout.now3.amagi.tv/playlist/amg00862-amg00862c8-amgplt0173/playlist.m3u8
-#EXTINF:-1 tvg-name="Zee Classic (576p)" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022J66T.png?lock=720x540" group-title="Classic",Zee Classic (576p)
-http://107.167.16.138/zeeclassic/index.m3u8?token=test
-#EXTINF:-1 tvg-name="Zee Comedy Nation (1080p)" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN2100002GD_20260325T012327SQUARE.png" group-title="Comedy",Zee Comedy Nation (1080p)
-https://amg00862-amg00862c5-amgplt0173.playout.now3.amagi.tv/playlist/amg00862-amg00862c5-amgplt0173/playlist.m3u8
-#EXTINF:-1 tvg-name="DD Bharati (720p)" tvg-logo="https://dtil.tmsimg.com/assets/s142779_ld_h15_aa.png?lock=720x540" group-title="Culture",DD Bharati (720p)
-https://cdn.pishow.tv/ott/live/10/master.m3u8
-#EXTINF:-1 tvg-name="DD Punjabi (504p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Punjabi.png" group-title="Culture",DD Punjabi (504p)
-https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/da821c24a59d4e57960497aeaca8fb33/index.m3u8
-#EXTINF:-1 tvg-name="DD Kisan (1080p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Kisan.png" group-title="Education",DD Kisan (1080p)
-https://mumbai-edge.smartplaytv.in/DDKisan/index.m3u8
-#EXTINF:-1 tvg-name="Colors Rishtey Americas (396p)" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/Colors_Transparent_16069908-8494-4eb4-bd40-5afca3969088.png" group-title="Entertainment",Colors Rishtey Americas (396p)
-https://manatv.akamaized.net/090823/smil:ristheyamerica.smil/playlist.m3u8
-#EXTINF:-1 tvg-name="DD Arun Prabha (360p)" tvg-logo="https://dtil.tmsimg.com/assets/s142776_ld_h15_aa.png?lock=720x540" group-title="General",DD Arun Prabha (360p)
-https://d2lk5u59tns74c.cloudfront.net/out/v1/308556d9fd1246adb479ef012a39bbfe/index.m3u8
-#EXTINF:-1 tvg-name="DD Bangla (504p)" tvg-logo="https://dtil.tmsimg.com/assets/s142778_ld_h15_aa.png?lock=720x540" group-title="General",DD Bangla (504p)
-https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/7ff57cc9046b4c188b51a0d506f36e7f/index.m3u8
-#EXTINF:-1 tvg-name="DD Bihar (720p)" tvg-logo="https://dtil.tmsimg.com/assets/s142780_ld_h15_aa.png?lock=720x540" group-title="General",DD Bihar (720p)
-https://cdn.pishow.tv/ott/live/35/master.m3u8
-#EXTINF:-1 tvg-name="DD Chandana (504p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Chandana.png" group-title="General",DD Chandana (504p)
-https://d2lk5u59tns74c.cloudfront.net/out/v1/0c980455d2fb4b69bcc6235745ee6039/index.m3u8
-#EXTINF:-1 tvg-name="DD Chhattisgarh (720p)" tvg-logo="https://i.imgur.com/zBg6Iuv.png" group-title="General",DD Chhattisgarh (720p)
-https://cdn.pishow.tv/ott/live/15/master.m3u8
-#EXTINF:-1 tvg-name="DD Girnar (504p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Girnar.png" group-title="General",DD Girnar (504p)
-https://d2lk5u59tns74c.cloudfront.net/out/v1/558fdb9aebb54bb5bbbf0ced03686148/index.m3u8
-#EXTINF:-1 tvg-name="DD Goa (504p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD-Goa-Logo_2000_X_1125_Transpharent.png" group-title="General",DD Goa (504p)
-https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/e5b9db1cc184406bb97159da2f120f91/index.m3u8
-#EXTINF:-1 tvg-name="DD Haryana (504p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD-Haryana-Logo_2000_X_1125_Transpharent.png" group-title="General",DD Haryana (504p)
-https://d2lk5u59tns74c.cloudfront.net/out/v1/950fc69666474351bde0a32b9600c804/index.m3u8
-#EXTINF:-1 tvg-name="DD Himachal Pradesh (504p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD-Himachal-Logo_2000_X_1125_Transpharent.png" group-title="General",DD Himachal Pradesh (504p)
-https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/afd2e335b0ba40eb9bdf1096118c6ede/index.m3u8
-#EXTINF:-1 tvg-name="DD India (1080p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20India.png" group-title="General",DD India (1080p)
-https://mumbai-edge.smartplaytv.in/DDIndia/index.m3u8
-#EXTINF:-1 tvg-name="DD Jharkhand (504p)" tvg-logo="https://dtil.tmsimg.com/assets/s142787_ld_h15_aa.png?lock=720x540" group-title="General",DD Jharkhand (504p)
-https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/e8c3741f8c154d3185831f4e31777fb2/index.m3u8
-#EXTINF:-1 tvg-name="DD Kashir (504p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Kashir.png" group-title="General",DD Kashir (504p)
-https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/8a59a828e80c49d0958925950cec0204/index.m3u8
-#EXTINF:-1 tvg-name="DD Madhya Pradesh (720p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Madhya%20Pradesh.png" group-title="General",DD Madhya Pradesh (720p)
-https://mumbai-edge.smartplaytv.in/ddmadhyapradesh/index.m3u8
-#EXTINF:-1 tvg-name="DD Manipur (504p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Manipur.png" group-title="General",DD Manipur (504p)
-https://d2lk5u59tns74c.cloudfront.net/out/v1/8b75afc6576f450e8f554b6c877681d2/index.m3u8
-#EXTINF:-1 tvg-name="DD Meghalaya (504p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Meghalaya-Transparent.png" group-title="General",DD Meghalaya (504p)
-https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/4f81bc8d13dd49b484da35988abb8729/index.m3u8
-#EXTINF:-1 tvg-name="DD Nagaland (504p)" tvg-logo="https://i.imgur.com/HUL4aF6.png" group-title="General",DD Nagaland (504p)
-https://d2lk5u59tns74c.cloudfront.net/out/v1/29c92e0bef954a6d9b0908d1be29c1f0/index.m3u8
-#EXTINF:-1 tvg-name="DD Odia (576p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Odia.png" group-title="General",DD Odia (576p)
-https://mumbai-edge.smartplaytv.in/ddodiya/index.m3u8
-#EXTINF:-1 tvg-name="DD Rajasthan (720p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Rajasthan.png" group-title="General",DD Rajasthan (720p)
-https://cdn.pishow.tv/ott/live/34/master.m3u8
-#EXTINF:-1 tvg-name="DD Sahyadri (504p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Sahyadri.png" group-title="General",DD Sahyadri (504p)
-https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/66dcc3ebe182447ba42837e746cf0c7c/index.m3u8
-#EXTINF:-1 tvg-name="DD Saptagiri (504p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Saptagiri.png" group-title="General",DD Saptagiri (504p)
-https://d2lk5u59tns74c.cloudfront.net/out/v1/26e915d6d12b4a06822c5e33c088ed56/index.m3u8
-#EXTINF:-1 tvg-name="DD Tamil HD (1080p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/PHOTO-_HD_2000_X_1125_Transpharent.png" group-title="General",DD Tamil HD (1080p)
-https://d2lk5u59tns74c.cloudfront.net/out/v1/abf46b14847e45499f4a47f3a9afe93d/index.m3u8
-#EXTINF:-1 tvg-name="DD Tripura (504p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD-Tripura-Logo_2000_X_1125_Transpharent.png" group-title="General",DD Tripura (504p)
-https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/52b998e9510d41c29ad2ceca8ea3d849/index.m3u8
-#EXTINF:-1 tvg-name="DD Urdu (720p)" tvg-logo="https://dtil.tmsimg.com/assets/s142808_ld_h9_aa.png?lock=720x540" group-title="General",DD Urdu (720p)
-https://cdn.pishow.tv/ott/live/8/master.m3u8
-#EXTINF:-1 tvg-name="DD Uttar Pradesh (720p)" tvg-logo="https://dtil.tmsimg.com/assets/s142807_ld_h9_ab.png?lock=720x540" group-title="General",DD Uttar Pradesh (720p)
-https://cdn.pishow.tv/ott/live/36/master.m3u8
-#EXTINF:-1 tvg-name="DD Uttarakhand (720p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD-Uttarakhand-Logo_2000_X_1125_Transpharent.png" group-title="General",DD Uttarakhand (720p)
-https://cdn.pishow.tv/ott/live/17/master.m3u8
-#EXTINF:-1 tvg-name="DD Yadagiri (576p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Yadagiri.png" group-title="General",DD Yadagiri (576p)
-https://cdn.pishow.tv/ott/live/21/master.m3u8
-#EXTINF:-1 tvg-name="Metro TV (India) (1080p)" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Metro_TV.png" group-title="General",Metro TV (India) (1080p)
-https://mercury.streambridge.link:8042/telugu/metrotv/index.m3u8
-#EXTINF:-1 tvg-name="NKR TV Kannada (1080p)" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/NKRTV.png" group-title="General",NKR TV Kannada (1080p)
-https://stream.ottlive.co.in/nkrtv/index.m3u8
-#EXTINF:-1 tvg-name="Vision (India) (576p)" tvg-logo="https://i.imgur.com/YozqNL3.jpg" group-title="General",Vision (India) (576p)
-http://103.85.204.205:1935/VISIONMEDIA/live/playlist.m3u8
-#EXTINF:-1 tvg-name="Disney Channel (India) (576p)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/f/ff/2024_Disney_Channel_text_logo.svg" group-title="Kids",Disney Channel (India) (576p)
-http://202.70.146.135:8000/play/a01q/index.m3u8
-#EXTINF:-1 tvg-name="Disney Channel (India) HD (1080p)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/f/ff/2024_Disney_Channel_text_logo.svg" group-title="Kids",Disney Channel (India) HD (1080p)
-http://66.102.126.10:8000/play/a013/index.m3u8
-#EXTINF:-1 tvg-name="Hungama TV (576p)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Hungama_TV.svg/960px-Hungama_TV.svg.png" group-title="Kids",Hungama TV (576p)
-http://103.185.24.134:3001/HUNGAMA/index.m3u8
-#EXTINF:-1 tvg-name="Nick Jr. (India) (576p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Nick%20Jr.png" group-title="Kids",Nick Jr. (India) (576p)
-http://103.185.24.134:3001/NICK-JR/index.m3u8
-#EXTINF:-1 tvg-name="Nickelodeon (India) (576p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Nick.png" group-title="Kids",Nickelodeon (India) (576p)
-http://103.185.24.134:3001/NICK/index.m3u8
-#EXTINF:-1 tvg-name="NDTV Good Times (1080p)" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_GOOD_TIMES/images/LOGO_HD/image.png" group-title="Lifestyle",NDTV Good Times (1080p)
-https://amg01448-samsungin-ndtvgoodtimes-samsungin-ad-gp.amagi.tv/playlist/amg01448-samsungin-ndtvgoodtimes-samsungin/playlist.m3u8
-#EXTINF:-1 tvg-name="Zee Zest HD (1080p)" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022ZKWY.png?lock=720x540" group-title="Lifestyle",Zee Zest HD (1080p)
-http://103.72.101.252:8080/live/2757.m3u8
-#EXTINF:-1 tvg-name="Epic Bhojpuri (576p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/FILAMCHI_BHOJPURI_HINDI-transparent.png" group-title="Movies",Epic Bhojpuri (576p)
-https://mumt01.tangotv.in/O5aw8Zn3EPICBHOJPURI/index.m3u8
-#EXTINF:-1 tvg-name="Epic Bhojpuri Digital (1080p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/FILAMCHI_BHOJPURI_HINDI-transparent.png" group-title="Movies",Epic Bhojpuri Digital (1080p)
-https://cc-8hy4a26pz2uos.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-8hy4a26pz2uos/playlist.m3u8
-#EXTINF:-1 tvg-name="Goldmines Bollywood (576p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Goldmines%20Logo_Transparent.png" group-title="Movies",Goldmines Bollywood (576p)
-https://mumt03.tangotv.in/Dsly5z3HGOLDMINESBOLLYWOOD/index.m3u8
-#EXTINF:-1 tvg-name="master m3u8?fastly_token=NmM5NWYxMmJfNWUwZjM1MzA5MTgzMTFjMTJiNjcxZTViNDUwZDAzMzM2YWQxZmFjZWExNDM5MjdiZWMwNTRhYzIyNjU0YmQwNg%3D%3D" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/4/47/ZMZ.jpg" group-title="Movies",master m3u8?fastly_token=NmM5NWYxMmJfNWUwZjM1MzA5MTgzMTFjMTJiNjcxZTViNDUwZDAzMzM2YWQxZmFjZWExNDM5MjdiZWMwNTRhYzIyNjU0YmQwNg%3D%3D
-https://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/5539867201001/4305e456-d375-4841-b474-eec59a1642e8/10s/master.m3u8?fastly_token=NmM5NWYxMmJfNWUwZjM1MzA5MTgzMTFjMTJiNjcxZTViNDUwZDAzMzM2YWQxZmFjZWExNDM5MjdiZWMwNTRhYzIyNjU0YmQwNg%3D%3D
-#EXTINF:-1 tvg-name="NH Tamil Gold (1080p)" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN400061DB_20260623T015348SQUARE.png" group-title="Movies",NH Tamil Gold (1080p)
-https://d3arbp6l7f096k.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/pb-gv6wgpbb4mgwk/playlist.m3u8?ads.ads_cdn=cf&ads.app_domain=APP_DOMAIN&ads.cdn=cf
-#EXTINF:-1 tvg-name="Oscar Movies Bhojpuri (720p)" tvg-logo="https://dtil.tmsimg.com/assets/s143638_ld_h9_ab.png?lock=720x540" group-title="Movies",Oscar Movies Bhojpuri (720p)
-https://cdn.pishow.tv/ott/live/233/master.m3u8
-#EXTINF:-1 tvg-name="Punjabi Shorts (1080p)" tvg-logo="https://www.thegtcnetwork.com/punjabi-shorts.jpg" group-title="Movies",Punjabi Shorts (1080p)
-https://vglivessai.akamaized.net/ptnr-yupptv/title-Punjabi_Shorts/in/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/27c3fd7a-b01f-4b00-ac03-557ac77acd47/index.m3u8
-#EXTINF:-1 tvg-name="Shemaroo Josh (576p)" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/ShemarooJosh_Transparent_3506d79a-bad8-4c99-905d-9b917076ad43.png" group-title="Movies",Shemaroo Josh (576p)
-https://mumt04.tangotv.in/m18aqlK4SHEMAROOJOSH/index.m3u8
-#EXTINF:-1 tvg-name="Sony Max (1080p)" tvg-logo="https://dtil.tmsimg.com/assets/s157590_ld_h15_aa.png?lock=720x540" group-title="Movies",Sony Max (1080p)
-https://cloudplay-sonyliv.pages.dev/max.m3u8
-#EXTINF:-1 tvg-name="Sony Max 2 (1080p)" tvg-logo="https://dtil.tmsimg.com/assets/s157590_ld_h15_aa.png?lock=720x540" group-title="Movies",Sony Max 2 (1080p)
-https://cloudplay-sonyliv.pages.dev/max2.m3u8
-#EXTINF:-1 tvg-name="Sony Max HD (1080p)" tvg-logo="https://dtil.tmsimg.com/assets/s157590_ld_h15_aa.png?lock=720x540" group-title="Movies",Sony Max HD (1080p)
-https://cloudplay-sonyliv.pages.dev/maxhd.m3u8
-#EXTINF:-1 tvg-name="Sony Pix HD (1080p)" tvg-logo="https://dtil.tmsimg.com/assets/s143803_ld_h15_aa.png?lock=720x540" group-title="Movies",Sony Pix HD (1080p)
-https://cloudplay-sonyliv.pages.dev/pixhd.m3u8
-#EXTINF:-1 tvg-name="Star Gold 2 (576p)" tvg-logo="https://dtil.tmsimg.com/assets/s143815_ld_h15_aa.png?lock=720x540" group-title="Movies",Star Gold 2 (576p)
-http://107.167.16.138/stargold2/index.m3u8?token=test
-#EXTINF:-1 tvg-name="Top" tvg-logo="https://i.imgur.com/NhD40Aj.png" group-title="Movies",Top
-https://mcprod.movistar.co/media/files/Top
-#EXTINF:-1 tvg-name="Zee Action (576p)" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022K5ZV.png?lock=720x540" group-title="Movies",Zee Action (576p)
-http://107.167.16.138/zeeaction/index.m3u8?token=test
-#EXTINF:-1 tvg-name="Zee Cinema (576p)" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022HVX3.png?lock=720x540" group-title="Movies",Zee Cinema (576p)
-https://d1g8wgjurz8via.cloudfront.net/bpk-tv/NGCHD/default/NGCHD.m3u8
-#EXTINF:-1 tvg-name="Zee Cinemalu HD (720p)" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022HVX3.png?lock=720x540" group-title="Movies",Zee Cinemalu HD (720p)
-https://mumbai-edge.smartplaytv.in/ZeeCinemaluHD/index.m3u8
-#EXTINF:-1 tvg-name="Zee South Flix (1080p)" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN2100005T2_20260325T012340SQUARE.png" group-title="Movies",Zee South Flix (1080p)
-https://amg00862-amg00862c9-amgplt0173.playout.now3.amagi.tv/playlist/amg00862-amg00862c9-amgplt0173/playlist.m3u8
-#EXTINF:-1 tvg-name="Zee Talkies (576p)" tvg-logo="https://i.imgur.com/GowDXFz.png" group-title="Movies",Zee Talkies (576p)
-http://107.167.16.138/zeetalkies/index.m3u8?token=test
-#EXTINF:-1 tvg-name="9X Jhakaas (1080p)" tvg-logo="https://dtil.tmsimg.com/assets/s90012_ld_h15_aa.png?lock=720x540" group-title="Music",9X Jhakaas (1080p)
-https://amg01281-9xmediapvtltd-9xjhakaas-samsungin-ci2cs.amagi.tv/playlist/amg01281-9xmediapvtltd-9xjhakaas-samsungin/playlist.m3u8
-#EXTINF:-1 tvg-name="get?url=https%3A%2F%2Fwww stuff tv%2Ffeatures%2Fbest-music-streaming-services-reviewed%2F&idx=0&rand=35252&widgetJSId=GS_1&va=true&et=true&format=html&px=0&py=0&vpd=0&settings=true&recs=true&cors=true&ijs=1&cw=1151&key=NANOWDGT01&tch=0&adblck=0&abwl=0&obRecsAbtestVars=1550:5795&activeTab=true&clientType=21&clientVer=5723a4d6838_2026-09-24&scrOri=l&hwc=8&ttfb=16&ccnsnt=false&navt=navigate&version=5723a4d6838_2026-09-24&sig=qZHQda9L&apv=false&osLang=en-US&winW=1600&winH=805&scrW=1600&scrH=900&dpr=1&secured=true&cmpStat=1&ccpa=1YNN&ccpaStat=1&ogn=https%3A%2F%2Fwww stuff tv%2Ffeatures%2Fbest-music-streaming-services-reviewed%2F" group-title="Music",get?url=https%3A%2F%2Fwww stuff tv%2Ffeatures%2Fbest-music-streaming-services-reviewed%2F&idx=0&rand=35252&widgetJSId=GS_1&va=true&et=true&format=html&px=0&py=0&vpd=0&settings=true&recs=true&cors=true&ijs=1&cw=1151&key=NANOWDGT01&tch=0&adblck=0&abwl=0&obRecsAbtestVars=1550:5795&activeTab=true&clientType=21&clientVer=5723a4d6838_2026-09-24&scrOri=l&hwc=8&ttfb=16&ccnsnt=false&navt=navigate&version=5723a4d6838_2026-09-24&sig=qZHQda9L&apv=false&osLang=en-US&winW=1600&winH=805&scrW=1600&scrH=900&dpr=1&secured=true&cmpStat=1&ccpa=1YNN&ccpaStat=1&ogn=https%3A%2F%2Fwww stuff tv%2Ffeatures%2Fbest-music-streaming-services-reviewed%2F
-https://mv.outbrainimg.com/Multivac/api/get?url=https%3A%2F%2Fwww.stuff.tv%2Ffeatures%2Fbest-music-streaming-services-reviewed%2F&idx=0&rand=35252&widgetJSId=GS_1&va=true&et=true&format=html&px=0&py=0&vpd=0&settings=true&recs=true&cors=true&ijs=1&cw=1151&key=NANOWDGT01&tch=0&adblck=0&abwl=0&obRecsAbtestVars=1550:5795&activeTab=true&clientType=21&clientVer=5723a4d6838_2026-09-24&scrOri=l&hwc=8&ttfb=16&ccnsnt=false&navt=navigate&version=5723a4d6838_2026-09-24&sig=qZHQda9L&apv=false&osLang=en-US&winW=1600&winH=805&scrW=1600&scrH=900&dpr=1&secured=true&cmpStat=1&ccpa=1YNN&ccpaStat=1&ogn=https%3A%2F%2Fwww.stuff.tv%2Ffeatures%2Fbest-music-streaming-services-reviewed%2F
-#EXTINF:-1 tvg-name="js?w=https%3A%2F%2Fwww stuff tv%2Ffeatures%2Fbest-music-streaming-services-reviewed%2F&c=https%3A%2F%2Fwww stuff tv%2Ffeatures%2Fbest-music-streaming-services-reviewed%2F&r=&l=EN&v_aot=0" group-title="Music",js?w=https%3A%2F%2Fwww stuff tv%2Ffeatures%2Fbest-music-streaming-services-reviewed%2F&c=https%3A%2F%2Fwww stuff tv%2Ffeatures%2Fbest-music-streaming-services-reviewed%2F&r=&l=EN&v_aot=0
-https://sonar.viously.com/9809825402826/js?w=https%3A%2F%2Fwww.stuff.tv%2Ffeatures%2Fbest-music-streaming-services-reviewed%2F&c=https%3A%2F%2Fwww.stuff.tv%2Ffeatures%2Fbest-music-streaming-services-reviewed%2F&r=&l=EN&v_aot=0
-#EXTINF:-1 tvg-name="js?w=https%3A%2F%2Fwww stuff tv%2Ffeatures%2Fbest-music-streaming-services-reviewed%2F&c=https%3A%2F%2Fwww stuff tv%2Ffeatures%2Fbest-music-streaming-services-reviewed%2F&r=&l=EN&v_aot=0" group-title="Music",js?w=https%3A%2F%2Fwww stuff tv%2Ffeatures%2Fbest-music-streaming-services-reviewed%2F&c=https%3A%2F%2Fwww stuff tv%2Ffeatures%2Fbest-music-streaming-services-reviewed%2F&r=&l=EN&v_aot=0
-https://sonar.viously.com/2113741953159/js?w=https%3A%2F%2Fwww.stuff.tv%2Ffeatures%2Fbest-music-streaming-services-reviewed%2F&c=https%3A%2F%2Fwww.stuff.tv%2Ffeatures%2Fbest-music-streaming-services-reviewed%2F&r=&l=EN&v_aot=0
-#EXTINF:-1 tvg-name="js?w=https%3A%2F%2Fwww stuff tv%2Ffeatures%2Fbest-music-streaming-services-reviewed%2F&c=https%3A%2F%2Fwww stuff tv%2Ffeatures%2Fbest-music-streaming-services-reviewed%2F&r=&l=EN&v_aot=0" group-title="Music",js?w=https%3A%2F%2Fwww stuff tv%2Ffeatures%2Fbest-music-streaming-services-reviewed%2F&c=https%3A%2F%2Fwww stuff tv%2Ffeatures%2Fbest-music-streaming-services-reviewed%2F&r=&l=EN&v_aot=0
-https://sonar.viously.com/3116039467579/js?w=https%3A%2F%2Fwww.stuff.tv%2Ffeatures%2Fbest-music-streaming-services-reviewed%2F&c=https%3A%2F%2Fwww.stuff.tv%2Ffeatures%2Fbest-music-streaming-services-reviewed%2F&r=&l=EN&v_aot=0
-#EXTINF:-1 tvg-name="Music India (576p)" tvg-logo="https://dtil.tmsimg.com/assets/s143563_ld_h15_aa.png?lock=720x540" group-title="Music",Music India (576p)
-https://streams.tangotv.in/MUSICINDIA/ORIGIN/index.m3u8
-#EXTINF:-1 tvg-name="Punjabi Hits (1080p)" tvg-logo="https://dtil.tmsimg.com/assets/s143691_ld_h15_aa.png?lock=720x540" group-title="Music",Punjabi Hits (1080p)
-https://stream.ottlive.co.in/punjabihits/index.m3u8
-#EXTINF:-1 tvg-name="Raj Musix Kannada (576p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Raj%20Musix%20Kannada.png" group-title="Music",Raj Musix Kannada (576p)
-https://mumt01.tangotv.in/O5aw8Zn3RAJMUSIXKANDA/index.m3u8
-#EXTINF:-1 tvg-name="Raj Musix Malayalam (576p)" tvg-logo="https://dtil.tmsimg.com/assets/s143706_ld_h15_aa.png?lock=720x540" group-title="Music",Raj Musix Malayalam (576p)
-https://cdn.pishow.tv/ott/live/1073/master.m3u8
-#EXTINF:-1 tvg-name="Raj Musix Tamil (1080p)" tvg-logo="https://dtil.tmsimg.com/assets/s143707_ld_h15_aa.png?lock=720x540" group-title="Music",Raj Musix Tamil (1080p)
-https://livestream.rajtv.tv/hlslive/Admin/px08241087/live/Raj_Musix/master_1.m3u8
-#EXTINF:-1 tvg-name="Raj Musix Telugu (720p)" tvg-logo="https://dtil.tmsimg.com/assets/s143708_ld_h15_aa.png?lock=720x540" group-title="Music",Raj Musix Telugu (720p)
-https://cdn.pishow.tv/ott/live/1213/master.m3u8
+#EXTINF:-1 tvg-name="CARTOON NETWORK HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_2010_logo.svg/960px-Cartoon_Network_2010_logo.svg.png" group-title="Animation",CARTOON NETWORK HD
+http://live.globalflix.net:80/Call-Me/Whatsapp8801971466614/118.m3u8
+#EXTINF:-1 tvg-name="Cartoon Network Hindi" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_2010_logo.svg/960px-Cartoon_Network_2010_logo.svg.png" group-title="Animation",Cartoon Network Hindi
+https://bd.spidy.online/MACX/STREAM4K/play.m3u8?id=475130
+#EXTINF:-1 tvg-name="Sony Yay" tvg-logo="https://dtil.tmsimg.com/assets/s159100_ld_h15_aa.png?lock=720x540" group-title="Animation",Sony Yay
+https://fifabd.xyz/KIDxRANAPKs/play.m3u8?id=26187%7CReferer=RANAPK
+#EXTINF:-1 tvg-name="Sony Yay!" tvg-logo="https://dtil.tmsimg.com/assets/s159100_ld_h15_aa.png?lock=720x540" group-title="Animation",Sony Yay!
+http://live.globalflix.net:80/Call-Me/Whatsapp8801971466614/13.m3u8
+#EXTINF:-1 tvg-name="SUPER HUNGAMA" tvg-logo="https://plain-apac-prod-public.komododecks.com/202609/07/lNjbGo0Rcgz3vhfoyTN7/image.png" group-title="Animation",SUPER HUNGAMA
+https://cdm.its-nayeemparvez.xyz/stbx/playlist.m3u8?id=3d9430945dbaeaa50|Referer=https://xnxx.com/
+#EXTINF:-1 tvg-name="Zee Classic" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022J66T.png?lock=720x540" group-title="Classic",Zee Classic
+http://live.globalflix.net:80/Call-Me/Whatsapp8801971466614/6.m3u8
+#EXTINF:-1 tvg-name="Sony BBC Earth" tvg-logo="https://dtil.tmsimg.com/assets/s143800_ld_h15_aa.png?lock=720x540" group-title="Documentary",Sony BBC Earth
+http://live.globalflix.net:80/Call-Me/Whatsapp8801971466614/28.m3u8
+#EXTINF:-1 tvg-name="Colors Bangla" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/8049/1782291598049-h.jpg" group-title="Entertainment",Colors Bangla
+http://live.globalflix.net:80/Call-Me/Whatsapp8801971466614/178.m3u8
+#EXTINF:-1 tvg-name="Colors HD" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/Colors_Transparent_16069908-8494-4eb4-bd40-5afca3969088.png" group-title="Entertainment",Colors HD
+http://live.globalflix.net:80/Call-Me/Whatsapp8801971466614/156.m3u8
+#EXTINF:-1 tvg-name="DISCOVERY CHANNEL HD" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG002E9L1W.png?lock=720x540" group-title="Entertainment",DISCOVERY CHANNEL HD
+http://live.globalflix.net:80/Call-Me/Whatsapp8801971466614/109.m3u8
+#EXTINF:-1 tvg-name="group-title="Marathi",Zee 24 Taas" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_E24/images/LOGO_HD/image.png" group-title="Entertainment",group-title="Marathi",Zee 24 Taas
+http://z5ams.akamaized.net/24taas/tracks-v1a1/index.m3u8
+#EXTINF:-1 tvg-name="group-title="Marathi",Zee Marathi" tvg-logo="https://i.imgur.com/vv9ysD3.png" group-title="Entertainment",group-title="Marathi",Zee Marathi
+http://z5ams.akamaized.net/zmarathisd/tracks-v1a1/index.m3u8
+#EXTINF:-1 tvg-name="group-title="Marathi",Zee Marathi HD" tvg-logo="https://i.imgur.com/vv9ysD3.png" group-title="Entertainment",group-title="Marathi",Zee Marathi HD
+http://z5ams.akamaized.net/zmarathihd/tracks-v1a1/index.m3u8
+#EXTINF:-1 tvg-name="group-title="Marathi",Zee Yuva" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022S9FG.png?lock=720x540" group-title="Entertainment",group-title="Marathi",Zee Yuva
+http://z5ams.akamaized.net/zyuva/tracks-v1a1/index.m3u8
+#EXTINF:-1 tvg-name="Sony Pal" tvg-logo="https://dtil.tmsimg.com/assets/s157973_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Sony Pal
+http://live.globalflix.net:80/Call-Me/Whatsapp8801971466614/29.m3u8
+#EXTINF:-1 tvg-name="Sony SAB" tvg-logo="https://dtil.tmsimg.com/assets/s159099_ld_h15_ab.png?lock=720x540" group-title="Entertainment",Sony SAB
+http://live.globalflix.net:80/Call-Me/Whatsapp8801971466614/12.m3u8
+#EXTINF:-1 tvg-name="Star Jalsha" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Star-Jalsha--2000-x-1125--Transparent.png" group-title="Entertainment",Star Jalsha
+http://live.globalflix.net:80/Call-Me/Whatsapp8801971466614/39.m3u8
+#EXTINF:-1 tvg-name="star jalsha" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Star-Jalsha--2000-x-1125--Transparent.png" group-title="Entertainment",star jalsha
+http://live.globalflix.net:80/Call-Me/Whatsapp8801971466614/145.m3u8
+#EXTINF:-1 tvg-name="Star Plus" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/2384/1782291852384-h.jpg" group-title="Entertainment",Star Plus
+http://live.globalflix.net:80/Call-Me/Whatsapp8801971466614/38.m3u8
+#EXTINF:-1 tvg-name="Star Plus" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/2384/1782291852384-h.jpg" group-title="Entertainment",Star Plus
+http://live.globalflix.net:80/Call-Me/Whatsapp8801971466614/40.m3u8
+#EXTINF:-1 tvg-name="Zee Bangla" tvg-logo="https://i.imgur.com/zTGTWa8.png" group-title="Entertainment",Zee Bangla
+http://live.globalflix.net:80/Call-Me/Whatsapp8801971466614/8.m3u8
+#EXTINF:-1 tvg-name="Zee Picchar" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0028ZJ97.png?lock=720x540" group-title="Entertainment",Zee Picchar
+http://live.globalflix.net:80/Call-Me/Whatsapp8801971466614/11.m3u8
+#EXTINF:-1 tvg-name="Zee TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Zee_TV_Logo_2025.svg/960px-Zee_TV_Logo_2025.svg.png" group-title="Entertainment",Zee TV
+http://live.globalflix.net:80/Call-Me/Whatsapp8801971466614/1.m3u8
+#EXTINF:-1 tvg-name="group-title="Marathi",DD Sahyadri" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Sahyadri.png" group-title="General",group-title="Marathi",DD Sahyadri
+http://z5ams.akamaized.net/ddsahyadri/tracks-v1a1/index.m3u8
+#EXTINF:-1 tvg-name="DISNEY CHANNEL HD" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/1540/1785251571540-h.jpg" group-title="Kids",DISNEY CHANNEL HD
+http://live.globalflix.net:80/Call-Me/Whatsapp8801971466614/120.m3u8
+#EXTINF:-1 tvg-name="Disney India HD" group-title="Kids",Disney India HD
+https://allinonereborn.com/spice.m3u8/?id=634
+#EXTINF:-1 tvg-name="Disney India SD" group-title="Kids",Disney India SD
+http://119.156.26.155:8000/play/a05u/index.m3u8
+#EXTINF:-1 tvg-name="Disney India SD 2" group-title="Kids",Disney India SD 2
+http://game.denver1769.in/port/tp3.php?id=11639
+#EXTINF:-1 tvg-name="Disney India SD 3" group-title="Kids",Disney India SD 3
+http://bostv.one:8080/85750857500/0004312/92416
+#EXTINF:-1 tvg-name="Disney India SD 4" group-title="Kids",Disney India SD 4
+https://tgaadi-web.tech/stalker/portal.m3u8?id=864
+#EXTINF:-1 tvg-name="Disney India SD 5" group-title="Kids",Disney India SD 5
+https://bd.spidy.online/MACX/STREAM4K/play.m3u8?id=475134
+#EXTINF:-1 tvg-name="Disney India SD 6" group-title="Kids",Disney India SD 6
+https://nayeemparvez.my.id/stbx/playlist.m3u8?id=9b4a905dbc5d96657|Referer=https://xnxx.com/
+#EXTINF:-1 tvg-name="DISNEY JUNIOR HD" tvg-logo="https://plain-apac-prod-public.komododecks.com/202609/07/kDx5CloMCE4tFekQtkOQ/image.png" group-title="Kids",DISNEY JUNIOR HD
+http://live.globalflix.net:80/Call-Me/Whatsapp8801971466614/116.m3u8
+#EXTINF:-1 tvg-name="Disney Junior Hindi" tvg-logo="https://plain-apac-prod-public.komododecks.com/202609/07/kDx5CloMCE4tFekQtkOQ/image.png" group-title="Kids",Disney Junior Hindi
+https://fifabd.xyz/KIDxRANAPK/play.m3u8?id=381018%7CReferer=RANAPK
+#EXTINF:-1 tvg-name="Doraemon 24/7(HINDI)" group-title="Kids",Doraemon 24/7(HINDI)
+http://game.denver1769.in/port/tp3.m3u8?id=58634
+#EXTINF:-1 tvg-name="ETV Bal Bharat" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/ETV-Bal-Bahrat-HD-Logo_2000_X_1125_Transpharent.png" group-title="Kids",ETV Bal Bharat
+https://unknown-playlists.vercel.app/etv-bal-bharat-stevosure-tplay.m3u8
+#EXTINF:-1 tvg-name="Hungama Kids 1" group-title="Kids",Hungama Kids 1
+https://tgaadi-web.tech/stalker/portal.m3u8?id=9400
+#EXTINF:-1 tvg-name="Hungama Kids 2" group-title="Kids",Hungama Kids 2
+http://119.156.26.155:8000/play/a05t/index.m3u8
+#EXTINF:-1 tvg-name="Hungama Kids 3" group-title="Kids",Hungama Kids 3
+http://starshare.live:8080/live/7382837374/5003958588/18456.m3u8
+#EXTINF:-1 tvg-name="Hungama Kids 4" group-title="Kids",Hungama Kids 4
+http://bostv.one:8080/85750857500/0004312/92417
+#EXTINF:-1 tvg-name="Hungama Kids 5" group-title="Kids",Hungama Kids 5
+https://unknown-playlists.vercel.app/hungama-by-stevosure.m3u8
+#EXTINF:-1 tvg-name="Hungama Kids 6" group-title="Kids",Hungama Kids 6
+http://xtv.ooo:8080/live/927382370/837382809/150480.m3u8
+#EXTINF:-1 tvg-name="Masha And The Bear 24/7(HINDI)" group-title="Kids",Masha And The Bear 24/7(HINDI)
+https://fifabd.xyz/KIDxRANAPK/play.m3u8?id=301506
+#EXTINF:-1 tvg-name="Motu Patlu 24/7(HINDI)" group-title="Kids",Motu Patlu 24/7(HINDI)
+https://fifabd.xyz/KIDxRANAPK/play.m3u8?id=307079
+#EXTINF:-1 tvg-name="Nick Hindi" group-title="Kids",Nick Hindi
+https://fifabd.xyz/KIDxRANAPK/play.m3u8?id=150482
+#EXTINF:-1 tvg-name="Oggy and the Cockroaches 24/7(HINDI)" group-title="Kids",Oggy and the Cockroaches 24/7(HINDI)
+https://fifabd.xyz/KIDxRANAPK/play.m3u8?id=308282
+#EXTINF:-1 tvg-name="Sonic Hindi" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/6294/1782290926294-h.jpg" group-title="Kids",Sonic Hindi
+http://119.156.26.155:8000/play/a05y/index.m3u8
+#EXTINF:-1 tvg-name="Sony Yay (BANGLA)" group-title="Kids",Sony Yay (BANGLA)
+https://cdn.its-nayeemparvez.xyz/stbx/playlist.m3u8?id=da883c26d80732d9e|Referer=https://xnxx.com/
+#EXTINF:-1 tvg-name="Sony Yay 2 (GeoRestricted)" group-title="Kids",Sony Yay 2 (GeoRestricted)
+https://pubads.g.doubleclick.net/ssai/event/40H5HfwWTZadFGYkBTqagg/master.m3u8
+#EXTINF:-1 tvg-name="Sony Yay 3" group-title="Kids",Sony Yay 3
+https://unknown-playlists.vercel.app/sonyyay!.m3u8
+#EXTINF:-1 tvg-name="Sony Yay 4" group-title="Kids",Sony Yay 4
+http://bostv.one:8080/85750857500/0004312/92420
+#EXTINF:-1 tvg-name="Sony Yay 5" group-title="Kids",Sony Yay 5
+https://keralamaxtv.com/sliv/stream.php?id=168569|Referer=https://keralamaxtv.com/sliv/?key=thenayeemparvez
+#EXTINF:-1 tvg-name="group-title="Marathi",Zee Talkies" tvg-logo="https://i.imgur.com/GowDXFz.png" group-title="Movies",group-title="Marathi",Zee Talkies
+http://z5ams.akamaized.net/zeetalkies/tracks-v1a1/index.m3u8
+#EXTINF:-1 tvg-name="group-title="Marathi",Zee Talkies HD" tvg-logo="https://i.imgur.com/GowDXFz.png" group-title="Movies",group-title="Marathi",Zee Talkies HD
+http://z5ams.akamaized.net/ztalkieshd/tracks-v1a1/index.m3u8
+#EXTINF:-1 tvg-name="Sony Max" tvg-logo="https://dtil.tmsimg.com/assets/s157590_ld_h15_aa.png?lock=720x540" group-title="Movies",Sony Max
+http://live.globalflix.net:80/Call-Me/Whatsapp8801971466614/14.m3u8
+#EXTINF:-1 tvg-name="Sony Max 2" tvg-logo="https://dtil.tmsimg.com/assets/s143801_ld_h15_aa.png?lock=720x540" group-title="Movies",Sony Max 2
+http://live.globalflix.net:80/Call-Me/Whatsapp8801971466614/17.m3u8
+#EXTINF:-1 tvg-name="Sony Max India" tvg-logo="https://dtil.tmsimg.com/assets/s157590_ld_h15_aa.png?lock=720x540" group-title="Movies",Sony Max India
+http://live.globalflix.net:80/Call-Me/Whatsapp8801971466614/26.m3u8
+#EXTINF:-1 tvg-name="Sony Pix" tvg-logo="https://dtil.tmsimg.com/assets/s143803_ld_h15_aa.png?lock=720x540" group-title="Movies",Sony Pix
+http://live.globalflix.net:80/Call-Me/Whatsapp8801971466614/24.m3u8
+#EXTINF:-1 tvg-name="Star Gold" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/6567/1784547656567-h.jpg" group-title="Movies",Star Gold
+http://live.globalflix.net:80/Call-Me/Whatsapp8801971466614/32.m3u8
+#EXTINF:-1 tvg-name="Star Gold Select" tvg-logo="https://dtil.tmsimg.com/assets/s143817_ld_h15_aa.png?lock=720x540" group-title="Movies",Star Gold Select
+http://live.globalflix.net:80/Call-Me/Whatsapp8801971466614/54.m3u8
+#EXTINF:-1 tvg-name="Star Jalsha Movies" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/1445/1782291521445-h.jpg" group-title="Movies",Star Jalsha Movies
+http://live.globalflix.net:80/Call-Me/Whatsapp8801971466614/48.m3u8
+#EXTINF:-1 tvg-name="Star Movies" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/STAR_Movies_logo.svg/960px-STAR_Movies_logo.svg.png" group-title="Movies",Star Movies
+http://live.globalflix.net:80/Call-Me/Whatsapp8801971466614/34.m3u8
+#EXTINF:-1 tvg-name="Star Movies" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/STAR_Movies_logo.svg/960px-STAR_Movies_logo.svg.png" group-title="Movies",Star Movies
+http://live.globalflix.net:80/Call-Me/Whatsapp8801971466614/50.m3u8
+#EXTINF:-1 tvg-name="Star Movies HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/STAR_Movies_logo.svg/960px-STAR_Movies_logo.svg.png" group-title="Movies",Star Movies HD
+http://live.globalflix.net:80/Call-Me/Whatsapp8801971466614/45.m3u8
+#EXTINF:-1 tvg-name="Star Movies Select" tvg-logo="https://dtil.tmsimg.com/assets/s143830_ld_h15_aa.png?lock=720x540" group-title="Movies",Star Movies Select
+http://live.globalflix.net:80/Call-Me/Whatsapp8801971466614/49.m3u8
+#EXTINF:-1 tvg-name="Zee Action" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022K5ZV.png?lock=720x540" group-title="Movies",Zee Action
+http://live.globalflix.net:80/Call-Me/Whatsapp8801971466614/4.m3u8
+#EXTINF:-1 tvg-name="Zee Bangla Cinema" tvg-logo="https://i.imgur.com/1nPtakc.png" group-title="Movies",Zee Bangla Cinema
+http://live.globalflix.net:80/Call-Me/Whatsapp8801971466614/7.m3u8
+#EXTINF:-1 tvg-name="Zee Bollywood" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022T6DM.png?lock=720x540" group-title="Movies",Zee Bollywood
+http://live.globalflix.net:80/Call-Me/Whatsapp8801971466614/3.m3u8
+#EXTINF:-1 tvg-name="Zee Cinema Asia" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022HVX3.png?lock=720x540" group-title="Movies",Zee Cinema Asia
+http://live.globalflix.net:80/Call-Me/Whatsapp8801971466614/2.m3u8
+#EXTINF:-1 tvg-name="Zee Talkies" tvg-logo="https://i.imgur.com/GowDXFz.png" group-title="Movies",Zee Talkies
+http://live.globalflix.net:80/Call-Me/Whatsapp8801971466614/5.m3u8
+#EXTINF:-1 tvg-name="9X Jhakaas" tvg-logo="https://dtil.tmsimg.com/assets/s90012_ld_h15_aa.png?lock=720x540" group-title="Music",9X Jhakaas
+https://9xjio.wiseplayout.com/9X_Jhakaas/master.m3u8
 #EXTINF:-1 tvg-name="Saam TV" tvg-logo="https://dtil.tmsimg.com/assets/s143735_ld_h15_aa.png?lock=720x540" group-title="Music",Saam TV
 https://cdn.pishow.tv/ott/live/437/master.m3u8
-#EXTINF:-1 tvg-name="Sangeet Bhojpuri (576p)" tvg-logo="https://dtil.tmsimg.com/assets/s143757_ld_h15_aa.png?lock=720x540" group-title="Music",Sangeet Bhojpuri (576p)
-https://mumt01.tangotv.in/O5aw8Zn3SANGEETBHOJPURI/index.m3u8
-#EXTINF:-1 tvg-name="Sangeet Marathi (720p)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Sangeet_Marathi.jpg/960px-Sangeet_Marathi.jpg" group-title="Music",Sangeet Marathi (720p)
-https://cdn.pishow.tv/ott/live/1229/master.m3u8
-#EXTINF:-1 tvg-name="Shemaroo Filmi Gaane (1080p)" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/channel/0d5b07555b2d4415aa9f145273095ed7.png" group-title="Music",Shemaroo Filmi Gaane (1080p)
-https://prod-runn.cdn.runn.tv/shemaroo/stream/smrfgn/playlist.m3u8
-#EXTINF:-1 tvg-name="Zoom (India) (720p)" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/TIMESPLAY/LIVECHANNEL/6904ba4039f3b175376a61de/images/LOGO_HD/LOGO_HD_KN-eM9VvQ_ZoomTV1_1.png" group-title="Music",Zoom (India) (720p)
-https://dai.google.com/linear/hls/event/JCAm25qkRXiKcK1AJMlvKQ/master.m3u8
-#EXTINF:-1 tvg-name="" tvg-logo="https://dtil.tmsimg.com/assets/s142495_ld_h15_aa.png?lock=720x540" group-title="News",
-https://www.italianfuturism.org/manifestos/feed/
-#EXTINF:-1 tvg-name="" tvg-logo="https://dtil.tmsimg.com/assets/s142495_ld_h15_aa.png?lock=720x540" group-title="News",
-https://www.tsk-praha.cz/nase-cinnosti/feed/
-#EXTINF:-1 tvg-name="" tvg-logo="https://dtil.tmsimg.com/assets/s142495_ld_h15_aa.png?lock=720x540" group-title="News",
-https://www.italianfuturism.org/manifestos/futuristphotomanifesto/feed/
-#EXTINF:-1 tvg-name="" tvg-logo="https://dtil.tmsimg.com/assets/s142495_ld_h15_aa.png?lock=720x540" group-title="News",
-https://www.italianfuturism.org/manifestos/futurist-reconstruction-of-the-universe/feed/
-#EXTINF:-1 tvg-name="" tvg-logo="https://dtil.tmsimg.com/assets/s142495_ld_h15_aa.png?lock=720x540" group-title="News",
-https://www.italianfuturism.org/manifestos/foundingmanifesto/feed/
-#EXTINF:-1 tvg-name="" tvg-logo="https://dtil.tmsimg.com/assets/s142495_ld_h15_aa.png?lock=720x540" group-title="News",
-https://www.italianfuturism.org/manifestos/fondation-et-manifeste-du-futurisme/feed/
-#EXTINF:-1 tvg-name="" tvg-logo="https://dtil.tmsimg.com/assets/s142495_ld_h15_aa.png?lock=720x540" group-title="News",
-https://www.italianfuturism.org/manifestos/futuristarchitecturemanifesto/feed/
-#EXTINF:-1 tvg-name="" tvg-logo="https://dtil.tmsimg.com/assets/s142495_ld_h15_aa.png?lock=720x540" group-title="News",
-https://www.italianfuturism.org/manifestos/a-proposito-di-pittura-religiosa-futurista/feed/
-#EXTINF:-1 tvg-name="" tvg-logo="https://dtil.tmsimg.com/assets/s142495_ld_h15_aa.png?lock=720x540" group-title="News",
-https://www.italianfuturism.org/manifestos/futuristpaintersmanifesto/feed/
-#EXTINF:-1 tvg-name="" tvg-logo="https://dtil.tmsimg.com/assets/s142495_ld_h15_aa.png?lock=720x540" group-title="News",
-https://www.italianfuturism.org/manifestos/the-radio/feed/
-#EXTINF:-1 tvg-name="" tvg-logo="https://dtil.tmsimg.com/assets/s142495_ld_h15_aa.png?lock=720x540" group-title="News",
-https://www.italianfuturism.org/manifestos/manifestolust/feed/
-#EXTINF:-1 tvg-name="" tvg-logo="https://dtil.tmsimg.com/assets/s142495_ld_h15_aa.png?lock=720x540" group-title="News",
-https://www.italianfuturism.org/manifestos/words-in-freedom/feed/
-#EXTINF:-1 tvg-name="" tvg-logo="https://dtil.tmsimg.com/assets/s142495_ld_h15_aa.png?lock=720x540" group-title="News",
-https://www.italianfuturism.org/manifestos/svaticanamento/feed/
-#EXTINF:-1 tvg-name="" tvg-logo="https://dtil.tmsimg.com/assets/s142495_ld_h15_aa.png?lock=720x540" group-title="News",
-https://www.italianfuturism.org/manifestos/futuristmusiciansmanifesto/feed/
-#EXTINF:-1 tvg-name="" tvg-logo="https://dtil.tmsimg.com/assets/s142495_ld_h15_aa.png?lock=720x540" group-title="News",
-https://www.italianfuturism.org/manifestos/concerning-futurist-religious-painting/feed/
-#EXTINF:-1 tvg-name="" tvg-logo="https://dtil.tmsimg.com/assets/s142495_ld_h15_aa.png?lock=720x540" group-title="News",
-https://www.italianfuturism.org/manifestos/technical-manifesto-of-futurist-literature/feed/
-#EXTINF:-1 tvg-name="" tvg-logo="https://dtil.tmsimg.com/assets/s142495_ld_h15_aa.png?lock=720x540" group-title="News",
-https://www.italianfuturism.org/manifestos/the-art-of-noise/feed/
-#EXTINF:-1 tvg-name="" tvg-logo="https://dtil.tmsimg.com/assets/s142495_ld_h15_aa.png?lock=720x540" group-title="News",
-https://www.italianfuturism.org/manifestos/fondazione-e-manifesto-del-futurismo/feed/
-#EXTINF:-1 tvg-name="" tvg-logo="https://dtil.tmsimg.com/assets/s142495_ld_h15_aa.png?lock=720x540" group-title="News",
-https://www.italianfuturism.org/manifestos/manifesto-dellarte-sacra-futurista/feed/
-#EXTINF:-1 tvg-name="" tvg-logo="https://dtil.tmsimg.com/assets/s142495_ld_h15_aa.png?lock=720x540" group-title="News",
-https://www.italianfuturism.org/manifestos/futurist-sacred-architecture/feed/
-#EXTINF:-1 tvg-name="" tvg-logo="https://dtil.tmsimg.com/assets/s142495_ld_h15_aa.png?lock=720x540" group-title="News",
-https://www.italianfuturism.org/manifestos/la-radia/feed/
-#EXTINF:-1 tvg-name="" tvg-logo="https://dtil.tmsimg.com/assets/s142495_ld_h15_aa.png?lock=720x540" group-title="News",
-https://www.italianfuturism.org/manifestos/art-and-religion/feed/
-#EXTINF:-1 tvg-name="" tvg-logo="https://dtil.tmsimg.com/assets/s142495_ld_h15_aa.png?lock=720x540" group-title="News",
-https://www.italianfuturism.org/manifestos/larchitettura-sacra-futurista-predominio-del-vetro-e-dellalluminio/feed/
-#EXTINF:-1 tvg-name="" tvg-logo="https://dtil.tmsimg.com/assets/s142495_ld_h15_aa.png?lock=720x540" group-title="News",
-https://www.italianfuturism.org/manifestos/de-vaticanisation/feed/
-#EXTINF:-1 tvg-name="" tvg-logo="https://dtil.tmsimg.com/assets/s142495_ld_h15_aa.png?lock=720x540" group-title="News",
-https://www.italianfuturism.org/manifestos/manifesto-of-sacred-art-english/feed/
-#EXTINF:-1 tvg-name="" tvg-logo="https://dtil.tmsimg.com/assets/s142495_ld_h15_aa.png?lock=720x540" group-title="News",
-https://www.italianfuturism.org/manifestos/ricostruzione-futurista-delluniverso/feed/
-#EXTINF:-1 tvg-name="" tvg-logo="https://dtil.tmsimg.com/assets/s142495_ld_h15_aa.png?lock=720x540" group-title="News",
-https://www.italianfuturism.org/manifestos/arte-e-religione/feed/
-#EXTINF:-1 tvg-name="2" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/22Scope_News.png" group-title="News",2
-https://mcprod.movistar.co/media/files/2
-#EXTINF:-1 tvg-name="Jai Maharashtra (576p)" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Jai_Maharashtra.png" group-title="News",Jai Maharashtra (576p)
-https://d1msejlow1t3l4.cloudfront.net/fta/jaimaharashtra/playlist.m3u8
+#EXTINF:-1 tvg-name="India TV (IN)" tvg-logo="https://dtil.tmsimg.com/assets/s143199_ld_h15_aa.png?lock=720x540" group-title="News",India TV (IN)
+https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01550-indiatv-indiatvlive-lg-lgin/playlist.m3u8
+#EXTINF:-1 tvg-name="NDTV 24x7 (IN)" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/NDTV24x7_Transparent_9b042a6f-d40f-465a-998f-627ee6841919.png" group-title="News",NDTV 24x7 (IN)
+https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01605-ndtvconvergence-ndtv24x7-lgin/playlist.m3u8
+#EXTINF:-1 tvg-name="NDTV India (IN)" tvg-logo="https://dtil.tmsimg.com/assets/s157588_ld_h15_aa.png?lock=720x540" group-title="News",NDTV India (IN)
+https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01605-ndtvconvergence-ndtvindia-lgin/playlist.m3u8
 #EXTINF:-1 tvg-name="Pudhari News (576p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Pudhari-Logo_2000_X_1125_Transpharent.png" group-title="News",Pudhari News (576p)
 https://streams.tangotv.in/PUDHARINEWS/ORIGIN/index.m3u8
-#EXTINF:-1 tvg-name="tv9 marathi" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/TV9%20Marathi1.png" group-title="News",tv9 marathi
-https://mumbai-edge.smartplaytv.in/TV9Marathi/index.m3u8
-#EXTINF:-1 tvg-name="%5B%5B   slug%5D%5D-44d833d031d00473 js" group-title="Other",%5B%5B   slug%5D%5D-44d833d031d00473 js
-https://ssr.col.movistar.es/home/muf4z586/_next/static/chunks/pages/%5B%5B...slug%5D%5D-44d833d031d00473.js
-#EXTINF:-1 tvg-name="0-cssdbcbffe0db46783ce869293d6d09c05524270759b0896727c023be9f748a8 css" group-title="Other",0-cssdbcbffe0db46783ce869293d6d09c05524270759b0896727c023be9f748a8 css
-https://blog.movistar.com.co/wp-content/cache/fvm/min/0-cssdbcbffe0db46783ce869293d6d09c05524270759b0896727c023be9f748a8.css
-#EXTINF:-1 tvg-name="1080p-t-the-history-of-concrete_en_us_1789140594 mp4" group-title="Other",1080p-t-the-history-of-concrete_en_us_1789140594 mp4
-https://trailers.mubicdn.net/461757/optimised/1080p-t-the-history-of-concrete_en_us_1789140594.mp4
-#EXTINF:-1 tvg-name="1766587555_video_h264_desktop mp4" group-title="Other",1766587555_video_h264_desktop mp4
-https://assets.mubicdn.net/splash-videos/39/1766587555_video_h264_desktop.mp4
-#EXTINF:-1 tvg-name="1766587555_video_h264_mobile mp4" group-title="Other",1766587555_video_h264_mobile mp4
-https://assets.mubicdn.net/splash-videos/39/1766587555_video_h264_mobile.mp4
-#EXTINF:-1 tvg-name="1766587555_video_h264_tablet mp4" group-title="Other",1766587555_video_h264_tablet mp4
-https://assets.mubicdn.net/splash-videos/39/1766587555_video_h264_tablet.mp4
-#EXTINF:-1 tvg-name="1766587555_video_h265_desktop mp4" group-title="Other",1766587555_video_h265_desktop mp4
-https://assets.mubicdn.net/splash-videos/39/1766587555_video_h265_desktop.mp4
-#EXTINF:-1 tvg-name="1766587555_video_h265_mobile mp4" group-title="Other",1766587555_video_h265_mobile mp4
-https://assets.mubicdn.net/splash-videos/39/1766587555_video_h265_mobile.mp4
-#EXTINF:-1 tvg-name="1766587555_video_h265_tablet mp4" group-title="Other",1766587555_video_h265_tablet mp4
-https://assets.mubicdn.net/splash-videos/39/1766587555_video_h265_tablet.mp4
-#EXTINF:-1 tvg-name="2 %20Res _6333_-_T 2 4 _Indicadores_de_calidad_para_el_servicio_de_datos_fijosN pdf" group-title="Other",2 %20Res _6333_-_T 2 4 _Indicadores_de_calidad_para_el_servicio_de_datos_fijosN pdf
-https://mcprod.movistar.co/media/files/2.%20Res._6333_-_T.2.4._Indicadores_de_calidad_para_el_servicio_de_datos_fijosN.pdf
-#EXTINF:-1 tvg-name="240p-t-the-history-of-concrete_en_us_1789140594 mp4" group-title="Other",240p-t-the-history-of-concrete_en_us_1789140594 mp4
-https://trailers.mubicdn.net/461757/optimised/240p-t-the-history-of-concrete_en_us_1789140594.mp4
-#EXTINF:-1 tvg-name="3307-1a534f399339ac2c js" group-title="Other",3307-1a534f399339ac2c js
-https://ssr.col.movistar.es/fibra-y-movil/mudto5nm/_next/static/chunks/3307-1a534f399339ac2c.js
-#EXTINF:-1 tvg-name="4082-0f7a068166cca35d js" group-title="Other",4082-0f7a068166cca35d js
-https://ssr.col.movistar.es/fibra-optica/ms76ib2h/_next/static/chunks/4082-0f7a068166cca35d.js
+#EXTINF:-1 tvg-name="TV9 Bangla (IN)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/TV9-Bangla1.png" group-title="News",TV9 Bangla (IN)
+https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01106-associatedbroad-tv9bangla-lgin/playlist.m3u8
+#EXTINF:-1 tvg-name="TV9 Bharatvarsh (IN)" tvg-logo="https://dtil.tmsimg.com/assets/s144027_ld_h15_aa.png?lock=720x540" group-title="News",TV9 Bharatvarsh (IN)
+https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01106-associatedbroad-tv9bharatvarsh-lgin/playlist.m3u8
+#EXTINF:-1 tvg-name="TV9 Kannada (IN)" tvg-logo="https://dtil.tmsimg.com/assets/s144029_ld_h15_aa.png?lock=720x540" group-title="News",TV9 Kannada (IN)
+https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01106-associatedbroad-tv9kannada-lgin/playlist.m3u8
+#EXTINF:-1 tvg-name="TV9 Marathi (IN)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/TV9%20Marathi1.png" group-title="News",TV9 Marathi (IN)
+https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01106-associatedbroad-tv9marathi-lgin/playlist.m3u8
+#EXTINF:-1 tvg-name="TV9 Telugu (IN)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/TV9%20Telugu1.png" group-title="News",TV9 Telugu (IN)
+https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01106-associatedbroad-tv9telugu-lgin/playlist.m3u8
+#EXTINF:-1 tvg-name="103481150 m3u8" group-title="Other",103481150 m3u8
+https://edge-hls.saawsedge.com/hls/103481150/master/103481150.m3u8
+#EXTINF:-1 tvg-name="103481150_240p m3u8" group-title="Other",103481150_240p m3u8
+https://edge-hls.saawsedge.com/hls/103481150/master/103481150_240p.m3u8
+#EXTINF:-1 tvg-name="103481150_480p m3u8" group-title="Other",103481150_480p m3u8
+https://edge-hls.saawsedge.com/hls/103481150/master/103481150_480p.m3u8
+#EXTINF:-1 tvg-name="1080p m3u8" group-title="Other",1080p m3u8
+https://hlsads.gannett-cdn.com/gustav/8c27f5a2ff73fa826d80fee0af43842f/c041b4a5-9323-4bb0-861c-c13cba7622ab/1080p.m3u8
+#EXTINF:-1 tvg-name="1080p,720p,master m3u8" group-title="Other",1080p,720p,master m3u8
+https://hlsads.gannett-cdn.com/gustav/8c27f5a2ff73fa826d80fee0af43842f/c041b4a5-9323-4bb0-861c-c13cba7622ab/1080p,720p,master.m3u8
+#EXTINF:-1 tvg-name="119938100 m3u8" group-title="Other",119938100 m3u8
+https://edge-hls.saawsedge.com/hls/119938100/master/119938100.m3u8
+#EXTINF:-1 tvg-name="119938100_240p m3u8" group-title="Other",119938100_240p m3u8
+https://edge-hls.saawsedge.com/hls/119938100/master/119938100_240p.m3u8
+#EXTINF:-1 tvg-name="119938100_480p m3u8" group-title="Other",119938100_480p m3u8
+https://edge-hls.saawsedge.com/hls/119938100/master/119938100_480p.m3u8
+#EXTINF:-1 tvg-name="120039043 m3u8" group-title="Other",120039043 m3u8
+https://edge-hls.saawsedge.com/hls/120039043/master/120039043.m3u8
+#EXTINF:-1 tvg-name="124753577 m3u8" group-title="Other",124753577 m3u8
+https://edge-hls.saawsedge.com/hls/124753577/master/124753577.m3u8
+#EXTINF:-1 tvg-name="124753577_240p m3u8" group-title="Other",124753577_240p m3u8
+https://edge-hls.saawsedge.com/hls/124753577/master/124753577_240p.m3u8
+#EXTINF:-1 tvg-name="124753577_480p m3u8" group-title="Other",124753577_480p m3u8
+https://edge-hls.saawsedge.com/hls/124753577/master/124753577_480p.m3u8
+#EXTINF:-1 tvg-name="132050357 m3u8" group-title="Other",132050357 m3u8
+https://edge-hls.saawsedge.com/hls/132050357/master/132050357.m3u8
+#EXTINF:-1 tvg-name="132050357_240p m3u8" group-title="Other",132050357_240p m3u8
+https://edge-hls.saawsedge.com/hls/132050357/master/132050357_240p.m3u8
+#EXTINF:-1 tvg-name="132050357_480p m3u8" group-title="Other",132050357_480p m3u8
+https://edge-hls.saawsedge.com/hls/132050357/master/132050357_480p.m3u8
+#EXTINF:-1 tvg-name="1369-d6dcb997c876e915 js" group-title="Other",1369-d6dcb997c876e915 js
+https://ssr.col.movistar.es/fibra-optica/mul1dh0t/_next/static/chunks/1369-d6dcb997c876e915.js
+#EXTINF:-1 tvg-name="138784112 m3u8" group-title="Other",138784112 m3u8
+https://edge-hls.saawsedge.com/hls/138784112/master/138784112.m3u8
+#EXTINF:-1 tvg-name="138784112_240p m3u8" group-title="Other",138784112_240p m3u8
+https://edge-hls.saawsedge.com/hls/138784112/master/138784112_240p.m3u8
+#EXTINF:-1 tvg-name="138784112_480p m3u8" group-title="Other",138784112_480p m3u8
+https://edge-hls.saawsedge.com/hls/138784112/master/138784112_480p.m3u8
+#EXTINF:-1 tvg-name="13971979 m3u8" group-title="Other",13971979 m3u8
+https://edge-hls.saawsedge.com/hls/13971979/master/13971979.m3u8
+#EXTINF:-1 tvg-name="13971979_240p m3u8" group-title="Other",13971979_240p m3u8
+https://edge-hls.saawsedge.com/hls/13971979/master/13971979_240p.m3u8
+#EXTINF:-1 tvg-name="13971979_480p m3u8" group-title="Other",13971979_480p m3u8
+https://edge-hls.saawsedge.com/hls/13971979/master/13971979_480p.m3u8
+#EXTINF:-1 tvg-name="174937216 m3u8" group-title="Other",174937216 m3u8
+https://edge-hls.saawsedge.com/hls/174937216/master/174937216.m3u8
+#EXTINF:-1 tvg-name="1789635221167-v?o=production" group-title="Other",1789635221167-v?o=production
+https://img.airtel.tv/unsafe/fit-in/242x0/filters:format(/assets/HOTSTAR_DTH/MOVIE/6aac6154fef813dd388a086d/images/PORTRAIT/1789635221167-v)/https://xstreamcp-assets-msp.streamready.in/assets/HOTSTAR_DTH/MOVIE/6aac6154fef813dd388a086d/images/PORTRAIT/1789635221167-v?o=production
+#EXTINF:-1 tvg-name="184-75e8b20585d687d7 js" group-title="Other",184-75e8b20585d687d7 js
+https://ssr.col.movistar.es/home/muf4z586/_next/static/chunks/184-75e8b20585d687d7.js
+#EXTINF:-1 tvg-name="193425875 m3u8" group-title="Other",193425875 m3u8
+https://edge-hls.saawsedge.com/hls/193425875/master/193425875.m3u8
+#EXTINF:-1 tvg-name="193425875_240p m3u8" group-title="Other",193425875_240p m3u8
+https://edge-hls.saawsedge.com/hls/193425875/master/193425875_240p.m3u8
+#EXTINF:-1 tvg-name="193425875_480p m3u8" group-title="Other",193425875_480p m3u8
+https://edge-hls.saawsedge.com/hls/193425875/master/193425875_480p.m3u8
+#EXTINF:-1 tvg-name="201686322 m3u8" group-title="Other",201686322 m3u8
+https://edge-hls.saawsedge.com/hls/201686322/master/201686322.m3u8
+#EXTINF:-1 tvg-name="201686322_240p m3u8" group-title="Other",201686322_240p m3u8
+https://edge-hls.saawsedge.com/hls/201686322/master/201686322_240p.m3u8
+#EXTINF:-1 tvg-name="201686322_480p m3u8" group-title="Other",201686322_480p m3u8
+https://edge-hls.saawsedge.com/hls/201686322/master/201686322_480p.m3u8
+#EXTINF:-1 tvg-name="2026-FCS-Elementary-Year-at-a-Glance-1 pdf" group-title="Other",2026-FCS-Elementary-Year-at-a-Glance-1 pdf
+https://faith-christian.org/wp-content/uploads/sites/9/2026/08/2026-FCS-Elementary-Year-at-a-Glance-1.pdf
+#EXTINF:-1 tvg-name="206540880 m3u8" group-title="Other",206540880 m3u8
+https://edge-hls.saawsedge.com/hls/206540880/master/206540880.m3u8
+#EXTINF:-1 tvg-name="206540880_240p m3u8" group-title="Other",206540880_240p m3u8
+https://edge-hls.saawsedge.com/hls/206540880/master/206540880_240p.m3u8
+#EXTINF:-1 tvg-name="206540880_480p m3u8" group-title="Other",206540880_480p m3u8
+https://edge-hls.saawsedge.com/hls/206540880/master/206540880_480p.m3u8
+#EXTINF:-1 tvg-name="208569547 m3u8" group-title="Other",208569547 m3u8
+https://edge-hls.saawsedge.com/hls/208569547/master/208569547.m3u8
+#EXTINF:-1 tvg-name="208569547_240p m3u8" group-title="Other",208569547_240p m3u8
+https://edge-hls.saawsedge.com/hls/208569547/master/208569547_240p.m3u8
+#EXTINF:-1 tvg-name="208569547_480p m3u8" group-title="Other",208569547_480p m3u8
+https://edge-hls.saawsedge.com/hls/208569547/master/208569547_480p.m3u8
+#EXTINF:-1 tvg-name="214644982 m3u8" group-title="Other",214644982 m3u8
+https://edge-hls.saawsedge.com/hls/214644982/master/214644982.m3u8
+#EXTINF:-1 tvg-name="214644982_240p m3u8" group-title="Other",214644982_240p m3u8
+https://edge-hls.saawsedge.com/hls/214644982/master/214644982_240p.m3u8
+#EXTINF:-1 tvg-name="214644982_480p m3u8" group-title="Other",214644982_480p m3u8
+https://edge-hls.saawsedge.com/hls/214644982/master/214644982_480p.m3u8
+#EXTINF:-1 tvg-name="22769777 m3u8" group-title="Other",22769777 m3u8
+https://edge-hls.saawsedge.com/hls/22769777/master/22769777.m3u8
+#EXTINF:-1 tvg-name="22769777_240p m3u8" group-title="Other",22769777_240p m3u8
+https://edge-hls.saawsedge.com/hls/22769777/master/22769777_240p.m3u8
+#EXTINF:-1 tvg-name="22769777_480p m3u8" group-title="Other",22769777_480p m3u8
+https://edge-hls.saawsedge.com/hls/22769777/master/22769777_480p.m3u8
+#EXTINF:-1 tvg-name="22879085 m3u8" group-title="Other",22879085 m3u8
+https://edge-hls.saawsedge.com/hls/22879085/master/22879085.m3u8
+#EXTINF:-1 tvg-name="22879085_240p m3u8" group-title="Other",22879085_240p m3u8
+https://edge-hls.saawsedge.com/hls/22879085/master/22879085_240p.m3u8
+#EXTINF:-1 tvg-name="22879085_480p m3u8" group-title="Other",22879085_480p m3u8
+https://edge-hls.saawsedge.com/hls/22879085/master/22879085_480p.m3u8
+#EXTINF:-1 tvg-name="229904805 m3u8" group-title="Other",229904805 m3u8
+https://edge-hls.saawsedge.com/hls/229904805/master/229904805.m3u8
+#EXTINF:-1 tvg-name="229904805_240p m3u8" group-title="Other",229904805_240p m3u8
+https://edge-hls.saawsedge.com/hls/229904805/master/229904805_240p.m3u8
+#EXTINF:-1 tvg-name="229904805_480p m3u8" group-title="Other",229904805_480p m3u8
+https://edge-hls.saawsedge.com/hls/229904805/master/229904805_480p.m3u8
+#EXTINF:-1 tvg-name="236697328 m3u8" group-title="Other",236697328 m3u8
+https://edge-hls.saawsedge.com/hls/236697328/master/236697328.m3u8
+#EXTINF:-1 tvg-name="236697328_240p m3u8" group-title="Other",236697328_240p m3u8
+https://edge-hls.saawsedge.com/hls/236697328/master/236697328_240p.m3u8
+#EXTINF:-1 tvg-name="236697328_480p m3u8" group-title="Other",236697328_480p m3u8
+https://edge-hls.saawsedge.com/hls/236697328/master/236697328_480p.m3u8
+#EXTINF:-1 tvg-name="240794077 m3u8" group-title="Other",240794077 m3u8
+https://edge-hls.saawsedge.com/hls/240794077/master/240794077.m3u8
+#EXTINF:-1 tvg-name="240794077_240p m3u8" group-title="Other",240794077_240p m3u8
+https://edge-hls.saawsedge.com/hls/240794077/master/240794077_240p.m3u8
+#EXTINF:-1 tvg-name="240794077_480p m3u8" group-title="Other",240794077_480p m3u8
+https://edge-hls.saawsedge.com/hls/240794077/master/240794077_480p.m3u8
+#EXTINF:-1 tvg-name="246752035 m3u8" group-title="Other",246752035 m3u8
+https://edge-hls.saawsedge.com/hls/246752035/master/246752035.m3u8
+#EXTINF:-1 tvg-name="246752035_240p m3u8" group-title="Other",246752035_240p m3u8
+https://edge-hls.saawsedge.com/hls/246752035/master/246752035_240p.m3u8
+#EXTINF:-1 tvg-name="246752035_480p m3u8" group-title="Other",246752035_480p m3u8
+https://edge-hls.saawsedge.com/hls/246752035/master/246752035_480p.m3u8
+#EXTINF:-1 tvg-name="254370396 m3u8" group-title="Other",254370396 m3u8
+https://edge-hls.saawsedge.com/hls/254370396/master/254370396.m3u8
+#EXTINF:-1 tvg-name="254370396_240p m3u8" group-title="Other",254370396_240p m3u8
+https://edge-hls.saawsedge.com/hls/254370396/master/254370396_240p.m3u8
+#EXTINF:-1 tvg-name="254370396_480p m3u8" group-title="Other",254370396_480p m3u8
+https://edge-hls.saawsedge.com/hls/254370396/master/254370396_480p.m3u8
+#EXTINF:-1 tvg-name="262271101 m3u8" group-title="Other",262271101 m3u8
+https://edge-hls.saawsedge.com/hls/262271101/master/262271101.m3u8
+#EXTINF:-1 tvg-name="262271101_240p m3u8" group-title="Other",262271101_240p m3u8
+https://edge-hls.saawsedge.com/hls/262271101/master/262271101_240p.m3u8
+#EXTINF:-1 tvg-name="262271101_480p m3u8" group-title="Other",262271101_480p m3u8
+https://edge-hls.saawsedge.com/hls/262271101/master/262271101_480p.m3u8
+#EXTINF:-1 tvg-name="262745501 m3u8" group-title="Other",262745501 m3u8
+https://edge-hls.saawsedge.com/hls/262745501/master/262745501.m3u8
+#EXTINF:-1 tvg-name="262745501_240p m3u8" group-title="Other",262745501_240p m3u8
+https://edge-hls.saawsedge.com/hls/262745501/master/262745501_240p.m3u8
+#EXTINF:-1 tvg-name="262745501_480p m3u8" group-title="Other",262745501_480p m3u8
+https://edge-hls.saawsedge.com/hls/262745501/master/262745501_480p.m3u8
+#EXTINF:-1 tvg-name="263559575 m3u8" group-title="Other",263559575 m3u8
+https://edge-hls.saawsedge.com/hls/263559575/master/263559575.m3u8
+#EXTINF:-1 tvg-name="263559575_240p m3u8" group-title="Other",263559575_240p m3u8
+https://edge-hls.saawsedge.com/hls/263559575/master/263559575_240p.m3u8
+#EXTINF:-1 tvg-name="263559575_480p m3u8" group-title="Other",263559575_480p m3u8
+https://edge-hls.saawsedge.com/hls/263559575/master/263559575_480p.m3u8
+#EXTINF:-1 tvg-name="264019990 m3u8" group-title="Other",264019990 m3u8
+https://edge-hls.saawsedge.com/hls/264019990/master/264019990.m3u8
+#EXTINF:-1 tvg-name="264019990_240p m3u8" group-title="Other",264019990_240p m3u8
+https://edge-hls.saawsedge.com/hls/264019990/master/264019990_240p.m3u8
+#EXTINF:-1 tvg-name="264019990_480p m3u8" group-title="Other",264019990_480p m3u8
+https://edge-hls.saawsedge.com/hls/264019990/master/264019990_480p.m3u8
+#EXTINF:-1 tvg-name="30042591 m3u8" group-title="Other",30042591 m3u8
+https://edge-hls.saawsedge.com/hls/30042591/master/30042591.m3u8
+#EXTINF:-1 tvg-name="30042591_240p m3u8" group-title="Other",30042591_240p m3u8
+https://edge-hls.saawsedge.com/hls/30042591/master/30042591_240p.m3u8
+#EXTINF:-1 tvg-name="30042591_480p m3u8" group-title="Other",30042591_480p m3u8
+https://edge-hls.saawsedge.com/hls/30042591/master/30042591_480p.m3u8
+#EXTINF:-1 tvg-name="33744268 m3u8" group-title="Other",33744268 m3u8
+https://edge-hls.saawsedge.com/hls/33744268/master/33744268.m3u8
+#EXTINF:-1 tvg-name="33744268_240p m3u8" group-title="Other",33744268_240p m3u8
+https://edge-hls.saawsedge.com/hls/33744268/master/33744268_240p.m3u8
+#EXTINF:-1 tvg-name="33744268_480p m3u8" group-title="Other",33744268_480p m3u8
+https://edge-hls.saawsedge.com/hls/33744268/master/33744268_480p.m3u8
+#EXTINF:-1 tvg-name="459-944ee4d29140a0f4 js" group-title="Other",459-944ee4d29140a0f4 js
+https://ssr.col.movistar.es/fibra-optica/mul1dh0t/_next/static/chunks/459-944ee4d29140a0f4.js
 #EXTINF:-1 tvg-name="5387-65336e9111e94b09 js" group-title="Other",5387-65336e9111e94b09 js
 https://ssr.col.movistar.es/home/muf4z586/_next/static/chunks/5387-65336e9111e94b09.js
-#EXTINF:-1 tvg-name="6 %20Res _6333_-_T2 3 _Indicadores_de_calidad_para_servicios_de_datos_TPA_4G_Satelital2Q pdf" group-title="Other",6 %20Res _6333_-_T2 3 _Indicadores_de_calidad_para_servicios_de_datos_TPA_4G_Satelital2Q pdf
-https://mcprod.movistar.co/media/files/6.%20Res._6333_-_T2.3._Indicadores_de_calidad_para_servicios_de_datos_TPA_4G_Satelital2Q.pdf
-#EXTINF:-1 tvg-name="6ab51d41e9ff711a917e870e mp4" group-title="Other",6ab51d41e9ff711a917e870e mp4
-https://mf.b37mrtl.ru/actualidad/public_video/2026.09/6ab51d41e9ff711a917e870e.mp4
-#EXTINF:-1 tvg-name="9 %20Res _6333_-_T2 2 _Indicadores_de_calidad_Intentos_No_Exitosos_2G_3G_Satelital2Q pdf" group-title="Other",9 %20Res _6333_-_T2 2 _Indicadores_de_calidad_Intentos_No_Exitosos_2G_3G_Satelital2Q pdf
-https://mcprod.movistar.co/media/files/9.%20Res._6333_-_T2.2._Indicadores_de_calidad_Intentos_No_Exitosos_2G_3G_Satelital2Q.pdf
-#EXTINF:-1 tvg-name="9 %20Res _6333_-_T2 2 _Indicadores_de_calidad_Intentos_No_Exitosos_2G_3G_Satelitalg pdf" group-title="Other",9 %20Res _6333_-_T2 2 _Indicadores_de_calidad_Intentos_No_Exitosos_2G_3G_Satelitalg pdf
-https://mcprod.movistar.co/media/files/9.%20Res._6333_-_T2.2._Indicadores_de_calidad_Intentos_No_Exitosos_2G_3G_Satelitalg.pdf
-#EXTINF:-1 tvg-name="93fa23622d7b9_live json?cb=367826" group-title="Other",93fa23622d7b9_live json?cb=367826
-https://s3-ap-southeast-1.amazonaws.com/vidgyor.com/player/account/62ed09c0fe250b00096c0725/conf/93fa23622d7b9_live.json?cb=367826
-#EXTINF:-1 tvg-name="93fa23622d7b9_live json?cb=381727" group-title="Other",93fa23622d7b9_live json?cb=381727
-https://s3-ap-southeast-1.amazonaws.com/vidgyor.com/player/account/62ed09c0fe250b00096c0725/conf/93fa23622d7b9_live.json?cb=381727
-#EXTINF:-1 tvg-name="93fa23622d7b9_live json?cb=932016" group-title="Other",93fa23622d7b9_live json?cb=932016
-https://s3-ap-southeast-1.amazonaws.com/vidgyor.com/player/account/62ed09c0fe250b00096c0725/conf/93fa23622d7b9_live.json?cb=932016
-#EXTINF:-1 tvg-name="?url=https%3A%2F%2Fgtc-yupp vgcdn net%2Fvglive-sk-254807%2Findex m3u8&exp=1790394192&sig=3857735951a38b9c32817819e489a97c2191cd2bac6ab15fadf32a79ff5260eb" group-title="Other",?url=https%3A%2F%2Fgtc-yupp vgcdn net%2Fvglive-sk-254807%2Findex m3u8&exp=1790394192&sig=3857735951a38b9c32817819e489a97c2191cd2bac6ab15fadf32a79ff5260eb
-https://srv3.pxfy.dev/?url=https%3A%2F%2Fgtc-yupp.vgcdn.net%2Fvglive-sk-254807%2Findex.m3u8&exp=1790394192&sig=3857735951a38b9c32817819e489a97c2191cd2bac6ab15fadf32a79ff5260eb
-#EXTINF:-1 tvg-name="_app-ab72e27d9dc95c85 js" group-title="Other",_app-ab72e27d9dc95c85 js
-https://ssr.col.movistar.es/fibra-y-movil/mudto5nm/_next/static/chunks/pages/_app-ab72e27d9dc95c85.js
-#EXTINF:-1 tvg-name="_app-ff6eb8a6d38a5c12 js" group-title="Other",_app-ff6eb8a6d38a5c12 js
-https://ssr.col.movistar.es/fibra-optica/ms76ib2h/_next/static/chunks/pages/_app-ff6eb8a6d38a5c12.js
-#EXTINF:-1 tvg-name="app-c17ba7105fd4a9edabcc js" group-title="Other",app-c17ba7105fd4a9edabcc js
-https://www.fubo.tv/stream/app-c17ba7105fd4a9edabcc.js
-#EXTINF:-1 tvg-name="black" group-title="Other",black
-https://ssr.col.movistar.es/api/v1/get-glyph/router-m/25/black
-#EXTINF:-1 tvg-name="black" group-title="Other",black
-https://ssr.col.movistar.es/api/v1/get-glyph/seguridad-abierta-m/25/black
-#EXTINF:-1 tvg-name="black" group-title="Other",black
-https://ssr.col.movistar.es/api/v1/get-glyph/euro-circulo-m/25/black
-#EXTINF:-1 tvg-name="bWVkLTE3OTAwODUwODERU m3u8" group-title="Other",bWVkLTE3OTAwODUwODERU m3u8
-https://d2g1p0cv65b13g.cloudfront.net/abphls/2026/09/bWVkLTE3OTAwODUwODERU.m3u8
-#EXTINF:-1 tvg-name="c822628e504c5_live json?cb=437221" group-title="Other",c822628e504c5_live json?cb=437221
-https://s3-ap-southeast-1.amazonaws.com/vidgyor.com/player/account/64084ad61a3dc50008977b53/conf/c822628e504c5_live.json?cb=437221
-#EXTINF:-1 tvg-name="chaupal json" group-title="Other",chaupal json
-https://paas-init.revlet.net/clients/chaupal/live/chaupal.json
-#EXTINF:-1 tvg-name="chunklist m3u8" group-title="Other",chunklist m3u8
-https://5ad386ff92705.streamlock.net/live_transcoder/ngrp:zindagitv.stream_all/chunklist.m3u8
+#EXTINF:-1 tvg-name="688a51e533464be259a2147e_vivatech_playbook avif" group-title="Other",688a51e533464be259a2147e_vivatech_playbook avif
+https://cdn.prod.website-files.com/66a003afc59794bcf70c2b34/688a51e533464be259a2147e_vivatech_playbook.avif
+#EXTINF:-1 tvg-name="68fb9ec65ebabb3d1a1c138f_689b42c18103c0fef714a702_DSWlogo avif" group-title="Other",68fb9ec65ebabb3d1a1c138f_689b42c18103c0fef714a702_DSWlogo avif
+https://cdn.prod.website-files.com/66e9c9870370fc32fd2b6b1b/68fb9ec65ebabb3d1a1c138f_689b42c18103c0fef714a702_DSWlogo.avif
+#EXTINF:-1 tvg-name="69023a0e3acb6430a85d1a1c_68fba233795966e45c2709ed_jd-logo-white avif" group-title="Other",69023a0e3acb6430a85d1a1c_68fba233795966e45c2709ed_jd-logo-white avif
+https://cdn.prod.website-files.com/66e9c9870370fc32fd2b6b1b/69023a0e3acb6430a85d1a1c_68fba233795966e45c2709ed_jd-logo-white.avif
+#EXTINF:-1 tvg-name="720p m3u8" group-title="Other",720p m3u8
+https://hlsads.gannett-cdn.com/gustav/8c27f5a2ff73fa826d80fee0af43842f/c041b4a5-9323-4bb0-861c-c13cba7622ab/720p.m3u8
+#EXTINF:-1 tvg-name="89989076 m3u8" group-title="Other",89989076 m3u8
+https://edge-hls.saawsedge.com/hls/89989076/master/89989076.m3u8
+#EXTINF:-1 tvg-name="89989076_240p m3u8" group-title="Other",89989076_240p m3u8
+https://edge-hls.saawsedge.com/hls/89989076/master/89989076_240p.m3u8
+#EXTINF:-1 tvg-name="89989076_480p m3u8" group-title="Other",89989076_480p m3u8
+https://edge-hls.saawsedge.com/hls/89989076/master/89989076_480p.m3u8
+#EXTINF:-1 tvg-name="9 rss" group-title="Other",9 rss
+https://games.zygomatic.com/c/mahjong-games/9.rss
+#EXTINF:-1 tvg-name="91938742007 webvtt m3u8" group-title="Other",91938742007 webvtt m3u8
+https://hlsmedia.gannett-cdn.com/_captions/91938742007.webvtt.m3u8
+#EXTINF:-1 tvg-name="arena2hd m3u8" group-title="Other",arena2hd m3u8
+http://194.163.179.246/slovenci/sport/arena2hd.m3u8
+#EXTINF:-1 tvg-name="Baby Shark TV (AU)" group-title="Other",Baby Shark TV (AU)
+https://newidco-babysharktv-1-au.lg.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Baby Shark TV (CA)" group-title="Other",Baby Shark TV (CA)
+https://newidco-babysharktv-1-ca.lg.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Baby Shark TV (DE)" group-title="Other",Baby Shark TV (DE)
+https://newidco-babysharktv-1-de.lg.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Baby Shark TV (FR)" group-title="Other",Baby Shark TV (FR)
+https://newidco-babysharktv-1-fr.lg.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Baby Shark TV (GB)" group-title="Other",Baby Shark TV (GB)
+https://newidco-babysharktv-1-gb.lg.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Baby Shark TV (IT)" group-title="Other",Baby Shark TV (IT)
+https://newidco-babysharktv-1-it.lg.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Baby Shark TV (US)" group-title="Other",Baby Shark TV (US)
+https://newidco-babysharktv-1-us.lg.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="balloon css?v4 20 6" group-title="Other",balloon css?v4 20 6
+https://static.moviecrow.com/Versioned/v4.20/Content/css/balloon.css?v4.20.6
+#EXTINF:-1 tvg-name="base css" group-title="Other",base css
+https://www.xfinity.com/stream/styles/base.css
+#EXTINF:-1 tvg-name="Beauty mp4" group-title="Other",Beauty mp4
+https://marketing-cdn.fireworktv.com/marketing-site/bento/Beauty.mp4
+#EXTINF:-1 tvg-name="BGC mp4" group-title="Other",BGC mp4
+https://marketing-cdn.fireworktv.com/marketing-site/fw_flower/BGC.mp4
+#EXTINF:-1 tvg-name="chunklist_w523293645 m3u8" group-title="Other",chunklist_w523293645 m3u8
+https://edge11.vedge.infomaniak.com/livecast/ik:africa24sport/chunklist_w523293645.m3u8
 #EXTINF:-1 tvg-name="chunks m3u8" group-title="Other",chunks m3u8
-https://live-bangla.akamaized.net/liveabr/pub-iobanglakp3sff/live_480p/chunks.m3u8
+https://bigboss.bemtv.cn/STREAM/23004/chunks.m3u8
 #EXTINF:-1 tvg-name="chunks m3u8" group-title="Other",chunks m3u8
-https://live.cmr24.fm/TVI/HD/chunks.m3u8
-#EXTINF:-1 tvg-name="chunks m3u8" group-title="Other",chunks m3u8
-https://live-bangla.akamaized.net/liveabr/pub-iobanglakp3sff/live_240p/chunks.m3u8
-#EXTINF:-1 tvg-name="Contrato%20Marco%20PYMES%20y%20Conexos%20-%20junio%202018 docx pdf" group-title="Other",Contrato%20Marco%20PYMES%20y%20Conexos%20-%20junio%202018 docx pdf
-https://mcprod.movistar.co/media/files/Contrato%20Marco%20PYMES%20y%20Conexos%20-%20junio%202018.docx.pdf
-#EXTINF:-1 tvg-name="d6e1aeb5-0a1d165e4893927183f2 js" group-title="Other",d6e1aeb5-0a1d165e4893927183f2 js
-https://www.fubo.tv/stream/d6e1aeb5-0a1d165e4893927183f2.js
-#EXTINF:-1 tvg-name="Decreto_1499_de_%202014 pdf" group-title="Other",Decreto_1499_de_%202014 pdf
-https://mcprod.movistar.co/media/files/Decreto_1499_de_%202014.pdf
-#EXTINF:-1 tvg-name="dropzone min js?ver=5 9 3" group-title="Other",dropzone min js?ver=5 9 3
-https://www.tsk-praha.cz/app/plugins/wpforms/assets/pro/lib/dropzone.min.js?ver=5.9.3
-#EXTINF:-1 tvg-name="e3886f47a65d2_live json?cb=166245" group-title="Other",e3886f47a65d2_live json?cb=166245
-https://s3-ap-southeast-1.amazonaws.com/vidgyor.com/player/account/62ed0938fe250b00096c071d/conf/e3886f47a65d2_live.json?cb=166245
-#EXTINF:-1 tvg-name="e3886f47a65d2_live json?cb=280612" group-title="Other",e3886f47a65d2_live json?cb=280612
-https://s3-ap-southeast-1.amazonaws.com/vidgyor.com/player/account/62ed0938fe250b00096c071d/conf/e3886f47a65d2_live.json?cb=280612
-#EXTINF:-1 tvg-name="e3886f47a65d2_live json?cb=525478" group-title="Other",e3886f47a65d2_live json?cb=525478
-https://s3-ap-southeast-1.amazonaws.com/vidgyor.com/player/account/62ed0938fe250b00096c071d/conf/e3886f47a65d2_live.json?cb=525478
-#EXTINF:-1 tvg-name="embed?url=https%3A%2F%2Fwww tsk-praha cz%2Fo-nas%2Fverejne-zakazky%2F&format=xml" group-title="Other",embed?url=https%3A%2F%2Fwww tsk-praha cz%2Fo-nas%2Fverejne-zakazky%2F&format=xml
-https://www.tsk-praha.cz/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.tsk-praha.cz%2Fo-nas%2Fverejne-zakazky%2F&format=xml
+https://live-bangla.akamaized.net/liveabr/pub-iobanglakp3sff/live_360p/chunks.m3u8
+#EXTINF:-1 tvg-name="chunks m3u8?nimblesessionid=110293006" group-title="Other",chunks m3u8?nimblesessionid=110293006
+https://strhls.streamakaci.tv/ortb/ortb2-multi/ortb/ortb2_360p/chunks.m3u8?nimblesessionid=110293006
+#EXTINF:-1 tvg-name="chunks m3u8?nimblesessionid=110293006" group-title="Other",chunks m3u8?nimblesessionid=110293006
+https://strhls.streamakaci.tv/ortb/ortb2-multi/ortb/ortb2_720p/chunks.m3u8?nimblesessionid=110293006
+#EXTINF:-1 tvg-name="config json?hash=5482106428152200502" group-title="Other",config json?hash=5482106428152200502
+https://global.ketchcdn.com/web/v3/config/live_nation/livenation_com/production/usa/en-US/config.json?hash=5482106428152200502
+#EXTINF:-1 tvg-name="datatables min js" group-title="Other",datatables min js
+https://atencionalcliente.movistar.cl/wp-content/plugins/cogdev/js/datatables.min.js
+#EXTINF:-1 tvg-name="DTV-8 [Geo-blocked]" group-title="Other",DTV-8 [Geo-blocked]
+https://watch.davestv8.com/hls/stream.m3u8
+#EXTINF:-1 tvg-name="errors css" group-title="Other",errors css
+https://www.xfinity.com/stream/styles/errors.css
+#EXTINF:-1 tvg-name="Fashion mp4" group-title="Other",Fashion mp4
+https://marketing-cdn.fireworktv.com/marketing-site/bento/Fashion.mp4
 #EXTINF:-1 tvg-name="fixtures?token=f3DD3uYNhLSK7aC5tkQu7pI5g2jGvS&page=0&numDays=11" group-title="Other",fixtures?token=f3DD3uYNhLSK7aC5tkQu7pI5g2jGvS&page=0&numDays=11
 https://api2.roninmedia.io/2/fixtures?token=f3DD3uYNhLSK7aC5tkQu7pI5g2jGvS&page=0&numDays=11
-#EXTINF:-1 tvg-name="framework-2165019f646438fbacab js" group-title="Other",framework-2165019f646438fbacab js
-https://www.fubo.tv/stream/framework-2165019f646438fbacab.js
-#EXTINF:-1 tvg-name="framework-2a00069ad984417b js" group-title="Other",framework-2a00069ad984417b js
-https://ssr.col.movistar.es/fibra-optica/ms76ib2h/_next/static/chunks/framework-2a00069ad984417b.js
-#EXTINF:-1 tvg-name="grey700" group-title="Other",grey700
-https://ssr.col.movistar.es/api/v1/get-glyph/tiendas-m/1.13/grey700
-#EXTINF:-1 tvg-name="homepage_final mp4" group-title="Other",homepage_final mp4
-https://www.propublica.org/wp-content/uploads/2026/09/homepage_final.mp4
+#EXTINF:-1 tvg-name="footer_klGx 0c98589d js" group-title="Other",footer_klGx 0c98589d js
+https://ir.ebaystatic.com/rs/c/globalheaderweb/footer_klGx.0c98589d.js
+#EXTINF:-1 tvg-name="golf m3u8" group-title="Other",golf m3u8
+https://30a-tv.com/feeds/vidaa/golf.m3u8
+#EXTINF:-1 tvg-name="Grocery mp4" group-title="Other",Grocery mp4
+https://marketing-cdn.fireworktv.com/marketing-site/bento/Grocery.mp4
+#EXTINF:-1 tvg-name="hls m3u8" group-title="Other",hls m3u8
+https://hls-cdn77.xnxx-cdn.com/r64wg8jpBZNrYXvqyL7XWQ==,1790633831/59946978-4825-4c78-a2a1-3a3b7db3a52f/0/hls.m3u8
+#EXTINF:-1 tvg-name="hls-250p m3u8" group-title="Other",hls-250p m3u8
+https://hls-cdn77.xnxx-cdn.com/r64wg8jpBZNrYXvqyL7XWQ==,1790633831/59946978-4825-4c78-a2a1-3a3b7db3a52f/0/hls-250p.m3u8
+#EXTINF:-1 tvg-name="hls-360p m3u8" group-title="Other",hls-360p m3u8
+https://hls-cdn77.xnxx-cdn.com/r64wg8jpBZNrYXvqyL7XWQ==,1790633831/59946978-4825-4c78-a2a1-3a3b7db3a52f/0/hls-360p.m3u8
+#EXTINF:-1 tvg-name="hls-480p m3u8" group-title="Other",hls-480p m3u8
+https://hls-cdn77.xnxx-cdn.com/r64wg8jpBZNrYXvqyL7XWQ==,1790633831/59946978-4825-4c78-a2a1-3a3b7db3a52f/0/hls-480p.m3u8
+#EXTINF:-1 tvg-name="Homepage-05-25 mp4" group-title="Other",Homepage-05-25 mp4
+https://marketing-cdn.fireworktv.com/marketing-site/hero-videos/Homepage-05-25.mp4
+#EXTINF:-1 tvg-name="Homepage_Video mp4" group-title="Other",Homepage_Video mp4
+https://www.clf.org/wp-content/uploads/2021/04/Homepage_Video.mp4
+#EXTINF:-1 tvg-name="Hong Kong International Business Channel (1080p) [Geo-blocked]" group-title="Other",Hong Kong International Business Channel (1080p) [Geo-blocked]
+https://hoytv-live-stream.hoy.tv/ch76/index-fhd.m3u8
+#EXTINF:-1 tvg-name="IGC mp4" group-title="Other",IGC mp4
+https://marketing-cdn.fireworktv.com/marketing-site/fw_flower/IGC.mp4
+#EXTINF:-1 tvg-name="index m3u8" group-title="Other",index m3u8
+https://raycom-accdn-firetv.amagi.tv/240p-cc/index.m3u8
+#EXTINF:-1 tvg-name="index m3u8" group-title="Other",index m3u8
+https://raycom-accdn-firetv.amagi.tv/720p-cc/index.m3u8
+#EXTINF:-1 tvg-name="index m3u8" group-title="Other",index m3u8
+https://raycom-accdn-firetv.amagi.tv/480p-cc/index.m3u8
 #EXTINF:-1 tvg-name="index txt?_rsc=199na" group-title="Other",index txt?_rsc=199na
-https://m3u8-player.net/iptv-playlist-manager/index.txt?_rsc=199na
+https://m3u8-player.net/public-iptv-playlist/index.txt?_rsc=199na
 #EXTINF:-1 tvg-name="index txt?_rsc=199na" group-title="Other",index txt?_rsc=199na
 https://m3u8-player.net/index.txt?_rsc=199na
-#EXTINF:-1 tvg-name="index txt?_rsc=199na" group-title="Other",index txt?_rsc=199na
-https://m3u8-player.net/blog/index.txt?_rsc=199na
 #EXTINF:-1 tvg-name="index txt?_rsc=199na" group-title="Other",index txt?_rsc=199na
 https://m3u8-player.net/m3u8tomp4/index.txt?_rsc=199na
 #EXTINF:-1 tvg-name="index txt?_rsc=199na" group-title="Other",index txt?_rsc=199na
 https://m3u8-player.net/m3u8downloader/index.txt?_rsc=199na
 #EXTINF:-1 tvg-name="index txt?_rsc=199na" group-title="Other",index txt?_rsc=199na
-https://m3u8-player.net/public-iptv-playlist/index.txt?_rsc=199na
-#EXTINF:-1 tvg-name="livescores xml?t=1790307075" group-title="Other",livescores xml?t=1790307075
-https://proxy.livesoccertv.com/rss/livescores.xml?t=1790307075
-#EXTINF:-1 tvg-name="loadliveFiles txt?ver=1790307867816?v=1790307868025" group-title="Other",loadliveFiles txt?ver=1790307867816?v=1790307868025
-https://tv.chaupal.tv/loadliveFiles.txt?ver=1790307867816?v=1790307868025
-#EXTINF:-1 tvg-name="main css" group-title="Other",main css
-https://tienda.movistar.com.co/static/version1787747297/frontend/Vass/colombia/en_US/css/main.css
-#EXTINF:-1 tvg-name="main-2e3127df4417c47d js" group-title="Other",main-2e3127df4417c47d js
-https://ssr.col.movistar.es/fibra-y-movil/mudto5nm/_next/static/chunks/main-2e3127df4417c47d.js
-#EXTINF:-1 tvg-name="manifest-be543023 js" group-title="Other",manifest-be543023 js
-https://cdn.shopify.com/oxygen-v2/27023/12151/25013/4531095/assets/manifest-be543023.js
-#EXTINF:-1 tvg-name="Manifesto pdf" group-title="Other",Manifesto pdf
-https://www.marxists.org/archive/marx/works/download/pdf/Manifesto.pdf
-#EXTINF:-1 tvg-name="manual_reporte pdf" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Other",manual_reporte pdf
-https://atencionalcliente.movistar.co/movistar-formularios/assets/bloqueoformulario/descargables/manual_reporte.pdf
-#EXTINF:-1 tvg-name="master m3u8?fastly_token=NmM5NTgxMDdfYTMzNzdkZjZiYWRhZDQyMDM4MmU3MWMyMTQ1OGI5ZDFhYjBmNDljNzViMGNiNDdjN2IwNjBkM2EzNDczZjQ5OA%3D%3D" group-title="Other",master m3u8?fastly_token=NmM5NTgxMDdfYTMzNzdkZjZiYWRhZDQyMDM4MmU3MWMyMTQ1OGI5ZDFhYjBmNDljNzViMGNiNDdjN2IwNjBkM2EzNDczZjQ5OA%3D%3D
-https://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/5539867201001/3976b74a-1dc1-47df-853c-af8f4bac6591/10s/master.m3u8?fastly_token=NmM5NTgxMDdfYTMzNzdkZjZiYWRhZDQyMDM4MmU3MWMyMTQ1OGI5ZDFhYjBmNDljNzViMGNiNDdjN2IwNjBkM2EzNDczZjQ5OA%3D%3D
-#EXTINF:-1 tvg-name="master m3u8?fastly_token=NmM5NWM4NjhfNzdmM2NjNzNiMDk2NjllN2YwM2UxOTYzYzAzYjYzNjIxZDVkODJlYjkxZGYyNDQ3YjA1NDc5YjI1NTQzNjFjNw%3D%3D&pubid=5539867201001" group-title="Other",master m3u8?fastly_token=NmM5NWM4NjhfNzdmM2NjNzNiMDk2NjllN2YwM2UxOTYzYzAzYjYzNjIxZDVkODJlYjkxZGYyNDQ3YjA1NDc5YjI1NTQzNjFjNw%3D%3D&pubid=5539867201001
-https://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/5530036774001/0fb6ea02-e45c-436b-b3c0-c42ebaff58bf/10s/master.m3u8?fastly_token=NmM5NWM4NjhfNzdmM2NjNzNiMDk2NjllN2YwM2UxOTYzYzAzYjYzNjIxZDVkODJlYjkxZGYyNDQ3YjA1NDc5YjI1NTQzNjFjNw%3D%3D&pubid=5539867201001
-#EXTINF:-1 tvg-name="master m3u8?fastly_token=NmM5NWNkNGZfZDViMzFiOWIyYWRjOWZlMWFjMDA5OWU5YTMwZTNjZDg3N2U0ZTgyMjAyMzk5NzUxNGU3NWNlMmQ4NDVkZjY4Yg%3D%3D&pubid=5539867201001" group-title="Other",master m3u8?fastly_token=NmM5NWNkNGZfZDViMzFiOWIyYWRjOWZlMWFjMDA5OWU5YTMwZTNjZDg3N2U0ZTgyMjAyMzk5NzUxNGU3NWNlMmQ4NDVkZjY4Yg%3D%3D&pubid=5539867201001
-https://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/5530036774001/5d9b25ee-30ec-4d74-93c6-caedb81cc056/10s/master.m3u8?fastly_token=NmM5NWNkNGZfZDViMzFiOWIyYWRjOWZlMWFjMDA5OWU5YTMwZTNjZDg3N2U0ZTgyMjAyMzk5NzUxNGU3NWNlMmQ4NDVkZjY4Yg%3D%3D&pubid=5539867201001
-#EXTINF:-1 tvg-name="menu css" group-title="Other",menu css
-https://atencionalcliente.movistar.co/recursos_proyectos/header_movistar_co/css/menu.css
-#EXTINF:-1 tvg-name="mono m3u8" group-title="Other",mono m3u8
-http://144.217.77.42:8888/gta_tamil/tracks-v1a1/mono.m3u8
-#EXTINF:-1 tvg-name="movistarBlue" group-title="Other",movistarBlue
-https://ssr.col.movistar.es/api/v1/get-glyph/check-m/48/movistarBlue
-#EXTINF:-1 tvg-name="movistarBlue" group-title="Other",movistarBlue
-https://ssr.col.movistar.es/api/v1/get-glyph/movistar-logo-h-m/2.02/movistarBlue
-#EXTINF:-1 tvg-name="movistarBlue" group-title="Other",movistarBlue
-https://ssr.col.movistar.es/api/v1/get-glyph/movistar-logo-h-m/2.00/movistarBlue
-#EXTINF:-1 tvg-name="NSU_1Q2025_Movistar_apr pdf" group-title="Other",NSU_1Q2025_Movistar_apr pdf
-https://mcprod.movistar.co/media/files/NSU_1Q2025_Movistar_apr.pdf
-#EXTINF:-1 tvg-name="NSU_3Q2025_Movistar-sep pdf" group-title="Other",NSU_3Q2025_Movistar-sep pdf
-https://mcprod.movistar.co/media/files/NSU_3Q2025_Movistar-sep.pdf
-#EXTINF:-1 tvg-name="phone min js?ver=2 0 1" group-title="Other",phone min js?ver=2 0 1
-https://www.tsk-praha.cz/app/plugins/wpforms/assets/pro/js/frontend/fields/phone.min.js?ver=2.0.1
+https://m3u8-player.net/blog/index.txt?_rsc=199na
+#EXTINF:-1 tvg-name="index txt?_rsc=199na" group-title="Other",index txt?_rsc=199na
+https://m3u8-player.net/iptv-playlist-manager/index.txt?_rsc=199na
+#EXTINF:-1 tvg-name="jquery MetaData js" group-title="Other",jquery MetaData js
+https://static.moviecrow.com/Versioned/v4.20/Scripts/jquery.MetaData.js
+#EXTINF:-1 tvg-name="jquery MetaData js" group-title="Other",jquery MetaData js
+https://static.moviecrow.com/Versioned/v4.20/Content/js/vendor/jquery.MetaData.js
+#EXTINF:-1 tvg-name="jquery rating pack js" group-title="Other",jquery rating pack js
+https://static.moviecrow.com/Versioned/v4.20/Content/js/vendor/jquery.rating.pack.js
+#EXTINF:-1 tvg-name="liveView php?s=117669&schain=1 0,1!snack-media com,SNM_3594,1" group-title="Other",liveView php?s=117669&schain=1 0,1!snack-media com,SNM_3594,1
+https://live.primis.tech/live/liveView.php?s=117669&schain=1.0,1!snack-media.com,SNM_3594,1
+#EXTINF:-1 tvg-name="loadliveFiles txt?ver=1790621276005?v=1790621276254" group-title="Other",loadliveFiles txt?ver=1790621276005?v=1790621276254
+https://tv.chaupal.tv/loadliveFiles.txt?ver=1790621276005?v=1790621276254
+#EXTINF:-1 tvg-name="LocalNow - Colorado Springs" group-title="Other",LocalNow - Colorado Springs
+https://amg01583-localnow-amg01583c81-lg-us-1484.playouts.now.amagi.tv/playlist/amg01583-localnowfast-localnowcoloradosprings-lgus/playlist.m3u8
+#EXTINF:-1 tvg-name="main-f4fb51c749df265d js" group-title="Other",main-f4fb51c749df265d js
+https://ssr.col.movistar.es/fibra-optica/mul1dh0t/_next/static/chunks/main-f4fb51c749df265d.js
+#EXTINF:-1 tvg-name="manifest m3u8" group-title="Other",manifest m3u8
+https://media.nw18.com/media-assets/lj0a80/707134d0-b65e-4f1c-97d3-0088a05fbdee/bHG8EPY4qlc_1790617239/manifest.m3u8
+#EXTINF:-1 tvg-name="manifest m3u8" group-title="Other",manifest m3u8
+https://media.nw18.com/media-assets/lj0a80/51907680-9bf8-4511-a534-1b26cf4f4bc3/QqmwmaLE1qs_1790612671/manifest.m3u8
+#EXTINF:-1 tvg-name="manifest m3u8" group-title="Other",manifest m3u8
+https://media.nw18.com/media-assets/lj0a80/493bf527-da3f-457d-8e74-ceb064800902/OTw3hSiUlQQ_1790603578/manifest.m3u8
+#EXTINF:-1 tvg-name="manifest m3u8" group-title="Other",manifest m3u8
+https://media.nw18.com/media-assets/lj0a80/9afe9873-942b-45a7-a41e-164cb543a332/XUg4qBcaNBg_1790609295/manifest.m3u8
+#EXTINF:-1 tvg-name="manifest m3u8" group-title="Other",manifest m3u8
+https://media.nw18.com/media-assets/lj0a80/718a15ad-cba8-42f6-bf97-05f9dcd1f339/nM-GtrPkbmE_1790607668/manifest.m3u8
+#EXTINF:-1 tvg-name="manifest m3u8" group-title="Other",manifest m3u8
+https://media.nw18.com/media-assets/lj0a80/9411d767-19a1-48c1-b4e4-5336ff504204/4cVgbm3991s_1790607629/manifest.m3u8
+#EXTINF:-1 tvg-name="manifest m3u8" group-title="Other",manifest m3u8
+https://media.nw18.com/media-assets/lj0a80/d9e77b62-ed93-42c4-b8b3-13af66f26e66/2O7dHjr396Y_1790616016/manifest.m3u8
+#EXTINF:-1 tvg-name="manifest m3u8" group-title="Other",manifest m3u8
+https://media.nw18.com/media-assets/lj0a80/e398a212-a2c3-43f0-a3bf-53932b919a82/ELhpePfj7wI_1790609096/manifest.m3u8
+#EXTINF:-1 tvg-name="manifest m3u8" group-title="Other",manifest m3u8
+https://media.nw18.com/media-assets/lj0a80/c4144f5f-f4c7-42ad-8d85-d41f0bb74f35/7wqIteSuxbo_1790605917/manifest.m3u8
+#EXTINF:-1 tvg-name="manifest m3u8" group-title="Other",manifest m3u8
+https://media.nw18.com/media-assets/lj0a80/73852d24-9b2c-4d97-a44f-c4881026e061/2esoHTqretw_1790611603/manifest.m3u8
+#EXTINF:-1 tvg-name="manifest m3u8" group-title="Other",manifest m3u8
+https://media.nw18.com/media-assets/lj0a80/d2b552c2-6cd8-43a3-a68e-258a6817eca7/6ipfKDZcI-Y_1790609843/manifest.m3u8
+#EXTINF:-1 tvg-name="manifest m3u8" group-title="Other",manifest m3u8
+https://media.nw18.com/media-assets/lj0a80/8d33bbb4-6798-42c1-af06-e6cc86eeb7dd/C3D2-W-doBw_1790607728/manifest.m3u8
+#EXTINF:-1 tvg-name="manifest m3u8" group-title="Other",manifest m3u8
+https://media.nw18.com/media-assets/lj0a80/8309ffd1-0f02-4de0-83fe-14bbd0850e1f/WKD8WdsBNZI_1790615928/manifest.m3u8
+#EXTINF:-1 tvg-name="manifest m3u8" group-title="Other",manifest m3u8
+https://media.nw18.com/media-assets/lj0a80/68aa7c4c-f3d2-42f3-9fd5-cb42adadca46/5YIN_P0O2Cg_1790603626/manifest.m3u8
+#EXTINF:-1 tvg-name="manifest m3u8" group-title="Other",manifest m3u8
+https://media.nw18.com/media-assets/lj0a80/cb361843-a224-4040-bf2f-2f2039397504/5kMqzMaDntA_1790618607/manifest.m3u8
+#EXTINF:-1 tvg-name="manifest m3u8" group-title="Other",manifest m3u8
+https://edge11.vedge.infomaniak.com/livecast/ik:africa24sport/manifest.m3u8
+#EXTINF:-1 tvg-name="manifest m3u8" group-title="Other",manifest m3u8
+https://africa24.vedge.infomaniak.com/livecast/ik:africa24sport/manifest.m3u8
+#EXTINF:-1 tvg-name="manifest-web-player 1609946b json" group-title="Other",manifest-web-player 1609946b json
+https://open.spotifycdn.com/cdn/generated/manifest-web-player.1609946b.json
+#EXTINF:-1 tvg-name="master m3u8?fastly_token=NmFiYjE0ZjlfNDA5NzI2Yjk0NGIwZWVlNmNlNDAyOTkxNDJiZGExYjU4MWViNjY3MGNmMjEzNGQ3NWU2ZTIzZTliNTg4MmJiZA%3D%3D" group-title="Other",master m3u8?fastly_token=NmFiYjE0ZjlfNDA5NzI2Yjk0NGIwZWVlNmNlNDAyOTkxNDJiZGExYjU4MWViNjY3MGNmMjEzNGQ3NWU2ZTIzZTliNTg4MmJiZA%3D%3D
+https://manifest.prod.boltdns.net/manifest/v2/hls/v7/clear/avc1_mp4a/1532789042001/6b5246aa-2f02-4ca7-9efe-b5060f692250/6s/master.m3u8?fastly_token=NmFiYjE0ZjlfNDA5NzI2Yjk0NGIwZWVlNmNlNDAyOTkxNDJiZGExYjU4MWViNjY3MGNmMjEzNGQ3NWU2ZTIzZTliNTg4MmJiZA%3D%3D
+#EXTINF:-1 tvg-name="master m3u8?fastly_token=NmFiYjE2NWJfYWY3NWFjYTMwMDNiMGMwNDljYTc0NzUxMWJmYWExMDc2NWUxYzIwMDNiMGI5N2IxZWU4ZTczM2M5OGMxZjRlMQ%3D%3D&pubid=1532789042001" group-title="Other",master m3u8?fastly_token=NmFiYjE2NWJfYWY3NWFjYTMwMDNiMGMwNDljYTc0NzUxMWJmYWExMDc2NWUxYzIwMDNiMGI5N2IxZWU4ZTczM2M5OGMxZjRlMQ%3D%3D&pubid=1532789042001
+https://manifest.prod.boltdns.net/manifest/v2/hls/v7/clear/avc1_mp4a/2088006836001/363a65b2-af3b-45f1-813b-a53b62a68797/10s/master.m3u8?fastly_token=NmFiYjE2NWJfYWY3NWFjYTMwMDNiMGMwNDljYTc0NzUxMWJmYWExMDc2NWUxYzIwMDNiMGI5N2IxZWU4ZTczM2M5OGMxZjRlMQ%3D%3D&pubid=1532789042001
+#EXTINF:-1 tvg-name="MBC BOLLYWOOD HD" group-title="Other",MBC BOLLYWOOD HD
+http://live.globalflix.net:80/Call-Me/Whatsapp8801971466614/123.m3u8
+#EXTINF:-1 tvg-name="Mindanow Network TV (1080p)" group-title="Other",Mindanow Network TV (1080p)
+https://cdn.vegasplus.us/vegas/mmn01/playlist.m3u8
+#EXTINF:-1 tvg-name="non-polymer-localize js" group-title="Other",non-polymer-localize js
+https://www.xfinity.com/stream/js/non-polymer-localize.js
+#EXTINF:-1 tvg-name="opensearch xml" group-title="Other",opensearch xml
+https://community.getchannels.com/opensearch.xml
+#EXTINF:-1 tvg-name="P1046071359_default m3u8" group-title="Other",P1046071359_default m3u8
+https://apptrailers.itunes.apple.com/itunes-assets/PurpleVideo221/v4/39/0e/23/390e2351-8cff-faf0-59a2-8a6816fd6c15/P1046071359_default.m3u8
+#EXTINF:-1 tvg-name="P1426864071_Anull_trickPlay_gr265_sdr_1920x1080_iframes m3u8" group-title="Other",P1426864071_Anull_trickPlay_gr265_sdr_1920x1080_iframes m3u8
+https://apptrailers.itunes.apple.com/itunes-assets/PurpleVideo211/v4/8b/b9/ef/8bb9ef67-576d-6274-4db5-56da633302a0/P1426864071_Anull_trickPlay_gr265_sdr_1920x1080_iframes.m3u8
+#EXTINF:-1 tvg-name="P1426864071_Anull_video_gr250_sdr_1280x720 m3u8" group-title="Other",P1426864071_Anull_video_gr250_sdr_1280x720 m3u8
+https://apptrailers.itunes.apple.com/itunes-assets/PurpleVideo211/v4/8b/b9/ef/8bb9ef67-576d-6274-4db5-56da633302a0/P1426864071_Anull_video_gr250_sdr_1280x720.m3u8
+#EXTINF:-1 tvg-name="P1426864071_Anull_video_gr290_sdr_1920x1080 m3u8" group-title="Other",P1426864071_Anull_video_gr290_sdr_1920x1080 m3u8
+https://apptrailers.itunes.apple.com/itunes-assets/PurpleVideo211/v4/8b/b9/ef/8bb9ef67-576d-6274-4db5-56da633302a0/P1426864071_Anull_video_gr290_sdr_1920x1080.m3u8
+#EXTINF:-1 tvg-name="P1426864071_default m3u8" group-title="Other",P1426864071_default m3u8
+https://apptrailers.itunes.apple.com/itunes-assets/PurpleVideo211/v4/8b/b9/ef/8bb9ef67-576d-6274-4db5-56da633302a0/P1426864071_default.m3u8
+#EXTINF:-1 tvg-name="P1453407626_Anull_trickPlay_gr265_sdr_1920x1080_iframes m3u8" group-title="Other",P1453407626_Anull_trickPlay_gr265_sdr_1920x1080_iframes m3u8
+https://apptrailers.itunes.apple.com/itunes-assets/PurpleVideo211/v4/12/24/63/12246390-b12d-09b4-e98c-c10795f97445/P1453407626_Anull_trickPlay_gr265_sdr_1920x1080_iframes.m3u8
+#EXTINF:-1 tvg-name="P1453407626_Anull_video_gr250_sdr_1280x720 m3u8" group-title="Other",P1453407626_Anull_video_gr250_sdr_1280x720 m3u8
+https://apptrailers.itunes.apple.com/itunes-assets/PurpleVideo211/v4/12/24/63/12246390-b12d-09b4-e98c-c10795f97445/P1453407626_Anull_video_gr250_sdr_1280x720.m3u8
+#EXTINF:-1 tvg-name="P1453407626_Anull_video_gr290_sdr_1920x1080 m3u8" group-title="Other",P1453407626_Anull_video_gr290_sdr_1920x1080 m3u8
+https://apptrailers.itunes.apple.com/itunes-assets/PurpleVideo211/v4/12/24/63/12246390-b12d-09b4-e98c-c10795f97445/P1453407626_Anull_video_gr290_sdr_1920x1080.m3u8
+#EXTINF:-1 tvg-name="P1453407626_default m3u8" group-title="Other",P1453407626_default m3u8
+https://apptrailers.itunes.apple.com/itunes-assets/PurpleVideo211/v4/12/24/63/12246390-b12d-09b4-e98c-c10795f97445/P1453407626_default.m3u8
+#EXTINF:-1 tvg-name="P1470450586_Anull_trickPlay_gr265_sdr_1920x1080_iframes m3u8" group-title="Other",P1470450586_Anull_trickPlay_gr265_sdr_1920x1080_iframes m3u8
+https://apptrailers.itunes.apple.com/itunes-assets/PurpleVideo211/v4/c1/cc/00/c1cc00fd-a17c-d76d-b9a1-3b16c8eb1b2f/P1470450586_Anull_trickPlay_gr265_sdr_1920x1080_iframes.m3u8
+#EXTINF:-1 tvg-name="P1470450586_Anull_video_gr250_sdr_1280x720 m3u8" group-title="Other",P1470450586_Anull_video_gr250_sdr_1280x720 m3u8
+https://apptrailers.itunes.apple.com/itunes-assets/PurpleVideo211/v4/c1/cc/00/c1cc00fd-a17c-d76d-b9a1-3b16c8eb1b2f/P1470450586_Anull_video_gr250_sdr_1280x720.m3u8
+#EXTINF:-1 tvg-name="P1470450586_Anull_video_gr290_sdr_1920x1080 m3u8" group-title="Other",P1470450586_Anull_video_gr290_sdr_1920x1080 m3u8
+https://apptrailers.itunes.apple.com/itunes-assets/PurpleVideo211/v4/c1/cc/00/c1cc00fd-a17c-d76d-b9a1-3b16c8eb1b2f/P1470450586_Anull_video_gr290_sdr_1920x1080.m3u8
+#EXTINF:-1 tvg-name="P1470450586_default m3u8" group-title="Other",P1470450586_default m3u8
+https://apptrailers.itunes.apple.com/itunes-assets/PurpleVideo211/v4/c1/cc/00/c1cc00fd-a17c-d76d-b9a1-3b16c8eb1b2f/P1470450586_default.m3u8
+#EXTINF:-1 tvg-name="P63100003__AT_en_audio_gr128 m3u8" group-title="Other",P63100003__AT_en_audio_gr128 m3u8
+https://apptrailers-ssl.itunes.apple.com/itunes-assets/PurpleVideo113/v4/e8/d3/5e/e8d35e33-6d80-6c6d-8995-a341637a776d/P63100003__AT_en_audio_gr128.m3u8
+#EXTINF:-1 tvg-name="P63100003__AT_trickPlay_gr70_sdr_ iframe m3u8" group-title="Other",P63100003__AT_trickPlay_gr70_sdr_ iframe m3u8
+https://apptrailers-ssl.itunes.apple.com/itunes-assets/PurpleVideo123/v4/64/ed/9c/64ed9c6b-fcd9-6ad8-ac29-fc4d4de8320e/P63100003__AT_trickPlay_gr70_sdr_.iframe.m3u8
+#EXTINF:-1 tvg-name="P63100003__AT_video_gr40_sdr_ m3u8" group-title="Other",P63100003__AT_video_gr40_sdr_ m3u8
+https://apptrailers-ssl.itunes.apple.com/itunes-assets/PurpleVideo123/v4/87/75/c2/8775c2ba-74b4-e784-2426-8731d6c015ca/P63100003__AT_video_gr40_sdr_.m3u8
+#EXTINF:-1 tvg-name="P63100003_default m3u8" group-title="Other",P63100003_default m3u8
+https://apptrailers.itunes.apple.com/itunes-assets/PurpleVideo123/v4/b7/9d/cf/b79dcf34-9341-2c0a-ff90-6e255bcbad8d/P63100003_default.m3u8
+#EXTINF:-1 tvg-name="P63100481__AT_en_audio_gr128 m3u8" group-title="Other",P63100481__AT_en_audio_gr128 m3u8
+https://apptrailers-ssl.itunes.apple.com/itunes-assets/PurpleVideo113/v4/85/64/bd/8564bdcf-4716-f651-9c82-8d434d4853d6/P63100481__AT_en_audio_gr128.m3u8
+#EXTINF:-1 tvg-name="P63100481__AT_trickPlay_gr70_sdr_ iframe m3u8" group-title="Other",P63100481__AT_trickPlay_gr70_sdr_ iframe m3u8
+https://apptrailers-ssl.itunes.apple.com/itunes-assets/PurpleVideo113/v4/11/0b/9d/110b9df7-bf3d-e9a2-98d1-19c8e24b2cfb/P63100481__AT_trickPlay_gr70_sdr_.iframe.m3u8
+#EXTINF:-1 tvg-name="P63100481__AT_video_gr40_sdr_ m3u8" group-title="Other",P63100481__AT_video_gr40_sdr_ m3u8
+https://apptrailers-ssl.itunes.apple.com/itunes-assets/PurpleVideo123/v4/d2/c2/d3/d2c2d32b-3a58-015b-41f9-2656e1f38acf/P63100481__AT_video_gr40_sdr_.m3u8
+#EXTINF:-1 tvg-name="P63100481__AT_video_gr90_sdr_ m3u8" group-title="Other",P63100481__AT_video_gr90_sdr_ m3u8
+https://apptrailers-ssl.itunes.apple.com/itunes-assets/PurpleVideo113/v4/99/b0/74/99b07461-999b-7ab3-6709-0a596dc1e96a/P63100481__AT_video_gr90_sdr_.m3u8
+#EXTINF:-1 tvg-name="P63100481_default m3u8" group-title="Other",P63100481_default m3u8
+https://apptrailers.itunes.apple.com/itunes-assets/PurpleVideo123/v4/90/46/97/904697b2-524c-75c2-28c2-5e577f5eb8c7/P63100481_default.m3u8
+#EXTINF:-1 tvg-name="P63100876__AT_en_audio_gr128 m3u8" group-title="Other",P63100876__AT_en_audio_gr128 m3u8
+https://apptrailers-ssl.itunes.apple.com/itunes-assets/PurpleVideo113/v4/ce/e7/fe/cee7fe6d-90ee-b5f8-7588-e53928819a12/P63100876__AT_en_audio_gr128.m3u8
+#EXTINF:-1 tvg-name="P63100876__AT_trickPlay_gr70_sdr_ iframe m3u8" group-title="Other",P63100876__AT_trickPlay_gr70_sdr_ iframe m3u8
+https://apptrailers-ssl.itunes.apple.com/itunes-assets/PurpleVideo123/v4/34/03/0a/34030a32-b61a-b18a-2118-6461b887ebed/P63100876__AT_trickPlay_gr70_sdr_.iframe.m3u8
+#EXTINF:-1 tvg-name="P63100876__AT_video_gr40_sdr_ m3u8" group-title="Other",P63100876__AT_video_gr40_sdr_ m3u8
+https://apptrailers-ssl.itunes.apple.com/itunes-assets/PurpleVideo113/v4/a8/79/31/a8793101-4045-e47e-1bbd-3250d9e10aa8/P63100876__AT_video_gr40_sdr_.m3u8
+#EXTINF:-1 tvg-name="P63100876__AT_video_gr80_sdr_ m3u8" group-title="Other",P63100876__AT_video_gr80_sdr_ m3u8
+https://apptrailers-ssl.itunes.apple.com/itunes-assets/PurpleVideo123/v4/04/7b/0d/047b0df1-c888-1ec4-3e79-f96a9e4db6b8/P63100876__AT_video_gr80_sdr_.m3u8
+#EXTINF:-1 tvg-name="P63100876_default m3u8" group-title="Other",P63100876_default m3u8
+https://apptrailers.itunes.apple.com/itunes-assets/PurpleVideo123/v4/99/7d/6f/997d6f8c-61e5-2c33-fab1-74e7df160293/P63100876_default.m3u8
+#EXTINF:-1 tvg-name="P63906381__AT_en_audio_gr128 m3u8" group-title="Other",P63906381__AT_en_audio_gr128 m3u8
+https://apptrailers-ssl.itunes.apple.com/itunes-assets/PurpleVideo113/v4/67/35/8e/67358ebc-4f47-f68c-8c22-a7555c0f3fcc/P63906381__AT_en_audio_gr128.m3u8
+#EXTINF:-1 tvg-name="P63906381__AT_trickPlay_gr265_sdr_ iframe m3u8" group-title="Other",P63906381__AT_trickPlay_gr265_sdr_ iframe m3u8
+https://apptrailers-ssl.itunes.apple.com/itunes-assets/PurpleVideo113/v4/6b/f6/ba/6bf6baaf-8fcb-0725-d79c-e6d1a6934d93/P63906381__AT_trickPlay_gr265_sdr_.iframe.m3u8
+#EXTINF:-1 tvg-name="P63906381__AT_video_gr250_sdr_ m3u8" group-title="Other",P63906381__AT_video_gr250_sdr_ m3u8
+https://apptrailers-ssl.itunes.apple.com/itunes-assets/PurpleVideo123/v4/b1/24/d1/b124d13f-458e-6a4c-ab0b-cccd56acd317/P63906381__AT_video_gr250_sdr_.m3u8
+#EXTINF:-1 tvg-name="P63906381_default m3u8" group-title="Other",P63906381_default m3u8
+https://apptrailers.itunes.apple.com/itunes-assets/PurpleVideo123/v4/8c/04/2b/8c042b6f-e840-b2c1-ee40-3cd14cb8353e/P63906381_default.m3u8
+#EXTINF:-1 tvg-name="P896756885_Anull_audio_en_gr128_mp4a-40-2 m3u8" group-title="Other",P896756885_Anull_audio_en_gr128_mp4a-40-2 m3u8
+https://apptrailers.itunes.apple.com/itunes-assets/PurpleVideo221/v4/0c/61/39/0c61393b-186a-7eab-b081-750ed31bbb4a/P896756885_Anull_audio_en_gr128_mp4a-40-2.m3u8
+#EXTINF:-1 tvg-name="P896756885_Anull_trickPlay_gr265_sdr_886x1920_iframes m3u8" group-title="Other",P896756885_Anull_trickPlay_gr265_sdr_886x1920_iframes m3u8
+https://apptrailers.itunes.apple.com/itunes-assets/PurpleVideo211/v4/57/59/67/575967d2-8543-4d1c-689f-537a21a46b19/P896756885_Anull_trickPlay_gr265_sdr_886x1920_iframes.m3u8
+#EXTINF:-1 tvg-name="P896756885_Anull_video_gr250_sdr_652x1412 m3u8" group-title="Other",P896756885_Anull_video_gr250_sdr_652x1412 m3u8
+https://apptrailers.itunes.apple.com/itunes-assets/PurpleVideo211/v4/b5/4b/40/b54b401d-1509-23f4-2983-09b5e29497cd/P896756885_Anull_video_gr250_sdr_652x1412.m3u8
+#EXTINF:-1 tvg-name="P896756885_Anull_video_gr290_sdr_886x1920 m3u8" group-title="Other",P896756885_Anull_video_gr290_sdr_886x1920 m3u8
+https://apptrailers.itunes.apple.com/itunes-assets/PurpleVideo221/v4/f2/fe/27/f2fe27e7-fcca-6bf6-007c-c35531014dcc/P896756885_Anull_video_gr290_sdr_886x1920.m3u8
+#EXTINF:-1 tvg-name="P896756885_default m3u8" group-title="Other",P896756885_default m3u8
+https://apptrailers.itunes.apple.com/itunes-assets/PurpleVideo211/v4/e9/36/3b/e9363b0c-35ab-c927-526e-24d1e23b2d67/P896756885_default.m3u8
 #EXTINF:-1 tvg-name="playlist m3u8" group-title="Other",playlist m3u8
-https://ukintl.dunyanews.tv/liveuk/ngrp:dunyalive_all/playlist.m3u8
+https://streamer12.vdn.dstreamone.net/kingtv/kingtv/playlist.m3u8
 #EXTINF:-1 tvg-name="playlist m3u8" group-title="Other",playlist m3u8
-https://vodzong.mjunoon.tv:8087/streamtest/Madni-121/playlist.m3u8
+http://cdn.live247stream.com/thelight/tv/playlist.m3u8
 #EXTINF:-1 tvg-name="playlist m3u8" group-title="Other",playlist m3u8
-https://rt-glb.rttv.com/dvr/rtnews/playlist.m3u8
+https://raycom-accdn-firetv.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-name="playlist m3u8" group-title="Other",playlist m3u8
-https://rt-esp.rttv.com/live/rtesp/playlist.m3u8
-#EXTINF:-1 tvg-name="prime-suspect avif" group-title="Other",prime-suspect avif
-https://images.justwatch.com/poster/242423828/s332/prime-suspect.avif
-#EXTINF:-1 tvg-name="require js" group-title="Other",require js
-https://tienda.movistar.com.co/static/version1787747297/frontend/Vass/colombia/en_US/requirejs/require.js
-#EXTINF:-1 tvg-name="require js" group-title="Other",require js
-https://atencion.movistar.com.co/static/version1787747297/frontend/Vass/colombia/en_US/requirejs/require.js
-#EXTINF:-1 tvg-name="requirejs-config js" group-title="Other",requirejs-config js
-https://atencion.movistar.com.co/static/version1787747297/frontend/Vass/colombia/en_US/requirejs-config.js
-#EXTINF:-1 tvg-name="Res _6333_-_T 2 4 _Indicadores_de_calidad_para_el_servicio_de_datos_fijos_VELOCIDAD_TRANSMISION_DAT_4Q pdf" group-title="Other",Res _6333_-_T 2 4 _Indicadores_de_calidad_para_el_servicio_de_datos_fijos_VELOCIDAD_TRANSMISION_DAT_4Q pdf
-https://mcprod.movistar.co/media/files/Res._6333_-_T.2.4._Indicadores_de_calidad_para_el_servicio_de_datos_fijos_VELOCIDAD_TRANSMISION_DAT_4Q.pdf
-#EXTINF:-1 tvg-name="Res _6333_-_T2 2 _Indicadores_de_calidad_Intentos_No_Exitosos_2G_3G_Satelital_2Q pdf" group-title="Other",Res _6333_-_T2 2 _Indicadores_de_calidad_Intentos_No_Exitosos_2G_3G_Satelital_2Q pdf
-https://mcprod.movistar.co/media/files/Res._6333_-_T2.2._Indicadores_de_calidad_Intentos_No_Exitosos_2G_3G_Satelital_2Q.pdf
-#EXTINF:-1 tvg-name="Res _6333_-_T2 2 _Indicadores_de_calidad_Trafico_Voz_Aplic_Fases-3Q pdf" group-title="Other",Res _6333_-_T2 2 _Indicadores_de_calidad_Trafico_Voz_Aplic_Fases-3Q pdf
-https://mcprod.movistar.co/media/files/Res._6333_-_T2.2._Indicadores_de_calidad_Trafico_Voz_Aplic_Fases-3Q.pdf
-#EXTINF:-1 tvg-name="Res _6333_-_T2 2 _Indicadores_de_calidad_Trafico_Voz_Aplic_Fases_3Q pdf" group-title="Other",Res _6333_-_T2 2 _Indicadores_de_calidad_Trafico_Voz_Aplic_Fases_3Q pdf
-https://mcprod.movistar.co/media/files/Res._6333_-_T2.2._Indicadores_de_calidad_Trafico_Voz_Aplic_Fases_3Q.pdf
-#EXTINF:-1 tvg-name="Res _6890_-_TIC_-_T 2 6 Indicadores_de_calidad_para_el_servicio_de_datos_moviles_basados_en_medicion_IND_DAT_MOV_3G4G_RESTDEP_2Q pdf" group-title="Other",Res _6890_-_TIC_-_T 2 6 Indicadores_de_calidad_para_el_servicio_de_datos_moviles_basados_en_medicion_IND_DAT_MOV_3G4G_RESTDEP_2Q pdf
-https://mcprod.movistar.co/media/files/Res._6890_-_TIC_-_T.2.6.Indicadores_de_calidad_para_el_servicio_de_datos_moviles_basados_en_medicion_IND_DAT_MOV_3G4G_RESTDEP_2Q.pdf
-#EXTINF:-1 tvg-name="Res _6890_-_TIC_-_T 2 6 Indicadores_de_calidad_para_el_servicio_de_datos_moviles_basados_en_medicion_IND_DAT_MOV_3G4G_RESTDEP_3Q pdf" group-title="Other",Res _6890_-_TIC_-_T 2 6 Indicadores_de_calidad_para_el_servicio_de_datos_moviles_basados_en_medicion_IND_DAT_MOV_3G4G_RESTDEP_3Q pdf
-https://mcprod.movistar.co/media/files/Res._6890_-_TIC_-_T.2.6.Indicadores_de_calidad_para_el_servicio_de_datos_moviles_basados_en_medicion_IND_DAT_MOV_3G4G_RESTDEP_3Q.pdf
-#EXTINF:-1 tvg-name="Res _6890_-_TIC_-_T 2 6 Indicadores_de_calidad_para_el_servicio_de_datos_moviles_basados_en_medicion_IND_DAT_MOV_3G4G_RESTDEP_4Q pdf" group-title="Other",Res _6890_-_TIC_-_T 2 6 Indicadores_de_calidad_para_el_servicio_de_datos_moviles_basados_en_medicion_IND_DAT_MOV_3G4G_RESTDEP_4Q pdf
-https://mcprod.movistar.co/media/files/Res._6890_-_TIC_-_T.2.6.Indicadores_de_calidad_para_el_servicio_de_datos_moviles_basados_en_medicion_IND_DAT_MOV_3G4G_RESTDEP_4Q.pdf
-#EXTINF:-1 tvg-name="Res _6890_-_TIC_-_T 2 6 Indicadores_de_calidad_para_el_servicio_de_datos_moviles_basados_en_medicion_IND_DAT_MOV_3G4G_SAT-2Q pdf" group-title="Other",Res _6890_-_TIC_-_T 2 6 Indicadores_de_calidad_para_el_servicio_de_datos_moviles_basados_en_medicion_IND_DAT_MOV_3G4G_SAT-2Q pdf
-https://mcprod.movistar.co/media/files/Res._6890_-_TIC_-_T.2.6.Indicadores_de_calidad_para_el_servicio_de_datos_moviles_basados_en_medicion_IND_DAT_MOV_3G4G_SAT-2Q.pdf
-#EXTINF:-1 tvg-name="Res _6890_-_TIC_-_T 2 6 Indicadores_de_calidad_para_el_servicio_de_datos_moviles_basados_en_medicion_IND_DAT_MOV_3G4G_SAT_2Q pdf" group-title="Other",Res _6890_-_TIC_-_T 2 6 Indicadores_de_calidad_para_el_servicio_de_datos_moviles_basados_en_medicion_IND_DAT_MOV_3G4G_SAT_2Q pdf
-https://mcprod.movistar.co/media/files/Res._6890_-_TIC_-_T.2.6.Indicadores_de_calidad_para_el_servicio_de_datos_moviles_basados_en_medicion_IND_DAT_MOV_3G4G_SAT_2Q.pdf
-#EXTINF:-1 tvg-name="sbi-styles min css?ver=6 12 0" group-title="Other",sbi-styles min css?ver=6 12 0
-https://www.tsk-praha.cz/app/plugins/instagram-feed/css/sbi-styles.min.css?ver=6.12.0
+https://strhls.streamakaci.tv/ortb/ortb2-multi/playlist.m3u8
+#EXTINF:-1 tvg-name="playlist m3u8" group-title="Other",playlist m3u8
+https://amg01553-blueantmediaasi-zoomoonz-samsungnz-rdufn.amagi.tv/playlist/amg01553-blueantmediaasi-zoomoonz-samsungnz/playlist.m3u8
+#EXTINF:-1 tvg-name="polarisglobalnavigation model json" group-title="Other",polarisglobalnavigation model json
+https://content.xfinity.com/cacs/live/content/xfinity-aem-platform/us/en/polaris/home/polarisglobalnavigation.model.json
+#EXTINF:-1 tvg-name="practical-magic avif" group-title="Other",practical-magic avif
+https://images.justwatch.com/poster/11005490/s332/practical-magic.avif
+#EXTINF:-1 tvg-name="Res %205079%20-%20TIC%20-%20F2 pdf" group-title="Other",Res %205079%20-%20TIC%20-%20F2 pdf
+https://mcprod.movistar.co/media/files/docs-calidad-movil/Res.%205079%20-%20TIC%20-%20F2.pdf
+#EXTINF:-1 tvg-name="Res _6333_-_T2 2 _Indicadores_de_calidad_Llamadas_Caidas_2G_3G_Satelital_2Q pdf" group-title="Other",Res _6333_-_T2 2 _Indicadores_de_calidad_Llamadas_Caidas_2G_3G_Satelital_2Q pdf
+https://mcprod.movistar.co/media/files/Res._6333_-_T2.2._Indicadores_de_calidad_Llamadas_Caidas_2G_3G_Satelital_2Q.pdf
+#EXTINF:-1 tvg-name="Res _6333_-_T2 2 _Indicadores_de_calidad_Trafico_Voz_Aplic_Fases_2024 pdf" group-title="Other",Res _6333_-_T2 2 _Indicadores_de_calidad_Trafico_Voz_Aplic_Fases_2024 pdf
+https://mcprod.movistar.co/media/files/Res._6333_-_T2.2._Indicadores_de_calidad_Trafico_Voz_Aplic_Fases_2024.pdf
+#EXTINF:-1 tvg-name="Res _6890_-_TIC_-_T 2 6 Indicadores_de_calidad_para_el_servicio_de_datos_moviles_basados_en_medicion_%20IND_DAT_MOV_3G4G_SAT pdf" group-title="Other",Res _6890_-_TIC_-_T 2 6 Indicadores_de_calidad_para_el_servicio_de_datos_moviles_basados_en_medicion_%20IND_DAT_MOV_3G4G_SAT pdf
+https://mcprod.movistar.co/media/files/Res._6890_-_TIC_-_T.2.6.Indicadores_de_calidad_para_el_servicio_de_datos_moviles_basados_en_medicion_%20IND_DAT_MOV_3G4G_SAT.pdf
+#EXTINF:-1 tvg-name="Res _6890_-_TIC_-_T 2 6 Indicadores_de_calidad_para_el_servicio_de_datos_moviles_basados_en_medicion_IND_DAT_MOV_3G4G_RESTDEP-2Q pdf" group-title="Other",Res _6890_-_TIC_-_T 2 6 Indicadores_de_calidad_para_el_servicio_de_datos_moviles_basados_en_medicion_IND_DAT_MOV_3G4G_RESTDEP-2Q pdf
+https://mcprod.movistar.co/media/files/Res._6890_-_TIC_-_T.2.6.Indicadores_de_calidad_para_el_servicio_de_datos_moviles_basados_en_medicion_IND_DAT_MOV_3G4G_RESTDEP-2Q.pdf
+#EXTINF:-1 tvg-name="Res _6890_-_TIC_-_T 2 6 Indicadores_de_calidad_para_el_servicio_de_datos_moviles_basados_en_medicion_IND_DAT_MOV_3G4G_SAT_3Q pdf" group-title="Other",Res _6890_-_TIC_-_T 2 6 Indicadores_de_calidad_para_el_servicio_de_datos_moviles_basados_en_medicion_IND_DAT_MOV_3G4G_SAT_3Q pdf
+https://mcprod.movistar.co/media/files/Res._6890_-_TIC_-_T.2.6.Indicadores_de_calidad_para_el_servicio_de_datos_moviles_basados_en_medicion_IND_DAT_MOV_3G4G_SAT_3Q.pdf
+#EXTINF:-1 tvg-name="Res%205079%20Indicadores%20de%20calidad pdf" group-title="Other",Res%205079%20Indicadores%20de%20calidad pdf
+https://mcprod.movistar.co/media/files/docs-calidad-movil/Res%205079%20Indicadores%20de%20calidad.pdf
+#EXTINF:-1 tvg-name="RTHK TV 33 (1080p) [Geo-blocked]" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Other",RTHK TV 33 (1080p) [Geo-blocked]
+https://rthktv33-live.akamaized.net/hls/live/2101641/RTHKTV33/master.m3u8
+#EXTINF:-1 tvg-name="RTHK TV 34 (1080p) [Geo-blocked]" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Other",RTHK TV 34 (1080p) [Geo-blocked]
+https://rthktv34-live.akamaized.net/hls/live/2101642/RTHKTV34/master.m3u8
+#EXTINF:-1 tvg-name="saam tv" tvg-logo="https://dtil.tmsimg.com/assets/s143735_ld_h15_aa.png?lock=720x540" group-title="Other",saam tv
+https://d3ec1vt3scx7rr.cloudfront.net/files/2026-04/SAAM_NickCave_HomepageTrailer_H264_V8.mp4
+#EXTINF:-1 tvg-name="SABC 1 (720p) [Geo-blocked]" group-title="Other",SABC 1 (720p) [Geo-blocked]
+https://sabconeta.cdn.mangomolo.com/sabc1/smil:sabc1.stream.smil/master.m3u8
+#EXTINF:-1 tvg-name="SABC 2 [Geo-blocked]" group-title="Other",SABC 2 [Geo-blocked]
+https://sabctwota.cdn.mangomolo.com/sabc2/smil:sabc2.stream.smil/master.m3u8
+#EXTINF:-1 tvg-name="SAGC-v2 mp4" group-title="Other",SAGC-v2 mp4
+https://marketing-cdn.fireworktv.com/marketing-site/fw_flower/SAGC-v2.mp4
 #EXTINF:-1 tvg-name="sdk js" group-title="Other",sdk js
 https://ucm-us.verint-cdn.com/files/sites/smithsonian/live/sdk.js
-#EXTINF:-1 tvg-name="Seznam-zpracovatelu-osobnich-udaju_2025 pdf" group-title="Other",Seznam-zpracovatelu-osobnich-udaju_2025 pdf
-https://cdn.tsk-praha.cz/portal/2025/04/Seznam-zpracovatelu-osobnich-udaju_2025.pdf
-#EXTINF:-1 tvg-name="Shemaroo Marathi Bana (720p)" tvg-logo="https://dtil.tmsimg.com/assets/s143777_ld_h15_aa.png?lock=720x540" group-title="Other",Shemaroo Marathi Bana (720p)
-https://airtelapp.shemaroo.com/marathibana/smil:marathibanaadp.smil/playlist.m3u8
-#EXTINF:-1 tvg-name="site lc-780c5d7baee3afdc8e5cd4365b25e5ba-lc min js" group-title="Other",site lc-780c5d7baee3afdc8e5cd4365b25e5ba-lc min js
-https://prod.adb.col.movistar.es/etc.clientlibs/movistar/components/structures/contentpage/v1/contentpage/clientlibs/site.lc-780c5d7baee3afdc8e5cd4365b25e5ba-lc.min.js
-#EXTINF:-1 tvg-name="sl m3u8" group-title="Other",sl m3u8
-http://qthttp.apple.com.edgesuite.net/1010qwoeiuryfg/sl.m3u8
-#EXTINF:-1 tvg-name="stingray-launch-video mp4" group-title="Other",stingray-launch-video mp4
-https://www.stingray.com/wp-content/uploads/2024/06/stingray-launch-video.mp4
-#EXTINF:-1 tvg-name="The Pet Collective India" group-title="Other",The Pet Collective India
-https://the-pet-collective-international-in.samsung.wurl.tv/playlist.m3u8
-#EXTINF:-1 tvg-name="TSK-Zprava-o-nehodovosti-2025 pdf" group-title="Other",TSK-Zprava-o-nehodovosti-2025 pdf
-https://cdn.tsk-praha.cz/portal/2026/08/TSK-Zprava-o-nehodovosti-2025.pdf
-#EXTINF:-1 tvg-name="udi-rocenka-1990-cz pdf" group-title="Other",udi-rocenka-1990-cz pdf
-https://cdn.tsk-praha.cz/portal/2025/03/udi-rocenka-1990-cz.pdf
-#EXTINF:-1 tvg-name="udi-rocenka-2009-cz pdf" group-title="Other",udi-rocenka-2009-cz pdf
-https://cdn.tsk-praha.cz/portal/2025/03/udi-rocenka-2009-cz.pdf
-#EXTINF:-1 tvg-name="Velocidad%20Subida%20y%20Bajada%20redes pdf?_ga=2 146009139 662335790 1662587679-859286121 1661447781" group-title="Other",Velocidad%20Subida%20y%20Bajada%20redes pdf?_ga=2 146009139 662335790 1662587679-859286121 1661447781
-https://atencionalcliente.movistar.co/proteccion-al-usuario/pdf/Velocidad%20Subida%20y%20Bajada%20redes.pdf?_ga=2.146009139.662335790.1662587679-859286121.1661447781
-#EXTINF:-1 tvg-name="Vyrocni_zprava_TSK_za-rok-2018 pdf" group-title="Other",Vyrocni_zprava_TSK_za-rok-2018 pdf
-https://cdn.tsk-praha.cz/portal/2025/04/Vyrocni_zprava_TSK_za-rok-2018.pdf
+#EXTINF:-1 tvg-name="Sony (Set India)" group-title="Other",Sony (Set India)
+http://live.globalflix.net:80/Call-Me/Whatsapp8801971466614/30.m3u8
+#EXTINF:-1 tvg-name="SR_HP_Video_04022026 mp4" group-title="Other",SR_HP_Video_04022026 mp4
+https://www.clevelandcliffs.com/_assets/_c7d9d552b544a2a36f31808074ad8c21/clevelandcliffs/db/1153/9772/file/SR_HP_Video_04022026.mp4
+#EXTINF:-1 tvg-name="standalone js" group-title="Other",standalone js
+https://www.xfinity.com/stream/vendor_components/sift-web-sdk/standalone.js
+#EXTINF:-1 tvg-name="stream_AAC m3u8" group-title="Other",stream_AAC m3u8
+https://japaneast.av.mk.io/mediakindcdn-mediakind/ca01a143-f823-4432-b670-c22ff9643ce4/index.qfm/stream_AAC.m3u8
+#EXTINF:-1 tvg-name="stream_H264 m3u8" group-title="Other",stream_H264 m3u8
+https://japaneast.av.mk.io/mediakindcdn-mediakind/ca01a143-f823-4432-b670-c22ff9643ce4/index.qfm/stream_H264.m3u8
+#EXTINF:-1 tvg-name="style min css" group-title="Other",style min css
+https://c0.wp.com/c/6.9.9/wp-includes/blocks/image/style.min.css
+#EXTINF:-1 tvg-name="style min css" group-title="Other",style min css
+https://c0.wp.com/c/7.0.6/wp-includes/blocks/image/style.min.css
+#EXTINF:-1 tvg-name="style min css" group-title="Other",style min css
+https://c0.wp.com/c/7.1.2/wp-includes/blocks/image/style.min.css
+#EXTINF:-1 tvg-name="Talk TV (GB) Geo" group-title="Other",Talk TV (GB) Geo
+https://amg00738-newsuk-amg00738c1-lg-gb-3426.playouts.now.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="UGC mp4" group-title="Other",UGC mp4
+https://marketing-cdn.fireworktv.com/marketing-site/fw_flower/UGC.mp4
+#EXTINF:-1 tvg-name="website-mobile-no-logos mp4" group-title="Other",website-mobile-no-logos mp4
+https://www.londoneye.com/media/ntxpyudx/website-mobile-no-logos.mp4
 #EXTINF:-1 tvg-name="white" group-title="Other",white
 https://ssr.col.movistar.es/api/v1/get-glyph/miembros-m/28/white
-#EXTINF:-1 tvg-name="white" group-title="Other",white
-https://ssr.col.movistar.es/api/v1/get-glyph/twitter-m/26/white
-#EXTINF:-1 tvg-name="white" group-title="Other",white
-https://ssr.col.movistar.es/api/v1/get-glyph/logo-tiktok-m/28/white
-#EXTINF:-1 tvg-name="white" group-title="Other",white
-https://ssr.col.movistar.es/api/v1/get-glyph/facebook-m/28/white
-#EXTINF:-1 tvg-name="white" group-title="Other",white
-https://ssr.col.movistar.es/api/v1/get-glyph/telefonica-reducido-m/41/white
-#EXTINF:-1 tvg-name="Gospel TV India (576p)" tvg-logo="https://i.ibb.co/xhbZvzt/cropped-final-logo-300x127.png" group-title="Religious",Gospel TV India (576p)
-https://server.livelegitpro.in:9899/gospeltv/index.m3u8
-#EXTINF:-1 tvg-name="Hope Channel India (576p)" tvg-logo="https://i.imgur.com/wPzPUrK.png" group-title="Religious",Hope Channel India (576p)
-https://mumt01.tangotv.in/O5aw8Zn3HOPECHANNELINDIA/index.m3u8
-#EXTINF:-1 tvg-name="Hosanna TV Hindi (720p)" tvg-logo="https://i.imgur.com/VYorU1L.png" group-title="Religious",Hosanna TV Hindi (720p)
-https://mumbai-edge.smartplaytv.in/HosannaTV/index.m3u8
-#EXTINF:-1 tvg-name="Life TV (India) (720p)" tvg-logo="https://i.ibb.co/v1C0bdR/logo-1.png" group-title="Religious",Life TV (India) (720p)
-https://lifetv.livebox.co.in/lifetvhls/lifetv.m3u8
-#EXTINF:-1 tvg-name="Mercy TV (India) (1080p)" tvg-logo="https://i.imgur.com/klNH4tV.png" group-title="Religious",Mercy TV (India) (1080p)
-https://5dd3981940faa.streamlock.net/mercytv/mercytv/playlist.m3u8
-#EXTINF:-1 tvg-name="MH One Shraddha (576p)" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG002NFEZK.png?lock=720x540" group-title="Religious",MH One Shraddha (576p)
-https://mumt01.tangotv.in/O5aw8Zn3MHONESHRADDHA/index.m3u8
-#EXTINF:-1 tvg-name="Peace TV Urdu (1080p)" group-title="Religious",Peace TV Urdu (1080p)
-https://dzkyvlfyge.erbvr.com/PeaceTvUrdu/index.m3u8
-#EXTINF:-1 tvg-name="PMC Telugu (1080p)" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/PMC_Telugu.png" group-title="Religious",PMC Telugu (1080p)
-https://mumbai-edge.smartplaytv.in/PMC/index.m3u8
-#EXTINF:-1 tvg-name="Salvation TV (India) (1080p)" group-title="Religious",Salvation TV (India) (1080p)
-https://ktismaservers.in:3902/live/salvationtvlive.m3u8
-#EXTINF:-1 tvg-name="Swastik TV (720p)" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/swastiktv.png" group-title="Religious",Swastik TV (720p)
-https://server.playontv.in/swastiktv/index.m3u8
-#EXTINF:-1 tvg-name="Travelxp 4K HDR (2160p) [Geo-blocked]" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Travelxp%20HD.png" group-title="Travel",Travelxp 4K HDR (2160p) [Geo-blocked]
-https://deltatesttatasky.akamaized.net/out/i/968284.m3u8
-#EXTINF:-1 tvg-name="Travelxp HD (1080p) [Geo-blocked]" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Travelxp%20HD.png" group-title="Travel",Travelxp HD (1080p) [Geo-blocked]
-https://amg00416-amg00416c9-samsung-in-4882.playouts.now.amagi.tv/playlist/amg00416-travelxp-travelxphd-samsungin/playlist.m3u8
-#EXTINF:-1 tvg-name="WeatherSpy (India)" tvg-logo="https://i.imgur.com/KIEKOt1.png" group-title="Weather",WeatherSpy (India)
-https://jukin-weatherspy-2-in.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="wlwmanifest xml" group-title="Other",wlwmanifest xml
+https://www.zynga.com/lib/wlwmanifest.xml
+#EXTINF:-1 tvg-name="wp-polyfill min js" group-title="Other",wp-polyfill min js
+https://c0.wp.com/c/7.0.6/wp-includes/js/dist/vendor/wp-polyfill.min.js
+#EXTINF:-1 tvg-name="Zee Bioskop" group-title="Other",Zee Bioskop
+http://live.globalflix.net:80/Call-Me/Whatsapp8801971466614/9.m3u8
+#EXTINF:-1 tvg-name="Zee World" group-title="Other",Zee World
+http://live.globalflix.net:80/Call-Me/Whatsapp8801971466614/10.m3u8
+#EXTINF:-1 tvg-name="village tv" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/VillageTV.png" group-title="Religious",village tv
+https://topangavillage.com/wp-includes/wlwmanifest.xml
+#EXTINF:-1 tvg-name="Zee Café" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022ZMMH.png?lock=720x540" group-title="Series",Zee Café
+http://live.globalflix.net:80/Call-Me/Whatsapp8801971466614/56.m3u8
+#EXTINF:-1 tvg-name="Sony Sports Ten 1" tvg-logo="https://dtil.tmsimg.com/assets/s157591_ld_h15_aa.png?lock=720x540" group-title="Sports",Sony Sports Ten 1
+http://live.globalflix.net:80/Call-Me/Whatsapp8801971466614/22.m3u8
+#EXTINF:-1 tvg-name="Sony Sports Ten 2" tvg-logo="https://dtil.tmsimg.com/assets/s157592_ld_h15_aa.png?lock=720x540" group-title="Sports",Sony Sports Ten 2
+http://live.globalflix.net:80/Call-Me/Whatsapp8801971466614/21.m3u8
+#EXTINF:-1 tvg-name="Sony Sports Ten 3" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0025TCMR.png?lock=720x540" group-title="Sports",Sony Sports Ten 3
+http://live.globalflix.net:80/Call-Me/Whatsapp8801971466614/27.m3u8
+#EXTINF:-1 tvg-name="Star Sports 1" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/7482/1782284567482-h.jpg" group-title="Sports",Star Sports 1
+http://live.globalflix.net:80/Call-Me/Whatsapp8801971466614/36.m3u8
+#EXTINF:-1 tvg-name="Star Sports 2" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/7957/1783000567957-h.jpg" group-title="Sports",Star Sports 2
+http://live.globalflix.net:80/Call-Me/Whatsapp8801971466614/37.m3u8
+#EXTINF:-1 tvg-name="Star Sports 3" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_STAR_SPORTS_3/images/LOGO_HD/image.png" group-title="Sports",Star Sports 3
+http://live.globalflix.net:80/Call-Me/Whatsapp8801971466614/42.m3u8
+#EXTINF:-1 tvg-name="Star Sports Select 1" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/1176/1783001141176-h.jpg" group-title="Sports",Star Sports Select 1
+http://live.globalflix.net:80/Call-Me/Whatsapp8801971466614/44.m3u8
+#EXTINF:-1 tvg-name="Star Sports Select 2" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/7266/1783001217266-h.jpg" group-title="Sports",Star Sports Select 2
+http://live.globalflix.net:80/Call-Me/Whatsapp8801971466614/41.m3u8

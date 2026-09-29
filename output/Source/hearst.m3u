@@ -1,3 +1,17 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
 #EXTINF:-1 tvg-name="master m3u8?subtitles=en" group-title="Other",master m3u8?subtitles=en
-https://hdm-streaming-otfp.hearst.io/a88fdcac-c63f-4ab7-ab71-dc81e2337215/video_rover_16x9_240p_sd_1681392922_62212,video_rover_16x9_360p_sd_1681392922_9812,video_rover_16x9_720p_hd_1681392922_6784,video_rover_16x9_480p_sd_1681392922_99492,video_rover_16x9_1080p_hd_1681392922_18914/master.m3u8?subtitles=en
+https://htv-streaming-otfp.hearst.io/f2b8cb7b-e5b3-4b91-bc8f-c45350e6d1bf/video_16x9_240p_h264_sd,video_16x9_360p_h264_sd,video_16x9_480p_h264_sd,video_16x9_720p_h264_hd/master.m3u8?subtitles=en
+#EXTINF:-1 tvg-name="master m3u8?subtitles=en" group-title="Other",master m3u8?subtitles=en
+https://htv-streaming-otfp.hearst.io/c2d405c8-40bf-432a-a9c8-08e17dc37a01/video_16x9_240p_h264_sd,video_16x9_360p_h264_sd,video_16x9_480p_h264_sd,video_16x9_720p_h264_hd/master.m3u8?subtitles=en
+#EXTINF:-1 tvg-name="master m3u8?subtitles=en" group-title="Other",master m3u8?subtitles=en
+https://htv-streaming-otfp.hearst.io/ba456b09-2cd1-4c6a-aec0-daef55179f28/video_rover_16x9_480p_sd_1648751323_6326/master.m3u8?subtitles=en
+#EXTINF:-1 tvg-name="video_16x9_240p_h264_sd m3u8" group-title="Other",video_16x9_240p_h264_sd m3u8
+https://htv-streaming-otfp.hearst.io/f2b8cb7b-e5b3-4b91-bc8f-c45350e6d1bf/video_16x9_240p_h264_sd.m3u8
+#EXTINF:-1 tvg-name="video_16x9_240p_h264_sd m3u8" group-title="Other",video_16x9_240p_h264_sd m3u8
+https://htv-streaming-otfp.hearst.io/c2d405c8-40bf-432a-a9c8-08e17dc37a01/video_16x9_240p_h264_sd.m3u8
+#EXTINF:-1 tvg-name="video_16x9_480p_h264_sd m3u8" group-title="Other",video_16x9_480p_h264_sd m3u8
+https://htv-streaming-otfp.hearst.io/f2b8cb7b-e5b3-4b91-bc8f-c45350e6d1bf/video_16x9_480p_h264_sd.m3u8
+#EXTINF:-1 tvg-name="video_16x9_480p_h264_sd m3u8" group-title="Other",video_16x9_480p_h264_sd m3u8
+https://htv-streaming-otfp.hearst.io/c2d405c8-40bf-432a-a9c8-08e17dc37a01/video_16x9_480p_h264_sd.m3u8
+#EXTINF:-1 tvg-name="video_rover_16x9_480p_sd_1648751323_6326 m3u8" group-title="Other",video_rover_16x9_480p_sd_1648751323_6326 m3u8
+https://htv-streaming-otfp.hearst.io/ba456b09-2cd1-4c6a-aec0-daef55179f28/video_rover_16x9_480p_sd_1648751323_6326.m3u8

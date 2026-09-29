@@ -1,18 +1,28 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
-#EXTINF:-1 tvg-name="WOW Kidz (720p)" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yupptvnew/content/common/channel/logos/mjvezt.png" group-title="Animation",WOW Kidz (720p)
-https://yuppparoriglin.akamaized.net/181224/smil:wowkidzhindi.smil/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
+#EXTINF:-1 tvg-name="group-title="Hindi(हिन्दी)",Pogo" tvg-logo="https://dtil.tmsimg.com/assets/s143663_ld_h15_aa.png?lock=720x540" group-title="Animation",group-title="Hindi(हिन्दी)",Pogo
+http://z5ams.akamaized.net/pogo/tracks-v1a1/index.m3u8
 #EXTINF:-1 tvg-name="WOW Kidz Tamil (720p)" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yupptvnew/content/common/channel/logos/mjvezt.png" group-title="Animation",WOW Kidz Tamil (720p)
 https://yuppparoriglin.akamaized.net/181224/smil:wowkidztam.smil/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
 #EXTINF:-1 tvg-name="WOW Kidz Telugu (720p)" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yupptvnew/content/common/channel/logos/mjvezt.png" group-title="Animation",WOW Kidz Telugu (720p)
 https://yuppparoriglin.akamaized.net/181224/smil:wowkidztelgu.smil/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
-#EXTINF:-1 tvg-name="ndtv profit" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_NDTV_PROFIT_PRIME/images/LOGO_HD/image.png" group-title="Business",ndtv profit
-https://ndtvprofit.akamaized.net/hls/live/2107404/ndtvprofit/chunklist_0.m3u8
-#EXTINF:-1 tvg-name="ndtv profit" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_NDTV_PROFIT_PRIME/images/LOGO_HD/image.png" group-title="Business",ndtv profit
+#EXTINF:-1 tvg-name="CNBC TV18 (1080p)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/CNBC_TV18_2026.svg/960px-CNBC_TV18_2026.svg.png" group-title="Business",CNBC TV18 (1080p)
+https://n18syndication.akamaized.net/bpk-tv/CNBC_TV18_NW18_MOB/output01/index.m3u8
+#EXTINF:-1 tvg-name="CNBC TV18 Prime HD (1080p)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/CNBC_TV18_2026.svg/960px-CNBC_TV18_2026.svg.png" group-title="Business",CNBC TV18 Prime HD (1080p)
+https://n18syndication.akamaized.net/bpk-tv/CNBC_Tv18_Prime_HD_NW18_MOB/output01/index.m3u8
+#EXTINF:-1 tvg-name="group-title="Hindi(हिन्दी)",CNBC Awaaz" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/CNBC_Awaaz_2026.svg/960px-CNBC_Awaaz_2026.svg.png" group-title="Business",group-title="Hindi(हिन्दी)",CNBC Awaaz
+https://cnbc_awaaz_hls-lh.akamaihd.net/i/cnbc_awaaz_hls_n_1@174872/index_5_av-p.m3u8
+#EXTINF:-1 tvg-name="group-title="Hindi(हिन्दी)",Zee Business" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/ZEEDIGITAL/LIVECHANNEL/67ed20afb9965350035ecc50/images/LOGO/LOGO_3scYDc5V6_Zbusiness_logo-for-larg.png" group-title="Business",group-title="Hindi(हिन्दी)",Zee Business
+http://z5ams.akamaized.net/zeebusiness/tracks-v1a1/index.m3u8
+#EXTINF:-1 tvg-name="NDTV Profit" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_NDTV_PROFIT_PRIME/images/LOGO_HD/image.png" group-title="Business",NDTV Profit
 https://ndtvprofit.akamaized.net/hls/live/2107404/ndtvprofit/master_1.m3u8
-#EXTINF:-1 tvg-name="ndtv profit" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_NDTV_PROFIT_PRIME/images/LOGO_HD/image.png" group-title="Business",ndtv profit
-https://ndtvprofit.akamaized.net/hls/live/2107404/ndtvprofit/chunklist_1.m3u8
 #EXTINF:-1 tvg-name="NDTV Profit (1080p)" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_NDTV_PROFIT_PRIME/images/LOGO_HD/image.png" group-title="Business",NDTV Profit (1080p)
 https://ndtvprofit.akamaized.net/hls/live/2107404/ndtvprofit/chunklist_5.m3u8
+#EXTINF:-1 tvg-name="group-title="Hindi(हिन्दी)",Zee Classic" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022J66T.png?lock=720x540" group-title="Classic",group-title="Hindi(हिन्दी)",Zee Classic
+http://z5ams.akamaized.net/classic/tracks-v1a1/index.m3u8
+#EXTINF:-1 tvg-name="group-title="Hindi(हिन्दी)",DD Kisan" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Kisan.png" group-title="Education",group-title="Hindi(हिन्दी)",DD Kisan
+http://z5ams.akamaized.net/ddkisan/tracks-v1a1/index.m3u8
+#EXTINF:-1 tvg-name="$ Colors Tamil High" tvg-logo="http://smumcdnems03.cdnsrv.jio.com/mumsite.cdnsrv.jio.com/jiotv.catchup.cdn.jio.com/dare_images/images/Colors_Tamil_HD.png" group-title="Entertainment",$ Colors Tamil High
+https://msluk8s.akamaized.net/hls/live/2000173/colorstamilmsl/colorstamil_2000/chunklist.m3u8
 #EXTINF:-1 tvg-name="20 [Geo-blocked]" group-title="Entertainment",20 [Geo-blocked]
 https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(lb)/index.m3u8
 #EXTINF:-1 tvg-name="9Gem (720p) [Geo-blocked]" group-title="Entertainment",9Gem (720p) [Geo-blocked]
@@ -23,18 +33,56 @@ https://artesimulcast.akamaized.net/hls/live/2030993/artelive_de/index.m3u8
 https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(C5)/index.m3u8
 #EXTINF:-1 tvg-name="Colors Rishtey Americas (396p)" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/Colors_Transparent_16069908-8494-4eb4-bd40-5afca3969088.png" group-title="Entertainment",Colors Rishtey Americas (396p)
 https://manatv.akamaized.net/090823/smil:ristheyamerica.smil/playlist.m3u8
-#EXTINF:-1 tvg-name="dangal 2" tvg-logo="https://i.imgur.com/BEr1r7L.png" group-title="Entertainment",dangal 2
+#EXTINF:-1 tvg-name="Dangal 2 (720p)" tvg-logo="https://i.imgur.com/BEr1r7L.png" group-title="Entertainment",Dangal 2 (720p)
 https://live-dangal2.akamaized.net/liveabr/playlist.m3u8
+#EXTINF:-1 tvg-name="group-title="Hindi(हिन्दी)",Zee TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Zee_TV_Logo_2025.svg/960px-Zee_TV_Logo_2025.svg.png" group-title="Entertainment",group-title="Hindi(हिन्दी)",Zee TV
+http://z5ams.akamaized.net/zeetvsd/tracks-v1a1/index.m3u8
+#EXTINF:-1 tvg-name="group-title="Hindi(हिन्दी)",Zee TV HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Zee_TV_Logo_2025.svg/960px-Zee_TV_Logo_2025.svg.png" group-title="Entertainment",group-title="Hindi(हिन्दी)",Zee TV HD
+http://z5ams.akamaized.net/zeetvhd/tracks-v1a1/index.m3u8
+#EXTINF:-1 tvg-name="group-title="Marathi",Zee 24 Taas" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_E24/images/LOGO_HD/image.png" group-title="Entertainment",group-title="Marathi",Zee 24 Taas
+http://z5ams.akamaized.net/24taas/tracks-v1a1/index.m3u8
+#EXTINF:-1 tvg-name="group-title="Marathi",Zee Marathi" tvg-logo="https://i.imgur.com/vv9ysD3.png" group-title="Entertainment",group-title="Marathi",Zee Marathi
+http://z5ams.akamaized.net/zmarathisd/tracks-v1a1/index.m3u8
+#EXTINF:-1 tvg-name="group-title="Marathi",Zee Marathi HD" tvg-logo="https://i.imgur.com/vv9ysD3.png" group-title="Entertainment",group-title="Marathi",Zee Marathi HD
+http://z5ams.akamaized.net/zmarathihd/tracks-v1a1/index.m3u8
+#EXTINF:-1 tvg-name="group-title="Marathi",Zee Yuva" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022S9FG.png?lock=720x540" group-title="Entertainment",group-title="Marathi",Zee Yuva
+http://z5ams.akamaized.net/zyuva/tracks-v1a1/index.m3u8
 #EXTINF:-1 tvg-name="Iris [Geo-blocked]" group-title="Entertainment",Iris [Geo-blocked]
 https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(ki)/index.m3u8
 #EXTINF:-1 tvg-name="La5 [Geo-blocked]" group-title="Entertainment",La5 [Geo-blocked]
 https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(ka)/index.m3u8
 #EXTINF:-1 tvg-name="NRK3 (1080i) [Geo-blocked]" group-title="Entertainment",NRK3 (1080i) [Geo-blocked]
 https://nrk-live-no.akamaized.net/nrk3/muxed.m3u8
+#EXTINF:-1 tvg-name="Raj TV" tvg-logo="https://dtil.tmsimg.com/assets/s143715_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Raj TV
+http://z5ams.akamaized.net/rajtv/tracks-v1a1/index.m3u8
+#EXTINF:-1 tvg-name="Star Maa Movies High" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/1759/1782290731759-h.jpg" group-title="Entertainment",Star Maa Movies High
+https://msluk4s.akamaized.net/hls/live/2000136/maamoviesmsl1/maamovies_2000/chunklist.m3u8
+#EXTINF:-1 tvg-name="Star Maa Movies HS HQ" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/1759/1782290731759-h.jpg" group-title="Entertainment",Star Maa Movies HS HQ
+http://maamovies-i.akamaihd.net/hls/live/569931/maamovies/master_2000.m3u8
+#EXTINF:-1 tvg-name="Star Maa Movies Low" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/1759/1782290731759-h.jpg" group-title="Entertainment",Star Maa Movies Low
+https://msluk4s.akamaized.net/hls/live/2000136/maamoviesmsl1/maamovies_800/chunklist.m3u8
+#EXTINF:-1 tvg-name="Star Maa Movies Med" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/1759/1782290731759-h.jpg" group-title="Entertainment",Star Maa Movies Med
+https://msluk4s.akamaized.net/hls/live/2000136/maamoviesmsl1/maamovies_1100/chunklist.m3u8
+#EXTINF:-1 tvg-name="Star Plus HS HQ" tvg-logo="https://i.imgur.com/XUnWcZF.png" group-title="Entertainment",Star Plus HS HQ
+http://starplushd-i.akamaihd.net/hls/live/569928/starplushd/master_2000.m3u8
+#EXTINF:-1 tvg-name="Star Pravah (Marathi) HS HQ" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/5780/1782291675780-h.jpg" group-title="Entertainment",Star Pravah (Marathi) HS HQ
+http://starpravah-i.akamaihd.net/hls/live/569921/starpraavah/master_2000.m3u8
+#EXTINF:-1 tvg-name="Star Pravah HS HQ" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/5780/1782291675780-h.jpg" group-title="Entertainment",Star Pravah HS HQ
+http://starpravah-i.akamaihd.net/hls/live/569921/starpravah/master_2000.m3u8
+#EXTINF:-1 tvg-name="Star Suvarna HS HQ" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/6396/1782290646396-h.jpg" group-title="Entertainment",Star Suvarna HS HQ
+http://starsuvarna-i.akamaihd.net/hls/live/569901/starsuvarna/master_2000.m3u8
+#EXTINF:-1 tvg-name="Star Vijay HS HD" tvg-logo="https://vignette.wikia.nocookie.net/logopedia/images/2/23/Vijay_tv.png/revision/latest?cb=20170719104859" group-title="Entertainment",Star Vijay HS HD
+http://starvijay-i.akamaihd.net/hls/live/569909/starvijay/master_2000.m3u8
 #EXTINF:-1 tvg-name="Zee 24 Kalak (720p)" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_E24/images/LOGO_HD/image.png" group-title="Entertainment",Zee 24 Kalak (720p)
 https://vg-zeefta.akamaized.net/ptnr-yupptv/title-zee24kalak/v1/manifest/611d79b11b77e2f571934fd80ca1413453772ac7/497f7199-758d-495d-9d2f-a5489231c428/14b7c8ec-16da-47f2-8d7e-5bbaec67b3e2/3.m3u8
 #EXTINF:-1 tvg-name="Zee Kannada HD (1080p)" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022S209.png?lock=720x540" group-title="Entertainment",Zee Kannada HD (1080p)
 https://yuppnimresmum.akamaized.net/28072023/smil:zeekannadahd.smil/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
+#EXTINF:-1 tvg-name="Zee Punjabi" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022JG14.png?lock=720x540" group-title="Entertainment",Zee Punjabi
+http://z5amshls.akamaized.net/punjabi/tracks-v1a1/index.m3u8
+#EXTINF:-1 tvg-name="Zee Tamil" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ZEE_TAMIZH/images/LOGO_HD/image.png" group-title="Entertainment",Zee Tamil
+http://z5ams.akamaized.net/zeetamil/tracks-v1a1/index.m3u8
+#EXTINF:-1 tvg-name="$ NDTV Prime" tvg-logo="https://i.imgur.com/GHtOPd8.png" group-title="General",$ NDTV Prime
+https://ndtvstream-lh.akamaihd.net//i//ndtv_profit_1@300635/master.m3u8
 #EXTINF:-1 tvg-name="CBC Television CBAT-DT (720p) [Geo-blocked]" tvg-logo="https://i.imgur.com/YozqNL3.jpg" group-title="General",CBC Television CBAT-DT (720p) [Geo-blocked]
 https://cbcrclinear-tor.akamaized.net/hls/live/2042757/CBCRCLINEAR_TOR_3/master5.m3u8
 #EXTINF:-1 tvg-name="CBC Television CBCT-DT (720p) [Geo-blocked]" tvg-logo="https://i.imgur.com/YozqNL3.jpg" group-title="General",CBC Television CBCT-DT (720p) [Geo-blocked]
@@ -63,198 +111,442 @@ https://cbcrclinear-tor.akamaized.net/hls/live/2042765/CBCRCLINEAR_TOR_11/master
 https://cbcrclinear-tor.akamaized.net/hls/live/2042766/CBCRCLINEAR_TOR_12/master5.m3u8
 #EXTINF:-1 tvg-name="Dangal TV (720p)" tvg-logo="https://dtil.tmsimg.com/assets/s142771_ld_h9_aa.png?lock=720x540" group-title="General",Dangal TV (720p)
 https://live-dangal.akamaized.net/liveabr/playlist.m3u8
+#EXTINF:-1 tvg-name="group-title="Hindi(हिन्दी)",DD Bihar" tvg-logo="https://dtil.tmsimg.com/assets/s142780_ld_h15_aa.png?lock=720x540" group-title="General",group-title="Hindi(हिन्दी)",DD Bihar
+http://z5ams.akamaized.net/ddbihar/tracks-v1a1/index.m3u8
+#EXTINF:-1 tvg-name="group-title="Hindi(हिन्दी)",DD India" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20India.png" group-title="General",group-title="Hindi(हिन्दी)",DD India
+http://z5ams.akamaized.net/ddindia/tracks-v1a1/index.m3u8
+#EXTINF:-1 tvg-name="group-title="Marathi",DD Sahyadri" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Sahyadri.png" group-title="General",group-title="Marathi",DD Sahyadri
+http://z5ams.akamaized.net/ddsahyadri/tracks-v1a1/index.m3u8
+#EXTINF:-1 tvg-name="Makkal TV" tvg-logo="https://dtil.tmsimg.com/assets/s143296_ld_h15_aa.png?lock=720x540" group-title="General",Makkal TV
+http://z5ams.akamaized.net/makkaltv/tracks-v1a1/index.m3u8
+#EXTINF:-1 tvg-name="$ Dilse Hungama Hits" group-title="Kids",$ Dilse Hungama Hits
+http://linear07hun-lh.akamaihd.net/i/dilse_1@673921/master.m3u8
+#EXTINF:-1 tvg-name="$ Pop Hungama Hits" group-title="Kids",$ Pop Hungama Hits
+http://linear04hun-lh.akamaihd.net/i/poppataka_1@665241/master.m3u8
+#EXTINF:-1 tvg-name="*~hmac=ab135b6ffaee67893f4140db7ace933a2dc8c81210b85662373cf02a2da7344e&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=HIN&ads content_genre=Kids&ads channel=7120&ads channel_name=GreenGoldTVIndia&ads network_name=yupptv&ads user=0" group-title="Kids",*~hmac=ab135b6ffaee67893f4140db7ace933a2dc8c81210b85662373cf02a2da7344e&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=HIN&ads content_genre=Kids&ads channel=7120&ads channel_name=GreenGoldTVIndia&ads network_name=yupptv&ads user=0
+https://vglivessai.akamaized.net/eu/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/675a37e5-f517-434e-adae-d25ae1706340/playlist.m3u8?hdnts=st=1790601735~exp=1790605335~acl=!*/611d79b11b77e2f571934fd80ca1413453772ac7/675a37e5-f517-434e-adae-d25ae1706340/*!yuppTVCom_5_-1_322afc248a60481b_US_52.190.141.32/payload/yuppTVCom_5_-1_322afc248a60481b_US_52.190.141.32/*~hmac=ab135b6ffaee67893f4140db7ace933a2dc8c81210b85662373cf02a2da7344e&ads.app_bundle=&ads.app_store_url=&ads.content_livestream=1&ads.language=HIN&ads.content_genre=Kids&ads.channel=7120&ads.channel_name=GreenGoldTVIndia&ads.network_name=yupptv&ads.user=0
 #EXTINF:-1 tvg-name="9Go! (720p) [Geo-blocked]" group-title="Kids",9Go! (720p) [Geo-blocked]
 https://9now-livestreams.akamaized.net/hls/live/2008312/go-syd/master.m3u8
 #EXTINF:-1 tvg-name="CBBC (720p) [Geo-blocked]" group-title="Kids",CBBC (720p) [Geo-blocked]
 https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:cbbc_hd/iptv_hd_abr_v1.mpd
-#EXTINF:-1 tvg-name="CBeebies (720p) [Geo-blocked]" group-title="Kids",CBeebies (720p) [Geo-blocked]
+#EXTINF:-1 tvg-name="CBeebies (United Kingdom) (720p) [Geo-blocked]" group-title="Kids",CBeebies (United Kingdom) (720p) [Geo-blocked]
 https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:cbeebies_hd/iptv_hd_abr_v1.mpd
 #EXTINF:-1 tvg-name="DR Ramasjang (720p) [Geo-blocked]" group-title="Kids",DR Ramasjang (720p) [Geo-blocked]
 https://drlive03hls.akamaized.net/hls/live/2014190/drlive03/master.m3u8
+#EXTINF:-1 tvg-name="Hungama Digital Network" group-title="Kids",Hungama Digital Network
+http://linear07hun-lh.akamaihd.net/i/dilse_1@673921/index_2128_av-p.m3u8
 #EXTINF:-1 tvg-name="NRK Super (1080i) [Geo-blocked]" group-title="Kids",NRK Super (1080i) [Geo-blocked]
 https://nrk-live-no.akamaized.net/nrksuper/muxed.m3u8
+#EXTINF:-1 tvg-name="*~hmac=ef62ddc303f2fe5cce55bb6c6c0fdb798ff425bf6fc7902f2fb5b4540d57e043&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=PUN&ads content_genre=MOV&ads channel=6576&ads channel_name=PitaaraTV&ads network_name=yupptv&ads user=0" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Pitaara-Logo_2000_X_1125_Transpharent.png" group-title="Movies",*~hmac=ef62ddc303f2fe5cce55bb6c6c0fdb798ff425bf6fc7902f2fb5b4540d57e043&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=PUN&ads content_genre=MOV&ads channel=6576&ads channel_name=PitaaraTV&ads network_name=yupptv&ads user=0
+https://vg-pitaaratvyupp.akamaized.net/ptnr-yupptv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/vglive-sk-433350/playlist.m3u8?hdnts=st=1790624972~exp=1790628572~acl=!*/611d79b11b77e2f571934fd80ca1413453772ac7/vglive-sk-433350/*!yuppTVCom_5_-1_7c89178da3874ab8_US_172.184.209.147/payload/yuppTVCom_5_-1_7c89178da3874ab8_US_172.184.209.147/*~hmac=ef62ddc303f2fe5cce55bb6c6c0fdb798ff425bf6fc7902f2fb5b4540d57e043&ads.app_bundle=&ads.app_store_url=&ads.content_livestream=1&ads.language=PUN&ads.content_genre=MOV&ads.channel=6576&ads.channel_name=PitaaraTV&ads.network_name=yupptv&ads.user=0
 #EXTINF:-1 tvg-name="Bhojpuri Cinema (720p)" tvg-logo="https://dtil.tmsimg.com/assets/s142713_ld_h15_aa.png?lock=720x540" group-title="Movies",Bhojpuri Cinema (720p)
 https://live-bhojpuri.akamaized.net/liveabr/playlist.m3u8
 #EXTINF:-1 tvg-name="Cine34 [Geo-blocked]" group-title="Movies",Cine34 [Geo-blocked]
 https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(b6)/index.m3u8
 #EXTINF:-1 tvg-name="Epic Bhojpuri Digital (1080p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/FILAMCHI_BHOJPURI_HINDI-transparent.png" group-title="Movies",Epic Bhojpuri Digital (1080p)
 https://cc-8hy4a26pz2uos.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-8hy4a26pz2uos/playlist.m3u8
+#EXTINF:-1 tvg-name="Filamchi Bhojpuri (1080p)" tvg-logo="https://i.imgur.com/qu3jlf7.png" group-title="Movies",Filamchi Bhojpuri (1080p)
+https://epiconvh.akamaized.net/live/filamchi/master.m3u8
 #EXTINF:-1 tvg-name="FilmRise Forensic Files (720p) [Geo-blocked]" group-title="Movies",FilmRise Forensic Files (720p) [Geo-blocked]
 https://pb-x9qsxrudiq9d2.akamaized.net/webvtt/v1/18584c3f3a2a4df8/88886014/master.m3u8
+#EXTINF:-1 tvg-name="group-title="Hindi(हिन्दी)",Zee Action" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022K5ZV.png?lock=720x540" group-title="Movies",group-title="Hindi(हिन्दी)",Zee Action
+http://z5ams.akamaized.net/action/tracks-v1a1/index.m3u8
+#EXTINF:-1 tvg-name="group-title="Hindi(हिन्दी)",Zee Cinema" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022HVX3.png?lock=720x540" group-title="Movies",group-title="Hindi(हिन्दी)",Zee Cinema
+http://z5ams.akamaized.net/zcinemasd/tracks-v1a1/index.m3u8
+#EXTINF:-1 tvg-name="group-title="Hindi(हिन्दी)",Zee Cinema HD" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022HVX3.png?lock=720x540" group-title="Movies",group-title="Hindi(हिन्दी)",Zee Cinema HD
+http://z5ams.akamaized.net/zcinemahd/tracks-v1a1/index.m3u8
+#EXTINF:-1 tvg-name="group-title="Marathi",Zee Talkies" tvg-logo="https://i.imgur.com/GowDXFz.png" group-title="Movies",group-title="Marathi",Zee Talkies
+http://z5ams.akamaized.net/zeetalkies/tracks-v1a1/index.m3u8
+#EXTINF:-1 tvg-name="group-title="Marathi",Zee Talkies HD" tvg-logo="https://i.imgur.com/GowDXFz.png" group-title="Movies",group-title="Marathi",Zee Talkies HD
+http://z5ams.akamaized.net/ztalkieshd/tracks-v1a1/index.m3u8
 #EXTINF:-1 tvg-name="Ici Radio-Canada Tele CKTV-DT [Geo-blocked]" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG002Z1SEP.png?lock=720x540" group-title="Movies",Ici Radio-Canada Tele CKTV-DT [Geo-blocked]
 https://rcavlive.akamaized.net/hls/live/704023/cancktv/master.m3u8
 #EXTINF:-1 tvg-name="Punjabi Shorts (1080p)" tvg-logo="https://www.thegtcnetwork.com/punjabi-shorts.jpg" group-title="Movies",Punjabi Shorts (1080p)
 https://vglivessai.akamaized.net/ptnr-yupptv/title-Punjabi_Shorts/in/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/27c3fd7a-b01f-4b00-ac03-557ac77acd47/index.m3u8
+#EXTINF:-1 tvg-name="Star Gold HS HQ" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/6567/1784547656567-h.jpg" group-title="Movies",Star Gold HS HQ
+http://staragold-i.akamaihd.net/hls/live/569910/staragold/master_2000.m3u8
+#EXTINF:-1 tvg-name="$ Punjabi TadkaMusic" group-title="Music",$ Punjabi TadkaMusic
+https://linear05hun-lh.akamaihd.net/i/punjabitadka_1@665242/master.m3u8
 #EXTINF:-1 tvg-name="Boogle Bollywood (720p)" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Boogle_Bollywood.png" group-title="Music",Boogle Bollywood (720p)
 https://yuppnimrestreammum.akamaized.net/181224/smil:bogglebollywood.smil/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
-#EXTINF:-1 tvg-name="Tabbar Hits (1080p)" tvg-logo="https://dtil.tmsimg.com/assets/s143292_ld_h15_aa.png?lock=720x540" group-title="Music",Tabbar Hits (1080p)
-https://vglivessai.akamaized.net/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/e11b0319-52e8-4190-ab03-3931cc68eac9/index.m3u8
+#EXTINF:-1 tvg-name="group-title="Hindi(हिन्दी)",Zoom" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/TIMESPLAY/LIVECHANNEL/6904ba4039f3b175376a61de/images/LOGO_HD/LOGO_HD_KN-eM9VvQ_ZoomTV1_1.png" group-title="Music",group-title="Hindi(हिन्दी)",Zoom
+http://zoomweblive-lh.akamaihd.net/i/Zoomweb_1@348071/master.m3u8
+#EXTINF:-1 tvg-name="$ ABP Asmita" tvg-logo="https://dtil.tmsimg.com/assets/s142519_ld_h15_aa.png?lock=720x540" group-title="News",$ ABP Asmita
+https://abp-i.akamaihd.net:443/hls/live/765532/abpasmita/master.m3u8
+#EXTINF:-1 tvg-name="$ ABP Majha" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/ABP_Majha_logo.svg/500px-ABP_Majha_logo.svg.png" group-title="News",$ ABP Majha
+https://abp-i.akamaihd.net:443/hls/live/765531/abpmajha/masterhls_80.m3u8
+#EXTINF:-1 tvg-name="$ DD News Low" tvg-logo="http://smumcdnems03.cdnsrv.jio.com/mumsite.cdnsrv.jio.com/jiotv.catchup.cdn.jio.com/dare_images/images/DD_News.png" group-title="News",$ DD News Low
+http://nicls1-lh.akamaihd.net/i/ddnews_1@409133/master.m3u8
+#EXTINF:-1 tvg-name="$ India TV" tvg-logo="http://smumcdnems03.cdnsrv.jio.com/mumsite.cdnsrv.jio.com/jiotv.catchup.cdn.jio.com/dare_images/images/India_TV.png" group-title="News",$ India TV
+http://indiatvnews-lh.akamaihd.net/i/ITV_1@199237/master.m3u8
+#EXTINF:-1 tvg-name="$ India TV" tvg-logo="http://smumcdnems03.cdnsrv.jio.com/mumsite.cdnsrv.jio.com/jiotv.catchup.cdn.jio.com/dare_images/images/India_TV.png" group-title="News",$ India TV
+https://live-indiatvnews.akamaized.net/indiatv-origin/liveabr/indiatv-origin/ITV_1_1@199237/chunks.m3u8
+#EXTINF:-1 tvg-name="$ Kadak Hungama Hits" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Kadak.png" group-title="News",$ Kadak Hungama Hits
+http://linear01hun-lh.akamaihd.net/i/faaduhits_1@660838/master.m3u8
+#EXTINF:-1 tvg-name="$ NDTV INDIA" tvg-logo="https://dtil.tmsimg.com/assets/s157588_ld_h15_aa.png?lock=720x540" group-title="News",$ NDTV INDIA
+http://ndtvstream-lh.akamaihd.net/i/ndtv_india_1@300634/index_736_av-b.m3u8
+#EXTINF:-1 tvg-name="$ NEWS18 Bangla" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/News18%20Bangla.png" group-title="News",$ NEWS18 Bangla
+https://etv-bangla-news.akamaized.net/i/etv_bangla_news_live_1@2289/index_5_av-p.m3u8
+#EXTINF:-1 tvg-name="$ NEWS18 Gujarati" tvg-logo="http://smumcdnems03.cdnsrv.jio.com/mumsite.cdnsrv.jio.com/jiotv.catchup.cdn.jio.com/dare_images/images/ETV_News_Gujarati.png" group-title="News",$ NEWS18 Gujarati
+https://etv-gujrathi-news.akamaized.net/i/etv_gujrathi_news_1@370955/index_5_av-p.m3u8
+#EXTINF:-1 tvg-name="$ NEWS18 India 1 High" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/News18%20India.png" group-title="News",$ NEWS18 India 1 High
+http://ibn7_hls-lh.akamaihd.net/i/ibn7_hls_n_1@174951/index_4.m3u8
+#EXTINF:-1 tvg-name="$ NEWS18 India 1 Med" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/News18%20India.png" group-title="News",$ NEWS18 India 1 Med
+http://ibn7_hls-lh.akamaihd.net/i/ibn7_hls_n_1@174951/index_5.m3u8
+#EXTINF:-1 tvg-name="$ NEWS18 India 2 High" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/News18%20India.png" group-title="News",$ NEWS18 India 2 High
+https://news18india-lh.akamaihd.net/i/ibn7_hls_n_1@174951/index_4_av-p.m3u8?sd=10&rebase=on
+#EXTINF:-1 tvg-name="$ NEWS18 India 2 Med" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/News18%20India.png" group-title="News",$ NEWS18 India 2 Med
+https://news18india-lh.akamaihd.net/i/ibn7_hls_n_1@174951/index_5_av-p.m3u8?sd=10&rebase=on
+#EXTINF:-1 tvg-name="$ NEWS18 Kannada" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/News18%20Kannada.png" group-title="News",$ NEWS18 Kannada
+https://news18kannada-lh.akamaihd.net/i/etv_kannada_news_liv_1@372918/index_5_av-p.m3u8
+#EXTINF:-1 tvg-name="$ NEWS18 LOKMAT High" tvg-logo="https://dtil.tmsimg.com/assets/s143614_ld_h15_aa.png?lock=720x540" group-title="News",$ NEWS18 LOKMAT High
+http://ibn_lokmat_hls-lh.akamaihd.net/i/ibn_lokmat_hls_n_1@178974/index_5.m3u8
+#EXTINF:-1 tvg-name="$ NEWS18 LOKMAT Med" tvg-logo="https://dtil.tmsimg.com/assets/s143614_ld_h15_aa.png?lock=720x540" group-title="News",$ NEWS18 LOKMAT Med
+http://ibn_lokmat_hls-lh.akamaihd.net/i/ibn_lokmat_hls_n_1@178974/index_4.m3u8
+#EXTINF:-1 tvg-name="$ NEWS18 Tamil" group-title="News",$ NEWS18 Tamil
+https://tamil-news18.akamaized.net/i/tamil_news18_hls_1@526595/index_5_av-p.m3u8
+#EXTINF:-1 tvg-name="$ NEWS18 Urdu" tvg-logo="https://i.imgur.com/8xnwMRR.png" group-title="News",$ NEWS18 Urdu
+https://news18urdu-lh.akamaihd.net/i/etv_urdu_live_1@373059/index_5_av-p.m3u8
+#EXTINF:-1 tvg-name="$ NEWS18 Urdu" tvg-logo="https://i.imgur.com/8xnwMRR.png" group-title="News",$ NEWS18 Urdu
+https://etv-urdu.akamaized.net/i/etv_urdu_live_1@373059/index_5_av-p.m3u8
+#EXTINF:-1 tvg-name="$ Times Now HD" tvg-logo="http://smumcdnems03.cdnsrv.jio.com/mumsite.cdnsrv.jio.com/jiotv.catchup.cdn.jio.com/dare_images/images/Times_Now_HD.png" group-title="News",$ Times Now HD
+http://timesnow-lh.akamaihd.net/i/TNHD_1@129288/index_720_av-p.m3u8
+#EXTINF:-1 tvg-name="*~hmac=0692e0d453d321a18884b40c937313ab9d3fc0274423347545f05cd168cebe06&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=ENG&ads content_genre=NEWS&ads channel=3927&ads channel_name=MirrorNow&ads network_name=yupptv&ads user=0" group-title="News",*~hmac=0692e0d453d321a18884b40c937313ab9d3fc0274423347545f05cd168cebe06&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=ENG&ads content_genre=NEWS&ads channel=3927&ads channel_name=MirrorNow&ads network_name=yupptv&ads user=0
+https://vg-timesgroup.akamaized.net/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/73455029-b0f3-4c11-b54d-010c52f42ee9/main.m3u8?hdnts=st=1790632007~exp=1790635607~acl=!*/611d79b11b77e2f571934fd80ca1413453772ac7/73455029-b0f3-4c11-b54d-010c52f42ee9/*!yuppTVCom_5_-1_ff4604d3688146d2_US_172.212.163.230/payload/yuppTVCom_5_-1_ff4604d3688146d2_US_172.212.163.230/*~hmac=0692e0d453d321a18884b40c937313ab9d3fc0274423347545f05cd168cebe06&ads.app_bundle=&ads.app_store_url=&ads.content_livestream=1&ads.language=ENG&ads.content_genre=NEWS&ads.channel=3927&ads.channel_name=MirrorNow&ads.network_name=yupptv&ads.user=0
+#EXTINF:-1 tvg-name="*~hmac=06cbe14b1ea7d009e13d94435f1f67ebef48d4c591b6390d01e48a83f4e46eb6&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=PUN&ads content_genre=NEWS&ads channel=4732&ads channel_name=ZeePunjabHaryanaHimachal&ads network_name=yupptv&ads user=0" group-title="News",*~hmac=06cbe14b1ea7d009e13d94435f1f67ebef48d4c591b6390d01e48a83f4e46eb6&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=PUN&ads content_genre=NEWS&ads channel=4732&ads channel_name=ZeePunjabHaryanaHimachal&ads network_name=yupptv&ads user=0
+https://vg-zeefta.akamaized.net/ptnr-yupptv/title-zeepunjabharyanahima/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/65eed269-2f3a-4dd0-ac89-d18959af28e3/main.m3u8?hdnts=st=1790607783~exp=1790611383~acl=!*/611d79b11b77e2f571934fd80ca1413453772ac7/65eed269-2f3a-4dd0-ac89-d18959af28e3/*!yuppTVCom_5_-1_62b160e06d114425_US_52.182.171.93/payload/yuppTVCom_5_-1_62b160e06d114425_US_52.182.171.93/*~hmac=06cbe14b1ea7d009e13d94435f1f67ebef48d4c591b6390d01e48a83f4e46eb6&ads.app_bundle=&ads.app_store_url=&ads.content_livestream=1&ads.language=PUN&ads.content_genre=NEWS&ads.channel=4732&ads.channel_name=ZeePunjabHaryanaHimachal&ads.network_name=yupptv&ads.user=0
+#EXTINF:-1 tvg-name="*~hmac=18b52b469218b0da1ecc7bd3a80222bd2004a51a5b7ca884294028b003daf0f3&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=ENG&ads content_genre=NEWS&ads channel=3927&ads channel_name=MirrorNow&ads network_name=yupptv&ads user=0" group-title="News",*~hmac=18b52b469218b0da1ecc7bd3a80222bd2004a51a5b7ca884294028b003daf0f3&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=ENG&ads content_genre=NEWS&ads channel=3927&ads channel_name=MirrorNow&ads network_name=yupptv&ads user=0
+https://vg-timesgroup.akamaized.net/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/73455029-b0f3-4c11-b54d-010c52f42ee9/main.m3u8?hdnts=st=1790608176~exp=1790611776~acl=!*/611d79b11b77e2f571934fd80ca1413453772ac7/73455029-b0f3-4c11-b54d-010c52f42ee9/*!yuppTVCom_5_-1_62b160e06d114425_US_52.182.171.93/payload/yuppTVCom_5_-1_62b160e06d114425_US_52.182.171.93/*~hmac=18b52b469218b0da1ecc7bd3a80222bd2004a51a5b7ca884294028b003daf0f3&ads.app_bundle=&ads.app_store_url=&ads.content_livestream=1&ads.language=ENG&ads.content_genre=NEWS&ads.channel=3927&ads.channel_name=MirrorNow&ads.network_name=yupptv&ads.user=0
+#EXTINF:-1 tvg-name="*~hmac=1c6f946a3f2eeefb3f0806704703e811d7295e7f0807ce3417cae3b074cde25b&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=HIN&ads content_genre=NEWS&ads channel=5362&ads channel_name=TimesNowNavbharat&ads network_name=yupptv&ads user=0" group-title="News",*~hmac=1c6f946a3f2eeefb3f0806704703e811d7295e7f0807ce3417cae3b074cde25b&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=HIN&ads content_genre=NEWS&ads channel=5362&ads channel_name=TimesNowNavbharat&ads network_name=yupptv&ads user=0
+https://vg-timesgroup.akamaized.net/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/345a8f3d-c6a7-4214-b519-0494d75b6bf9/main.m3u8?hdnts=st=1790607754~exp=1790611354~acl=!*/611d79b11b77e2f571934fd80ca1413453772ac7/345a8f3d-c6a7-4214-b519-0494d75b6bf9/*!yuppTVCom_5_-1_62b160e06d114425_US_52.182.171.93/payload/yuppTVCom_5_-1_62b160e06d114425_US_52.182.171.93/*~hmac=1c6f946a3f2eeefb3f0806704703e811d7295e7f0807ce3417cae3b074cde25b&ads.app_bundle=&ads.app_store_url=&ads.content_livestream=1&ads.language=HIN&ads.content_genre=NEWS&ads.channel=5362&ads.channel_name=TimesNowNavbharat&ads.network_name=yupptv&ads.user=0
+#EXTINF:-1 tvg-name="*~hmac=1d35fd36e1aefd547573d09b413cff5758b4585365f25517323f0e5030756a11&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=PUN&ads content_genre=NEWS&ads channel=4732&ads channel_name=ZeePunjabHaryanaHimachal&ads network_name=yupptv&ads user=0" group-title="News",*~hmac=1d35fd36e1aefd547573d09b413cff5758b4585365f25517323f0e5030756a11&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=PUN&ads content_genre=NEWS&ads channel=4732&ads channel_name=ZeePunjabHaryanaHimachal&ads network_name=yupptv&ads user=0
+https://vg-zeefta.akamaized.net/ptnr-yupptv/title-zeepunjabharyanahima/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/65eed269-2f3a-4dd0-ac89-d18959af28e3/main.m3u8?hdnts=st=1790601735~exp=1790605335~acl=!*/611d79b11b77e2f571934fd80ca1413453772ac7/65eed269-2f3a-4dd0-ac89-d18959af28e3/*!yuppTVCom_5_-1_322afc248a60481b_US_52.190.141.32/payload/yuppTVCom_5_-1_322afc248a60481b_US_52.190.141.32/*~hmac=1d35fd36e1aefd547573d09b413cff5758b4585365f25517323f0e5030756a11&ads.app_bundle=&ads.app_store_url=&ads.content_livestream=1&ads.language=PUN&ads.content_genre=NEWS&ads.channel=4732&ads.channel_name=ZeePunjabHaryanaHimachal&ads.network_name=yupptv&ads.user=0
+#EXTINF:-1 tvg-name="*~hmac=1ef7563b73a89f7a1bbd40024985df7a12e3c85eaa4fd324df41dd3687131488&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=HIN&ads content_genre=NEWS&ads channel=196&ads channel_name=NDTVINDIA&ads network_name=yupptv&ads user=0" group-title="News",*~hmac=1ef7563b73a89f7a1bbd40024985df7a12e3c85eaa4fd324df41dd3687131488&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=HIN&ads content_genre=NEWS&ads channel=196&ads channel_name=NDTVINDIA&ads network_name=yupptv&ads user=0
+https://vglivessai.akamaized.net/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/4b01f956-8e56-4571-9ac4-6ffcced807ae/master.m3u8?hdnts=st=1790616890~exp=1790620490~acl=!*/611d79b11b77e2f571934fd80ca1413453772ac7/4b01f956-8e56-4571-9ac4-6ffcced807ae/*!yuppTVCom_5_-1_1d762f2df5c2401b_US_132.196.80.211/payload/yuppTVCom_5_-1_1d762f2df5c2401b_US_132.196.80.211/*~hmac=1ef7563b73a89f7a1bbd40024985df7a12e3c85eaa4fd324df41dd3687131488&ads.app_bundle=&ads.app_store_url=&ads.content_livestream=1&ads.language=HIN&ads.content_genre=NEWS&ads.channel=196&ads.channel_name=NDTVINDIA&ads.network_name=yupptv&ads.user=0
+#EXTINF:-1 tvg-name="*~hmac=2286d5d1993545868d90e1bd3b3d4158ea537dfed51bfbf25520915b445654b6&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=ENG&ads content_genre=NEWS&ads channel=3941&ads channel_name=Wion&ads network_name=yupptv&ads user=0" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/WION.png" group-title="News",*~hmac=2286d5d1993545868d90e1bd3b3d4158ea537dfed51bfbf25520915b445654b6&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=ENG&ads content_genre=NEWS&ads channel=3941&ads channel_name=Wion&ads network_name=yupptv&ads user=0
+https://vg-zeefta.akamaized.net/ptnr-yupptv/title-wion/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/20c3c0d9-0256-43fe-bca6-70fdd490b957/main.m3u8?hdnts=st=1790632007~exp=1790635607~acl=!*/611d79b11b77e2f571934fd80ca1413453772ac7/20c3c0d9-0256-43fe-bca6-70fdd490b957/*!yuppTVCom_5_-1_ff4604d3688146d2_US_172.212.163.230/payload/yuppTVCom_5_-1_ff4604d3688146d2_US_172.212.163.230/*~hmac=2286d5d1993545868d90e1bd3b3d4158ea537dfed51bfbf25520915b445654b6&ads.app_bundle=&ads.app_store_url=&ads.content_livestream=1&ads.language=ENG&ads.content_genre=NEWS&ads.channel=3941&ads.channel_name=Wion&ads.network_name=yupptv&ads.user=0
+#EXTINF:-1 tvg-name="*~hmac=22af3aa710fc69302d6331a670cb92ee713579d4cc0557654672987646ac4dbb&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=BEN&ads content_genre=NEWS&ads channel=6242&ads channel_name=RepublicBangla&ads network_name=yupptv&ads user=0" group-title="News",*~hmac=22af3aa710fc69302d6331a670cb92ee713579d4cc0557654672987646ac4dbb&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=BEN&ads content_genre=NEWS&ads channel=6242&ads channel_name=RepublicBangla&ads network_name=yupptv&ads user=0
+https://vg-republictvlive.akamaized.net/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/73776a5e-e64c-44a4-9199-9e7e21e940fc/playlist.m3u8?hdnts=st=1790608176~exp=1790611776~acl=!*/611d79b11b77e2f571934fd80ca1413453772ac7/73776a5e-e64c-44a4-9199-9e7e21e940fc/*!yuppTVCom_5_-1_62b160e06d114425_US_52.182.171.93/payload/yuppTVCom_5_-1_62b160e06d114425_US_52.182.171.93/*~hmac=22af3aa710fc69302d6331a670cb92ee713579d4cc0557654672987646ac4dbb&ads.app_bundle=&ads.app_store_url=&ads.content_livestream=1&ads.language=BEN&ads.content_genre=NEWS&ads.channel=6242&ads.channel_name=RepublicBangla&ads.network_name=yupptv&ads.user=0
+#EXTINF:-1 tvg-name="*~hmac=24b65498cb80c3de80cba045faa2cd114ce2fe39deb37f7b2cecec7acdd20a0e&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=BEN&ads content_genre=NEWS&ads channel=7173&ads channel_name=RplusNews&ads network_name=yupptv&ads user=0" group-title="News",*~hmac=24b65498cb80c3de80cba045faa2cd114ce2fe39deb37f7b2cecec7acdd20a0e&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=BEN&ads content_genre=NEWS&ads channel=7173&ads channel_name=RplusNews&ads network_name=yupptv&ads user=0
+https://vglivessai.akamaized.net/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/e5dcc9dc-3a33-4b19-a361-5a5b3aa022f7/index.m3u8?hdnts=st=1790624956~exp=1790628556~acl=!*/611d79b11b77e2f571934fd80ca1413453772ac7/e5dcc9dc-3a33-4b19-a361-5a5b3aa022f7/*!yuppTVCom_5_-1_7c89178da3874ab8_US_172.184.209.147/payload/yuppTVCom_5_-1_7c89178da3874ab8_US_172.184.209.147/*~hmac=24b65498cb80c3de80cba045faa2cd114ce2fe39deb37f7b2cecec7acdd20a0e&ads.app_bundle=&ads.app_store_url=&ads.content_livestream=1&ads.language=BEN&ads.content_genre=NEWS&ads.channel=7173&ads.channel_name=RplusNews&ads.network_name=yupptv&ads.user=0
+#EXTINF:-1 tvg-name="*~hmac=2649e4a1410272fec67b832e6af9fc1e365a6d6d4b2fa9f36d6d1f4590d689c4&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=ENG&ads content_genre=NEWS&ads channel=3927&ads channel_name=MirrorNow&ads network_name=yupptv&ads user=0" group-title="News",*~hmac=2649e4a1410272fec67b832e6af9fc1e365a6d6d4b2fa9f36d6d1f4590d689c4&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=ENG&ads content_genre=NEWS&ads channel=3927&ads channel_name=MirrorNow&ads network_name=yupptv&ads user=0
+https://vg-timesgroup.akamaized.net/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/73455029-b0f3-4c11-b54d-010c52f42ee9/main.m3u8?hdnts=st=1790616890~exp=1790620490~acl=!*/611d79b11b77e2f571934fd80ca1413453772ac7/73455029-b0f3-4c11-b54d-010c52f42ee9/*!yuppTVCom_5_-1_1d762f2df5c2401b_US_132.196.80.211/payload/yuppTVCom_5_-1_1d762f2df5c2401b_US_132.196.80.211/*~hmac=2649e4a1410272fec67b832e6af9fc1e365a6d6d4b2fa9f36d6d1f4590d689c4&ads.app_bundle=&ads.app_store_url=&ads.content_livestream=1&ads.language=ENG&ads.content_genre=NEWS&ads.channel=3927&ads.channel_name=MirrorNow&ads.network_name=yupptv&ads.user=0
+#EXTINF:-1 tvg-name="*~hmac=2946273d9794ae3c207c5702415e7a0b3fb27c31baaabbe4677530b6c57f91b7&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=HIN&ads content_genre=NEWS&ads channel=4923&ads channel_name=RepublicBharat&ads network_name=yupptv&ads user=0" group-title="News",*~hmac=2946273d9794ae3c207c5702415e7a0b3fb27c31baaabbe4677530b6c57f91b7&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=HIN&ads content_genre=NEWS&ads channel=4923&ads channel_name=RepublicBharat&ads network_name=yupptv&ads user=0
+https://vg-republictvlive.akamaized.net/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/c23808ea-f684-43b3-a586-f4dfa554b55a/playlist.m3u8?hdnts=st=1790624955~exp=1790628555~acl=!*/611d79b11b77e2f571934fd80ca1413453772ac7/c23808ea-f684-43b3-a586-f4dfa554b55a/*!yuppTVCom_5_-1_7c89178da3874ab8_US_172.184.209.147/payload/yuppTVCom_5_-1_7c89178da3874ab8_US_172.184.209.147/*~hmac=2946273d9794ae3c207c5702415e7a0b3fb27c31baaabbe4677530b6c57f91b7&ads.app_bundle=&ads.app_store_url=&ads.content_livestream=1&ads.language=HIN&ads.content_genre=NEWS&ads.channel=4923&ads.channel_name=RepublicBharat&ads.network_name=yupptv&ads.user=0
+#EXTINF:-1 tvg-name="*~hmac=3fb2c69dde51acfe4f3dd78c3f1266abcdaa28dd4fd3a1980cb3a4bc7fb973b1&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=HIN&ads content_genre=NEWS&ads channel=6377&ads channel_name=TV9Bharatvarsh&ads network_name=yupptv&ads user=0" group-title="News",*~hmac=3fb2c69dde51acfe4f3dd78c3f1266abcdaa28dd4fd3a1980cb3a4bc7fb973b1&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=HIN&ads content_genre=NEWS&ads channel=6377&ads channel_name=TV9Bharatvarsh&ads network_name=yupptv&ads user=0
+https://vglivessai.akamaized.net/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/6e3f8003-753c-4419-a87f-abe9bdaff730/main.m3u8?hdnts=st=1790601222~exp=1790604822~acl=!*/611d79b11b77e2f571934fd80ca1413453772ac7/6e3f8003-753c-4419-a87f-abe9bdaff730/*!yuppTVCom_5_-1_322afc248a60481b_US_52.190.141.32/payload/yuppTVCom_5_-1_322afc248a60481b_US_52.190.141.32/*~hmac=3fb2c69dde51acfe4f3dd78c3f1266abcdaa28dd4fd3a1980cb3a4bc7fb973b1&ads.app_bundle=&ads.app_store_url=&ads.content_livestream=1&ads.language=HIN&ads.content_genre=NEWS&ads.channel=6377&ads.channel_name=TV9Bharatvarsh&ads.network_name=yupptv&ads.user=0
+#EXTINF:-1 tvg-name="*~hmac=451944305a0bac884ba9ddd28ea16b95667c4a82aeaeec2fed07607999e05bd1&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=BEN&ads content_genre=NEWS&ads channel=6242&ads channel_name=RepublicBangla&ads network_name=yupptv&ads user=0" group-title="News",*~hmac=451944305a0bac884ba9ddd28ea16b95667c4a82aeaeec2fed07607999e05bd1&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=BEN&ads content_genre=NEWS&ads channel=6242&ads channel_name=RepublicBangla&ads network_name=yupptv&ads user=0
+https://vg-republictvlive.akamaized.net/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/73776a5e-e64c-44a4-9199-9e7e21e940fc/playlist.m3u8?hdnts=st=1790624955~exp=1790628555~acl=!*/611d79b11b77e2f571934fd80ca1413453772ac7/73776a5e-e64c-44a4-9199-9e7e21e940fc/*!yuppTVCom_5_-1_7c89178da3874ab8_US_172.184.209.147/payload/yuppTVCom_5_-1_7c89178da3874ab8_US_172.184.209.147/*~hmac=451944305a0bac884ba9ddd28ea16b95667c4a82aeaeec2fed07607999e05bd1&ads.app_bundle=&ads.app_store_url=&ads.content_livestream=1&ads.language=BEN&ads.content_genre=NEWS&ads.channel=6242&ads.channel_name=RepublicBangla&ads.network_name=yupptv&ads.user=0
+#EXTINF:-1 tvg-name="*~hmac=456344960c15441bd5fa7ccc7b18fcbecbd1f033c2f5dfff4f90e85db0fef7f4&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=HIN&ads content_genre=NEWS&ads channel=196&ads channel_name=NDTVINDIA&ads network_name=yupptv&ads user=0" group-title="News",*~hmac=456344960c15441bd5fa7ccc7b18fcbecbd1f033c2f5dfff4f90e85db0fef7f4&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=HIN&ads content_genre=NEWS&ads channel=196&ads channel_name=NDTVINDIA&ads network_name=yupptv&ads user=0
+https://vglivessai.akamaized.net/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/4b01f956-8e56-4571-9ac4-6ffcced807ae/master.m3u8?hdnts=st=1790632007~exp=1790635607~acl=!*/611d79b11b77e2f571934fd80ca1413453772ac7/4b01f956-8e56-4571-9ac4-6ffcced807ae/*!yuppTVCom_5_-1_ff4604d3688146d2_US_172.212.163.230/payload/yuppTVCom_5_-1_ff4604d3688146d2_US_172.212.163.230/*~hmac=456344960c15441bd5fa7ccc7b18fcbecbd1f033c2f5dfff4f90e85db0fef7f4&ads.app_bundle=&ads.app_store_url=&ads.content_livestream=1&ads.language=HIN&ads.content_genre=NEWS&ads.channel=196&ads.channel_name=NDTVINDIA&ads.network_name=yupptv&ads.user=0
+#EXTINF:-1 tvg-name="*~hmac=488b6bb67271b4080f3f02afcb646106fbb45a461309958fd915261271c72b99&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=HIN&ads content_genre=NEWS&ads channel=5362&ads channel_name=TimesNowNavbharat&ads network_name=yupptv&ads user=0" group-title="News",*~hmac=488b6bb67271b4080f3f02afcb646106fbb45a461309958fd915261271c72b99&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=HIN&ads content_genre=NEWS&ads channel=5362&ads channel_name=TimesNowNavbharat&ads network_name=yupptv&ads user=0
+https://vg-timesgroup.akamaized.net/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/345a8f3d-c6a7-4214-b519-0494d75b6bf9/main.m3u8?hdnts=st=1790601707~exp=1790605307~acl=!*/611d79b11b77e2f571934fd80ca1413453772ac7/345a8f3d-c6a7-4214-b519-0494d75b6bf9/*!yuppTVCom_5_-1_322afc248a60481b_US_52.190.141.32/payload/yuppTVCom_5_-1_322afc248a60481b_US_52.190.141.32/*~hmac=488b6bb67271b4080f3f02afcb646106fbb45a461309958fd915261271c72b99&ads.app_bundle=&ads.app_store_url=&ads.content_livestream=1&ads.language=HIN&ads.content_genre=NEWS&ads.channel=5362&ads.channel_name=TimesNowNavbharat&ads.network_name=yupptv&ads.user=0
+#EXTINF:-1 tvg-name="*~hmac=4c08f8a1a683c1780d515487916472ba4c41566e4c3a006110729f9614e5483d&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=ENG&ads content_genre=NEWS&ads channel=11&ads channel_name=IndiaTodayNews&ads network_name=yupptv&ads user=0" group-title="News",*~hmac=4c08f8a1a683c1780d515487916472ba4c41566e4c3a006110729f9614e5483d&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=ENG&ads content_genre=NEWS&ads channel=11&ads channel_name=IndiaTodayNews&ads network_name=yupptv&ads user=0
+https://vglivessai.akamaized.net/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/8343296c-5b01-4047-aae9-92749ff4268b/master.m3u8?hdnts=st=1790601707~exp=1790605307~acl=!*/611d79b11b77e2f571934fd80ca1413453772ac7/8343296c-5b01-4047-aae9-92749ff4268b/*!yuppTVCom_5_-1_322afc248a60481b_US_52.190.141.32/payload/yuppTVCom_5_-1_322afc248a60481b_US_52.190.141.32/*~hmac=4c08f8a1a683c1780d515487916472ba4c41566e4c3a006110729f9614e5483d&ads.app_bundle=&ads.app_store_url=&ads.content_livestream=1&ads.language=ENG&ads.content_genre=NEWS&ads.channel=11&ads.channel_name=IndiaTodayNews&ads.network_name=yupptv&ads.user=0
+#EXTINF:-1 tvg-name="*~hmac=4ccfd5c930ac0844bbeac8c283cefdf0b005f8fb8a31c5cde7723db8cc62611e&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=BEN&ads content_genre=NEWS&ads channel=7173&ads channel_name=RplusNews&ads network_name=yupptv&ads user=0" group-title="News",*~hmac=4ccfd5c930ac0844bbeac8c283cefdf0b005f8fb8a31c5cde7723db8cc62611e&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=BEN&ads content_genre=NEWS&ads channel=7173&ads channel_name=RplusNews&ads network_name=yupptv&ads user=0
+https://vglivessai.akamaized.net/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/e5dcc9dc-3a33-4b19-a361-5a5b3aa022f7/index.m3u8?hdnts=st=1790608176~exp=1790611776~acl=!*/611d79b11b77e2f571934fd80ca1413453772ac7/e5dcc9dc-3a33-4b19-a361-5a5b3aa022f7/*!yuppTVCom_5_-1_62b160e06d114425_US_52.182.171.93/payload/yuppTVCom_5_-1_62b160e06d114425_US_52.182.171.93/*~hmac=4ccfd5c930ac0844bbeac8c283cefdf0b005f8fb8a31c5cde7723db8cc62611e&ads.app_bundle=&ads.app_store_url=&ads.content_livestream=1&ads.language=BEN&ads.content_genre=NEWS&ads.channel=7173&ads.channel_name=RplusNews&ads.network_name=yupptv&ads.user=0
+#EXTINF:-1 tvg-name="*~hmac=4fe8c95cb431dacf254a36d70d2513f93b298f12d35c89938f38dd91fe02f63b&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=HIN&ads content_genre=NEWS&ads channel=6377&ads channel_name=TV9Bharatvarsh&ads network_name=yupptv&ads user=0" group-title="News",*~hmac=4fe8c95cb431dacf254a36d70d2513f93b298f12d35c89938f38dd91fe02f63b&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=HIN&ads content_genre=NEWS&ads channel=6377&ads channel_name=TV9Bharatvarsh&ads network_name=yupptv&ads user=0
+https://vglivessai.akamaized.net/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/6e3f8003-753c-4419-a87f-abe9bdaff730/main.m3u8?hdnts=st=1790632007~exp=1790635607~acl=!*/611d79b11b77e2f571934fd80ca1413453772ac7/6e3f8003-753c-4419-a87f-abe9bdaff730/*!yuppTVCom_5_-1_ff4604d3688146d2_US_172.212.163.230/payload/yuppTVCom_5_-1_ff4604d3688146d2_US_172.212.163.230/*~hmac=4fe8c95cb431dacf254a36d70d2513f93b298f12d35c89938f38dd91fe02f63b&ads.app_bundle=&ads.app_store_url=&ads.content_livestream=1&ads.language=HIN&ads.content_genre=NEWS&ads.channel=6377&ads.channel_name=TV9Bharatvarsh&ads.network_name=yupptv&ads.user=0
+#EXTINF:-1 tvg-name="*~hmac=5a6920c8afe30aa2dec7cd3c0d84f8d2050b259cf781ec139532ffb2a57d1afb&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=HIN&ads content_genre=NEWS&ads channel=6377&ads channel_name=TV9Bharatvarsh&ads network_name=yupptv&ads user=0" group-title="News",*~hmac=5a6920c8afe30aa2dec7cd3c0d84f8d2050b259cf781ec139532ffb2a57d1afb&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=HIN&ads content_genre=NEWS&ads channel=6377&ads channel_name=TV9Bharatvarsh&ads network_name=yupptv&ads user=0
+https://vglivessai.akamaized.net/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/6e3f8003-753c-4419-a87f-abe9bdaff730/main.m3u8?hdnts=st=1790616890~exp=1790620490~acl=!*/611d79b11b77e2f571934fd80ca1413453772ac7/6e3f8003-753c-4419-a87f-abe9bdaff730/*!yuppTVCom_5_-1_1d762f2df5c2401b_US_132.196.80.211/payload/yuppTVCom_5_-1_1d762f2df5c2401b_US_132.196.80.211/*~hmac=5a6920c8afe30aa2dec7cd3c0d84f8d2050b259cf781ec139532ffb2a57d1afb&ads.app_bundle=&ads.app_store_url=&ads.content_livestream=1&ads.language=HIN&ads.content_genre=NEWS&ads.channel=6377&ads.channel_name=TV9Bharatvarsh&ads.network_name=yupptv&ads.user=0
+#EXTINF:-1 tvg-name="*~hmac=6c94d0e73f026179c0da43fd479cb77deb954635f2e4d433c0e935cc74de0da8&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=BEN&ads content_genre=NEWS&ads channel=7173&ads channel_name=RplusNews&ads network_name=yupptv&ads user=0" group-title="News",*~hmac=6c94d0e73f026179c0da43fd479cb77deb954635f2e4d433c0e935cc74de0da8&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=BEN&ads content_genre=NEWS&ads channel=7173&ads channel_name=RplusNews&ads network_name=yupptv&ads user=0
+https://vglivessai.akamaized.net/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/e5dcc9dc-3a33-4b19-a361-5a5b3aa022f7/index.m3u8?hdnts=st=1790632007~exp=1790635607~acl=!*/611d79b11b77e2f571934fd80ca1413453772ac7/e5dcc9dc-3a33-4b19-a361-5a5b3aa022f7/*!yuppTVCom_5_-1_ff4604d3688146d2_US_172.212.163.230/payload/yuppTVCom_5_-1_ff4604d3688146d2_US_172.212.163.230/*~hmac=6c94d0e73f026179c0da43fd479cb77deb954635f2e4d433c0e935cc74de0da8&ads.app_bundle=&ads.app_store_url=&ads.content_livestream=1&ads.language=BEN&ads.content_genre=NEWS&ads.channel=7173&ads.channel_name=RplusNews&ads.network_name=yupptv&ads.user=0
+#EXTINF:-1 tvg-name="*~hmac=7bd8237894eb3a9eb8c4e51291266a9dc0046da8f4eae35ff541c414c2685ce8&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=ENG&ads content_genre=NEWS&ads channel=4922&ads channel_name=RepublicTV&ads network_name=yupptv&ads user=0" group-title="News",*~hmac=7bd8237894eb3a9eb8c4e51291266a9dc0046da8f4eae35ff541c414c2685ce8&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=ENG&ads content_genre=NEWS&ads channel=4922&ads channel_name=RepublicTV&ads network_name=yupptv&ads user=0
+https://vg-republictvlive.akamaized.net/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/575d72be-86b2-4bb7-bd33-419fdff282e7/playlist.m3u8?hdnts=st=1790631991~exp=1790635591~acl=!*/611d79b11b77e2f571934fd80ca1413453772ac7/575d72be-86b2-4bb7-bd33-419fdff282e7/*!yuppTVCom_5_-1_ff4604d3688146d2_US_172.212.163.230/payload/yuppTVCom_5_-1_ff4604d3688146d2_US_172.212.163.230/*~hmac=7bd8237894eb3a9eb8c4e51291266a9dc0046da8f4eae35ff541c414c2685ce8&ads.app_bundle=&ads.app_store_url=&ads.content_livestream=1&ads.language=ENG&ads.content_genre=NEWS&ads.channel=4922&ads.channel_name=RepublicTV&ads.network_name=yupptv&ads.user=0
+#EXTINF:-1 tvg-name="*~hmac=7ff2925d7e872d06b914c33569fd9259a617b5f52baa3a014e4e0d2e0c9a98f0&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=HIN&ads content_genre=NEWS&ads channel=196&ads channel_name=NDTVINDIA&ads network_name=yupptv&ads user=0" group-title="News",*~hmac=7ff2925d7e872d06b914c33569fd9259a617b5f52baa3a014e4e0d2e0c9a98f0&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=HIN&ads content_genre=NEWS&ads channel=196&ads channel_name=NDTVINDIA&ads network_name=yupptv&ads user=0
+https://vglivessai.akamaized.net/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/4b01f956-8e56-4571-9ac4-6ffcced807ae/master.m3u8?hdnts=st=1790601223~exp=1790604823~acl=!*/611d79b11b77e2f571934fd80ca1413453772ac7/4b01f956-8e56-4571-9ac4-6ffcced807ae/*!yuppTVCom_5_-1_322afc248a60481b_US_52.190.141.32/payload/yuppTVCom_5_-1_322afc248a60481b_US_52.190.141.32/*~hmac=7ff2925d7e872d06b914c33569fd9259a617b5f52baa3a014e4e0d2e0c9a98f0&ads.app_bundle=&ads.app_store_url=&ads.content_livestream=1&ads.language=HIN&ads.content_genre=NEWS&ads.channel=196&ads.channel_name=NDTVINDIA&ads.network_name=yupptv&ads.user=0
+#EXTINF:-1 tvg-name="*~hmac=84492ccef52d8f23d3b53a7140eb37220a064a98bd1e237d000ed0da75075f71&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=ENG&ads content_genre=NEWS&ads channel=11&ads channel_name=IndiaTodayNews&ads network_name=yupptv&ads user=0" group-title="News",*~hmac=84492ccef52d8f23d3b53a7140eb37220a064a98bd1e237d000ed0da75075f71&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=ENG&ads content_genre=NEWS&ads channel=11&ads channel_name=IndiaTodayNews&ads network_name=yupptv&ads user=0
+https://vglivessai.akamaized.net/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/8343296c-5b01-4047-aae9-92749ff4268b/master.m3u8?hdnts=st=1790607754~exp=1790611354~acl=!*/611d79b11b77e2f571934fd80ca1413453772ac7/8343296c-5b01-4047-aae9-92749ff4268b/*!yuppTVCom_5_-1_62b160e06d114425_US_52.182.171.93/payload/yuppTVCom_5_-1_62b160e06d114425_US_52.182.171.93/*~hmac=84492ccef52d8f23d3b53a7140eb37220a064a98bd1e237d000ed0da75075f71&ads.app_bundle=&ads.app_store_url=&ads.content_livestream=1&ads.language=ENG&ads.content_genre=NEWS&ads.channel=11&ads.channel_name=IndiaTodayNews&ads.network_name=yupptv&ads.user=0
+#EXTINF:-1 tvg-name="*~hmac=866ffc7e5e817a9b1a84e67257d4fc90c20bef0ad629402b3f7c6a4f2703fc2c&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=HIN&ads content_genre=NEWS&ads channel=6377&ads channel_name=TV9Bharatvarsh&ads network_name=yupptv&ads user=0" group-title="News",*~hmac=866ffc7e5e817a9b1a84e67257d4fc90c20bef0ad629402b3f7c6a4f2703fc2c&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=HIN&ads content_genre=NEWS&ads channel=6377&ads channel_name=TV9Bharatvarsh&ads network_name=yupptv&ads user=0
+https://vglivessai.akamaized.net/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/6e3f8003-753c-4419-a87f-abe9bdaff730/main.m3u8?hdnts=st=1790608176~exp=1790611776~acl=!*/611d79b11b77e2f571934fd80ca1413453772ac7/6e3f8003-753c-4419-a87f-abe9bdaff730/*!yuppTVCom_5_-1_62b160e06d114425_US_52.182.171.93/payload/yuppTVCom_5_-1_62b160e06d114425_US_52.182.171.93/*~hmac=866ffc7e5e817a9b1a84e67257d4fc90c20bef0ad629402b3f7c6a4f2703fc2c&ads.app_bundle=&ads.app_store_url=&ads.content_livestream=1&ads.language=HIN&ads.content_genre=NEWS&ads.channel=6377&ads.channel_name=TV9Bharatvarsh&ads.network_name=yupptv&ads.user=0
+#EXTINF:-1 tvg-name="*~hmac=8cc85b4903ea68613010fe21940c67cf3953ed405f4100bf1370868592ed84fd&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=HIN&ads content_genre=NEWS&ads channel=2274&ads channel_name=ABPNews&ads network_name=yupptv&ads user=0" group-title="News",*~hmac=8cc85b4903ea68613010fe21940c67cf3953ed405f4100bf1370868592ed84fd&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=HIN&ads content_genre=NEWS&ads channel=2274&ads channel_name=ABPNews&ads network_name=yupptv&ads user=0
+https://vglivessai.akamaized.net/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/64f17280-e39d-4020-9a0f-bb39b6903e33/master.m3u8?hdnts=st=1790608159~exp=1790611759~acl=!*/611d79b11b77e2f571934fd80ca1413453772ac7/64f17280-e39d-4020-9a0f-bb39b6903e33/*!yuppTVCom_5_-1_62b160e06d114425_US_52.182.171.93/payload/yuppTVCom_5_-1_62b160e06d114425_US_52.182.171.93/*~hmac=8cc85b4903ea68613010fe21940c67cf3953ed405f4100bf1370868592ed84fd&ads.app_bundle=&ads.app_store_url=&ads.content_livestream=1&ads.language=HIN&ads.content_genre=NEWS&ads.channel=2274&ads.channel_name=ABPNews&ads.network_name=yupptv&ads.user=0
+#EXTINF:-1 tvg-name="*~hmac=90f54fa402056299a27f9698131b5df2ce4f62aea083b9263c63466ca6538f6c&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=ENG&ads content_genre=NEWS&ads channel=3941&ads channel_name=Wion&ads network_name=yupptv&ads user=0" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/WION.png" group-title="News",*~hmac=90f54fa402056299a27f9698131b5df2ce4f62aea083b9263c63466ca6538f6c&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=ENG&ads content_genre=NEWS&ads channel=3941&ads channel_name=Wion&ads network_name=yupptv&ads user=0
+https://vg-zeefta.akamaized.net/ptnr-yupptv/title-wion/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/20c3c0d9-0256-43fe-bca6-70fdd490b957/main.m3u8?hdnts=st=1790601224~exp=1790604824~acl=!*/611d79b11b77e2f571934fd80ca1413453772ac7/20c3c0d9-0256-43fe-bca6-70fdd490b957/*!yuppTVCom_5_-1_322afc248a60481b_US_52.190.141.32/payload/yuppTVCom_5_-1_322afc248a60481b_US_52.190.141.32/*~hmac=90f54fa402056299a27f9698131b5df2ce4f62aea083b9263c63466ca6538f6c&ads.app_bundle=&ads.app_store_url=&ads.content_livestream=1&ads.language=ENG&ads.content_genre=NEWS&ads.channel=3941&ads.channel_name=Wion&ads.network_name=yupptv&ads.user=0
+#EXTINF:-1 tvg-name="*~hmac=9555cf55459687763c60030d5adbbce9fd6413c110be7b6dff8ff129f10889aa&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=HIN&ads content_genre=NEWS&ads channel=6377&ads channel_name=TV9Bharatvarsh&ads network_name=yupptv&ads user=0" group-title="News",*~hmac=9555cf55459687763c60030d5adbbce9fd6413c110be7b6dff8ff129f10889aa&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=HIN&ads content_genre=NEWS&ads channel=6377&ads channel_name=TV9Bharatvarsh&ads network_name=yupptv&ads user=0
+https://vglivessai.akamaized.net/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/6e3f8003-753c-4419-a87f-abe9bdaff730/main.m3u8?hdnts=st=1790619272~exp=1790622872~acl=!*/611d79b11b77e2f571934fd80ca1413453772ac7/6e3f8003-753c-4419-a87f-abe9bdaff730/*!yuppTVCom_5_-1_14a89d6ec4d04aab_US_52.153.130.145/payload/yuppTVCom_5_-1_14a89d6ec4d04aab_US_52.153.130.145/*~hmac=9555cf55459687763c60030d5adbbce9fd6413c110be7b6dff8ff129f10889aa&ads.app_bundle=&ads.app_store_url=&ads.content_livestream=1&ads.language=HIN&ads.content_genre=NEWS&ads.channel=6377&ads.channel_name=TV9Bharatvarsh&ads.network_name=yupptv&ads.user=0
+#EXTINF:-1 tvg-name="*~hmac=9ac41f50eb4c9122a2f8366bdecf360b6ad7cbe675a402151bdbf543954b070d&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=ENG&ads content_genre=NEWS&ads channel=4922&ads channel_name=RepublicTV&ads network_name=yupptv&ads user=0" group-title="News",*~hmac=9ac41f50eb4c9122a2f8366bdecf360b6ad7cbe675a402151bdbf543954b070d&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=ENG&ads content_genre=NEWS&ads channel=4922&ads channel_name=RepublicTV&ads network_name=yupptv&ads user=0
+https://vg-republictvlive.akamaized.net/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/575d72be-86b2-4bb7-bd33-419fdff282e7/playlist.m3u8?hdnts=st=1790619255~exp=1790622855~acl=!*/611d79b11b77e2f571934fd80ca1413453772ac7/575d72be-86b2-4bb7-bd33-419fdff282e7/*!yuppTVCom_5_-1_14a89d6ec4d04aab_US_52.153.130.145/payload/yuppTVCom_5_-1_14a89d6ec4d04aab_US_52.153.130.145/*~hmac=9ac41f50eb4c9122a2f8366bdecf360b6ad7cbe675a402151bdbf543954b070d&ads.app_bundle=&ads.app_store_url=&ads.content_livestream=1&ads.language=ENG&ads.content_genre=NEWS&ads.channel=4922&ads.channel_name=RepublicTV&ads.network_name=yupptv&ads.user=0
+#EXTINF:-1 tvg-name="*~hmac=9b78613a25ef7534f23d28541130af67ea429d606b8620a07a742680d46a5064&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=HIN&ads content_genre=NEWS&ads channel=6377&ads channel_name=TV9Bharatvarsh&ads network_name=yupptv&ads user=0" group-title="News",*~hmac=9b78613a25ef7534f23d28541130af67ea429d606b8620a07a742680d46a5064&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=HIN&ads content_genre=NEWS&ads channel=6377&ads channel_name=TV9Bharatvarsh&ads network_name=yupptv&ads user=0
+https://vglivessai.akamaized.net/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/6e3f8003-753c-4419-a87f-abe9bdaff730/main.m3u8?hdnts=st=1790624972~exp=1790628572~acl=!*/611d79b11b77e2f571934fd80ca1413453772ac7/6e3f8003-753c-4419-a87f-abe9bdaff730/*!yuppTVCom_5_-1_7c89178da3874ab8_US_172.184.209.147/payload/yuppTVCom_5_-1_7c89178da3874ab8_US_172.184.209.147/*~hmac=9b78613a25ef7534f23d28541130af67ea429d606b8620a07a742680d46a5064&ads.app_bundle=&ads.app_store_url=&ads.content_livestream=1&ads.language=HIN&ads.content_genre=NEWS&ads.channel=6377&ads.channel_name=TV9Bharatvarsh&ads.network_name=yupptv&ads.user=0
+#EXTINF:-1 tvg-name="*~hmac=a015adc6dddfa23f9d6bfd49e4c3bd7e43a426e37dd2c23bc41a6e4972d12ff7&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=ENG&ads content_genre=NEWS&ads channel=4922&ads channel_name=RepublicTV&ads network_name=yupptv&ads user=0" group-title="News",*~hmac=a015adc6dddfa23f9d6bfd49e4c3bd7e43a426e37dd2c23bc41a6e4972d12ff7&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=ENG&ads content_genre=NEWS&ads channel=4922&ads channel_name=RepublicTV&ads network_name=yupptv&ads user=0
+https://vg-republictvlive.akamaized.net/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/575d72be-86b2-4bb7-bd33-419fdff282e7/playlist.m3u8?hdnts=st=1790616872~exp=1790620472~acl=!*/611d79b11b77e2f571934fd80ca1413453772ac7/575d72be-86b2-4bb7-bd33-419fdff282e7/*!yuppTVCom_5_-1_1d762f2df5c2401b_US_132.196.80.211/payload/yuppTVCom_5_-1_1d762f2df5c2401b_US_132.196.80.211/*~hmac=a015adc6dddfa23f9d6bfd49e4c3bd7e43a426e37dd2c23bc41a6e4972d12ff7&ads.app_bundle=&ads.app_store_url=&ads.content_livestream=1&ads.language=ENG&ads.content_genre=NEWS&ads.channel=4922&ads.channel_name=RepublicTV&ads.network_name=yupptv&ads.user=0
+#EXTINF:-1 tvg-name="*~hmac=a140e15196c63319d25909ede30442407ac5133a99f23f96e96ee6e146c39cb7&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=HIN&ads content_genre=NEWS&ads channel=7252&ads channel_name=Media9News&ads network_name=yupptv&ads user=0" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Media9.png" group-title="News",*~hmac=a140e15196c63319d25909ede30442407ac5133a99f23f96e96ee6e146c39cb7&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=HIN&ads content_genre=NEWS&ads channel=7252&ads channel_name=Media9News&ads network_name=yupptv&ads user=0
+https://vglivessai.akamaized.net/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/3a24ad7f-632f-47f2-acdd-6409bd2e9ec2/playlist.m3u8?hdnts=st=1790607754~exp=1790611354~acl=!*/611d79b11b77e2f571934fd80ca1413453772ac7/3a24ad7f-632f-47f2-acdd-6409bd2e9ec2/*!yuppTVCom_5_-1_62b160e06d114425_US_52.182.171.93/payload/yuppTVCom_5_-1_62b160e06d114425_US_52.182.171.93/*~hmac=a140e15196c63319d25909ede30442407ac5133a99f23f96e96ee6e146c39cb7&ads.app_bundle=&ads.app_store_url=&ads.content_livestream=1&ads.language=HIN&ads.content_genre=NEWS&ads.channel=7252&ads.channel_name=Media9News&ads.network_name=yupptv&ads.user=0
+#EXTINF:-1 tvg-name="*~hmac=b72e582e173d1309c162e9db425f7a5b9630ecd995c6d232f8ec908747920582&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=HIN&ads content_genre=NEWS&ads channel=4923&ads channel_name=RepublicBharat&ads network_name=yupptv&ads user=0" group-title="News",*~hmac=b72e582e173d1309c162e9db425f7a5b9630ecd995c6d232f8ec908747920582&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=HIN&ads content_genre=NEWS&ads channel=4923&ads channel_name=RepublicBharat&ads network_name=yupptv&ads user=0
+https://vg-republictvlive.akamaized.net/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/c23808ea-f684-43b3-a586-f4dfa554b55a/playlist.m3u8?hdnts=st=1790608159~exp=1790611759~acl=!*/611d79b11b77e2f571934fd80ca1413453772ac7/c23808ea-f684-43b3-a586-f4dfa554b55a/*!yuppTVCom_5_-1_62b160e06d114425_US_52.182.171.93/payload/yuppTVCom_5_-1_62b160e06d114425_US_52.182.171.93/*~hmac=b72e582e173d1309c162e9db425f7a5b9630ecd995c6d232f8ec908747920582&ads.app_bundle=&ads.app_store_url=&ads.content_livestream=1&ads.language=HIN&ads.content_genre=NEWS&ads.channel=4923&ads.channel_name=RepublicBharat&ads.network_name=yupptv&ads.user=0
+#EXTINF:-1 tvg-name="*~hmac=ba28d3c47002403a067abae3bc67da12bcc11e0ef1a18734e8c52aeb136fd928&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=BEN&ads content_genre=NEWS&ads channel=7173&ads channel_name=RplusNews&ads network_name=yupptv&ads user=0" group-title="News",*~hmac=ba28d3c47002403a067abae3bc67da12bcc11e0ef1a18734e8c52aeb136fd928&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=BEN&ads content_genre=NEWS&ads channel=7173&ads channel_name=RplusNews&ads network_name=yupptv&ads user=0
+https://vglivessai.akamaized.net/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/e5dcc9dc-3a33-4b19-a361-5a5b3aa022f7/index.m3u8?hdnts=st=1790619272~exp=1790622872~acl=!*/611d79b11b77e2f571934fd80ca1413453772ac7/e5dcc9dc-3a33-4b19-a361-5a5b3aa022f7/*!yuppTVCom_5_-1_14a89d6ec4d04aab_US_52.153.130.145/payload/yuppTVCom_5_-1_14a89d6ec4d04aab_US_52.153.130.145/*~hmac=ba28d3c47002403a067abae3bc67da12bcc11e0ef1a18734e8c52aeb136fd928&ads.app_bundle=&ads.app_store_url=&ads.content_livestream=1&ads.language=BEN&ads.content_genre=NEWS&ads.channel=7173&ads.channel_name=RplusNews&ads.network_name=yupptv&ads.user=0
+#EXTINF:-1 tvg-name="*~hmac=be4e047540110d3dd4e3afb8a90cb05d6c845d6cfde82293de105255c92111e0&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=ENG&ads content_genre=NEWS&ads channel=3927&ads channel_name=MirrorNow&ads network_name=yupptv&ads user=0" group-title="News",*~hmac=be4e047540110d3dd4e3afb8a90cb05d6c845d6cfde82293de105255c92111e0&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=ENG&ads content_genre=NEWS&ads channel=3927&ads channel_name=MirrorNow&ads network_name=yupptv&ads user=0
+https://vg-timesgroup.akamaized.net/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/73455029-b0f3-4c11-b54d-010c52f42ee9/main.m3u8?hdnts=st=1790624972~exp=1790628572~acl=!*/611d79b11b77e2f571934fd80ca1413453772ac7/73455029-b0f3-4c11-b54d-010c52f42ee9/*!yuppTVCom_5_-1_7c89178da3874ab8_US_172.184.209.147/payload/yuppTVCom_5_-1_7c89178da3874ab8_US_172.184.209.147/*~hmac=be4e047540110d3dd4e3afb8a90cb05d6c845d6cfde82293de105255c92111e0&ads.app_bundle=&ads.app_store_url=&ads.content_livestream=1&ads.language=ENG&ads.content_genre=NEWS&ads.channel=3927&ads.channel_name=MirrorNow&ads.network_name=yupptv&ads.user=0
+#EXTINF:-1 tvg-name="*~hmac=c629592ba6c02a8bc90e65c13bfa876d395d6ab6f80b59d590435a1ecd230bb3&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=HIN&ads content_genre=NEWS&ads channel=196&ads channel_name=NDTVINDIA&ads network_name=yupptv&ads user=0" group-title="News",*~hmac=c629592ba6c02a8bc90e65c13bfa876d395d6ab6f80b59d590435a1ecd230bb3&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=HIN&ads content_genre=NEWS&ads channel=196&ads channel_name=NDTVINDIA&ads network_name=yupptv&ads user=0
+https://vglivessai.akamaized.net/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/4b01f956-8e56-4571-9ac4-6ffcced807ae/master.m3u8?hdnts=st=1790619272~exp=1790622872~acl=!*/611d79b11b77e2f571934fd80ca1413453772ac7/4b01f956-8e56-4571-9ac4-6ffcced807ae/*!yuppTVCom_5_-1_14a89d6ec4d04aab_US_52.153.130.145/payload/yuppTVCom_5_-1_14a89d6ec4d04aab_US_52.153.130.145/*~hmac=c629592ba6c02a8bc90e65c13bfa876d395d6ab6f80b59d590435a1ecd230bb3&ads.app_bundle=&ads.app_store_url=&ads.content_livestream=1&ads.language=HIN&ads.content_genre=NEWS&ads.channel=196&ads.channel_name=NDTVINDIA&ads.network_name=yupptv&ads.user=0
+#EXTINF:-1 tvg-name="*~hmac=d3cfc51222c0ba7a69717e19f50f15580c8774e7162049c5f1e1c42c88c53703&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=ENG&ads content_genre=NEWS&ads channel=3927&ads channel_name=MirrorNow&ads network_name=yupptv&ads user=0" group-title="News",*~hmac=d3cfc51222c0ba7a69717e19f50f15580c8774e7162049c5f1e1c42c88c53703&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=ENG&ads content_genre=NEWS&ads channel=3927&ads channel_name=MirrorNow&ads network_name=yupptv&ads user=0
+https://vg-timesgroup.akamaized.net/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/73455029-b0f3-4c11-b54d-010c52f42ee9/main.m3u8?hdnts=st=1790619272~exp=1790622872~acl=!*/611d79b11b77e2f571934fd80ca1413453772ac7/73455029-b0f3-4c11-b54d-010c52f42ee9/*!yuppTVCom_5_-1_14a89d6ec4d04aab_US_52.153.130.145/payload/yuppTVCom_5_-1_14a89d6ec4d04aab_US_52.153.130.145/*~hmac=d3cfc51222c0ba7a69717e19f50f15580c8774e7162049c5f1e1c42c88c53703&ads.app_bundle=&ads.app_store_url=&ads.content_livestream=1&ads.language=ENG&ads.content_genre=NEWS&ads.channel=3927&ads.channel_name=MirrorNow&ads.network_name=yupptv&ads.user=0
+#EXTINF:-1 tvg-name="*~hmac=de3e4f0fd96e9aeb19a193e615448a731d04e528fb1e6bb0a3d3c5212f744f8c&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=HIN&ads content_genre=NEWS&ads channel=196&ads channel_name=NDTVINDIA&ads network_name=yupptv&ads user=0" group-title="News",*~hmac=de3e4f0fd96e9aeb19a193e615448a731d04e528fb1e6bb0a3d3c5212f744f8c&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=HIN&ads content_genre=NEWS&ads channel=196&ads channel_name=NDTVINDIA&ads network_name=yupptv&ads user=0
+https://vglivessai.akamaized.net/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/4b01f956-8e56-4571-9ac4-6ffcced807ae/master.m3u8?hdnts=st=1790608176~exp=1790611776~acl=!*/611d79b11b77e2f571934fd80ca1413453772ac7/4b01f956-8e56-4571-9ac4-6ffcced807ae/*!yuppTVCom_5_-1_62b160e06d114425_US_52.182.171.93/payload/yuppTVCom_5_-1_62b160e06d114425_US_52.182.171.93/*~hmac=de3e4f0fd96e9aeb19a193e615448a731d04e528fb1e6bb0a3d3c5212f744f8c&ads.app_bundle=&ads.app_store_url=&ads.content_livestream=1&ads.language=HIN&ads.content_genre=NEWS&ads.channel=196&ads.channel_name=NDTVINDIA&ads.network_name=yupptv&ads.user=0
+#EXTINF:-1 tvg-name="*~hmac=ed47a9aebd0bd9d6c59e5b8331c3d4512340c2e80828ec5ed3bac00f0f075289&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=HIN&ads content_genre=NEWS&ads channel=4923&ads channel_name=RepublicBharat&ads network_name=yupptv&ads user=0" group-title="News",*~hmac=ed47a9aebd0bd9d6c59e5b8331c3d4512340c2e80828ec5ed3bac00f0f075289&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=HIN&ads content_genre=NEWS&ads channel=4923&ads channel_name=RepublicBharat&ads network_name=yupptv&ads user=0
+https://vg-republictvlive.akamaized.net/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/c23808ea-f684-43b3-a586-f4dfa554b55a/playlist.m3u8?hdnts=st=1790631991~exp=1790635591~acl=!*/611d79b11b77e2f571934fd80ca1413453772ac7/c23808ea-f684-43b3-a586-f4dfa554b55a/*!yuppTVCom_5_-1_ff4604d3688146d2_US_172.212.163.230/payload/yuppTVCom_5_-1_ff4604d3688146d2_US_172.212.163.230/*~hmac=ed47a9aebd0bd9d6c59e5b8331c3d4512340c2e80828ec5ed3bac00f0f075289&ads.app_bundle=&ads.app_store_url=&ads.content_livestream=1&ads.language=HIN&ads.content_genre=NEWS&ads.channel=4923&ads.channel_name=RepublicBharat&ads.network_name=yupptv&ads.user=0
+#EXTINF:-1 tvg-name="*~hmac=f16fab7d4a26731fb0e5ef27585d7a1d71c44737719b38fa72cac7b4ca554782&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=BEN&ads content_genre=NEWS&ads channel=7173&ads channel_name=RplusNews&ads network_name=yupptv&ads user=0" group-title="News",*~hmac=f16fab7d4a26731fb0e5ef27585d7a1d71c44737719b38fa72cac7b4ca554782&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=BEN&ads content_genre=NEWS&ads channel=7173&ads channel_name=RplusNews&ads network_name=yupptv&ads user=0
+https://vglivessai.akamaized.net/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/e5dcc9dc-3a33-4b19-a361-5a5b3aa022f7/index.m3u8?hdnts=st=1790616890~exp=1790620490~acl=!*/611d79b11b77e2f571934fd80ca1413453772ac7/e5dcc9dc-3a33-4b19-a361-5a5b3aa022f7/*!yuppTVCom_5_-1_1d762f2df5c2401b_US_132.196.80.211/payload/yuppTVCom_5_-1_1d762f2df5c2401b_US_132.196.80.211/*~hmac=f16fab7d4a26731fb0e5ef27585d7a1d71c44737719b38fa72cac7b4ca554782&ads.app_bundle=&ads.app_store_url=&ads.content_livestream=1&ads.language=BEN&ads.content_genre=NEWS&ads.channel=7173&ads.channel_name=RplusNews&ads.network_name=yupptv&ads.user=0
 #EXTINF:-1 tvg-name="6 TV Telugu (576p)" tvg-logo="https://i.imgur.com/l3EcRnZ.png" group-title="News",6 TV Telugu (576p)
 https://yuppparoriglin.akamaized.net/181224/smil:6tv.smil/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
+#EXTINF:-1 tvg-name="Aaj Tak (404p)" tvg-logo="https://i.imgur.com/gS9Qkfy.png" group-title="News",Aaj Tak (404p)
+https://aajtaklive-amd.akamaized.net/hls/live/2014416/aajtak/aajtaklive/live_404p/chunks.m3u8
+#EXTINF:-1 tvg-name="ABP Ananda" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/ABP_Ananda_logo.svg/500px-ABP_Ananda_logo.svg.png" group-title="News",ABP Ananda
+https://abp-i.akamaihd.net/hls/live/765530/abpananda/masterhls_1564.m3u8
+#EXTINF:-1 tvg-name="ABP Asmita" tvg-logo="https://dtil.tmsimg.com/assets/s142519_ld_h15_aa.png?lock=720x540" group-title="News",ABP Asmita
+http://abpasmita-lh.akamaihd.net/i/abpasmita_1@77821/master.m3u8
+#EXTINF:-1 tvg-name="ABP Asmita" tvg-logo="https://dtil.tmsimg.com/assets/s142519_ld_h15_aa.png?lock=720x540" group-title="News",ABP Asmita
+https://abp-i.akamaihd.net/hls/live/765532/abpasmita/masterhls_1564.m3u8
+#EXTINF:-1 tvg-name="ABP Majha" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/ABP_Majha_logo.svg/500px-ABP_Majha_logo.svg.png" group-title="News",ABP Majha
+https://abp-i.akamaihd.net/hls/live/765531/abpmajha/masterhls_1564.m3u8
+#EXTINF:-1 tvg-name="ABP Majha (360p)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/ABP_Majha_logo.svg/500px-ABP_Majha_logo.svg.png" group-title="News",ABP Majha (360p)
+https://yupprestreamliveus.akamaized.net/vglive-sk-355289/majha/master.m3u8
+#EXTINF:-1 tvg-name="ABP News" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/ABP_News_logo.svg/500px-ABP_News_logo.svg.png" group-title="News",ABP News
+https://abp-i.akamaihd.net/hls/live/765529/abphindi/masterhls_1564.m3u8
+#EXTINF:-1 tvg-name="ABP Sanjha" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/ABP_Sanjha_logo.svg/500px-ABP_Sanjha_logo.svg.png" group-title="News",ABP Sanjha
+https://abp-i.akamaihd.net/hls/live/765533/abpsanjha/masterhls_1564.m3u8
+#EXTINF:-1 tvg-name="ABP न्यूज़" group-title="News",ABP न्यूज़
+https://tvtodaylive.akamaized.net/hls/live/2014266-b/dat/datlive/dat_5/chunklist.m3u8
+#EXTINF:-1 tvg-name="Africanews English (720p)" group-title="News",Africanews English (720p)
+https://cdn-euronews.akamaized.net/live/eds/africanews-en/25049/index.m3u8
 #EXTINF:-1 tvg-name="BBC News" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/BBC_Hindi.png" group-title="News",BBC News
 https://vs-hls-push-ww-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_news_channel_hd/t=3840/v=pv14/b=5070016/main.m3u8
+#EXTINF:-1 tvg-name="DW" group-title="News",DW
+https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8
+#EXTINF:-1 tvg-name="group-title="Hindi(हिन्दी)",NDTV India" tvg-logo="https://dtil.tmsimg.com/assets/s157588_ld_h15_aa.png?lock=720x540" group-title="News",group-title="Hindi(हिन्दी)",NDTV India
+https://ndtvstream-lh.akamaihd.net//i//ndtv_india_1@300634//master.m3u8
+#EXTINF:-1 tvg-name="group-title="Hindi(हिन्दी)",Zee News" tvg-logo="https://image.airtel.tv/grandslam/content/2025_06_17/LOGO_X99oIa_Fm_Znews_logo-for-larg.png" group-title="News",group-title="Hindi(हिन्दी)",Zee News
+http://z5ams.akamaized.net/zeenews/tracks-v1a1/index.m3u8
 #EXTINF:-1 tvg-name="i news" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e6/Janasri_News_Channel_Logo.jpg" group-title="News",i news
-https://n18syndication.akamaized.net/bpk-tv/News18_Bangla_NW18_MOB/output01/master.m3u8
+https://prodamdnewsencoding.akamaized.net/NBC_News_Digital/tdy_news_7a_haake_marines_injured_iran_260928/1/abs/index.m3u8
 #EXTINF:-1 tvg-name="i news" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e6/Janasri_News_Channel_Logo.jpg" group-title="News",i news
-https://yuppmedtaorire.akamaized.net/v1/master/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/v6news_nim_https/140622/v6news/playlist.m3u8
+https://prodamdnewsencoding.akamaized.net/NBC_News_Digital/tdy_sanchez_7a_terror_suspects_260928/1/abs/index.m3u8
 #EXTINF:-1 tvg-name="i news" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e6/Janasri_News_Channel_Logo.jpg" group-title="News",i news
-https://prodamdnewsencoding.akamaized.net/out/v1/bb171dd5b1f04743beb3fa8d9bab203c/43b6f121beb24ffaa1509325e7e23fb2/15bb94d4cae942ed8a198cc8f63db8ed/1e43e63472f745cbb12a3c486beaf38b/f8fdd6ff3a2a47d6ad0e7c243092b4e7/index_6.m3u8
+https://prodamdnewsencoding.akamaized.net/out/v1/f1c82d7e163646d58a1080d338c3d005/43b6f121beb24ffaa1509325e7e23fb2/15bb94d4cae942ed8a198cc8f63db8ed/3b3cc7e373174c3fb6a39ada590cf0da/f8fdd6ff3a2a47d6ad0e7c243092b4e7/index_6.m3u8
 #EXTINF:-1 tvg-name="i news" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e6/Janasri_News_Channel_Logo.jpg" group-title="News",i news
-https://prodamdnewsencoding.akamaized.net/out/v1/e2f58c2089e144849c002aa5f725f65c/43b6f121beb24ffaa1509325e7e23fb2/15bb94d4cae942ed8a198cc8f63db8ed/81aa6e0223554a218faccec088024267/f8fdd6ff3a2a47d6ad0e7c243092b4e7/index_5.m3u8
+https://prodamdnewsencoding.akamaized.net/out/v1/3772e12590a244f6a3fe38f5151a7c68/43b6f121beb24ffaa1509325e7e23fb2/15bb94d4cae942ed8a198cc8f63db8ed/f36b79f663eb4b13be3b83c695ed91fc/f8fdd6ff3a2a47d6ad0e7c243092b4e7/index_5.m3u8
 #EXTINF:-1 tvg-name="i news" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e6/Janasri_News_Channel_Logo.jpg" group-title="News",i news
-https://prodamdnewsencoding.akamaized.net/out/v1/bb171dd5b1f04743beb3fa8d9bab203c/43b6f121beb24ffaa1509325e7e23fb2/15bb94d4cae942ed8a198cc8f63db8ed/1e43e63472f745cbb12a3c486beaf38b/f8fdd6ff3a2a47d6ad0e7c243092b4e7/index_5.m3u8
+https://prodamdnewsencoding.akamaized.net/out/v1/f1c82d7e163646d58a1080d338c3d005/43b6f121beb24ffaa1509325e7e23fb2/15bb94d4cae942ed8a198cc8f63db8ed/3b3cc7e373174c3fb6a39ada590cf0da/f8fdd6ff3a2a47d6ad0e7c243092b4e7/index_4.m3u8
 #EXTINF:-1 tvg-name="i news" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e6/Janasri_News_Channel_Logo.jpg" group-title="News",i news
-https://prodamdnewsencoding.akamaized.net/out/v1/bb171dd5b1f04743beb3fa8d9bab203c/43b6f121beb24ffaa1509325e7e23fb2/15bb94d4cae942ed8a198cc8f63db8ed/1e43e63472f745cbb12a3c486beaf38b/f8fdd6ff3a2a47d6ad0e7c243092b4e7/index_1.m3u8
+https://prodamdnewsencoding.akamaized.net/NBC_News_Digital/f_vert_brk_thailand_flooding_260928/1/abs/index.m3u8
 #EXTINF:-1 tvg-name="i news" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e6/Janasri_News_Channel_Logo.jpg" group-title="News",i news
-https://prodamdnewsencoding.akamaized.net/out/v1/4265a906c170494f9c433313f8f45e24/43b6f121beb24ffaa1509325e7e23fb2/15bb94d4cae942ed8a198cc8f63db8ed/ff9c90c95d20457baf4f37860d2887ee/f8fdd6ff3a2a47d6ad0e7c243092b4e7/index_1.m3u8
+https://prodamdnewsencoding.akamaized.net/out/v1/3772e12590a244f6a3fe38f5151a7c68/43b6f121beb24ffaa1509325e7e23fb2/15bb94d4cae942ed8a198cc8f63db8ed/f36b79f663eb4b13be3b83c695ed91fc/f8fdd6ff3a2a47d6ad0e7c243092b4e7/index_6.m3u8
 #EXTINF:-1 tvg-name="i news" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e6/Janasri_News_Channel_Logo.jpg" group-title="News",i news
-https://prodamdnewsencoding.akamaized.net/out/v1/e2f58c2089e144849c002aa5f725f65c/43b6f121beb24ffaa1509325e7e23fb2/15bb94d4cae942ed8a198cc8f63db8ed/81aa6e0223554a218faccec088024267/f8fdd6ff3a2a47d6ad0e7c243092b4e7/index_6.m3u8
+https://prodamdnewsencoding.akamaized.net/NBC_News_Digital/tdy_news_7a_mclaughlin_noreaster_260928/1/abs/index.m3u8
 #EXTINF:-1 tvg-name="i news" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e6/Janasri_News_Channel_Logo.jpg" group-title="News",i news
-https://prodamdnewsencoding.akamaized.net/out/v1/4265a906c170494f9c433313f8f45e24/43b6f121beb24ffaa1509325e7e23fb2/15bb94d4cae942ed8a198cc8f63db8ed/ff9c90c95d20457baf4f37860d2887ee/f8fdd6ff3a2a47d6ad0e7c243092b4e7/index_6.m3u8
+https://prodamdnewsencoding.akamaized.net/out/v1/e34840d4dcbd44c49578b2f54968e6c7/43b6f121beb24ffaa1509325e7e23fb2/15bb94d4cae942ed8a198cc8f63db8ed/c6de33395e254e1d9247620e8abc4777/f8fdd6ff3a2a47d6ad0e7c243092b4e7/index_4.m3u8
 #EXTINF:-1 tvg-name="i news" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e6/Janasri_News_Channel_Logo.jpg" group-title="News",i news
-https://prodamdnewsencoding.akamaized.net/out/v1/4265a906c170494f9c433313f8f45e24/43b6f121beb24ffaa1509325e7e23fb2/15bb94d4cae942ed8a198cc8f63db8ed/ff9c90c95d20457baf4f37860d2887ee/f8fdd6ff3a2a47d6ad0e7c243092b4e7/index_5.m3u8
+https://prodamdnewsencoding.akamaized.net/NBC_News_Digital/nbc_scoop_short_260925/1/abs/index.m3u8
 #EXTINF:-1 tvg-name="i news" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e6/Janasri_News_Channel_Logo.jpg" group-title="News",i news
-https://prodamdnewsencoding.akamaized.net/NBC_News_Digital/tdy_pop_8a_off_campus_ella_bright_belmont_cameli_260515/1/abs/index.m3u8
+https://prodamdnewsencoding.akamaized.net/out/v1/e34840d4dcbd44c49578b2f54968e6c7/43b6f121beb24ffaa1509325e7e23fb2/15bb94d4cae942ed8a198cc8f63db8ed/c6de33395e254e1d9247620e8abc4777/f8fdd6ff3a2a47d6ad0e7c243092b4e7/index_6.m3u8
 #EXTINF:-1 tvg-name="i news" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e6/Janasri_News_Channel_Logo.jpg" group-title="News",i news
-https://prodamdnewsencoding.akamaized.net/NBC_News_Digital/tdy_pop_9a_matt_cornett_sadie_260610/1/abs/index.m3u8
+https://prodamdnewsencoding.akamaized.net/out/v1/d4b8eaf6902e48b18081abb1738b2af4/43b6f121beb24ffaa1509325e7e23fb2/15bb94d4cae942ed8a198cc8f63db8ed/3e9afcee9e7749c49c354298a6662ab1/f8fdd6ff3a2a47d6ad0e7c243092b4e7/index_6.m3u8
 #EXTINF:-1 tvg-name="i news" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e6/Janasri_News_Channel_Logo.jpg" group-title="News",i news
-https://prodamdnewsencoding.akamaized.net/out/v1/e2f58c2089e144849c002aa5f725f65c/43b6f121beb24ffaa1509325e7e23fb2/15bb94d4cae942ed8a198cc8f63db8ed/81aa6e0223554a218faccec088024267/f8fdd6ff3a2a47d6ad0e7c243092b4e7/index_1.m3u8
+https://prodamdnewsencoding.akamaized.net/out/v1/d4b8eaf6902e48b18081abb1738b2af4/43b6f121beb24ffaa1509325e7e23fb2/15bb94d4cae942ed8a198cc8f63db8ed/3e9afcee9e7749c49c354298a6662ab1/f8fdd6ff3a2a47d6ad0e7c243092b4e7/index_5.m3u8
 #EXTINF:-1 tvg-name="i news" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e6/Janasri_News_Channel_Logo.jpg" group-title="News",i news
-https://prodamdnewsencoding.akamaized.net/NBC_News_Digital/tdy_news_7a_cheung_polymarket_sued_260925/1/abs/index.m3u8
-#EXTINF:-1 tvg-name="i news" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e6/Janasri_News_Channel_Logo.jpg" group-title="News",i news
-https://prodamdnewsencoding.akamaized.net/NBC_News_Digital/tdy_news_8a_nj_lt_gov_investigation_260925/1/abs/index.m3u8
-#EXTINF:-1 tvg-name="i news" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e6/Janasri_News_Channel_Logo.jpg" group-title="News",i news
-https://prodamdnewsencoding.akamaized.net/NBC_News_Digital/tdy_news_7a_frayer_chinese_pandas_260925/1/abs/index.m3u8
-#EXTINF:-1 tvg-name="i news" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e6/Janasri_News_Channel_Logo.jpg" group-title="News",i news
-https://prodamdnewsencoding.akamaized.net/NBC_News_Digital/tdy_news_9a_roker_zoo_train_engineer_260925/1/abs/index.m3u8
-#EXTINF:-1 tvg-name="i news" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e6/Janasri_News_Channel_Logo.jpg" group-title="News",i news
-https://prodamdnewsencoding.akamaized.net/NBC_News_Digital/tdy_news_7a_odonnell_trump_xi_260925/1/abs/index.m3u8
-#EXTINF:-1 tvg-name="i news" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e6/Janasri_News_Channel_Logo.jpg" group-title="News",i news
-https://prodamdnewsencoding.akamaized.net/out/v1/d0ff4b866eff4eaab4d9e2492c337dea/43b6f121beb24ffaa1509325e7e23fb2/15bb94d4cae942ed8a198cc8f63db8ed/99adab73f9f948259e4df04fcc7e9f71/f8fdd6ff3a2a47d6ad0e7c243092b4e7/index_6.m3u8
-#EXTINF:-1 tvg-name="i news" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e6/Janasri_News_Channel_Logo.jpg" group-title="News",i news
-https://prodamdnewsencoding.akamaized.net/out/v1/d0ff4b866eff4eaab4d9e2492c337dea/43b6f121beb24ffaa1509325e7e23fb2/15bb94d4cae942ed8a198cc8f63db8ed/99adab73f9f948259e4df04fcc7e9f71/f8fdd6ff3a2a47d6ad0e7c243092b4e7/index_1.m3u8
-#EXTINF:-1 tvg-name="i news" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e6/Janasri_News_Channel_Logo.jpg" group-title="News",i news
-https://prodamdnewsencoding.akamaized.net/NBC_News_Digital/tdy_pop_10a_social_dilemmas_260925/1/abs/index.m3u8
-#EXTINF:-1 tvg-name="i news" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e6/Janasri_News_Channel_Logo.jpg" group-title="News",i news
-https://prodamdnewsencoding.akamaized.net/NBC_News_Digital/tdy_hill_consent_151016/1/index.m3u8
-#EXTINF:-1 tvg-name="i news" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e6/Janasri_News_Channel_Logo.jpg" group-title="News",i news
-https://prodamdnewsencoding.akamaized.net/NBC_News_Digital/tdy_hill_consent_151016/1/index.m3u8?format=redirect
-#EXTINF:-1 tvg-name="i news" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e6/Janasri_News_Channel_Logo.jpg" group-title="News",i news
-https://prodamdnewsencoding.akamaized.net/NBC_News_Digital/tdy_pop_10a_relationship_court_260814/1/abs/index.m3u8
-#EXTINF:-1 tvg-name="i news" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e6/Janasri_News_Channel_Logo.jpg" group-title="News",i news
-https://prodamdnewsencoding.akamaized.net/NBC_News_Digital/tdy_pop_10a_social_dilemmas_260911/1/abs/index.m3u8
-#EXTINF:-1 tvg-name="i news" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e6/Janasri_News_Channel_Logo.jpg" group-title="News",i news
-https://prodamdnewsencoding.akamaized.net/NBC_News_Digital/tdy_health_10a_life_coach_260821/1/abs/index.m3u8
-#EXTINF:-1 tvg-name="i news" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e6/Janasri_News_Channel_Logo.jpg" group-title="News",i news
-https://prodamdnewsencoding.akamaized.net/NBC_News_Digital/tdy_pop_10a_social_dilemmas_260818/1/abs/index.m3u8
-#EXTINF:-1 tvg-name="i news" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e6/Janasri_News_Channel_Logo.jpg" group-title="News",i news
-https://prodamdnewsencoding.akamaized.net/NBC_News_Digital/tdy_pop_10a_hot_take_hotline_260729/1/abs/index.m3u8
-#EXTINF:-1 tvg-name="i news" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e6/Janasri_News_Channel_Logo.jpg" group-title="News",i news
-https://prodamdnewsencoding.akamaized.net/NBC_News_Digital/tdy_pop_10a_guessing_game_240304/1/abs/index.m3u8
-#EXTINF:-1 tvg-name="i news" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e6/Janasri_News_Channel_Logo.jpg" group-title="News",i news
-https://prodamdnewsencoding.akamaized.net/NBC_News_Digital/tdy_pop_8a_stranger_things_finale_260102/1/abs/index.m3u8
-#EXTINF:-1 tvg-name="i news" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e6/Janasri_News_Channel_Logo.jpg" group-title="News",i news
-https://prodamdnewsencoding.akamaized.net/out/v1/bee061f3259b4efc9c853b509556e314/43b6f121beb24ffaa1509325e7e23fb2/15bb94d4cae942ed8a198cc8f63db8ed/39e2ee65e96541b2acdf7c0bf2234092/f8fdd6ff3a2a47d6ad0e7c243092b4e7/index_1.m3u8
-#EXTINF:-1 tvg-name="i news" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e6/Janasri_News_Channel_Logo.jpg" group-title="News",i news
-https://prodamdnewsencoding.akamaized.net/out/v1/4cccb09e59bc4767b5f929b5de59fb02/43b6f121beb24ffaa1509325e7e23fb2/15bb94d4cae942ed8a198cc8f63db8ed/bd907c33c6104dfa9f63df0cc061b78d/f8fdd6ff3a2a47d6ad0e7c243092b4e7/index_1.m3u8
-#EXTINF:-1 tvg-name="i news" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e6/Janasri_News_Channel_Logo.jpg" group-title="News",i news
-https://prodamdnewsencoding.akamaized.net/out/v1/4cccb09e59bc4767b5f929b5de59fb02/43b6f121beb24ffaa1509325e7e23fb2/15bb94d4cae942ed8a198cc8f63db8ed/bd907c33c6104dfa9f63df0cc061b78d/f8fdd6ff3a2a47d6ad0e7c243092b4e7/index_5.m3u8
-#EXTINF:-1 tvg-name="i news" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e6/Janasri_News_Channel_Logo.jpg" group-title="News",i news
-https://prodamdnewsencoding.akamaized.net/out/v1/bee061f3259b4efc9c853b509556e314/43b6f121beb24ffaa1509325e7e23fb2/15bb94d4cae942ed8a198cc8f63db8ed/39e2ee65e96541b2acdf7c0bf2234092/f8fdd6ff3a2a47d6ad0e7c243092b4e7/index_5.m3u8
+https://prodamdnewsencoding.akamaized.net/out/v1/a250d7c71bb84f4099efa98fa424531f/43b6f121beb24ffaa1509325e7e23fb2/15bb94d4cae942ed8a198cc8f63db8ed/f0c6525a03fa441b94adb9625a9d656f/f8fdd6ff3a2a47d6ad0e7c243092b4e7/index_4.m3u8
 #EXTINF:-1 tvg-name="i news" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e6/Janasri_News_Channel_Logo.jpg" group-title="News",i news
 https://live-oneapp-prd-news.akamaized.net/Content/CMAF_OL2-CTR-4s/Live/channel(nnn)/master.mpd?audio=all&subtitle=all&forcedNarrative=true
-#EXTINF:-1 tvg-name="i news" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e6/Janasri_News_Channel_Logo.jpg" group-title="News",i news
-https://prodamdnewsencoding.akamaized.net/NBC_News_Digital/now_brk_trump_xi_tea_260925/1/abs/index.m3u8
-#EXTINF:-1 tvg-name="i news" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e6/Janasri_News_Channel_Logo.jpg" group-title="News",i news
-https://prodamdnewsencoding.akamaized.net/out/v1/276e04d310a741a5aba39929eb986ce6/43b6f121beb24ffaa1509325e7e23fb2/15bb94d4cae942ed8a198cc8f63db8ed/1e6f7cc3c5f3495087610de5e05d9f75/f8fdd6ff3a2a47d6ad0e7c243092b4e7/index_6.m3u8
-#EXTINF:-1 tvg-name="i news" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e6/Janasri_News_Channel_Logo.jpg" group-title="News",i news
-https://prodamdnewsencoding.akamaized.net/out/v1/d137023c45124d169f8422d84a8bf288/43b6f121beb24ffaa1509325e7e23fb2/15bb94d4cae942ed8a198cc8f63db8ed/2261ae632e1143dbb6db928dfdf65687/f8fdd6ff3a2a47d6ad0e7c243092b4e7/index_5.m3u8
-#EXTINF:-1 tvg-name="i news" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e6/Janasri_News_Channel_Logo.jpg" group-title="News",i news
-https://prodamdnewsencoding.akamaized.net/NBC_News_Digital/now_daily_a_noreaster_flood_hurricane_sbr_bka_260925/1/abs/index.m3u8
-#EXTINF:-1 tvg-name="i news" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e6/Janasri_News_Channel_Logo.jpg" group-title="News",i news
-https://prodamdnewsencoding.akamaized.net/out/v1/88b5292b4f5545079920f1873a1a79c2/43b6f121beb24ffaa1509325e7e23fb2/15bb94d4cae942ed8a198cc8f63db8ed/50ec94acfde647338a3302aa66b88b93/f8fdd6ff3a2a47d6ad0e7c243092b4e7/index_5.m3u8
-#EXTINF:-1 tvg-name="i news" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e6/Janasri_News_Channel_Logo.jpg" group-title="News",i news
-https://prodamdnewsencoding.akamaized.net/out/v1/d137023c45124d169f8422d84a8bf288/43b6f121beb24ffaa1509325e7e23fb2/15bb94d4cae942ed8a198cc8f63db8ed/2261ae632e1143dbb6db928dfdf65687/f8fdd6ff3a2a47d6ad0e7c243092b4e7/index_6.m3u8
-#EXTINF:-1 tvg-name="i news" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e6/Janasri_News_Channel_Logo.jpg" group-title="News",i news
-https://prodamdnewsencoding.akamaized.net/out/v1/276e04d310a741a5aba39929eb986ce6/43b6f121beb24ffaa1509325e7e23fb2/15bb94d4cae942ed8a198cc8f63db8ed/1e6f7cc3c5f3495087610de5e05d9f75/f8fdd6ff3a2a47d6ad0e7c243092b4e7/index_4.m3u8
-#EXTINF:-1 tvg-name="i news" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e6/Janasri_News_Channel_Logo.jpg" group-title="News",i news
-https://prodamdnewsencoding.akamaized.net/out/v1/88b5292b4f5545079920f1873a1a79c2/43b6f121beb24ffaa1509325e7e23fb2/15bb94d4cae942ed8a198cc8f63db8ed/50ec94acfde647338a3302aa66b88b93/f8fdd6ff3a2a47d6ad0e7c243092b4e7/index_6.m3u8
+#EXTINF:-1 tvg-name="i24 News" tvg-logo="https://sund-images.sunnxt.com/202222/300x300_24News_202222_d63feca0-79ae-47ea-b75a-66c17d456f4c.png" group-title="News",i24 News
+https://bcovlive-a.akamaihd.net/6e3dd61ac4c34d6f8fb9698b565b9f50/eu-central-1/5377161796001/playlist-all_dvr.m3u8
 #EXTINF:-1 tvg-name="India Today" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/INDIA-TODAY_transparent.png" group-title="News",India Today
 https://indiatodaylive.akamaized.net/hls/live/2014320/indiatoday/indiatodaylive/playlist.m3u8
-#EXTINF:-1 tvg-name="india tv" tvg-logo="https://dtil.tmsimg.com/assets/s143199_ld_h15_aa.png?lock=720x540" group-title="News",india tv
-https://indiatoday-pdelivery.akamaized.net/tts/at/top_ten_story/prod/at_top_ten_prod.json?ver=1790369786841
+#EXTINF:-1 tvg-name="India TV" tvg-logo="https://dtil.tmsimg.com/assets/s143199_ld_h15_aa.png?lock=720x540" group-title="News",India TV
+https://live-indiatvnews.akamaized.net/indiatv-origin/liveabr/indiatv-origin/ITV_1_3@199237/chunks.m3u8
 #EXTINF:-1 tvg-name="India TV (720p)" tvg-logo="https://dtil.tmsimg.com/assets/s143199_ld_h15_aa.png?lock=720x540" group-title="News",India TV (720p)
 https://pl-indiatvnews.akamaized.net/out/v1/db79179b608641ceaa5a4d0dd0dca8da/index.m3u8
-#EXTINF:-1 tvg-name="India TV Speed News" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_INDIA_TV_SPEED_NEWS/images/LOGO_HD/image.png" group-title="News",India TV Speed News
-https://cc-lyf4c0hwzg5dd.akamaized.net/v1/vglive-sk-479089/main.m3u8
 #EXTINF:-1 tvg-name="India TV Speed News (1080p)" tvg-logo="https://dtil.tmsimg.com/assets/s143199_ld_h15_aa.png?lock=720x540" group-title="News",India TV Speed News (1080p)
 https://cc-lyf4c0hwzg5dd.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-lyf4c0hwzg5dd/v1/vglive-sk-479089/main.m3u8
+#EXTINF:-1 tvg-name="India TV Speed News (1080p)" tvg-logo="https://dtil.tmsimg.com/assets/s143199_ld_h15_aa.png?lock=720x540" group-title="News",India TV Speed News (1080p)
+https://cc-lyf4c0hwzg5dd.akamaized.net/v1/vglive-sk-479089/main.m3u8
 #EXTINF:-1 tvg-name="Kadak (1080p)" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Kadak.png" group-title="News",Kadak (1080p)
 https://n18syndication.akamaized.net/bpk-tv/Kadak_NW18_MOB/output01/master.m3u8
 #EXTINF:-1 tvg-name="LCN [Geo-blocked]" group-title="News",LCN [Geo-blocked]
 https://tvalive.akamaized.net/hls/live/2014213/tvan01/tvan01.m3u8
+#EXTINF:-1 tvg-name="NDTV 24x7" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/NDTV24x7_Transparent_9b042a6f-d40f-465a-998f-627ee6841919.png" group-title="News",NDTV 24x7
+https://ndtv24x7elemarchana.akamaized.net/hls/live/2003678/ndtv24x7/ndtv24x7master.m3u8
+#EXTINF:-1 tvg-name="NDTV 24X7 (480p) [Not 24/7]" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/NDTV24x7_Transparent_9b042a6f-d40f-465a-998f-627ee6841919.png" group-title="News",NDTV 24X7 (480p) [Not 24/7]
+https://ndtv24x7elemarchana.akamaized.net/hls/live/2003678/ndtv24x7/master.m3u8
 #EXTINF:-1 tvg-name="NDTV India" tvg-logo="https://dtil.tmsimg.com/assets/s157588_ld_h15_aa.png?lock=720x540" group-title="News",NDTV India
 https://ndtvindiaelemarchana.akamaized.net/hls/live/2003679/ndtvindia/master.m3u8
+#EXTINF:-1 tvg-name="NDTV India" tvg-logo="https://dtil.tmsimg.com/assets/s157588_ld_h15_aa.png?lock=720x540" group-title="News",NDTV India
+https://ndtvindiaelemarchana.akamaized.net/hls/live/2003679-b/ndtvindia/masterb_480p@3.m3u8
 #EXTINF:-1 tvg-name="NDTV Madhya Pradesh Chhattisgarh (1080p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/NDTV-MP-logo-Transparent.png" group-title="News",NDTV Madhya Pradesh Chhattisgarh (1080p)
 https://ndtvregional.akamaized.net/hls/live/2102726-b/ndtvmpcg/master_1.m3u8
 #EXTINF:-1 tvg-name="NDTV Rajasthan (1080p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/NDTV-Rajasthan-logo-Transparent.png" group-title="News",NDTV Rajasthan (1080p)
 https://ndtvregional.akamaized.net/hls/live/2102726-b/ndtvraj/master_1.m3u8
+#EXTINF:-1 tvg-name="NEWS18 Assam" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/News18%20Assam%20North%20East.png" group-title="News",NEWS18 Assam
+https://assam_news18_ne-lh.akamaihd.net/i/assam_news18_ne_1@526575/master.m3u8
 #EXTINF:-1 tvg-name="News18 Assam North-East (1080p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/News18%20Assam%20North%20East.png" group-title="News",News18 Assam North-East (1080p)
 https://n18syndication.akamaized.net/bpk-tv/News18_Assam_North_East_NW18_MOB/output01/master.m3u8
+#EXTINF:-1 tvg-name="News18 Bangla (1080p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/News18%20Bangla.png" group-title="News",News18 Bangla (1080p)
+https://n18syndication.akamaized.net/bpk-tv/News18_Bangla_NW18_MOB/output01/master.m3u8
+#EXTINF:-1 tvg-name="NEWS18 Bihar High" group-title="News",NEWS18 Bihar High
+https://etv-bihar-jh.akamaized.net/i/etv_bihar_hls_1@175736/index_5_av-p.m3u8
+#EXTINF:-1 tvg-name="NEWS18 Bihar High" group-title="News",NEWS18 Bihar High
+https://news18bihar-lh.akamaihd.net/i/etv_bihar_hls_1@175736/index_5_av-p.m3u8
 #EXTINF:-1 tvg-name="News18 Bihar Jharkhand (1080p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/News18%20Bihar%20Jharkhand.png" group-title="News",News18 Bihar Jharkhand (1080p)
 https://n18syndication.akamaized.net/bpk-tv/News18_Bihar_Jharkhand_NW18_MOB/output01/master.m3u8
-#EXTINF:-1 tvg-name="News18 Delhi NCR JK (1080p)" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/News18JKLH.png" group-title="News",News18 Delhi NCR JK (1080p)
-https://n18syndication.akamaized.net/bpk-tv/News18_JKLH_NW18_MOB/output01/master.m3u8
 #EXTINF:-1 tvg-name="News18 Gujarati (1080p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/News18%20Gujarati.png" group-title="News",News18 Gujarati (1080p)
 https://n18syndication.akamaized.net/bpk-tv/News18_Gujarati_NW18_MOB/output01/master.m3u8
 #EXTINF:-1 tvg-name="News18 India (1080p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/News18%20India.png" group-title="News",News18 India (1080p)
 https://n18syndication.akamaized.net/bpk-tv/News18_India_NW18_MOB/output01/master.m3u8
+#EXTINF:-1 tvg-name="News18 JKLH (1080p)" tvg-logo="https://dtil.tmsimg.com/assets/s143611_ld_h15_aa.png?lock=720x540" group-title="News",News18 JKLH (1080p)
+https://n18syndication.akamaized.net/bpk-tv/News18_JKLH_NW18_MOB/output01/master.m3u8
 #EXTINF:-1 tvg-name="News18 Kerala (1080p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/News18%20Kerala.png" group-title="News",News18 Kerala (1080p)
 https://n18syndication.akamaized.net/bpk-tv/News18_Kerala_NW18_MOB/output01/master.m3u8
+#EXTINF:-1 tvg-name="News18 Lokmat" tvg-logo="https://dtil.tmsimg.com/assets/s143614_ld_h15_aa.png?lock=720x540" group-title="News",News18 Lokmat
+https://news18lokmat-lh.akamaihd.net/i/n18lokmat_1@178974/index_5_av-p.m3u8
+#EXTINF:-1 tvg-name="News18 Lokmat (1080p)" tvg-logo="https://dtil.tmsimg.com/assets/s143614_ld_h15_aa.png?lock=720x540" group-title="News",News18 Lokmat (1080p)
+https://n18syndication.akamaized.net/bpk-tv/News18_Lokmat_NW18_MOB/output01/master.m3u8
 #EXTINF:-1 tvg-name="News18 Madhya Pradesh/Chhattisgarh (1080p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/News18%20Madhya%20Pradesh%20Chhattisgarh.png" group-title="News",News18 Madhya Pradesh/Chhattisgarh (1080p)
 https://n18syndication.akamaized.net/bpk-tv/News18_MP_Chhattisgarh_NW18_MOB/output01/master.m3u8
-#EXTINF:-1 tvg-name="News18 Marathi (1080p)" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_NEWS18_LOKMAT/images/LOGO_HD/image.png" group-title="News",News18 Marathi (1080p)
-https://n18syndication.akamaized.net/bpk-tv/News18_Lokmat_NW18_MOB/output01/master.m3u8
+#EXTINF:-1 tvg-name="NEWS18 MP" group-title="News",NEWS18 MP
+https://etv-mp.akamaized.net/i/etv_mp_hls_1@175737/index_5_av-p.m3u8
 #EXTINF:-1 tvg-name="News18 Odia (1080p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/News18%20Odia.png" group-title="News",News18 Odia (1080p)
 https://n18syndication.akamaized.net/bpk-tv/News18_Odia_NW18_MOB/output01/master.m3u8
 #EXTINF:-1 tvg-name="News18 Punjab/Haryana/Himachal (1080p)" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/News18PunjabHaryana_Transparent_2db63f4f-2442-45d8-9a4d-c83cf34188c7.png" group-title="News",News18 Punjab/Haryana/Himachal (1080p)
 https://n18syndication.akamaized.net/bpk-tv/News18_Punjab_Haryana_HP_NW18_MOB/output01/master.m3u8
+#EXTINF:-1 tvg-name="NEWS18 Rajastan" group-title="News",NEWS18 Rajastan
+https://etv-rajasthan.akamaized.net/i/etv_rajasthan_hls_1@175738/index_5_av-p.m3u8
 #EXTINF:-1 tvg-name="News18 Rajasthan (1080p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/News18%20Rajasthan.png" group-title="News",News18 Rajasthan (1080p)
 https://n18syndication.akamaized.net/bpk-tv/News18_Rajasthan_NW18_MOB/output01/master.m3u8
 #EXTINF:-1 tvg-name="News18 Tamil Nadu (1080p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/News18%20Tamil%20Nadu.png" group-title="News",News18 Tamil Nadu (1080p)
 https://n18syndication.akamaized.net/bpk-tv/News18_Tamil_Nadu_NW18_MOB/output01/master.m3u8
+#EXTINF:-1 tvg-name="NEWS18 UP" group-title="News",NEWS18 UP
+https://etv-up.akamaized.net/i/etv_up_hls_1@175735/index_5_av-p.m3u8
 #EXTINF:-1 tvg-name="News18 Urdu (1080p)" tvg-logo="https://i.imgur.com/8xnwMRR.png" group-title="News",News18 Urdu (1080p)
 https://n18syndication.akamaized.net/bpk-tv/News18_Urdu_NW18_MOB/output01/master.m3u8
 #EXTINF:-1 tvg-name="News18 Uttar Pradesh Uttarakhand (1080p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/News18%20Uttar%20Pradesh%20Uttarakhand.png" group-title="News",News18 Uttar Pradesh Uttarakhand (1080p)
 https://n18syndication.akamaized.net/bpk-tv/News18_UP_Uttarakhand_NW18_MOB/output01/master.m3u8
+#EXTINF:-1 tvg-name="NEWS18/ETV Haryana/Himachal" group-title="News",NEWS18/ETV Haryana/Himachal
+https://etv-haryana.akamaized.net/i/etv_haryana_live_1@349009/index_5_av-p.m3u8
+#EXTINF:-1 tvg-name="NTD TV English UK (1080p)" group-title="News",NTD TV English UK (1080p)
+https://ntd02.akamaized.net/NTD-UK/index.m3u8
+#EXTINF:-1 tvg-name="NTV Telugu (576p)" tvg-logo="https://dtil.tmsimg.com/assets/s154897_ld_h15_aa.png?lock=720x540" group-title="News",NTV Telugu (576p)
+https://yuppmedtaorire.akamaized.net/v1/master/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/ntv_nim_https/110322/ntv/playlist.m3u8
+#EXTINF:-1 tvg-name="Raj News 24x7" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Raj_News_24x7.png" group-title="News",Raj News 24x7
+http://z5ams.akamaized.net/rajnews/tracks-v1a1/index.m3u8
 #EXTINF:-1 tvg-name="Republic Bangla (1080p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/REPUBLIC-BANGLA-LOGO_RGB_Transparent.png" group-title="News",Republic Bangla (1080p)
 https://vg-republictvlive.akamaized.net/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/vglive-sk-456368/main.m3u8
+#EXTINF:-1 tvg-name="Republic Bharat (1080p) [Geo-blocked]" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/R.Bharat.png" group-title="News",Republic Bharat (1080p) [Geo-blocked]
+https://vg-republictvlive.akamaized.net/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/vglive-sk-275673/main.m3u8
+#EXTINF:-1 tvg-name="Republic Kannada (1080p)" tvg-logo="https://dtil.tmsimg.com/assets/s142883_ld_h15_aa.png?lock=720x540" group-title="News",Republic Kannada (1080p)
+https://vg-republictvlive.akamaized.net/ptnr-republicweb/title-Republic_TV_Kannada/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/1acd1ce1-c6a7-4ae4-afa1-133ffb111ebb/main.m3u8
+#EXTINF:-1 tvg-name="Republic TV HS" tvg-logo="http://smumcdnems03.cdnsrv.jio.com/mumsite.cdnsrv.jio.com/jiotv.catchup.cdn.jio.com/dare_images/images/Republic_TV.png" group-title="News",Republic TV HS
+https://hshlsdai-i.akamaihd.net/hls/live/568572-b/hotstar_scte2612/master_chunklist5.m3u8
 #EXTINF:-1 tvg-name="RTHK TV 35 (1080p) [Geo-blocked]" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="News",RTHK TV 35 (1080p) [Geo-blocked]
 https://rthktv35-live.akamaized.net/hls/live/2101643/RTHKTV35/master.m3u8
 #EXTINF:-1 tvg-name="Sakshi TV (576p)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Sakshi_tv.jpg/960px-Sakshi_tv.jpg" group-title="News",Sakshi TV (576p)
 https://yuppmedtaorire.akamaized.net/v1/master/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/sakshi_nim_https/240122/sakshi/playlist.m3u8
+#EXTINF:-1 tvg-name="Salaam TV (720p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Salaam_TV_Hindi_2000_X_1125_transpharent.png" group-title="News",Salaam TV (720p)
+https://vg-zeefta.akamaized.net/ptnr-yupptv/title-zeesalaam/v1/manifest/611d79b11b77e2f571934fd80ca1413453772ac7/426c6db7-595e-4aa8-859c-7e86ed2811d0/af896be5-4743-41fc-8b6a-eb05e44f3a6e/3.m3u8
+#EXTINF:-1 tvg-name="Star Bharat HS HQ" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/8704/1782288318704-h.jpg" group-title="News",Star Bharat HS HQ
+http://starbharat-i.akamaihd.net/hls/live/569933/starbharat/master_2000.m3u8
 #EXTINF:-1 tvg-name="Sterk TV (1080p)" group-title="News",Sterk TV (1080p)
 https://hlspackager.akamaized.net/live/DB/STERK_TV/HLS/STERK_TV.m3u8
+#EXTINF:-1 tvg-name="Times Now HD" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/TIMES%20NOW.png" group-title="News",Times Now HD
+https://timesnow-lh.akamaihd.net/i/TNHD_1@129288/master.m3u8
 #EXTINF:-1 tvg-name="Times Now Navbharat HD (1080p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/TIMES%20NOW.png" group-title="News",Times Now Navbharat HD (1080p)
 https://yupprestreamliveus.akamaized.net/v1/vglive-sk-717514/main.m3u8
+#EXTINF:-1 tvg-name="TV5 Kannada (576p)" tvg-logo="https://dtil.tmsimg.com/assets/s144024_ld_h15_aa.png?lock=720x540" group-title="News",TV5 Kannada (576p)
+https://yuppnimresmum.akamaized.net/050522/tv5kannada/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
 #EXTINF:-1 tvg-name="tv9 Telemaremma (576p)" group-title="News",tv9 Telemaremma (576p)
 https://rtmp-live-ingest-us-east-1-universe-dacast-com.akamaized.net/transmuxv1/streams/2095a288-1384-ed2e-5da0-278ccbb72295.m3u8
 #EXTINF:-1 tvg-name="WION (1080p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/WION.png" group-title="News",WION (1080p)
 http://vg-zeefta.akamaized.net/ptnr-yupptv/title-wion/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/20c3c0d9-0256-43fe-bca6-70fdd490b957/main.m3u8
 #EXTINF:-1 tvg-name="Zee Bharat (720p)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Zee_Bharat_2025.svg/960px-Zee_Bharat_2025.svg.png" group-title="News",Zee Bharat (720p)
 https://vg-zeefta.akamaized.net/ptnr-yupptv/title-zeehindustan/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/96bbab12-582e-4540-af70-510ab6824581/main.m3u8
+#EXTINF:-1 tvg-name="Zee Bihar Jharkhand (720p)" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG00230Y44.png?lock=720x540" group-title="News",Zee Bihar Jharkhand (720p)
+https://vg-zeefta.akamaized.net/ptnr-yupptv/title-zeebiharjharkhand/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/28077955-07d7-4ae2-8b11-9f318cd69420/main.m3u8
+#EXTINF:-1 tvg-name="Zee Delhi NCR Haryana (720p)" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0023166M.png?lock=720x540" group-title="News",Zee Delhi NCR Haryana (720p)
+https://vg-zeefta.akamaized.net/ptnr-yupptv/title-zeedelhincr/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/cc483a15-1b39-4642-872d-5d08d362ed01/main.m3u8
 #EXTINF:-1 tvg-name="Zee Madhya Pradesh Chhattisgarh (720p)" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG002316X5.png?lock=720x540" group-title="News",Zee Madhya Pradesh Chhattisgarh (720p)
 https://vg-zeefta.akamaized.net/ptnr-yupptv/title-zeemadhyachhattisgarh/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/2ab17056-6187-4f0e-a34d-f436ac479d6c/main.m3u8
+#EXTINF:-1 tvg-name="Zee News (720p)" tvg-logo="https://image.airtel.tv/grandslam/content/2025_06_17/LOGO_X99oIa_Fm_Znews_logo-for-larg.png" group-title="News",Zee News (720p)
+https://vg-zeefta.akamaized.net/ptnr-yupptv/title-zeenews/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/8744f9fb-d696-4204-9795-5215ad930c39/main.m3u8
+#EXTINF:-1 tvg-name="Zee Punjab Haryana Himachal (720p)" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022KHKS.png?lock=720x540" group-title="News",Zee Punjab Haryana Himachal (720p)
+https://vg-zeefta.akamaized.net/ptnr-yupptv/title-zeepunjabharyanahima/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/65eed269-2f3a-4dd0-ac89-d18959af28e3/main.m3u8
 #EXTINF:-1 tvg-name="Zee Rajasthan (720p)" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG00231732.png?lock=720x540" group-title="News",Zee Rajasthan (720p)
 https://vg-zeefta.akamaized.net/ptnr-yupptv/title-zeerajashthannews/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/8e864b9a-1681-41a0-99a6-387490bc5b24/main.m3u8
+#EXTINF:-1 tvg-name="$ CNBC Bazaar Gujarati" group-title="Other",$ CNBC Bazaar Gujarati
+https://cnbcbazar-lh.akamaihd.net/i/cnbc_gujrati_hls_n_1@178933/index_4_av-p.m3u8
+#EXTINF:-1 tvg-name="$ Flashback TV (USA)" group-title="Other",$ Flashback TV (USA)
+https://dcunilive28-lh.akamaihd.net/i/dclive_1@533390/master.m3u8
+#EXTINF:-1 tvg-name="$ Sakkat Kannada TV" group-title="Other",$ Sakkat Kannada TV
+https://linear03hun-lh.akamaihd.net/i/sakkat_1@665240/master.m3u8
+#EXTINF:-1 tvg-name="$ Zee Living High" group-title="Other",$ Zee Living High
+https://msluks.akamaized.net/hls/live/2000132/zeelivingmemsl/zeelivingme2000k/chunklist.m3u8
+#EXTINF:-1 tvg-name="$ Zee Living Med" group-title="Other",$ Zee Living Med
+https://msluks.akamaized.net/hls/live/2000132/zeelivingmemsl/zeelivingme1100k/chunklist.m3u8
+#EXTINF:-1 tvg-name="*~hmac=0246cbac5dd7a43e57ebb56897b3e761591ee85374701098e72d84e419b27b3c&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=BHOJ&ads content_genre=MOV&ads channel=7175&ads channel_name=MahuaPlay&ads network_name=yupptv&ads user=0" group-title="Other",*~hmac=0246cbac5dd7a43e57ebb56897b3e761591ee85374701098e72d84e419b27b3c&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=BHOJ&ads content_genre=MOV&ads channel=7175&ads channel_name=MahuaPlay&ads network_name=yupptv&ads user=0
+https://vglivessai.akamaized.net/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/0ff8912e-d0e7-4e38-8c2b-6ba85413b484/index.m3u8?hdnts=st=1790624989~exp=1790628589~acl=!*/611d79b11b77e2f571934fd80ca1413453772ac7/0ff8912e-d0e7-4e38-8c2b-6ba85413b484/*!yuppTVCom_5_-1_7c89178da3874ab8_US_172.184.209.147/payload/yuppTVCom_5_-1_7c89178da3874ab8_US_172.184.209.147/*~hmac=0246cbac5dd7a43e57ebb56897b3e761591ee85374701098e72d84e419b27b3c&ads.app_bundle=&ads.app_store_url=&ads.content_livestream=1&ads.language=BHOJ&ads.content_genre=MOV&ads.channel=7175&ads.channel_name=MahuaPlay&ads.network_name=yupptv&ads.user=0
+#EXTINF:-1 tvg-name="*~hmac=5d158561ab4b00556660a181f34736c2defdb878555bc8f1a4db51d96f496518&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=BHOJ&ads content_genre=MOV&ads channel=7175&ads channel_name=MahuaPlay&ads network_name=yupptv&ads user=0" group-title="Other",*~hmac=5d158561ab4b00556660a181f34736c2defdb878555bc8f1a4db51d96f496518&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=BHOJ&ads content_genre=MOV&ads channel=7175&ads channel_name=MahuaPlay&ads network_name=yupptv&ads user=0
+https://vglivessai.akamaized.net/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/0ff8912e-d0e7-4e38-8c2b-6ba85413b484/index.m3u8?hdnts=st=1790624985~exp=1790628585~acl=!*/611d79b11b77e2f571934fd80ca1413453772ac7/0ff8912e-d0e7-4e38-8c2b-6ba85413b484/*!yuppTVCom_5_-1_7c89178da3874ab8_US_172.184.209.147/payload/yuppTVCom_5_-1_7c89178da3874ab8_US_172.184.209.147/*~hmac=5d158561ab4b00556660a181f34736c2defdb878555bc8f1a4db51d96f496518&ads.app_bundle=&ads.app_store_url=&ads.content_livestream=1&ads.language=BHOJ&ads.content_genre=MOV&ads.channel=7175&ads.channel_name=MahuaPlay&ads.network_name=yupptv&ads.user=0
+#EXTINF:-1 tvg-name="*~hmac=7d772790965fef45006731f0a83e9b16001cae09fd6ad718d7291c33aeb81cce&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=BHOJ&ads content_genre=MOV&ads channel=7175&ads channel_name=MahuaPlay&ads network_name=yupptv&ads user=0" group-title="Other",*~hmac=7d772790965fef45006731f0a83e9b16001cae09fd6ad718d7291c33aeb81cce&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=BHOJ&ads content_genre=MOV&ads channel=7175&ads channel_name=MahuaPlay&ads network_name=yupptv&ads user=0
+https://vglivessai.akamaized.net/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/0ff8912e-d0e7-4e38-8c2b-6ba85413b484/index.m3u8?hdnts=st=1790607767~exp=1790611367~acl=!*/611d79b11b77e2f571934fd80ca1413453772ac7/0ff8912e-d0e7-4e38-8c2b-6ba85413b484/*!yuppTVCom_5_-1_62b160e06d114425_US_52.182.171.93/payload/yuppTVCom_5_-1_62b160e06d114425_US_52.182.171.93/*~hmac=7d772790965fef45006731f0a83e9b16001cae09fd6ad718d7291c33aeb81cce&ads.app_bundle=&ads.app_store_url=&ads.content_livestream=1&ads.language=BHOJ&ads.content_genre=MOV&ads.channel=7175&ads.channel_name=MahuaPlay&ads.network_name=yupptv&ads.user=0
+#EXTINF:-1 tvg-name="*~hmac=8a2e513be86be72764c6797264148b7662ce044a540619f5d735e1ffeb354b7c&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=BHOJ&ads content_genre=MOV&ads channel=7175&ads channel_name=MahuaPlay&ads network_name=yupptv&ads user=0" group-title="Other",*~hmac=8a2e513be86be72764c6797264148b7662ce044a540619f5d735e1ffeb354b7c&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=BHOJ&ads content_genre=MOV&ads channel=7175&ads channel_name=MahuaPlay&ads network_name=yupptv&ads user=0
+https://vglivessai.akamaized.net/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/0ff8912e-d0e7-4e38-8c2b-6ba85413b484/index.m3u8?hdnts=st=1790632034~exp=1790635634~acl=!*/611d79b11b77e2f571934fd80ca1413453772ac7/0ff8912e-d0e7-4e38-8c2b-6ba85413b484/*!yuppTVCom_5_-1_ff4604d3688146d2_US_172.212.163.230/payload/yuppTVCom_5_-1_ff4604d3688146d2_US_172.212.163.230/*~hmac=8a2e513be86be72764c6797264148b7662ce044a540619f5d735e1ffeb354b7c&ads.app_bundle=&ads.app_store_url=&ads.content_livestream=1&ads.language=BHOJ&ads.content_genre=MOV&ads.channel=7175&ads.channel_name=MahuaPlay&ads.network_name=yupptv&ads.user=0
+#EXTINF:-1 tvg-name="*~hmac=b9b93754e5e3a459b71f4a39bc4a6d01453eb32312eba62cccd994b9f2ed36dd&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=BHOJ&ads content_genre=MOV&ads channel=7175&ads channel_name=MahuaPlay&ads network_name=yupptv&ads user=0" group-title="Other",*~hmac=b9b93754e5e3a459b71f4a39bc4a6d01453eb32312eba62cccd994b9f2ed36dd&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=BHOJ&ads content_genre=MOV&ads channel=7175&ads channel_name=MahuaPlay&ads network_name=yupptv&ads user=0
+https://vglivessai.akamaized.net/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/0ff8912e-d0e7-4e38-8c2b-6ba85413b484/index.m3u8?hdnts=st=1790607856~exp=1790611456~acl=!*/611d79b11b77e2f571934fd80ca1413453772ac7/0ff8912e-d0e7-4e38-8c2b-6ba85413b484/*!yuppTVCom_5_-1_62b160e06d114425_US_52.182.171.93/payload/yuppTVCom_5_-1_62b160e06d114425_US_52.182.171.93/*~hmac=b9b93754e5e3a459b71f4a39bc4a6d01453eb32312eba62cccd994b9f2ed36dd&ads.app_bundle=&ads.app_store_url=&ads.content_livestream=1&ads.language=BHOJ&ads.content_genre=MOV&ads.channel=7175&ads.channel_name=MahuaPlay&ads.network_name=yupptv&ads.user=0
+#EXTINF:-1 tvg-name="*~hmac=db3a02516928da9d0cc7c847d1c9771e3d84f9c7a6597b702a1a5441f5b9014c&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=BHOJ&ads content_genre=MOV&ads channel=7175&ads channel_name=MahuaPlay&ads network_name=yupptv&ads user=0" group-title="Other",*~hmac=db3a02516928da9d0cc7c847d1c9771e3d84f9c7a6597b702a1a5441f5b9014c&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=BHOJ&ads content_genre=MOV&ads channel=7175&ads channel_name=MahuaPlay&ads network_name=yupptv&ads user=0
+https://vglivessai.akamaized.net/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/0ff8912e-d0e7-4e38-8c2b-6ba85413b484/index.m3u8?hdnts=st=1790632023~exp=1790635623~acl=!*/611d79b11b77e2f571934fd80ca1413453772ac7/0ff8912e-d0e7-4e38-8c2b-6ba85413b484/*!yuppTVCom_5_-1_ff4604d3688146d2_US_172.212.163.230/payload/yuppTVCom_5_-1_ff4604d3688146d2_US_172.212.163.230/*~hmac=db3a02516928da9d0cc7c847d1c9771e3d84f9c7a6597b702a1a5441f5b9014c&ads.app_bundle=&ads.app_store_url=&ads.content_livestream=1&ads.language=BHOJ&ads.content_genre=MOV&ads.channel=7175&ads.channel_name=MahuaPlay&ads.network_name=yupptv&ads.user=0
+#EXTINF:-1 tvg-name="*~hmac=e5cda45692c6e865a2ad22a1f75faf032823a100d084ec305a4a42de22d5d550&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=BHOJ&ads content_genre=MOV&ads channel=7175&ads channel_name=MahuaPlay&ads network_name=yupptv&ads user=0" group-title="Other",*~hmac=e5cda45692c6e865a2ad22a1f75faf032823a100d084ec305a4a42de22d5d550&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=BHOJ&ads content_genre=MOV&ads channel=7175&ads channel_name=MahuaPlay&ads network_name=yupptv&ads user=0
+https://vglivessai.akamaized.net/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/0ff8912e-d0e7-4e38-8c2b-6ba85413b484/index.m3u8?hdnts=st=1790601252~exp=1790604852~acl=!*/611d79b11b77e2f571934fd80ca1413453772ac7/0ff8912e-d0e7-4e38-8c2b-6ba85413b484/*!yuppTVCom_5_-1_322afc248a60481b_US_52.190.141.32/payload/yuppTVCom_5_-1_322afc248a60481b_US_52.190.141.32/*~hmac=e5cda45692c6e865a2ad22a1f75faf032823a100d084ec305a4a42de22d5d550&ads.app_bundle=&ads.app_store_url=&ads.content_livestream=1&ads.language=BHOJ&ads.content_genre=MOV&ads.channel=7175&ads.channel_name=MahuaPlay&ads.network_name=yupptv&ads.user=0
+#EXTINF:-1 tvg-name="*~hmac=e6b552f0e0fe003aec5786705f0c2e62c1814321e42b87f4b66a6ea8fef3fa38&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=BHOJ&ads content_genre=MOV&ads channel=7175&ads channel_name=MahuaPlay&ads network_name=yupptv&ads user=0" group-title="Other",*~hmac=e6b552f0e0fe003aec5786705f0c2e62c1814321e42b87f4b66a6ea8fef3fa38&ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=BHOJ&ads content_genre=MOV&ads channel=7175&ads channel_name=MahuaPlay&ads network_name=yupptv&ads user=0
+https://vglivessai.akamaized.net/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/0ff8912e-d0e7-4e38-8c2b-6ba85413b484/index.m3u8?hdnts=st=1790601720~exp=1790605320~acl=!*/611d79b11b77e2f571934fd80ca1413453772ac7/0ff8912e-d0e7-4e38-8c2b-6ba85413b484/*!yuppTVCom_5_-1_322afc248a60481b_US_52.190.141.32/payload/yuppTVCom_5_-1_322afc248a60481b_US_52.190.141.32/*~hmac=e6b552f0e0fe003aec5786705f0c2e62c1814321e42b87f4b66a6ea8fef3fa38&ads.app_bundle=&ads.app_store_url=&ads.content_livestream=1&ads.language=BHOJ&ads.content_genre=MOV&ads.channel=7175&ads.channel_name=MahuaPlay&ads.network_name=yupptv&ads.user=0
+#EXTINF:-1 tvg-name="537 36" group-title="Other",537 36
+https://previewsecgire.akamaized.net/v1/master/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/pr_star/maatvhd/master/chunklist.m3u8?hdnts=st=1790607776~exp=1790629376~acl=!*/v1/master/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/pr_star/maatvhd/master/*!/payload/yupptvott_5_-1_19f1d92e-3f03-df7f-0ef7-c5e11125b7d1_US_52.182.171.93_yupptv_1_channel_42_-1/*~data=yupptvott_5_-1_19f1d92e-3f03-df7f-0ef7-c5e11125b7d1_US_52.182.171.93_yupptv_1_channel_42_-1~hmac=a108086c2982dd8a6147bc3bb9073ff51f22de929d132a9905f831343215c165&ads.content_custom_3_param=yuppfastint&ads.ip=52.182.171.93&did=19f1d92e-3f03-df7f-0ef7-c5e11125b7d1&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=ENTERTAINMENT&ads.content_custom_1_param=&ads.channel=42&ads.channel_name=MaaTVHD&ads.language=TEL&content_custom_2_param=fusion-web&ads.user=0&ads.ua=Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)HeadlessChrome/153.0.8010.12Safari/537.36
+#EXTINF:-1 tvg-name="537 36" group-title="Other",537 36
+https://previewsecgire.akamaized.net/v1/master/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/pr_star/maatvhd/master/chunklist.m3u8?hdnts=st=1790619309~exp=1790640909~acl=!*/v1/master/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/pr_star/maatvhd/master/*!/payload/yupptvott_5_-1_9006cf2b-4ff2-4fd6-8cc2-ad6f95c338e9_US_52.153.130.145_yupptv_1_channel_42_-1/*~data=yupptvott_5_-1_9006cf2b-4ff2-4fd6-8cc2-ad6f95c338e9_US_52.153.130.145_yupptv_1_channel_42_-1~hmac=e9a40831af7ef2f8d23c2e7081d06aa729ee34fd0f0b5f4ed010eed0aa568e9b&ads.content_custom_3_param=yuppfastint&ads.ip=52.153.130.145&did=9006cf2b-4ff2-4fd6-8cc2-ad6f95c338e9&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=ENTERTAINMENT&ads.content_custom_1_param=&ads.channel=42&ads.channel_name=MaaTVHD&ads.language=TEL&content_custom_2_param=fusion-web&ads.user=0&ads.ua=Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)HeadlessChrome/153.0.8010.12Safari/537.36
+#EXTINF:-1 tvg-name="537 36" group-title="Other",537 36
+https://previewsecgire.akamaized.net/v1/master/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/pr_star/maatvhd/master/chunklist.m3u8?hdnts=st=1790616922~exp=1790638522~acl=!*/v1/master/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/pr_star/maatvhd/master/*!/payload/yupptvott_5_-1_1c3b0788-3a83-f93a-2a68-1c0772dea81f_US_132.196.80.211_yupptv_1_channel_42_-1/*~data=yupptvott_5_-1_1c3b0788-3a83-f93a-2a68-1c0772dea81f_US_132.196.80.211_yupptv_1_channel_42_-1~hmac=6e6c160307d1acec0bdd5b4c378abc426838ea4c6b8b51ee2b3cc33acca083a8&ads.content_custom_3_param=yuppfastint&ads.ip=132.196.80.211&did=1c3b0788-3a83-f93a-2a68-1c0772dea81f&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=ENTERTAINMENT&ads.content_custom_1_param=&ads.channel=42&ads.channel_name=MaaTVHD&ads.language=TEL&content_custom_2_param=fusion-web&ads.user=0&ads.ua=Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)HeadlessChrome/153.0.8010.12Safari/537.36
+#EXTINF:-1 tvg-name="537 36" group-title="Other",537 36
+https://previewsecgire.akamaized.net/v1/master/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/pr_star/maatvhd/master/chunklist.m3u8?hdnts=st=1790601753~exp=1790623353~acl=!*/v1/master/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/pr_star/maatvhd/master/*!/payload/yupptvott_5_-1_6bc98138-26e2-a205-e980-bce9f0bfb52f_US_52.190.141.32_yupptv_1_channel_42_-1/*~data=yupptvott_5_-1_6bc98138-26e2-a205-e980-bce9f0bfb52f_US_52.190.141.32_yupptv_1_channel_42_-1~hmac=ce3aa84a22bacf3f182f3f1eb3a1287f61a3554abd372f562148e444b14b7f73&ads.content_custom_3_param=yuppfastint&ads.ip=52.190.141.32&did=6bc98138-26e2-a205-e980-bce9f0bfb52f&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=ENTERTAINMENT&ads.content_custom_1_param=&ads.channel=42&ads.channel_name=MaaTVHD&ads.language=TEL&content_custom_2_param=fusion-web&ads.user=0&ads.ua=Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)HeadlessChrome/153.0.8010.12Safari/537.36
+#EXTINF:-1 tvg-name="890edf9bfcad4ee8fe3ab4b33e4a4ab1 avif?t=1789650456" group-title="Other",890edf9bfcad4ee8fe3ab4b33e4a4ab1 avif?t=1789650456
+https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1172620/extras/890edf9bfcad4ee8fe3ab4b33e4a4ab1.avif?t=1789650456
 #EXTINF:-1 tvg-name="9Life (720p) [Geo-blocked]" group-title="Other",9Life (720p) [Geo-blocked]
 https://9now-livestreams.akamaized.net/hls/live/2008313/life-syd/master.m3u8
+#EXTINF:-1 tvg-name="abcn-live-01-index m3u8" group-title="Other",abcn-live-01-index m3u8
+https://abcnews-livestreams.akamaized.net/out/v1/42a9b78d0a1f4b6599bbdfb1ae512bc4/abcn-live-01-cmaf-manifest/abcn-live-01-index.m3u8
+#EXTINF:-1 tvg-name="abcn-live-01-index_2 m3u8" group-title="Other",abcn-live-01-index_2 m3u8
+https://abcnews-livestreams.akamaized.net/out/v1/42a9b78d0a1f4b6599bbdfb1ae512bc4/abcn-live-01-cmaf-manifest/abcn-live-01-index_2.m3u8
+#EXTINF:-1 tvg-name="abcn-live-01-index_4_0 m3u8" group-title="Other",abcn-live-01-index_4_0 m3u8
+https://abcnews-livestreams.akamaized.net/out/v1/42a9b78d0a1f4b6599bbdfb1ae512bc4/abcn-live-01-cmaf-manifest/abcn-live-01-index_4_0.m3u8
+#EXTINF:-1 tvg-name="abcn-live-02-index m3u8" group-title="Other",abcn-live-02-index m3u8
+https://abcnews-livestreams.akamaized.net/out/v1/d2152c41f0834ad585e5157619b5887b/abcn-live-02-cmaf-manifest/abcn-live-02-index.m3u8
+#EXTINF:-1 tvg-name="abcn-live-02-index_2 m3u8" group-title="Other",abcn-live-02-index_2 m3u8
+https://abcnews-livestreams.akamaized.net/out/v1/d2152c41f0834ad585e5157619b5887b/abcn-live-02-cmaf-manifest/abcn-live-02-index_2.m3u8
+#EXTINF:-1 tvg-name="abcn-live-02-index_4_0 m3u8" group-title="Other",abcn-live-02-index_4_0 m3u8
+https://abcnews-livestreams.akamaized.net/out/v1/d2152c41f0834ad585e5157619b5887b/abcn-live-02-cmaf-manifest/abcn-live-02-index_4_0.m3u8
+#EXTINF:-1 tvg-name="abcn-live-03-index m3u8" group-title="Other",abcn-live-03-index m3u8
+https://abcnews-livestreams.akamaized.net/out/v1/db9dd7bcb4ae42a884cd9d77b3b2c672/abcn-live-03-cmaf-manifest/abcn-live-03-index.m3u8
+#EXTINF:-1 tvg-name="abcn-live-03-index_2 m3u8" group-title="Other",abcn-live-03-index_2 m3u8
+https://abcnews-livestreams.akamaized.net/out/v1/db9dd7bcb4ae42a884cd9d77b3b2c672/abcn-live-03-cmaf-manifest/abcn-live-03-index_2.m3u8
+#EXTINF:-1 tvg-name="abcn-live-03-index_4_0 m3u8" group-title="Other",abcn-live-03-index_4_0 m3u8
+https://abcnews-livestreams.akamaized.net/out/v1/db9dd7bcb4ae42a884cd9d77b3b2c672/abcn-live-03-cmaf-manifest/abcn-live-03-index_4_0.m3u8
+#EXTINF:-1 tvg-name="abcn-live-07-index m3u8" group-title="Other",abcn-live-07-index m3u8
+https://abcnews-livestreams.akamaized.net/out/v1/154d2c2958f641ebaff682b130320ea5/abcn-live-07-cmaf-manifest/abcn-live-07-index.m3u8
+#EXTINF:-1 tvg-name="abcn-live-07-index_2 m3u8" group-title="Other",abcn-live-07-index_2 m3u8
+https://abcnews-livestreams.akamaized.net/out/v1/154d2c2958f641ebaff682b130320ea5/abcn-live-07-cmaf-manifest/abcn-live-07-index_2.m3u8
+#EXTINF:-1 tvg-name="abcn-live-07-index_4_0 m3u8" group-title="Other",abcn-live-07-index_4_0 m3u8
+https://abcnews-livestreams.akamaized.net/out/v1/154d2c2958f641ebaff682b130320ea5/abcn-live-07-cmaf-manifest/abcn-live-07-index_4_0.m3u8
+#EXTINF:-1 tvg-name="abcn-live-09-index m3u8" group-title="Other",abcn-live-09-index m3u8
+https://abcnews-livestreams.akamaized.net/out/v1/4122fc2fd19e4064861b3c6a096286fb/abcn-live-09-cmaf-manifest/abcn-live-09-index.m3u8
+#EXTINF:-1 tvg-name="abcn-live-09-index_2 m3u8" group-title="Other",abcn-live-09-index_2 m3u8
+https://abcnews-livestreams.akamaized.net/out/v1/4122fc2fd19e4064861b3c6a096286fb/abcn-live-09-cmaf-manifest/abcn-live-09-index_2.m3u8
+#EXTINF:-1 tvg-name="abcn-live-09-index_4_0 m3u8" group-title="Other",abcn-live-09-index_4_0 m3u8
+https://abcnews-livestreams.akamaized.net/out/v1/4122fc2fd19e4064861b3c6a096286fb/abcn-live-09-cmaf-manifest/abcn-live-09-index_4_0.m3u8
+#EXTINF:-1 tvg-name="abcn-live-10-index m3u8" group-title="Other",abcn-live-10-index m3u8
+https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index.m3u8
+#EXTINF:-1 tvg-name="abcn-live-10-index_2 m3u8" group-title="Other",abcn-live-10-index_2 m3u8
+https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index_2.m3u8
+#EXTINF:-1 tvg-name="abcn-live-10-index_4_0 m3u8" group-title="Other",abcn-live-10-index_4_0 m3u8
+https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index_4_0.m3u8
 #EXTINF:-1 tvg-name="Animation+ (1080p) [Geo-blocked]" group-title="Other",Animation+ (1080p) [Geo-blocked]
 https://pb-ioe9d0fpkd6pp.akamaized.net/playlist.m3u8
-#EXTINF:-1 tvg-name="BBC Alba [Geo-blocked]" group-title="Other",BBC Alba [Geo-blocked]
-https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_alba/hevc_iptv_mse_v0.mpd
-#EXTINF:-1 tvg-name="BBC One (720p) [Geo-blocked]" group-title="Other",BBC One (720p) [Geo-blocked]
-https://vs-cmaf-push-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_london/iptv_hd_abr_v1.mpd
 #EXTINF:-1 tvg-name="BBC One Channel Islands (720p) [Geo-blocked]" group-title="Other",BBC One Channel Islands (720p) [Geo-blocked]
 https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_channel_islands/pc_hd_abr_v2.mpd
 #EXTINF:-1 tvg-name="BBC One East (720p) [Geo-blocked]" group-title="Other",BBC One East (720p) [Geo-blocked]
@@ -295,8 +587,6 @@ https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_w
 https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_yorks/pc_hd_abr_v2.mpd
 #EXTINF:-1 tvg-name="BBC One Yorkshire HD (720p) [Geo-blocked]" group-title="Other",BBC One Yorkshire HD (720p) [Geo-blocked]
 https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_east_yorkshire/pc_hd_abr_v2.mpd
-#EXTINF:-1 tvg-name="BBC Parliament (720p) [Geo-blocked]" group-title="Other",BBC Parliament (720p) [Geo-blocked]
-https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_parliament/iptv_hd_abr_v1.mpd
 #EXTINF:-1 tvg-name="BBC Red Button 10 (720p) [Geo-blocked]" group-title="Other",BBC Red Button 10 (720p) [Geo-blocked]
 https://ve-cmaf-push-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:uk_bbc_stream_010/iptv_hd_abr_v1.mpd
 #EXTINF:-1 tvg-name="BBC Red Button 11 (720p) [Geo-blocked]" group-title="Other",BBC Red Button 11 (720p) [Geo-blocked]
@@ -343,8 +633,6 @@ https://ve-cmaf-push-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:uk_bbc_str
 https://ve-cmaf-push-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:uk_bbc_stream_008/iptv_hd_abr_v1.mpd
 #EXTINF:-1 tvg-name="BBC Red Button 9 (720p) [Geo-blocked]" group-title="Other",BBC Red Button 9 (720p) [Geo-blocked]
 https://ve-cmaf-push-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:uk_bbc_stream_009/iptv_hd_abr_v1.mpd
-#EXTINF:-1 tvg-name="BBC Scotland (720p) [Geo-blocked]" group-title="Other",BBC Scotland (720p) [Geo-blocked]
-https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_scotland_hd/iptv_hd_abr_v1.mpd
 #EXTINF:-1 tvg-name="BBC Three (720p) [Geo-blocked]" group-title="Other",BBC Three (720p) [Geo-blocked]
 https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_three_hd/iptv_hd_abr_v1.mpd
 #EXTINF:-1 tvg-name="BBC Two Northern Ireland (540p) [Geo-blocked]" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Other",BBC Two Northern Ireland (540p) [Geo-blocked]
@@ -353,6 +641,8 @@ https://vs-hls-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_two_no
 https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_two_northern_ireland_hd/iptv_hd_abr_v1.mpd
 #EXTINF:-1 tvg-name="BBC Two Wales (720p) [Geo-blocked]" group-title="Other",BBC Two Wales (720p) [Geo-blocked]
 https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_two_wales_digital/iptv_hd_abr_v1.mpd
+#EXTINF:-1 tvg-name="Bollywood Classic" group-title="Other",Bollywood Classic
+http://telekomtv-ro.akamaized.net/shls/LIVE$BollywoodClassic/6.m3u8/Level(1677721)?start=LIVE&end=END
 #EXTINF:-1 tvg-name="CBC Television CBRT-DT (720p) [Geo-blocked]" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Other",CBC Television CBRT-DT (720p) [Geo-blocked]
 https://cbcrclinear-tor.akamaized.net/hls/live/2042763/CBCRCLINEAR_TOR_9/master5.m3u8
 #EXTINF:-1 tvg-name="Channel 9 (Australia) (720p) [Geo-blocked]" group-title="Other",Channel 9 (Australia) (720p) [Geo-blocked]
@@ -363,12 +653,48 @@ https://9now-livestreams-fhd-t.akamaized.net/u/prod/simulcast/adl/ch9/hls/r1/ind
 https://9now-livestreams-fhd-t.akamaized.net/u/prod/simulcast/bne/ch9/hls/r1/index.m3u8
 #EXTINF:-1 tvg-name="Channel 9 (Australia) Perth (720p) [Geo-blocked]" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Other",Channel 9 (Australia) Perth (720p) [Geo-blocked]
 https://9now-livestreams-fhd-t.akamaized.net/u/prod/simulcast/per/ch9/hls/r1/index.m3u8
+#EXTINF:-1 tvg-name="chunks m3u8" group-title="Other",chunks m3u8
+https://live-bangla.akamaized.net/liveabr/pub-iobanglakp3sff/live_360p/chunks.m3u8
+#EXTINF:-1 tvg-name="chunks m3u8" group-title="Other",chunks m3u8
+https://aajtakhdlive-amd.akamaized.net/hls/live/2014415/aajtakhd/aajtakhdlive/live_1080p/chunks.m3u8
+#EXTINF:-1 tvg-name="chunks m3u8" group-title="Other",chunks m3u8
+https://aajtakhdlive-amd.akamaized.net/hls/live/2014415/aajtakhd/aajtakhdlive/live_234p/chunks.m3u8
+#EXTINF:-1 tvg-name="chunks m3u8" group-title="Other",chunks m3u8
+https://aajtakhdlive-amd.akamaized.net/hls/live/2014415/aajtakhd/aajtakhdlive/live_720p/chunks.m3u8
 #EXTINF:-1 tvg-name="Clarity 4K (2160p) [Geo-blocked]" group-title="Other",Clarity 4K (2160p) [Geo-blocked]
 https://pb-qyrvophnifz47.akamaized.net/Clarity_4K.m3u8
 #EXTINF:-1 tvg-name="Dog Whisperer (1080p) [Geo-blocked]" group-title="Other",Dog Whisperer (1080p) [Geo-blocked]
 https://pb-ffpxvjshv4rxx.akamaized.net/Dog_Whisperer_with_Cesar_Millan.m3u8
 #EXTINF:-1 tvg-name="DR2 (1080p) [Geo-blocked]" group-title="Other",DR2 (1080p) [Geo-blocked]
 https://drlivedr2hls.akamaized.net/hls/live/2113623/drlivedr2/master.m3u8
+#EXTINF:-1 tvg-name="group-title="Hindi(हिन्दी)",& Pictures HD" group-title="Other",group-title="Hindi(हिन्दी)",& Pictures HD
+http://z5ams.akamaized.net/andpicshd/tracks-v1a1/index.m3u8
+#EXTINF:-1 tvg-name="group-title="Hindi(हिन्दी)",& TV" group-title="Other",group-title="Hindi(हिन्दी)",& TV
+http://z5ams.akamaized.net/andtvsd/tracks-v1a1/index.m3u8
+#EXTINF:-1 tvg-name="group-title="Hindi(हिन्दी)",& TV HD" group-title="Other",group-title="Hindi(हिन्दी)",& TV HD
+http://z5ams.akamaized.net/andtvhd/tracks-v1a1/index.m3u8
+#EXTINF:-1 tvg-name="group-title="Hindi(हिन्दी)",Divya" group-title="Other",group-title="Hindi(हिन्दी)",Divya
+http://z5ams.akamaized.net/divyatv/tracks-v1a1/index.m3u8
+#EXTINF:-1 tvg-name="group-title="Hindi(हिन्दी)",LSTV" group-title="Other",group-title="Hindi(हिन्दी)",LSTV
+http://nicls1-lh.akamaihd.net/i/lst_1@26969/master.m3u8
+#EXTINF:-1 tvg-name="group-title="Hindi(हिन्दी)",RSTV" group-title="Other",group-title="Hindi(हिन्दी)",RSTV
+http://nicls2-lh.akamaihd.net/i/rstv_1@26970/master.m3u8
+#EXTINF:-1 tvg-name="group-title="Hindi(हिन्दी)",Sanskar" group-title="Other",group-title="Hindi(हिन्दी)",Sanskar
+http://z5ams.akamaized.net/sanskartv/tracks-v1a1/index.m3u8
+#EXTINF:-1 tvg-name="group-title="Hindi(हिन्दी)",Satsang" group-title="Other",group-title="Hindi(हिन्दी)",Satsang
+http://z5ams.akamaized.net/satsangtv/tracks-v1a1/index.m3u8
+#EXTINF:-1 tvg-name="group-title="Hindi(हिन्दी)",Zee Etc" group-title="Other",group-title="Hindi(हिन्दी)",Zee Etc
+http://z5ams.akamaized.net/etc/tracks-v1a1/index.m3u8
+#EXTINF:-1 tvg-name="group-title="Hindi(हिन्दी)",Zee Hindustan" group-title="Other",group-title="Hindi(हिन्दी)",Zee Hindustan
+http://z5ams.akamaized.net/hindustan/tracks-v1a1/index.m3u8
+#EXTINF:-1 tvg-name="group-title="Hindi(हिन्दी)",Zee Magic" group-title="Other",group-title="Hindi(हिन्दी)",Zee Magic
+http://z5ams.akamaized.net/magic/tracks-v1a1/index.m3u8
+#EXTINF:-1 tvg-name="group-title="Hindi(हिन्दी)",Zee MP CG" group-title="Other",group-title="Hindi(हिन्दी)",Zee MP CG
+http://z5ams.akamaized.net/newsmpcg/tracks-v1a1/index.m3u8
+#EXTINF:-1 tvg-name="group-title="Hindi(हिन्दी)",Zee UP UK" group-title="Other",group-title="Hindi(हिन्दी)",Zee UP UK
+http://z5ams.akamaized.net/zeenewsupuk/tracks-v1a1/index.m3u8
+#EXTINF:-1 tvg-name="group-title="Hindi(हिन्दी)",Zing" group-title="Other",group-title="Hindi(हिन्दी)",Zing
+http://z5ams.akamaized.net/zing/tracks-v1a1/index.m3u8
 #EXTINF:-1 tvg-name="Ici Radio-Canada Tele CBAFT-DT [Geo-blocked]" group-title="Other",Ici Radio-Canada Tele CBAFT-DT [Geo-blocked]
 https://rcavlive.akamaized.net/hls/live/704014/cancbaft/master.m3u8
 #EXTINF:-1 tvg-name="Ici Radio-Canada Tele CBFT-DT (1080p) [Geo-blocked]" group-title="Other",Ici Radio-Canada Tele CBFT-DT (1080p) [Geo-blocked]
@@ -394,21 +720,101 @@ https://rcavlive.akamaized.net/hls/live/704016/cancksh/master.m3u8
 #EXTINF:-1 tvg-name="Ici Radio-Canada Tele CKTM-DT [Geo-blocked]" group-title="Other",Ici Radio-Canada Tele CKTM-DT [Geo-blocked]
 https://rcavlive.akamaized.net/hls/live/704021/cancktm/master.m3u8
 #EXTINF:-1 tvg-name="index m3u8" group-title="Other",index m3u8
-https://prodamdhdliveextra.akamaized.net/NBCU_Sports_Group_-_nbcsports/nbc_wnba_atlnyl_260924/1/abs/index.m3u8
+https://aasthaott.akamaized.net/110923/smil:aasthatv.smil/index.m3u8
+#EXTINF:-1 tvg-name="index m3u8" group-title="Other",index m3u8
+https://evs-live05-secure2.akamaized.net/0ac9e9e1f9fc40a5b80f15fd13f9afa3/index.m3u8
+#EXTINF:-1 tvg-name="index m3u8" group-title="Other",index m3u8
+https://evs-live01-secure2.akamaized.net/1bd2134e099942d7a14c88bb9ab96899/index.m3u8
+#EXTINF:-1 tvg-name="index m3u8" group-title="Other",index m3u8
+https://evs-live08-secure2.akamaized.net/85c487885c9b4503a1ccbbdc848cb43d/index.m3u8
+#EXTINF:-1 tvg-name="index m3u8" group-title="Other",index m3u8
+https://evs-live18-secure2.akamaized.net/1595ffbd7dcf4393b45769b157892c07/index.m3u8
+#EXTINF:-1 tvg-name="index m3u8" group-title="Other",index m3u8
+https://evs-live03-secure2.akamaized.net/556bf41f68b34ec4ab8a1541dac3f535/index.m3u8
+#EXTINF:-1 tvg-name="index m3u8" group-title="Other",index m3u8
+https://evs-live02-secure2.akamaized.net/24e9bd81e1c74361a9df3ae65b03a959/index.m3u8
+#EXTINF:-1 tvg-name="index m3u8" group-title="Other",index m3u8
+https://evs-live20-secure2.akamaized.net/2302eb7c308248ed866d22b40a6146d5/index.m3u8
+#EXTINF:-1 tvg-name="index m3u8" group-title="Other",index m3u8
+https://evs-live14-secure2.akamaized.net/84fac7e882934725b8524051bc52765d/index.m3u8
+#EXTINF:-1 tvg-name="index m3u8" group-title="Other",index m3u8
+https://evs-live19-secure2.akamaized.net/1ecc258deba14821a92420945fd11f20/index.m3u8
+#EXTINF:-1 tvg-name="index m3u8" group-title="Other",index m3u8
+https://evs-live26-secure2.akamaized.net/5bfb342912eb4b9fb1c01e3f855ebbe6/index.m3u8
+#EXTINF:-1 tvg-name="index m3u8" group-title="Other",index m3u8
+https://evs-live06-secure2.akamaized.net/c929f7f89bdf44bc97804c267d5a4557/index.m3u8
+#EXTINF:-1 tvg-name="index m3u8" group-title="Other",index m3u8
+https://evs-live12-secure2.akamaized.net/322bb57dacce4a5597bbd6761a15f43e/index.m3u8
+#EXTINF:-1 tvg-name="index m3u8" group-title="Other",index m3u8
+https://evs-live09-secure2.akamaized.net/ae338c7b765e49c7a78b8bbafd1b6ce0/index.m3u8
+#EXTINF:-1 tvg-name="index m3u8" group-title="Other",index m3u8
+https://evs-live10-secure2.akamaized.net/94b58085762e4d9c891cb294ab525eea/index.m3u8
+#EXTINF:-1 tvg-name="index m3u8" group-title="Other",index m3u8
+https://evs-live17-secure2.akamaized.net/25a4a088ff7f4ad999a967d7910941cf/index.m3u8
+#EXTINF:-1 tvg-name="index m3u8" group-title="Other",index m3u8
+https://evs-live07-secure2.akamaized.net/047222467daa48f4a929db0c9bac89ef/index.m3u8
+#EXTINF:-1 tvg-name="index m3u8" group-title="Other",index m3u8
+https://evs-live22-secure2.akamaized.net/8f6745b42f514c89a325bbe4bce327d6/index.m3u8
+#EXTINF:-1 tvg-name="index m3u8" group-title="Other",index m3u8
+https://evs-live04-secure2.akamaized.net/b915093f91e14d95ad82b0af12d6b7d6/index.m3u8
+#EXTINF:-1 tvg-name="index m3u8" group-title="Other",index m3u8
+https://evs-live23-secure2.akamaized.net/7941600f61684d01a7e4b4ee24c6a8f1/index.m3u8
+#EXTINF:-1 tvg-name="index m3u8" group-title="Other",index m3u8
+https://evs-live15-secure2.akamaized.net/ab22fd97fb814a05b9a27f38ae721adf/index.m3u8
+#EXTINF:-1 tvg-name="index m3u8" group-title="Other",index m3u8
+https://evs-live25-secure2.akamaized.net/00acea29c5d347f2bda22af9e5e06966/index.m3u8
+#EXTINF:-1 tvg-name="index m3u8" group-title="Other",index m3u8
+https://evs-live27-secure2.akamaized.net/46c14942b0c04457810298eec2fd0075/index.m3u8
+#EXTINF:-1 tvg-name="index m3u8" group-title="Other",index m3u8
+https://evs-live11-secure2.akamaized.net/f8e0352dc4c34293af8a08d9bc8532ab/index.m3u8
+#EXTINF:-1 tvg-name="index m3u8" group-title="Other",index m3u8
+https://evs-live13-secure2.akamaized.net/d1bf3a3dc368436abb380c85055db584/index.m3u8
+#EXTINF:-1 tvg-name="index m3u8" group-title="Other",index m3u8
+https://prodamdnewsencoding.akamaized.net/NBC_News_Digital/now_current_reilly_bailey_stepdown_260928/1/abs/index.m3u8
+#EXTINF:-1 tvg-name="index m3u8" group-title="Other",index m3u8
+https://prodamdnewsencoding.akamaized.net/NBC_News_Digital/f_mash_mtv_vma_260927/1/abs/index.m3u8
 #EXTINF:-1 tvg-name="index_4 m3u8" group-title="Other",index_4 m3u8
-https://prodamdhdliveextra.akamaized.net/out/v1/45c0c2da0d7c4f3fa745100393b115f9/d73aad9a226245648d734a480a90e68b/72cf0c4070ae42dcb2066d542127d77b/c5b5a03bb64a46d9927409ec757372b4/4ee213b585684bdd999d0c5a47757b85/index_4.m3u8
+https://prodamdnewsencoding.akamaized.net/out/v1/261b28da2ba14dbe95575e60836dcf9b/43b6f121beb24ffaa1509325e7e23fb2/15bb94d4cae942ed8a198cc8f63db8ed/97d9e74c95d3406294805be5ec971fac/f8fdd6ff3a2a47d6ad0e7c243092b4e7/index_4.m3u8
+#EXTINF:-1 tvg-name="index_5 m3u8" group-title="Other",index_5 m3u8
+https://prodamdnewsencoding.akamaized.net/out/v1/b4fe2b93cf154946911af562c01821d6/43b6f121beb24ffaa1509325e7e23fb2/15bb94d4cae942ed8a198cc8f63db8ed/4327bdfb12fb4e7baf0593e7a578c802/f8fdd6ff3a2a47d6ad0e7c243092b4e7/index_5.m3u8
+#EXTINF:-1 tvg-name="index_5 m3u8" group-title="Other",index_5 m3u8
+https://prodamdnewsencoding.akamaized.net/out/v1/e34840d4dcbd44c49578b2f54968e6c7/43b6f121beb24ffaa1509325e7e23fb2/15bb94d4cae942ed8a198cc8f63db8ed/c6de33395e254e1d9247620e8abc4777/f8fdd6ff3a2a47d6ad0e7c243092b4e7/index_5.m3u8
 #EXTINF:-1 tvg-name="index_6 m3u8" group-title="Other",index_6 m3u8
-https://prodamdhdliveextra.akamaized.net/out/v1/45c0c2da0d7c4f3fa745100393b115f9/d73aad9a226245648d734a480a90e68b/72cf0c4070ae42dcb2066d542127d77b/c5b5a03bb64a46d9927409ec757372b4/4ee213b585684bdd999d0c5a47757b85/index_6.m3u8
-#EXTINF:-1 tvg-name="index_8 m3u8" group-title="Other",index_8 m3u8
-https://prodamdhdliveextra.akamaized.net/out/v1/45c0c2da0d7c4f3fa745100393b115f9/d73aad9a226245648d734a480a90e68b/72cf0c4070ae42dcb2066d542127d77b/c5b5a03bb64a46d9927409ec757372b4/4ee213b585684bdd999d0c5a47757b85/index_8.m3u8
+https://prodamdnewsencoding.akamaized.net/out/v1/b4fe2b93cf154946911af562c01821d6/43b6f121beb24ffaa1509325e7e23fb2/15bb94d4cae942ed8a198cc8f63db8ed/4327bdfb12fb4e7baf0593e7a578c802/f8fdd6ff3a2a47d6ad0e7c243092b4e7/index_6.m3u8
+#EXTINF:-1 tvg-name="index_6 m3u8" group-title="Other",index_6 m3u8
+https://prodamdnewsencoding.akamaized.net/out/v1/261b28da2ba14dbe95575e60836dcf9b/43b6f121beb24ffaa1509325e7e23fb2/15bb94d4cae942ed8a198cc8f63db8ed/97d9e74c95d3406294805be5ec971fac/f8fdd6ff3a2a47d6ad0e7c243092b4e7/index_6.m3u8
 #EXTINF:-1 tvg-name="Kunskapskanalen HD (1080p) [Geo-blocked]" group-title="Other",Kunskapskanalen HD (1080p) [Geo-blocked]
 https://svt-live-channel.akamaized.net/l6/se/svtk/master-fmp4.m3u8?defaultSubLang=1&format=hls
 #EXTINF:-1 tvg-name="Love Nature 4K (2160p) [Geo-blocked]" group-title="Other",Love Nature 4K (2160p) [Geo-blocked]
 https://pb-ehs1glsha1juy.akamaized.net/Love_Nature_4K.m3u8
-#EXTINF:-1 tvg-name="main m3u8" group-title="Other",main m3u8
-https://vg-zeefta.akamaized.net/ptnr-yupptv/title-zeedelhincr/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/cc483a15-1b39-4642-872d-5d08d362ed01/main.m3u8
-#EXTINF:-1 tvg-name="main m3u8" group-title="Other",main m3u8
-https://vg-zeefta.akamaized.net/ptnr-yupptv/title-zeepunjabharyanahima/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/65eed269-2f3a-4dd0-ac89-d18959af28e3/main.m3u8
+#EXTINF:-1 tvg-name="manifest mpd" group-title="Other",manifest mpd
+https://evs-live01-secure2.akamaized.net/625ebaea3d9540c8807432f0ded9044f/manifest.mpd
+#EXTINF:-1 tvg-name="manifest mpd" group-title="Other",manifest mpd
+https://evs-live10-secure2.akamaized.net/2b16921a4711486d8b6335643e259c02/manifest.mpd
+#EXTINF:-1 tvg-name="manifest mpd" group-title="Other",manifest mpd
+https://evs-live13-secure2.akamaized.net/e1571a9f17ab4da6ab6db685f42a72d4/manifest.mpd
+#EXTINF:-1 tvg-name="manifest mpd" group-title="Other",manifest mpd
+https://evs-live03-secure2.akamaized.net/44f1e62807a848d195ae716bf3c8b2d7/manifest.mpd
+#EXTINF:-1 tvg-name="manifest mpd" group-title="Other",manifest mpd
+https://evs-live06-secure2.akamaized.net/244ba84fd1584e8190ef7e2836c9af45/manifest.mpd
+#EXTINF:-1 tvg-name="manifest mpd" group-title="Other",manifest mpd
+https://evs-live04-secure2.akamaized.net/4e0f6a248c3f467892996c48e2fcb155/manifest.mpd
+#EXTINF:-1 tvg-name="manifest mpd" group-title="Other",manifest mpd
+https://evs-live05-secure2.akamaized.net/a1438cfc909b4a37b7da683106754dfd/manifest.mpd
+#EXTINF:-1 tvg-name="manifest mpd" group-title="Other",manifest mpd
+https://evs-live12-secure2.akamaized.net/55c6178057b64e18a67b0e4ff0c75dff/manifest.mpd
+#EXTINF:-1 tvg-name="manifest mpd" group-title="Other",manifest mpd
+https://evs-live11-secure2.akamaized.net/1cba5ecbe1384209a240ad3dd7ce824c/manifest.mpd
+#EXTINF:-1 tvg-name="manifest mpd" group-title="Other",manifest mpd
+https://evs-live02-secure2.akamaized.net/2a713aaf6e964e878fceab3132ba7b4d/manifest.mpd
+#EXTINF:-1 tvg-name="master m3u8" group-title="Other",master m3u8
+https://aasthaott.akamaized.net/110923/smil:aasthaprime1.smil/master.m3u8
+#EXTINF:-1 tvg-name="master m3u8" group-title="Other",master m3u8
+https://abcnews-streams.akamaized.net/hls/live/2023560/abcnewshudson1/master.m3u8
+#EXTINF:-1 tvg-name="master m3u8" group-title="Other",master m3u8
+https://abp-i.akamaihd.net/hls/live/765530/abpananda/master.m3u8
+#EXTINF:-1 tvg-name="master m3u8" group-title="Other",master m3u8
+https://abp-i.akamaihd.net/hls/live/765532/abpasmita/master.m3u8
 #EXTINF:-1 tvg-name="master mpd" group-title="Other",master mpd
 https://hesads.akamaized.net/ns/1732626603190/black_screen_15_sec_test_r3_v2/master.mpd
 #EXTINF:-1 tvg-name="MDR Fernsehen (1080p) [Geo-blocked]" group-title="Other",MDR Fernsehen (1080p) [Geo-blocked]
@@ -418,11 +824,15 @@ https://mdrtvsahls.akamaized.net/hls/live/2016879/mdrtvsa/index.m3u8
 #EXTINF:-1 tvg-name="phoenix (720p) [Geo-blocked]" group-title="Other",phoenix (720p) [Geo-blocked]
 https://zdf-hls-19.akamaized.net/hls/live/2016502/de/high/master.m3u8
 #EXTINF:-1 tvg-name="playlist m3u8" group-title="Other",playlist m3u8
-https://cc-3cyxq80qusspd.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-3cyxq80qusspd/playlist.m3u8
+https://aasthaott.akamaized.net/110923/smil:bhajan.smil/playlist.m3u8
 #EXTINF:-1 tvg-name="playlist m3u8" group-title="Other",playlist m3u8
-https://vg-pitaaratvlive.akamaized.net/v1/vglive-sk-906482/playlist.m3u8
+https://yuppmedtaorire.akamaized.net/v1/master/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/murasu_nim_https/050522/murasu/playlist.m3u8
+#EXTINF:-1 tvg-name="Punjabi Tadkaa" group-title="Other",Punjabi Tadkaa
+http://linear05hun-lh.akamaihd.net/i/punjabitadka_1@665242/master.m3u8
 #EXTINF:-1 tvg-name="Radio Bremen Fernsehen (1080p) [Geo-blocked]" group-title="Other",Radio Bremen Fernsehen (1080p) [Geo-blocked]
 https://rbhlslive.akamaized.net/hls/live/2020435/rbfs/master.m3u8
+#EXTINF:-1 tvg-name="Raj Musix (Tamil)" group-title="Other",Raj Musix (Tamil)
+http://z5ams.akamaized.net/rajmusix/tracks-v1a1/index.m3u8
 #EXTINF:-1 tvg-name="rbb Fernsehen Berlin (1080p) [Geo-blocked]" group-title="Other",rbb Fernsehen Berlin (1080p) [Geo-blocked]
 https://rbb-hls-berlin.akamaized.net/hls/live/2017824/rbb_berlin/index.m3u8
 #EXTINF:-1 tvg-name="rbb Fernsehen Brandenburg (1080p) [Geo-blocked]" group-title="Other",rbb Fernsehen Brandenburg (1080p) [Geo-blocked]
@@ -445,12 +855,26 @@ https://playplusspo-lh.akamaihd.net/i/pp_sp@350176/index_720_av-p.m3u8
 https://rthktv31-live.akamaized.net/hls/live/2036818/RTHKTV31/master.m3u8
 #EXTINF:-1 tvg-name="RTHK TV 32" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Other",RTHK TV 32
 https://rthktv32-live.akamaized.net/hls/live/2036819/RTHKTV32/master.m3u8
+#EXTINF:-1 tvg-name="RTHK TV 33 (1080p) [Geo-blocked]" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Other",RTHK TV 33 (1080p) [Geo-blocked]
+https://rthktv33-live.akamaized.net/hls/live/2101641/RTHKTV33/master.m3u8
+#EXTINF:-1 tvg-name="RTHK TV 34 (1080p) [Geo-blocked]" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Other",RTHK TV 34 (1080p) [Geo-blocked]
+https://rthktv34-live.akamaized.net/hls/live/2101642/RTHKTV34/master.m3u8
 #EXTINF:-1 tvg-name="Samsung Wildlife (720p) [Geo-blocked]" group-title="Other",Samsung Wildlife (720p) [Geo-blocked]
 https://pb-olm46bexcljjf.akamaized.net/Samsung_Wild_Life.m3u8
 #EXTINF:-1 tvg-name="SWR Fernsehen Baden-Wurttemberg (720p) [Geo-blocked]" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Other",SWR Fernsehen Baden-Wurttemberg (720p) [Geo-blocked]
 https://swrbwd-hls.akamaized.net/hls/live/2018672/swrbwd/master.m3u8
 #EXTINF:-1 tvg-name="SWR Fernsehen Rheinland-Pfalz (720p) [Geo-blocked]" group-title="Other",SWR Fernsehen Rheinland-Pfalz (720p) [Geo-blocked]
 https://swrrpd-hls.akamaized.net/hls/live/2018676/swrrpd/master.m3u8
+#EXTINF:-1 tvg-name="TBO Telugu Classics High" group-title="Other",TBO Telugu Classics High
+https://msleurope2s.akamaized.net/hls/live/2000183/tboclassicmsl/tboclassic_1800/chunklist.m3u8
+#EXTINF:-1 tvg-name="TBO Telugu Classics Low" group-title="Other",TBO Telugu Classics Low
+https://msleurope2s.akamaized.net/hls/live/2000183/tboclassicmsl/tboclassic_600/chunklist.m3u8
+#EXTINF:-1 tvg-name="TBO Telugu Classics Med" group-title="Other",TBO Telugu Classics Med
+https://msleurope2s.akamaized.net/hls/live/2000183/tboclassicmsl/tboclassic_1200/chunklist.m3u8
+#EXTINF:-1 tvg-name="The Q" group-title="Other",The Q
+https://amg1-i.akamaihd.net/hls/live/784034/QYou.stream_720pl/chunklist.m3u8
+#EXTINF:-1 tvg-name="The Q India" group-title="Other",The Q India
+https://amg1-i.akamaihd.net/hls/live/784034/Q001/playlist.m3u8?__nn__=5606168722001&hdnea=st=1566232200~exp=1566235800~acl=/hls/live/784034/Q001/*~hmac=4de929fdc0ee53199a11237ee75a695383a82a42623fa92c1376493e5fc91d7b
 #EXTINF:-1 tvg-name="TVA (Canada) CFTM-DT [Geo-blocked]" group-title="Other",TVA (Canada) CFTM-DT [Geo-blocked]
 https://tvalive-dai01.akamaized.net/Content/HLS/Live/channel(575b93c5-be31-ee34-6285-14620fd14048)/index.m3u8
 #EXTINF:-1 tvg-name="Unserding (720p) [Geo-blocked]" group-title="Other",Unserding (720p) [Geo-blocked]
@@ -477,22 +901,28 @@ https://wdrlokalzeit.akamaized.net/hls/live/2018020-b/wdrlz_siegen/master.m3u8
 https://wdrlokalzeit.akamaized.net/hls/live/2018028-b/wdrlz_wuppertal/master.m3u8
 #EXTINF:-1 tvg-name="ZDFinfo (720p) [Geo-blocked]" group-title="Other",ZDFinfo (720p) [Geo-blocked]
 https://zdf-hls-17.akamaized.net/hls/live/2016500/de/high/master.m3u8
-#EXTINF:-1 tvg-name="Aastha Bhajan" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Aastha%20Bhajan.png" group-title="Religious",Aastha Bhajan
-https://aasthaott.akamaized.net/110923/smil:bhajan.smil/playlist.m3u8
-#EXTINF:-1 tvg-name="Aastha HD (720p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Aastha.png" group-title="Religious",Aastha HD (720p)
-https://aasthaott.akamaized.net/110923/smil:aasthatv.smil/index.m3u8
+#EXTINF:-1 tvg-name="Aastha Gujarati (480p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Aastha.png" group-title="Religious",Aastha Gujarati (480p)
+https://aasthaott.akamaized.net/110923/smil:aasthagujrati.smil/playlist.m3u8
 #EXTINF:-1 tvg-name="Aastha Kannada (480p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Aastha.png" group-title="Religious",Aastha Kannada (480p)
 https://aasthaott.akamaized.net/110923/smil:aasthakannada.smil/playlist.m3u8
-#EXTINF:-1 tvg-name="Aastha Prime 1 (720p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Aastha.png" group-title="Religious",Aastha Prime 1 (720p)
-https://aasthaott.akamaized.net/110923/smil:aasthaprime1.smil/master.m3u8
 #EXTINF:-1 tvg-name="Aastha Tamil (480p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Aastha.png" group-title="Religious",Aastha Tamil (480p)
 https://aasthaott.akamaized.net/110923/smil:aasthatamil.smil/playlist.m3u8
+#EXTINF:-1 tvg-name="Aastha Telugu (480p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Aastha.png" group-title="Religious",Aastha Telugu (480p)
+https://aasthaott.akamaized.net/110923/smil:aasthatelugu.smil/playlist.m3u8
 #EXTINF:-1 tvg-name="Akaal Channel (396p) [Geo-blocked]" group-title="Religious",Akaal Channel (396p) [Geo-blocked]
 https://cdn-globecast.akamaized.net/live/eds/akaal_tv/hls1_smart_akaal/akaal_tv.m3u8
+#EXTINF:-1 tvg-name="And TV" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Anand_TV.png" group-title="Religious",And TV
+http://z5amshls.akamaized.net/andtvhd/tracks-v1a1/index.m3u8
+#EXTINF:-1 tvg-name="Angel TV (720p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Angel-TV-hd-transparent.png" group-title="Religious",Angel TV (720p)
+https://janya-digimix.akamaized.net/vglive-sk-394914/india/ngrp:angelindia_all/playlist.m3u8
 #EXTINF:-1 tvg-name="CVR OM Spiritual (576p)" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/CVR_OM_Spiritual.png" group-title="Religious",CVR OM Spiritual (576p)
 https://yuppnimrestreammum.akamaized.net/181224/smil:cvrom1.smil/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
+#EXTINF:-1 tvg-name="group-title="Hindi(हिन्दी)",Bhakti SagarE24" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Bhaktisagar.png" group-title="Religious",group-title="Hindi(हिन्दी)",Bhakti SagarE24
+http://linear02hun-lh.akamaihd.net/i/bhaktisagar_1@665239/master.m3u8
 #EXTINF:-1 tvg-name="Peace of Mind TV (576p)" tvg-logo="https://dtil.tmsimg.com/assets/s143646_ld_h15_aa.png?lock=720x540" group-title="Religious",Peace of Mind TV (576p)
 https://yuppnimrestreammum.akamaized.net/181224/smil:peaceofmind.smil/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
+#EXTINF:-1 tvg-name="Zee Cafe" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022ZMMH.png?lock=720x540" group-title="Series",Zee Cafe
+http://z5amshls.akamaized.net/zeecafesd/tracks-v1a1/index.m3u8
 #EXTINF:-1 tvg-name="Billiard TV (1080p) [Geo-blocked]" group-title="Sports",Billiard TV (1080p) [Geo-blocked]
 https://pb-wm04vonaerv0k.akamaized.net/billi.m3u8
 #EXTINF:-1 tvg-name="Olympic Channel (1080p) [Geo-blocked]" group-title="Sports",Olympic Channel (1080p) [Geo-blocked]

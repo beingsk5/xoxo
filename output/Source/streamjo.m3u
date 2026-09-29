@@ -1,0 +1,7 @@
+#EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
+#EXTINF:-1 tvg-name="EET TV" tvg-logo="https://i.imgur.com/rMldFW8.png" group-title="Entertainment",EET TV
+http://live.streamjo.com:1935/eetlive/eettv/playlist.m3u8
+#EXTINF:-1 tvg-name="Analai Express (Canada)" group-title="Other",Analai Express (Canada)
+http://live.streamjo.com:1935/sarastv/sarastv.m3u8
+#EXTINF:-1 tvg-name="Engada TV" group-title="Other",Engada TV
+http://live.streamjo.com:1935/eetlive/engadatv/playlist.m3u8

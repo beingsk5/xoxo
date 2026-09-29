@@ -1,5 +1,9 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
+#EXTINF:-1 tvg-name="ABN TV India" group-title="Religious",ABN TV India
+https://rtmp2.abnvideos.com/hls/abntvindia.m3u8
 #EXTINF:-1 tvg-name="ABN TV India (540p)" group-title="Religious",ABN TV India (540p)
 https://mediaserver.abnvideos.com/streams/abntvindia.m3u8
+#EXTINF:-1 tvg-name="ABN Urdu" group-title="Religious",ABN Urdu
+https://rtmp2.abnvideos.com/hls/abnurdu.m3u8
 #EXTINF:-1 tvg-name="ABN Urdu (540p)" group-title="Religious",ABN Urdu (540p)
 https://mediaserver.abnvideos.com/streams/abnurdu.m3u8

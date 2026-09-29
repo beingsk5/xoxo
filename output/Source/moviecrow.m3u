@@ -1,5 +1,15 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
-#EXTINF:-1 tvg-name="jquery knob js" group-title="Other",jquery knob js
-http://www.moviecrow.com/Content/js/vendor/jquery.knob.js
-#EXTINF:-1 tvg-name="jquery-ui-1 8 11 min js" group-title="Other",jquery-ui-1 8 11 min js
-http://www.moviecrow.com/Scripts/jquery-ui-1.8.11.min.js
+#EXTINF:-1 tvg-name="balloon css?v4 20 6" group-title="Other",balloon css?v4 20 6
+https://static.moviecrow.com/Versioned/v4.20/Content/css/balloon.css?v4.20.6
+#EXTINF:-1 tvg-name="jquery fitvids js" group-title="Other",jquery fitvids js
+https://static.moviecrow.com/Versioned/v4.20/Content/js/vendor/jquery.fitvids.js
+#EXTINF:-1 tvg-name="jquery MetaData js" group-title="Other",jquery MetaData js
+https://static.moviecrow.com/Versioned/v4.20/Scripts/jquery.MetaData.js
+#EXTINF:-1 tvg-name="jquery MetaData js" group-title="Other",jquery MetaData js
+https://static.moviecrow.com/Versioned/v4.20/Content/js/vendor/jquery.MetaData.js
+#EXTINF:-1 tvg-name="jquery rating pack js" group-title="Other",jquery rating pack js
+https://static.moviecrow.com/Versioned/v4.20/Content/js/vendor/jquery.rating.pack.js
+#EXTINF:-1 tvg-name="main css?v4 20 6" group-title="Other",main css?v4 20 6
+https://static.moviecrow.com/Versioned/v4.20/Content/css/main.css?v4.20.6
+#EXTINF:-1 tvg-name="modernizr-2 6 2 min js" group-title="Other",modernizr-2 6 2 min js
+https://static.moviecrow.com/Versioned/v4.20/Content/js/vendor/modernizr-2.6.2.min.js
