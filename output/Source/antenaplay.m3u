@@ -1,0 +1,9 @@
+#EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
+#EXTINF:-1 tvg-name="index m3u8" group-title="Other",index m3u8
+https://hls02ns.antenaplay.ro/hls/cinemaraton-plus-hd/index.m3u8
+#EXTINF:-1 tvg-name="index m3u8" group-title="Other",index m3u8
+https://hls02ns.antenaplay.ro/hls/prima-news-hd/index.m3u8
+#EXTINF:-1 tvg-name="index m3u8" group-title="Other",index m3u8
+https://nosignal1.antenaplay.ro/hls/fb-one-sd/index.m3u8
+#EXTINF:-1 tvg-name="live2_sdi06_600k m3u8" group-title="Other",live2_sdi06_600k m3u8
+https://live4dai.antenaplay.ro/live2_sdi06/live2_sdi06_600k.m3u8

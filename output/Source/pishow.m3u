@@ -1,64 +1,152 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
+#EXTINF:-1 tvg-name="NDTV Profit (576p)" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_NDTV_PROFIT_PRIME/images/LOGO_HD/image.png" group-title="Business",NDTV Profit (576p)
+https://cdn.pishow.tv/ott/live/1287/master.m3u8
+#EXTINF:-1 tvg-name="DD Bharati (720p)" tvg-logo="https://dtil.tmsimg.com/assets/s142779_ld_h15_aa.png?lock=720x540" group-title="Culture",DD Bharati (720p)
+https://cdn-1.pishow.tv/live/10/master.m3u8
 #EXTINF:-1 tvg-name="DD Bharati (720p)" tvg-logo="https://dtil.tmsimg.com/assets/s142779_ld_h15_aa.png?lock=720x540" group-title="Culture",DD Bharati (720p)
 https://cdn.pishow.tv/ott/live/10/master.m3u8
+#EXTINF:-1 tvg-name="DD Punjabi" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Punjabi.png" group-title="Culture",DD Punjabi
+https://cdn.pishow.tv/ott/live/24/master.m3u8
+#EXTINF:-1 tvg-name="DD Gyandarshan" tvg-logo="https://dtil.tmsimg.com/assets/s143100_ld_h15_aa.png?lock=720x540" group-title="Education",DD Gyandarshan
+https://cdn.pishow.tv/ott/live/14/master.m3u8
+#EXTINF:-1 tvg-name="DD Kisan" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Kisan.png" group-title="Education",DD Kisan
+https://cdn.pishow.tv/ott/live/9/master.m3u8
+#EXTINF:-1 tvg-name="DD Kisan (576p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Kisan.png" group-title="Education",DD Kisan (576p)
+https://cdn.pishow.tv/ott/live/223/master.m3u8
+#EXTINF:-1 tvg-name="DD Kisan (720p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Kisan.png" group-title="Education",DD Kisan (720p)
+https://cdn-6.pishow.tv/live/9/master.m3u8
+#EXTINF:-1 tvg-name="Chumbak TV" tvg-logo="https://upload.wikimedia.org/wikipedia/hi/7/77/Chumbak-TV.png" group-title="Entertainment",Chumbak TV
+https://cdn-1.pishow.tv/live/1451/master.m3u8
+#EXTINF:-1 tvg-name="DD Malayalam" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Malayalam.png" group-title="Entertainment",DD Malayalam
+https://cdn.pishow.tv/ott/live/27/master.m3u8
+#EXTINF:-1 tvg-name="DD Sahayadri" group-title="Entertainment",DD Sahayadri
+https://cdn.pishow.tv/ott/live/30/master.m3u8
+#EXTINF:-1 tvg-name="Fakt Marathi" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Fakt%20Marathi.png" group-title="Entertainment",Fakt Marathi
+https://cdn-6.pishow.tv/live/10002/master.m3u8
 #EXTINF:-1 tvg-name="Maha Punjabi" tvg-logo="https://i.imgur.com/AWUcSb8.png" group-title="Entertainment",Maha Punjabi
 https://cdn.pishow.tv/ott/live/1521/master.m3u8
-#EXTINF:-1 tvg-name="Manoranjan TV (720p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/anjan-transparent.png" group-title="Entertainment",Manoranjan TV (720p)
-https://cdn.pishow.tv/ott/live/1013/master.m3u8
+#EXTINF:-1 tvg-name="Maha Punjabi" tvg-logo="https://i.imgur.com/AWUcSb8.png" group-title="Entertainment",Maha Punjabi
+https://cdn-4.pishow.tv/live/1521/master.m3u8
+#EXTINF:-1 tvg-name="Nepal 1" tvg-logo="https://dtil.tmsimg.com/assets/s143584_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Nepal 1
+https://cdn.pishow.tv/ott/live/1490/master.m3u8
 #EXTINF:-1 tvg-name="PTC Punjabi" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/PTC%20Punjabi.png" group-title="Entertainment",PTC Punjabi
 https://cdn.pishow.tv/ott/live/1604/master.m3u8
+#EXTINF:-1 tvg-name="Shemaroo TV (720p)" tvg-logo="https://dtil.tmsimg.com/assets/s143778_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Shemaroo TV (720p)
+https://cdn-3.pishow.tv/live/230/master.m3u8
 #EXTINF:-1 tvg-name="DD Arun Prabha" tvg-logo="https://dtil.tmsimg.com/assets/s142776_ld_h15_aa.png?lock=720x540" group-title="General",DD Arun Prabha
 https://cdn.pishow.tv/ott/live/32/master.m3u8
 #EXTINF:-1 tvg-name="DD Bangla" tvg-logo="https://dtil.tmsimg.com/assets/s142778_ld_h15_aa.png?lock=720x540" group-title="General",DD Bangla
 https://cdn.pishow.tv/ott/live/37/master.m3u8
 #EXTINF:-1 tvg-name="DD Bihar (720p)" tvg-logo="https://dtil.tmsimg.com/assets/s142780_ld_h15_aa.png?lock=720x540" group-title="General",DD Bihar (720p)
+https://cdn-4.pishow.tv/live/35/master.m3u8
+#EXTINF:-1 tvg-name="DD Bihar (720p)" tvg-logo="https://dtil.tmsimg.com/assets/s142780_ld_h15_aa.png?lock=720x540" group-title="General",DD Bihar (720p)
 https://cdn.pishow.tv/ott/live/35/master.m3u8
 #EXTINF:-1 tvg-name="DD Chandana" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Chandana.png" group-title="General",DD Chandana
 https://cdn.pishow.tv/ott/live/28/master.m3u8
 #EXTINF:-1 tvg-name="DD Chhattisgarh (720p)" tvg-logo="https://i.imgur.com/zBg6Iuv.png" group-title="General",DD Chhattisgarh (720p)
+https://cdn-1.pishow.tv/live/15/master.m3u8
+#EXTINF:-1 tvg-name="DD Chhattisgarh (720p)" tvg-logo="https://i.imgur.com/zBg6Iuv.png" group-title="General",DD Chhattisgarh (720p)
 https://cdn.pishow.tv/ott/live/15/master.m3u8
+#EXTINF:-1 tvg-name="DD Girnar" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Girnar.png" group-title="General",DD Girnar
+https://cdn.pishow.tv/ott/live/38/master.m3u8
 #EXTINF:-1 tvg-name="DD Jharkhand" tvg-logo="https://dtil.tmsimg.com/assets/s142787_ld_h15_aa.png?lock=720x540" group-title="General",DD Jharkhand
 https://cdn.pishow.tv/ott/live/1617/master.m3u8
 #EXTINF:-1 tvg-name="DD Kashir" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Kashir.png" group-title="General",DD Kashir
 https://cdn.pishow.tv/ott/live/16/master.m3u8
+#EXTINF:-1 tvg-name="DD Kashir (720p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Kashir.png" group-title="General",DD Kashir (720p)
+https://cdn-6.pishow.tv/live/16/master.m3u8
+#EXTINF:-1 tvg-name="DD Madhya Pradesh" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Madhya%20Pradesh.png" group-title="General",DD Madhya Pradesh
+https://cdn.pishow.tv/ott/live/31/master.m3u8
+#EXTINF:-1 tvg-name="DD Madhya Pradesh (720p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Madhya%20Pradesh.png" group-title="General",DD Madhya Pradesh (720p)
+https://cdn-1.pishow.tv/live/31/master.m3u8
+#EXTINF:-1 tvg-name="DD Rajasthan (720p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Rajasthan.png" group-title="General",DD Rajasthan (720p)
+https://cdn-1.pishow.tv/live/34/master.m3u8
 #EXTINF:-1 tvg-name="DD Rajasthan (720p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Rajasthan.png" group-title="General",DD Rajasthan (720p)
 https://cdn.pishow.tv/ott/live/34/master.m3u8
+#EXTINF:-1 tvg-name="DD Saptagiri" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Saptagiri.png" group-title="General",DD Saptagiri
+https://cdn.pishow.tv/ott/live/22/master.m3u8
+#EXTINF:-1 tvg-name="DD Tamil HD (1080p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/PHOTO-_HD_2000_X_1125_Transpharent.png" group-title="General",DD Tamil HD (1080p)
+https://cdn.pishow.tv/ott/live/1737/master.m3u8
+#EXTINF:-1 tvg-name="DD Urdu (720p)" tvg-logo="https://dtil.tmsimg.com/assets/s142808_ld_h9_aa.png?lock=720x540" group-title="General",DD Urdu (720p)
+https://cdn-4.pishow.tv/live/8/master.m3u8
 #EXTINF:-1 tvg-name="DD Urdu (720p)" tvg-logo="https://dtil.tmsimg.com/assets/s142808_ld_h9_aa.png?lock=720x540" group-title="General",DD Urdu (720p)
 https://cdn.pishow.tv/ott/live/8/master.m3u8
 #EXTINF:-1 tvg-name="DD Uttar Pradesh (720p)" tvg-logo="https://dtil.tmsimg.com/assets/s142807_ld_h9_ab.png?lock=720x540" group-title="General",DD Uttar Pradesh (720p)
+https://cdn-1.pishow.tv/live/36/master.m3u8
+#EXTINF:-1 tvg-name="DD Uttar Pradesh (720p)" tvg-logo="https://dtil.tmsimg.com/assets/s142807_ld_h9_ab.png?lock=720x540" group-title="General",DD Uttar Pradesh (720p)
 https://cdn.pishow.tv/ott/live/36/master.m3u8
 #EXTINF:-1 tvg-name="DD Uttarakhand (720p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD-Uttarakhand-Logo_2000_X_1125_Transpharent.png" group-title="General",DD Uttarakhand (720p)
+https://cdn-1.pishow.tv/live/17/master.m3u8
+#EXTINF:-1 tvg-name="DD Uttarakhand (720p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD-Uttarakhand-Logo_2000_X_1125_Transpharent.png" group-title="General",DD Uttarakhand (720p)
 https://cdn.pishow.tv/ott/live/17/master.m3u8
+#EXTINF:-1 tvg-name="DD Yadagiri" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Yadagiri.png" group-title="General",DD Yadagiri
+https://cdn-1.pishow.tv/live/21/master.m3u8
 #EXTINF:-1 tvg-name="DD Yadagiri (576p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Yadagiri.png" group-title="General",DD Yadagiri (576p)
 https://cdn.pishow.tv/ott/live/21/master.m3u8
+#EXTINF:-1 tvg-name="Jeevan TV (576p)" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Jeevan_TV.png" group-title="General",Jeevan TV (576p)
+https://cdn.pishow.tv/ott/live/1467/master.m3u8
+#EXTINF:-1 tvg-name="CVR Health" tvg-logo="https://i.imgur.com/bCyW32I.png" group-title="Lifestyle",CVR Health
+https://cdn.pishow.tv/ott/live/395/master.m3u8
 #EXTINF:-1 tvg-name="Bhojpuri Cinema" tvg-logo="https://dtil.tmsimg.com/assets/s142713_ld_h15_aa.png?lock=720x540" group-title="Movies",Bhojpuri Cinema
 https://cdn.pishow.tv/ott/live/1033/master.m3u8
-#EXTINF:-1 tvg-name="Maha Movie (576p)" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Maha_Movies.png" group-title="Movies",Maha Movie (576p)
-https://cdn.pishow.tv/ott/live/10007/master.m3u8
-#EXTINF:-1 tvg-name="Manoranjan Grand (720p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Manoranjan-Grand-Logo-transparent.png" group-title="Movies",Manoranjan Grand (720p)
-https://cdn.pishow.tv/ott/live/1011/master.m3u8
+#EXTINF:-1 tvg-name="Oscar Movies Bhojpuri" tvg-logo="https://dtil.tmsimg.com/assets/s143638_ld_h9_ab.png?lock=720x540" group-title="Movies",Oscar Movies Bhojpuri
+https://cdn-4.pishow.tv/live/233/master.m3u8
 #EXTINF:-1 tvg-name="Oscar Movies Bhojpuri (720p)" tvg-logo="https://dtil.tmsimg.com/assets/s143638_ld_h9_ab.png?lock=720x540" group-title="Movies",Oscar Movies Bhojpuri (720p)
 https://cdn.pishow.tv/ott/live/233/master.m3u8
-#EXTINF:-1 tvg-name="Peppers TV (751p)" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Peppers_TV.png" group-title="Music",Peppers TV (751p)
+#EXTINF:-1 tvg-name="Shemaroo Josh (576p)" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/ShemarooJosh_Transparent_3506d79a-bad8-4c99-905d-9b917076ad43.png" group-title="Movies",Shemaroo Josh (576p)
+https://cdn.pishow.tv/ott/live/337/master.m3u8
+#EXTINF:-1 tvg-name="Music India" tvg-logo="https://dtil.tmsimg.com/assets/s143563_ld_h15_aa.png?lock=720x540" group-title="Music",Music India
+https://cdn-2.pishow.tv/live/226/master.m3u8
+#EXTINF:-1 tvg-name="Peppers TV" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Peppers_TV.png" group-title="Music",Peppers TV
 https://cdn.pishow.tv/ott/live/1383/master.m3u8
+#EXTINF:-1 tvg-name="Public Music" tvg-logo="https://dtil.tmsimg.com/assets/s143687_ld_h15_aa.png?lock=720x540" group-title="Music",Public Music
+https://cdn.pishow.tv/ott/live/441/master.m3u8
 #EXTINF:-1 tvg-name="Raj Musix Malayalam (576p)" tvg-logo="https://dtil.tmsimg.com/assets/s143706_ld_h15_aa.png?lock=720x540" group-title="Music",Raj Musix Malayalam (576p)
 https://cdn.pishow.tv/ott/live/1073/master.m3u8
+#EXTINF:-1 tvg-name="Raj Musix Telugu" tvg-logo="https://dtil.tmsimg.com/assets/s143708_ld_h15_aa.png?lock=720x540" group-title="Music",Raj Musix Telugu
+https://cdn-1.pishow.tv/live/1213/master.m3u8
 #EXTINF:-1 tvg-name="Raj Musix Telugu (720p)" tvg-logo="https://dtil.tmsimg.com/assets/s143708_ld_h15_aa.png?lock=720x540" group-title="Music",Raj Musix Telugu (720p)
 https://cdn.pishow.tv/ott/live/1213/master.m3u8
-#EXTINF:-1 tvg-name="Saam TV" tvg-logo="https://dtil.tmsimg.com/assets/s143735_ld_h15_aa.png?lock=720x540" group-title="Music",Saam TV
-https://cdn.pishow.tv/ott/live/437/master.m3u8
+#EXTINF:-1 tvg-name="Sangeet Bhojpuri" tvg-logo="https://dtil.tmsimg.com/assets/s143757_ld_h15_aa.png?lock=720x540" group-title="Music",Sangeet Bhojpuri
+https://cdn.pishow.tv/ott/live/1293/master.m3u8
+#EXTINF:-1 tvg-name="Sangeet Bhojpuri" tvg-logo="https://dtil.tmsimg.com/assets/s143757_ld_h15_aa.png?lock=720x540" group-title="Music",Sangeet Bhojpuri
+https://cdn-4.pishow.tv/live/1293/master.m3u8
+#EXTINF:-1 tvg-name="Sangeet Marathi" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Sangeet_Marathi.jpg/960px-Sangeet_Marathi.jpg" group-title="Music",Sangeet Marathi
+https://cdn-3.pishow.tv/live/1229/master.m3u8
 #EXTINF:-1 tvg-name="Sangeet Marathi (720p)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Sangeet_Marathi.jpg/960px-Sangeet_Marathi.jpg" group-title="Music",Sangeet Marathi (720p)
 https://cdn.pishow.tv/ott/live/1229/master.m3u8
+#EXTINF:-1 tvg-name="6 TV Telugu" tvg-logo="https://i.imgur.com/l3EcRnZ.png" group-title="News",6 TV Telugu
+https://cdn-1.pishow.tv/live/232/master.m3u8
+#EXTINF:-1 tvg-name="ABP Majha (576p)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/ABP_Majha_logo.svg/500px-ABP_Majha_logo.svg.png" group-title="News",ABP Majha (576p)
+https://cdn.pishow.tv/ott/live/471/master.m3u8
+#EXTINF:-1 tvg-name="ABP News (576p)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/ABP_News_logo.svg/500px-ABP_News_logo.svg.png" group-title="News",ABP News (576p)
+https://cdn.pishow.tv/ott/live/1057/master.m3u8
+#EXTINF:-1 tvg-name="Bharat Update (576p)" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Bharat_Update.png" group-title="News",Bharat Update (576p)
+https://cdn.pishow.tv/ott/live/339/master.m3u8
 #EXTINF:-1 tvg-name="BIG TV (720p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/BIGTV%20Logo_2000_X_1125_Transpharent.png" group-title="News",BIG TV (720p)
 https://cdn.pishow.tv/ott/live/1059/master.m3u8
-#EXTINF:-1 tvg-name="CVR English (720p)" tvg-logo="https://i.imgur.com/k0WTQKi.png" group-title="News",CVR English (720p)
-https://cdn.pishow.tv/ott/live/425/master.m3u8
+#EXTINF:-1 tvg-name="Hindi Khabar" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Hindi%20Khabar.png" group-title="News",Hindi Khabar
+https://cdn.pishow.tv/ott/live/1041/master.m3u8
+#EXTINF:-1 tvg-name="Hindi Khabar (576p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Hindi%20Khabar.png" group-title="News",Hindi Khabar (576p)
+https://cdn-2.pishow.tv/live/1041/master.m3u8
 #EXTINF:-1 tvg-name="India Ahead (576p)" tvg-logo="https://i.imgur.com/hBkTmf9.png" group-title="News",India Ahead (576p)
 https://cdn.pishow.tv/ott/live/269/master.m3u8
 #EXTINF:-1 tvg-name="Kairali News (720p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/KAIRALI-NEWS.png" group-title="News",Kairali News (720p)
 https://cdn.pishow.tv/ott/live/1469/master.m3u8
+#EXTINF:-1 tvg-name="Kalinga TV" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/kalinga-bharat--Logo_2000_X_1125_Transpharent.png" group-title="News",Kalinga TV
+https://cdn.pishow.tv/ott/live/1470/master.m3u8
+#EXTINF:-1 tvg-name="Living India News (576p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/India%20News.png" group-title="News",Living India News (576p)
+https://cdn.pishow.tv/ott/live/324/master.m3u8
 #EXTINF:-1 tvg-name="Media One (720p)" tvg-logo="https://dtil.tmsimg.com/assets/s143345_ld_h15_aa.png?lock=720x540" group-title="News",Media One (720p)
 https://cdn.pishow.tv/ott/live/1481/master.m3u8
+#EXTINF:-1 tvg-name="Nagaland TV (576p)" tvg-logo="https://i.imgur.com/EBEIpPo.png" group-title="News",Nagaland TV (576p)
+https://cdn-6.pishow.tv/live/10014/master.m3u8
+#EXTINF:-1 tvg-name="NDTV India (576p)" tvg-logo="https://dtil.tmsimg.com/assets/s157588_ld_h15_aa.png?lock=720x540" group-title="News",NDTV India (576p)
+https://cdn.pishow.tv/ott/live/299/master.m3u8
+#EXTINF:-1 tvg-name="NDTV Madhya Pradesh Chhattisgarh (576p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/NDTV-MP-logo-Transparent.png" group-title="News",NDTV Madhya Pradesh Chhattisgarh (576p)
+https://cdn.pishow.tv/ott/live/1488/master.m3u8
+#EXTINF:-1 tvg-name="NDTV Rajasthan (576p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/NDTV-Rajasthan-logo-Transparent.png" group-title="News",NDTV Rajasthan (576p)
+https://cdn.pishow.tv/ott/live/1489/master.m3u8
 #EXTINF:-1 tvg-name="News 7 Tamil" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/News7_Tamil.png" group-title="News",News 7 Tamil
 https://cdn.pishow.tv/ott/live/1498/master.m3u8
 #EXTINF:-1 tvg-name="News India 24x7" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/08.INDIA-24x7(NEWS-HINDI)--2000-x-1125--Transpernt.png" group-title="News",News India 24x7
@@ -67,6 +155,12 @@ https://cdn.pishow.tv/ott/live/273/master.m3u8
 https://cdn.pishow.tv/ott/live/1433/master.m3u8
 #EXTINF:-1 tvg-name="NTV Telugu" tvg-logo="https://dtil.tmsimg.com/assets/s154897_ld_h15_aa.png?lock=720x540" group-title="News",NTV Telugu
 https://cdn.pishow.tv/ott/live/383/master.m3u8
+#EXTINF:-1 tvg-name="Public TV" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Public%20TV.png" group-title="News",Public TV
+https://cdn.pishow.tv/ott/live/439/master.m3u8
+#EXTINF:-1 tvg-name="Raj News Kannada (576p)" tvg-logo="https://dtil.tmsimg.com/assets/s143709_ld_h9_ab.png?lock=720x540" group-title="News",Raj News Kannada (576p)
+https://cdn.pishow.tv/ott/live/1507/master.m3u8
+#EXTINF:-1 tvg-name="Raj News Telugu (576p)" tvg-logo="https://dtil.tmsimg.com/assets/s143709_ld_h9_ab.png?lock=720x540" group-title="News",Raj News Telugu (576p)
+https://cdn.pishow.tv/ott/live/279/master.m3u8
 #EXTINF:-1 tvg-name="Republic Bangla" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/REPUBLIC-BANGLA-LOGO_RGB_Transparent.png" group-title="News",Republic Bangla
 https://cdn.pishow.tv/ott/live/270/master.m3u8
 #EXTINF:-1 tvg-name="Republic Bharat" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/R.Bharat.png" group-title="News",Republic Bharat
@@ -75,21 +169,37 @@ https://cdn.pishow.tv/ott/live/1053/master.m3u8
 https://cdn.pishow.tv/ott/live/298/master.m3u8
 #EXTINF:-1 tvg-name="Republic TV" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/REPUBLIC%20TV.png" group-title="News",Republic TV
 https://cdn.pishow.tv/ott/live/271/master.m3u8
-#EXTINF:-1 tvg-name="Swadesh News (720p)" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Swadesh_News.png" group-title="News",Swadesh News (720p)
-https://cdn.pishow.tv/ott/live/465/master.m3u8
-#EXTINF:-1 tvg-name="master m3u8" group-title="Other",master m3u8
-https://cdn.pishow.tv/ott/live/1499/master.m3u8
-#EXTINF:-1 tvg-name="master m3u8" group-title="Other",master m3u8
-https://cdn.pishow.tv/ott/live/1237/master.m3u8
+#EXTINF:-1 tvg-name="TV5 Kannada" tvg-logo="https://dtil.tmsimg.com/assets/s144024_ld_h15_aa.png?lock=720x540" group-title="News",TV5 Kannada
+https://cdn-3.pishow.tv/live/1526/master.m3u8
+#EXTINF:-1 tvg-name="TV9 Marathi (576p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/TV9%20Marathi1.png" group-title="News",TV9 Marathi (576p)
+https://cdn.pishow.tv/ott/live/2/master.m3u8
 #EXTINF:-1 tvg-name="master m3u8" group-title="Other",master m3u8
 https://cdn.pishow.tv/ott/live/1613/master.m3u8
 #EXTINF:-1 tvg-name="master m3u8" group-title="Other",master m3u8
 https://cdn.pishow.tv/ott/live/1454/master.m3u8
-#EXTINF:-1 tvg-name="Rang (576p)" tvg-logo="https://dtil.tmsimg.com/assets/s143718_ld_h15_aa.png?lock=720x540" group-title="Other",Rang (576p)
-https://cdn.pishow.tv/ott/live/10017/master.m3u8
+#EXTINF:-1 tvg-name="master m3u8" group-title="Other",master m3u8
+https://cdn.pishow.tv/ott/live/1391/master.m3u8
+#EXTINF:-1 tvg-name="master m3u8" group-title="Other",master m3u8
+https://cdn.pishow.tv/ott/live/230/master.m3u8
+#EXTINF:-1 tvg-name="master m3u8" group-title="Other",master m3u8
+https://cdn.pishow.tv/ott/live/1007/master.m3u8
+#EXTINF:-1 tvg-name="master m3u8" group-title="Other",master m3u8
+https://cdn.pishow.tv/ott/live/1211/master.m3u8
+#EXTINF:-1 tvg-name="master m3u8" group-title="Other",master m3u8
+https://cdn.pishow.tv/ott/live/1473/master.m3u8
+#EXTINF:-1 tvg-name="master m3u8" group-title="Other",master m3u8
+https://cdn.pishow.tv/ott/live/10008/master.m3u8
+#EXTINF:-1 tvg-name="master m3u8" group-title="Other",master m3u8
+https://cdn.pishow.tv/ott/live/1503/master.m3u8
 #EXTINF:-1 tvg-name="Aastha Kannada" tvg-logo="https://dtil.tmsimg.com/assets/s158134_ld_h15_aa.png?lock=720x540" group-title="Religious",Aastha Kannada
 https://cdn.pishow.tv/ott/live/234/master.m3u8
 #EXTINF:-1 tvg-name="Aastha Telugu" tvg-logo="https://dtil.tmsimg.com/assets/s158136_ld_h15_aa.png?lock=720x540" group-title="Religious",Aastha Telugu
 https://cdn.pishow.tv/ott/live/262/master.m3u8
 #EXTINF:-1 tvg-name="Channel WIN (720p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Channel-Win-transparent.png" group-title="Religious",Channel WIN (720p)
 https://cdn.pishow.tv/ott/live/229/master.m3u8
+#EXTINF:-1 tvg-name="Hope Channel India (576p)" tvg-logo="https://i.imgur.com/wPzPUrK.png" group-title="Religious",Hope Channel India (576p)
+https://cdn.pishow.tv/ott/live/1385/master.m3u8
+#EXTINF:-1 tvg-name="Madha TV (576p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Madha%20TV.png" group-title="Religious",Madha TV (576p)
+https://cdn.pishow.tv/ott/live/1265/master.m3u8
+#EXTINF:-1 tvg-name="DD Sports" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Sports.png" group-title="Sports",DD Sports
+https://cdn-6.pishow.tv/live/13/master.m3u8

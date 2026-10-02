@@ -1,5 +1,7 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
-#EXTINF:-1 tvg-name="India News Gujarati (1080p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/India%20News.png" group-title="News",India News Gujarati (1080p)
+#EXTINF:-1 tvg-name="India News" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/India%20News.png" group-title="News",India News
+https://newsxott.in/hls/indianewsnational.m3u8
+#EXTINF:-1 tvg-name="India News Gujarati" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/India_News_Gujarat.png" group-title="News",India News Gujarati
 https://newsxott.in/hls/indianewsgujarat.m3u8
 #EXTINF:-1 tvg-name="India News Haryana (1080p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/India%20News.png" group-title="News",India News Haryana (1080p)
 https://newsxott.in/hls/indianewsharyana.m3u8

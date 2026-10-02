@@ -1,0 +1,11 @@
+#EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
+#EXTINF:-1 tvg-name="Sun TV" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG002Z0M0Y.png?lock=720x540" group-title="Entertainment",Sun TV
+https://hotstarx.herokuapp.com/sunnxt/sunapi.php?id=9016&e=.m3u8
+#EXTINF:-1 tvg-name="Sun TV HD" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG002Z0M0Y.png?lock=720x540" group-title="Entertainment",Sun TV HD
+https://hotstarx.herokuapp.com/sunnxt/sunapi.php?id=14020&e=.m3u8
+#EXTINF:-1 tvg-name="Sun Music" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG002Z1CL8.png?lock=720x540" group-title="Music",Sun Music
+https://hotstarx.herokuapp.com/sunnxt/sunapi.php?id=9025&e=.m3u8
+#EXTINF:-1 tvg-name="Sun Music HD" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG002Z1CL8.png?lock=720x540" group-title="Music",Sun Music HD
+https://hotstarx.herokuapp.com/sunnxt/sunapi.php?id=9013&e=.m3u8
+#EXTINF:-1 tvg-name="Sun News" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG002Z0MBD.png?lock=720x540" group-title="News",Sun News
+https://hotstarx.herokuapp.com/sunnxt/sunapi.php?id=38926&e=.m3u8

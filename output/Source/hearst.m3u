@@ -1,17 +1,21 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
-#EXTINF:-1 tvg-name="master m3u8?subtitles=en" group-title="Other",master m3u8?subtitles=en
-https://htv-streaming-otfp.hearst.io/f2b8cb7b-e5b3-4b91-bc8f-c45350e6d1bf/video_16x9_240p_h264_sd,video_16x9_360p_h264_sd,video_16x9_480p_h264_sd,video_16x9_720p_h264_hd/master.m3u8?subtitles=en
-#EXTINF:-1 tvg-name="master m3u8?subtitles=en" group-title="Other",master m3u8?subtitles=en
-https://htv-streaming-otfp.hearst.io/c2d405c8-40bf-432a-a9c8-08e17dc37a01/video_16x9_240p_h264_sd,video_16x9_360p_h264_sd,video_16x9_480p_h264_sd,video_16x9_720p_h264_hd/master.m3u8?subtitles=en
-#EXTINF:-1 tvg-name="master m3u8?subtitles=en" group-title="Other",master m3u8?subtitles=en
-https://htv-streaming-otfp.hearst.io/ba456b09-2cd1-4c6a-aec0-daef55179f28/video_rover_16x9_480p_sd_1648751323_6326/master.m3u8?subtitles=en
-#EXTINF:-1 tvg-name="video_16x9_240p_h264_sd m3u8" group-title="Other",video_16x9_240p_h264_sd m3u8
-https://htv-streaming-otfp.hearst.io/f2b8cb7b-e5b3-4b91-bc8f-c45350e6d1bf/video_16x9_240p_h264_sd.m3u8
-#EXTINF:-1 tvg-name="video_16x9_240p_h264_sd m3u8" group-title="Other",video_16x9_240p_h264_sd m3u8
-https://htv-streaming-otfp.hearst.io/c2d405c8-40bf-432a-a9c8-08e17dc37a01/video_16x9_240p_h264_sd.m3u8
-#EXTINF:-1 tvg-name="video_16x9_480p_h264_sd m3u8" group-title="Other",video_16x9_480p_h264_sd m3u8
-https://htv-streaming-otfp.hearst.io/f2b8cb7b-e5b3-4b91-bc8f-c45350e6d1bf/video_16x9_480p_h264_sd.m3u8
-#EXTINF:-1 tvg-name="video_16x9_480p_h264_sd m3u8" group-title="Other",video_16x9_480p_h264_sd m3u8
-https://htv-streaming-otfp.hearst.io/c2d405c8-40bf-432a-a9c8-08e17dc37a01/video_16x9_480p_h264_sd.m3u8
-#EXTINF:-1 tvg-name="video_rover_16x9_480p_sd_1648751323_6326 m3u8" group-title="Other",video_rover_16x9_480p_sd_1648751323_6326 m3u8
-https://htv-streaming-otfp.hearst.io/ba456b09-2cd1-4c6a-aec0-daef55179f28/video_rover_16x9_480p_sd_1648751323_6326.m3u8
+#EXTINF:-1 tvg-name="master m3u8?fmp4=true" group-title="Other",master m3u8?fmp4=true
+https://hdm-streaming-otfp.hearst.io/1eb8525b-7797-4596-a73f-4a79206bc27c/video_16x9_1080p_h264_hd,video_16x9_240p_h265_sd,video_16x9_360p_h264_sd,video_16x9_480p_h265_sd,video_16x9_720p_h265_hd/master.m3u8?fmp4=true
+#EXTINF:-1 tvg-name="master m3u8?fmp4=true" group-title="Other",master m3u8?fmp4=true
+https://mos-streaming-otfp.hearst.io/1eb8525b-7797-4596-a73f-4a79206bc27c/video_16x9_1080p_h264_hd,video_16x9_240p_h265_sd,video_16x9_360p_h264_sd,video_16x9_480p_h265_sd,video_16x9_720p_h265_hd/master.m3u8?fmp4=true
+#EXTINF:-1 tvg-name="master m3u8?subtitles=en&fmp4=true" group-title="Other",master m3u8?subtitles=en&fmp4=true
+https://hdm-streaming-otfp.hearst.io/744dc793-1990-459b-834d-cd69a9fce523/video_16x9_1080p_h264_hd,video_16x9_240p_h265_sd,video_16x9_360p_h264_sd,video_16x9_480p_h265_sd,video_16x9_720p_h265_hd/master.m3u8?subtitles=en&fmp4=true
+#EXTINF:-1 tvg-name="master m3u8?subtitles=en&fmp4=true" group-title="Other",master m3u8?subtitles=en&fmp4=true
+https://mos-streaming-otfp.hearst.io/744dc793-1990-459b-834d-cd69a9fce523/video_16x9_1080p_h264_hd,video_16x9_240p_h265_sd,video_16x9_360p_h264_sd,video_16x9_480p_h265_sd,video_16x9_720p_h265_hd/master.m3u8?subtitles=en&fmp4=true
+#EXTINF:-1 tvg-name="master m3u8?subtitles=en&fmp4=true" group-title="Other",master m3u8?subtitles=en&fmp4=true
+https://hdm-streaming-otfp.hearst.io/82dc30e5-f0b7-4f54-9b5c-7290340ec769/video_16x9_1080p_h264_hd,video_16x9_240p_h265_sd,video_16x9_360p_h264_sd,video_16x9_480p_h265_sd,video_16x9_720p_h265_hd/master.m3u8?subtitles=en&fmp4=true
+#EXTINF:-1 tvg-name="master m3u8?subtitles=en&fmp4=true" group-title="Other",master m3u8?subtitles=en&fmp4=true
+https://mos-streaming-otfp.hearst.io/82dc30e5-f0b7-4f54-9b5c-7290340ec769/video_16x9_1080p_h264_hd,video_16x9_240p_h265_sd,video_16x9_360p_h264_sd,video_16x9_480p_h265_sd,video_16x9_720p_h265_hd/master.m3u8?subtitles=en&fmp4=true
+#EXTINF:-1 tvg-name="master m3u8?subtitles=en&fmp4=true" group-title="Other",master m3u8?subtitles=en&fmp4=true
+https://mos-streaming-otfp.hearst.io/ed1effe1-f023-4dbd-8db2-81a35bde7ab4/video_16x9_1080p_h264_hd,video_16x9_240p_h265_sd,video_16x9_360p_h264_sd,video_16x9_480p_h265_sd,video_16x9_720p_h265_hd/master.m3u8?subtitles=en&fmp4=true
+#EXTINF:-1 tvg-name="master m3u8?subtitles=en&fmp4=true" group-title="Other",master m3u8?subtitles=en&fmp4=true
+https://hdm-streaming-otfp.hearst.io/ed1effe1-f023-4dbd-8db2-81a35bde7ab4/video_16x9_1080p_h264_hd,video_16x9_240p_h265_sd,video_16x9_360p_h264_sd,video_16x9_480p_h265_sd,video_16x9_720p_h265_hd/master.m3u8?subtitles=en&fmp4=true
+#EXTINF:-1 tvg-name="video_16x9_1080p_h264_hd m3u8?fmp4=true" group-title="Other",video_16x9_1080p_h264_hd m3u8?fmp4=true
+https://hdm-streaming-otfp.hearst.io/744dc793-1990-459b-834d-cd69a9fce523/video_16x9_1080p_h264_hd.m3u8?fmp4=true
+#EXTINF:-1 tvg-name="video_16x9_360p_h264_sd m3u8?fmp4=true" group-title="Other",video_16x9_360p_h264_sd m3u8?fmp4=true
+https://hdm-streaming-otfp.hearst.io/744dc793-1990-459b-834d-cd69a9fce523/video_16x9_360p_h264_sd.m3u8?fmp4=true

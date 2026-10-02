@@ -1,0 +1,9 @@
+#EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
+#EXTINF:-1 tvg-name="proxy?url=https%3A%2F%2Fcdn-euronews akamaized net%2Flive%2Feds%2Feuronews-el%2F25068%2Findex m3u8" group-title="News",proxy?url=https%3A%2F%2Fcdn-euronews akamaized net%2Flive%2Feds%2Feuronews-el%2F25068%2Findex m3u8
+https://sporio.tv/api/proxy?url=https%3A%2F%2Fcdn-euronews.akamaized.net%2Flive%2Feds%2Feuronews-el%2F25068%2Findex.m3u8
+#EXTINF:-1 tvg-name="proxy?url=https%3A%2F%2Fott livelegitpro in%3A9899%2Fhnnnews%2Fhnnnews%2Findex m3u8" group-title="News",proxy?url=https%3A%2F%2Fott livelegitpro in%3A9899%2Fhnnnews%2Fhnnnews%2Findex m3u8
+https://sporio.tv/api/proxy?url=https%3A%2F%2Fott.livelegitpro.in%3A9899%2Fhnnnews%2Fhnnnews%2Findex.m3u8
+#EXTINF:-1 tvg-name="page-5efd633244e82019 js" group-title="Other",page-5efd633244e82019 js
+https://sporio.tv/_next/static/chunks/app/(public)/go-live/page-5efd633244e82019.js
+#EXTINF:-1 tvg-name="proxy?url=https%3A%2F%2Fmdnlv cdn octivid com%2Falmdn%2Fsmil%3Ampegts stream smil%2Fplaylist m3u8" group-title="Other",proxy?url=https%3A%2F%2Fmdnlv cdn octivid com%2Falmdn%2Fsmil%3Ampegts stream smil%2Fplaylist m3u8
+https://sporio.tv/api/proxy?url=https%3A%2F%2Fmdnlv.cdn.octivid.com%2Falmdn%2Fsmil%3Ampegts.stream.smil%2Fplaylist.m3u8

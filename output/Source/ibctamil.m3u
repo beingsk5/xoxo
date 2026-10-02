@@ -1,9 +1,3 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
 #EXTINF:-1 tvg-name="IBC Tamil" group-title="Entertainment",IBC Tamil
 https://ibctamil-live.ibctamil.com/transcode/ibctamil_std.m3u8
-#EXTINF:-1 tvg-name="IBC Tamil Music" group-title="Music",IBC Tamil Music
-https://cdn.ibctamil.com/ibc-music/smil:ibcmusic.smil/index.m3u8
-#EXTINF:-1 tvg-name="IBC Bakthi" group-title="Other",IBC Bakthi
-https://cdn.ibctamil.com/ibc-bakthi/smil:ibcbakthi.smil/index.m3u8
-#EXTINF:-1 tvg-name="IBC Tamil Comedy" group-title="Other",IBC Tamil Comedy
-https://cdn.ibctamil.com/ibc-comedy/smil:ibccomedy.smil/chunklist.m3u8

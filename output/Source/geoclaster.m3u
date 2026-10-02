@@ -1,0 +1,7 @@
+#EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
+#EXTINF:-1 tvg-name="Star Jalsha HD (iptvidn)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Star-Jalsha--2000-x-1125--Transparent.png" group-title="Entertainment",Star Jalsha HD (iptvidn)
+http://circleplaylists.geoclaster.xyz:8082/Star_jalsha/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-name="Zee Bangla HD" tvg-logo="https://i.imgur.com/zTGTWa8.png" group-title="Entertainment",Zee Bangla HD
+http://circleplaylists.geoclaster.xyz:8082/zee-bangla/index.m3u8
+#EXTINF:-1 tvg-name="Zee Bangla Sonar" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/ZeeBanglaSonar_Transparent_6bea30f2-39ba-462c-a2c8-317d68f08519.png" group-title="Entertainment",Zee Bangla Sonar
+http://circleplaylists.geoclaster.xyz:8082/ZEE-BANGLA-CINEMA/index.m3u8

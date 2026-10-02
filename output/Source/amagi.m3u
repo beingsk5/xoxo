@@ -1,6 +1,8 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
 #EXTINF:-1 tvg-name="Animax Asia India (1080p) [Geo-blocked]" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Animax.png/960px-Animax.png" group-title="Animation",Animax Asia India (1080p) [Geo-blocked]
 https://amg02159-kcglobal-amg02159c1-samsung-in-521.playouts.now.amagi.tv/playlist/amg02159-kcglobal-animax-samsungin/playlist.m3u8
+#EXTINF:-1 tvg-name="Discovery Turbo TV" tvg-logo="https://dtil.tmsimg.com/assets/s159108_ld_h15_aa.png?lock=720x540" group-title="Auto",Discovery Turbo TV
+https://amg00136-wbd-amg00136c57-vizio-us-8927.playouts.now.amagi.tv/playlist/amg00136-warnerbrothersdiscovery-motortrendfasttv-vizious/playlist.m3u8?app_name=%7bAPP_NAME%7d&app_bundle=%7bAPP_BUNDLE%7d&app_store_url=%7bAPP_STORE_URL%7d&url=%7bDOMAIN%7d&ifa_type=%7bIFATYPE%7d&lmt=%7bLMT%7d&dnt=%7bDNT%7d&did=%7bADID%7d&us_privacy=%7bUSPRIVACY%7d&coppa=%7bCOPPA%7d&skip=%7bSKIPPABLE%7d&device_make=%7bDEVICE_MAKE%7d&w=%7bWIDTH%7d&h=%7bHEIGHT%7d&vizio_network_name=%7bVIZIO_NETWORK_NAME%7d&vizdartoken=eyJhdWQiOiI5MyIsIndmcGNpZCI6NDU5NDUxODg0MH0
 #EXTINF:-1 tvg-name="Zee Business (Asia)" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/ZEEDIGITAL/LIVECHANNEL/67ed20afb9965350035ecc50/images/LOGO/LOGO_3scYDc5V6_Zbusiness_logo-for-larg.png" group-title="Business",Zee Business (Asia)
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01412-xiaomiasia-zeebusiness-xiaomi/playlist.m3u8
 #EXTINF:-1 tvg-name="Zee Cine Classic (1080p)" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN21000014R_20260325T012324SQUARE.png" group-title="Classic",Zee Cine Classic (1080p)
@@ -15,7 +17,7 @@ https://amg01448-amg01448c16-samsung-in-3495.playouts.now.amagi.tv/ts-ap-s1-n1/p
 https://amg13737-amg13737c1-amgplt0016.playout.now3.amagi.tv/playlist/amg13737-amg13737c1-amgplt0016/playlist.m3u8
 #EXTINF:-1 tvg-name="LATV (1080p) [Geo-blocked]" group-title="Entertainment",LATV (1080p) [Geo-blocked]
 https://amg00779-latv-amg00779c1-cineverse-us-1746.playouts.now.amagi.tv/playlist/amg00779-latvnetworkllc-latv-cineverseus/playlist.m3u8
-#EXTINF:-1 tvg-name="Telugu One (1080p)" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN400058AF_20260311T004509SQUARE.png" group-title="Entertainment",Telugu One (1080p)
+#EXTINF:-1 tvg-name="Telugu One" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN400058AF_20260311T004509SQUARE.png" group-title="Entertainment",Telugu One
 https://amg02821-amg02821c1-samsung-in-4717.playouts.now.amagi.tv/playlist/amg02821-objectone-teluguone-samsungin/playlist.m3u8
 #EXTINF:-1 tvg-name="Zee 24 Ghanta (Asia)" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_E24/images/LOGO_HD/image.png" group-title="Entertainment",Zee 24 Ghanta (Asia)
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01412-xiaomiasia-zee24ghantaa-xiaomi/playlist.m3u8
@@ -25,16 +27,18 @@ https://amg00862-amg00862c7-amgplt0173.playout.now3.amagi.tv/playlist/amg00862-a
 https://amg17931-zee-amg17931c6-samsung-au-8872.playouts.now.amagi.tv/playlist/amg17931-asiatvusaltdfast-zeeworld-samsungau/playlist.m3u8
 #EXTINF:-1 tvg-name="Hasbro Legends (1080p) [Geo-blocked]" group-title="Kids",Hasbro Legends (1080p) [Geo-blocked]
 https://amg02713-amg02713c11-amgplt0852.playout.now3.amagi.tv/ts-us-e2-n2/playlist/amg02713-amg02713c11-amgplt0852/playlist.m3u8
-#EXTINF:-1 tvg-name="Mr Bean Animated (1080p)" group-title="Kids",Mr Bean Animated (1080p)
-https://amg00627-amg00627c23-samsung-au-4110.playouts.now.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-name="Pop Up (1080p) [Geo-blocked]" group-title="Kids",Pop Up (1080p) [Geo-blocked]
 https://amg01753-amg01753c9-samsung-gb-8005.playouts.now.amagi.tv/ts-eu-w1-n2/playlist/amg01753-narrativeuk-popup-samsunggb/playlist.m3u8
 #EXTINF:-1 tvg-name="NDTV Good Times (1080p)" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_GOOD_TIMES/images/LOGO_HD/image.png" group-title="Lifestyle",NDTV Good Times (1080p)
 https://amg01448-samsungin-ndtvgoodtimes-samsungin-ad-gp.amagi.tv/playlist/amg01448-samsungin-ndtvgoodtimes-samsungin/playlist.m3u8
 #EXTINF:-1 tvg-name="&TV International (1080p)" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/%26TV_Transparent_c5cc189b-8493-48d2-b07c-3fa4f92d754a.png" group-title="Movies",&TV International (1080p)
 https://amg01117-amg01117c1-amgplt0029.playout.now3.amagi.tv/playlist/amg01117-amg01117c1-amgplt0029/playlist.m3u8
+#EXTINF:-1 tvg-name="Action Bollywood Movies" group-title="Movies",Action Bollywood Movies
+https://amg01076-lightningintern-actionhollywood-samsungnz-82rry.amagi.tv/playlist/amg01076-lightningintern-actionhollywood-samsungnz/playlist.m3u8
 #EXTINF:-1 tvg-name="KCM India (1080p) [Geo-blocked]" group-title="Movies",KCM India (1080p) [Geo-blocked]
 https://amg02159-amg02159c7-samsung-in-4001.playouts.now.amagi.tv/playlist/amg02159-kcglobal-kcm-samsungin/playlist.m3u8
+#EXTINF:-1 tvg-name="Mytime Movie Network c6 English text and cc -TCL (Geo)" group-title="Movies",Mytime Movie Network c6 English text and cc -TCL (Geo)
+https://amg00500-amg00500c6-tcl-us-3597.playouts.now.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-name="Zee Bollymovies (1080p) [Geo-blocked]" tvg-logo="https://framerusercontent.com/images/mqfJ18x4jYe0GbZUbxSHsbnWU.png?scale-down-to=512" group-title="Movies",Zee Bollymovies (1080p) [Geo-blocked]
 https://amg17931-zee-amg17931c8-samsung-th-6526.playouts.now.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-name="Zee Bollymovies Australia (1080p) [Geo-blocked]" tvg-logo="https://framerusercontent.com/images/mqfJ18x4jYe0GbZUbxSHsbnWU.png?scale-down-to=512" group-title="Movies",Zee Bollymovies Australia (1080p) [Geo-blocked]
@@ -45,8 +49,14 @@ https://amg17931-zee-amg17931c5-samsung-au-8873.playouts.now.amagi.tv/playlist.m
 https://amg17931-zee-amg17931c5-samsung-th-5696.playouts.now.amagi.tv/playlist/amg17931-asiatvusaltdfast-zeecinema-samsungth/playlist.m3u8
 #EXTINF:-1 tvg-name="Zee South Flix (1080p)" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN2100005T2_20260325T012340SQUARE.png" group-title="Movies",Zee South Flix (1080p)
 https://amg00862-amg00862c9-amgplt0173.playout.now3.amagi.tv/playlist/amg00862-amg00862c9-amgplt0173/playlist.m3u8
+#EXTINF:-1 tvg-name="CMC California Music Channel (1080p) [Geo-blocked]" group-title="Music",CMC California Music Channel (1080p) [Geo-blocked]
+https://cmc-ono.amagi.tv/hls/amagi_hls_data_cmcAAAAAA-cmc-ono/CDN/playlist.m3u8
+#EXTINF:-1 tvg-name="CMC California Music Channel (1080p) [Geo-blocked]" group-title="Music",CMC California Music Channel (1080p) [Geo-blocked]
+https://cmc-ono.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-name="Museum TV French [Geo-blocked]" group-title="Music",Museum TV French [Geo-blocked]
 https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01492-secomsasmediart-museumtv-eng-samsungit/playlist.m3u8
+#EXTINF:-1 tvg-name="Saga Music Haryanvi" group-title="Music",Saga Music Haryanvi
+https://amg00223-unisys-amg00223c4-lg-in-2049.playouts.now.amagi.tv/playlist/amg00223-sevencolorsbroadcastingprivatelimited-sagamusicharyanvi-lgin/playlist.m3u8
 #EXTINF:-1 tvg-name="Saga Music Haryanvi (Asia)" group-title="Music",Saga Music Haryanvi (Asia)
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01412-xiaomiasia-sagamusicharyanvi-xiaomi/playlist.m3u8
 #EXTINF:-1 tvg-name="Zee Dil Se (1080p)" tvg-logo="https://i.imgur.com/zYbltEk.png" group-title="Music",Zee Dil Se (1080p)
@@ -67,8 +77,6 @@ https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01412-xiaomiasia-abpsanjha-xiaomi/p
 https://amg19223-amg19223c11-amgplt0352.playout.now3.amagi.tv/playlist/amg19223-amg19223c11-amgplt0352/playlist.m3u8
 #EXTINF:-1 tvg-name="CNN News 18 India Geo" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/CNN%20News18.png" group-title="News",CNN News 18 India Geo
 https://amg00866-amg00866c1-xiaomi-in-3511.playouts.now.amagi.tv/playlist.m3u8
-#EXTINF:-1 tvg-name="DW English (1080p)" group-title="News",DW English (1080p)
-https://amg01644-amg01644c1-amgplt0343.playout.now3.amagi.tv/ts-eu-w1-n2/playlist/amg01644-amg01644c1-amgplt0343/playlist.m3u8
 #EXTINF:-1 tvg-name="India Today (720p) [Geo-blocked]" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/INDIA-TODAY_transparent.png" group-title="News",India Today (720p) [Geo-blocked]
 https://amg00644-amg00644c1-ondemandkorea-amesia-10266.playouts.now.amagi.tv/playlist/amg00644-tvtodaynetworkltdfast-indiatoday-ondemandkoreaamesia/playlist.m3u8
 #EXTINF:-1 tvg-name="India TV" tvg-logo="https://dtil.tmsimg.com/assets/s143199_ld_h15_aa.png?lock=720x540" group-title="News",India TV
@@ -87,16 +95,22 @@ https://amg01550-amg01550c3-xiaomi-in-4367.playouts.now.amagi.tv/playlist/amg015
 https://amg17783-amg17783c1-amgplt0173.playout.now3.amagi.tv/playlist/amg17783-amg17783c1-amgplt0173/playlist.m3u8
 #EXTINF:-1 tvg-name="Nachrichten 360 (1080p) [Geo-blocked]" group-title="News",Nachrichten 360 (1080p) [Geo-blocked]
 https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01821-lovetvfast-nachrichten360-samsungde/playlist.m3u8
+#EXTINF:-1 tvg-name="NDTV 24X7" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/NDTV24x7_Transparent_9b042a6f-d40f-465a-998f-627ee6841919.png" group-title="News",NDTV 24X7
+https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01448-samsungin-ndtv24x7-samsungin/playlist.m3u8
 #EXTINF:-1 tvg-name="NDTV 24x7 (IN)" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/NDTV24x7_Transparent_9b042a6f-d40f-465a-998f-627ee6841919.png" group-title="News",NDTV 24x7 (IN)
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01605-ndtvconvergence-ndtv24x7-lgin/playlist.m3u8
+#EXTINF:-1 tvg-name="NDTV INDIA" tvg-logo="https://dtil.tmsimg.com/assets/s157588_ld_h15_aa.png?lock=720x540" group-title="News",NDTV INDIA
+https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01448-samsungin-ndtvindia-samsungin/playlist.m3u8
 #EXTINF:-1 tvg-name="NDTV India (IN)" tvg-logo="https://dtil.tmsimg.com/assets/s157588_ld_h15_aa.png?lock=720x540" group-title="News",NDTV India (IN)
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01605-ndtvconvergence-ndtvindia-lgin/playlist.m3u8
 #EXTINF:-1 tvg-name="News 18 Gujarati Geo" group-title="News",News 18 Gujarati Geo
 https://amg00866-amg00866c7-xiaomi-in-3551.playouts.now.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-name="News 18 Tamil Nadu Geo" group-title="News",News 18 Tamil Nadu Geo
 https://amg00866-amg00866c6-xiaomi-in-3554.playouts.now.amagi.tv/playlist.m3u8
-#EXTINF:-1 tvg-name="NTD TV English (1080p)" group-title="News",NTD TV English (1080p)
-https://amg17596-ntdtv-amg17596c1-rakuten-gb-6741.playouts.now.amagi.tv/playlist/amg17596-newtangdynastytelevision-ntdtv-rakutengb/playlist.m3u8
+#EXTINF:-1 tvg-name="Republic Bharat" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/R.Bharat.png" group-title="News",Republic Bharat
+https://cdn-apse1-prod.tsv2.amagi.tv/linear/samsungin-republicbharat-samsungindia/playlist.m3u8
+#EXTINF:-1 tvg-name="Republic TV" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/REPUBLIC%20TV.png" group-title="News",Republic TV
+https://cdn-apse1-prod.tsv2.amagi.tv/linear/samsungin-republictv-samsungindia/playlist.m3u8
 #EXTINF:-1 tvg-name="Republic TV (1080p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Public%20TV.png" group-title="News",Republic TV (1080p)
 https://samsung-republictv.amagi.tv/ts-ap-s1-n1/playlist/samsungin-republictv-samsungindia/playlist.m3u8
 #EXTINF:-1 tvg-name="Times Now Navbharat (1080p) [Geo-blocked]" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/TIMES%20NOW.png" group-title="News",Times Now Navbharat (1080p) [Geo-blocked]
@@ -127,20 +141,30 @@ https://amg00327-coxmediagroup-wsocbreaking-plex-t51et.amagi.tv/playlist/amg0032
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01412-xiaomiasia-zeenews-xiaomi/playlist.m3u8
 #EXTINF:-1 tvg-name="Zee Wion (Asia)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/WION.png" group-title="News",Zee Wion (Asia)
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01412-xiaomiasia-zeewion-xiaomi/playlist.m3u8
+#EXTINF:-1 tvg-name="123 Go English -TCL (Geo)" group-title="Other",123 Go English -TCL (Geo)
+https://amg02051-soulpublishing-amg02051c17-tclideo-northamerica-527.playouts.now.amagi.tv/playlist/amg02051-admecyltd-123goenglish-tclideonorthamerica/playlist.m3u8
+#EXTINF:-1 tvg-name="123 GO! [EN]" group-title="Other",123 GO! [EN]
+https://amg02051-amg02051c17-rlaxx-us-6636.playouts.now.amagi.tv/playlist/amg02051-admecyltd-123goenglish-rlaxxus/playlist.m3u8?tag_id=104037&app_name=Whale+TV%2B&app_store=Browser&ic=IAB1&url=&wtv_channel_id=0440&content_producer_name=AmagiConnect_ADME_123GoEN&content_categories=IAB1%2CIAB1-7%2CIAB10-2%2CIAB19-29%2CIAB14-6&content_custom_1_param=Amagi&content_custom_2_param=F&content_custom_3_param=18-20%2C21-24%2C25-29%2C30-34%2C35-39&tv_language=&device_make=&tv_vendor=&brand_name=&device_model=&tv_model=&gdpr=1&gdpr_consent=&did=&ua=&ip=&dnt=&lmt=&coppa=0&us_privacy=1YNN&min_dur=5&max_dur=30&cb=&sid=&h=&w=&content_livestream=1&placement=1&ap=1&mute=0&skip=0&ads.gdpr=0
+#EXTINF:-1 tvg-name="123 Go! English (IN)" group-title="Other",123 Go! English (IN)
+https://amg02051-soulpublishing-amg02051c17-xiaomi-in-399.playouts.now.amagi.tv/playlist/amg02051-admecyltd-123goenglish-xiaomiin/playlist.m3u8
+#EXTINF:-1 tvg-name="5-Minute Crafts" group-title="Other",5-Minute Crafts
+https://amg02051-amg02051c7-rlaxx-us-6631.playouts.now.amagi.tv/playlist/amg02051-admecyltd-5minutecraftsenglish-rlaxxus/playlist.m3u8?tag_id=104045&app_name=Whale+TV%2B&app_store=Browser&ic=IAB1&url=&wtv_channel_id=0267&content_producer_name=AmagiConnect_ADME_5MinuteCraftsEN&content_categories=IAB1%2CIAB19-29%2CIAB9-2&content_custom_1_param=Amagi&content_custom_2_param=F&content_custom_3_param=18-20%2C21-24%2C25-29%2C30-34%2C35-39%2C40-44%2C45-49&tv_language=&device_make=&tv_vendor=&brand_name=&device_model=&tv_model=&gdpr=1&gdpr_consent=&did=&ua=&ip=&dnt=&lmt=&coppa=0&us_privacy=1YNN&min_dur=5&max_dur=30&cb=&sid=&h=&w=&content_livestream=1&placement=1&ap=1&mute=0&skip=0&ads.gdpr=0
+#EXTINF:-1 tvg-name="Brightside English" group-title="Other",Brightside English
+https://amg02051-soulpublishing-amg02051c9-xiaomi-international-385.playouts.now.amagi.tv/playlist/amg02051-admecyltd-brightsideenglish-xiaomiinternational/playlist.m3u8
 #EXTINF:-1 tvg-name="Celebrity Name Game (1080p) [Geo-blocked]" group-title="Other",Celebrity Name Game (1080p) [Geo-blocked]
 https://amg00353-amg00353c19-xumo-us-2608.playouts.now.amagi.tv/lionsgate-clbng/playlist.m3u8
+#EXTINF:-1 tvg-name="CNBC TV 18 Geo" group-title="Other",CNBC TV 18 Geo
+https://amg00866-amg00866c2-xiaomi-in-3516.playouts.now.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-name="Designated Survivor (1080p) [Geo-blocked]" group-title="Other",Designated Survivor (1080p) [Geo-blocked]
 https://amg00353-amg00353c40-xumo-us-4839.playouts.now.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-name="Ghaint Punjabi (Asia)" group-title="Other",Ghaint Punjabi (Asia)
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01412-xiaomiasia-ghaintpunjab-xiaomi/playlist.m3u8
 #EXTINF:-1 tvg-name="GoTraveler (720p) [Geo-blocked]" group-title="Other",GoTraveler (720p) [Geo-blocked]
 https://amg09501-amg09501c1-klowdtv-us-2398.playouts.now.amagi.tv/playlist/amg09501-quester-gotraveler-klowdtvus/playlist.m3u8
-#EXTINF:-1 tvg-name="index m3u8" group-title="Other",index m3u8
-https://raycom-accdn-firetv.amagi.tv/240p-cc/index.m3u8
-#EXTINF:-1 tvg-name="index m3u8" group-title="Other",index m3u8
-https://raycom-accdn-firetv.amagi.tv/720p-cc/index.m3u8
-#EXTINF:-1 tvg-name="index m3u8" group-title="Other",index m3u8
-https://raycom-accdn-firetv.amagi.tv/480p-cc/index.m3u8
+#EXTINF:-1 tvg-name="La LA Life English" group-title="Other",La LA Life English
+https://amg02051-soulpublishing-amg02051c8-xiaomi-in-398.playouts.now.amagi.tv/playlist/amg02051-admecyltd-lalalifeenglish-xiaomiin/playlist.m3u8
+#EXTINF:-1 tvg-name="LiveNOW from FOX (720p) [Geo-blocked]" group-title="Other",LiveNOW from FOX (720p) [Geo-blocked]
+https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00488-foxdigital-livenowbyfox-lgus/playlist.m3u8
 #EXTINF:-1 tvg-name="LocalNow - Colorado Springs" group-title="Other",LocalNow - Colorado Springs
 https://amg01583-localnow-amg01583c81-lg-us-1484.playouts.now.amagi.tv/playlist/amg01583-localnowfast-localnowcoloradosprings-lgus/playlist.m3u8
 #EXTINF:-1 tvg-name="Love Nature en Espanol (1080p) [Geo-blocked]" group-title="Other",Love Nature en Espanol (1080p) [Geo-blocked]
@@ -152,21 +176,37 @@ https://amg01821-lovetv-amg01821c9-rlaxx-gb-10458.playouts.now.amagi.tv/playlist
 #EXTINF:-1 tvg-name="Love The Planet IT (1080p) [Geo-blocked]" group-title="Other",Love The Planet IT (1080p) [Geo-blocked]
 https://amg01821-amg01821c11-rlaxx-gb-10459.playouts.now.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-name="playlist m3u8" group-title="Other",playlist m3u8
+https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01255-secomcofites-my-myzen-en-plex/playlist.m3u8
+#EXTINF:-1 tvg-name="playlist m3u8" group-title="Other",playlist m3u8
 https://amg01281-9xmediapvtltd-9xtashan-samsungin-xz1sd.amagi.tv/playlist/amg01281-9xmediapvtltd-9xtashan-samsungin/playlist.m3u8
 #EXTINF:-1 tvg-name="playlist m3u8" group-title="Other",playlist m3u8
 https://amg01281-9xmediapvtltd-9xjhakaas-samsungin-ci2cs.amagi.tv/playlist/amg01281-9xmediapvtltd-9xjhakaas-samsungin/playlist.m3u8
 #EXTINF:-1 tvg-name="playlist m3u8" group-title="Other",playlist m3u8
-https://raycom-accdn-firetv.amagi.tv/playlist.m3u8
+https://rakutenaa-mainstreammediafreesportsintl-rakuten-t7dc0.amagi.tv/playlist/rakutenAA-mainstreammediafreesportsintl-rakuten/playlist.m3u8
 #EXTINF:-1 tvg-name="playlist m3u8" group-title="Other",playlist m3u8
-https://amg01553-blueantmediaasi-zoomoonz-samsungnz-rdufn.amagi.tv/playlist/amg01553-blueantmediaasi-zoomoonz-samsungnz/playlist.m3u8
+https://sportsgrid-tribal.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-name="playlist m3u8" group-title="Other",playlist m3u8
-https://moviesphereuk-samsunguk.amagi.tv/playlist.m3u8
-#EXTINF:-1 tvg-name="Shemaroo Bollywood (1080p)" group-title="Other",Shemaroo Bollywood (1080p)
+https://pac12-roku-us.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="playlist m3u8" group-title="Other",playlist m3u8
+https://unbeaten-tcl.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="playlist m3u8" group-title="Other",playlist m3u8
+https://trace-sportstars-samsungnz.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="playlist m3u8" group-title="Other",playlist m3u8
+https://amg01448-samsungin-cnnnow-samsungin-4npqg.amagi.tv/playlist/amg01448-samsungin-cnnnow-samsungin/playlist.m3u8
+#EXTINF:-1 tvg-name="playlist m3u8" group-title="Other",playlist m3u8
+https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg00684-accuweather-accuweather-plex/playlist.m3u8
+#EXTINF:-1 tvg-name="playlist1080p m3u8" group-title="Other",playlist1080p m3u8
+https://sportsgrid-tribal.amagi.tv/playlist1080p.m3u8
+#EXTINF:-1 tvg-name="Shemaroo Bollywood" group-title="Other",Shemaroo Bollywood
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00864-shemarooenterta-shemabollywood-ono/playlist.m3u8
+#EXTINF:-1 tvg-name="Shemaroo Bollywood" group-title="Other",Shemaroo Bollywood
+https://amg00864-shemarooenterta-shemabollywood-ono-nlwbw.amagi.tv/playlist/amg00864-shemarooenterta-shemabollywood-ono/playlist.m3u8
+#EXTINF:-1 tvg-name="Slick Slime Sam English" group-title="Other",Slick Slime Sam English
+https://amg02051-soulpublishing-amg02051c12-xiaomi-international-384.playouts.now.amagi.tv/playlist/amg02051-admecyltd-slickslimesamenglish-xiaomiinternational/playlist.m3u8
 #EXTINF:-1 tvg-name="Talk TV (GB) Geo" group-title="Other",Talk TV (GB) Geo
 https://amg00738-newsuk-amg00738c1-lg-gb-3426.playouts.now.amagi.tv/playlist.m3u8
-#EXTINF:-1 tvg-name="Terra Mater WILD English (1080p)" group-title="Other",Terra Mater WILD English (1080p)
-https://amg01775-amg01775c1-amgplt0343.playout.now3.amagi.tv/playlist/amg01775-amg01775c1-amgplt0343/playlist.m3u8
+#EXTINF:-1 tvg-name="Teen Vee English" group-title="Other",Teen Vee English
+https://amg02051-soulpublishing-amg02051c5-xiaomi-international-383.playouts.now.amagi.tv/playlist/amg02051-admecyltd-teenveeenglish-xiaomiinternational/playlist.m3u8
 #EXTINF:-1 tvg-name="The Hill TV (1080p) [Geo-blocked]" group-title="Other",The Hill TV (1080p) [Geo-blocked]
 https://amg01312-cw-amg01312c15-firetv-us-3444.playouts.now.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-name="Tribeca Channel (1080p) [Geo-blocked]" group-title="Other",Tribeca Channel (1080p) [Geo-blocked]
@@ -185,5 +225,11 @@ https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01412-xiaomiasia-zeetaas-xiaomi/pla
 https://amg12058-c15studio-amg12058c1-lg-us-5787.playouts.now.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-name="FUEL TV US (1080p) [Geo-blocked]" group-title="Sports",FUEL TV US (1080p) [Geo-blocked]
 https://amg01074-fueltv-amg01074c1-firetv-us-3150.playouts.now.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="SONY MAX HD" tvg-logo="https://dtil.tmsimg.com/assets/s157593_ld_h15_aa.png?lock=720x540" group-title="Sports",SONY MAX HD
+https://lightning-now90s-samsungnz.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Willow Sports (1080p) [Geo-blocked]" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Sports",Willow Sports (1080p) [Geo-blocked]
+https://amg01269-amg01269c1-firetv-us-5377.playouts.now.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Willow Sports (1080p) [Geo-blocked]" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Sports",Willow Sports (1080p) [Geo-blocked]
+https://amg01269-amg01269c1-sportstribal-emea-5204.playouts.now.amagi.tv/ts-eu-w1-n2/playlist/amg01269-willowtvfast-willowplus-sportstribalemea/playlist.m3u8
 #EXTINF:-1 tvg-name="Travelxp HD (1080p) [Geo-blocked]" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Travelxp%20HD.png" group-title="Travel",Travelxp HD (1080p) [Geo-blocked]
 https://amg00416-amg00416c9-samsung-in-4882.playouts.now.amagi.tv/playlist/amg00416-travelxp-travelxphd-samsungin/playlist.m3u8

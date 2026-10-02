@@ -1,0 +1,5 @@
+#EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
+#EXTINF:-1 tvg-name="media9tv m3u8" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Media9.png" group-title="News",media9tv m3u8
+https://m9.media9news.com/media9/hls/media9tv.m3u8
+#EXTINF:-1 tvg-name="index m3u8" group-title="Other",index m3u8
+https://m9.media9news.com/media9/hls/480p/index.m3u8

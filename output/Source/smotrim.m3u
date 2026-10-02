@@ -1,3 +1,7 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
+#EXTINF:-1 tvg-name="index m3u8" group-title="Other",index m3u8
+https://live.smotrim.ru/vgtrk/0/russia1-hd/index.m3u8
+#EXTINF:-1 tvg-name="playlist_6 m3u8" group-title="Other",playlist_6 m3u8
+https://stream.smotrim.ru/hls2/russia_hd/playlist_6.m3u8
 #EXTINF:-1 tvg-name="RTR-Planeta US (720p) [Geo-blocked]" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Other",RTR-Planeta US (720p) [Geo-blocked]
 https://stream.smotrim.ru/hls/planeta_rtr_usa/playlist.m3u8?entity=channel&id=513&sign=3ac5d8e2db71ef7fc3d4becbff7512d8

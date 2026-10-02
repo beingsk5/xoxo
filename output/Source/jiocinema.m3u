@@ -1,5 +1,13 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
 #EXTINF:-1 tvg-name="Nick Jr India (1080p)" group-title="Kids",Nick Jr India (1080p)
 https://prod-sports-north-gm.jiocinema.com/bpk-tv/Nick_Junior_voot_MOB/Fallback/index.m3u8
-#EXTINF:-1 tvg-name="Nickelodeon Sonic Hindi (1080p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Nick.png" group-title="Kids",Nickelodeon Sonic Hindi (1080p)
+#EXTINF:-1 tvg-name="Nickelodeon Sonic Hindi (1080p)" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/6807/1784039246807-h.jpg" group-title="Kids",Nickelodeon Sonic Hindi (1080p)
 https://prod-sports-north-gm.jiocinema.com/bpk-tv/Sonic_Nickelodeon_voot_MOB/Fallback/index.m3u8
+#EXTINF:-1 tvg-name="JIO Haryanvi" group-title="Sports",JIO Haryanvi
+https://prod-ent-live-gm.jiocinema.com/out/v1/c714425e406c4be486e914f4062a9810/master.m3u8
+#EXTINF:-1 tvg-name="JIO Hindi" group-title="Sports",JIO Hindi
+https://prod-ent-live-gm.jiocinema.com/out/v1/81e640e5a2c74eb98201959a31a008a3/master.m3u8
+#EXTINF:-1 tvg-name="JIO Kannada" group-title="Sports",JIO Kannada
+https://prod-ent-live-gm.jiocinema.com/out/v1/31ee83696bc04e449c76e3c2211ebc4b/master.m3u8
+#EXTINF:-1 tvg-name="JIO Telugu" group-title="Sports",JIO Telugu
+https://prod-ent-live-gm.jiocinema.com/out/v1/9fdb956e26594b7d90f3641cf16ad597/master.m3u8

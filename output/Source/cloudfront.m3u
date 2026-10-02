@@ -1,10 +1,20 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
+#EXTINF:-1 tvg-name="Discovery Turbo TV" tvg-logo="https://dtil.tmsimg.com/assets/s159108_ld_h15_aa.png?lock=720x540" group-title="Auto",Discovery Turbo TV
+https://dbrb49pjoymg4.cloudfront.net/10001/99951438/hls/playlist.m3u8?ads.xumo_channelId=99951438&ads._fw_ifa_type=[IFA_TYPE]&ads._fw_did=[IFA]&ads.amznappId=[AMZN_APP_ID]&ads.lat=[LAT]&ads.lon=[LON]&ads.os=[OS]&ads.osv=[OS_VERSION]&ads.asnw=&ads.caid=WBDMotorTrendFASTTV&ads.csid=xumo_[PLATFORM]_WBDMotorTrendFASTTV_ssai&ads._fw_is_lat=[IS_LAT]&ads._fw_us_privacy=[CCPA_Value]&ads._fw_coppa=0&ads.genre=[CONTENT_IMDB_GENRE]&ads._fw_content_category=[IAB_content_category]&ads._fw_content_language=[content_language]&ads._fw_content_genre=[content_genre]&ads._fw_content_rating=[content_rating]&ads.xumo_contentId=4240&ads.xumo_contentName=WBDMotorTrendFASTTV&ads.xumo_providerId=4240&ads.xumo_providerName=WBDMotorTrendFASTTV&ads._fw_deviceMake=[device_make]&ads._fw_device_model=[device_model]&ads.channelId=99951438&ads.xumo_platform=[PLATFORM]&ads.site_id=[publica_site_id]&ads.appName=xumo&ads.appVersion=[APP_VERSION]&ads._fw_app_bundle=[app_bundle]&ads._fw_app_store_url=[app_store_url]
 #EXTINF:-1 tvg-name="Zee Business (576p)" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/ZEEDIGITAL/LIVECHANNEL/67ed20afb9965350035ecc50/images/LOGO/LOGO_3scYDc5V6_Zbusiness_logo-for-larg.png" group-title="Business",Zee Business (576p)
 https://dwby15d04agvq.cloudfront.net/index_1.m3u8
 #EXTINF:-1 tvg-name="Zee Business (720p)" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/ZEEDIGITAL/LIVECHANNEL/67ed20afb9965350035ecc50/images/LOGO/LOGO_3scYDc5V6_Zbusiness_logo-for-larg.png" group-title="Business",Zee Business (720p)
 https://dwby15d04agvq.cloudfront.net/index_5.m3u8
+#EXTINF:-1 tvg-name="DD Bharati" tvg-logo="https://dtil.tmsimg.com/assets/s142779_ld_h15_aa.png?lock=720x540" group-title="Culture",DD Bharati
+https://d75dqofg5kmfk.cloudfront.net/bpk-tv/Ddbharti/default/index.m3u8
+#EXTINF:-1 tvg-name="DD Bharati (504p)" tvg-logo="https://dtil.tmsimg.com/assets/s142779_ld_h15_aa.png?lock=720x540" group-title="Culture",DD Bharati (504p)
+https://d2lk5u59tns74c.cloudfront.net/out/v1/67cec794d8b14f9ba21f73924ac65797/index.m3u8
+#EXTINF:-1 tvg-name="DD Punjabi" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Punjabi.png" group-title="Culture",DD Punjabi
+https://d3eyhgoylams0m.cloudfront.net/v1/manifest/93ce20f0f52760bf38be911ff4c91ed02aa2fd92/ed7bd2c7-8d10-4051-b397-2f6b90f99acb/20c8ad14-a158-4a42-8889-e032d070856e/2.m3u8
 #EXTINF:-1 tvg-name="DD Punjabi (504p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Punjabi.png" group-title="Culture",DD Punjabi (504p)
 https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/da821c24a59d4e57960497aeaca8fb33/index.m3u8
+#EXTINF:-1 tvg-name="DD Kisan (504p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Kisan.png" group-title="Education",DD Kisan (504p)
+https://d2lk5u59tns74c.cloudfront.net/out/v1/4f053f2c12a24641bf701fb7f2376750/index.m3u8
 #EXTINF:-1 tvg-name="Amrita TV (720p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Amrita%20TV.png" group-title="Entertainment",Amrita TV (720p)
 https://ddash74r36xqp.cloudfront.net/master.m3u8
 #EXTINF:-1 tvg-name="Asianet Movies HD (720p)" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/7408/1782289617408-h.jpg" group-title="Entertainment",Asianet Movies HD (720p)
@@ -19,38 +29,60 @@ https://da86m1sqpm3o0.cloudfront.net/28072023/smil:colorsme.smil/playlist.m3u8
 https://d1rc86nwwc9fag.cloudfront.net/260723/smil:colorssuper1.smil/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
 #EXTINF:-1 tvg-name="Colors Tamil HD (720p)" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/Colors_Transparent_16069908-8494-4eb4-bd40-5afca3969088.png" group-title="Entertainment",Colors Tamil HD (720p)
 https://da86m1sqpm3o0.cloudfront.net/28072023/smil:colorstamilhd11.smil/playlist.m3u8
+#EXTINF:-1 tvg-name="DD Malayalam" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Malayalam.png" group-title="Entertainment",DD Malayalam
+https://d3eyhgoylams0m.cloudfront.net/v1/manifest/93ce20f0f52760bf38be911ff4c91ed02aa2fd92/ed7bd2c7-8d10-4051-b397-2f6b90f99acb/562ee8f9-9950-48a0-ba1d-effa00cf0478/2.m3u8
 #EXTINF:-1 tvg-name="DD Malayalam (504p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Malayalam.png" group-title="Entertainment",DD Malayalam (504p)
 https://d2lk5u59tns74c.cloudfront.net/out/v1/c313674ffced4c9a90f1bba436df2b9b/index.m3u8
-#EXTINF:-1 tvg-name="ETV Telugu HD (1080p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/ETV%20HD.png" group-title="Entertainment",ETV Telugu HD (1080p)
-https://d2z3q47xzd535o.cloudfront.net/v1/master/9d43eacaed199f8d5883927e7aef514a8a08e108/ETV_HD_H264-2_cloud_in/index.m3u8
+#EXTINF:-1 tvg-name="DD National" tvg-logo="https://dtil.tmsimg.com/assets/s158252_ld_h9_aa.png?lock=720x540" group-title="Entertainment",DD National
+https://d75dqofg5kmfk.cloudfront.net/bpk-tv/Ddnational/default/index.m3u8
+#EXTINF:-1 tvg-name="DD National" tvg-logo="https://dtil.tmsimg.com/assets/s158252_ld_h9_aa.png?lock=720x540" group-title="Entertainment",DD National
+https://d1g8wgjurz8via.cloudfront.net/bpk-tv/Ddnational/default/ddnational-audio_208482_und=208000-video=2137600.m3u8
+#EXTINF:-1 tvg-name="DD National HD (1080p)" tvg-logo="https://dtil.tmsimg.com/assets/s158252_ld_h9_aa.png?lock=720x540" group-title="Entertainment",DD National HD (1080p)
+https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/40492a64c1db4a1385ba1a397d357d3a/index.m3u8
 #EXTINF:-1 tvg-name="ETV Telugu HD (1080p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/ETV%20HD.png" group-title="Entertainment",ETV Telugu HD (1080p)
 https://d27zlkxhgwrfgo.cloudfront.net/v1/master/9d43eacaed199f8d5883927e7aef514a8a08e108/ETV_HD_H264_cloud_in/index.m3u8
-#EXTINF:-1 tvg-name="index m3u8?akes=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9 eyJleHAiOjE3OTA2MTc2OTB9 QvG0fxFInqHSZinwi1svHXwKqMxI-4MN63uMzWC_Ksk" tvg-logo="https://i.imgur.com/Ndi6yOq.png" group-title="Entertainment",index m3u8?akes=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9 eyJleHAiOjE3OTA2MTc2OTB9 QvG0fxFInqHSZinwi1svHXwKqMxI-4MN63uMzWC_Ksk
-https://d7x8z4yuq42qn.cloudfront.net/index.m3u8?akes=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3OTA2MTc2OTB9.QvG0fxFInqHSZinwi1svHXwKqMxI-4MN63uMzWC_Ksk
+#EXTINF:-1 tvg-name="ETV Telugu HD (1080p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/ETV%20HD.png" group-title="Entertainment",ETV Telugu HD (1080p)
+https://d2z3q47xzd535o.cloudfront.net/v1/master/9d43eacaed199f8d5883927e7aef514a8a08e108/ETV_HD_H264-2_cloud_in/index.m3u8
+#EXTINF:-1 tvg-name="index m3u8?akes=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9 eyJleHAiOjE3OTA4NzY4MTV9 8yp4DXli2KSw9fsUOFmx9-TnZPpiaebAmOxdW4ng2oI" tvg-logo="https://img10.hotstar.com/image/upload/sources/r1/cms/prod/8633/1786020488633-h.jpg" group-title="Entertainment",index m3u8?akes=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9 eyJleHAiOjE3OTA4NzY4MTV9 8yp4DXli2KSw9fsUOFmx9-TnZPpiaebAmOxdW4ng2oI
+https://d7x8z4yuq42qn.cloudfront.net/index.m3u8?akes=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3OTA4NzY4MTV9.8yp4DXli2KSw9fsUOFmx9-TnZPpiaebAmOxdW4ng2oI
 #EXTINF:-1 tvg-name="KRGV-TV 5.2 [Geo-blocked]" group-title="Entertainment",KRGV-TV 5.2 [Geo-blocked]
 https://d3svnrf3rmq619.cloudfront.net/krgv-live/smil:krgv-somos.smil/playlist.m3u8
+#EXTINF:-1 tvg-name="Nepal 1 (396p)" tvg-logo="https://dtil.tmsimg.com/assets/s143584_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Nepal 1 (396p)
+https://d1msejlow1t3l4.cloudfront.net/fta/nepal1/chunks.m3u8
 #EXTINF:-1 tvg-name="Pasand TV (576p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Pasand-Logo--transparent.png" group-title="Entertainment",Pasand TV (576p)
 https://d1msejlow1t3l4.cloudfront.net/fta/pasand/playlist.m3u8
-#EXTINF:-1 tvg-name="PTC Punjabi (1080p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/PTC%20Punjabi.png" group-title="Entertainment",PTC Punjabi (1080p)
-https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/3e22a9c278db4e3eb779afd42e41b0a6/index.m3u8
 #EXTINF:-1 tvg-name="PTC Punjabi Gold (1080p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/PTC%20Punjabi.png" group-title="Entertainment",PTC Punjabi Gold (1080p)
 https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/6e14bac6d0384e129521a4d005188bfb/index.m3u8
+#EXTINF:-1 tvg-name="PTC Punjabi HD (1080p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/PTC%20Punjabi.png" group-title="Entertainment",PTC Punjabi HD (1080p)
+https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/3e22a9c278db4e3eb779afd42e41b0a6/index.m3u8
+#EXTINF:-1 tvg-name="Raj TV" tvg-logo="https://dtil.tmsimg.com/assets/s143715_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Raj TV
+https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/2839e3d1e0f84a2e821c1708d5fdfdf0/index.m3u8
 #EXTINF:-1 tvg-name="Show do Milhao (1080p) [Geo-blocked]" group-title="Entertainment",Show do Milhao (1080p) [Geo-blocked]
 https://d38s7rrdbnh4oy.cloudfront.net/v1/master/215c0da80606fed29372070168106400a6ca7e1a/SSAI-Saudades/index.m3u8
 #EXTINF:-1 tvg-name="Star Jalsha HD (720p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Star-Jalsha--2000-x-1125--Transparent.png" group-title="Entertainment",Star Jalsha HD (720p)
 https://da86m1sqpm3o0.cloudfront.net/28072023/smil:starjalsha.smil/chunklist_b1928000.m3u8
-#EXTINF:-1 tvg-name="Star Maa HD (720p)" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/1759/1782290731759-h.jpg" group-title="Entertainment",Star Maa HD (720p)
-https://da86m1sqpm3o0.cloudfront.net/28072023/smil:starmaa1.smil/chunklist_b2628000.m3u8
 #EXTINF:-1 tvg-name="Star Maa Movies HD (720p)" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/1759/1782290731759-h.jpg" group-title="Entertainment",Star Maa Movies HD (720p)
 https://da86m1sqpm3o0.cloudfront.net/28072023/smil:maamovies.smil/chunklist_b2628000.m3u8
 #EXTINF:-1 tvg-name="Star Pravah HD (720p)" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/5780/1782291675780-h.jpg" group-title="Entertainment",Star Pravah HD (720p)
 https://da86m1sqpm3o0.cloudfront.net/28072023/smil:starpravah.smil/chunklist_b1928000.m3u8
-#EXTINF:-1 tvg-name="Star Vijay UK (396p)" tvg-logo="https://vignette.wikia.nocookie.net/logopedia/images/2/23/Vijay_tv.png/revision/latest?cb=20170719104859" group-title="Entertainment",Star Vijay UK (396p)
+#EXTINF:-1 tvg-name="Star Vijay (396p)" tvg-logo="https://vignette.wikia.nocookie.net/logopedia/images/2/23/Vijay_tv.png/revision/latest?cb=20170719104859" group-title="Entertainment",Star Vijay (396p)
 https://da86m1sqpm3o0.cloudfront.net/28072023/smil:starvijayuk.smil/playlist.m3u8
+#EXTINF:-1 tvg-name="StarPlus (United Kingdom) (576p)" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/2384/1782291852384-h.jpg" group-title="Entertainment",StarPlus (United Kingdom) (576p)
+https://d1rc86nwwc9fag.cloudfront.net/260723/starplusuk_2500/chunks.m3u8
+#EXTINF:-1 tvg-name="Sun TV HD" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG002Z0M0Y.png?lock=720x540" group-title="Entertainment",Sun TV HD
+https://d2px1d6ssc60fw.cloudfront.net/SunTV/SunTV-HDR10-IN-index.m3u8
 #EXTINF:-1 tvg-name="Zee 24 Taas (720p)" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_E24/images/LOGO_HD/image.png" group-title="Entertainment",Zee 24 Taas (720p)
 https://dgrvlduwztkd4.cloudfront.net/index_5.m3u8
+#EXTINF:-1 tvg-name="ZEE BANGLA HD" tvg-logo="https://i.imgur.com/zTGTWa8.png" group-title="Entertainment",ZEE BANGLA HD
+https://d75dqofg5kmfk.cloudfront.net/bpk-tv/Zeebangla/default/index.m3u8
+#EXTINF:-1 tvg-name="Zee Bangla HD 2" tvg-logo="https://i.imgur.com/zTGTWa8.png" group-title="Entertainment",Zee Bangla HD 2
+https://d75dqofg5kmfk.cloudfront.net/bpk-tv/Zeebangla/default/thenayeemparvez.m3u8
 #EXTINF:-1 tvg-name="Zee Bangla Sonar (576p)" tvg-logo="https://i.imgur.com/zTGTWa8.png" group-title="Entertainment",Zee Bangla Sonar (576p)
 https://d1g8wgjurz8via.cloudfront.net/bpk-tv/ColorsHD/default/ColorsHD.m3u8
+#EXTINF:-1 tvg-name="Zee Bangla 🇮🇳" tvg-logo="https://i.imgur.com/zTGTWa8.png" group-title="Entertainment",Zee Bangla 🇮🇳
+https://d75dqofg5kmfk.cloudfront.net/bpk-tv/Zeebanglahd/default/index.m3u8
+#EXTINF:-1 tvg-name="Zee Kannada HD" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022S209.png?lock=720x540" group-title="Entertainment",Zee Kannada HD
+https://da86m1sqpm3o0.cloudfront.net/28072023/smil:zeekannadahd.smil/playlist.m3u8
 #EXTINF:-1 tvg-name="Zee Kannada News (720p)" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022S209.png?lock=720x540" group-title="Entertainment",Zee Kannada News (720p)
 https://d3vzwoqcbpfm8p.cloudfront.net/index_4.m3u8
 #EXTINF:-1 tvg-name="Zee Tamil HD (720p)" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ZEE_TAMIZH/images/LOGO_HD/image.png" group-title="Entertainment",Zee Tamil HD (720p)
@@ -61,10 +93,20 @@ https://d116gfrn8orazi.cloudfront.net/index.m3u8?akes=eyJ0eXAiOiJKV1QiLCJhbGciOi
 https://d2lk5u59tns74c.cloudfront.net/out/v1/308556d9fd1246adb479ef012a39bbfe/index.m3u8
 #EXTINF:-1 tvg-name="DD Assam (504p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20North%20East.png" group-title="General",DD Assam (504p)
 https://d2lk5u59tns74c.cloudfront.net/out/v1/d380bf5c167b4319a46cdd8204bc26b2/index.m3u8
+#EXTINF:-1 tvg-name="DD Bangla" tvg-logo="https://dtil.tmsimg.com/assets/s142778_ld_h15_aa.png?lock=720x540" group-title="General",DD Bangla
+https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/7ff57cc9046b4c188b51a0d506f36e7f/index_3.m3u8
+#EXTINF:-1 tvg-name="DD Bangla" tvg-logo="https://dtil.tmsimg.com/assets/s142778_ld_h15_aa.png?lock=720x540" group-title="General",DD Bangla
+https://d3eyhgoylams0m.cloudfront.net/v1/manifest/93ce20f0f52760bf38be911ff4c91ed02aa2fd92/ed7bd2c7-8d10-4051-b397-2f6b90f99acb/2e9e32a4-c4f7-49c3-96d6-c4e3660c7e3f/2.m3u8
 #EXTINF:-1 tvg-name="DD Bangla (504p)" tvg-logo="https://dtil.tmsimg.com/assets/s142778_ld_h15_aa.png?lock=720x540" group-title="General",DD Bangla (504p)
 https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/7ff57cc9046b4c188b51a0d506f36e7f/index.m3u8
+#EXTINF:-1 tvg-name="DD Bihar (504p)" tvg-logo="https://dtil.tmsimg.com/assets/s142780_ld_h15_aa.png?lock=720x540" group-title="General",DD Bihar (504p)
+https://d2lk5u59tns74c.cloudfront.net/out/v1/380b0765f87741a4812bc952ec6fbf21/index.m3u8
+#EXTINF:-1 tvg-name="DD Chandana" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Chandana.png" group-title="General",DD Chandana
+https://d3eyhgoylams0m.cloudfront.net/v1/manifest/93ce20f0f52760bf38be911ff4c91ed02aa2fd92/ed7bd2c7-8d10-4051-b397-2f6b90f99acb/3829f99b-4951-4a9d-98c1-dbc3acfe5193/2.m3u8
 #EXTINF:-1 tvg-name="DD Chandana (504p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Chandana.png" group-title="General",DD Chandana (504p)
 https://d2lk5u59tns74c.cloudfront.net/out/v1/0c980455d2fb4b69bcc6235745ee6039/index.m3u8
+#EXTINF:-1 tvg-name="DD Chhattisgarh (504p)" tvg-logo="https://i.imgur.com/zBg6Iuv.png" group-title="General",DD Chhattisgarh (504p)
+https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/5078083881bc489ea14f4c85e7abe4d6/index.m3u8
 #EXTINF:-1 tvg-name="DD Girnar (504p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Girnar.png" group-title="General",DD Girnar (504p)
 https://d2lk5u59tns74c.cloudfront.net/out/v1/558fdb9aebb54bb5bbbf0ced03686148/index.m3u8
 #EXTINF:-1 tvg-name="DD Goa (504p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD-Goa-Logo_2000_X_1125_Transpharent.png" group-title="General",DD Goa (504p)
@@ -73,32 +115,52 @@ https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/e5b9db1cc184406bb97159da2f120f91/in
 https://d2lk5u59tns74c.cloudfront.net/out/v1/950fc69666474351bde0a32b9600c804/index.m3u8
 #EXTINF:-1 tvg-name="DD Himachal Pradesh (504p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD-Himachal-Logo_2000_X_1125_Transpharent.png" group-title="General",DD Himachal Pradesh (504p)
 https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/afd2e335b0ba40eb9bdf1096118c6ede/index.m3u8
+#EXTINF:-1 tvg-name="DD India (1080p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20India.png" group-title="General",DD India (1080p)
+https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/ceda14583477426aa162a65392d8ea07/index.m3u8
 #EXTINF:-1 tvg-name="DD India (720p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20India.png" group-title="General",DD India (720p)
 https://d2gvyg6lvauoko.cloudfront.net/230226/ddindia/chunks.m3u8
 #EXTINF:-1 tvg-name="DD India (720p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20India.png" group-title="General",DD India (720p)
 https://d2gvyg6lvauoko.cloudfront.net/230226/ddindia/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
+#EXTINF:-1 tvg-name="DD Jharkhand" tvg-logo="https://dtil.tmsimg.com/assets/s142787_ld_h15_aa.png?lock=720x540" group-title="General",DD Jharkhand
+https://d3eyhgoylams0m.cloudfront.net/v1/manifest/93ce20f0f52760bf38be911ff4c91ed02aa2fd92/ed7bd2c7-8d10-4051-b397-2f6b90f99acb/2c6c5c20-6afe-47c4-934f-a0d7002cb151/2.m3u8
 #EXTINF:-1 tvg-name="DD Jharkhand (504p)" tvg-logo="https://dtil.tmsimg.com/assets/s142787_ld_h15_aa.png?lock=720x540" group-title="General",DD Jharkhand (504p)
 https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/e8c3741f8c154d3185831f4e31777fb2/index.m3u8
 #EXTINF:-1 tvg-name="DD Kashir (504p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Kashir.png" group-title="General",DD Kashir (504p)
 https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/8a59a828e80c49d0958925950cec0204/index.m3u8
+#EXTINF:-1 tvg-name="DD Madhya Pradesh (504p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Madhya%20Pradesh.png" group-title="General",DD Madhya Pradesh (504p)
+https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/b5256b391a7c4ae6977535b73fd6f591/index.m3u8
 #EXTINF:-1 tvg-name="DD Manipur (504p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Manipur.png" group-title="General",DD Manipur (504p)
 https://d2lk5u59tns74c.cloudfront.net/out/v1/8b75afc6576f450e8f554b6c877681d2/index.m3u8
 #EXTINF:-1 tvg-name="DD Meghalaya (504p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Meghalaya-Transparent.png" group-title="General",DD Meghalaya (504p)
 https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/4f81bc8d13dd49b484da35988abb8729/index.m3u8
 #EXTINF:-1 tvg-name="DD Nagaland (504p)" tvg-logo="https://i.imgur.com/HUL4aF6.png" group-title="General",DD Nagaland (504p)
 https://d2lk5u59tns74c.cloudfront.net/out/v1/29c92e0bef954a6d9b0908d1be29c1f0/index.m3u8
+#EXTINF:-1 tvg-name="DD Odia (504p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Odia.png" group-title="General",DD Odia (504p)
+https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/ef4ea632b77a480ebd77106968aa99a9/index.m3u8
+#EXTINF:-1 tvg-name="DD Rajasthan (504p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Rajasthan.png" group-title="General",DD Rajasthan (504p)
+https://d2lk5u59tns74c.cloudfront.net/out/v1/5b6bbbf682b741ecbe279f75a4a9a3e6/index.m3u8
 #EXTINF:-1 tvg-name="DD Sahyadri (504p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Sahyadri.png" group-title="General",DD Sahyadri (504p)
 https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/66dcc3ebe182447ba42837e746cf0c7c/index.m3u8
 #EXTINF:-1 tvg-name="DD Saptagiri (504p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Saptagiri.png" group-title="General",DD Saptagiri (504p)
 https://d2lk5u59tns74c.cloudfront.net/out/v1/26e915d6d12b4a06822c5e33c088ed56/index.m3u8
-#EXTINF:-1 tvg-name="DD Tamil HD (1080p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/PHOTO-_HD_2000_X_1125_Transpharent.png" group-title="General",DD Tamil HD (1080p)
+#EXTINF:-1 tvg-name="DD Tamil (1080p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/PHOTO-_HD_2000_X_1125_Transpharent.png" group-title="General",DD Tamil (1080p)
 https://d2lk5u59tns74c.cloudfront.net/out/v1/abf46b14847e45499f4a47f3a9afe93d/index.m3u8
+#EXTINF:-1 tvg-name="DD Tripura" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD-Tripura-Logo_2000_X_1125_Transpharent.png" group-title="General",DD Tripura
+https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/52b998e9510d41c29ad2ceca8ea3d849/index_3.m3u8
 #EXTINF:-1 tvg-name="DD Tripura (504p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD-Tripura-Logo_2000_X_1125_Transpharent.png" group-title="General",DD Tripura (504p)
 https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/52b998e9510d41c29ad2ceca8ea3d849/index.m3u8
-#EXTINF:-1 tvg-name="Jan TV (576p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/JAN-TV-LOGO-Transparent.png" group-title="General",Jan TV (576p)
-https://d1msejlow1t3l4.cloudfront.net/fta/jantv/playlist.m3u8
+#EXTINF:-1 tvg-name="DD Urdu (504p)" tvg-logo="https://dtil.tmsimg.com/assets/s142808_ld_h9_aa.png?lock=720x540" group-title="General",DD Urdu (504p)
+https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/9b91e9007e754db39a8b32c6bfc5b24a/index.m3u8
+#EXTINF:-1 tvg-name="DD Uttar Pradesh (504p)" tvg-logo="https://dtil.tmsimg.com/assets/s142807_ld_h9_ab.png?lock=720x540" group-title="General",DD Uttar Pradesh (504p)
+https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/70d4f6874fa64032a685e3123520f07d/index.m3u8
+#EXTINF:-1 tvg-name="DD Uttarakhand (504p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD-Uttarakhand-Logo_2000_X_1125_Transpharent.png" group-title="General",DD Uttarakhand (504p)
+https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/a70323c56ac647c2a8c8fc34e4c73912/index.m3u8
+#EXTINF:-1 tvg-name="DD Yadagiri (504p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Yadagiri.png" group-title="General",DD Yadagiri (504p)
+https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/c89fa6d6f5864ac29670d6f91cb7e32a/index.m3u8
 #EXTINF:-1 tvg-name="Baby Shark TV" group-title="Kids",Baby Shark TV
 https://dbrb49pjoymg4.cloudfront.net/10001/99951209/hls/master.m3u8?includeAssetTags=true&ads.xumo_channelId=99951209&ads._fw_ifa_type=[IFA_TYPE]&ads._fw_did=[IFA]&ads.amznappId=[AMZN_APP_ID]&ads.lat=[LAT]&ads.lon=[LON]&ads.os=[OS]&ads.osv=[OS_VERSION]&ads.asnw=&ads.caid=NewKIDBabyShark&ads.csid=xumo_[PLATFORM]_NewKIDBabyShark_ssai&ads._fw_is_lat=[IS_LAT]&ads._fw_us_privacy=[CCPA_Value]&ads._fw_coppa=1&ads.genre=[CONTENT_IMDB_GENRE]&ads._fw_content_category=[IAB_content_category]&ads._fw_content_language=[content_language]&ads._fw_content_genre=[content_genre]&ads._fw_content_rating=[content_rating]&ads.xumo_contentId=3871&ads.xumo_contentName=NewKIDBabyShark&ads.xumo_providerId=3871&ads.xumo_providerName=NewKIDBabyShark&ads._fw_deviceMake=[device_make]&ads._fw_device_model=[device_model]&ads.channelId=99951209&ads.xumo_platform=[PLATFORM]&ads.site_id=[publica_site_id]&ads.appName=xumo&ads.appVersion=[APP_VERSION]&ads._fw_app_bundle=[app_bundle]&ads._fw_app_store_url=[app_store_url]
+#EXTINF:-1 tvg-name="Duck TV" group-title="Kids",Duck TV
+https://d6lk10bkdgfae.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-n0stmvwxmsf5c/playlist.m3u8
 #EXTINF:-1 tvg-name="Knowledge Network (720p) [Geo-blocked]" group-title="Kids",Knowledge Network (720p) [Geo-blocked]
 https://d1wal6k3d7ssin.cloudfront.net/out/v1/ea91db0906c847a4931b46a9ec36e77b/index.m3u8
 #EXTINF:-1 tvg-name="YAAAS! (720p) [Geo-blocked]" group-title="Kids",YAAAS! (720p) [Geo-blocked]
@@ -107,10 +169,8 @@ https://d3knqoaufvjug3.cloudfront.net/yas.m3u8
 http://d1msejlow1t3l4.cloudfront.net/fta/ayushtv/playlist.m3u8
 #EXTINF:-1 tvg-name="NDTV Good Times (396p)" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_GOOD_TIMES/images/LOGO_HD/image.png" group-title="Lifestyle",NDTV Good Times (396p)
 https://d2gvyg6lvauoko.cloudfront.net/230226/ndtvgoodtimes/chunks.m3u8
-#EXTINF:-1 tvg-name="$ Classics Hindi" group-title="Movies",$ Classics Hindi
-https://d1fi19tywmn14b.cloudfront.net/yuppindmov/ngrp:yhincla.stream_all/playlist.m3u8
-#EXTINF:-1 tvg-name="$ Premium Hindi" group-title="Movies",$ Premium Hindi
-https://d1fi19tywmn14b.cloudfront.net/yuppindmov/ngrp:yhinpre.stream_all/playlist.m3u8
+#EXTINF:-1 tvg-name="Bollywood HD" group-title="Movies",Bollywood HD
+https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/bollywood-hd/manifest.m3u8
 #EXTINF:-1 tvg-name="Classics Marathi" group-title="Movies",Classics Marathi
 https://d1fi19tywmn14b.cloudfront.net/yuppindmov/ngrp:ymarcla.stream_all/playlist.m3u8
 #EXTINF:-1 tvg-name="Classics Tamil" group-title="Movies",Classics Tamil
@@ -123,78 +183,74 @@ https://d1fi19tywmn14b.cloudfront.net/yuppindmov/ngrp:ytelcom.stream_all/playlis
 https://d3arbp6l7f096k.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/pb-gv6wgpbb4mgwk/playlist.m3u8?ads.ads_cdn=cf&ads.app_domain=APP_DOMAIN&ads.cdn=cf
 #EXTINF:-1 tvg-name="Premium Marathi" group-title="Movies",Premium Marathi
 https://d1fi19tywmn14b.cloudfront.net/yuppindmov/ngrp:ymarpre.stream_all/playlist.m3u8
-#EXTINF:-1 tvg-name="Shubh Cinema TV (720p)" tvg-logo="https://i.imgur.com/brnGBxu.png" group-title="Movies",Shubh Cinema TV (720p)
-https://d393sxaxig6bax.cloudfront.net/out/v1/589cf2cf44bf42bb941e817a2240d62e/index.m3u8
+#EXTINF:-1 tvg-name="ZEE BANGLA CINEMA" tvg-logo="https://i.imgur.com/1nPtakc.png" group-title="Movies",ZEE BANGLA CINEMA
+https://d75dqofg5kmfk.cloudfront.net/bpk-tv/Zeebanglacinema/default/index.m3u8
 #EXTINF:-1 tvg-name="Zee Cinema (576p)" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022HVX3.png?lock=720x540" group-title="Movies",Zee Cinema (576p)
 https://d1g8wgjurz8via.cloudfront.net/bpk-tv/NGCHD/default/NGCHD.m3u8
-#EXTINF:-1 tvg-name="9XM" tvg-logo="https://dtil.tmsimg.com/assets/s77447_ld_h15_aa.png?lock=720x540" group-title="Music",9XM
-http://d2q8p4pe5spbak.cloudfront.net/bpk-tv/9XM/9XM.isml/index.m3u8
-#EXTINF:-1 tvg-name="9XO" group-title="Music",9XO
-http://d2q8p4pe5spbak.cloudfront.net/bpk-tv/9XO/9XO.isml/9XO-audio_208482_und=208000-video=877600.m3u8
-#EXTINF:-1 tvg-name="Dhool TV (576p)" tvg-logo="https://i.ibb.co/Rk78p2LB/dhooltv.png" group-title="Music",Dhool TV (576p)
-https://d1msejlow1t3l4.cloudfront.net/fta/subhartitv/playlist.m3u8
-#EXTINF:-1 tvg-name="PTC Music (720p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/PTC%20Music%20Logo%20Final.png" group-title="Music",PTC Music (720p)
-https://d2lk5u59tns74c.cloudfront.net/out/v1/f913cf893c594f73b114216e74a2efbc/index.m3u8
-#EXTINF:-1 tvg-name="$ India News" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/India%20News.png" group-title="News",$ India News
-https://d8rgs2gjqo2ht.cloudfront.net/abr/ngrp:indianews_all/master.m3u8
-#EXTINF:-1 tvg-name="ABP Ananda (1080p)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/ABP_Ananda_logo.svg/500px-ABP_Ananda_logo.svg.png" group-title="News",ABP Ananda (1080p)
+#EXTINF:-1 tvg-name="Zee Cinema HD" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022HVX3.png?lock=720x540" group-title="Movies",Zee Cinema HD
+https://d1g8wgjurz8via.cloudfront.net/bpk-tv/Zeecinemahd/default/zeecinemahd-audio_208482_und=208000-video=2137600.m3u8
+#EXTINF:-1 tvg-name="Punjabi Hits (1080p)" tvg-logo="https://dtil.tmsimg.com/assets/s143691_ld_h15_aa.png?lock=720x540" group-title="Music",Punjabi Hits (1080p)
+https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/punjabi-hits/index.m3u8
+#EXTINF:-1 tvg-name="ABP Ananda" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/ABP_Ananda_logo.svg/500px-ABP_Ananda_logo.svg.png" group-title="News",ABP Ananda
 https://d2l4ar6y3mrs4k.cloudfront.net/live-streaming/ananda-livetv/master.m3u8
 #EXTINF:-1 tvg-name="ABP Asmita (1080p)" tvg-logo="https://dtil.tmsimg.com/assets/s142519_ld_h15_aa.png?lock=720x540" group-title="News",ABP Asmita (1080p)
 https://d2l4ar6y3mrs4k.cloudfront.net/live-streaming/asmita-livetv/master.m3u8
 #EXTINF:-1 tvg-name="ABP Ganga (1080p)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/ABP_Ganga.svg/500px-ABP_Ganga.svg.png" group-title="News",ABP Ganga (1080p)
 https://d2l4ar6y3mrs4k.cloudfront.net/live-streaming/ganga-livetv/master.m3u8
+#EXTINF:-1 tvg-name="ABP Majha" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/ABP_Majha_logo.svg/500px-ABP_Majha_logo.svg.png" group-title="News",ABP Majha
+https://d2l4ar6y3mrs4k.cloudfront.net/live-streaming/majha-livetv/master.m3u8
 #EXTINF:-1 tvg-name="ABP News" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/ABP_News_logo.svg/500px-ABP_News_logo.svg.png" group-title="News",ABP News
 https://d2l4ar6y3mrs4k.cloudfront.net/live-streaming/abpnews-livetv/master.m3u8
 #EXTINF:-1 tvg-name="ABP News (1080p)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/ABP_News_logo.svg/500px-ABP_News_logo.svg.png" group-title="News",ABP News (1080p)
 https://d1rc86nwwc9fag.cloudfront.net/vglive-sk-472500/abpnews/master.m3u8
+#EXTINF:-1 tvg-name="ABP Sanjha (720p)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/ABP_Sanjha_logo.svg/500px-ABP_Sanjha_logo.svg.png" group-title="News",ABP Sanjha (720p)
+https://d316coox0if60r.cloudfront.net/out/v1/7723f2221c3449c3910aaa8f91592bf0/index.m3u8
+#EXTINF:-1 tvg-name="ABP Sanjha (720p)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/ABP_Sanjha_logo.svg/500px-ABP_Sanjha_logo.svg.png" group-title="News",ABP Sanjha (720p)
+https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/abp-sanjha/master.m3u8
+#EXTINF:-1 tvg-name="BBC News" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/BBC_Hindi.png" group-title="News",BBC News
+https://d3pxo1qcgzxtxs.cloudfront.net/10005/99951298/hls/playlist.m3u8?ads.xumo_channelId=99951298&ads.xumo_streamId=99951298&ads.channelId=99951298&ads.channelName=amcbbcnews_us&ads.csid=xumo_[PLATFORM]_AMCBBCNews_ssai&ads._fw_coppa=0&ads.xumo_contentId=4023&ads.xumo_contentName=AMCBBCNews&ads.xumo_providerId=4023&ads.xumo_providerName=AMCBBCNews&ads._fw_is_lat=[IS_LAT]&ads._fw_us_privacy=[CCPA_Value]&ads._fw_did=[IFA_TYPE]:[IFA]&ads._fw_content_category=[IAB_content_category]&ads._fw_content_language=[content_language]&ads._fw_content_genre=News,N,DN,Local,LocalNews,News-Local&ads._fw_content_rating=[content_rating]&ads._fw_deviceType=3-Connected_TV&ads._fw_deviceMake=[device_make]&ads._fw_device_model=[device_model]&ads.xumo_platform=[PLATFORM]&ads.appVersion=[APP_VERSION]&ads._fw_app_bundle=[app_bundle]&ads._fw_app_store_url=[app_store_url]
+#EXTINF:-1 tvg-name="CBC News" group-title="News",CBC News
+https://d3is52sgpnlx4c.cloudfront.net/10901/88885505/hls/master.m3u8?withResolution=true&ads.xumo_channelId=88885505&ads.csid=viziowatchfree_us_cbcnewsenglish_ssai&ads.caid=CBCNewsEnglish&ads.lat=&ads.lon=&ads.os=&ads.osv=&ads.xumo_platform=viziowatchfree&ads._fw_player_width=%7bWIDTH%7d&ads._fw_player_height=%7bHEIGHT%7d&ads._fw_is_lat=%7bLMT%7d&ads._fw_us_privacy=%7bUSPRIVACY%7d&ads._fw_coppa=0&ads._fw_app_bundle=%7bAPP_BUNDLE%7d&ads._fw_content_category=IAB12&ads._fw_content_genre=news&ads._fw_content_language=en&ads._fw_content_rating=tv-g&ads._fw_deviceMake=%7bDEVICE_MAKE%7d&ads._fw_device_model=%7bDEVICE_MODEL%7d&ads._fw_devicetype=%7bDEVICE_TYPE%7d&ads.domain=%7bDOMAIN%7d&ads.gpp=%7bGPP%7d&ads.gpp_sid=%7bGPP_SID%7d&ads._fw_h_x_country=US&ads.appName=%7bAPP_NAME%7d&ads.xumo_contentId=207&ads.xumo_contentName=CBCNewsEnglish&ads.xumo_providerId=207&ads.xumo_providerName=CBCNewsEnglish&ads.channelId=88885505&ads.xumo_channelName=CBCNews&ads.xumo_imdb_genre=News&ads._fw_content_programmer_brand=CBCNewsEnglish&ads.xumo_adsystem=mediatailor&ads.tpcl=MIDROLL&ads.xumo_ifa=%7bADID%7d&ads.xumo_ifaType=%7bIFATYPE%7d&ads._fw_app_store_url=%7bAPP_STORE_URL%7d&ads.appVersion=%7bAPP_VERSION%7d&ads.amznappId=14911df5fe9f4df5a4ebfa1eb51d83eb&ads.amznslotId=b187c68c-9a6f-4d25-9a9c-b95b42d440af&ads.vizdartoken=eyJhdWQiOiI5NiIsIndmcGNpZCI6MjkyMDk1NjYzNn0
+#EXTINF:-1 tvg-name="CBC News" group-title="News",CBC News
+https://dbrb49pjoymg4.cloudfront.net/10001/99991276/hls/master.m3u8?ads.xumo_channelId=99991276&ads._fw_ifa_type=[IFA_TYPE]&ads._fw_did=[IFA]&ads.amznappId=[AMZN_APP_ID]&ads.lat=[LAT]&ads.lon=[LON]&ads.os=[OS]&ads.osv=[OS_VERSION]&ads.asnw=&ads.caid=CBCNewsEnglish&ads.csid=xumo_[PLATFORM]_CBCNewsEnglish_ssai&ads._fw_is_lat=[IS_LAT]&ads._fw_us_privacy=[CCPA_Value]&ads._fw_coppa=0&ads.genre=News,N,DN,Local,LocalNews,News-Local&ads._fw_content_category=[IAB_content_category]&ads._fw_content_language=[content_language]&ads._fw_content_genre=News,N,DN,Local,LocalNews,News-Local&ads._fw_content_rating=[content_rating]&ads.xumo_contentId=207&ads.xumo_contentName=CBCNewsEnglish&ads.xumo_providerId=207&ads.xumo_providerName=CBCNewsEnglish&ads._fw_deviceMake=[device_make]&ads._fw_device_model=[device_model]&ads.channelId=99991276&ads.xumo_platform=[PLATFORM]&ads.site_id=[publica_site_id]&ads.appName=xumo&ads.appVersion=[APP_VERSION]&ads._fw_app_bundle=[app_bundle]&ads._fw_app_store_url=[app_store_url]
 #EXTINF:-1 tvg-name="CNA (Singapore) (1080p) [Geo-blocked]" group-title="News",CNA (Singapore) (1080p) [Geo-blocked]
 https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index.m3u8
+#EXTINF:-1 tvg-name="DD Mizoram" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD-Mizoram_2000_X_1125_transpharent.png" group-title="News",DD Mizoram
+https://d3eyhgoylams0m.cloudfront.net/v1/manifest/93ce20f0f52760bf38be911ff4c91ed02aa2fd92/ed7bd2c7-8d10-4051-b397-2f6b90f99acb/22ee1f87-4ac9-4d6b-9ec4-d5287739b4b4/2.m3u8
 #EXTINF:-1 tvg-name="DD Mizoram (504p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD-Mizoram_2000_X_1125_transpharent.png" group-title="News",DD Mizoram (504p)
 https://d2lk5u59tns74c.cloudfront.net/out/v1/eea48c6b61074052a2fa8532ff795ff1/index.m3u8
 #EXTINF:-1 tvg-name="DD News HD (1080p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20News.png" group-title="News",DD News HD (1080p)
 https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/0811cd8c37ca4c409d5385a6cd2fa18b/index.m3u8
 #EXTINF:-1 tvg-name="Hindi Khabar (396p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Hindi%20Khabar.png" group-title="News",Hindi Khabar (396p)
 https://d1msejlow1t3l4.cloudfront.net/fta/hindikhabar/playlist.m3u8
-#EXTINF:-1 tvg-name="index m3u8?akes=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9 eyJleHAiOjE3OTA2MDM5MjN9 OhycSJ-AbpmoytNjeTSNQs8--UAQU_rusyGHlPirVrM" group-title="News",index m3u8?akes=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9 eyJleHAiOjE3OTA2MDM5MjN9 OhycSJ-AbpmoytNjeTSNQs8--UAQU_rusyGHlPirVrM
-https://d7x8z4yuq42qn.cloudfront.net/index.m3u8?akes=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3OTA2MDM5MjN9.OhycSJ-AbpmoytNjeTSNQs8--UAQU_rusyGHlPirVrM
+#EXTINF:-1 tvg-name="India Daily Live (1080p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/IndiaDaily24x7_2025_transparent.png" group-title="News",India Daily Live (1080p)
+https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/india-daily-24x7/index.m3u8
 #EXTINF:-1 tvg-name="India Today (720p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/INDIA-TODAY_transparent.png" group-title="News",India Today (720p)
 https://d1rc86nwwc9fag.cloudfront.net/vglive-sk-293160/master.m3u8
 #EXTINF:-1 tvg-name="India Voice (576p)" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/India_Voice.png" group-title="News",India Voice (576p)
 https://d1msejlow1t3l4.cloudfront.net/fta/indiavoice/playlist.m3u8
-#EXTINF:-1 tvg-name="INH 24x7 (396p)" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_INH_24X7/images/LOGO_HD/image.png" group-title="News",INH 24x7 (396p)
-https://d1msejlow1t3l4.cloudfront.net/fta/inh24x7/playlist.m3u8
 #EXTINF:-1 tvg-name="Jai Maharashtra (576p)" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Jai_Maharashtra.png" group-title="News",Jai Maharashtra (576p)
 https://d1msejlow1t3l4.cloudfront.net/fta/jaimaharashtra/playlist.m3u8
-#EXTINF:-1 tvg-name="master m3u8?includeAssetTags=true&ads xumo_channelId=99951223&ads xumo_streamId=99951223&ads channelId=99951223&ads channelName=SkyNews&ads caid=SkyNews&ads csid=xumo_web_SkyNews_ssai&ads genre=News,N,DN,Local,LocalNews,News-Local&ads _fw_content_genre=News,N,DN,Local,LocalNews,News-Local&ads _fw_coppa=0&ads xumo_contentId=3455&ads xumo_contentName=SkyNews&ads xumo_providerId=3455&ads xumo_providerName=SkyNews&ads asnw=&ads xumo_channelName=SkyNews&ads _fw_h_x_country=US&ads _fw_ifa_type=&ads _fw_did=71ffc9e1-0560-4d8a-8d2b-fb42b91ff1bb&ads amznappId=&ads lat=&ads lon=&ads os=&ads osv=&ads _fw_is_lat=0&ads _fw_us_privacy=&ads _fw_content_category=&ads _fw_content_language=en&ads _fw_content_rating=&ads _fw_deviceMake=GitHubAction&ads _fw_device_model=PythonScript&ads xumo_platform=web&ads site_id=&ads appVersion=1 0 0&ads _fw_app_bundle=web xumo com&ads _fw_app_store_url=&ads appName=xumo" group-title="News",master m3u8?includeAssetTags=true&ads xumo_channelId=99951223&ads xumo_streamId=99951223&ads channelId=99951223&ads channelName=SkyNews&ads caid=SkyNews&ads csid=xumo_web_SkyNews_ssai&ads genre=News,N,DN,Local,LocalNews,News-Local&ads _fw_content_genre=News,N,DN,Local,LocalNews,News-Local&ads _fw_coppa=0&ads xumo_contentId=3455&ads xumo_contentName=SkyNews&ads xumo_providerId=3455&ads xumo_providerName=SkyNews&ads asnw=&ads xumo_channelName=SkyNews&ads _fw_h_x_country=US&ads _fw_ifa_type=&ads _fw_did=71ffc9e1-0560-4d8a-8d2b-fb42b91ff1bb&ads amznappId=&ads lat=&ads lon=&ads os=&ads osv=&ads _fw_is_lat=0&ads _fw_us_privacy=&ads _fw_content_category=&ads _fw_content_language=en&ads _fw_content_rating=&ads _fw_deviceMake=GitHubAction&ads _fw_device_model=PythonScript&ads xumo_platform=web&ads site_id=&ads appVersion=1 0 0&ads _fw_app_bundle=web xumo com&ads _fw_app_store_url=&ads appName=xumo
-https://dbrb49pjoymg4.cloudfront.net/10001/99951223/hls/master.m3u8?includeAssetTags=true&ads.xumo_channelId=99951223&ads.xumo_streamId=99951223&ads.channelId=99951223&ads.channelName=SkyNews&ads.caid=SkyNews&ads.csid=xumo_web_SkyNews_ssai&ads.genre=News,N,DN,Local,LocalNews,News-Local&ads._fw_content_genre=News,N,DN,Local,LocalNews,News-Local&ads._fw_coppa=0&ads.xumo_contentId=3455&ads.xumo_contentName=SkyNews&ads.xumo_providerId=3455&ads.xumo_providerName=SkyNews&ads.asnw=&ads.xumo_channelName=SkyNews&ads._fw_h_x_country=US&ads._fw_ifa_type=&ads._fw_did=71ffc9e1-0560-4d8a-8d2b-fb42b91ff1bb&ads.amznappId=&ads.lat=&ads.lon=&ads.os=&ads.osv=&ads._fw_is_lat=0&ads._fw_us_privacy=&ads._fw_content_category=&ads._fw_content_language=en&ads._fw_content_rating=&ads._fw_deviceMake=GitHubAction&ads._fw_device_model=PythonScript&ads.xumo_platform=web&ads.site_id=&ads.appVersion=1.0.0&ads._fw_app_bundle=web.xumo.com&ads._fw_app_store_url=&ads.appName=xumo
+#EXTINF:-1 tvg-name="Living India News (1080p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/India%20News.png" group-title="News",Living India News (1080p)
+https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/living-india-news/index.m3u8
+#EXTINF:-1 tvg-name="master m3u8?hdnts=st%3D1790836249~exp%3D1790857849~acl%3D%21%2A%2Fvglive-sk-472500%2Fabpnews%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_64 236 140 167_yuppfast_2_channel_225_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_64 236 140 167_yuppfast_2_channel_225_-1~hmac%3D037bff5117e8fbf426d331c4f1f797fde974ed731efa4c0e9eca0af605d7552f" group-title="News",master m3u8?hdnts=st%3D1790836249~exp%3D1790857849~acl%3D%21%2A%2Fvglive-sk-472500%2Fabpnews%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_64 236 140 167_yuppfast_2_channel_225_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_64 236 140 167_yuppfast_2_channel_225_-1~hmac%3D037bff5117e8fbf426d331c4f1f797fde974ed731efa4c0e9eca0af605d7552f
+https://d1rc86nwwc9fag.cloudfront.net/vglive-sk-472500/abpnews/master.m3u8?hdnts=st%3D1790836249~exp%3D1790857849~acl%3D%21%2A%2Fvglive-sk-472500%2Fabpnews%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_64.236.140.167_yuppfast_2_channel_225_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_64.236.140.167_yuppfast_2_channel_225_-1~hmac%3D037bff5117e8fbf426d331c4f1f797fde974ed731efa4c0e9eca0af605d7552f
 #EXTINF:-1 tvg-name="Moon TV (576p)" tvg-logo="https://i.imgur.com/3l25EZI.png" group-title="News",Moon TV (576p)
 https://d1msejlow1t3l4.cloudfront.net/fta/moontv/playlist.m3u8
 #EXTINF:-1 tvg-name="News 1 India (396p)" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_NEWS_1_INDIA/images/LOGO_HD/image.png" group-title="News",News 1 India (396p)
 https://d1msejlow1t3l4.cloudfront.net/fta/news1india/playlist.m3u8
-#EXTINF:-1 tvg-name="News 1st (576p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/NewsFirst%20Kannada%20Logo_Transparent.png" group-title="News",News 1st (576p)
-https://d1msejlow1t3l4.cloudfront.net/fta/News1st/playlist.m3u8
-#EXTINF:-1 tvg-name="news live" tvg-logo="https://dtil.tmsimg.com/assets/s143595_ld_h15_aa.png?lock=720x540" group-title="News",news live
-https://d2l4ar6y3mrs4k.cloudfront.net/live-streaming/abpnews-livetv/master_234.m3u8
-#EXTINF:-1 tvg-name="news live" tvg-logo="https://dtil.tmsimg.com/assets/s143595_ld_h15_aa.png?lock=720x540" group-title="News",news live
-https://d2l4ar6y3mrs4k.cloudfront.net/live-streaming/abpnews-livetv/master_180.m3u8
-#EXTINF:-1 tvg-name="news live" tvg-logo="https://dtil.tmsimg.com/assets/s143595_ld_h15_aa.png?lock=720x540" group-title="News",news live
-https://d2l4ar6y3mrs4k.cloudfront.net/live-streaming/abpnews-livetv/master_720.m3u8
-#EXTINF:-1 tvg-name="News Malayalam 24x7 (1080p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/NM-Logo_2000_X_1125_Transpharent.png" group-title="News",News Malayalam 24x7 (1080p)
+#EXTINF:-1 tvg-name="News India 24x7 (1080p)" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/India24x7.png" group-title="News",News India 24x7 (1080p)
+https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/news-india-24x7/index.m3u8
+#EXTINF:-1 tvg-name="News Malayalam" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/NM-Logo_2000_X_1125_Transpharent.png" group-title="News",News Malayalam
 https://d18a8tqmogafg2.cloudfront.net/newsmalayalam/index.m3u8
-#EXTINF:-1 tvg-name="News Tamil 24x7 (1080p)" tvg-logo="https://dtil.tmsimg.com/assets/s143623_ld_h15_aa.png?lock=720x540" group-title="News",News Tamil 24x7 (1080p)
+#EXTINF:-1 tvg-name="News Nation-Hindi" tvg-logo="https://dtil.tmsimg.com/assets/s143596_ld_h15_aa.png?lock=720x540" group-title="News",News Nation-Hindi
+https://d75dqofg5kmfk.cloudfront.net/bpk-tv/Newsnation/default/index.m3u8
+#EXTINF:-1 tvg-name="News Tamil 24x7" tvg-logo="https://dtil.tmsimg.com/assets/s143623_ld_h15_aa.png?lock=720x540" group-title="News",News Tamil 24x7
 https://d18a8tqmogafg2.cloudfront.net/newstamil/index.m3u8
-#EXTINF:-1 tvg-name="NEWS18 HARYANA" group-title="News",NEWS18 HARYANA
-https://d8rgs2gjqo2ht.cloudfront.net/abr/ngrp:newsharyana_all/master.m3u8
-#EXTINF:-1 tvg-name="NEWS18 MP" group-title="News",NEWS18 MP
-https://d8rgs2gjqo2ht.cloudfront.net/abr/ngrp:newsmp_all/master.m3u8
-#EXTINF:-1 tvg-name="NEWS18 PUNJAB" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/News18PunjabHaryana_Transparent_2db63f4f-2442-45d8-9a4d-c83cf34188c7.png" group-title="News",NEWS18 PUNJAB
-https://d3cjrhqx3ygiqt.cloudfront.net/abr/ngrp:newspunjab_all/master.m3u8
-#EXTINF:-1 tvg-name="NEWS18 RAJASTHAN" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/News18%20Rajasthan.png" group-title="News",NEWS18 RAJASTHAN
-https://d3cjrhqx3ygiqt.cloudfront.net/abr/ngrp:newsrajasthan_all/master.m3u8
-#EXTINF:-1 tvg-name="NEWS18 UP" group-title="News",NEWS18 UP
-https://d3cjrhqx3ygiqt.cloudfront.net/abr/ngrp:newsup_all/master.m3u8
 #EXTINF:-1 tvg-name="Omroep Zeeland" group-title="News",Omroep Zeeland
 http://d3isaxd2t6q8zm.cloudfront.net/live/omroepzeeland/tv/index.m3u8
+#EXTINF:-1 tvg-name="playlist m3u8?hdnts=st%3D1790836259~exp%3D1790857859~acl%3D%21%2A%2Ffta%2Fnews11bharat%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_64 236 140 167_yuppfast_2_channel_161_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_64 236 140 167_yuppfast_2_channel_161_-1~hmac%3D02b4f1c97519af79ac6896078521e67c4f103ffca4e73ca7f10e32c181f7aec1" group-title="News",playlist m3u8?hdnts=st%3D1790836259~exp%3D1790857859~acl%3D%21%2A%2Ffta%2Fnews11bharat%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_64 236 140 167_yuppfast_2_channel_161_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_64 236 140 167_yuppfast_2_channel_161_-1~hmac%3D02b4f1c97519af79ac6896078521e67c4f103ffca4e73ca7f10e32c181f7aec1
+https://d1msejlow1t3l4.cloudfront.net/fta/news11bharat/playlist.m3u8?hdnts=st%3D1790836259~exp%3D1790857859~acl%3D%21%2A%2Ffta%2Fnews11bharat%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_64.236.140.167_yuppfast_2_channel_161_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_64.236.140.167_yuppfast_2_channel_161_-1~hmac%3D02b4f1c97519af79ac6896078521e67c4f103ffca4e73ca7f10e32c181f7aec1
 #EXTINF:-1 tvg-name="Republic TV (1080p) [Geo-blocked]" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Public%20TV.png" group-title="News",Republic TV (1080p) [Geo-blocked]
 https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/2e31d831f08640ff92f65003bdc89991/index.m3u8
 #EXTINF:-1 tvg-name="Salaam TV (720p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Salaam_TV_Hindi_2000_X_1125_transpharent.png" group-title="News",Salaam TV (720p)
@@ -203,6 +259,8 @@ https://d2o3r1shda7xvv.cloudfront.net/index_5.m3u8
 https://d1msejlow1t3l4.cloudfront.net/fta/swarajexpresssmbc/playlist.m3u8
 #EXTINF:-1 tvg-name="Times Now Navbharat (1080p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/TIMES%20NOW.png" group-title="News",Times Now Navbharat (1080p)
 https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/a5ee7c4e7a2a4b15a22a3bcf523b9776/index.m3u8
+#EXTINF:-1 tvg-name="TV9 Bangla" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/TV9-Bangla1.png" group-title="News",TV9 Bangla
+https://dyjmyiv3bp2ez.cloudfront.net/pub-iotv9banaen8yq/liveabr/pub-iotv9banaen8yq/live_720p/chunks.m3u8
 #EXTINF:-1 tvg-name="TV9 Bangla (720p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/TV9-Bangla1.png" group-title="News",TV9 Bangla (720p)
 https://dyjmyiv3bp2ez.cloudfront.net/pub-iotv9banaen8yq/liveabr/playlist.m3u8
 #EXTINF:-1 tvg-name="TV9 Bharatvarsh (720p)" tvg-logo="https://dtil.tmsimg.com/assets/s144027_ld_h15_aa.png?lock=720x540" group-title="News",TV9 Bharatvarsh (720p)
@@ -215,26 +273,42 @@ https://dyjmyiv3bp2ez.cloudfront.net/pub-iotv9kanmo6oiq/liveabr/playlist.m3u8
 https://dyjmyiv3bp2ez.cloudfront.net/pub-iotv9marlygv8h/liveabr/playlist.m3u8
 #EXTINF:-1 tvg-name="TV9 Telugu" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/TV9%20Telugu1.png" group-title="News",TV9 Telugu
 https://dyjmyiv3bp2ez.cloudfront.net/pub-iotv9telcmjhcs/liveabr/playlist.m3u8
+#EXTINF:-1 tvg-name="WION (360p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/WION.png" group-title="News",WION (360p)
+https://d7x8z4yuq42qn.cloudfront.net/index_4.m3u8
+#EXTINF:-1 tvg-name="WION (480p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/WION.png" group-title="News",WION (480p)
+https://d7x8z4yuq42qn.cloudfront.net/index_5.m3u8
+#EXTINF:-1 tvg-name="WION (504p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/WION.png" group-title="News",WION (504p)
+https://d7x8z4yuq42qn.cloudfront.net/index_2.m3u8
+#EXTINF:-1 tvg-name="WION (720p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/WION.png" group-title="News",WION (720p)
+https://d7x8z4yuq42qn.cloudfront.net/index_1.m3u8
+#EXTINF:-1 tvg-name="World Punjabi Tv" tvg-logo="https://papaji.freetvindia.com/media/World_Punjabi_TV.png" group-title="News",World Punjabi Tv
+https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/world-punjabi-tv/index.m3u8?ads.vf=WolqoIq0cXy
 #EXTINF:-1 tvg-name="Zee 24 Ghanta" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022KGXP.png?lock=720x540" group-title="News",Zee 24 Ghanta
 https://d2dsoyvkr33m05.cloudfront.net/index_4.m3u8
+#EXTINF:-1 tvg-name="Zee 24 Ghanta" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022KGXP.png?lock=720x540" group-title="News",Zee 24 Ghanta
+https://d75dqofg5kmfk.cloudfront.net/bpk-tv/24ghanta/default/index.m3u8
 #EXTINF:-1 tvg-name="Zee Malayalam News (720p)" tvg-logo="https://english.cdn.zeenews.com/images/logo/zee-malayalam-17.svg" group-title="News",Zee Malayalam News (720p)
 https://d1ty2af03alkwd.cloudfront.net/index_4.m3u8
+#EXTINF:-1 tvg-name="ZEE News" tvg-logo="https://image.airtel.tv/grandslam/content/2025_06_17/LOGO_X99oIa_Fm_Znews_logo-for-larg.png" group-title="News",ZEE News
+https://dknttpxmr0dwf.cloudfront.net/index_2.m3u8
 #EXTINF:-1 tvg-name="Zee News (1080p)" tvg-logo="https://image.airtel.tv/grandslam/content/2025_06_17/LOGO_X99oIa_Fm_Znews_logo-for-larg.png" group-title="News",Zee News (1080p)
 https://dknttpxmr0dwf.cloudfront.net/index_57.m3u8
 #EXTINF:-1 tvg-name="Zee News (1080p)" tvg-logo="https://image.airtel.tv/grandslam/content/2025_06_17/LOGO_X99oIa_Fm_Znews_logo-for-larg.png" group-title="News",Zee News (1080p)
 https://dt3lrqnyx3dks.cloudfront.net/index.m3u8
+#EXTINF:-1 tvg-name="Zee Telugu News" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0023178R.png?lock=720x540" group-title="News",Zee Telugu News
+https://d116gfrn8orazi.cloudfront.net/index.m3u8
 #EXTINF:-1 tvg-name="Zee Uttar Pradesh/Uttarakhand (720p)" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG002317GQ.png?lock=720x540" group-title="News",Zee Uttar Pradesh/Uttarakhand (720p)
 https://duw35ict5q7th.cloudfront.net/index_3.m3u8
-#EXTINF:-1 tvg-name="$ Tamil Classics" group-title="Other",$ Tamil Classics
-https://d1fi19tywmn14b.cloudfront.net/yuppindmov/ngrp:ytamcla.stream_all/chunklist_w1355462645_b1296000.m3u8
 #EXTINF:-1 tvg-name="145 m3u8" group-title="Other",145 m3u8
 https://d1j2u714xk898n.cloudfront.net/scheduler/scheduleMaster/145.m3u8
-#EXTINF:-1 tvg-name="99 tv" group-title="Other",99 tv
-https://d3rtz3mdbmjoag.cloudfront.net/wp-cmg/20260227/69a1b88ff180326646ad7d24/t_7f7c02b8f875409f852a2438b0196a8f_name_99_Jamz_Next_Up_August_2026_/sd.m3u8
-#EXTINF:-1 tvg-name="99 tv" group-title="Other",99 tv
-https://d3rtz3mdbmjoag.cloudfront.net/wp-cmg/20260227/69a1b88ff180326646ad7d24/t_7f7c02b8f875409f852a2438b0196a8f_name_99_Jamz_Next_Up_August_2026_/mobile.m3u8
-#EXTINF:-1 tvg-name="99 tv" group-title="Other",99 tv
-https://d3rtz3mdbmjoag.cloudfront.net/wp-cmg/20260227/69a1b88ff180326646ad7d24/t_7f7c02b8f875409f852a2438b0196a8f_name_99_Jamz_Next_Up_August_2026_/master.m3u8
+#EXTINF:-1 tvg-name="146ed6ec6dea5a24 m3u8" group-title="Other",146ed6ec6dea5a24 m3u8
+https://d1tmej9eu7kw5c.cloudfront.net/146ed6ec6dea5a24/146ed6ec6dea5a24.m3u8
+#EXTINF:-1 tvg-name="22099471 m3u8" group-title="Other",22099471 m3u8
+https://d1j2u714xk898n.cloudfront.net/scheduler/scheduleMaster/145/variant/22099471.m3u8
+#EXTINF:-1 tvg-name="22099472 m3u8" group-title="Other",22099472 m3u8
+https://d1j2u714xk898n.cloudfront.net/scheduler/scheduleMaster/145/variant/22099472.m3u8
+#EXTINF:-1 tvg-name="22099474 m3u8" group-title="Other",22099474 m3u8
+https://d1j2u714xk898n.cloudfront.net/scheduler/scheduleMaster/145/variant/22099474.m3u8
 #EXTINF:-1 tvg-name="ADHOC-KGO-01-index m3u8" group-title="Other",ADHOC-KGO-01-index m3u8
 https://d2g80c0et3h025.cloudfront.net/out/v1/4369dc20364f47d1ab691e50dce0a82b/ADHOC-KGO-01-cmaf-manifest/ADHOC-KGO-01-index.m3u8
 #EXTINF:-1 tvg-name="ADHOC-KGO-01-index_2 m3u8" group-title="Other",ADHOC-KGO-01-index_2 m3u8
@@ -247,130 +321,224 @@ https://d3ms04qqsu729q.cloudfront.net/out/v1/f4aaf8882d7d4d24a6fbb211a51accdf/AD
 https://d3ms04qqsu729q.cloudfront.net/out/v1/f4aaf8882d7d4d24a6fbb211a51accdf/ADHOC-KGO-02-cmaf-manifest/ADHOC-KGO-02-index_2.m3u8
 #EXTINF:-1 tvg-name="ADHOC-KGO-02-index_4_0 m3u8" group-title="Other",ADHOC-KGO-02-index_4_0 m3u8
 https://d3ms04qqsu729q.cloudfront.net/out/v1/f4aaf8882d7d4d24a6fbb211a51accdf/ADHOC-KGO-02-cmaf-manifest/ADHOC-KGO-02-index_4_0.m3u8
-#EXTINF:-1 tvg-name="ADHOC-KTRK-01-index m3u8" group-title="Other",ADHOC-KTRK-01-index m3u8
-https://dm56ex4570d71.cloudfront.net/out/v1/0e5466cef18546feac106602bee3e9e0/ADHOC-KTRK-01-cmaf-manifest/ADHOC-KTRK-01-index.m3u8
-#EXTINF:-1 tvg-name="ADHOC-KTRK-01-index_2 m3u8" group-title="Other",ADHOC-KTRK-01-index_2 m3u8
-https://dm56ex4570d71.cloudfront.net/out/v1/0e5466cef18546feac106602bee3e9e0/ADHOC-KTRK-01-cmaf-manifest/ADHOC-KTRK-01-index_2.m3u8
-#EXTINF:-1 tvg-name="ADHOC-KTRK-01-index_4_0 m3u8" group-title="Other",ADHOC-KTRK-01-index_4_0 m3u8
-https://dm56ex4570d71.cloudfront.net/out/v1/0e5466cef18546feac106602bee3e9e0/ADHOC-KTRK-01-cmaf-manifest/ADHOC-KTRK-01-index_4_0.m3u8
-#EXTINF:-1 tvg-name="ADHOC-KTRK-02-index m3u8" group-title="Other",ADHOC-KTRK-02-index m3u8
-https://d1vl9tp8xqmy48.cloudfront.net/out/v1/31268545ebea4ba99158e1348f1f4a2d/ADHOC-KTRK-02-cmaf-manifest/ADHOC-KTRK-02-index.m3u8
-#EXTINF:-1 tvg-name="ADHOC-KTRK-02-index_2 m3u8" group-title="Other",ADHOC-KTRK-02-index_2 m3u8
-https://d1vl9tp8xqmy48.cloudfront.net/out/v1/31268545ebea4ba99158e1348f1f4a2d/ADHOC-KTRK-02-cmaf-manifest/ADHOC-KTRK-02-index_2.m3u8
-#EXTINF:-1 tvg-name="ADHOC-KTRK-02-index_4_0 m3u8" group-title="Other",ADHOC-KTRK-02-index_4_0 m3u8
-https://d1vl9tp8xqmy48.cloudfront.net/out/v1/31268545ebea4ba99158e1348f1f4a2d/ADHOC-KTRK-02-cmaf-manifest/ADHOC-KTRK-02-index_4_0.m3u8
-#EXTINF:-1 tvg-name="ADHOC-WABC-02-index m3u8" group-title="Other",ADHOC-WABC-02-index m3u8
-https://d3ip9j8kiqtf8w.cloudfront.net/out/v1/9adf1cf1816e45b2a90e98e6cf436fa8/ADHOC-WABC-02-cmaf-manifest/ADHOC-WABC-02-index.m3u8
-#EXTINF:-1 tvg-name="ADHOC-WABC-02-index_2 m3u8" group-title="Other",ADHOC-WABC-02-index_2 m3u8
-https://d3ip9j8kiqtf8w.cloudfront.net/out/v1/9adf1cf1816e45b2a90e98e6cf436fa8/ADHOC-WABC-02-cmaf-manifest/ADHOC-WABC-02-index_2.m3u8
-#EXTINF:-1 tvg-name="ADHOC-WABC-02-index_4_0 m3u8" group-title="Other",ADHOC-WABC-02-index_4_0 m3u8
-https://d3ip9j8kiqtf8w.cloudfront.net/out/v1/9adf1cf1816e45b2a90e98e6cf436fa8/ADHOC-WABC-02-cmaf-manifest/ADHOC-WABC-02-index_4_0.m3u8
-#EXTINF:-1 tvg-name="ADHOC-WABC-03-index m3u8" group-title="Other",ADHOC-WABC-03-index m3u8
-https://d238y83jhbztud.cloudfront.net/out/v1/5c213f44c3d444b58c8b39d27be0dd93/ADHOC-WABC-03-cmaf-manifest/ADHOC-WABC-03-index.m3u8
-#EXTINF:-1 tvg-name="ADHOC-WABC-03-index_2 m3u8" group-title="Other",ADHOC-WABC-03-index_2 m3u8
-https://d238y83jhbztud.cloudfront.net/out/v1/5c213f44c3d444b58c8b39d27be0dd93/ADHOC-WABC-03-cmaf-manifest/ADHOC-WABC-03-index_2.m3u8
-#EXTINF:-1 tvg-name="ADHOC-WABC-03-index_4_0 m3u8" group-title="Other",ADHOC-WABC-03-index_4_0 m3u8
-https://d238y83jhbztud.cloudfront.net/out/v1/5c213f44c3d444b58c8b39d27be0dd93/ADHOC-WABC-03-cmaf-manifest/ADHOC-WABC-03-index_4_0.m3u8
-#EXTINF:-1 tvg-name="ADHOC-WLS-02-index m3u8" group-title="Other",ADHOC-WLS-02-index m3u8
-https://d26bfpq28lxl21.cloudfront.net/out/v1/0ed2dcfbdf114a1591da6f9414918d4c/ADHOC-WLS-02-cmaf-manifest/ADHOC-WLS-02-index.m3u8
-#EXTINF:-1 tvg-name="ADHOC-WLS-02-index_2 m3u8" group-title="Other",ADHOC-WLS-02-index_2 m3u8
-https://d26bfpq28lxl21.cloudfront.net/out/v1/0ed2dcfbdf114a1591da6f9414918d4c/ADHOC-WLS-02-cmaf-manifest/ADHOC-WLS-02-index_2.m3u8
-#EXTINF:-1 tvg-name="ADHOC-WLS-02-index_4_0 m3u8" group-title="Other",ADHOC-WLS-02-index_4_0 m3u8
-https://d26bfpq28lxl21.cloudfront.net/out/v1/0ed2dcfbdf114a1591da6f9414918d4c/ADHOC-WLS-02-cmaf-manifest/ADHOC-WLS-02-index_4_0.m3u8
+#EXTINF:-1 tvg-name="b0b8c918-0deb-4b14-bac6-d7eb74480601 m3u8" group-title="Other",b0b8c918-0deb-4b14-bac6-d7eb74480601 m3u8
+https://d22u79neyj432a.cloudfront.net/62d9c23e-5213-4e58-84f6-d3815c9a2b8d/b0b8c918-0deb-4b14-bac6-d7eb74480601.m3u8
 #EXTINF:-1 tvg-name="Bark TV" group-title="Other",Bark TV
 https://dbrb49pjoymg4.cloudfront.net/10001/99951409/hls/barkt.m3u8?ads.xumo_channelId=99951409&ads._fw_ifa_type=[IFA_TYPE]&ads._fw_did=[IFA]&ads.amznappId=[AMZN_APP_ID]&ads.lat=[LAT]&ads.lon=[LON]&ads.os=[OS]&ads.osv=[OS_VERSION]&ads.asnw=&ads.caid=TripleBMediaBarkTV&ads.csid=xumo_[PLATFORM]_TripleBMediaBarkTV_ssai&ads._fw_is_lat=[IS_LAT]&ads._fw_us_privacy=[CCPA_Value]&ads._fw_coppa=0&ads.genre=[CONTENT_IMDB_GENRE]&ads._fw_content_category=[IAB_content_category]&ads._fw_content_language=[content_language]&ads._fw_content_genre=[content_genre]&ads._fw_content_rating=[content_rating]&ads.xumo_contentId=4222&ads.xumo_contentName=TripleBMediaBarkTV&ads.xumo_providerId=4222&ads.xumo_providerName=TripleBMediaBarkTV&ads._fw_deviceMake=[device_make]&ads._fw_device_model=[device_model]&ads.channelId=99951409&ads.xumo_platform=[PLATFORM]&ads.site_id=[publica_site_id]&ads.appName=xumo&ads.appVersion=[APP_VERSION]&ads._fw_app_bundle=[app_bundle]&ads._fw_app_store_url=[app_store_url]
 #EXTINF:-1 tvg-name="Bark TV (US)" group-title="Other",Bark TV (US)
 https://dapdwco2fkcoa.cloudfront.net/hls/barkt.m3u8?ads.xumo_channelId=88887756&ads.xumo_streamId=88887756&ads.csid=vidaa_usca_triplebmediabarktv_ssai&ads.caid=TripleBMediaBarkTV&ads.appName=%7BADS.APP_NAME%7D&ads.appVersion=1&ads._fw_app_bundle=%7BADS.APP_BUNDLE%7D&ads._fw_content_category=IAB1-7&ads._fw_content_genre=television&ads._fw_content_language=en&ads._fw_content_rating=tv-pg&ads._fw_deviceMake=%7BADS.BRAND_NAME%7D&ads._fw_device_model=%7BADS.DEVICE_OSV%7D&ads._fw_devicetype=%7BADS.DEVICE_TYPE%7D&ads._fw_coppa=0&ads._fw_gdpr_consent=%7BADS.GDPR_CONSENT%7D&ads._fw_gdpr=%7BADS.GDPR%7D&ads._fw_is_lat=%7BADS.DNT%7D&ads._fw_us_privacy=%7BADS.US_PRIVACY%7D&ads._fw_h_x_country=%7BADS.DEVICE_COUNTRY%7D&ads._fw_player_width=%7BADS.W%7D&ads._fw_player_height=%7BADS.H%7D&ads.vauth=%7BADS.VAUTH%7D&ads.xumo_contentId=4222&ads.xumo_contentName=TripleBMediaBarkTV&ads.xumo_ifa=%7BADS.IFA%7D&ads.xumo_ifaType=%7BADS.IFA_TYPE%7D&ads.xumo_providerId=4222&ads.xumo_providerName=TripleBMediaBarkTV&ads.client_section=tripleb_barktv&ads.vidaa_providername=tripleb&ads._fw_app_store_url=%7BADS.APP_STORE_URL%7D&ads.vidaa_ads_param=1188362017&ads.vidaa_ads_contentType=600007&ads.vidaa_ads_contentId=9606
-#EXTINF:-1 tvg-name="BFM2_FR m3u8" group-title="Other",BFM2_FR m3u8
-https://d1ib1gsg71oarf.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-scp7wda722jph/BFM2_FR.m3u8
+#EXTINF:-1 tvg-name="Bollywood Classic" group-title="Other",Bollywood Classic
+https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/bollywood-classic/manifest.m3u8
+#EXTINF:-1 tvg-name="bWVkLTE3ODk5OTY0MzQtR m3u8" group-title="Other",bWVkLTE3ODk5OTY0MzQtR m3u8
+https://d2g1p0cv65b13g.cloudfront.net/abphls/2026/09/bWVkLTE3ODk5OTY0MzQtR.m3u8
+#EXTINF:-1 tvg-name="bWVkLTE3OTA2MDUwMjAPc m3u8" group-title="Other",bWVkLTE3OTA2MDUwMjAPc m3u8
+https://d2g1p0cv65b13g.cloudfront.net/abphls/2026/09/bWVkLTE3OTA2MDUwMjAPc.m3u8
+#EXTINF:-1 tvg-name="bWVkLTE3OTA2MDUwMzMNI m3u8" group-title="Other",bWVkLTE3OTA2MDUwMzMNI m3u8
+https://d2g1p0cv65b13g.cloudfront.net/abphls/2026/09/bWVkLTE3OTA2MDUwMzMNI.m3u8
+#EXTINF:-1 tvg-name="bWVkLTE3OTA3ODYyNzQo2 m3u8" group-title="Other",bWVkLTE3OTA3ODYyNzQo2 m3u8
+https://d2g1p0cv65b13g.cloudfront.net/abphls/2026/09/bWVkLTE3OTA3ODYyNzQo2.m3u8
+#EXTINF:-1 tvg-name="byte-range-multivariant m3u8" tvg-logo="https://dtil.tmsimg.com/assets/s143718_ld_h15_aa.png?lock=720x540" group-title="Other",byte-range-multivariant m3u8
+https://dqw8gds16sj0p.cloudfront.net/f5fa9111-df55-43f9-8782-13c0c13a6104_Y9k/hls/byte-range-multivariant.m3u8
+#EXTINF:-1 tvg-name="byte-range-multivariant m3u8" tvg-logo="https://dtil.tmsimg.com/assets/s143718_ld_h15_aa.png?lock=720x540" group-title="Other",byte-range-multivariant m3u8
+https://dqw8gds16sj0p.cloudfront.net/77a2729e-cca7-40ac-86c8-01c97c6fb7d8_S0D/hls/byte-range-multivariant.m3u8
+#EXTINF:-1 tvg-name="byte-range-multivariant m3u8" tvg-logo="https://dtil.tmsimg.com/assets/s143718_ld_h15_aa.png?lock=720x540" group-title="Other",byte-range-multivariant m3u8
+https://d17dupcd3sd4s8.cloudfront.net/2ee9e8bd-8eef-4685-8e6a-069f645cf565/5f6c8fef-0d33-48f4-b782-e73b7531fcd2/37b69b76-909e-466e-9307-2e14d97c578f/hls/byte-range-multivariant.m3u8
+#EXTINF:-1 tvg-name="byte-range-multivariant m3u8" tvg-logo="https://dtil.tmsimg.com/assets/s143718_ld_h15_aa.png?lock=720x540" group-title="Other",byte-range-multivariant m3u8
+https://d17dupcd3sd4s8.cloudfront.net/825e4a62-405b-4982-adee-0f304f155dbe/e5e3c226-d677-458e-8e47-285a9f9b18ec/342e09bd-5caa-45bd-8913-e4ef9383d28f/hls/byte-range-multivariant.m3u8
+#EXTINF:-1 tvg-name="byte-range-multivariant m3u8" tvg-logo="https://dtil.tmsimg.com/assets/s143718_ld_h15_aa.png?lock=720x540" group-title="Other",byte-range-multivariant m3u8
+https://d17dupcd3sd4s8.cloudfront.net/8c4d7673-60e8-4d1b-8383-497c66d1ebd0/335e56f5-a2da-4f28-8565-9bfb8adf8fea/dbd3e30a-6514-4f88-882c-a84dd2e10d4e/hls/byte-range-multivariant.m3u8
+#EXTINF:-1 tvg-name="byte-range-multivariant m3u8" tvg-logo="https://dtil.tmsimg.com/assets/s143718_ld_h15_aa.png?lock=720x540" group-title="Other",byte-range-multivariant m3u8
+https://d17dupcd3sd4s8.cloudfront.net/2a3f44d5-20bd-458a-871f-73c62daec5aa/ca233c0a-5d5c-4d29-a5d6-7077199e66c2/29bfea3e-1cbe-4d3b-bf35-3de5652d3868/hls/byte-range-multivariant.m3u8
+#EXTINF:-1 tvg-name="byte-range-multivariant m3u8" tvg-logo="https://dtil.tmsimg.com/assets/s143718_ld_h15_aa.png?lock=720x540" group-title="Other",byte-range-multivariant m3u8
+https://d17dupcd3sd4s8.cloudfront.net/958d17b0-5e50-4d81-a444-1d99885e851a/710e1b87-fb8f-49e1-b5b0-d909c055873c/5c3a4473-46a2-4ecf-80fa-04353af9fe46/hls/byte-range-multivariant.m3u8
+#EXTINF:-1 tvg-name="chunklist_b1928000 m3u8" group-title="Other",chunklist_b1928000 m3u8
+https://da86m1sqpm3o0.cloudfront.net/28072023/smil:starasianet.smil/chunklist_b1928000.m3u8
+#EXTINF:-1 tvg-name="chunklist_b2628000 m3u8" group-title="Other",chunklist_b2628000 m3u8
+https://da86m1sqpm3o0.cloudfront.net/28072023/smil:starmaa1.smil/chunklist_b2628000.m3u8
+#EXTINF:-1 tvg-name="chunklist_b696000 m3u8" group-title="Other",chunklist_b696000 m3u8
+https://da86m1sqpm3o0.cloudfront.net/28072023/smil:starasianet.smil/chunklist_b696000.m3u8
 #EXTINF:-1 tvg-name="chunks m3u8" group-title="Other",chunks m3u8
-https://dyjmyiv3bp2ez.cloudfront.net/pub-iotv9hinjzgtpe/liveabr/pub-iotv9hinjzgtpe/live_720p/chunks.m3u8
-#EXTINF:-1 tvg-name="chunks m3u8" group-title="Other",chunks m3u8
-https://dyjmyiv3bp2ez.cloudfront.net/pub-iotv9marlygv8h/liveabr/pub-iotv9marlygv8h/live_720p/chunks.m3u8
-#EXTINF:-1 tvg-name="chunks m3u8" group-title="Other",chunks m3u8
-https://dyjmyiv3bp2ez.cloudfront.net/pub-iotv9telcmjhcs/liveabr/pub-iotv9telcmjhcs/live_720p/chunks.m3u8
-#EXTINF:-1 tvg-name="CPAC English (720p)" group-title="Other",CPAC English (720p)
-https://d7z3qjdsxbwoq.cloudfront.net/groupa/live/f9809cea-1e07-47cd-a94d-2ddd3e1351db/live.isml/.m3u8
+https://d2gvyg6lvauoko.cloudfront.net/230226/bigtvmalyalam/chunks.m3u8
+#EXTINF:-1 tvg-name="hd m3u8" group-title="Other",hd m3u8
+https://d2lkf2hqez23g4.cloudfront.net/wp-wplginc/20261001/6abe9328db2fd26854e5410b/t_869ee9baa41d48028e3403212dd8ef42_name_48726796863_hdtv/hd.m3u8
+#EXTINF:-1 tvg-name="hd m3u8" group-title="Other",hd m3u8
+https://d2lkf2hqez23g4.cloudfront.net/wp-wplginc/20261001/6abebc9aad6e7e2196698507/t_914d7ced04df43b6b1e032e729b1b513_name_48729426437_hdtv/hd.m3u8
+#EXTINF:-1 tvg-name="hd m3u8" group-title="Other",hd m3u8
+https://d2lkf2hqez23g4.cloudfront.net/wp-wplginc/20261001/6abe55ea13b8f834ddceb412/t_758860f96234402e9171f5179e1902e9_name_48722756566_hdtv/hd.m3u8
+#EXTINF:-1 tvg-name="hd m3u8" group-title="Other",hd m3u8
+https://d2lkf2hqez23g4.cloudfront.net/wp-wplginc/20261001/6abec08fc2f46746cd342c09/t_a63d4aab0bfa43b9aa4e28f5c909bf9f_name_48729681778_hdtv/hd.m3u8
+#EXTINF:-1 tvg-name="hd m3u8" group-title="Other",hd m3u8
+https://d2lkf2hqez23g4.cloudfront.net/wp-wplginc/20261001/6abe939395b09c37ca190ee4/t_e41e8fd260cc4841b2c56c95ab75c382_name_48726823324_hdtv/hd.m3u8
+#EXTINF:-1 tvg-name="hd m3u8" group-title="Other",hd m3u8
+https://d2lkf2hqez23g4.cloudfront.net/wp-wplginc/20261001/6abec6f53b1d6c0292a2aaee/t_94c3c11b36de484eaa299b3e40c0b859_name_48730086836_hdtv/hd.m3u8
+#EXTINF:-1 tvg-name="hd m3u8" group-title="Other",hd m3u8
+https://d2lkf2hqez23g4.cloudfront.net/wp-wplginc/20260930/6abd8bc913b8f834ddcd61d0/t_9d1005f74b4243829debb34057fa8f97_name_48710568821_hdtv/hd.m3u8
+#EXTINF:-1 tvg-name="hd m3u8" group-title="Other",hd m3u8
+https://d2lkf2hqez23g4.cloudfront.net/wp-wplginc/20261001/6abe9124c2f46746cd3203c7/t_55f9b1c018224814911cf0797b074597_name_48726663841_hdtv/hd.m3u8
+#EXTINF:-1 tvg-name="hd m3u8" group-title="Other",hd m3u8
+https://d2lkf2hqez23g4.cloudfront.net/wp-wplginc/20260930/6abd827373476f57b551ac8d/t_55fda2537ab14e98a5f081040fd536a8_name_48709968775_hdtv/hd.m3u8
+#EXTINF:-1 tvg-name="hlsv3_1_640x360-580-v3 m3u8" group-title="Other",hlsv3_1_640x360-580-v3 m3u8
+https://d1l66zlxaqpl1u.cloudfront.net/wp-gray/20261001/6abe8d87ad6e7e219668ae24/file_1920x1080-5400-v4/hlsv3_1_640x360-580-v3.m3u8
+#EXTINF:-1 tvg-name="hlsv3_1_640x360-580-v3 m3u8" group-title="Other",hlsv3_1_640x360-580-v3 m3u8
+https://d1l66zlxaqpl1u.cloudfront.net/wp-gray/wvlt/20260930/6abd90e30b21781c9b672aff/t_37c6bdc814c04b57b93dd38f41258b3c_name_GMT20260930_210715_Recording_avo_640x360_cropped/hlsv3_1_640x360-580-v3.m3u8
+#EXTINF:-1 tvg-name="hlsv3_3_960x540-1600-v3_1 m3u8" group-title="Other",hlsv3_3_960x540-1600-v3_1 m3u8
+https://d1l66zlxaqpl1u.cloudfront.net/wp-gray/wvlt/20260930/6abd90e30b21781c9b672aff/t_37c6bdc814c04b57b93dd38f41258b3c_name_GMT20260930_210715_Recording_avo_640x360_cropped/hlsv3_3_960x540-1600-v3_1.m3u8
+#EXTINF:-1 tvg-name="hlsv3_3_960x540-1600-v3_1 m3u8" group-title="Other",hlsv3_3_960x540-1600-v3_1 m3u8
+https://d1l66zlxaqpl1u.cloudfront.net/wp-gray/20261001/6abe8d87ad6e7e219668ae24/file_1920x1080-5400-v4/hlsv3_3_960x540-1600-v3_1.m3u8
+#EXTINF:-1 tvg-name="hlsv3_3_960x540-1600-v3_1 m3u8" group-title="Other",hlsv3_3_960x540-1600-v3_1 m3u8
+https://d1l66zlxaqpl1u.cloudfront.net/wp-gray/wvlt/20261001/6abdcc1e6ba435353fe00fe4/file_1920x1080-5400-v4/hlsv3_3_960x540-1600-v3_1.m3u8
+#EXTINF:-1 tvg-name="hlsv4_master m3u8" group-title="Other",hlsv4_master m3u8
+https://d1l66zlxaqpl1u.cloudfront.net/wp-gray/20260912/6aa4b099c8d3993ba2225d2a/file_1920x1080-5400-v4/hlsv4_master.m3u8
 #EXTINF:-1 tvg-name="hlsv4_master m3u8" group-title="Other",hlsv4_master m3u8
 https://d1l66zlxaqpl1u.cloudfront.net/wp-gray/20260912/6aa4a788b13ed273ab0b9dbf/file_1920x1080-5400-v4/hlsv4_master.m3u8
 #EXTINF:-1 tvg-name="hlsv4_master m3u8" group-title="Other",hlsv4_master m3u8
-https://d1l66zlxaqpl1u.cloudfront.net/wp-gray/20260922/6ab1d7680c646967403aa4de/file_1920x1080-5400-v4/hlsv4_master.m3u8
-#EXTINF:-1 tvg-name="hlsv4_master m3u8" group-title="Other",hlsv4_master m3u8
 https://d1l66zlxaqpl1u.cloudfront.net/wp-gray/20260912/6aa4ac59c8d3993ba2223f43/file_1920x1080-5400-v4/hlsv4_master.m3u8
 #EXTINF:-1 tvg-name="hlsv4_master m3u8" group-title="Other",hlsv4_master m3u8
-https://d1l66zlxaqpl1u.cloudfront.net/wp-gray/20260912/6aa4b099c8d3993ba2225d2a/file_1920x1080-5400-v4/hlsv4_master.m3u8
+https://d1l66zlxaqpl1u.cloudfront.net/wp-gray/wsmv/20261001/6abdd58a3b1d6c02929f0145/file_1920x1080-5400-v4/hlsv4_master.m3u8
+#EXTINF:-1 tvg-name="hlsv4_master m3u8" group-title="Other",hlsv4_master m3u8
+https://d1l66zlxaqpl1u.cloudfront.net/wp-gray/20261001/6abdc9b53b1d6c02929ea059/file_1920x1080-5400-v4/hlsv4_master.m3u8
+#EXTINF:-1 tvg-name="index m3u8" group-title="Other",index m3u8
+https://d2xg1g9o5vns8m.cloudfront.net/out/v1/0855d703f7d5436fae6a9c7ce8ca5075/index.m3u8
+#EXTINF:-1 tvg-name="index m3u8" group-title="Other",index m3u8
+https://d2xg1g9o5vns8m.cloudfront.net/out/v1/66d4ac8748ce4a9298b4e40e48d1ae2f/index.m3u8
+#EXTINF:-1 tvg-name="index m3u8" group-title="Other",index m3u8
+https://d2dffl3588mvfk.cloudfront.net/out/v1/d8e15050ca4148aab0ee387a5e2eb46b/index.m3u8
+#EXTINF:-1 tvg-name="index m3u8" group-title="Other",index m3u8
+https://d15ds134q59udk.cloudfront.net/out/v1/fbba879221d045598540ee783b140fe2/index.m3u8
+#EXTINF:-1 tvg-name="index m3u8" group-title="Other",index m3u8
+https://d1yd8hohnldm33.cloudfront.net/out/v1/19dee23c2cc24f689bd4e1288661ee0c/index.m3u8
+#EXTINF:-1 tvg-name="index m3u8" group-title="Other",index m3u8
+https://d2lk5u59tns74c.cloudfront.net/out/v1/4fe6ab07a13543d6bdb2ec63b3e2df44/index.m3u8
 #EXTINF:-1 tvg-name="index m3u8" group-title="Other",index m3u8
 https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/db8d4eca72d64748a00d0631debf542d/index.m3u8
 #EXTINF:-1 tvg-name="index m3u8" group-title="Other",index m3u8
-https://d2lk5u59tns74c.cloudfront.net/out/v1/4fe6ab07a13543d6bdb2ec63b3e2df44/index.m3u8
-#EXTINF:-1 tvg-name="index m3u8?akes=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9 eyJleHAiOjE3OTA2MDUxMDl9 kZiklLS8PxbYeVmwgxbwC7b_5qDGZiKafC4P0hONVm8" group-title="Other",index m3u8?akes=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9 eyJleHAiOjE3OTA2MDUxMDl9 kZiklLS8PxbYeVmwgxbwC7b_5qDGZiKafC4P0hONVm8
-https://d7x8z4yuq42qn.cloudfront.net/index.m3u8?akes=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3OTA2MDUxMDl9.kZiklLS8PxbYeVmwgxbwC7b_5qDGZiKafC4P0hONVm8
-#EXTINF:-1 tvg-name="index m3u8?akes=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9 eyJleHAiOjE3OTA2MjA3ODl9 cEV3E18jAlNcjZwjDBpwJXsy_MuN3JORSvxBjWZ3j3s" group-title="Other",index m3u8?akes=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9 eyJleHAiOjE3OTA2MjA3ODl9 cEV3E18jAlNcjZwjDBpwJXsy_MuN3JORSvxBjWZ3j3s
-https://d7x8z4yuq42qn.cloudfront.net/index.m3u8?akes=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3OTA2MjA3ODl9.cEV3E18jAlNcjZwjDBpwJXsy_MuN3JORSvxBjWZ3j3s
-#EXTINF:-1 tvg-name="index m3u8?akes=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9 eyJleHAiOjE3OTA2MTY3NTF9 vVfvKfGqe9VdjvuIx1UMPrBWyo9kZaH6apl6IVxA3G4" group-title="Other",index m3u8?akes=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9 eyJleHAiOjE3OTA2MTY3NTF9 vVfvKfGqe9VdjvuIx1UMPrBWyo9kZaH6apl6IVxA3G4
-https://d7x8z4yuq42qn.cloudfront.net/index.m3u8?akes=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3OTA2MTY3NTF9.vVfvKfGqe9VdjvuIx1UMPrBWyo9kZaH6apl6IVxA3G4
+https://d2lk5u59tns74c.cloudfront.net/out/v1/f913cf893c594f73b114216e74a2efbc/index.m3u8
+#EXTINF:-1 tvg-name="index m3u8?akes=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9 eyJleHAiOjE3OTA4NjI1NDV9 vQBsQ9vWmlrAmgk3S6hCvLqtrsl1HWtMt8k3_qtYocc" group-title="Other",index m3u8?akes=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9 eyJleHAiOjE3OTA4NjI1NDV9 vQBsQ9vWmlrAmgk3S6hCvLqtrsl1HWtMt8k3_qtYocc
+https://d7x8z4yuq42qn.cloudfront.net/index.m3u8?akes=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3OTA4NjI1NDV9.vQBsQ9vWmlrAmgk3S6hCvLqtrsl1HWtMt8k3_qtYocc
+#EXTINF:-1 tvg-name="index_2 m3u8" group-title="Other",index_2 m3u8
+https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index_2.m3u8
+#EXTINF:-1 tvg-name="index_3 m3u8" group-title="Other",index_3 m3u8
+https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index_3.m3u8
 #EXTINF:-1 tvg-name="index_3 m3u8" group-title="Other",index_3 m3u8
 https://d7x8z4yuq42qn.cloudfront.net/index_3.m3u8
+#EXTINF:-1 tvg-name="index_4 m3u8" group-title="Other",index_4 m3u8
+https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index_4.m3u8
+#EXTINF:-1 tvg-name="index_5 m3u8" group-title="Other",index_5 m3u8
+https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index_5.m3u8
 #EXTINF:-1 tvg-name="index_7 m3u8" group-title="Other",index_7 m3u8
 https://d7x8z4yuq42qn.cloudfront.net/index_7.m3u8
 #EXTINF:-1 tvg-name="live m3u8" group-title="Other",live m3u8
-https://d2jni005khp8n7.cloudfront.net/out/gray-kwchwx-rtmp-v3/live.m3u8
+https://d2jy668awuauer.cloudfront.net/v1/master/77872db67918a151b697b5fbc23151e5765767dc/wplginc_PROD_wplg_9a735077-eccb-4adb-9630-34d51840431c_LE/live/out/wplginc-wplgott-hls-v7/live.m3u8
 #EXTINF:-1 tvg-name="localization_live json" group-title="Other",localization_live json
 https://d2k02uhj7uybok.cloudfront.net/init/dishtv/passcode/localization_live.json
-#EXTINF:-1 tvg-name="main_playlist m3u8" group-title="Other",main_playlist m3u8
-https://d2g1p0cv65b13g.cloudfront.net/transcoding-videos/6720bfa0ee2b1da7b17ec379/hls/main_playlist.m3u8
-#EXTINF:-1 tvg-name="main_playlist m3u8" group-title="Other",main_playlist m3u8
-https://d2g1p0cv65b13g.cloudfront.net/transcoding-videos/66fcf7acee2b1d2e15589e04/hls/main_playlist.m3u8
-#EXTINF:-1 tvg-name="main_playlist m3u8" group-title="Other",main_playlist m3u8
-https://d2g1p0cv65b13g.cloudfront.net/transcoding-videos/66ea3797ee2b1d21cef837a3/hls/main_playlist.m3u8
-#EXTINF:-1 tvg-name="main_playlist m3u8" group-title="Other",main_playlist m3u8
-https://d2g1p0cv65b13g.cloudfront.net/transcoding-videos/66fca59aee2b1d2e155899a1/hls/main_playlist.m3u8
-#EXTINF:-1 tvg-name="main_playlist m3u8" group-title="Other",main_playlist m3u8
-https://d2g1p0cv65b13g.cloudfront.net/transcoding-videos/66ea57b9ee2b1d21cef83953/hls/main_playlist.m3u8
-#EXTINF:-1 tvg-name="main_playlist m3u8" group-title="Other",main_playlist m3u8
-https://d2g1p0cv65b13g.cloudfront.net/transcoding-videos/66ea6d0cee2b1d21cef83ad9/hls/main_playlist.m3u8
-#EXTINF:-1 tvg-name="main_playlist m3u8" group-title="Other",main_playlist m3u8
-https://d2g1p0cv65b13g.cloudfront.net/transcoding-videos/66ea6563ee2b1d21cef83a19/hls/main_playlist.m3u8
-#EXTINF:-1 tvg-name="main_playlist m3u8" group-title="Other",main_playlist m3u8
-https://d2g1p0cv65b13g.cloudfront.net/transcoding-videos/66ea5631ee2b1d21cef83929/hls/main_playlist.m3u8
-#EXTINF:-1 tvg-name="main_playlist m3u8" group-title="Other",main_playlist m3u8
-https://d2g1p0cv65b13g.cloudfront.net/transcoding-videos/66fcf5c4ee2b1d2e15589de0/hls/main_playlist.m3u8
-#EXTINF:-1 tvg-name="main_playlist m3u8" group-title="Other",main_playlist m3u8
-https://d2g1p0cv65b13g.cloudfront.net/transcoding-videos/66ea5ac4ee2b1d21cef83977/hls/main_playlist.m3u8
-#EXTINF:-1 tvg-name="manifest-ddc003ce js" group-title="Other",manifest-ddc003ce js
-https://d10ljrj8ijyfj0.cloudfront.net/assets/manifest-ddc003ce.js
 #EXTINF:-1 tvg-name="master m3u8" group-title="Other",master m3u8
-https://d1l66zlxaqpl1u.cloudfront.net/wp-gray/20260912/6aa4b099c8d3993ba2225d2a/file_1920x1080-5400-v4/master.m3u8
-#EXTINF:-1 tvg-name="master m3u8" group-title="Other",master m3u8
-https://d1l66zlxaqpl1u.cloudfront.net/wp-gray/20260922/6ab1d7680c646967403aa4de/file_1920x1080-5400-v4/master.m3u8
+https://d1rc86nwwc9fag.cloudfront.net/vglive-sk-791258/master.m3u8
 #EXTINF:-1 tvg-name="master m3u8" group-title="Other",master m3u8
 https://d1l66zlxaqpl1u.cloudfront.net/wp-gray/20260912/6aa4a788b13ed273ab0b9dbf/file_1920x1080-5400-v4/master.m3u8
 #EXTINF:-1 tvg-name="master m3u8" group-title="Other",master m3u8
 https://d1l66zlxaqpl1u.cloudfront.net/wp-gray/20260912/6aa4ac59c8d3993ba2223f43/file_1920x1080-5400-v4/master.m3u8
 #EXTINF:-1 tvg-name="master m3u8" group-title="Other",master m3u8
-https://d1rc86nwwc9fag.cloudfront.net/vglive-sk-791258/master.m3u8
+https://d1l66zlxaqpl1u.cloudfront.net/wp-gray/20260912/6aa4b099c8d3993ba2225d2a/file_1920x1080-5400-v4/master.m3u8
+#EXTINF:-1 tvg-name="master m3u8" group-title="Other",master m3u8
+https://d1l66zlxaqpl1u.cloudfront.net/wp-gray/wsmv/20261001/6abdd58a3b1d6c02929f0145/file_1920x1080-5400-v4/master.m3u8
+#EXTINF:-1 tvg-name="master m3u8" group-title="Other",master m3u8
+https://d1l66zlxaqpl1u.cloudfront.net/wp-gray/wvlt/20260930/6abd90e30b21781c9b672aff/t_37c6bdc814c04b57b93dd38f41258b3c_name_GMT20260930_210715_Recording_avo_640x360_cropped/master.m3u8
+#EXTINF:-1 tvg-name="master m3u8" group-title="Other",master m3u8
+https://d1l66zlxaqpl1u.cloudfront.net/wp-gray/20261001/6abdc9b53b1d6c02929ea059/file_1920x1080-5400-v4/master.m3u8
+#EXTINF:-1 tvg-name="master m3u8" group-title="Other",master m3u8
+https://d1l66zlxaqpl1u.cloudfront.net/wp-gray/20261001/6abe8d87ad6e7e219668ae24/file_1920x1080-5400-v4/master.m3u8
+#EXTINF:-1 tvg-name="master m3u8" group-title="Other",master m3u8
+https://d2tv4k5moji5m7.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-lu4pzh9l4b57p/master.m3u8
+#EXTINF:-1 tvg-name="master m3u8" group-title="Other",master m3u8
+https://d1l66zlxaqpl1u.cloudfront.net/wp-gray/wvlt/20261001/6abdcc1e6ba435353fe00fe4/file_1920x1080-5400-v4/master.m3u8
+#EXTINF:-1 tvg-name="master m3u8?hdnts=st%3D1790836246~exp%3D1790857846~acl%3D%21%2A%2Fvglive-sk-791258%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_64 236 140 167_yuppfast_2_channel_248_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_64 236 140 167_yuppfast_2_channel_248_-1~hmac%3D6e858343a90699ffb696bc92605f5b13697838be8022bf3d8799e4d3e018430a" group-title="Other",master m3u8?hdnts=st%3D1790836246~exp%3D1790857846~acl%3D%21%2A%2Fvglive-sk-791258%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_64 236 140 167_yuppfast_2_channel_248_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_64 236 140 167_yuppfast_2_channel_248_-1~hmac%3D6e858343a90699ffb696bc92605f5b13697838be8022bf3d8799e4d3e018430a
+https://d1rc86nwwc9fag.cloudfront.net/vglive-sk-791258/master.m3u8?hdnts=st%3D1790836246~exp%3D1790857846~acl%3D%21%2A%2Fvglive-sk-791258%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_64.236.140.167_yuppfast_2_channel_248_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_64.236.140.167_yuppfast_2_channel_248_-1~hmac%3D6e858343a90699ffb696bc92605f5b13697838be8022bf3d8799e4d3e018430a
+#EXTINF:-1 tvg-name="master_234 m3u8" group-title="Other",master_234 m3u8
+https://d2l4ar6y3mrs4k.cloudfront.net/live-streaming/abpnews-livetv/master_234.m3u8
+#EXTINF:-1 tvg-name="master_720 m3u8" group-title="Other",master_720 m3u8
+https://d2l4ar6y3mrs4k.cloudfront.net/live-streaming/abpnews-livetv/master_720.m3u8
+#EXTINF:-1 tvg-name="mobile m3u8" group-title="Other",mobile m3u8
+https://d1l66zlxaqpl1u.cloudfront.net/wp-gray/20260912/6aa4b099c8d3993ba2225d2a/file_1920x1080-5400-v4/mobile.m3u8
 #EXTINF:-1 tvg-name="mobile m3u8" group-title="Other",mobile m3u8
 https://d1l66zlxaqpl1u.cloudfront.net/wp-gray/20260912/6aa4ac59c8d3993ba2223f43/file_1920x1080-5400-v4/mobile.m3u8
 #EXTINF:-1 tvg-name="mobile m3u8" group-title="Other",mobile m3u8
 https://d1l66zlxaqpl1u.cloudfront.net/wp-gray/20260912/6aa4a788b13ed273ab0b9dbf/file_1920x1080-5400-v4/mobile.m3u8
 #EXTINF:-1 tvg-name="mobile m3u8" group-title="Other",mobile m3u8
-https://d1l66zlxaqpl1u.cloudfront.net/wp-gray/20260912/6aa4b099c8d3993ba2225d2a/file_1920x1080-5400-v4/mobile.m3u8
+https://d1l66zlxaqpl1u.cloudfront.net/wp-gray/wsmv/20261001/6abdd58a3b1d6c02929f0145/file_1920x1080-5400-v4/mobile.m3u8
 #EXTINF:-1 tvg-name="mobile m3u8" group-title="Other",mobile m3u8
-https://d1l66zlxaqpl1u.cloudfront.net/wp-gray/20260922/6ab1d7680c646967403aa4de/file_1920x1080-5400-v4/mobile.m3u8
-#EXTINF:-1 tvg-name="saam tv" tvg-logo="https://dtil.tmsimg.com/assets/s143735_ld_h15_aa.png?lock=720x540" group-title="Other",saam tv
-https://d3ec1vt3scx7rr.cloudfront.net/files/2026-04/SAAM_NickCave_HomepageTrailer_H264_V8.mp4
-#EXTINF:-1 tvg-name="Shubh TV (1080p)" tvg-logo="https://dtil.tmsimg.com/assets/s143783_ld_h15_aa.png?lock=720x540" group-title="Other",Shubh TV (1080p)
-https://d2g1vdc6ozl2o8.cloudfront.net/out/v1/0a0dc7d7911b4fddbb4dfc963fdd4b9e/index.m3u8
-#EXTINF:-1 tvg-name="TBO Telugu Classics" group-title="Other",TBO Telugu Classics
-https://d1fi19tywmn14b.cloudfront.net/yuppindmov/ngrp:ytelcla.stream_all/index.m3u8
-#EXTINF:-1 tvg-name="TBO Telugu Comedy" group-title="Other",TBO Telugu Comedy
-https://d1fi19tywmn14b.cloudfront.net/yuppindmov/ngrp:ytelcom.stream_all/index.m3u8
-#EXTINF:-1 tvg-name="TBO Telugu Premium" group-title="Other",TBO Telugu Premium
-https://d1fi19tywmn14b.cloudfront.net/yuppindmov/ngrp:ytelpre.stream_all/index.m3u8
-#EXTINF:-1 tvg-name="VISSA Telugu" tvg-logo="http://smumcdnems03.cdnsrv.jio.com/mumsite.cdnsrv.jio.com/jiotv.catchup.cdn.jio.com/dare_images/images/Vissa_TV.png" group-title="Other",VISSA Telugu
-https://d1fi19tywmn14b.cloudfront.net/yuppindmov/ngrp:ytamcla.stream_all/index.m3u8
+https://d1l66zlxaqpl1u.cloudfront.net/wp-gray/20261001/6abdc9b53b1d6c02929ea059/file_1920x1080-5400-v4/mobile.m3u8
+#EXTINF:-1 tvg-name="mobile m3u8" group-title="Other",mobile m3u8
+https://d2lkf2hqez23g4.cloudfront.net/wp-wplginc/20261001/6abe9328db2fd26854e5410b/t_869ee9baa41d48028e3403212dd8ef42_name_48726796863_hdtv/mobile.m3u8
+#EXTINF:-1 tvg-name="mobile m3u8" group-title="Other",mobile m3u8
+https://d2lkf2hqez23g4.cloudfront.net/wp-wplginc/20261001/6abe55ea13b8f834ddceb412/t_758860f96234402e9171f5179e1902e9_name_48722756566_hdtv/mobile.m3u8
+#EXTINF:-1 tvg-name="mobile m3u8" group-title="Other",mobile m3u8
+https://d2lkf2hqez23g4.cloudfront.net/wp-wplginc/20261001/6abebc9aad6e7e2196698507/t_914d7ced04df43b6b1e032e729b1b513_name_48729426437_hdtv/mobile.m3u8
+#EXTINF:-1 tvg-name="mobile m3u8" group-title="Other",mobile m3u8
+https://d2lkf2hqez23g4.cloudfront.net/wp-wplginc/20261001/6abec08fc2f46746cd342c09/t_a63d4aab0bfa43b9aa4e28f5c909bf9f_name_48729681778_hdtv/mobile.m3u8
+#EXTINF:-1 tvg-name="mobile m3u8" group-title="Other",mobile m3u8
+https://d2lkf2hqez23g4.cloudfront.net/wp-wplginc/20260930/6abd8bc913b8f834ddcd61d0/t_9d1005f74b4243829debb34057fa8f97_name_48710568821_hdtv/mobile.m3u8
+#EXTINF:-1 tvg-name="mobile m3u8" group-title="Other",mobile m3u8
+https://d2lkf2hqez23g4.cloudfront.net/wp-wplginc/20261001/6abec6f53b1d6c0292a2aaee/t_94c3c11b36de484eaa299b3e40c0b859_name_48730086836_hdtv/mobile.m3u8
+#EXTINF:-1 tvg-name="mobile m3u8" group-title="Other",mobile m3u8
+https://d2lkf2hqez23g4.cloudfront.net/wp-wplginc/20261001/6abe9124c2f46746cd3203c7/t_55f9b1c018224814911cf0797b074597_name_48726663841_hdtv/mobile.m3u8
+#EXTINF:-1 tvg-name="mobile m3u8" group-title="Other",mobile m3u8
+https://d2lkf2hqez23g4.cloudfront.net/wp-wplginc/20261001/6abe939395b09c37ca190ee4/t_e41e8fd260cc4841b2c56c95ab75c382_name_48726823324_hdtv/mobile.m3u8
+#EXTINF:-1 tvg-name="mobile m3u8" group-title="Other",mobile m3u8
+https://d2lkf2hqez23g4.cloudfront.net/wp-wplginc/20260930/6abd827373476f57b551ac8d/t_55fda2537ab14e98a5f081040fd536a8_name_48709968775_hdtv/mobile.m3u8
+#EXTINF:-1 tvg-name="mobile m3u8" group-title="Other",mobile m3u8
+https://d2lkf2hqez23g4.cloudfront.net/wp-wplginc/20260930/6abd7ab495b09c37ca1743fa/t_04cb2394697b473c9b7d40ba61154d8b_name_48709475578_hdtv/mobile.m3u8
+#EXTINF:-1 tvg-name="playlist m3u8" group-title="Other",playlist m3u8
+https://da86m1sqpm3o0.cloudfront.net/28072023/smil:mtvindia.smil/playlist.m3u8
+#EXTINF:-1 tvg-name="playlist m3u8" group-title="Other",playlist m3u8
+https://d1msejlow1t3l4.cloudfront.net/fta/mantavya/playlist.m3u8
+#EXTINF:-1 tvg-name="playlist m3u8" group-title="Other",playlist m3u8
+https://d1pd0pmhst5qqh.cloudfront.net/2a3f44d5-20bd-458a-871f-73c62daec5aa/15172c06-f7fd-45e1-8b0e-c5b37fc093fd/master/playlist.m3u8
+#EXTINF:-1 tvg-name="playlist m3u8" group-title="Other",playlist m3u8
+https://d1pd0pmhst5qqh.cloudfront.net/2a3f44d5-20bd-458a-871f-73c62daec5aa/e68cdfa2-0ac0-40b2-ba11-2458781762c8/master/playlist.m3u8
+#EXTINF:-1 tvg-name="playlist m3u8" group-title="Other",playlist m3u8
+https://d1pd0pmhst5qqh.cloudfront.net/2ee9e8bd-8eef-4685-8e6a-069f645cf565/f529118c-58bf-4536-bee4-d1421ff0704b/5e95b7a2-e355-47cf-af02-4e1b95fef3e9/master/playlist.m3u8
+#EXTINF:-1 tvg-name="playlist m3u8" group-title="Other",playlist m3u8
+https://d1pd0pmhst5qqh.cloudfront.net/fec6e9ed-9377-43ec-973e-bf9f07022d6b/06ee9a68-c044-4aac-bf16-fce4fc718f46/master/playlist.m3u8
+#EXTINF:-1 tvg-name="playlist m3u8?hdnts=st%3D1790836240~exp%3D1790857840~acl%3D%21%2A%2Ffta%2Fhornbilltv%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_64 236 140 167_yuppfast_2_channel_171_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_64 236 140 167_yuppfast_2_channel_171_-1~hmac%3Defe13e591e4e49e2e8a818b22dc5bc014249136738d39686f48e48a55f02be44" group-title="Other",playlist m3u8?hdnts=st%3D1790836240~exp%3D1790857840~acl%3D%21%2A%2Ffta%2Fhornbilltv%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_64 236 140 167_yuppfast_2_channel_171_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_64 236 140 167_yuppfast_2_channel_171_-1~hmac%3Defe13e591e4e49e2e8a818b22dc5bc014249136738d39686f48e48a55f02be44
+https://d1msejlow1t3l4.cloudfront.net/fta/hornbilltv/playlist.m3u8?hdnts=st%3D1790836240~exp%3D1790857840~acl%3D%21%2A%2Ffta%2Fhornbilltv%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_64.236.140.167_yuppfast_2_channel_171_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_64.236.140.167_yuppfast_2_channel_171_-1~hmac%3Defe13e591e4e49e2e8a818b22dc5bc014249136738d39686f48e48a55f02be44
+#EXTINF:-1 tvg-name="playlist m3u8?hdnts=st%3D1790836254~exp%3D1790857854~acl%3D%21%2A%2Ffta%2Fhindikhabar%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_64 236 140 167_yuppfast_2_channel_160_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_64 236 140 167_yuppfast_2_channel_160_-1~hmac%3D04736e9954ad566718cf8092642b4c221d874484bff4c122f39a7615f3634ac9" group-title="Other",playlist m3u8?hdnts=st%3D1790836254~exp%3D1790857854~acl%3D%21%2A%2Ffta%2Fhindikhabar%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_64 236 140 167_yuppfast_2_channel_160_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_64 236 140 167_yuppfast_2_channel_160_-1~hmac%3D04736e9954ad566718cf8092642b4c221d874484bff4c122f39a7615f3634ac9
+https://d1msejlow1t3l4.cloudfront.net/fta/hindikhabar/playlist.m3u8?hdnts=st%3D1790836254~exp%3D1790857854~acl%3D%21%2A%2Ffta%2Fhindikhabar%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_64.236.140.167_yuppfast_2_channel_160_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_64.236.140.167_yuppfast_2_channel_160_-1~hmac%3D04736e9954ad566718cf8092642b4c221d874484bff4c122f39a7615f3634ac9
+#EXTINF:-1 tvg-name="playlist m3u8?hdnts=st%3D1790836255~exp%3D1790857855~acl%3D%21%2A%2Ffta%2Fsudarshan%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_64 236 140 167_yuppfast_2_channel_138_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_64 236 140 167_yuppfast_2_channel_138_-1~hmac%3D84250d57576297f3f763da06d2788875a9ec3f5d542c4540cfdae217e58fb9ab" group-title="Other",playlist m3u8?hdnts=st%3D1790836255~exp%3D1790857855~acl%3D%21%2A%2Ffta%2Fsudarshan%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_64 236 140 167_yuppfast_2_channel_138_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_64 236 140 167_yuppfast_2_channel_138_-1~hmac%3D84250d57576297f3f763da06d2788875a9ec3f5d542c4540cfdae217e58fb9ab
+https://d1msejlow1t3l4.cloudfront.net/fta/sudarshan/playlist.m3u8?hdnts=st%3D1790836255~exp%3D1790857855~acl%3D%21%2A%2Ffta%2Fsudarshan%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_64.236.140.167_yuppfast_2_channel_138_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_64.236.140.167_yuppfast_2_channel_138_-1~hmac%3D84250d57576297f3f763da06d2788875a9ec3f5d542c4540cfdae217e58fb9ab
+#EXTINF:-1 tvg-name="playlist m3u8?hdnts=st%3D1790836263~exp%3D1790857863~acl%3D%21%2A%2Ffta%2Finh24x7%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_64 236 140 167_yuppfast_2_channel_155_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_64 236 140 167_yuppfast_2_channel_155_-1~hmac%3D76bed0c498562a95cc4c9abb2317c7bc1e34d74358a8c8cd2e6bdaca28d67ae6" group-title="Other",playlist m3u8?hdnts=st%3D1790836263~exp%3D1790857863~acl%3D%21%2A%2Ffta%2Finh24x7%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_64 236 140 167_yuppfast_2_channel_155_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_64 236 140 167_yuppfast_2_channel_155_-1~hmac%3D76bed0c498562a95cc4c9abb2317c7bc1e34d74358a8c8cd2e6bdaca28d67ae6
+https://d1msejlow1t3l4.cloudfront.net/fta/inh24x7/playlist.m3u8?hdnts=st%3D1790836263~exp%3D1790857863~acl%3D%21%2A%2Ffta%2Finh24x7%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_64.236.140.167_yuppfast_2_channel_155_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_64.236.140.167_yuppfast_2_channel_155_-1~hmac%3D76bed0c498562a95cc4c9abb2317c7bc1e34d74358a8c8cd2e6bdaca28d67ae6
+#EXTINF:-1 tvg-name="playlist m3u8?hdnts=st%3D1790836264~exp%3D1790857864~acl%3D%21%2A%2Ffta%2Ftotaltv%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_64 236 140 167_yuppfast_2_channel_128_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_64 236 140 167_yuppfast_2_channel_128_-1~hmac%3Da109d8229ea1ba1b6995e0a573df62cd561f40ea6dda26f4a388a01a0d4529c5" group-title="Other",playlist m3u8?hdnts=st%3D1790836264~exp%3D1790857864~acl%3D%21%2A%2Ffta%2Ftotaltv%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_64 236 140 167_yuppfast_2_channel_128_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_64 236 140 167_yuppfast_2_channel_128_-1~hmac%3Da109d8229ea1ba1b6995e0a573df62cd561f40ea6dda26f4a388a01a0d4529c5
+https://d1msejlow1t3l4.cloudfront.net/fta/totaltv/playlist.m3u8?hdnts=st%3D1790836264~exp%3D1790857864~acl%3D%21%2A%2Ffta%2Ftotaltv%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_64.236.140.167_yuppfast_2_channel_128_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_64.236.140.167_yuppfast_2_channel_128_-1~hmac%3Da109d8229ea1ba1b6995e0a573df62cd561f40ea6dda26f4a388a01a0d4529c5
+#EXTINF:-1 tvg-name="Plymouth Rock TV" group-title="Other",Plymouth Rock TV
+https://d30au7974f7qoa.cloudfront.net/scheduler/scheduleMaster/419.m3u8
+#EXTINF:-1 tvg-name="sd m3u8" group-title="Other",sd m3u8
+https://d2lkf2hqez23g4.cloudfront.net/wp-wplginc/20261001/6abe9328db2fd26854e5410b/t_869ee9baa41d48028e3403212dd8ef42_name_48726796863_hdtv/sd.m3u8
+#EXTINF:-1 tvg-name="sd m3u8" group-title="Other",sd m3u8
+https://d2lkf2hqez23g4.cloudfront.net/wp-wplginc/20261001/6abec08fc2f46746cd342c09/t_a63d4aab0bfa43b9aa4e28f5c909bf9f_name_48729681778_hdtv/sd.m3u8
+#EXTINF:-1 tvg-name="sd m3u8" group-title="Other",sd m3u8
+https://d2lkf2hqez23g4.cloudfront.net/wp-wplginc/20261001/6abe55ea13b8f834ddceb412/t_758860f96234402e9171f5179e1902e9_name_48722756566_hdtv/sd.m3u8
+#EXTINF:-1 tvg-name="sd m3u8" group-title="Other",sd m3u8
+https://d2lkf2hqez23g4.cloudfront.net/wp-wplginc/20261001/6abebc9aad6e7e2196698507/t_914d7ced04df43b6b1e032e729b1b513_name_48729426437_hdtv/sd.m3u8
+#EXTINF:-1 tvg-name="sd m3u8" group-title="Other",sd m3u8
+https://d2lkf2hqez23g4.cloudfront.net/wp-wplginc/20260930/6abd8bc913b8f834ddcd61d0/t_9d1005f74b4243829debb34057fa8f97_name_48710568821_hdtv/sd.m3u8
+#EXTINF:-1 tvg-name="sd m3u8" group-title="Other",sd m3u8
+https://d2lkf2hqez23g4.cloudfront.net/wp-wplginc/20261001/6abe939395b09c37ca190ee4/t_e41e8fd260cc4841b2c56c95ab75c382_name_48726823324_hdtv/sd.m3u8
+#EXTINF:-1 tvg-name="sd m3u8" group-title="Other",sd m3u8
+https://d2lkf2hqez23g4.cloudfront.net/wp-wplginc/20261001/6abec6f53b1d6c0292a2aaee/t_94c3c11b36de484eaa299b3e40c0b859_name_48730086836_hdtv/sd.m3u8
+#EXTINF:-1 tvg-name="sd m3u8" group-title="Other",sd m3u8
+https://d2lkf2hqez23g4.cloudfront.net/wp-wplginc/20261001/6abe9124c2f46746cd3203c7/t_55f9b1c018224814911cf0797b074597_name_48726663841_hdtv/sd.m3u8
+#EXTINF:-1 tvg-name="sd m3u8" group-title="Other",sd m3u8
+https://d2lkf2hqez23g4.cloudfront.net/wp-wplginc/20260930/6abd7ab495b09c37ca1743fa/t_04cb2394697b473c9b7d40ba61154d8b_name_48709475578_hdtv/sd.m3u8
+#EXTINF:-1 tvg-name="sd m3u8" group-title="Other",sd m3u8
+https://d2lkf2hqez23g4.cloudfront.net/wp-wplginc/20260930/6abd827373476f57b551ac8d/t_55fda2537ab14e98a5f081040fd536a8_name_48709968775_hdtv/sd.m3u8
+#EXTINF:-1 tvg-name="Shemaroo Filmigaane" group-title="Other",Shemaroo Filmigaane
+https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/shemaroo-filmigaane/master.m3u8
+#EXTINF:-1 tvg-name="Anand TV (1080p)" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Anand_TV.png" group-title="Religious",Anand TV (1080p)
+https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/anand-tv/playlist.m3u8
 #EXTINF:-1 tvg-name="DD Sports SD (1080p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Sports.png" group-title="Sports",DD Sports SD (1080p)
 https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/b17adfe543354fdd8d189b110617cddd/index.m3u8
+#EXTINF:-1 tvg-name="DD Sports2" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Sports.png" group-title="Sports",DD Sports2
+https://d1g8wgjurz8via.cloudfront.net/bpk-tv/9Xjalwa/default/9XJalwa-audio_208482_und=208000-video=2137600.m3u8
 #EXTINF:-1 tvg-name="Sukan RTM (1080p) [Geo-blocked]" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Sports",Sukan RTM (1080p) [Geo-blocked]
 https://d25tgymtnqzu8s.cloudfront.net/smil:sukan/manifest.mpd
 #EXTINF:-1 tvg-name="Tigo Sports (Bolivia) (720p) [Geo-blocked]" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Sports",Tigo Sports (Bolivia) (720p) [Geo-blocked]

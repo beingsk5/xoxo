@@ -1,69 +1,55 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
 #EXTINF:-1 tvg-name="Zoom (India) (720p)" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/TIMESPLAY/LIVECHANNEL/6904ba4039f3b175376a61de/images/LOGO_HD/LOGO_HD_KN-eM9VvQ_ZoomTV1_1.png" group-title="Music",Zoom (India) (720p)
 https://dai.google.com/linear/hls/event/JCAm25qkRXiKcK1AJMlvKQ/master.m3u8
-#EXTINF:-1 tvg-name="0 ts" group-title="Other",0 ts
-https://dai.google.com/linear/pods/v1/p/JUr94WL2QAiVpGNHY5n5dA/2abe60d5-d0b1-4a2f-bc79-7757fef754e6:CHS/121601/slate/0/dd522e014a76833ff6ef3457feef5ed3/0.ts
-#EXTINF:-1 tvg-name="10 ts" group-title="Other",10 ts
-https://dai.google.com/linear/pods/v1/p/JUr94WL2QAiVpGNHY5n5dA/2abe60d5-d0b1-4a2f-bc79-7757fef754e6:CHS/121601/slate/0/dd522e014a76833ff6ef3457feef5ed3/10.ts
-#EXTINF:-1 tvg-name="11 ts" group-title="Other",11 ts
-https://dai.google.com/linear/pods/v1/p/JUr94WL2QAiVpGNHY5n5dA/2abe60d5-d0b1-4a2f-bc79-7757fef754e6:CHS/121601/slate/0/dd522e014a76833ff6ef3457feef5ed3/11.ts
-#EXTINF:-1 tvg-name="12 ts" group-title="Other",12 ts
-https://dai.google.com/linear/pods/v1/p/JUr94WL2QAiVpGNHY5n5dA/2abe60d5-d0b1-4a2f-bc79-7757fef754e6:CHS/121601/slate/0/dd522e014a76833ff6ef3457feef5ed3/12.ts
-#EXTINF:-1 tvg-name="13 ts" group-title="Other",13 ts
-https://dai.google.com/linear/pods/v1/p/JUr94WL2QAiVpGNHY5n5dA/2abe60d5-d0b1-4a2f-bc79-7757fef754e6:CHS/121601/slate/0/dd522e014a76833ff6ef3457feef5ed3/13.ts
-#EXTINF:-1 tvg-name="20 rss" group-title="Other",20 rss
-https://discuss.google.dev/c/google-workspace/20.rss
-#EXTINF:-1 tvg-name="7 ts" group-title="Other",7 ts
-https://dai.google.com/linear/pods/v1/p/JUr94WL2QAiVpGNHY5n5dA/2abe60d5-d0b1-4a2f-bc79-7757fef754e6:CHS/121601/slate/0/dd522e014a76833ff6ef3457feef5ed3/7.ts
-#EXTINF:-1 tvg-name="8 ts" group-title="Other",8 ts
-https://dai.google.com/linear/pods/v1/p/JUr94WL2QAiVpGNHY5n5dA/2abe60d5-d0b1-4a2f-bc79-7757fef754e6:CHS/121601/slate/0/dd522e014a76833ff6ef3457feef5ed3/8.ts
-#EXTINF:-1 tvg-name="9 ts" group-title="Other",9 ts
-https://dai.google.com/linear/pods/v1/p/JUr94WL2QAiVpGNHY5n5dA/2abe60d5-d0b1-4a2f-bc79-7757fef754e6:CHS/121601/slate/0/dd522e014a76833ff6ef3457feef5ed3/9.ts
-#EXTINF:-1 tvg-name="goto?url=CAESXwHrOzAVN0w1q8tIyHaUMP6fL9lItBuIG60dVgRHABYD1V_dLQyEcmNSsQnDyFVdch7H-sP7NBCbCo74RyVjs5rbH33PLeSajLtS0mM-0P0h1KoH4ZBwoYg-ePjeH5Uy" group-title="Other",goto?url=CAESXwHrOzAVN0w1q8tIyHaUMP6fL9lItBuIG60dVgRHABYD1V_dLQyEcmNSsQnDyFVdch7H-sP7NBCbCo74RyVjs5rbH33PLeSajLtS0mM-0P0h1KoH4ZBwoYg-ePjeH5Uy
-http://www.google.com/goto?url=CAESXwHrOzAVN0w1q8tIyHaUMP6fL9lItBuIG60dVgRHABYD1V_dLQyEcmNSsQnDyFVdch7H-sP7NBCbCo74RyVjs5rbH33PLeSajLtS0mM-0P0h1KoH4ZBwoYg-ePjeH5Uy
+#EXTINF:-1 tvg-name="2025",Japan U20 vs Korea Republic U20" group-title="News",2025",Japan U20 vs Korea Republic U20
+https://dai.google.com/linear/hls/event/FM4CU57iQtyzU-_oqV02sg/master.m3u8
+#EXTINF:-1 tvg-name="Bollywood Prime" group-title="Other",Bollywood Prime
+https://dai.google.com/linear/hls/event/yvQpXDAeRMGU25KTu--V6Q/master.m3u8
+#EXTINF:-1 tvg-name="Hindi TV" group-title="Other",Hindi TV
+https://drive.google.com/uc?export=download&id=1fJ46hqkJXL-lJbYegEfuG5XLOU8aEk1b
 #EXTINF:-1 tvg-name="master m3u8" group-title="Other",master m3u8
 https://dai.google.com/linear/hls/event/xrVrJYTmTfitfXBQfeZByQ/master.m3u8
-#EXTINF:-1 tvg-name="master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%2207c9aed5-fbf7-44db-92b8-0298cf480353%22%2Csu" group-title="Other",master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%2207c9aed5-fbf7-44db-92b8-0298cf480353%22%2Csu
-https://dai.google.com/linear/hls/pa/event/ZU0VFVOpRB29p8Lhj_z1CA/stream/4e879670-1e2c-4aa5-83c3-185dd67ab243:CHS/master.m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%2207c9aed5-fbf7-44db-92b8-0298cf480353%22%2Csu
-#EXTINF:-1 tvg-name="master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%221b3d5ed0-8da3-4a99-8758-ba51f95f7ac9%22%2Csu" group-title="Other",master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%221b3d5ed0-8da3-4a99-8758-ba51f95f7ac9%22%2Csu
-https://dai.google.com/linear/hls/pa/event/xrVrJYTmTfitfXBQfeZByQ/stream/a4e55910-e63b-48d4-8452-e8b9048db312:DLS/master.m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%221b3d5ed0-8da3-4a99-8758-ba51f95f7ac9%22%2Csu
-#EXTINF:-1 tvg-name="master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%22209b83f5-3f34-4ce6-947d-d5edb6ec5cfa%22%2Csu" group-title="Other",master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%22209b83f5-3f34-4ce6-947d-d5edb6ec5cfa%22%2Csu
-https://dai.google.com/linear/hls/pa/event/xrVrJYTmTfitfXBQfeZByQ/stream/b1b927c2-4df9-47cf-afdf-38e21dacac8b:DLS/master.m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%22209b83f5-3f34-4ce6-947d-d5edb6ec5cfa%22%2Csu
-#EXTINF:-1 tvg-name="master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%222b448212-1dd5-497b-bd31-d385373f09cd%22%2Csu" group-title="Other",master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%222b448212-1dd5-497b-bd31-d385373f09cd%22%2Csu
-https://dai.google.com/linear/hls/pa/event/xrVrJYTmTfitfXBQfeZByQ/stream/a4f9fce2-a442-45d0-9612-ee0f6b623519:CHS/master.m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%222b448212-1dd5-497b-bd31-d385373f09cd%22%2Csu
-#EXTINF:-1 tvg-name="master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%222c6b0777-e19e-4708-9b62-73c0a129389c%22%2Csu" group-title="Other",master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%222c6b0777-e19e-4708-9b62-73c0a129389c%22%2Csu
-https://dai.google.com/linear/hls/pa/event/9Lq0ERvoSR-z9AwvFS-xYA/stream/760a4ed7-22a2-4b95-9d8c-106373a7454a:ATL/master.m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%222c6b0777-e19e-4708-9b62-73c0a129389c%22%2Csu
-#EXTINF:-1 tvg-name="master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%2234f1f92a-16e4-431a-82c5-b98758902738%22%2Csu" group-title="Other",master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%2234f1f92a-16e4-431a-82c5-b98758902738%22%2Csu
-https://dai.google.com/linear/hls/pa/event/9Lq0ERvoSR-z9AwvFS-xYA/stream/29f156bf-bce6-441a-8bd7-2d8b643bae94:CHS/master.m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%2234f1f92a-16e4-431a-82c5-b98758902738%22%2Csu
-#EXTINF:-1 tvg-name="master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%22438097c2-192e-4a84-8337-27ae70013b66%22%2Csu" group-title="Other",master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%22438097c2-192e-4a84-8337-27ae70013b66%22%2Csu
-https://dai.google.com/linear/hls/pa/event/bRE69gQJQm2_cW4qnf6okg/stream/28f3f328-785a-41db-bccb-2df628c054ee:CHS/master.m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%22438097c2-192e-4a84-8337-27ae70013b66%22%2Csu
-#EXTINF:-1 tvg-name="master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%225804d82a-99d3-4818-a42f-d62c92629cb6%22%2Csu" group-title="Other",master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%225804d82a-99d3-4818-a42f-d62c92629cb6%22%2Csu
-https://dai.google.com/linear/hls/pa/event/xrVrJYTmTfitfXBQfeZByQ/stream/56d5c019-86e2-4a99-b4e9-d63c05f15087:ATL/master.m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%225804d82a-99d3-4818-a42f-d62c92629cb6%22%2Csu
-#EXTINF:-1 tvg-name="master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%225ebb88e8-17fd-4cec-953a-820ef542d238%22%2Csu" group-title="Other",master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%225ebb88e8-17fd-4cec-953a-820ef542d238%22%2Csu
-https://dai.google.com/linear/hls/pa/event/JUr94WL2QAiVpGNHY5n5dA/stream/c40c4bc2-633a-49fc-a399-909ec1152d20:ATL/master.m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%225ebb88e8-17fd-4cec-953a-820ef542d238%22%2Csu
-#EXTINF:-1 tvg-name="master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%22683edf73-7699-44d7-acc4-04b724445e28%22%2Csu" group-title="Other",master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%22683edf73-7699-44d7-acc4-04b724445e28%22%2Csu
-https://dai.google.com/linear/hls/pa/event/9Lq0ERvoSR-z9AwvFS-xYA/stream/e8745f4d-6f2f-4711-8d99-8884300ba429:ATL/master.m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%22683edf73-7699-44d7-acc4-04b724445e28%22%2Csu
-#EXTINF:-1 tvg-name="master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%2273553539-ad8b-4946-9247-9e7db155ea3a%22%2Csu" group-title="Other",master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%2273553539-ad8b-4946-9247-9e7db155ea3a%22%2Csu
-https://dai.google.com/linear/hls/pa/event/xrVrJYTmTfitfXBQfeZByQ/stream/88f42690-33ed-48da-a645-aba38af51b3a:DLS/master.m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%2273553539-ad8b-4946-9247-9e7db155ea3a%22%2Csu
-#EXTINF:-1 tvg-name="master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%2273a9f20d-7e53-4ec5-8b13-d03fc9839f15%22%2Csu" group-title="Other",master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%2273a9f20d-7e53-4ec5-8b13-d03fc9839f15%22%2Csu
-https://dai.google.com/linear/hls/pa/event/9Lq0ERvoSR-z9AwvFS-xYA/stream/e6d5c6ba-9509-43ab-9ddd-ea09789c0403:ATL/master.m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%2273a9f20d-7e53-4ec5-8b13-d03fc9839f15%22%2Csu
-#EXTINF:-1 tvg-name="master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%227aff3b8b-0705-493e-9acf-374715ed02e7%22%2Csu" group-title="Other",master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%227aff3b8b-0705-493e-9acf-374715ed02e7%22%2Csu
-https://dai.google.com/linear/hls/pa/event/xrVrJYTmTfitfXBQfeZByQ/stream/192769c5-d3ff-44bb-8e3e-f849b60e8095:CHS/master.m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%227aff3b8b-0705-493e-9acf-374715ed02e7%22%2Csu
-#EXTINF:-1 tvg-name="master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%227d287436-bde9-4629-a5f3-b68b7b39d78a%22%2Csu" group-title="Other",master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%227d287436-bde9-4629-a5f3-b68b7b39d78a%22%2Csu
-https://dai.google.com/linear/hls/pa/event/bRE69gQJQm2_cW4qnf6okg/stream/282f960e-1f7c-4cd3-90da-df06a1e36e45:ATL/master.m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%227d287436-bde9-4629-a5f3-b68b7b39d78a%22%2Csu
-#EXTINF:-1 tvg-name="master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%227f03364b-de57-4a9f-bf04-330947c0e4dd%22%2Csu" group-title="Other",master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%227f03364b-de57-4a9f-bf04-330947c0e4dd%22%2Csu
-https://dai.google.com/linear/hls/pa/event/xrVrJYTmTfitfXBQfeZByQ/stream/48830c7c-7272-4245-94c9-cc2ac4ba09a4:DLS/master.m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%227f03364b-de57-4a9f-bf04-330947c0e4dd%22%2Csu
-#EXTINF:-1 tvg-name="master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%22867f859f-135e-4c72-8f02-a19cd39b264d%22%2Csu" group-title="Other",master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%22867f859f-135e-4c72-8f02-a19cd39b264d%22%2Csu
-https://dai.google.com/linear/hls/pa/event/JUr94WL2QAiVpGNHY5n5dA/stream/2abe60d5-d0b1-4a2f-bc79-7757fef754e6:CHS/master.m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%22867f859f-135e-4c72-8f02-a19cd39b264d%22%2Csu
-#EXTINF:-1 tvg-name="master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%22b8082172-fe41-4c56-988b-1d2a8158b4ca%22%2Csu" group-title="Other",master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%22b8082172-fe41-4c56-988b-1d2a8158b4ca%22%2Csu
-https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/02b2921f-463d-4d5f-a685-ddf71906258c:ATL/master.m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%22b8082172-fe41-4c56-988b-1d2a8158b4ca%22%2Csu
-#EXTINF:-1 tvg-name="master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%22bd9cabef-870f-4a3f-a304-bba7641a9a3e%22%2Csu" group-title="Other",master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%22bd9cabef-870f-4a3f-a304-bba7641a9a3e%22%2Csu
-https://dai.google.com/linear/hls/pa/event/9Lq0ERvoSR-z9AwvFS-xYA/stream/1b9a3802-5669-4c72-bf9c-efb90560cac8:ATL/master.m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%22bd9cabef-870f-4a3f-a304-bba7641a9a3e%22%2Csu
-#EXTINF:-1 tvg-name="master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%22c0a79bd3-6038-4faa-aee5-117749ffa486%22%2Csu" group-title="Other",master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%22c0a79bd3-6038-4faa-aee5-117749ffa486%22%2Csu
-https://dai.google.com/linear/hls/pa/event/xrVrJYTmTfitfXBQfeZByQ/stream/c8b71151-ee1c-401a-90b1-a095476350af:TUL/master.m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%22c0a79bd3-6038-4faa-aee5-117749ffa486%22%2Csu
-#EXTINF:-1 tvg-name="master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%22c109b013-f864-403d-80ce-e9753a672f29%22%2Csu" group-title="Other",master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%22c109b013-f864-403d-80ce-e9753a672f29%22%2Csu
-https://dai.google.com/linear/hls/pa/event/xrVrJYTmTfitfXBQfeZByQ/stream/2080f22c-f683-4d54-a77c-ee3f99fd268b:TUL/master.m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%22c109b013-f864-403d-80ce-e9753a672f29%22%2Csu
-#EXTINF:-1 tvg-name="master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%22d4bc1b7c-fd44-4942-9dde-ed047252df9f%22%2Csu" group-title="Other",master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%22d4bc1b7c-fd44-4942-9dde-ed047252df9f%22%2Csu
-https://dai.google.com/linear/hls/pa/event/xrVrJYTmTfitfXBQfeZByQ/stream/9f955b01-c4bc-49d7-800a-7e67720bc730:DLS/master.m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%22d4bc1b7c-fd44-4942-9dde-ed047252df9f%22%2Csu
-#EXTINF:-1 tvg-name="master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%22f09b32d9-1dba-4ad5-95ad-2a9db9a742e1%22%2Csu" group-title="Other",master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%22f09b32d9-1dba-4ad5-95ad-2a9db9a742e1%22%2Csu
-https://dai.google.com/linear/hls/pa/event/9Lq0ERvoSR-z9AwvFS-xYA/stream/654205e4-7d13-4ad4-a991-827ce8d75ba9:CHS/master.m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%22f09b32d9-1dba-4ad5-95ad-2a9db9a742e1%22%2Csu
+#EXTINF:-1 tvg-name="master m3u8" group-title="Other",master m3u8
+https://dai.google.com/linear/hls/pa/event/TlDP9L3hTBW-mYu24yyjfQ/stream/566c37c8-3af7-4ec0-a03e-807f578dcad3:CHS/master.m3u8
+#EXTINF:-1 tvg-name="master m3u8" group-title="Other",master m3u8
+https://dai.google.com/linear/hls/pa/event/2UL9VnchRryxvbd05_pitw/stream/66306405-a0e9-474d-b62d-7b4e8d9593a7:ATL/master.m3u8
+#EXTINF:-1 tvg-name="master m3u8" group-title="Other",master m3u8
+https://dai.google.com/linear/hls/pa/event/TlDP9L3hTBW-mYu24yyjfQ/stream/91e6ef54-8306-474d-8f5c-96e6bf27a0d8:ATL/master.m3u8
+#EXTINF:-1 tvg-name="master m3u8" group-title="Other",master m3u8
+https://dai.google.com/linear/hls/event/JUr94WL2QAiVpGNHY5n5dA/master.m3u8
+#EXTINF:-1 tvg-name="master m3u8" group-title="Other",master m3u8
+https://dai.google.com/linear/hls/pa/event/2UL9VnchRryxvbd05_pitw/stream/200448c0-396d-4aec-9146-d9cd41364e14:DLS/master.m3u8
+#EXTINF:-1 tvg-name="master m3u8" group-title="Other",master m3u8
+https://dai.google.com/linear/hls/pa/event/TlDP9L3hTBW-mYu24yyjfQ/stream/0f757623-9da5-4993-934b-7c8fb54117e1:DLS/master.m3u8
+#EXTINF:-1 tvg-name="master m3u8" group-title="Other",master m3u8
+https://dai.google.com/linear/hls/pa/event/TlDP9L3hTBW-mYu24yyjfQ/stream/9fc6274f-0eb8-4817-af1b-d8b7c8675902:ATL/master.m3u8
+#EXTINF:-1 tvg-name="master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%2203b57795-b133-4df1-9502-c5035157b4e4%22%2Csu" group-title="Other",master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%2203b57795-b133-4df1-9502-c5035157b4e4%22%2Csu
+https://dai.google.com/linear/hls/pa/event/xrVrJYTmTfitfXBQfeZByQ/stream/ca290c23-6b8a-4266-8975-3342786d4f85:ATL/master.m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%2203b57795-b133-4df1-9502-c5035157b4e4%22%2Csu
+#EXTINF:-1 tvg-name="master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%22123c2a48-acd5-4f34-98a6-5a60fe68ed9f%22%2Csu" group-title="Other",master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%22123c2a48-acd5-4f34-98a6-5a60fe68ed9f%22%2Csu
+https://dai.google.com/linear/hls/pa/event/xrVrJYTmTfitfXBQfeZByQ/stream/1603d8df-f37a-4541-b901-2106519ab355:TUL/master.m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%22123c2a48-acd5-4f34-98a6-5a60fe68ed9f%22%2Csu
+#EXTINF:-1 tvg-name="master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%2219afd4ca-86d0-4fc9-afdf-c9044cff16a8%22%2Csu" group-title="Other",master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%2219afd4ca-86d0-4fc9-afdf-c9044cff16a8%22%2Csu
+https://dai.google.com/linear/hls/pa/event/9Lq0ERvoSR-z9AwvFS-xYA/stream/e05b85a5-03b0-4ab5-82f1-c00016f37861:TUL/master.m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%2219afd4ca-86d0-4fc9-afdf-c9044cff16a8%22%2Csu
+#EXTINF:-1 tvg-name="master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%221fe05e89-3c4d-4f0d-ae29-a8a4b4c17a4a%22%2Csu" group-title="Other",master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%221fe05e89-3c4d-4f0d-ae29-a8a4b4c17a4a%22%2Csu
+https://dai.google.com/linear/hls/pa/event/JUr94WL2QAiVpGNHY5n5dA/stream/4c90f170-3d04-443f-8e8f-478e0e2be593:DLS/master.m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%221fe05e89-3c4d-4f0d-ae29-a8a4b4c17a4a%22%2Csu
+#EXTINF:-1 tvg-name="master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%2238e12edb-fa25-41ea-8591-6451f72bc918%22%2Csu" group-title="Other",master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%2238e12edb-fa25-41ea-8591-6451f72bc918%22%2Csu
+https://dai.google.com/linear/hls/pa/event/v4CTWEdUSzqQgJtYB9rmrw/stream/390bfd06-dfc0-4ae1-b500-cdbf0ce4acb4:TUL/master.m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%2238e12edb-fa25-41ea-8591-6451f72bc918%22%2Csu
+#EXTINF:-1 tvg-name="master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%22580270aa-07ea-47b5-92bc-84b729c0f8b0%22%2Csu" group-title="Other",master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%22580270aa-07ea-47b5-92bc-84b729c0f8b0%22%2Csu
+https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/3ac95f8d-b827-4390-96d4-b00193cb2cbb:DLS/master.m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%22580270aa-07ea-47b5-92bc-84b729c0f8b0%22%2Csu
+#EXTINF:-1 tvg-name="master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%225c99f9ae-bf19-47a3-88cb-903a6cb1e821%22%2Csu" group-title="Other",master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%225c99f9ae-bf19-47a3-88cb-903a6cb1e821%22%2Csu
+https://dai.google.com/linear/hls/pa/event/ydKcHHYQSt27vbSP38xMVw/stream/07be73db-9876-4d79-b40f-8c1dd2fea762:TUL/master.m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%225c99f9ae-bf19-47a3-88cb-903a6cb1e821%22%2Csu
+#EXTINF:-1 tvg-name="master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%2273d0d9fa-223d-4f78-8f10-ad1371fb5099%22%2Csu" group-title="Other",master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%2273d0d9fa-223d-4f78-8f10-ad1371fb5099%22%2Csu
+https://dai.google.com/linear/hls/pa/event/7f3Wv6f7QEKfQna22jHqLQ/stream/5b50bf4c-d5f9-4b85-9475-33dcbbb84138:TUL/master.m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%2273d0d9fa-223d-4f78-8f10-ad1371fb5099%22%2Csu
+#EXTINF:-1 tvg-name="master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%22830d54f7-e07d-4633-bb61-af0ac48363ef%22%2Csu" group-title="Other",master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%22830d54f7-e07d-4633-bb61-af0ac48363ef%22%2Csu
+https://dai.google.com/linear/hls/pa/event/9Lq0ERvoSR-z9AwvFS-xYA/stream/725a3535-a43d-434e-8bb0-0ef1d2a822c7:TUL/master.m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%22830d54f7-e07d-4633-bb61-af0ac48363ef%22%2Csu
+#EXTINF:-1 tvg-name="master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%22b8f29c6f-199a-4d21-8b13-c8e056760d4a%22%2Csu" group-title="Other",master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%22b8f29c6f-199a-4d21-8b13-c8e056760d4a%22%2Csu
+https://dai.google.com/linear/hls/pa/event/JUr94WL2QAiVpGNHY5n5dA/stream/ed22e438-6fbc-44cf-8a00-9a3b0c47f4bb:DLS/master.m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%22b8f29c6f-199a-4d21-8b13-c8e056760d4a%22%2Csu
+#EXTINF:-1 tvg-name="master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%22c969955c-a77f-4500-83c0-1dca9e1c8c06%22%2Csu" group-title="Other",master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%22c969955c-a77f-4500-83c0-1dca9e1c8c06%22%2Csu
+https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/290478b1-8773-4267-9b41-5dca36062915:DLS/master.m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%22c969955c-a77f-4500-83c0-1dca9e1c8c06%22%2Csu
+#EXTINF:-1 tvg-name="master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%22e18ed681-c2b6-4990-9dc3-56f666f67c7f%22%2Csu" group-title="Other",master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%22e18ed681-c2b6-4990-9dc3-56f666f67c7f%22%2Csu
+https://dai.google.com/linear/hls/pa/event/9Lq0ERvoSR-z9AwvFS-xYA/stream/56ba33f7-298c-4902-9713-d03cc6de2be3:DLS/master.m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%22e18ed681-c2b6-4990-9dc3-56f666f67c7f%22%2Csu
+#EXTINF:-1 tvg-name="master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%22ef6fb849-a81d-4fa0-88e0-b0c029975797%22%2Csu" group-title="Other",master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%22ef6fb849-a81d-4fa0-88e0-b0c029975797%22%2Csu
+https://dai.google.com/linear/hls/pa/event/9Lq0ERvoSR-z9AwvFS-xYA/stream/be26d45c-676f-4587-a00c-1cdc17e318aa:DLS/master.m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%22ef6fb849-a81d-4fa0-88e0-b0c029975797%22%2Csu
+#EXTINF:-1 tvg-name="master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%22fe29b2fd-b8c6-4a61-bfd8-3726238c99f9%22%2Csu" group-title="Other",master m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%22fe29b2fd-b8c6-4a61-bfd8-3726238c99f9%22%2Csu
+https://dai.google.com/linear/hls/pa/event/xrVrJYTmTfitfXBQfeZByQ/stream/dbaff84c-1d17-45e8-ab49-5850b8aecab1:ATL/master.m3u8?CMCD=mtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%22fe29b2fd-b8c6-4a61-bfd8-3726238c99f9%22%2Csu
+#EXTINF:-1 tvg-name="Sony Sports Ten 1 (1080p)" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Sports",Sony Sports Ten 1 (1080p)
+https://dai.google.com/linear/hls/event/wG75n5U8RrOKiFzaWObXbA/master.m3u8
