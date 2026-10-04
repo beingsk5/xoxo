@@ -1,36 +1,14 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
-#EXTINF:-1 tvg-name="Zee Business" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/ZEEDIGITAL/LIVECHANNEL/67ed20afb9965350035ecc50/images/LOGO/LOGO_3scYDc5V6_Zbusiness_logo-for-larg.png" group-title="Business",Zee Business
-https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/in/ZMCL/ZeeBusiness.m3u8
+#EXTINF:-1 tvg-name="cartoon network" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_2010_logo.svg/960px-Cartoon_Network_2010_logo.svg.png" group-title="Animation",cartoon network
+https://github.com/CODERX24/tv/raw/refs/heads/master/CARTOONNETWORK.m3u8
+#EXTINF:-1 tvg-name="cartoon network" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_2010_logo.svg/960px-Cartoon_Network_2010_logo.svg.png" group-title="Animation",cartoon network
+https://github.com/CODERX24/tv/blob/master/CARTOONNETWORK.m3u8?raw=true
 #EXTINF:-1 tvg-name="Asianet HD (720p)" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/7408/1782289617408-h.jpg" group-title="Entertainment",Asianet HD (720p)
 https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/in/YuppTV/AsianetHD.m3u8
-#EXTINF:-1 tvg-name="Colors Gujarati (396p)" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/Colors_Transparent_16069908-8494-4eb4-bd40-5afca3969088.png" group-title="Entertainment",Colors Gujarati (396p)
-https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/in/YuppTV/ColorsGujarati.m3u8
-#EXTINF:-1 tvg-name="star suvarna hd" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/6396/1782290646396-h.jpg" group-title="Entertainment",star suvarna hd
-https://github.com/avindiaultd/TV/raw/refs/heads/main/Star_SuvarnaHD.m3u8
-#EXTINF:-1 tvg-name="star suvarna hd" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/6396/1782290646396-h.jpg" group-title="Entertainment",star suvarna hd
-https://github.com/avindiaultd/TV/blob/main/Star_SuvarnaHD.m3u8?raw=true
-#EXTINF:-1 tvg-name="star suvarna hd" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/6396/1782290646396-h.jpg" group-title="Entertainment",star suvarna hd
-https://raw.githubusercontent.com/avindiaultd/TV/refs/heads/main/Star_SuvarnaHD.m3u8
-#EXTINF:-1 tvg-name="Zee Bangla HD (720p)" tvg-logo="https://i.imgur.com/zTGTWa8.png" group-title="Entertainment",Zee Bangla HD (720p)
-https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/in/YuppTV/ZeeBanglaHD.m3u8
-#EXTINF:-1 tvg-name="Zee Marathi HD (720p)" tvg-logo="https://i.imgur.com/vv9ysD3.png" group-title="Entertainment",Zee Marathi HD (720p)
-https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/in/YuppTV/ZeeMarathiHD.m3u8
 #EXTINF:-1 tvg-name="Zee Tamil News (720p)" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ZEE_TAMIZH/images/LOGO_HD/image.png" group-title="Entertainment",Zee Tamil News (720p)
 https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/in/ZMCL/ZeeTamilNews.m3u8
-#EXTINF:-1 tvg-name="Zee Telugu HD" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022S99J.png?lock=720x540" group-title="Entertainment",Zee Telugu HD
-https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/in/YuppTV/ZeeTeluguHD.m3u8
-#EXTINF:-1 tvg-name="tlc" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/TLC%20HD.png" group-title="Lifestyle",tlc
-https://github.com/spun-pitak/iptv/raw/refs/heads/main/TLC.m3u8
-#EXTINF:-1 tvg-name="tlc" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/TLC%20HD.png" group-title="Lifestyle",tlc
-https://github.com/spun-pitak/iptv/blob/main/TLC.m3u8?raw=true
 #EXTINF:-1 tvg-name="Bollywood HD Russia (576p)" group-title="Movies",Bollywood HD Russia (576p)
 https://xykt-fix.github.io/cinerama_edge01/hls/BOLLYWOOD_RU/Movie009.m3u8
-#EXTINF:-1 tvg-name="star gold select hd" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/6567/1784547656567-h.jpg" group-title="Movies",star gold select hd
-https://github.com/Sumon-Feni/IPTV/raw/refs/heads/main/Star_Gold_Select_HD.m3u8
-#EXTINF:-1 tvg-name="star gold select hd" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/6567/1784547656567-h.jpg" group-title="Movies",star gold select hd
-https://github.com/Sumon-Feni/IPTV/blob/main/Star_Gold_Select_HD.m3u8?raw=true
-#EXTINF:-1 tvg-name="Zee Cinema APAC (720p)" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022HVX3.png?lock=720x540" group-title="Movies",Zee Cinema APAC (720p)
-https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/sg/YuppTV/ZeeCinemaAPAC.m3u8
 #EXTINF:-1 tvg-name="NDTV 24x7 (720p)" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/NDTV24x7_Transparent_9b042a6f-d40f-465a-998f-627ee6841919.png" group-title="News",NDTV 24x7 (720p)
 https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/in/YuppTV/NDTV24x7.m3u8
 #EXTINF:-1 tvg-name="NDTV India (720p)" tvg-logo="https://dtil.tmsimg.com/assets/s157588_ld_h15_aa.png?lock=720x540" group-title="News",NDTV India (720p)
@@ -39,59 +17,7 @@ https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main
 https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/in/YuppTV/RepublicBharat.m3u8
 #EXTINF:-1 tvg-name="Republic TV (1080p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Public%20TV.png" group-title="News",Republic TV (1080p)
 https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/in/YuppTV/RepublicTV.m3u8
-#EXTINF:-1 tvg-name="star bharat hd" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/8704/1782288318704-h.jpg" group-title="News",star bharat hd
-https://github.com/Sumon-Feni/IPTV/raw/refs/heads/main/Star_Bharat_HD.m3u8
 #EXTINF:-1 tvg-name="Times Now Navbharat (1080p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/TIMES%20NOW.png" group-title="News",Times Now Navbharat (1080p)
 https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/in/YuppTV/TimesNowNavbharat.m3u8
-#EXTINF:-1 tvg-name="Zee 24 Ghanta" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022KGXP.png?lock=720x540" group-title="News",Zee 24 Ghanta
-https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/in/ZMCL/Zee24Ghanta.m3u8
-#EXTINF:-1 tvg-name="Zee 24 Kalak" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG00230P1R.png?lock=720x540" group-title="News",Zee 24 Kalak
-https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/in/ZMCL/Zee24Kalak.m3u8
-#EXTINF:-1 tvg-name="Zee 24 Taas" tvg-logo="https://english.cdn.zeenews.com/images/logo/zee-24-taas-08.svg" group-title="News",Zee 24 Taas
-https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/in/ZMCL/Zee24Taas.m3u8
-#EXTINF:-1 tvg-name="Zee Bharat" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Zee_Bharat_2025.svg/960px-Zee_Bharat_2025.svg.png" group-title="News",Zee Bharat
-https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/in/ZMCL/ZeeBharat.m3u8
 #EXTINF:-1 tvg-name="Zee Bihar Jharkhand (720p)" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG00230Y44.png?lock=720x540" group-title="News",Zee Bihar Jharkhand (720p)
 https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/in/YuppTV/ZeeBiharJharkhand.m3u8
-#EXTINF:-1 tvg-name="Zee Bihar Jharkhand (720p)" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG00230Y44.png?lock=720x540" group-title="News",Zee Bihar Jharkhand (720p)
-https://raw.githubusercontent.com/Alstruit/adaptive-streams/alstruit-4_24_in/streams/in/ZeeBiharJharkhand.m3u8
-#EXTINF:-1 tvg-name="Zee Kannada News" tvg-logo="https://english.cdn.zeenews.com/images/logo/zee-kannada-logo-20.svg" group-title="News",Zee Kannada News
-https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/in/ZMCL/ZeeKannadaNews.m3u8
-#EXTINF:-1 tvg-name="Zee UP UK" group-title="News",Zee UP UK
-https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/in/ZMCL/ZeeUPUttarakhand.m3u8
-#EXTINF:-1 tvg-name="epg xml" group-title="Other",epg xml
-https://sulthanpamenan.github.io/transmedia-playlist/epg.xml
-#EXTINF:-1 tvg-name="Fancode_hls_m3u8 Json" group-title="Other",Fancode_hls_m3u8 Json
-https://raw.githubusercontent.com/byte-capsule/FanCode-Hls-Fetcher/main/Fancode_hls_m3u8.Json
-#EXTINF:-1 tvg-name="Fancode_hls_m3u8 Json" group-title="Other",Fancode_hls_m3u8 Json
-https://github.com/byte-capsule/FanCode-Hls-Fetcher/raw/refs/heads/main/Fancode_hls_m3u8.Json
-#EXTINF:-1 tvg-name="Fancode_hls_m3u8 Json?raw=true" group-title="Other",Fancode_hls_m3u8 Json?raw=true
-https://github.com/byte-capsule/FanCode-Hls-Fetcher/blob/main/Fancode_hls_m3u8.Json?raw=true
-#EXTINF:-1 tvg-name="Play m3u8" group-title="Other",Play m3u8
-https://github.com/fardinnb864457h/Colors-HD/raw/refs/heads/main/Play.m3u8
-#EXTINF:-1 tvg-name="Play m3u8?raw=true" group-title="Other",Play m3u8?raw=true
-https://github.com/fardinnb864457h/Colors-HD/blob/main/Play.m3u8?raw=true
-#EXTINF:-1 tvg-name="tv txt" group-title="Other",tv txt
-https://github.com/mayaxcn/getM3U8/raw/refs/heads/master/tv.txt
-#EXTINF:-1 tvg-name="tv txt?raw=true" group-title="Other",tv txt?raw=true
-https://github.com/mayaxcn/getM3U8/blob/master/tv.txt?raw=true
-#EXTINF:-1 tvg-name="WGAL-DT3 (1080p) [Geo-blocked]" group-title="Other",WGAL-DT3 (1080p) [Geo-blocked]
-https://lowa8026-cmyk.github.io/iptv/WGAL-DT3/index.m3u8
-#EXTINF:-1 tvg-name="Sri Sankara" group-title="Religious",Sri Sankara
-https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/in/SriSankara.m3u8
-#EXTINF:-1 tvg-name="Star Sports Select 1 HD" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Sports",Star Sports Select 1 HD
-https://github.com/sportlive18/jio-tv-auto-update-playlist/raw/refs/heads/main/Star.m3u
-#EXTINF:-1 tvg-name="Star Sports Select 1 HD" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Sports",Star Sports Select 1 HD
-https://github.com/sportlive18/jio-tv-auto-update-playlist/blob/main/Star.m3u?raw=true
-#EXTINF:-1 tvg-name="star sports select 2" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/7266/1783001217266-h.jpg" group-title="Sports",star sports select 2
-https://raw.githubusercontent.com/avindiaultd/TV/refs/heads/main/Star_SportsSelect2HD.m3u8
-#EXTINF:-1 tvg-name="star sports select 2" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/7266/1783001217266-h.jpg" group-title="Sports",star sports select 2
-https://github.com/avindiaultd/TV/blob/main/Star_SportsSelect2HD.m3u8?raw=true
-#EXTINF:-1 tvg-name="star sports select 2" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/7266/1783001217266-h.jpg" group-title="Sports",star sports select 2
-https://github.com/avindiaultd/TV/raw/refs/heads/main/Star_SportsSelect2HD.m3u8
-#EXTINF:-1 tvg-name="star sports select 2" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/7266/1783001217266-h.jpg" group-title="Sports",star sports select 2
-https://github.com/avindiaultd/TV/raw/794772c3b99ce84ba22cdd2ad754ecba51fad0b6/Star_SportsSelect2HD.m3u8
-#EXTINF:-1 tvg-name="star sports select 2" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/7266/1783001217266-h.jpg" group-title="Sports",star sports select 2
-https://github.com/avindiaultd/TV/blob/794772c3b99ce84ba22cdd2ad754ecba51fad0b6/Star_SportsSelect2HD.m3u8?raw=true
-#EXTINF:-1 tvg-name="star sports select 2" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/7266/1783001217266-h.jpg" group-title="Sports",star sports select 2
-https://raw.githubusercontent.com/avindiaultd/TV/794772c3b99ce84ba22cdd2ad754ecba51fad0b6/Star_SportsSelect2HD.m3u8

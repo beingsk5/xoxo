@@ -1,28 +1,6 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
-#EXTINF:-1 tvg-name="Sony Yay! (1080p)" tvg-logo="https://dtil.tmsimg.com/assets/s159100_ld_h15_aa.png?lock=720x540" group-title="Animation",Sony Yay! (1080p)
-https://cloudplay-sonyliv.pages.dev/yay.m3u8
-#EXTINF:-1 tvg-name="Sony Marathi (1080p)" tvg-logo="https://dtil.tmsimg.com/assets/s157970_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Sony Marathi (1080p)
-https://cloudplay-sonyliv.pages.dev/marathi.m3u8
-#EXTINF:-1 tvg-name="Sony Marathi SD" tvg-logo="https://dtil.tmsimg.com/assets/s157970_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Sony Marathi SD
-https://sonyliv.07in.workers.dev/live/999/999/sony-marathi.m3u8
-#EXTINF:-1 tvg-name="Sony Pal" tvg-logo="https://dtil.tmsimg.com/assets/s157973_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Sony Pal
-https://sonyliv.07in.workers.dev/live/999/999/sony-pal.m3u8
-#EXTINF:-1 tvg-name="Sony Pal (1080p)" tvg-logo="https://dtil.tmsimg.com/assets/s157973_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Sony Pal (1080p)
-https://cloudplay-sonyliv.pages.dev/pal.m3u8
-#EXTINF:-1 tvg-name="Sony SAB HD (1080p)" tvg-logo="https://dtil.tmsimg.com/assets/s159099_ld_h15_ab.png?lock=720x540" group-title="Entertainment",Sony SAB HD (1080p)
-https://cloudplay-sonyliv.pages.dev/sabhd.m3u8
-#EXTINF:-1 tvg-name="Sony Yay Hindi" group-title="Kids",Sony Yay Hindi
-https://sonyliv.07in.workers.dev/live/999/999/sony-yay.m3u8
-#EXTINF:-1 tvg-name="Sony Max SD" tvg-logo="https://dtil.tmsimg.com/assets/s157590_ld_h15_aa.png?lock=720x540" group-title="Movies",Sony Max SD
-https://sonyliv.07in.workers.dev/live/999/999/sony-max.m3u8
-#EXTINF:-1 tvg-name="Sony MAX2" tvg-logo="https://dtil.tmsimg.com/assets/s157590_ld_h15_aa.png?lock=720x540" group-title="Movies",Sony MAX2
-https://sonyliv.07in.workers.dev/live/999/999/sony-max-2.m3u8
-#EXTINF:-1 tvg-name="Sony Pix HD (1080p)" tvg-logo="https://dtil.tmsimg.com/assets/s143803_ld_h15_aa.png?lock=720x540" group-title="Movies",Sony Pix HD (1080p)
-https://cloudplay-sonyliv.pages.dev/pixhd.m3u8
-#EXTINF:-1 tvg-name="Sony BBC Earth HD (1080p)" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Other",Sony BBC Earth HD (1080p)
-https://cloudplay-sonyliv.pages.dev/bbcearthhd.m3u8
-#EXTINF:-1 tvg-name="Sony Max HD" tvg-logo="https://dtil.tmsimg.com/assets/s157593_ld_h15_aa.png?lock=720x540" group-title="Sports",Sony Max HD
-https://sonyliv.07in.workers.dev/live/999/999/sony-max-hd.m3u8
+#EXTINF:-1 tvg-name="ten5hd m3u8" group-title="Other",ten5hd m3u8
+https://cloudplay-sonyliv.pages.dev/ten5hd.m3u8
 #EXTINF:-1 tvg-name="Sony Sports Ten 1 (1080p)" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Sports",Sony Sports Ten 1 (1080p)
 https://cloudplay-sonyliv.pages.dev/ten1.m3u8
 #EXTINF:-1 tvg-name="Sony Sports Ten 1 HD (1080p)" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Sports",Sony Sports Ten 1 HD (1080p)
@@ -41,17 +19,3 @@ https://cloudplay-sonyliv.pages.dev/ten4.m3u8
 https://cloudplay-sonyliv.pages.dev/ten4hd.m3u8
 #EXTINF:-1 tvg-name="Sony Sports Ten 5 (1080p)" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Sports",Sony Sports Ten 5 (1080p)
 https://cloudplay-sonyliv.pages.dev/ten5.m3u8
-#EXTINF:-1 tvg-name="Sony Sports Ten 5 HD (1080p)" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Sports",Sony Sports Ten 5 HD (1080p)
-https://cloudplay-sonyliv.pages.dev/ten5hd.m3u8
-#EXTINF:-1 tvg-name="Sony Ten 1" tvg-logo="https://dtil.tmsimg.com/assets/s157591_ld_h15_aa.png?lock=720x540" group-title="Sports",Sony Ten 1
-https://sonyliv.07in.workers.dev/live/999/999/sony-sports-ten-1.m3u8
-#EXTINF:-1 tvg-name="Sony Ten 1 HD" group-title="Sports",Sony Ten 1 HD
-https://sonyliv.07in.workers.dev/live/999/999/sony-sports-ten-1-hd.m3u8
-#EXTINF:-1 tvg-name="Sony Ten 3 HD Hindi" group-title="Sports",Sony Ten 3 HD Hindi
-https://sonyliv.07in.workers.dev/live/999/999/sony-sports-ten-3-hd.m3u8
-#EXTINF:-1 tvg-name="Sony Ten 3 Hindi" group-title="Sports",Sony Ten 3 Hindi
-https://sonyliv.07in.workers.dev/live/999/999/sony-sports-ten-3.m3u8
-#EXTINF:-1 tvg-name="Sony Ten 4 Tamil" group-title="Sports",Sony Ten 4 Tamil
-https://sonyliv.07in.workers.dev/live/999/999/sony-sports-ten-4.m3u8
-#EXTINF:-1 tvg-name="Sony Ten 5" group-title="Sports",Sony Ten 5
-https://sonyliv.07in.workers.dev/live/999/999/sony-sports-ten-5.m3u8

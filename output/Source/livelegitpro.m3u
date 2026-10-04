@@ -1,15 +1,7 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
 #EXTINF:-1 tvg-name="ANB News (720p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/ANB%20News.png" group-title="News",ANB News (720p)
 https://server.livelegitpro.in:9899/anbnews/anbnews/index.m3u8
-#EXTINF:-1 tvg-name="Global India" group-title="News",Global India
-https://server.livelegitpro.in/globalindiatv/globalindiatv/video.m3u8
-#EXTINF:-1 tvg-name="index fmp4 m3u8" group-title="Other",index fmp4 m3u8
-https://ott.livelegitpro.in:9899/hnnnews/hnnnews/tracks-v1/index.fmp4.m3u8
-#EXTINF:-1 tvg-name="index m3u8" group-title="Other",index m3u8
-https://ott.livelegitpro.in:9899/hnnnews/hnnnews/index.m3u8
-#EXTINF:-1 tvg-name="index m3u8" group-title="Other",index m3u8
-https://server.livelegitpro.in/globalpunjab/globalpunjab/index.m3u8
-#EXTINF:-1 tvg-name="mono m3u8" group-title="Other",mono m3u8
-https://ott.livelegitpro.in:9899/hnnnews/hnnnews/tracks-v1a1/mono.m3u8
-#EXTINF:-1 tvg-name="Gospel TV India (576p)" tvg-logo="https://i.ibb.co/xhbZvzt/cropped-final-logo-300x127.png" group-title="Religious",Gospel TV India (576p)
-https://server.livelegitpro.in:9899/gospeltv/index.m3u8
+#EXTINF:-1 tvg-name="Sudarshan News (720p)" tvg-logo="https://dtil.tmsimg.com/assets/s143870_ld_h15_aa.png?lock=720x540" group-title="News",Sudarshan News (720p)
+https://ott.livelegitpro.in/pusa/sudarshantv/index.m3u8
+#EXTINF:-1 tvg-name="TV45 (1080p)" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/TV45.png" group-title="News",TV45 (1080p)
+https://server.livelegitpro.in/bnews24/bnews24/video.m3u8

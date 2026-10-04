@@ -1,0 +1,25 @@
+#EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
+#EXTINF:-1 tvg-name="News 12 Brooklyn" group-title="News",News 12 Brooklyn
+http://hls.iptv.optimum.net/news12/nipadlive/index_new.m3u8?callsign=N12KN
+#EXTINF:-1 tvg-name="News 12 Connecticut" group-title="News",News 12 Connecticut
+http://hls.iptv.optimum.net/news12/nipadlive/index_new.m3u8?callsign=N12CT_WEST
+#EXTINF:-1 tvg-name="News 12 Hudson Valley" group-title="News",News 12 Hudson Valley
+http://hls.iptv.optimum.net/news12/nipadlive/index_new.m3u8?callsign=N12HV
+#EXTINF:-1 tvg-name="News 12 Long Island" group-title="News",News 12 Long Island
+http://hls.iptv.optimum.net/news12/nipadlive/index_new.m3u8?callsign=N12LI_WEST
+#EXTINF:-1 tvg-name="News 12 New Jersey" group-title="News",News 12 New Jersey
+http://hls.iptv.optimum.net/news12/nipadlive/index_new.m3u8?callsign=N12NJ_CENTRAL
+#EXTINF:-1 tvg-name="News 12 The Bronx" group-title="News",News 12 The Bronx
+http://hls.iptv.optimum.net/news12/nipadlive/index_new.m3u8?callsign=N12BX
+#EXTINF:-1 tvg-name="News 12 Westchester" group-title="News",News 12 Westchester
+http://hls.iptv.optimum.net/news12/nipadlive/index_new.m3u8?callsign=N12WH_WESTCHESTER
+#EXTINF:-1 tvg-name="News 12+ Connecticut" group-title="News",News 12+ Connecticut
+http://hls.iptv.optimum.net/news12/nipadlive/index_new.m3u8?callsign=N12TW_CT
+#EXTINF:-1 tvg-name="News 12+ Hudson Valley" group-title="News",News 12+ Hudson Valley
+http://hls.iptv.optimum.net/news12/nipadlive/index_new.m3u8?callsign=N12TW_WC
+#EXTINF:-1 tvg-name="News 12+ Long Island" group-title="News",News 12+ Long Island
+http://hls.iptv.optimum.net/news12/nipadlive/index_new.m3u8?callsign=N12TW_LI
+#EXTINF:-1 tvg-name="News 12+ New Jersey" group-title="News",News 12+ New Jersey
+http://hls.iptv.optimum.net/news12/nipadlive/index_new.m3u8?callsign=N12TW_NJ
+#EXTINF:-1 tvg-name="News 12+ New York City" group-title="News",News 12+ New York City
+http://hls.iptv.optimum.net/news12/nipadlive/index_new.m3u8?callsign=N12TW_NYC

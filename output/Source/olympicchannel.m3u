@@ -1,0 +1,19 @@
+#EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
+#EXTINF:-1 tvg-name="Olympic Channel" group-title="Other",Olympic Channel
+http://ott-live.olympicchannel.com/out/u/OC1_3.m3u8
+#EXTINF:-1 tvg-name="Olympic Channel (HD)" group-title="Other",Olympic Channel (HD)
+http://ott-live.olympicchannel.com/out/u/OC1_2.m3u8
+#EXTINF:-1 tvg-name="Olympic Channel (SD)" group-title="Other",Olympic Channel (SD)
+http://ott-live.olympicchannel.com/out/u/OC1_3.m3u8?fluxustv.m3u8
+#EXTINF:-1 tvg-name="Olympic Channel (UHD)" group-title="Other",Olympic Channel (UHD)
+http://ott-live.olympicchannel.com/out/u/OC1_1.m3u8?fluxustv.m3u8
+#EXTINF:-1 tvg-name="Olympic Channel 2" group-title="Other",Olympic Channel 2
+http://ott-live.olympicchannel.com/out/u/OC1_1.m3u8
+#EXTINF:-1 tvg-name="Olympic Channel 3" group-title="Other",Olympic Channel 3
+http://ott-live.olympicchannel.com/out/u/OC2_1.m3u8
+#EXTINF:-1 tvg-name="Olympic Channel 4" group-title="Other",Olympic Channel 4
+http://ott-live.olympicchannel.com/out/u/OC3_1.m3u8
+#EXTINF:-1 tvg-name="Olympic Channel 5" group-title="Other",Olympic Channel 5
+http://ott-live.olympicchannel.com/out/u/OC4_1.m3u8
+#EXTINF:-1 tvg-name="Olympic Channel 6" group-title="Other",Olympic Channel 6
+http://ott-live.olympicchannel.com/out/u/OC5_1.m3u8

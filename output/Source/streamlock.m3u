@@ -1,19 +1,19 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
-#EXTINF:-1 tvg-name="Italia 2 (480p) [Geo-blocked]" group-title="Entertainment",Italia 2 (480p) [Geo-blocked]
-https://59d7d6f47d7fc.streamlock.net/italia2/italia2/playlist.m3u8
+#EXTINF:-1 tvg-name="News Live (720p)" tvg-logo="https://dtil.tmsimg.com/assets/s143595_ld_h15_aa.png?lock=720x540" group-title="News",News Live (720p)
+https://5b48d7e1b4bce.streamlock.net/myapp/newslive/playlist.m3u8
 #EXTINF:-1 tvg-name="Antenna Tre (480p) [Geo-blocked]" group-title="Other",Antenna Tre (480p) [Geo-blocked]
 https://59d8c0cee6f3d.streamlock.net/antennatreveneto/antennatreveneto.stream/playlist.m3u8
 #EXTINF:-1 tvg-name="Canal 22 Nacional (720p) [Geo-blocked]" group-title="Other",Canal 22 Nacional (720p) [Geo-blocked]
 https://5fc584f3f19c9.streamlock.net/canal22/smil:canal22.smil/playlist.m3u8
-#EXTINF:-1 tvg-name="chunklist m3u8" group-title="Other",chunklist m3u8
-https://5ad386ff92705.streamlock.net/live_transcoder/ngrp:zindagitv.stream_all/chunklist.m3u8
-#EXTINF:-1 tvg-name="O Dia TV" group-title="Other",O Dia TV
-https://6836041ea1117.streamlock.net/tvodia/tvodia/playlist.m3u8
-#EXTINF:-1 tvg-name="playlist m3u8" group-title="Other",playlist m3u8
-https://5a1178b42cc03.streamlock.net/8212/8212/playlist.m3u8
+#EXTINF:-1 tvg-name="Folk TV" group-title="Other",Folk TV
+http://584b0aa350b92.streamlock.net:1935/folk-tv/myStream.sdp/playlist.m3u8?fluxustv.m3u8
+#EXTINF:-1 tvg-name="Latinos Up! TV" group-title="Other",Latinos Up! TV
+https://5b38ce71f1f00.streamlock.net/8080/8080/chunklist_w956830983.m3u8
+#EXTINF:-1 tvg-name="Miami TV" group-title="Other",Miami TV
+https://59ec5453559f0.streamlock.net/miamitv/smil:miamitvROKU/chunklist_w1195980091_b2592000.m3u8
+#EXTINF:-1 tvg-name="Miami TV Jenny Live" group-title="Other",Miami TV Jenny Live
+https://59ec5453559f0.streamlock.net/mexicotv/smil:miamitvmexicoROKU/chunklist_w1869403172_b1896000.m3u8
+#EXTINF:-1 tvg-name="Miami TV Latino" group-title="Other",Miami TV Latino
+https://59ec5453559f0.streamlock.net/canal18/smil:canal18/chunklist_w577650521_b2592000.m3u8
 #EXTINF:-1 tvg-name="Alkarma TV Youth & English (1080p) [Not 24/7]" group-title="Religious",Alkarma TV Youth & English (1080p) [Not 24/7]
 https://5aafcc5de91f1.streamlock.net/alkarmatv.com/alkarmaus.smil/playlist.m3u8
-#EXTINF:-1 tvg-name="Madha TV (600p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Madha%20TV.png" group-title="Religious",Madha TV (600p)
-https://60e68b19dd194.streamlock.net:55/madhatv/madhatv.stream_HDp/playlist.m3u8
-#EXTINF:-1 tvg-name="Mercy TV (India) (1080p)" tvg-logo="https://i.imgur.com/klNH4tV.png" group-title="Religious",Mercy TV (India) (1080p)
-https://5dd3981940faa.streamlock.net/mercytv/mercytv/playlist.m3u8

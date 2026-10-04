@@ -1,0 +1,5 @@
+#EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
+#EXTINF:-1 tvg-name="getConfig" group-title="Other",getConfig
+https://www.douyu.com/wgapi/live/match/getConfig
+#EXTINF:-1 tvg-name="getConfig?" group-title="Other",getConfig?
+https://www.douyu.com/wgapi/live/match/getConfig?

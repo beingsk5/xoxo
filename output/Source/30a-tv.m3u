@@ -1,3 +1,11 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
-#EXTINF:-1 tvg-name="30atvmovies m3u8" group-title="Movies",30atvmovies m3u8
-https://30a-tv.com/feeds/pzaz/30atvmovies.m3u8
+#EXTINF:-1 tvg-name="30A Music" group-title="Music",30A Music
+http://30a-tv.com/music.m3u8?fluxustv.m3u8
+#EXTINF:-1 tvg-name="30A Investment Pitch" group-title="Other",30A Investment Pitch
+http://www.30a-tv.com/InvPit.m3u8?fluxustv.m3u8
+#EXTINF:-1 tvg-name="30A Sidewalks" group-title="Other",30A Sidewalks
+http://30a-tv.com/sidewalks.m3u8
+#EXTINF:-1 tvg-name="30A TV" group-title="Other",30A TV
+http://30a-tv.com/my999.m3u8
+#EXTINF:-1 tvg-name="30A TV" group-title="Other",30A TV
+http://30a-tv.com/my999.m3u8?fluxustv.m3u8

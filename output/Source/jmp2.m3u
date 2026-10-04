@@ -1,8 +1,6 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
 #EXTINF:-1 tvg-name="Discovery Turbo TV" tvg-logo="https://dtil.tmsimg.com/assets/s159108_ld_h15_aa.png?lock=720x540" group-title="Auto",Discovery Turbo TV
 https://jmp2.uk/stvp-USBC3600005U9
-#EXTINF:-1 tvg-name="CNBC TV18" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/CNBC_TV18_2026.svg/960px-CNBC_TV18_2026.svg.png" group-title="Business",CNBC TV18
-https://jmp2.uk/stvp-INBD1300008ZY
 #EXTINF:-1 tvg-name="HISTORY TV18" tvg-logo="https://dtil.tmsimg.com/assets/s143133_ld_h15_aa.png?lock=720x540" group-title="Documentary",HISTORY TV18
 https://jmp2.uk/stvp-IN1600008DN
 #EXTINF:-1 tvg-name="HISTORY TV18 - Hindi" tvg-logo="https://dtil.tmsimg.com/assets/s143133_ld_h15_aa.png?lock=720x540" group-title="Documentary",HISTORY TV18 - Hindi
@@ -23,16 +21,24 @@ https://jmp2.uk/stvp-IN800021X7
 https://jmp2.uk/stvp-GB800002OP
 #EXTINF:-1 tvg-name="B4U Bhojpuri" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/B4U-BHOJPURI-LOGO-transparent.png" group-title="Movies",B4U Bhojpuri
 https://jmp2.uk/stvp-IN39000307N
+#EXTINF:-1 tvg-name="B4U Kadak" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/B4U-Kadak-BLACK-transparent.png" group-title="Movies",B4U Kadak
+https://jmp2.uk/stvp-IN39000187Z
+#EXTINF:-1 tvg-name="B4U Movies" tvg-logo="https://dtil.tmsimg.com/assets/s140063_ld_h9_aa.png?lock=720x540" group-title="Movies",B4U Movies
+https://jmp2.uk/stvp-IN3900016WI
 #EXTINF:-1 tvg-name="Epic Bhojpuri" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/FILAMCHI_BHOJPURI_HINDI-transparent.png" group-title="Movies",Epic Bhojpuri
 https://jmp2.uk/stvp-IN800020ZZ
 #EXTINF:-1 tvg-name="9X Jalwa" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_9X_JALWA/images/LOGO_HD/image.png" group-title="Music",9X Jalwa
 https://jmp2.uk/stvp-INBC2800013L6
 #EXTINF:-1 tvg-name="9XM" tvg-logo="https://dtil.tmsimg.com/assets/s77447_ld_h15_aa.png?lock=720x540" group-title="Music",9XM
 https://jmp2.uk/stvp-IN38000050P
+#EXTINF:-1 tvg-name="B4U Music" tvg-logo="https://dtil.tmsimg.com/assets/s158141_ld_h15_aa.png?lock=720x540" group-title="Music",B4U Music
+https://jmp2.uk/stvp-IN3900017KM
 #EXTINF:-1 tvg-name="Epic Music" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Showbox-LOGO_2000_X_1125_Transpharent.png" group-title="Music",Epic Music
 https://jmp2.uk/stvp-IN8000196E
 #EXTINF:-1 tvg-name="Aaj Tak HD" tvg-logo="https://i.imgur.com/gS9Qkfy.png" group-title="News",Aaj Tak HD
 https://jmp2.uk/stvp-IN3800001ZH
+#EXTINF:-1 tvg-name="AajTak" group-title="News",AajTak
+https://jmp2.uk/stvp-IN3800004BF
 #EXTINF:-1 tvg-name="ABP Ananda" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/ABP_Ananda_logo.svg/500px-ABP_Ananda_logo.svg.png" group-title="News",ABP Ananda
 https://jmp2.uk/stvp-IN4000006CF
 #EXTINF:-1 tvg-name="ABP Asmita" tvg-logo="https://dtil.tmsimg.com/assets/s142519_ld_h15_aa.png?lock=720x540" group-title="News",ABP Asmita
@@ -43,14 +49,12 @@ https://jmp2.uk/stvp-IN4000005BW
 https://jmp2.uk/stvp-IN4600012BD
 #EXTINF:-1 tvg-name="Asianet News" tvg-logo="https://dtil.tmsimg.com/assets/s142679_ld_h15_aa.png?lock=720x540" group-title="News",Asianet News
 https://jmp2.uk/stvp-IN800012RO
-#EXTINF:-1 tvg-name="Asianet Suvarna News" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/ASIANET-SUVARNA-ENG--transparent.png" group-title="News",Asianet Suvarna News
-https://jmp2.uk/stvp-IN8000106W
 #EXTINF:-1 tvg-name="BBC News" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/BBC_Hindi.png" group-title="News",BBC News
 https://jmp2.uk/stvp-US4000033L
 #EXTINF:-1 tvg-name="CNN News18" group-title="News",CNN News18
 https://jmp2.uk/stvp-INBD1300009QZ
-#EXTINF:-1 tvg-name="Good News Today" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/GNT-Logo-2021_AT_FONT-transparent.png" group-title="News",Good News Today
-https://jmp2.uk/stvp-IN17000129W
+#EXTINF:-1 tvg-name="Euronews English (720p)" group-title="News",Euronews English (720p)
+https://jmp2.uk/plu-61de96114757070008d33cae.m3u8
 #EXTINF:-1 tvg-name="BABY SHARK TV" group-title="Other",BABY SHARK TV
 https://jmp2.uk/rok-40d73ba5be775428a377908b02033b4c.m3u8
 #EXTINF:-1 tvg-name="BABY SHARK TV" group-title="Other",BABY SHARK TV
@@ -67,23 +71,15 @@ https://jmp2.uk/stvp-IN4000555E
 https://jmp2.uk/stvp-AT2400001WV
 #EXTINF:-1 tvg-name="DDR TV-Archiv" group-title="Other",DDR TV-Archiv
 https://jmp2.uk/stvp-DE2400001DK
-#EXTINF:-1 tvg-name="DW" group-title="Other",DW
-https://jmp2.uk/stvp-GB1300001RX
-#EXTINF:-1 tvg-name="DW" group-title="Other",DW
-https://jmp2.uk/stvp-ES1300001QC
 #EXTINF:-1 tvg-name="Foodxp" group-title="Other",Foodxp
 https://jmp2.uk/stvp-IN3000003QJ
 #EXTINF:-1 tvg-name="Hollywood Desi" group-title="Other",Hollywood Desi
 https://jmp2.uk/stvp-IN3800010SH
-#EXTINF:-1 tvg-name="Love Nature English" group-title="Other",Love Nature English
-https://jmp2.uk/rok-479fe0d11f3f5132a3f36b617547da3b.m3u8
-#EXTINF:-1 tvg-name="plu-68487fb3f212bedacf5a53e3 m3u8" group-title="Other",plu-68487fb3f212bedacf5a53e3 m3u8
-https://jmp2.uk/plu-68487fb3f212bedacf5a53e3.m3u8
-#EXTINF:-1 tvg-name="Shark TV" group-title="Other",Shark TV
-https://jmp2.uk/stvp-FR4000002JN
 #EXTINF:-1 tvg-name="SPARK TV" group-title="Other",SPARK TV
 https://jmp2.uk/rok-eb1dbd690001553eacdf32d7b155b933.m3u8
 #EXTINF:-1 tvg-name="Zee One" group-title="Other",Zee One
 https://jmp2.uk/stvp-GBBD1100013BJ
 #EXTINF:-1 tvg-name="Divya" tvg-logo="https://dtil.tmsimg.com/assets/s143010_ld_h15_aa.png?lock=720x540" group-title="Religious",Divya
 https://jmp2.uk/stvp-INBD13000053R
+#EXTINF:-1 tvg-name="FIFA+ (720p)" group-title="Sports",FIFA+ (720p)
+https://jmp2.uk/plu-660c29b5aec9680008f5b4a4.m3u8

@@ -1,3 +1,7 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
 #EXTINF:-1 tvg-name="Blaze (576p) [Geo-blocked]" group-title="Entertainment",Blaze (576p) [Geo-blocked]
 https://live-blaze-ssai.simplestreamcdn.com/v1/master/774d979dd66704abea7c5b62cb34c6815fda0d35/blaze-live-broadcast-scte/index.m3u8
+#EXTINF:-1 tvg-name="Law & Crime" group-title="Other",Law & Crime
+https://live-lawandcrime.simplestreamcdn.com/landc_d1/live.m3u8
+#EXTINF:-1 tvg-name="Law & Crime 2" group-title="Other",Law & Crime 2
+https://live-lawandcrime.simplestreamcdn.com/landc_d2/live.m3u8

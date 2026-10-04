@@ -1,3 +1,17 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
-#EXTINF:-1 tvg-name="Bollywood Now" group-title="Other",Bollywood Now
-https://a.jsrdn.com/broadcast/d4dba2e3/+0000/hi/c.m3u8
+#EXTINF:-1 tvg-name="Movie Kingdom" group-title="Movies",Movie Kingdom
+https://a.jsrdn.com/broadcast/e9b4093a41/+0000/high/c.m3u8
+#EXTINF:-1 tvg-name="Brut." group-title="Other",Brut.
+http://a.jsrdn.com/broadcast/d5b47/+0000/low/c.m3u8
+#EXTINF:-1 tvg-name="byu TV" group-title="Other",byu TV
+http://a.jsrdn.com/broadcast/d5b46/+0000/high/c.m3u8
+#EXTINF:-1 tvg-name="Honor TV" group-title="Other",Honor TV
+https://a.jsrdn.com/broadcast/d5b48/+0000/low/c.m3u8
+#EXTINF:-1 tvg-name="Titanic TV" group-title="Other",Titanic TV
+https://a.jsrdn.com/broadcast/22719/+0000/hi/c.m3u8
+#EXTINF:-1 tvg-name="Venus TV (US Eastern)" group-title="Other",Venus TV (US Eastern)
+https://a.jsrdn.com/broadcast/22690/-0500/c.m3u8
+#EXTINF:-1 tvg-name="Venus TV (US Pacific)" group-title="Other",Venus TV (US Pacific)
+https://a.jsrdn.com/broadcast/22690/-0800/c.m3u8
+#EXTINF:-1 tvg-name="Sportskool" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Sports",Sportskool
+https://a.jsrdn.com/broadcast/22697/+0000/hi/c.m3u8
