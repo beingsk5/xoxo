@@ -1,0 +1,1360 @@
+"""Language scraper: discovers streams for every channel of one language.
+
+Pipeline (cheap/high-precision first, then breadth, then depth):
+
+  1. iptv-org     structured feed of known Indian streams (no search)
+  2. YuppTV       own pure-HTTP API fast path
+  3. code search  community playlist files: GitHub (repo search + tree
+                  enumeration; code search with GITHUB_TOKEN) and grep.app
+                  (GitHub/GitLab/Bitbucket/Codeberg, no token required)
+  4. site crawl   official channel websites from the iptv-org database,
+                  live-ish paths first, CRAWL_PAGES per site
+  5. web search   Bing / DuckDuckGo / Brave (parallel, per-engine breaker),
+                  including site: queries against the official domains
+  6. validate     probe + SCORE every candidate (scrapers.probe), cache the
+                  verdicts (scrapers.cache), mine pages that look like players
+                  and follow embedded players one level deeper (iframes/JS)
+  7. extract      yt-dlp on the few player pages nothing else could crack
+  8. rescore      measure playlist children so every kept URL has a real score
+
+Every accepted channel carries the score its probe produced; merge.py keeps
+the highest-scoring URL per channel.
+
+Resume-aware: channels, resume state and run counters are checkpoints in the
+SQLite store (`state/store.db`), so a killed job continues instead of
+starting over. The only file this module writes is `state/<lang>.jsonl`,
+the one-per-language transport artifact CI moves between jobs — `output/`
+receives nothing but published M3U + stats.
+"""
+import json
+import logging
+import os
+import random
+import re
+import sys
+import time
+from concurrent.futures import ThreadPoolExecutor, as_completed, FIRST_COMPLETED, wait
+from pathlib import Path
+from threading import Lock
+from typing import Dict, List, Optional, Set
+from urllib.parse import urlparse
+
+from scrapers.base import (
+    crawl_website, detect_source_name, engine_stats_summary,
+    extract_embeds, get_database,
+    is_blocked_domain, is_indian, is_live_candidate, parse_extinf,
+)
+from scrapers.cache import get_cache
+from scrapers.models import Channel, ResumeState, ScrapeResult
+from scrapers.nameindex import NameIndex, norm_name
+from scrapers.probe import Probe, probe_stream
+from scrapers.search import engine_list, search_with_tracking
+from scrapers.sources import extract as extract_source
+from scrapers.sources import github as github_source
+from scrapers.sources import grepapp as grepapp_source
+from scrapers.sources import iptvorg as iptvorg_source
+from scrapers.sources import siteapi as siteapi_source
+
+# Repo root on sys.path so channel_lists.py is importable as a top-level module
+# when this package is launched via `python -m scrapers.language`.
+_REPO_ROOT = str(Path(__file__).resolve().parent.parent)
+if _REPO_ROOT not in sys.path:
+    sys.path.insert(0, _REPO_ROOT)
+from channel_lists import load_ott_platforms  # noqa: E402
+
+log = logging.getLogger("scraper")
+
+BASE_DIR = Path(__file__).parent.parent
+CHANNEL_LISTS_DIR = BASE_DIR / "channel_lists"
+STATE_DIR = BASE_DIR / "state"           # store.db + per-language export files
+SEARCH_WORKERS = 10          # parallel query workers (engines pooled on top)
+VALIDATE_WORKERS = 25        # parallel URL probe workers
+CRAWL_WORKERS = 8            # parallel official-site crawlers
+RESUME_EVERY = 100           # persist resume state every N completed items
+SITES_CAP = int(os.environ.get("SITES_CAP", "40"))   # max official websites crawled per run
+URLS_PER_SITE = 300          # max URLs collected from a single site
+HARVEST_CAP = 3000           # max stream URLs mined from pages
+HARVEST_PER_PAGE = 40        # max stream URLs kept per page
+EXTRACT_CAP = int(os.environ.get("EXTRACT_CAP", "40"))   # yt-dlp pages / run
+RESCORE_CAP = int(os.environ.get("RESCORE_CAP", "400"))  # playlist children probed/run
+SITEAPI_MIN_LINKS = 3        # mine a page's JS only when static harvest is thin
+IFRAME_CAP = int(os.environ.get("IFRAME_CAP", "120"))   # embedded players probed/run
+IFRAME_BUDGET = 2.5          # seconds per embedded-player probe
+SEARCH_RESULTS = int(os.environ.get("SEARCH_RESULTS", "15"))  # results/query/engine
+
+
+def _load_shared_dead_urls() -> Set[str]:
+    """Dead URLs already probed by an earlier language job in this run.
+
+    PROBE_CACHE_DIR holds the `state-*` artifacts downloaded from sibling
+    jobs. Each file is a type-tagged JSONL (probe verdicts + channels);
+    `import_dir` merges them into this run's store, and the dead URLs come
+    back out as a set for cheap skip decisions.
+    """
+    d = os.environ.get("PROBE_CACHE_DIR", "")
+    if not d:
+        return set()
+    root = Path(d)
+    if not root.is_dir():
+        return set()
+    try:
+        get_cache().import_dir(root)
+    except Exception:
+        pass
+    urls: Set[str] = set()
+    for f in root.glob("*.txt"):
+        try:
+            for line in f.read_text(encoding="utf-8", errors="ignore").splitlines():
+                u = line.strip()
+                if u.startswith(("http://", "https://")):
+                    urls.add(u)
+        except OSError:
+            continue
+    return urls
+
+
+_GEO_BLOCKED_RE = re.compile(r"geo[\s_-]*blocked", re.IGNORECASE)
+
+
+def _is_geo_blocked_name(name: str) -> bool:
+    """True when the channel name carries a Geo-blocked annotation."""
+    return bool(_GEO_BLOCKED_RE.search(name or ""))
+
+
+class _LockSet:
+    """Thread-safe append-only set with size queries."""
+
+    def __init__(self):
+        self._lock = Lock()
+        self._data: Set[str] = set()
+
+    def update(self, items):
+        if not items:
+            return
+        with self._lock:
+            self._data.update(items)
+
+    def as_set(self) -> Set[str]:
+        with self._lock:
+            return set(self._data)
+
+
+class LanguageScraper:
+    """Scrapes streams for all channels of a given language.
+
+    Runs uncapped by default (no time budget): search, crawl and validation
+    continue until their work lists are exhausted. A budget is only applied
+    when an explicit --timeout-minutes value is passed (optional, off in CI).
+    """
+
+    def __init__(
+        self,
+        language: str,
+        max_queries: int = 0,
+        timeout_minutes: int = 0,
+        fresh: bool = False,
+    ):
+        self.language = language
+        self.max_queries = max_queries if max_queries and max_queries > 0 else 0
+        self.timeout_minutes = timeout_minutes if timeout_minutes and timeout_minutes > 0 else 0
+        self.fresh = bool(fresh)
+        # Transport artifact only — state lives in state/store.db, published
+        # output lives in output/. Keep the exact language case: CI uploads
+        # state/<Language>.jsonl on case-sensitive Linux runners.
+        self.export_path = STATE_DIR / f"{language}.jsonl"
+        self._deadline = 0.0        # absolute epoch time when search must stop
+        self._hard_deadline = 0.0   # absolute epoch time when validation must stop
+        self._crawl_deadline = 0.0  # absolute epoch time when official-site crawl must stop
+        self._start_t = 0.0
+        self._names = NameIndex()          # O(1) channel-name matching
+        self._allowed_names: Set[str] = set()  # kept for len() logging
+        self._ott_seeds: List[str] = []    # MIB OTT platform names (search seeds)
+        self._seen_urls: Set[str] = set()  # URLS already accepted this run
+        self._extract_lock = Lock()
+        self._extract_used = 0
+        self._iframes_used = 0
+
+    # ── Time budget ───────────────────────────────────────────────
+
+    def _apply_budget(self, reserve_seconds: int = 300):
+        """Compute search + validation deadlines from the CI timeout."""
+        self._start_t = time.time()
+        if self.timeout_minutes:
+            total = self.timeout_minutes * 60
+            reserve = int(min(reserve_seconds, total * 0.5))
+            save_buffer = int(min(60, total * 0.1))
+            search_window = total - reserve
+            crawl_slice = int(min(150, max(30, search_window * 0.3)))
+            self._deadline = self._start_t + search_window
+            self._crawl_deadline = self._start_t + crawl_slice
+            self._hard_deadline = self._start_t + total - save_buffer
+            log.info(
+                f"[{self.language}] time budget: {self.timeout_minutes} min job -> "
+                f"crawl ~{crawl_slice}s, search until ~{max(0, search_window) / 60:.1f} min, "
+                f"validate until ~{max(0, int((self._hard_deadline - self._start_t))) / 60:.1f} min "
+                f"(reserve {reserve}s)"
+            )
+
+    def _budget_exhausted(self) -> bool:
+        return self._deadline > 0 and time.time() >= self._deadline
+
+    def _crawl_exhausted(self) -> bool:
+        if self._crawl_deadline and time.time() >= self._crawl_deadline:
+            return True
+        return self._budget_exhausted()
+
+    def _validate_exhausted(self) -> bool:
+        return self._hard_deadline > 0 and time.time() >= self._hard_deadline
+
+    def _wipe_local_state(self):
+        """Delete this language's channels + resume so the run starts clean."""
+        store = get_cache()
+        for label, n in (("channels", store.clear_lang(self.language)),):
+            if n:
+                log.info(f"[{self.language}] wiped {n} {label} from store")
+        store.clear_resume(self.language)
+        for path in (self.export_path,):
+            try:
+                if path.exists():
+                    path.unlink()
+                    log.info(f"[{self.language}] wiped {path.name}")
+            except OSError as e:
+                log.warning(f"[{self.language}] could not wipe {path.name}: {e}")
+
+    # ── Store checkpoints ────────────────────────────────────────
+
+    def _checkpoint(self, result: ScrapeResult) -> None:
+        """Persist found channels + run counters into state/store.db.
+
+        Also refreshes the transport file, so a job killed mid-run still
+        leaves an artifact behind for its siblings/merge (the CI upload
+        step runs `if: always()` against whatever is on disk).
+        """
+        store = get_cache()
+        store.save_channels(self.language, result.channels)
+        store.save_run_meta(
+            self.language,
+            queries_sent=result.queries_sent,
+            urls_found=result.urls_found,
+            urls_valid=result.urls_valid,
+            errors=result.errors,
+        )
+        self._export_state(quiet=True)
+
+    def _save_resume(self, resume: ResumeState) -> None:
+        get_cache().save_resume(self.language, resume.to_dict())
+
+    def _clear_resume(self) -> None:
+        get_cache().clear_resume(self.language)
+
+    # ── Entry point ───────────────────────────────────────────────
+
+    def run(self) -> ScrapeResult:
+        """Execute the full scrape pipeline for this language (resume-aware)."""
+        if self.fresh:
+            self._wipe_local_state()
+        result = self._load_existing_result()
+        resume = ResumeState.from_dict(get_cache().load_resume(self.language))
+        if self.fresh:
+            log.info(f"[{self.language}] fresh mode: ignoring prior stored state")
+        self._apply_budget()
+
+        # Checkpoint immediately so the store always has rows for this
+        # language, even if the job is killed before the first phase ends.
+        self._checkpoint(result)
+
+        channels = self._load_channel_list()
+        if not channels:
+            log.warning(f"[{self.language}] No channels found in channel list")
+            result.errors.append("No channels in channel list")
+            self._checkpoint(result)
+            return result
+
+        log.info(f"[{self.language}] {len(channels)} channels in list")
+        self._build_name_index(channels)
+        self._ott_seeds = load_ott_platforms()
+        if self._ott_seeds:
+            log.info(f"[{self.language}] {len(self._ott_seeds)} MIB OTT search seeds")
+
+        channels = self._enrich_with_database(channels)
+
+        # Dead verdicts from sibling jobs + previous runs seed the cache.
+        shared_dead = _load_shared_dead_urls()
+        if shared_dead:
+            log.info(f"[{self.language}] probe cache seeded "
+                     f"({len(shared_dead)} known-dead URLs imported)")
+
+        queries = self._build_queries(channels)
+        result.queries_sent = len(queries)
+
+        pending_queries = [q for q in queries if q not in set(resume.searched_queries)]
+        if pending_queries:
+            log.info(f"[{self.language}] resuming: {len(resume.searched_queries)} / "
+                     f"{len(queries)} queries done, {len(pending_queries)} to go")
+        else:
+            log.info(f"[{self.language}] all {len(queries)} queries already searched")
+
+        # ── Discovery: precision first, breadth after ────────────
+        self._iptvorg_phase(result)
+        self._checkpoint(result)
+        self._yupptv_phase(result)
+        self._checkpoint(result)
+        self._code_phase(result)
+        self._checkpoint(result)
+        self._crawl_sites_phase(channels, resume, result)
+        self._search_phase(pending_queries, resume, result)
+
+        # ── Validation: probe + score + mine ─────────────────────
+        self._validate_phase(resume, result)
+        # Playlist children were queued unscored; measure them now.
+        self._rescore_phase(result)
+
+        # Final save
+        result.urls_valid = len(result.channels)
+        self._checkpoint(result)
+        self._export_state()
+        if resume.pending_urls:
+            self._save_resume(resume)
+            log.info(
+                f"[{self.language}] incomplete: {len(resume.pending_urls)} URLs "
+                f"left for retry (resume kept)"
+            )
+        else:
+            self._clear_resume()
+        log.info(f"[{self.language}] DONE: {len(result.channels)} channels found")
+        log.info(f"[{self.language}] {result.urls_found} URLs found, "
+                 f"{result.urls_valid} valid")
+        self._log_engine_stats()
+        return result
+
+    # ── Phases ────────────────────────────────────────────────────
+
+    def _iptvorg_phase(self, result: ScrapeResult) -> None:
+        """iptv-org structured feed: known Indian streams, zero search."""
+        try:
+            seeds = iptvorg_source.candidates(self.language)
+        except Exception as e:
+            log.warning(f"[{self.language}] iptv-org source failed: {e}")
+            return
+        if not seeds:
+            return
+        existing = {ch.url for ch in result.channels}
+        cache = get_cache()
+        accepted = 0
+        with ThreadPoolExecutor(max_workers=VALIDATE_WORKERS) as ex:
+            futures = {
+                ex.submit(
+                    probe_stream, s["url"],
+                    referer=s.get("referer") or None,
+                    user_agent=s.get("user_agent") or None,
+                ): s
+                for s in seeds
+                if s["url"] not in existing and not cache.known_dead(s["url"])
+            }
+            for fut in as_completed(futures):
+                s = futures[fut]
+                try:
+                    probe = fut.result()
+                except Exception:
+                    continue
+                get_cache().remember(s["url"], probe)
+                if not probe.ok or s["url"] in existing:
+                    continue
+                if self._accept_probe(
+                    result, s["url"], probe,
+                    name_hint=s.get("name", ""),
+                    source=s.get("source", "iptv-org"),
+                    logo_hint=s.get("logo", ""),
+                ):
+                    existing.add(s["url"])
+                    accepted += 1
+        if accepted:
+            log.info(f"[{self.language}] iptv-org: {accepted} channels accepted "
+                     f"from {len(seeds)} seeds")
+
+    def _code_phase(self, result: ScrapeResult) -> None:
+        """Community playlist files (GitHub + grep.app code search) -> channels.
+
+        grep.app covers GitHub/GitLab/Bitbucket/Codeberg without an API token,
+        which is what the unauthenticated local runs (and token-less CI runs)
+        could never reach before.
+        """
+        names = sorted(self._names.raw)
+        seeds: List[dict] = []
+        try:
+            seeds = list(github_source.candidates(self.language, names))
+        except Exception as e:
+            log.warning(f"[{self.language}] github source failed: {e}")
+        try:
+            seeds += list(grepapp_source.candidates(self.language, names))
+        except Exception as e:
+            log.warning(f"[{self.language}] grep.app source failed: {e}")
+        if not seeds:
+            return
+        existing = {ch.url for ch in result.channels}
+        accepted = 0
+        with ThreadPoolExecutor(max_workers=VALIDATE_WORKERS) as ex:
+            futures = {
+                ex.submit(
+                    probe_stream, s["url"],
+                    referer=s.get("referer") or None,
+                    user_agent=s.get("user_agent") or None,
+                ): s
+                for s in seeds
+                if s["url"] not in existing and not get_cache().known_dead(s["url"])
+            }
+            for fut in as_completed(futures):
+                s = futures[fut]
+                try:
+                    probe = fut.result()
+                except Exception:
+                    continue
+                get_cache().remember(s["url"], probe)
+                if not probe.ok or s["url"] in existing:
+                    continue
+                if self._accept_probe(
+                    result, s["url"], probe,
+                    name_hint=s.get("name", ""),
+                    source=s.get("source", "github"),
+                    extinf_hint=s.get("extinf", ""),
+                    logo_hint=s.get("logo", ""),
+                ):
+                    existing.add(s["url"])
+                    accepted += 1
+        if accepted:
+            log.info(f"[{self.language}] code search: {accepted} channels "
+                     f"accepted from {len(seeds)} candidates")
+
+    def _search_phase(self, queries: List[str], resume: ResumeState, result: ScrapeResult):
+        """Search engines in parallel, accumulate URLs into resume.pending_urls.
+
+        Sliding window of SEARCH_WORKERS in-flight queries; new work is only
+        submitted while the time budget remains.
+        """
+        pending_urls = _LockSet()
+        pending_urls.update(u for u in resume.pending_urls if not is_blocked_domain(u))
+        proven = _LockSet()
+        proven.update(u for u in resume.proven_urls if not is_blocked_domain(u))
+        searched_lock = Lock()
+        searched: Set[str] = set(resume.searched_queries)
+        engines = engine_list()
+
+        def search_one(q: str, pool: ThreadPoolExecutor):
+            proves = self._query_proves_language(q)
+            futs = [
+                pool.submit(search_with_tracking, name, func, q, SEARCH_RESULTS)
+                for name, func in engines
+            ]
+            hits: Set[str] = set()
+            for f in as_completed(futs):
+                try:
+                    hits.update(f.result() or set())
+                except Exception as e:            # one engine must not kill the query
+                    log.debug(f"[{self.language}] engine error for {q!r}: {e}")
+            # YouTube (and its CDN) is allowed as a search result host only to
+            # discover pages — never as a channel URL in the playlist.
+            hits = {u for u in hits if not is_blocked_domain(u)}
+            if hits:
+                pending_urls.update(hits)
+                if proves:
+                    proven.update(hits)
+            with searched_lock:
+                searched.add(q)
+
+        query_iter = iter(queries)
+        done = 0
+        total = len(queries)
+        initial_searched = set(resume.searched_queries)
+
+        with ThreadPoolExecutor(max_workers=SEARCH_WORKERS * 3) as engine_pool, \
+             ThreadPoolExecutor(max_workers=SEARCH_WORKERS) as executor:
+            in_flight: Set[object] = set()
+
+            def launch():
+                while not self._budget_exhausted():
+                    try:
+                        q = next(query_iter)
+                    except StopIteration:
+                        return
+                    fut = executor.submit(search_one, q, engine_pool)
+                    in_flight.add(fut)
+                    if len(in_flight) >= SEARCH_WORKERS:
+                        return
+
+            launch()
+            while in_flight:
+                finished, in_flight = wait(in_flight, return_when=FIRST_COMPLETED, timeout=10)
+                for f in finished:
+                    try:
+                        f.result()
+                    except Exception as e:
+                        log.warning(f"[{self.language}] query failed: {e}")
+                    done += 1
+                    if done % RESUME_EVERY == 0:
+                        with searched_lock:
+                            snapshot_searched = set(searched)
+                        resume.update(
+                            searched=snapshot_searched,
+                            pending=pending_urls.as_set(),
+                            validated=set(resume.validated_urls),
+                            proven=proven.as_set(),
+                        )
+                        self._save_resume(resume)
+                        log.info(f"[{self.language}] Search [{done}/{total}] - "
+                                 f"{len(pending_urls.as_set())} URLs so far")
+                if in_flight and not self._budget_exhausted():
+                    launch()
+
+        with searched_lock:
+            final_searched = set(searched)
+        # Only queries from *this* batch count towards the batch total; the
+        # set also carries over queries a previous attempt already finished.
+        covered = len(final_searched - initial_searched)
+        remaining = max(0, total - covered)
+        resume.update(
+            searched=final_searched,
+            pending=pending_urls.as_set(),
+            validated=set(resume.validated_urls),
+            proven=proven.as_set(),
+        )
+        result.urls_found = len(pending_urls.as_set())
+        if remaining:
+            log.info(f"[{self.language}] time budget reached: {remaining}/{total} "
+                     f"queries deferred to retry")
+        log.info(f"[{self.language}] {result.urls_found} unique URLs to validate")
+
+    def _validate_phase(self, resume: ResumeState, result: ScrapeResult):
+        """Probe + score every candidate; mine pages that expose streams.
+
+        Cache-aware: a URL already judged dead (this run or a previous one) is
+        skipped without a network round-trip.
+        """
+        cache = get_cache()
+        validated: Set[str] = set(resume.validated_urls)
+        proven: Set[str] = set(resume.proven_urls)
+        pending: Set[str] = {
+            u for u in (set(resume.pending_urls) - validated)
+            if not is_blocked_domain(u)
+        }
+        shared_dead = _load_shared_dead_urls()
+        if shared_dead:
+            pre_dead = pending & shared_dead
+            if pre_dead:
+                pending -= pre_dead
+                validated |= pre_dead
+                log.info(f"[{self.language}] skipping {len(pre_dead)} URLs known "
+                         f"dead from a sibling job")
+
+        queue: List[str] = list(pending)
+        harvested: Set[str] = set()
+        referer_of: Dict[str, str] = {}
+
+        log.info(f"[{self.language}] probing {len(queue)} URLs "
+                 f"(skipping {len(validated)} done)")
+
+        done = 0
+        idx = 0
+
+        with ThreadPoolExecutor(max_workers=VALIDATE_WORKERS) as executor:
+            while idx < len(queue) and not self._validate_exhausted():
+                chunk = queue[idx: idx + VALIDATE_WORKERS]
+                idx += VALIDATE_WORKERS
+                # Known-dead URLs are dropped from the chunk (no I/O at all).
+                work = [u for u in chunk
+                        if u not in validated and not cache.known_dead(u)]
+                skipped = len(chunk) - len(work)
+                if skipped:
+                    validated.update(u for u in chunk if cache.known_dead(u))
+                    done += skipped
+                futures = {
+                    executor.submit(
+                        probe_stream, url,
+                        referer=referer_of.get(url),
+                    ): url
+                    for url in work
+                }
+                new_links: List[str] = []
+                for completed in as_completed(futures):
+                    url = futures[completed]
+                    try:
+                        probe = completed.result()
+                    except Exception:
+                        probe = Probe(kind="dead", note="exception")
+                    cache.remember(url, probe)
+                    if probe.kind != "dead":
+                        page_links = self._handle_probe(
+                            result, url, probe, proven, referer_of,
+                        )
+                        for link, ref in page_links.items():
+                            if link in validated or link in pending:
+                                continue
+                            if len(harvested) >= HARVEST_CAP:
+                                break
+                            new_links.append(link)
+                            pending.add(link)
+                            harvested.add(link)
+                            referer_of.setdefault(link, ref or url)
+
+                    validated.add(url)
+                    done += 1
+                    if done % RESUME_EVERY == 0:
+                        resume.update(searched=set(resume.searched_queries),
+                                      pending=set(pending), validated=validated)
+                        self._save_resume(resume)
+                        self._checkpoint(result)
+                        log.info(
+                            f"[{self.language}] Validated [{done}/{len(queue)}] - "
+                            f"{len(result.channels)} Indian channels, "
+                            f"{len(harvested)} harvested links queued"
+                        )
+
+                if new_links and not self._validate_exhausted():
+                    queue.extend(new_links)
+
+        remaining_pending = set(queue[idx:]) if idx < len(queue) else set()
+        resume.update(
+            searched=set(resume.searched_queries),
+            pending=remaining_pending,
+            validated=validated,
+            proven=proven,
+        )
+        self._save_resume(resume)
+        result.urls_valid = len(result.channels)
+        if remaining_pending:
+            log.info(f"[{self.language}] validation cut short: "
+                     f"{len(remaining_pending)} URLs remain for retry")
+        if harvested:
+            log.info(f"[{self.language}] harvested {len(harvested)} stream links "
+                     f"from pages")
+
+    # ── Playlist-child rescoring ─────────────────────────────────
+
+    def _rescore_phase(self, result: ScrapeResult) -> None:
+        """Probe playlist children so every kept channel has a measured score.
+
+        Playlist expansion queues children with score 0: a live manifest
+        proves the list, not each child URL. This pass measures up to
+        RESCORE_CAP of them, drops the ones that turn out dead/HTML and
+        leaves the overflow unscored so merge ranks them last instead of
+        letting them inherit a score they never earned.
+        """
+        targets = [c for c in result.channels if c.score <= 0]
+        if not targets:
+            return
+        cache = get_cache()
+        attempted = 0
+        scored = 0
+        dead_urls: List[str] = []
+        for ch in targets:
+            if attempted >= RESCORE_CAP or self._validate_exhausted():
+                break
+            if cache.known_dead(ch.url):
+                dead_urls.append(ch.url)
+                continue
+            attempted += 1
+            probe = probe_stream(ch.url)
+            cache.remember(ch.url, probe)
+            if probe.ok:
+                ch.score = probe.score
+                ch.quality = probe.quality
+                scored += 1
+            elif getattr(probe, "blocked", False):
+                pass          # challenge-walled: keep unscored, retry next run
+            else:
+                dead_urls.append(ch.url)
+        dropped = 0
+        if dead_urls:
+            dead = set(dead_urls)
+            result.channels = [c for c in result.channels if c.url not in dead]
+            self._seen_urls -= dead
+            dropped = len(dead_urls)
+        unscored = sum(1 for c in result.channels if c.score <= 0)
+        log.info(
+            f"[{self.language}] rescored {scored} playlist children "
+            f"({attempted} probed), dropped {dropped} dead, "
+            f"{unscored} left unverified"
+        )
+
+    # ── Probe handling ───────────────────────────────────────────
+
+    def _handle_probe(
+        self,
+        result: ScrapeResult,
+        url: str,
+        probe: Probe,
+        proven: Set[str],
+        referer_of: Dict[str, str],
+    ) -> Dict[str, str]:
+        """Accept what the probe found; return newly harvested stream links.
+
+        Returns {stream_url: referer} (empty when nothing new was found).
+        """
+        if probe.kind == "playlist":
+            self._accept_playlist(result, probe, proven)
+            return {}
+        if probe.kind == "stream":
+            indian = is_indian(probe.sample) or is_indian(url)
+            self._accept_stream_channel(
+                result, url, probe.extinf, indian, proven,
+                score=probe.score, quality=probe.quality,
+                source=probe_source(url),
+            )
+            return {}
+        if probe.kind == "page":
+            return self._mine_page(url, probe, referer_of)
+        return {}
+
+    def _accept_probe(
+        self,
+        result: ScrapeResult,
+        url: str,
+        probe: Probe,
+        *,
+        name_hint: str = "",
+        source: str = "",
+        extinf_hint: str = "",
+        logo_hint: str = "",
+    ) -> bool:
+        """Accept one pre-discovered candidate (iptv-org / GitHub seeds).
+
+        Same gates as the validate phase; the seed metadata (name, EXTINF,
+        logo, source) fills in what the manifest itself does not carry.
+        """
+        if not probe.ok:
+            return False
+        if not url.startswith(("http://", "https://")) or is_blocked_domain(url):
+            return False
+        if probe.kind == "playlist":
+            before = len(result.channels)
+            self._accept_playlist(result, probe, set(),
+                                  source=source, logo_hint=logo_hint)
+            return len(result.channels) > before
+        if probe.kind == "stream":
+            extinf = probe.extinf or extinf_hint
+            indian = (is_indian(probe.sample) or is_indian(url)
+                      or is_indian(name_hint) or is_indian(extinf))
+            return self._accept_stream_channel(
+                result, url, extinf, indian, set(),
+                name_hint=name_hint, source=source, logo_hint=logo_hint,
+                score=probe.score, quality=probe.quality,
+            )
+        return False
+
+    def _accept_playlist(self, result: ScrapeResult, probe: Probe,
+                         proven: Set[str], source: str = "",
+                         logo_hint: str = "") -> None:
+        """Expand a multi-channel playlist, applying every quality gate."""
+        if not probe.entries:
+            return
+        indian = is_indian(probe.sample)
+        for entry_url, blk in probe.entries.items():
+            if is_blocked_domain(entry_url):
+                continue
+            ename = blk["name"] or ""
+            if not is_live_candidate(entry_url, ename):
+                continue
+            # Geo-blocked labels are annotations only — never a reject reason.
+            if not self._matches_language(ename, entry_url, blk["extinf"], proven):
+                continue
+            if ename and not _is_geo_blocked_name(ename):
+                if not (indian or is_indian(ename) or is_indian(entry_url)):
+                    if not self._names.has(ename):
+                        continue
+            if entry_url in self._seen_urls:
+                continue
+            # Playlist children start UNSCORED: the parent manifest only
+            # proves the list is alive, not each child URL. `_rescore_phase`
+            # measures them (or drops the dead ones) before merge.
+            self._add_channel(
+                result, entry_url, blk["extinf"],
+                name=ename, logo=blk["logo"] or logo_hint,
+                source=source or detect_source_name(entry_url),
+                score=0, quality="",
+            )
+
+    def _mine_page(
+        self,
+        url: str,
+        probe: Probe,
+        referer_of: Dict[str, str],
+    ) -> Dict[str, str]:
+        """Static harvest -> embed/iframe follow -> JS-bundle API mining -> yt-dlp."""
+        streams: Dict[str, str] = dict(probe.harvested)
+        try:
+            if len(streams) < SITEAPI_MIN_LINKS:
+                streams.update(siteapi_source.mine(url, html=probe.sample or None))
+        except Exception as e:
+            log.debug(f"[{self.language}] siteapi {url}: {e}")
+
+        # One level deeper: the actual player often sits in an iframe (or a
+        # JS variable) on another host. Probe up to 3 embeds per page.
+        if len(streams) < SITEAPI_MIN_LINKS:
+            for embed in extract_embeds(probe.sample or "", url)[:3]:
+                if (self._iframes_used >= IFRAME_CAP
+                        or self._validate_exhausted()):
+                    break
+                self._iframes_used += 1
+                try:
+                    p = probe_stream(embed, budget=IFRAME_BUDGET)
+                except Exception:
+                    continue
+                get_cache().remember(embed, p)
+                if p.kind == "stream":
+                    streams[embed] = url
+                elif p.kind == "page":
+                    for link, ref in (p.harvested or {}).items():
+                        streams.setdefault(link, ref or embed)
+
+        if not streams and extract_source.available() and self._claim_extract():
+            try:
+                streams.update(extract_source.extract(url))
+            except Exception as e:
+                log.debug(f"[{self.language}] ytdlp {url}: {e}")
+
+        out: Dict[str, str] = {}
+        for link in list(streams)[:HARVEST_PER_PAGE]:
+            if is_blocked_domain(link):
+                continue
+            out[link] = streams.get(link) or url
+        return out
+
+    def _claim_extract(self) -> bool:
+        """Reserve one of this run's EXTRACT_CAP yt-dlp calls."""
+        with self._extract_lock:
+            if self._extract_used >= EXTRACT_CAP:
+                return False
+            self._extract_used += 1
+            return True
+
+    # ── Name / language gates ────────────────────────────────────
+
+    def _build_name_index(self, channels: List[dict]) -> None:
+        """Known channel names/alt-names for this language (accept/reject)."""
+        names: Set[str] = set()
+        for ch in channels:
+            for key in ("name", "canonical_name"):
+                n = (ch.get(key) or "").strip().lower()
+                if n:
+                    names.add(n)
+            for an in ch.get("alt_names") or []:
+                an = (an or "").strip().lower()
+                if an:
+                    names.add(an)
+        self._names = NameIndex(names)
+        self._allowed_names = set(self._names.raw)
+        log.info(f"[{self.language}] name index: {len(self._names)} entries")
+
+    def _query_proves_language(self, query: str) -> bool:
+        """True when the search query itself names a channel of this language."""
+        q = (query or "").strip()
+        if not q:
+            return False
+        for n in re.findall(r'"([^"]+)"', q):
+            if (self._names.has(n) or is_indian(n) or _is_geo_blocked_name(n)
+                    or self._matches_language(n, "", "")):
+                return True
+        base = q
+        for suffix in (" m3u8", " m3u playlist", " iptv", " stream", " filetype:m3u",
+                       " github"):
+            if base.lower().endswith(suffix):
+                base = base[: -len(suffix)]
+                break
+        base = base.strip().strip('"')
+        if not base:
+            return False
+        return bool(
+            self._names.has(base) or is_indian(base)
+            or _is_geo_blocked_name(base) or self._matches_language(base, "", "")
+        )
+
+    def _matches_language(self, name: str, url: str, extinf: str = "",
+                          proven: Optional[Set[str]] = None) -> bool:
+        """True if a discovered stream plausibly belongs to this language's run.
+
+        Accepts when the language name appears in metadata, or the channel name
+        token-matches this language's known list (allowing only quality extras
+        like HD/FHD — never foreign country suffixes).
+        """
+        lang = self.language.lower()
+        if _is_geo_blocked_name(name):
+            return True
+        text = f"{name} {url} {extinf}".lower()
+        if lang and lang in text:
+            return True
+        # Indian brand/network names pass even when not on this language list
+        # (mixed playlists, multi-language channel lists).
+        if name and is_indian(name):
+            return True
+        n = norm_name(name)
+        if not n:
+            # Unnamed: require Indian/language proof in the URL or EXTINF
+            # itself, a URL that matches a known channel of this list, or a
+            # URL surfaced by a query that already named this language.
+            probe_text = f"{url} {extinf}".lower()
+            return bool(is_indian(url) or is_indian(extinf)
+                        or self._names.url_matches(url)
+                        or bool(proven and url in proven)
+                        or (lang and lang in probe_text))
+        if not len(self._names):
+            return bool(is_indian(name) or is_indian(url) or is_indian(extinf)
+                        or (lang and lang in text))
+        return self._names.has(n)
+
+    def _accept_stream_channel(
+        self,
+        result: ScrapeResult,
+        url: str,
+        extinf: str,
+        indian: bool,
+        proven,
+        name_hint: str = "",
+        source: str = "",
+        logo_hint: str = "",
+        score: int = 0,
+        quality: str = "",
+    ) -> bool:
+        """Accept one probed single-stream URL.
+
+        Live-candidate check, geo-block labels always kept, named entries must
+        match this language's list (or be Indian), unnamed entries need
+        Indian/language proof.
+        """
+        if not is_live_candidate(url, extinf or name_hint):
+            return False
+        if is_blocked_domain(url):
+            return False
+        dname = parse_extinf(extinf).get("display_name", "") if extinf else ""
+        if not dname:
+            dname = name_hint
+        if url in self._seen_urls:
+            return False
+        if dname and _is_geo_blocked_name(dname):
+            self._add_channel(result, url, extinf, name=dname, source=source,
+                              logo=logo_hint, score=score, quality=quality)
+            return True
+        if dname:
+            if self._matches_language(dname, url, extinf):
+                self._add_channel(result, url, extinf, name=dname, source=source,
+                                  logo=logo_hint, score=score, quality=quality)
+                return True
+            return False
+        if (
+            indian
+            or is_indian(url)
+            or is_indian(extinf)
+            or url in proven
+            or self._names.url_matches(url)
+        ):
+            # Prefer the known list name when the URL slug matches (avoids
+            # "index m3u8" as the channel name).
+            self._add_channel(
+                result, url, extinf,
+                name=self._names.best_for_url(url), source=source,
+                logo=logo_hint, score=score, quality=quality,
+            )
+            return True
+        return False
+
+    # ── YuppTV API fast path ─────────────────────────────────────
+
+    def _yupptv_phase(self, result: ScrapeResult) -> None:
+        """YuppTV API fast path (pure HTTP, no browser).
+
+        Catalog comes from /page/content?path=livetv (per-language langCode),
+        per-channel streams from /page/stream. Every URL still goes through
+        probe + the same quality gates as the validate phase.
+        """
+        from scrapers import yupptv
+
+        code = yupptv.LANG_TO_CODE.get(self.language.strip().lower())
+        if not code:
+            log.info(f"[{self.language}] YuppTV fast path: no lang code, skipping")
+            return
+        try:
+            entries = yupptv.fetch_catalog(code)
+        except Exception as e:
+            log.warning(f"[{self.language}] YuppTV catalog failed: {e}")
+            return
+        if not entries:
+            log.info(f"[{self.language}] YuppTV fast path: no {code} channels")
+            return
+        existing = {ch.url for ch in result.channels}
+        log.info(f"[{self.language}] YuppTV fast path: {len(entries)} catalog channels")
+
+        def work(entry: dict):
+            try:
+                urls = yupptv.get_stream_urls(entry["path"])
+            except Exception:
+                urls = []
+            probed = []
+            for u in urls[:2]:
+                if u in existing or is_blocked_domain(u):
+                    continue
+                probe = probe_stream(u, referer=yupptv.SITE)
+                probed.append((u, probe))
+            return entry, probed
+
+        accepted = 0
+        with ThreadPoolExecutor(max_workers=6) as ex:
+            futures = [ex.submit(work, e) for e in entries]
+            for fut in as_completed(futures):
+                try:
+                    entry, probed = fut.result()
+                except Exception:
+                    continue
+                for u, probe in probed:
+                    get_cache().remember(u, probe)
+                    if not probe.ok or u in existing:
+                        continue
+                    if probe.kind == "playlist":
+                        before = len(result.channels)
+                        self._accept_playlist(result, probe, set(), source="yupptv")
+                        if len(result.channels) > before:
+                            existing.add(u)
+                            accepted += 1
+                        continue
+                    if self._accept_stream_channel(
+                        result, u, probe.extinf, is_indian(probe.sample) or is_indian(u),
+                        set(), name_hint=entry["name"], source="yupptv",
+                        score=probe.score, quality=probe.quality,
+                    ):
+                        existing.add(u)
+                        accepted += 1
+        log.info(f"[{self.language}] YuppTV fast path: {accepted} channels accepted")
+
+    # ── Channel construction ─────────────────────────────────────
+
+    def _add_channel(self, result: ScrapeResult, url: str, extinf: str,
+                     name: str = "", logo: str = "", source: str = "",
+                     score: int = 0, quality: str = ""):
+        if not url or is_blocked_domain(url) or url in self._seen_urls:
+            return
+        parsed = {}
+        if extinf:
+            parsed = parse_extinf(extinf)
+
+        attrs = parsed.get("attrs", {})
+        if not name:
+            name = parsed.get("display_name", "") or url.split("/")[-1].replace(".", " ")
+        # EXTINF logo wins; the seed/candidate logo is the fallback.
+        logo = attrs.get("tvg-logo", "") or logo
+        if not quality:
+            m = re.search(r"\b(\d{3,4})\s*[pi]\b", name or "", re.IGNORECASE)
+            if m:
+                quality = m.group(1) + "p"
+
+        ch = Channel(
+            url=url,
+            name=name,
+            language=self.language,
+            category="",  # enriched in merge
+            source=source or detect_source_name(url),
+            logo=logo,
+            extinf=extinf,
+            tvg_id=attrs.get("tvg-id", ""),
+            tvg_name=attrs.get("tvg-name", ""),
+            group_title=attrs.get("group-title", ""),
+            score=int(score or 0),
+            quality=quality,
+        )
+        result.channels.append(ch)
+        self._seen_urls.add(url)
+
+    def _load_existing_result(self) -> ScrapeResult:
+        """Load channels already found by a previous partial run (store)."""
+        store = get_cache()
+        stored = store.channels(self.language)
+        meta = store.run_meta(self.language)
+        result = ScrapeResult(
+            source="web",
+            language=self.language,
+            queries_sent=int(meta.get("queries_sent", 0) or 0),
+            urls_found=int(meta.get("urls_found", 0) or 0),
+            urls_valid=int(meta.get("urls_valid", 0) or 0),
+            errors=list(meta.get("errors", []) or []),
+        )
+        if stored:
+            log.info(f"[{self.language}] resuming with {len(stored)} "
+                     f"channels already found")
+            result.channels = stored
+            for ch in stored:
+                self._seen_urls.add(ch.url)
+        return result
+
+    def _log_engine_stats(self):
+        try:
+            for name, st in engine_stats_summary().items():
+                log.info(f"[{self.language}] engine {name}: calls={st['calls']} "
+                         f"hits={st['hits']} misses={st['misses']}")
+        except Exception:
+            pass
+
+    def _export_state(self, quiet: bool = False):
+        """Write state/<lang>.jsonl: verdicts + channels for sibling jobs/merge."""
+        try:
+            STATE_DIR.mkdir(parents=True, exist_ok=True)
+            n = get_cache().export_state(self.export_path, self.language)
+            if not quiet and (n["probes"] or n["channels"]):
+                log.info(f"[{self.language}] exported {n['probes']} probe "
+                         f"verdicts + {n['channels']} channels "
+                         f"-> {self.export_path.name}")
+        except OSError:
+            pass
+
+    # ── Inputs ───────────────────────────────────────────────────
+
+    def _load_channel_list(self) -> List[dict]:
+        """Load channel list from channel_lists/<language>_channels.json."""
+        path = CHANNEL_LISTS_DIR / f"{self.language.lower()}_channels.json"
+        if not path.exists():
+            merged = CHANNEL_LISTS_DIR / "all_indian_channels.json"
+            if merged.exists():
+                with open(merged, "r", encoding="utf-8") as f:
+                    data = json.load(f)
+                return [
+                    ch for ch in data.get("channels", [])
+                    if self.language in ch.get("languages", [])
+                ]
+            return []
+        with open(path, "r", encoding="utf-8") as f:
+            return json.load(f).get("channels", [])
+
+    def _enrich_with_database(self, channel_list: List[dict]) -> List[dict]:
+        """Attach iptv-org metadata (website, alt_names, network, category)."""
+        db = get_database()
+        enriched = []
+        matched = 0
+        for ch in channel_list:
+            name = ch.get("name", "")
+            entry = dict(ch)
+            meta = db.get_channel_metadata(name) if name else None
+            if meta:
+                entry["website"] = meta.get("website", "")
+                entry["alt_names"] = meta.get("alt_names", [])
+                entry["network"] = meta.get("network", "")
+                entry["category"] = meta.get("category", "")
+                entry["canonical_name"] = meta.get("name", name)
+                matched += 1
+            else:
+                entry.setdefault("website", "")
+                entry.setdefault("alt_names", [])
+                entry.setdefault("network", "")
+                entry.setdefault("category", "")
+                entry["canonical_name"] = name
+            enriched.append(entry)
+        log.info(f"[{self.language}] DB matched {matched}/{len(enriched)} channels")
+        return enriched
+
+    def _crawl_sites_phase(self, channels: List[dict], resume: ResumeState,
+                           result: ScrapeResult):
+        """Crawl official websites (from DB) and collect direct stream URLs."""
+        sites = sorted({ch["website"] for ch in channels if ch.get("website")})
+        already = set(resume.crawled_sites)
+        to_crawl = [s for s in sites if s not in already][:SITES_CAP]
+
+        if not to_crawl:
+            if already:
+                log.info(f"[{self.language}] {len(already)} sites already crawled, "
+                         f"skipping")
+            else:
+                log.info(f"[{self.language}] no official websites in database for "
+                         f"this language")
+            return
+
+        log.info(f"[{self.language}] crawling {len(to_crawl)} official sites")
+
+        pending = _LockSet()
+        pending.update(resume.pending_urls)
+        crawled_lock = Lock()
+        crawled: Set[str] = set(already)
+
+        def crawl_one(site: str):
+            try:
+                urls = crawl_website(site)
+                if len(urls) > URLS_PER_SITE:
+                    urls = set(list(urls)[:URLS_PER_SITE])
+                pending.update(u for u in urls if not is_blocked_domain(u))
+            except Exception:
+                pass
+            with crawled_lock:
+                crawled.add(site)
+
+        done = 0
+        with ThreadPoolExecutor(max_workers=CRAWL_WORKERS) as executor:
+            futures = set()
+            site_idx = 0
+
+            def launch():
+                nonlocal site_idx
+                while site_idx < len(to_crawl) and len(futures) < CRAWL_WORKERS:
+                    if self._crawl_exhausted() and futures:
+                        return
+                    futures.add(executor.submit(crawl_one, to_crawl[site_idx]))
+                    site_idx += 1
+
+            launch()
+            while futures:
+                finished, futures = wait(futures, return_when=FIRST_COMPLETED, timeout=10)
+                for completed in finished:
+                    done += 1
+                    completed.result()
+                    if done % RESUME_EVERY == 0:
+                        resume.update(
+                            searched=set(resume.searched_queries),
+                            pending=pending.as_set(),
+                            validated=set(resume.validated_urls),
+                            crawled=crawled,
+                        )
+                        self._save_resume(resume)
+                if futures and not self._crawl_exhausted():
+                    launch()
+                elif futures and self._crawl_exhausted():
+                    finished, futures = wait(futures, return_when=FIRST_COMPLETED, timeout=30)
+                    for completed in finished:
+                        done += 1
+                        completed.result()
+                    break
+
+        resume.update(
+            searched=set(resume.searched_queries),
+            pending=pending.as_set(),
+            validated=set(resume.validated_urls),
+            crawled=crawled,
+        )
+        self._save_resume(resume)
+        log.info(f"[{self.language}] site crawl: {len(crawled)} sites, "
+                 f"{len(pending.as_set())} total URLs")
+
+    def _build_queries(self, channel_list: List[dict]) -> List[str]:
+        """Generate search queries from channel names + DB metadata.
+
+        Query tiers (best first):
+          direct:  "name" m3u8 / name m3u playlist / "name" filetype:m3u
+          ip-tv:   "name" iptv / "name" stream
+          git:     "name" github m3u          (GitHub-hosted lists are a
+                                               disproportionate share of hits)
+          site:    site:broadcaster.host m3u8 / site:host live stream
+                                               (deep pages of the official site)
+          alt:     "alt_name" m3u8 / "alt_name" iptv
+          prime:   "name" network
+          ott:     MIB OTT platform names, language-tagged
+
+        Uncapped here: the search phase stops by time budget, so every
+        priority-tier query is available and the highest-value ones run first.
+        """
+        direct, ip_tv, git, siteq, alt, prime, ott = [], [], [], [], [], [], []
+        seen = set()
+
+        def add(q: str, tier: list):
+            if q in seen:
+                return
+            seen.add(q)
+            tier.append(q)
+
+        for ch in channel_list:
+            name = (ch.get("canonical_name") or ch["name"] or "").strip()
+            if not name:
+                continue
+            add(f'"{name}" m3u8', direct)
+            add(f'{name} m3u playlist', direct)
+            add(f'"{name}" iptv', ip_tv)
+            add(f'"{name}" stream', ip_tv)
+            add(f'"{name}" github m3u', git)
+            website = (ch.get("website") or "").strip()
+            if website:
+                try:
+                    whost = urlparse(website).hostname or ""
+                except Exception:
+                    whost = ""
+                if whost and not is_blocked_domain(f"https://{whost}"):
+                    add(f"site:{whost} m3u8", siteq)
+                    add(f"site:{whost} live stream", siteq)
+            for alt_name in ch.get("alt_names", [])[:2]:
+                an = alt_name.strip()
+                if not an or an.lower() == name.lower():
+                    continue
+                add(f'"{an}" m3u8', alt)
+                add(f'"{an}" iptv', alt)
+            network = (ch.get("network") or "").strip()
+            if network and network.lower() not in name.lower():
+                add(f'"{name}" {network}', prime)
+
+        lang = self.language
+        for platform in self._ott_seeds:
+            add(f'"{platform}" {lang} m3u8', ott)
+            add(f'"{platform}" {lang} live stream', ott)
+
+        for tier in (direct, ip_tv, git, siteq, alt, prime, ott):
+            random.shuffle(tier)
+        # Tier order is the priority order — never shuffle across tiers: with a
+        # time budget the first queries issued are the only ones that run.
+        queries = direct + ip_tv + git + siteq + alt + prime + ott
+
+        if self.max_queries and len(queries) > self.max_queries:
+            queries = queries[: self.max_queries]
+        return queries
+
+
+def probe_source(url: str) -> str:
+    """Source tag for a probed URL (kept out of the class for testability)."""
+    return detect_source_name(url)
+
+
+def exit_code(result: ScrapeResult) -> int:
+    """Non-zero when the run cannot be trusted: errors or zero channels.
+
+    CI treats exit 0 as success, so a missing channel list, a wiped database
+    or an all-dead search must fail the job (and trigger its retry) instead
+    of publishing an empty playlist silently.
+    """
+    if result.errors:
+        return 1
+    if not result.channels:
+        return 1
+    return 0
+
+
+def main():
+    """CLI entry point: python -m scrapers.language <language> [--timeout-minutes N]"""
+    import argparse
+    parser = argparse.ArgumentParser(description="Scrape streams for an Indian TV language")
+    parser.add_argument("language", help="e.g. Hindi")
+    parser.add_argument(
+        "--timeout-minutes", type=int, default=0,
+        help="CI job timeout (minutes); search stops before it so the job always finishes",
+    )
+    parser.add_argument(
+        "--max-queries", type=int, default=0,
+        help="optional hard query cap (fallback when no time budget is used)",
+    )
+    parser.add_argument(
+        "--fresh", action="store_true",
+        help="discard this language's stored channels/resume and start clean",
+    )
+    args = parser.parse_args()
+
+    logging.basicConfig(
+        level=logging.INFO,
+        format="%(asctime)s [%(levelname)s] %(message)s",
+        handlers=[logging.StreamHandler(sys.stdout)],
+    )
+
+    scraper = LanguageScraper(
+        args.language,
+        max_queries=args.max_queries,
+        timeout_minutes=args.timeout_minutes,
+        fresh=args.fresh,
+    )
+    result = scraper.run()
+    print(f"\n[{args.language}] {len(result.channels)} channels, "
+          f"{result.urls_valid} valid URLs")
+    code = exit_code(result)
+    if code:
+        print(f"[{args.language}] FAILED: " + "; ".join(result.errors)
+              if result.errors else
+              f"[{args.language}] FAILED: no channels found")
+    sys.exit(code)
+
+
+if __name__ == "__main__":
+    main()
