@@ -1,7 +1,0 @@
-#EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
-#EXTINF:-1 tvg-name="channels json" group-title="Other",channels json
-https://iptv-org.github.io/api/channels.json
-#EXTINF:-1 tvg-name="channels json?country=US" group-title="Other",channels json?country=US
-https://iptv-org.github.io/api/channels.json?country=US
-#EXTINF:-1 tvg-name="streams json" group-title="Other",streams json
-https://iptv-org.github.io/api/streams.json
