@@ -1,11 +1,37 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
 #EXTINF:-1 tvg-name="asianet hd" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/7408/1782289617408-h.jpg" group-title="Entertainment",asianet hd
-https://asianetnews.vgcdn.net/ptnr-Embed/v1/manifest/611d79b11b77e2f571934fd80ca1413453772ac7/1c19363c-e4a0-4e4d-ba28-771d5615b88e/5d95323e-b73e-41ec-8db7-e412f0dd7ff3/0.m3u8
+https://asianetnews.vgcdn.net/vglive-sk-335835/playlist.m3u8
+#EXTINF:-1 tvg-name="asianet hd" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/7408/1782289617408-h.jpg" group-title="Entertainment",asianet hd
+https://asianetnews.vgcdn.net/ptnr-Embed/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/e2e5f74b-d075-45e4-aa07-e604a45fc1b1/playlist.m3u8?aws.manifestfilter=video_height%3A100-720
+#EXTINF:-1 tvg-name="asianet hd" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/7408/1782289617408-h.jpg" group-title="Entertainment",asianet hd
+https://asianetnews.vgcdn.net/ptnr-Embed/v1/manifest/611d79b11b77e2f571934fd80ca1413453772ac7/e2e5f74b-d075-45e4-aa07-e604a45fc1b1/0a4f6e12-420a-42aa-be2c-679e4cb1d3c2/0.m3u8
 #EXTINF:-1 tvg-name="asianet hd" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/7408/1782289617408-h.jpg" group-title="Entertainment",asianet hd
 https://asianetnews.vgcdn.net/ptnr-Embed/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/1c19363c-e4a0-4e4d-ba28-771d5615b88e/playlist.m3u8?aws.manifestfilter=video_height%3A100-720
 #EXTINF:-1 tvg-name="asianet hd" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/7408/1782289617408-h.jpg" group-title="Entertainment",asianet hd
-https://asianetnews.vgcdn.net/ptnr-Embed/v1/manifest/611d79b11b77e2f571934fd80ca1413453772ac7/1c19363c-e4a0-4e4d-ba28-771d5615b88e/83f026af-911c-430f-84a7-f62af87f0add/0.m3u8
+https://asianetnews.vgcdn.net/ptnr-Embed/v1/manifest/611d79b11b77e2f571934fd80ca1413453772ac7/1c19363c-e4a0-4e4d-ba28-771d5615b88e/66f018a1-0263-47fa-9653-735d5fcdfcc2/0.m3u8
+#EXTINF:-1 tvg-name="Asianet News (1080p)" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/7408/1782289617408-h.jpg" group-title="Entertainment",Asianet News (1080p)
+https://asianet-samsung.vgcdn.net/ptnr-monitoring/vglive-sk-906908/playlist.m3u8
+#EXTINF:-1 tvg-name="Asianet News (360p)" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/7408/1782289617408-h.jpg" group-title="Entertainment",Asianet News (360p)
+https://asianetnews.vgcdn.net/vglive-sk-917600/playlist.m3u8
+#EXTINF:-1 tvg-name="Bollywood Masala" group-title="Entertainment",Bollywood Masala
+https://sofast-lg.vgcdn.net/sofastplayout/751631cf-7a0d-356e-676e-b84cfec03391_0_HLS/manifest.m3u8
 #EXTINF:-1 tvg-name="Good News Today (720p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/GNT-Logo-2021_AT_FONT-transparent.png" group-title="News",Good News Today (720p)
 https://aajtaklive.vgcdn.net/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/3196cced-ce29-4219-9809-f07ccdaa02b9/vglive-sk-848805/master.m3u8
+#EXTINF:-1 tvg-name="index m3u8" group-title="Other",index m3u8
+https://gtc-yupp.vgcdn.net/vglive-sk-254807/index.m3u8
+#EXTINF:-1 tvg-name="main m3u8" group-title="Other",main m3u8
+https://vg-tv9yupp.vgcdn.net/vglive-sk-468570/v1/019dfce4b3371ea55784752988544/019dfce515ea1ea540a871e333259/main.m3u8
+#EXTINF:-1 tvg-name="main m3u8?ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=HIN&ads content_genre=ENT&ads channel=3529&ads channel_name=BBO&ads user=0&ads network_name=fusion_web&ads partner=fusion_web" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Other",main m3u8?ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=HIN&ads content_genre=ENT&ads channel=3529&ads channel_name=BBO&ads user=0&ads network_name=fusion_web&ads partner=fusion_web
+https://ssai.vgcdn.net/v1/master/b505192a-b731-4e1e-9dbd-6270fc444d00/bbo/main.m3u8?ads.app_bundle=&ads.app_store_url=&ads.content_livestream=1&ads.language=HIN&ads.content_genre=ENT&ads.channel=3529&ads.channel_name=BBO&ads.user=0&ads.network_name=fusion_web&ads.partner=fusion_web
+#EXTINF:-1 tvg-name="main m3u8?ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=HIN&ads content_genre=ENT&ads channel=3529&ads channel_name=BBO&ads user=0&ads network_name=web&ads partner=web" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Other",main m3u8?ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=HIN&ads content_genre=ENT&ads channel=3529&ads channel_name=BBO&ads user=0&ads network_name=web&ads partner=web
+https://ssai.vgcdn.net/v1/master/b505192a-b731-4e1e-9dbd-6270fc444d00/bbo/main.m3u8?ads.app_bundle=&ads.app_store_url=&ads.content_livestream=1&ads.language=HIN&ads.content_genre=ENT&ads.channel=3529&ads.channel_name=BBO&ads.user=0&ads.network_name=web&ads.partner=web
+#EXTINF:-1 tvg-name="main m3u8?ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=HIN&ads content_genre=ENT&ads channel=4220&ads channel_name=BBOClassic&ads user=0&ads network_name=fusion_web&ads partner=fusion_web" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Other",main m3u8?ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=HIN&ads content_genre=ENT&ads channel=4220&ads channel_name=BBOClassic&ads user=0&ads network_name=fusion_web&ads partner=fusion_web
+https://ssai.vgcdn.net/v1/master/b505192a-b731-4e1e-9dbd-6270fc444d00/bboclassic/main.m3u8?ads.app_bundle=&ads.app_store_url=&ads.content_livestream=1&ads.language=HIN&ads.content_genre=ENT&ads.channel=4220&ads.channel_name=BBOClassic&ads.user=0&ads.network_name=fusion_web&ads.partner=fusion_web
+#EXTINF:-1 tvg-name="main m3u8?ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=HIN&ads content_genre=ENT&ads channel=4220&ads channel_name=BBOClassic&ads user=0&ads network_name=web&ads partner=web" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Other",main m3u8?ads app_bundle=&ads app_store_url=&ads content_livestream=1&ads language=HIN&ads content_genre=ENT&ads channel=4220&ads channel_name=BBOClassic&ads user=0&ads network_name=web&ads partner=web
+https://ssai.vgcdn.net/v1/master/b505192a-b731-4e1e-9dbd-6270fc444d00/bboclassic/main.m3u8?ads.app_bundle=&ads.app_store_url=&ads.content_livestream=1&ads.language=HIN&ads.content_genre=ENT&ads.channel=4220&ads.channel_name=BBOClassic&ads.user=0&ads.network_name=web&ads.partner=web
+#EXTINF:-1 tvg-name="Retro TV (720p) [Geo-blocked]" group-title="Other",Retro TV (720p) [Geo-blocked]
+https://freecast-lukentvlive.vgcdn.net/out/v1/665e9f91614b43b0a0654e9317f1d9f3/index.m3u8
+#EXTINF:-1 tvg-name="The Doctors (720p) [Geo-blocked]" group-title="Other",The Doctors (720p) [Geo-blocked]
+https://lukentvlive.vgcdn.net/v1/master/cef183924f24adfa3d5d7601c3a17769082c0c2b/Doctors/index.m3u8
 #EXTINF:-1 tvg-name="REV'N Action (720p) [Geo-blocked]" group-title="Sports",REV'N Action (720p) [Geo-blocked]
 https://freecast-lukentvlive.vgcdn.net/out/v1/a4f31f297fc5440f814bd2cffd77e689/index.m3u8

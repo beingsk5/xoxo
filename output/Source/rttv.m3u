@@ -1,13 +1,33 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
 #EXTINF:-1 tvg-name="i news" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e6/Janasri_News_Channel_Logo.jpg" group-title="News",i news
-https://rt-glb.rttv.com/dvr/rtnews/playlist.m3u8
+https://rt-glb.rttv.com/dvr/rtnews/playlist_800Kb.m3u8
 #EXTINF:-1 tvg-name="i news" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e6/Janasri_News_Channel_Logo.jpg" group-title="News",i news
-https://rt-glb.rttv.com/dvr/rtnews/playlist_1600Kb.m3u8
-#EXTINF:-1 tvg-name="RT Arabic (1080p) [Geo-blocked]" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="News",RT Arabic (1080p) [Geo-blocked]
-https://rt-arb.rttv.com/dvr/rtarab/playlist.m3u8
-#EXTINF:-1 tvg-name="RT France (1080p) [Geo-blocked]" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="News",RT France (1080p) [Geo-blocked]
-https://rt-fra.rttv.com/dvr/rtfrance/playlist.m3u8
-#EXTINF:-1 tvg-name="RT India (1080p)" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="News",RT India (1080p)
+https://rt-glb.rttv.com/dvr/rtnews/playlist_1600Kb_1757304.ts
+#EXTINF:-1 tvg-name="RT India" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/Russia-today-logo.svg" group-title="News",RT India
 https://rt-india.rttv.com/dvr/rtindia/playlist.m3u8
-#EXTINF:-1 tvg-name="RT Documentary English Ⓖ" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Other",RT Documentary English Ⓖ
+#EXTINF:-1 tvg-name="RT News (1080p) [Geo-blocked]" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="News",RT News (1080p) [Geo-blocked]
+https://rt-glb.rttv.com/live/rtnews/playlist.m3u8
+#EXTINF:-1 tvg-name="playlist m3u8" group-title="Other",playlist m3u8
+https://rt-doc.rttv.com/dvr/rtdru/playlist.m3u8
+#EXTINF:-1 tvg-name="playlist m3u8" group-title="Other",playlist m3u8
+https://rt-glb.rttv.com/dvr/rtnews/playlist.m3u8
+#EXTINF:-1 tvg-name="playlist_1600Kb m3u8" group-title="Other",playlist_1600Kb m3u8
+https://rt-glb.rttv.com/dvr/rtnews/playlist_1600Kb.m3u8
+#EXTINF:-1 tvg-name="playlist_800Kb m3u8" group-title="Other",playlist_800Kb m3u8
+https://rt-esp.rttv.com/live/rtesp/playlist_800Kb.m3u8
+#EXTINF:-1 tvg-name="RT Arabic (1080p) [Geo-blocked]" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Other",RT Arabic (1080p) [Geo-blocked]
+https://rt-arb.rttv.com/dvr/rtarab/playlist.m3u8
+#EXTINF:-1 tvg-name="RT Arabic (1080p) [Geo-blocked]" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Other",RT Arabic (1080p) [Geo-blocked]
+https://rt-arb.rttv.com/live/rtarab/playlist.m3u8
+#EXTINF:-1 tvg-name="RT Documentary English (1080p) [Geo-blocked]" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Other",RT Documentary English (1080p) [Geo-blocked]
 https://rt-rtd.rttv.com/dvr/rtdoc/playlist.m3u8
+#EXTINF:-1 tvg-name="RT Documentary English (1080p) [Geo-blocked]" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Other",RT Documentary English (1080p) [Geo-blocked]
+https://rt-rtd.rttv.com/live/rtdoc/playlist.m3u8
+#EXTINF:-1 tvg-name="RT en Español (1080p) [Geo-blocked]" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Other",RT en Español (1080p) [Geo-blocked]
+https://rt-esp.rttv.com/dvr/rtesp/playlist.m3u8
+#EXTINF:-1 tvg-name="RT en Español (1080p) [Geo-blocked]" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Other",RT en Español (1080p) [Geo-blocked]
+https://rt-esp.rttv.com/live/rtesp/playlist.m3u8
+#EXTINF:-1 tvg-name="RT France (1080p) [Geo-blocked]" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Other",RT France (1080p) [Geo-blocked]
+https://rt-fra.rttv.com/dvr/rtfrance/playlist.m3u8
+#EXTINF:-1 tvg-name="RT France (1080p) [Geo-blocked]" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Other",RT France (1080p) [Geo-blocked]
+https://rt-fra.rttv.com/live/rtfrance/playlist.m3u8

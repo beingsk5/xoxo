@@ -1,27 +1,57 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
 #EXTINF:-1 tvg-name="" tvg-logo="https://dtil.tmsimg.com/assets/s142495_ld_h15_aa.png?lock=720x540" group-title="News",
 https://www.kayak.com/c/feed/
-#EXTINF:-1 tvg-name="r9-flexi-multi-kayak css?ver=36978348723" group-title="Other",r9-flexi-multi-kayak css?ver=36978348723
-https://www.kayak.com/c/wp-content/plugins/r9-flexi-multi/r9-flexi-multi-kayak.css?ver=36978348723
+#EXTINF:-1 tvg-name="" tvg-logo="https://dtil.tmsimg.com/assets/s142495_ld_h15_aa.png?lock=720x540" group-title="News",
+https://www.kayak.de/c/feed/
+#EXTINF:-1 tvg-name="r9-flexi-multi-snackbars js?ver=36699431923" group-title="Other",r9-flexi-multi-snackbars js?ver=36699431923
+https://www.kayak.de/c/wp-content/plugins/r9-flexi-multi/r9-flexi-multi-snackbars.js?ver=36699431923
+#EXTINF:-1 tvg-name="r9-flexi-multi-snackbars js?ver=36978348723" group-title="Other",r9-flexi-multi-snackbars js?ver=36978348723
+https://www.kayak.de/c/wp-content/plugins/r9-flexi-multi/r9-flexi-multi-snackbars.js?ver=36978348723
+#EXTINF:-1 tvg-name="r9-gdpr-dialog js?ver=36699431923" group-title="Other",r9-gdpr-dialog js?ver=36699431923
+https://www.kayak.de/c/wp-content/plugins/r9-gdpr-tcf/public/GDPRDialog/r9-gdpr-dialog.js?ver=36699431923
 #EXTINF:-1 tvg-name="r9-gdpr-dialog js?ver=36978348723" group-title="Other",r9-gdpr-dialog js?ver=36978348723
 https://www.kayak.com/c/wp-content/plugins/r9-gdpr-tcf/public/GDPRDialog/r9-gdpr-dialog.js?ver=36978348723
+#EXTINF:-1 tvg-name="r9-gdpr-dialog js?ver=36978348723" group-title="Other",r9-gdpr-dialog js?ver=36978348723
+https://www.kayak.de/c/wp-content/plugins/r9-gdpr-tcf/public/GDPRDialog/r9-gdpr-dialog.js?ver=36978348723
+#EXTINF:-1 tvg-name="r9-if-builder-kayak css?ver=36699431923" group-title="Other",r9-if-builder-kayak css?ver=36699431923
+https://www.kayak.de/c/wp-content/plugins/r9-if-builder/r9-if-builder-kayak.css?ver=36699431923
 #EXTINF:-1 tvg-name="r9-if-builder-kayak css?ver=36978348723" group-title="Other",r9-if-builder-kayak css?ver=36978348723
 https://www.kayak.com/c/wp-content/plugins/r9-if-builder/r9-if-builder-kayak.css?ver=36978348723
+#EXTINF:-1 tvg-name="r9-modal js?ver=36699431923" group-title="Other",r9-modal js?ver=36699431923
+https://www.kayak.de/c/wp-content/plugins/r9-modal/r9-modal.js?ver=36699431923
 #EXTINF:-1 tvg-name="r9-modal js?ver=36978348723" group-title="Other",r9-modal js?ver=36978348723
 https://www.kayak.com/c/wp-content/plugins/r9-modal/r9-modal.js?ver=36978348723
-#EXTINF:-1 tvg-name="r9-snackbar js?ver=36978348723" group-title="Other",r9-snackbar js?ver=36978348723
-https://www.kayak.com/c/wp-content/plugins/r9-snackbar/r9-snackbar.js?ver=36978348723
+#EXTINF:-1 tvg-name="r9-modal js?ver=36978348723" group-title="Other",r9-modal js?ver=36978348723
+https://www.kayak.de/c/wp-content/plugins/r9-modal/r9-modal.js?ver=36978348723
+#EXTINF:-1 tvg-name="r9-wishlist js?ver=36699431923" group-title="Other",r9-wishlist js?ver=36699431923
+https://www.kayak.de/c/wp-content/plugins/r9-wishlist/r9-wishlist.js?ver=36699431923
 #EXTINF:-1 tvg-name="r9-wishlist js?ver=36978348723" group-title="Other",r9-wishlist js?ver=36978348723
 https://www.kayak.com/c/wp-content/plugins/r9-wishlist/r9-wishlist.js?ver=36978348723
+#EXTINF:-1 tvg-name="react-dom min js?ver=36699431923" group-title="Other",react-dom min js?ver=36699431923
+https://www.kayak.de/c/wp-includes/js/dist/vendor/react-dom.min.js?ver=36699431923
 #EXTINF:-1 tvg-name="react-dom min js?ver=36978348723" group-title="Other",react-dom min js?ver=36978348723
 https://www.kayak.com/c/wp-includes/js/dist/vendor/react-dom.min.js?ver=36978348723
+#EXTINF:-1 tvg-name="scripts-kayak js?ver=36699431923" group-title="Other",scripts-kayak js?ver=36699431923
+https://www.kayak.de/c/wp-content/plugins/r9-components/public/SideNavigation/scripts-kayak.js?ver=36699431923
 #EXTINF:-1 tvg-name="scripts-kayak js?ver=36978348723" group-title="Other",scripts-kayak js?ver=36978348723
 https://www.kayak.com/c/wp-content/plugins/r9-components/public/Footer/scripts-kayak.js?ver=36978348723
+#EXTINF:-1 tvg-name="scripts-kayak js?ver=36978348723" group-title="Other",scripts-kayak js?ver=36978348723
+https://www.kayak.de/c/wp-content/plugins/r9-components/public/SideNavigation/scripts-kayak.js?ver=36978348723
+#EXTINF:-1 tvg-name="style css?ver=36699431923" group-title="Other",style css?ver=36699431923
+https://www.kayak.de/c/wp-content/themes/le-grand-k2/style.css?ver=36699431923
+#EXTINF:-1 tvg-name="style css?ver=36699431923" group-title="Other",style css?ver=36699431923
+https://www.kayak.de/c/wp-content/themes/r9-flexi-theme-kk/style.css?ver=36699431923
 #EXTINF:-1 tvg-name="style css?ver=36978348723" group-title="Other",style css?ver=36978348723
 https://www.kayak.com/c/wp-content/themes/le-grand-k2/style.css?ver=36978348723
 #EXTINF:-1 tvg-name="style css?ver=36978348723" group-title="Other",style css?ver=36978348723
 https://www.kayak.com/c/wp-content/themes/r9-flexi-theme-kk/style.css?ver=36978348723
+#EXTINF:-1 tvg-name="style css?ver=36978348723" group-title="Other",style css?ver=36978348723
+https://www.kayak.de/c/wp-content/themes/r9-flexi-theme-kk/style.css?ver=36978348723
+#EXTINF:-1 tvg-name="style css?ver=36978348723" group-title="Other",style css?ver=36978348723
+https://www.kayak.de/c/wp-content/themes/le-grand-k2/style.css?ver=36978348723
+#EXTINF:-1 tvg-name="wp-emoji-release min js?ver=36699431923" group-title="Other",wp-emoji-release min js?ver=36699431923
+https://www.kayak.de/c/wp-includes/js/wp-emoji-release.min.js?ver=36699431923
 #EXTINF:-1 tvg-name="wp-emoji-release min js?ver=36978348723" group-title="Other",wp-emoji-release min js?ver=36978348723
 https://www.kayak.com/c/wp-includes/js/wp-emoji-release.min.js?ver=36978348723
-#EXTINF:-1 tvg-name="wp-polyfill min js?ver=36978348723" group-title="Other",wp-polyfill min js?ver=36978348723
-https://www.kayak.com/c/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=36978348723
+#EXTINF:-1 tvg-name="wp-emoji-release min js?ver=36978348723" group-title="Other",wp-emoji-release min js?ver=36978348723
+https://www.kayak.de/c/wp-includes/js/wp-emoji-release.min.js?ver=36978348723

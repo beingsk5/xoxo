@@ -1,4 +1,6 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
+#EXTINF:-1 tvg-name="TMC HD (1080p) [Geo-blocked]" group-title="Other",TMC HD (1080p) [Geo-blocked]
+http://tv.streambox.fr/live/testlivestream/testlivestream/13.m3u8
 #EXTINF:-1 tvg-name="Canal+ Sport (1080p) [Geo-blocked]" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Sports",Canal+ Sport (1080p) [Geo-blocked]
 http://tv.streambox.fr/live/testlivestream/testlivestream/31.m3u8
 #EXTINF:-1 tvg-name="Golf + (1080p) [Geo-blocked]" group-title="Sports",Golf + (1080p) [Geo-blocked]

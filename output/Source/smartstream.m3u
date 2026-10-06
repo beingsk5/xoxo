@@ -1,10 +1,14 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
+#EXTINF:-1 tvg-name="Spondon" tvg-logo="https://www.spondontv.com/wp-content/uploads/2025/10/cropped-SPONDON_Blue-Violet_1-copy-300x100.png" group-title="Entertainment",Spondon
+https://nktv.smartstream.video/smartstream-us/spondon/spondon/playlist.m3u8
+#EXTINF:-1 tvg-name="Jonack TV (360p) [Not 24/7]" tvg-logo="https://dtil.tmsimg.com/assets/s143238_ld_h15_aa.png?lock=720x540" group-title="General",Jonack TV (360p) [Not 24/7]
+https://cdn.smartstream.video/smartstream-us/jonakk/jonakk/playlist.m3u8
 #EXTINF:-1 tvg-name="DY 365 (360p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DY%20365.png" group-title="News",DY 365 (360p)
 https://cdn.smartstream.video/smartstream-us/dy365/dy365/playlist.m3u8
-#EXTINF:-1 tvg-name="NK TV 24x7 (1080p)" tvg-logo="https://www.nktv.in/wp-content/uploads/2023/01/NEW-LOGO-NEW.png" group-title="News",NK TV 24x7 (1080p)
-https://nktv.smartstream.video/smartstream-us/nktvplus/nktvplus/chunks.m3u8
-#EXTINF:-1 tvg-name="NK TV Bangla (1080p)" tvg-logo="https://www.nktvbangla.com/wp-content/uploads/2023/09/WhatsApp-Image-2023-09-12-at-2.59.18-PM.jpg" group-title="News",NK TV Bangla (1080p)
+#EXTINF:-1 tvg-name="NK TV Bangla" tvg-logo="https://www.nktvbangla.com/wp-content/uploads/2023/09/WhatsApp-Image-2023-09-12-at-2.59.18-PM.jpg" group-title="News",NK TV Bangla
 https://nktv.smartstream.video/smartstream-us/nkbangla/nkbangla/playlist.m3u8
+#EXTINF:-1 tvg-name="NK TV Plus" tvg-logo="https://www.nktv.in/wp-content/uploads/2023/01/NEW-LOGO-NEW.png" group-title="News",NK TV Plus
+https://nktv.smartstream.video/smartstream-us/nktvplus/nktvplus/chunks.m3u8
 #EXTINF:-1 tvg-name="05daqhs3jxdk_ js" group-title="Other",05daqhs3jxdk_ js
 https://www.smartstream.tv/_next/static/chunks/05daqhs3jxdk_.js
 #EXTINF:-1 tvg-name="0_1j3udrnmwdm js" group-title="Other",0_1j3udrnmwdm js
@@ -17,3 +21,27 @@ https://www.smartstream.tv/_next/static/chunks/0tkmbkvh-9jou.js
 https://www.smartstream.tv/_next/static/chunks/1vzbl8zjas4ep.js
 #EXTINF:-1 tvg-name="2ds8qucte1ttc js" group-title="Other",2ds8qucte1ttc js
 https://www.smartstream.tv/_next/static/chunks/2ds8qucte1ttc.js
+#EXTINF:-1 tvg-name="366phlfpywj_u js" group-title="Other",366phlfpywj_u js
+https://www.smartstream.tv/_next/static/chunks/366phlfpywj_u.js
+#EXTINF:-1 tvg-name="HP_Export_Bumper_Mobile_a8c5046e1c mp4" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Other",HP_Export_Bumper_Mobile_a8c5046e1c mp4
+https://www.smartstream.tv/strapi/uploads/HP_Export_Bumper_Mobile_a8c5046e1c.mp4
+#EXTINF:-1 tvg-name="HP_Export_Convo_Ad_180e99c35c mp4" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Other",HP_Export_Convo_Ad_180e99c35c mp4
+https://www.smartstream.tv/strapi/uploads/HP_Export_Convo_Ad_180e99c35c.mp4
+#EXTINF:-1 tvg-name="HP_Export_Cube_Ad_7045e158e8 mp4" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Other",HP_Export_Cube_Ad_7045e158e8 mp4
+https://www.smartstream.tv/strapi/uploads/HP_Export_Cube_Ad_7045e158e8.mp4
+#EXTINF:-1 tvg-name="HP_Export_Flow_Ad_66de539633 mp4" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Other",HP_Export_Flow_Ad_66de539633 mp4
+https://www.smartstream.tv/strapi/uploads/HP_Export_Flow_Ad_66de539633.mp4
+#EXTINF:-1 tvg-name="HP_Export_Parallax_Ad_9bf3359b0b mp4" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Other",HP_Export_Parallax_Ad_9bf3359b0b mp4
+https://www.smartstream.tv/strapi/uploads/HP_Export_Parallax_Ad_9bf3359b0b.mp4
+#EXTINF:-1 tvg-name="image?url=https%3A%2F%2Fwww smartstream tv%2Fstrapi%2Fuploads%2FGlobetrotter_Matthias_Schwarte_4d3c8b4baa jpg&w=256&q=75" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Other",image?url=https%3A%2F%2Fwww smartstream tv%2Fstrapi%2Fuploads%2FGlobetrotter_Matthias_Schwarte_4d3c8b4baa jpg&w=256&q=75
+https://www.smartstream.tv/_next/image?url=https%3A%2F%2Fwww.smartstream.tv%2Fstrapi%2Fuploads%2FGlobetrotter_Matthias_Schwarte_4d3c8b4baa.jpg&w=256&q=75
+#EXTINF:-1 tvg-name="Inlet_Bumper_Desktop_b00f65adeb mp4" group-title="Other",Inlet_Bumper_Desktop_b00f65adeb mp4
+https://www.smartstream.tv/strapi/uploads/Inlet_Bumper_Desktop_b00f65adeb.mp4
+#EXTINF:-1 tvg-name="Inlet_Fullview_Ad_38e35a0db4 mp4" group-title="Other",Inlet_Fullview_Ad_38e35a0db4 mp4
+https://www.smartstream.tv/strapi/uploads/Inlet_Fullview_Ad_38e35a0db4.mp4
+#EXTINF:-1 tvg-name="Smartstream_CTV_dc40804b33 mp4" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Other",Smartstream_CTV_dc40804b33 mp4
+https://www.smartstream.tv/strapi/uploads/Smartstream_CTV_dc40804b33.mp4
+#EXTINF:-1 tvg-name="Smartstream_Vertical_Ad_25f4c30046 mp4" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Other",Smartstream_Vertical_Ad_25f4c30046 mp4
+https://www.smartstream.tv/strapi/uploads/Smartstream_Vertical_Ad_25f4c30046.mp4
+#EXTINF:-1 tvg-name="Smartstream_Video_Ad_fae5084dc2 mp4" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Other",Smartstream_Video_Ad_fae5084dc2 mp4
+https://www.smartstream.tv/strapi/uploads/Smartstream_Video_Ad_fae5084dc2.mp4

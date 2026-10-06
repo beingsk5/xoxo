@@ -1,5 +1,3 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
-#EXTINF:-1 tvg-name="kalikatv m3u8" group-title="Other",kalikatv m3u8
-http://server.applelive.in/kalikatv/kalikatv.m3u8
-#EXTINF:-1 tvg-name="Village TV (576p)" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/VillageTV.png" group-title="Religious",Village TV (576p)
+#EXTINF:-1 tvg-name="Village TV" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/VillageTV.png" group-title="Religious",Village TV
 https://villagetv.applelive.in/villagetv/villagetv/index.m3u8

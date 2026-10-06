@@ -1,319 +1,545 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
-#EXTINF:-1 tvg-name="xDFOPpu1?page_domain=www moviefone com" group-title="Movies",xDFOPpu1?page_domain=www moviefone com
-https://cdn.jwplayer.com/v2/playlists/xDFOPpu1?page_domain=www.moviefone.com
+#EXTINF:-1 tvg-name="Cartoon Network Hindi" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_2010_logo.svg/960px-Cartoon_Network_2010_logo.svg.png" group-title="Animation",Cartoon Network Hindi
+http://192.168.1.36:8086/live/high/816.m3u8
+#EXTINF:-1 tvg-name="Pogo Hindi" tvg-logo="https://dtil.tmsimg.com/assets/s143663_ld_h15_aa.png?lock=720x540" group-title="Animation",Pogo Hindi
+http://192.168.1.36:8086/live/high/559.m3u8
+#EXTINF:-1 tvg-name="NDTV Profit" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_NDTV_PROFIT_PRIME/images/LOGO_HD/image.png" group-title="Business",NDTV Profit
+http://192.168.1.36:8086/live/high/259.m3u8
+#EXTINF:-1 tvg-name="Zee Business" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/ZEEDIGITAL/LIVECHANNEL/67ed20afb9965350035ecc50/images/LOGO/LOGO_3scYDc5V6_Zbusiness_logo-for-larg.png" group-title="Business",Zee Business
+http://192.168.1.36:8086/live/high/657.m3u8
+#EXTINF:-1 tvg-name="Zee Classic" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022J66T.png?lock=720x540" group-title="Classic",Zee Classic
+http://192.168.1.36:8086/live/high/1691.m3u8
+#EXTINF:-1 tvg-name="DD bharati" tvg-logo="https://dtil.tmsimg.com/assets/s142779_ld_h15_aa.png?lock=720x540" group-title="Culture",DD bharati
+http://192.168.1.36:8086/live/high/580.m3u8
+#EXTINF:-1 tvg-name="DD Bharati Ⓨ" tvg-logo="https://dtil.tmsimg.com/assets/s142779_ld_h15_aa.png?lock=720x540" group-title="Culture",DD Bharati Ⓨ
+https://www.youtube.com/@ddbharati5316/live
+#EXTINF:-1 tvg-name="Animal Planet Hindi" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/AnimalPlanetHD_Transparent_d36c0ee3-3e3f-4e0c-b3b2-23bfb3c3c2b0.png" group-title="Documentary",Animal Planet Hindi
+http://192.168.1.36:8086/live/high/566.m3u8
+#EXTINF:-1 tvg-name="History TV18 HD Hindi" tvg-logo="https://dtil.tmsimg.com/assets/s143133_ld_h15_aa.png?lock=720x540" group-title="Documentary",History TV18 HD Hindi
+http://192.168.1.36:8086/live/high/578.m3u8
+#EXTINF:-1 tvg-name="DD Gyandarshan" tvg-logo="https://dtil.tmsimg.com/assets/s143100_ld_h15_aa.png?lock=720x540" group-title="Education",DD Gyandarshan
+http://192.168.1.36:8086/live/high/1329.m3u8
+#EXTINF:-1 tvg-name="DD Kisan" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Kisan.png" group-title="Education",DD Kisan
+http://192.168.1.36:8086/live/high/583.m3u8
+#EXTINF:-1 tvg-name="And TV HD" group-title="Entertainment",And TV HD
+http://192.168.1.36:8086/live/high/472.m3u8
+#EXTINF:-1 tvg-name="Bollywood Masala" group-title="Entertainment",Bollywood Masala
+http://192.168.1.36:8086/live/high/3029.m3u8
+#EXTINF:-1 tvg-name="Colors Cineplex HD" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/Colors_Transparent_16069908-8494-4eb4-bd40-5afca3969088.png" group-title="Entertainment",Colors Cineplex HD
+http://192.168.1.36:8086/live/high/1477.m3u8
+#EXTINF:-1 tvg-name="Colors Cineplex Superhit" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/Colors_Transparent_16069908-8494-4eb4-bd40-5afca3969088.png" group-title="Entertainment",Colors Cineplex Superhit
+http://192.168.1.36:8086/live/high/1450.m3u8
+#EXTINF:-1 tvg-name="Colors HD" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/Colors_Transparent_16069908-8494-4eb4-bd40-5afca3969088.png" group-title="Entertainment",Colors HD
+http://192.168.1.36:8086/live/high/144.m3u8
+#EXTINF:-1 tvg-name="Colors Infinity HD" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/Colors_Transparent_16069908-8494-4eb4-bd40-5afca3969088.png" group-title="Entertainment",Colors Infinity HD
+http://192.168.1.36:8086/live/high/1158.m3u8
+#EXTINF:-1 tvg-name="Colors Infinity SD" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/Colors_Transparent_16069908-8494-4eb4-bd40-5afca3969088.png" group-title="Entertainment",Colors Infinity SD
+http://192.168.1.36:8086/live/high/1325.m3u8
+#EXTINF:-1 tvg-name="Colors SD" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/Colors_Transparent_16069908-8494-4eb4-bd40-5afca3969088.png" group-title="Entertainment",Colors SD
+http://192.168.1.36:8086/live/high/1368.m3u8
+#EXTINF:-1 tvg-name="DD National" tvg-logo="https://dtil.tmsimg.com/assets/s158252_ld_h9_aa.png?lock=720x540" group-title="Entertainment",DD National
+http://192.168.1.36:8086/live/high/202.m3u8
+#EXTINF:-1 tvg-name="Desi Channel" tvg-logo="https://desichannel.in/wp-content/uploads/2025/01/desi-channel.png" group-title="Entertainment",Desi Channel
+http://192.168.1.36:8086/live/high/906.m3u8
+#EXTINF:-1 tvg-name="JUSPunjabi" group-title="Entertainment",JUSPunjabi
+http://192.168.1.36:8086/live/high/959.m3u8
+#EXTINF:-1 tvg-name="Live Punjabi TV" group-title="Entertainment",Live Punjabi TV
+http://192.168.1.36:8086/live/high/951.m3u8
+#EXTINF:-1 tvg-name="ME: SONY SAB HD" tvg-logo="https://dtil.tmsimg.com/assets/s159099_ld_h15_ab.png?lock=720x540" group-title="Entertainment",ME: SONY SAB HD
+http://vip-max.com:5555/user/pass/71472
+#EXTINF:-1 tvg-name="OSN PEHLA: Colors" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/Colors_Transparent_16069908-8494-4eb4-bd40-5afca3969088.png" group-title="Entertainment",OSN PEHLA: Colors
+http://vip-max.com:5555/user/pass/10261
+#EXTINF:-1 tvg-name="OSN PEHLA: Star Vijay" tvg-logo="https://vignette.wikia.nocookie.net/logopedia/images/2/23/Vijay_tv.png/revision/latest?cb=20170719104859" group-title="Entertainment",OSN PEHLA: Star Vijay
+http://vip-max.com:5555/user/pass/11707
+#EXTINF:-1 tvg-name="OSN PEHLA: Zee TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Zee_TV_Logo_2025.svg/960px-Zee_TV_Logo_2025.svg.png" group-title="Entertainment",OSN PEHLA: Zee TV
+http://vip-max.com:5555/user/pass/11703
+#EXTINF:-1 tvg-name="PTC Punjabi" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/PTC%20Punjabi.png" group-title="Entertainment",PTC Punjabi
+http://192.168.1.36:8086/live/high/1171.m3u8
+#EXTINF:-1 tvg-name="PTC Punjabi Gold" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/PTC%20Punjabi%20Gold.png" group-title="Entertainment",PTC Punjabi Gold
+http://192.168.1.36:8086/live/high/1190.m3u8
+#EXTINF:-1 tvg-name="Shemaroo TV" tvg-logo="https://dtil.tmsimg.com/assets/s143778_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Shemaroo TV
+http://192.168.1.36:8086/live/high/1961.m3u8
+#EXTINF:-1 tvg-name="Shemaroo Umang" tvg-logo="https://dtil.tmsimg.com/assets/s143779_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Shemaroo Umang
+http://192.168.1.36:8086/live/high/2078.m3u8
+#EXTINF:-1 tvg-name="SL Sony PAL" tvg-logo="https://dtil.tmsimg.com/assets/s157973_ld_h15_aa.png?lock=720x540" group-title="Entertainment",SL Sony PAL
+http://192.168.1.36:8086/live/high/sl474.m3u8
+#EXTINF:-1 tvg-name="SL Sony SAB HD" tvg-logo="https://dtil.tmsimg.com/assets/s159099_ld_h15_ab.png?lock=720x540" group-title="Entertainment",SL Sony SAB HD
+http://192.168.1.36:8086/live/high/sl154.m3u8
+#EXTINF:-1 tvg-name="Sony LIV Exclusive" group-title="Entertainment",Sony LIV Exclusive
+http://192.168.1.36:8086/live/high/3020.m3u8
+#EXTINF:-1 tvg-name="Sony Pal" tvg-logo="https://dtil.tmsimg.com/assets/s157973_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Sony Pal
+http://192.168.1.36:8086/live/high/474.m3u8
+#EXTINF:-1 tvg-name="Sony SAB" tvg-logo="https://dtil.tmsimg.com/assets/s159099_ld_h15_ab.png?lock=720x540" group-title="Entertainment",Sony SAB
+http://192.168.1.36:8086/live/high/154.m3u8
+#EXTINF:-1 tvg-name="Sony SAB HD" tvg-logo="https://dtil.tmsimg.com/assets/s159099_ld_h15_ab.png?lock=720x540" group-title="Entertainment",Sony SAB HD
+http://192.168.1.36:8086/live/high/471.m3u8
+#EXTINF:-1 tvg-name="TV Asia Powered by Shemaroo" group-title="Entertainment",TV Asia Powered by Shemaroo
+http://192.168.1.36:8086/live/high/3071.m3u8
+#EXTINF:-1 tvg-name="UK: Star Plus HD" tvg-logo="https://i.imgur.com/XUnWcZF.png" group-title="Entertainment",UK: Star Plus HD
+http://vip-max.com:5555/user/pass/30881
+#EXTINF:-1 tvg-name="UK| Colors Rishtey (Indian)" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/Colors_Transparent_16069908-8494-4eb4-bd40-5afca3969088.png" group-title="Entertainment",UK| Colors Rishtey (Indian)
+http://vip-max.com:5555/user/pass/103111
+#EXTINF:-1 tvg-name="Zee Anmol" tvg-logo="https://i.imgur.com/rskUQ83.png" group-title="Entertainment",Zee Anmol
+http://192.168.1.36:8086/live/high/473.m3u8
+#EXTINF:-1 tvg-name="Zee Punjabi" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022JG14.png?lock=720x540" group-title="Entertainment",Zee Punjabi
+http://192.168.1.36:8086/live/high/1751.m3u8
+#EXTINF:-1 tvg-name="Zee TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Zee_TV_Logo_2025.svg/960px-Zee_TV_Logo_2025.svg.png" group-title="Entertainment",Zee TV
+http://192.168.1.36:8086/live/high/1351.m3u8
+#EXTINF:-1 tvg-name="Zee TV HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Zee_TV_Logo_2025.svg/960px-Zee_TV_Logo_2025.svg.png" group-title="Entertainment",Zee TV HD
+http://192.168.1.36:8086/live/high/167.m3u8
+#EXTINF:-1 tvg-name="zee yuva" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022S9FG.png?lock=720x540" group-title="Entertainment",zee yuva
+https://m3u.cloudplay.qzz.io/z5/0-9-zeeyuva.m3u8
+#EXTINF:-1 tvg-name="DD India" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20India.png" group-title="General",DD India
+http://192.168.1.36:8086/live/high/528.m3u8
+#EXTINF:-1 tvg-name="DD Uttar Pradesh" tvg-logo="https://dtil.tmsimg.com/assets/s142807_ld_h9_ab.png?lock=720x540" group-title="General",DD Uttar Pradesh
+http://192.168.1.36:8086/live/high/540.m3u8
+#EXTINF:-1 tvg-name="Rishtey" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Colors_Rishtey-logo_2000_X_1125_Tranpharent.png" group-title="General",Rishtey
+http://192.168.1.36:8086/live/high/279.m3u8
+#EXTINF:-1 tvg-name="Bollywood Hungama" group-title="Kids",Bollywood Hungama
+http://192.168.1.36:8086/live/high/2040.m3u8
+#EXTINF:-1 tvg-name="Nick Hindi" group-title="Kids",Nick Hindi
+http://192.168.1.36:8086/live/high/545.m3u8
+#EXTINF:-1 tvg-name="Sonic Hindi" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/6294/1782290926294-h.jpg" group-title="Kids",Sonic Hindi
+http://192.168.1.36:8086/live/high/815.m3u8
+#EXTINF:-1 tvg-name="Sony Yay Hindi" group-title="Kids",Sony Yay Hindi
+http://192.168.1.36:8086/live/high/872.m3u8
+#EXTINF:-1 tvg-name="Fashion India" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Fashion_India.png" group-title="Lifestyle",Fashion India
+http://192.168.1.36:8086/live/high/2031.m3u8
+#EXTINF:-1 tvg-name="TLC" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/TLC%20HD.png" group-title="Lifestyle",TLC
+https://live-fi.tvkaista.net/tlc/live.m3u8
+#EXTINF:-1 tvg-name="TLC HD" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/TLC%20HD.png" group-title="Lifestyle",TLC HD
+http://192.168.1.36:8086/live/high/479.m3u8
+#EXTINF:-1 tvg-name="TLC Hindi" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/TLC%20HD.png" group-title="Lifestyle",TLC Hindi
+http://192.168.1.36:8086/live/high/571.m3u8
+#EXTINF:-1 tvg-name="Zee Zest HD" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022ZKWY.png?lock=720x540" group-title="Lifestyle",Zee Zest HD
+http://192.168.1.36:8086/live/high/2757.m3u8
+#EXTINF:-1 tvg-name="Zee Zest SD" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022ZKWY.png?lock=720x540" group-title="Lifestyle",Zee Zest SD
+http://192.168.1.36:8086/live/high/2948.m3u8
+#EXTINF:-1 tvg-name="beIN STAR MOVIES HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/STAR_Movies_logo.svg/960px-STAR_Movies_logo.svg.png" group-title="Movies",beIN STAR MOVIES HD
+http://vip-max.com:5555/user/pass/37218
+#EXTINF:-1 tvg-name="Colors Cineplex" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/3042/1782291173042-h.jpg" group-title="Movies",Colors Cineplex
+http://192.168.1.36:8086/live/high/482.m3u8
+#EXTINF:-1 tvg-name="Colors Cineplex Bollywood" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Colors-Cineplex-Bollywood-Transparent.png" group-title="Movies",Colors Cineplex Bollywood
+http://192.168.1.36:8086/live/high/1763.m3u8
+#EXTINF:-1 tvg-name="OSN PEHLA: Zee Cinema" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022HVX3.png?lock=720x540" group-title="Movies",OSN PEHLA: Zee Cinema
+http://vip-max.com:5555/user/pass/11701
+#EXTINF:-1 tvg-name="OSN Star Movies HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/STAR_Movies_logo.svg/960px-STAR_Movies_logo.svg.png" group-title="Movies",OSN Star Movies HD
+http://vip-max.com:5555/user/pass/94656
+#EXTINF:-1 tvg-name="SL Sony MAX 2" tvg-logo="https://dtil.tmsimg.com/assets/s157590_ld_h15_aa.png?lock=720x540" group-title="Movies",SL Sony MAX 2
+http://192.168.1.36:8086/live/high/sl483.m3u8
+#EXTINF:-1 tvg-name="SL Sony MAX HD" tvg-logo="https://dtil.tmsimg.com/assets/s157590_ld_h15_aa.png?lock=720x540" group-title="Movies",SL Sony MAX HD
+http://192.168.1.36:8086/live/high/sl476.m3u8
+#EXTINF:-1 tvg-name="SL Sony PIX HD" tvg-logo="https://dtil.tmsimg.com/assets/s143803_ld_h15_aa.png?lock=720x540" group-title="Movies",SL Sony PIX HD
+http://192.168.1.36:8086/live/high/sl762.m3u8
+#EXTINF:-1 tvg-name="Sony Max SD" tvg-logo="https://dtil.tmsimg.com/assets/s157590_ld_h15_aa.png?lock=720x540" group-title="Movies",Sony Max SD
+http://192.168.1.36:8086/live/high/289.m3u8
+#EXTINF:-1 tvg-name="Sony MAX2" tvg-logo="https://dtil.tmsimg.com/assets/s157590_ld_h15_aa.png?lock=720x540" group-title="Movies",Sony MAX2
+http://192.168.1.36:8086/live/high/483.m3u8
+#EXTINF:-1 tvg-name="UK: SONY MAX 2 (Indian)" tvg-logo="https://dtil.tmsimg.com/assets/s157590_ld_h15_aa.png?lock=720x540" group-title="Movies",UK: SONY MAX 2 (Indian)
+http://vip-max.com:5555/user/pass/103109
+#EXTINF:-1 tvg-name="UK| KTV (india)" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG002Z1SEP.png?lock=720x540" group-title="Movies",UK| KTV (india)
+http://vip-max.com:5555/user/pass/103086
+#EXTINF:-1 tvg-name="Zee Action" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022K5ZV.png?lock=720x540" group-title="Movies",Zee Action
+http://192.168.1.36:8086/live/high/488.m3u8
+#EXTINF:-1 tvg-name="Zee Anmol Cinema" tvg-logo="https://i.imgur.com/DjzFjod.png" group-title="Movies",Zee Anmol Cinema
+http://192.168.1.36:8086/live/high/415.m3u8
+#EXTINF:-1 tvg-name="Zee Bollywood" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022T6DM.png?lock=720x540" group-title="Movies",Zee Bollywood
+http://192.168.1.36:8086/live/high/487.m3u8
+#EXTINF:-1 tvg-name="Zee Cinema" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022HVX3.png?lock=720x540" group-title="Movies",Zee Cinema
+http://192.168.1.36:8086/live/high/484.m3u8
+#EXTINF:-1 tvg-name="Zee Cinema HD" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022HVX3.png?lock=720x540" group-title="Movies",Zee Cinema HD
+http://192.168.1.36:8086/live/high/165.m3u8
+#EXTINF:-1 tvg-name="Zee Picchar SD" group-title="Movies",Zee Picchar SD
+http://192.168.1.36:8086/live/high/3047.m3u8
+#EXTINF:-1 tvg-name="Boogle Bollywood" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Boogle_Bollywood.png" group-title="Music",Boogle Bollywood
+http://192.168.1.36:8086/live/high/962.m3u8
+#EXTINF:-1 tvg-name="Desi Music Station" group-title="Music",Desi Music Station
+http://192.168.1.36:8086/live/high/2252.m3u8
+#EXTINF:-1 tvg-name="Haryanvi Hits" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Haryanvi_Hits.png" group-title="Music",Haryanvi Hits
+http://192.168.1.36:8086/live/high/1527.m3u8
+#EXTINF:-1 tvg-name="Music India" tvg-logo="https://dtil.tmsimg.com/assets/s143563_ld_h15_aa.png?lock=720x540" group-title="Music",Music India
+http://192.168.1.36:8086/live/high/250.m3u8
+#EXTINF:-1 tvg-name="Punjabi Hits" tvg-logo="https://dtil.tmsimg.com/assets/s143691_ld_h15_aa.png?lock=720x540" group-title="Music",Punjabi Hits
+http://192.168.1.36:8086/live/high/2934.m3u8
+#EXTINF:-1 tvg-name="Punjabi Melodies" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Punjabi_Melodies.png" group-title="Music",Punjabi Melodies
+http://192.168.1.36:8086/live/high/2325.m3u8
+#EXTINF:-1 tvg-name="Saam TV" tvg-logo="https://dtil.tmsimg.com/assets/s143735_ld_h15_aa.png?lock=720x540" group-title="Music",Saam TV
+https://cdn.pishow.tv/ott/live/437/master.m3u8
+#EXTINF:-1 tvg-name="Saga Music Haryanvi" group-title="Music",Saga Music Haryanvi
+http://192.168.1.36:8086/live/high/2751.m3u8
+#EXTINF:-1 tvg-name="Wah Punjabi" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/tv/480/270/languages/Wah-Punjabi_TV.jpg" group-title="Music",Wah Punjabi
+http://192.168.1.36:8086/live/high/1441.m3u8
 #EXTINF:-1 tvg-name="" tvg-logo="https://dtil.tmsimg.com/assets/s142495_ld_h15_aa.png?lock=720x540" group-title="News",
-https://www.tvinsider.com/network/hallmark-channel/feed/
-#EXTINF:-1 tvg-name="" tvg-logo="https://dtil.tmsimg.com/assets/s142495_ld_h15_aa.png?lock=720x540" group-title="News",
-https://www.italianfuturism.org/manifestos/feed/
-#EXTINF:-1 tvg-name="" tvg-logo="https://dtil.tmsimg.com/assets/s142495_ld_h15_aa.png?lock=720x540" group-title="News",
-https://www.kayak.co.uk/c/feed/
-#EXTINF:-1 tvg-name="" tvg-logo="https://dtil.tmsimg.com/assets/s142495_ld_h15_aa.png?lock=720x540" group-title="News",
-https://blog.movistar.com.co/feed/
-#EXTINF:-1 tvg-name="" tvg-logo="https://dtil.tmsimg.com/assets/s142495_ld_h15_aa.png?lock=720x540" group-title="News",
-https://blog.movistar.com.co/guias/feed/
+https://atencionalcliente.movistar.cl/comments/feed/
 #EXTINF:-1 tvg-name="" tvg-logo="https://dtil.tmsimg.com/assets/s142495_ld_h15_aa.png?lock=720x540" group-title="News",
 https://blog.movistar.com.co/tecnologia/amplificador-de-senal-wifi/feed/
-#EXTINF:-1 tvg-name="ads min js?referrer=https%3A%2F%2Fwww tvline com%2Fnews%2Fthe-muppet-show-streaming-disney-plus-1234630152%2F&cb=82" group-title="News",ads min js?referrer=https%3A%2F%2Fwww tvline com%2Fnews%2Fthe-muppet-show-streaming-disney-plus-1234630152%2F&cb=82
-https://ads.adthrive.com/sites/6895fd63d353d369174916b1/ads.min.js?referrer=https%3A%2F%2Fwww.tvline.com%2Fnews%2Fthe-muppet-show-streaming-disney-plus-1234630152%2F&cb=82
-#EXTINF:-1 tvg-name="0-css1d542804e2523c52cdd0005b3893d536bf39b5cdf16d9cc9b705a8366de5a css" group-title="Other",0-css1d542804e2523c52cdd0005b3893d536bf39b5cdf16d9cc9b705a8366de5a css
-https://blog.movistar.com.co/wp-content/cache/fvm/min/0-css1d542804e2523c52cdd0005b3893d536bf39b5cdf16d9cc9b705a8366de5a.css
-#EXTINF:-1 tvg-name="0-css3384a030febfc6ea745372ed9527de9a976e7777d462002cfe10bc78f4b0e css" group-title="Other",0-css3384a030febfc6ea745372ed9527de9a976e7777d462002cfe10bc78f4b0e css
-https://blog.movistar.com.co/wp-content/cache/fvm/min/0-css3384a030febfc6ea745372ed9527de9a976e7777d462002cfe10bc78f4b0e.css
+#EXTINF:-1 tvg-name="" tvg-logo="https://dtil.tmsimg.com/assets/s142495_ld_h15_aa.png?lock=720x540" group-title="News",
+https://blog.movistar.com.co/deportes/feed/
+#EXTINF:-1 tvg-name="Aaj Tak" tvg-logo="https://i.imgur.com/gS9Qkfy.png" group-title="News",Aaj Tak
+http://192.168.1.36:8086/live/high/173.m3u8
+#EXTINF:-1 tvg-name="ABP News India" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/ABP_News_logo.svg/500px-ABP_News_logo.svg.png" group-title="News",ABP News India
+http://192.168.1.36:8086/live/high/177.m3u8
+#EXTINF:-1 tvg-name="DD News" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20News.png" group-title="News",DD News
+http://192.168.1.36:8086/live/high/203.m3u8
+#EXTINF:-1 tvg-name="First India News" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_FIRST_INDIA_NEWS_RAJASTHAN/images/LOGO_HD/image.png" group-title="News",First India News
+http://192.168.1.36:8086/live/high/927.m3u8
+#EXTINF:-1 tvg-name="Hindi Khabar" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Hindi%20Khabar.png" group-title="News",Hindi Khabar
+http://192.168.1.36:8086/live/high/808.m3u8
+#EXTINF:-1 tvg-name="India 24x7" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/India24x7.png" group-title="News",India 24x7
+http://192.168.1.36:8086/live/high/2176.m3u8
+#EXTINF:-1 tvg-name="India news" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/India%20News.png" group-title="News",India news
+http://192.168.1.36:8086/live/high/498.m3u8
+#EXTINF:-1 tvg-name="India News Haryana" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/India%20News%20Haryana.png" group-title="News",India News Haryana
+http://192.168.1.36:8086/live/high/516.m3u8
+#EXTINF:-1 tvg-name="India News UP" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/India%20News.png" group-title="News",India News UP
+http://192.168.1.36:8086/live/high/512.m3u8
+#EXTINF:-1 tvg-name="India Today" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/INDIA-TODAY_transparent.png" group-title="News",India Today
+http://192.168.1.36:8086/live/high/493.m3u8
+#EXTINF:-1 tvg-name="India TV" tvg-logo="https://dtil.tmsimg.com/assets/s143199_ld_h15_aa.png?lock=720x540" group-title="News",India TV
+http://192.168.1.36:8086/live/high/235.m3u8
+#EXTINF:-1 tvg-name="India Voice" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/India_Voice.png" group-title="News",India Voice
+http://192.168.1.36:8086/live/high/788.m3u8
+#EXTINF:-1 tvg-name="Living India News" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Living-India-News-transparent.png" group-title="News",Living India News
+http://192.168.1.36:8086/live/high/831.m3u8
+#EXTINF:-1 tvg-name="NDTV 24x7" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/NDTV24x7_Transparent_9b042a6f-d40f-465a-998f-627ee6841919.png" group-title="News",NDTV 24x7
+http://192.168.1.36:8086/live/high/255.m3u8
+#EXTINF:-1 tvg-name="NDTV India" tvg-logo="https://dtil.tmsimg.com/assets/s157588_ld_h15_aa.png?lock=720x540" group-title="News",NDTV India
+http://192.168.1.36:8086/live/high/258.m3u8
+#EXTINF:-1 tvg-name="News 1 India" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_NEWS_1_INDIA/images/LOGO_HD/image.png" group-title="News",News 1 India
+http://192.168.1.36:8086/live/high/936.m3u8
+#EXTINF:-1 tvg-name="News 18 India" group-title="News",News 18 India
+http://192.168.1.36:8086/live/high/231.m3u8
+#EXTINF:-1 tvg-name="News India 24x7" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/08.INDIA-24x7(NEWS-HINDI)--2000-x-1125--Transpernt.png" group-title="News",News India 24x7
+http://192.168.1.36:8086/live/high/850.m3u8
+#EXTINF:-1 tvg-name="News India TV" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/NewsIndiaTV.png" group-title="News",News India TV
+http://192.168.1.36:8086/live/high/2014.m3u8
+#EXTINF:-1 tvg-name="News18 Punjab Haryana" group-title="News",News18 Punjab Haryana
+http://192.168.1.36:8086/live/high/655.m3u8
+#EXTINF:-1 tvg-name="News18 UP" group-title="News",News18 UP
+http://192.168.1.36:8086/live/high/530.m3u8
+#EXTINF:-1 tvg-name="OSN PEHLA: ABP News" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/ABP_News_logo.svg/500px-ABP_News_logo.svg.png" group-title="News",OSN PEHLA: ABP News
+http://vip-max.com:5555/user/pass/11699
+#EXTINF:-1 tvg-name="Pudhari News (576p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Pudhari-Logo_2000_X_1125_Transpharent.png" group-title="News",Pudhari News (576p)
+https://streams.tangotv.in/PUDHARINEWS/ORIGIN/index.m3u8
+#EXTINF:-1 tvg-name="Republic Bharat" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/R.Bharat.png" group-title="News",Republic Bharat
+http://192.168.1.36:8086/live/high/1403.m3u8
+#EXTINF:-1 tvg-name="Times NOW" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/TIMES%20NOW.png" group-title="News",Times NOW
+http://192.168.1.36:8086/live/high/383.m3u8
+#EXTINF:-1 tvg-name="Times Now Navbharat" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/NAV-BHARAT-HD-Transpatrnt.png" group-title="News",Times Now Navbharat
+http://192.168.1.36:8086/live/high/1906.m3u8
+#EXTINF:-1 tvg-name="Times Now World" tvg-logo="https://dtil.tmsimg.com/assets/s144008_ld_h15_aa.png?lock=720x540" group-title="News",Times Now World
+http://192.168.1.36:8086/live/high/876.m3u8
+#EXTINF:-1 tvg-name="TV9 Bharatvarsh" tvg-logo="https://dtil.tmsimg.com/assets/s144027_ld_h15_aa.png?lock=720x540" group-title="News",TV9 Bharatvarsh
+http://192.168.1.36:8086/live/high/1251.m3u8
+#EXTINF:-1 tvg-name="UK: ABP NEWS (Indian)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/ABP_News_logo.svg/500px-ABP_News_logo.svg.png" group-title="News",UK: ABP NEWS (Indian)
+http://vip-max.com:5555/user/pass/103110
+#EXTINF:-1 tvg-name="UK: TIMES NOW HD" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/TIMES%20NOW.png" group-title="News",UK: TIMES NOW HD
+http://vip-max.com:5555/user/pass/82051
+#EXTINF:-1 tvg-name="UK| AAJ TAK" tvg-logo="https://i.imgur.com/gS9Qkfy.png" group-title="News",UK| AAJ TAK
+http://vip-max.com:5555/user/pass/82016
+#EXTINF:-1 tvg-name="UK| AAJ TAK (UK)" tvg-logo="https://i.imgur.com/gS9Qkfy.png" group-title="News",UK| AAJ TAK (UK)
+http://vip-max.com:5555/user/pass/31176
+#EXTINF:-1 tvg-name="UK| NDTV 24x7" tvg-logo="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Ndtv-logo-new.svg/1280px-Ndtv-logo-new.svg.png" group-title="News",UK| NDTV 24x7
+http://vip-max.com:5555/user/pass/81701
+#EXTINF:-1 tvg-name="Zee Bharat" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Zee_Bharat_2025.svg/960px-Zee_Bharat_2025.svg.png" group-title="News",Zee Bharat
+http://192.168.1.36:8086/live/high/652.m3u8
+#EXTINF:-1 tvg-name="Zee Delhi NCR Haryana" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0023166M.png?lock=720x540" group-title="News",Zee Delhi NCR Haryana
+http://192.168.1.36:8086/live/high/724.m3u8
+#EXTINF:-1 tvg-name="Zee News" tvg-logo="https://image.airtel.tv/grandslam/content/2025_06_17/LOGO_X99oIa_Fm_Znews_logo-for-larg.png" group-title="News",Zee News
+http://192.168.1.36:8086/live/high/504.m3u8
+#EXTINF:-1 tvg-name=" m3u8" group-title="Other", m3u8
+https://github.com/BANGLABOX/COLORS_TV/raw/refs/heads/main/.m3u8
+#EXTINF:-1 tvg-name="0-css0994912fd14c94ee4ad7f82700836c373de41c6f66d2d6065426355a1c065 css" group-title="Other",0-css0994912fd14c94ee4ad7f82700836c373de41c6f66d2d6065426355a1c065 css
+https://blog.movistar.com.co/wp-content/cache/fvm/min/0-css0994912fd14c94ee4ad7f82700836c373de41c6f66d2d6065426355a1c065.css
+#EXTINF:-1 tvg-name="0-css257813b014bf98bde7337e540532fc54b71e9341c1e5b2fded4f91c684844 css" group-title="Other",0-css257813b014bf98bde7337e540532fc54b71e9341c1e5b2fded4f91c684844 css
+https://blog.movistar.com.co/wp-content/cache/fvm/min/0-css257813b014bf98bde7337e540532fc54b71e9341c1e5b2fded4f91c684844.css
 #EXTINF:-1 tvg-name="0-css720af797c79b56a4c13830ece5ad6518529e666fdb6f1f6441aba8375666a css" group-title="Other",0-css720af797c79b56a4c13830ece5ad6518529e666fdb6f1f6441aba8375666a css
 https://blog.movistar.com.co/wp-content/cache/fvm/min/0-css720af797c79b56a4c13830ece5ad6518529e666fdb6f1f6441aba8375666a.css
-#EXTINF:-1 tvg-name="008_COL_CAST_Contrato_Servicio_Movistar_Conecta_Max_hasta02122025 pdf" group-title="Other",008_COL_CAST_Contrato_Servicio_Movistar_Conecta_Max_hasta02122025 pdf
-https://prod.adb.col.movistar.es/content/dam/movistar/contratos/historico/008_COL_CAST_Contrato_Servicio_Movistar_Conecta_Max_hasta02122025.pdf
-#EXTINF:-1 tvg-name="1 Res _6333_-_T2 2 _Indicadores_de_calidad_Trafico_Voz_Aplic_Fases pdf" group-title="Other",1 Res _6333_-_T2 2 _Indicadores_de_calidad_Trafico_Voz_Aplic_Fases pdf
-https://mcprod.movistar.co/media/files/informacion-de-interes/nivel-de-calidad-movil/2025/Q4/1.Res._6333_-_T2.2._Indicadores_de_calidad_Trafico_Voz_Aplic_Fases.pdf
-#EXTINF:-1 tvg-name="121_COL_CAST_cp-servicio-movistar-plus-miMovistar pdf" group-title="Other",121_COL_CAST_cp-servicio-movistar-plus-miMovistar pdf
-https://prod.adb.col.movistar.es/content/dam/movistar/contratos/121_COL_CAST_cp-servicio-movistar-plus-miMovistar.pdf
-#EXTINF:-1 tvg-name="170 rss" group-title="Other",170 rss
-https://devforum.roblox.com/c/feature-requests/170.rss
-#EXTINF:-1 tvg-name="2 %20Res _6333_-_T 2 4 _Indicadores_de_calidad_para_el_servicio_de_datos_fijosN pdf" group-title="Other",2 %20Res _6333_-_T 2 4 _Indicadores_de_calidad_para_el_servicio_de_datos_fijosN pdf
-https://mcprod.movistar.co/media/files/2.%20Res._6333_-_T.2.4._Indicadores_de_calidad_para_el_servicio_de_datos_fijosN.pdf
-#EXTINF:-1 tvg-name="2 Res _6333_-_T2 4_Indicadores_de_calidad_para_el_servicio_de_datos_fijos_retardo_en_un_sentidoNC2Q pdf" group-title="Other",2 Res _6333_-_T2 4_Indicadores_de_calidad_para_el_servicio_de_datos_fijos_retardo_en_un_sentidoNC2Q pdf
-https://mcprod.movistar.co/media/files/2.Res._6333_-_T2.4_Indicadores_de_calidad_para_el_servicio_de_datos_fijos_retardo_en_un_sentidoNC2Q.pdf
-#EXTINF:-1 tvg-name="2005_COL_CAST%20Condiciones%20Particulares%20L%c3%adnea%20Adicional%20Ilimitada%20Base_18-05-2024 pdf" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Other",2005_COL_CAST%20Condiciones%20Particulares%20L%c3%adnea%20Adicional%20Ilimitada%20Base_18-05-2024 pdf
-https://prod.adb.col.movistar.es/content/dam/movistar/contratos/historico/2005_COL_CAST%20Condiciones%20Particulares%20L%c3%adnea%20Adicional%20Ilimitada%20Base_18-05-2024.pdf
-#EXTINF:-1 tvg-name="2005_COL_CAST_Condiciones_Particulares_Línea_Adicional_Ilimitada_Base_08-07-2024 pdf" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Other",2005_COL_CAST_Condiciones_Particulares_Línea_Adicional_Ilimitada_Base_08-07-2024 pdf
-https://prod.adb.col.movistar.es/content/dam/movistar/contratos/2005_COL_CAST_Condiciones_Particulares_Línea_Adicional_Ilimitada_Base_08-07-2024.pdf
-#EXTINF:-1 tvg-name="276_COL_CAST-Condiciones-particulares-Extra-Datos_40GB pdf" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Other",276_COL_CAST-Condiciones-particulares-Extra-Datos_40GB pdf
-https://prod.adb.col.movistar.es/content/dam/movistar/contratos/276_COL_CAST-Condiciones-particulares-Extra-Datos_40GB.pdf
-#EXTINF:-1 tvg-name="29 rss" group-title="Other",29 rss
-https://devforum.roblox.com/c/bug-reports/studio-bugs/29.rss
-#EXTINF:-1 tvg-name="3 %20Res _6333_-_T2 3 _Indicadores_de_calidad_para_servicios_de_datos_Intentos_No_Exitosos_4G_Satelital pdf" group-title="Other",3 %20Res _6333_-_T2 3 _Indicadores_de_calidad_para_servicios_de_datos_Intentos_No_Exitosos_4G_Satelital pdf
-https://mcprod.movistar.co/media/files/3.%20Res._6333_-_T2.3._Indicadores_de_calidad_para_servicios_de_datos_Intentos_No_Exitosos_4G_Satelital.pdf
-#EXTINF:-1 tvg-name="4000335887-847__7 avif?width=727&height=727&fit=contain" group-title="Other",4000335887-847__7 avif?width=727&height=727&fit=contain
-https://gdx-assets.costco.com/adobe/assets/urn:aaid:aem:1a40ca59-0414-4f2f-a1ef-e9037c178b20/as/4000335887-847__7.avif?width=727&height=727&fit=contain
-#EXTINF:-1 tvg-name="45 rss" group-title="Other",45 rss
-https://devforum.roblox.com/c/updates/45.rss
-#EXTINF:-1 tvg-name="5120_Condiciones_Particulares_del_Servicio_Fibra_600Mb_hasta17-05-26 pdf" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Other",5120_Condiciones_Particulares_del_Servicio_Fibra_600Mb_hasta17-05-26 pdf
-https://prod.adb.col.movistar.es/content/dam/movistar/contratos/historico/5120_Condiciones_Particulares_del_Servicio_Fibra_600Mb_hasta17-05-26.pdf
-#EXTINF:-1 tvg-name="6DoK9GxZ m3u8" group-title="Other",6DoK9GxZ m3u8
-https://cdn.jwplayer.com/manifests/6DoK9GxZ.m3u8
-#EXTINF:-1 tvg-name="701_COL_CAST_Condiciones_particulares_del_servicio_de_Conectividad_miMovistar_hasta02122025 pdf" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Other",701_COL_CAST_Condiciones_particulares_del_servicio_de_Conectividad_miMovistar_hasta02122025 pdf
-https://prod.adb.col.movistar.es/content/dam/movistar/contratos/historico/701_COL_CAST_Condiciones_particulares_del_servicio_de_Conectividad_miMovistar_hasta02122025.pdf
-#EXTINF:-1 tvg-name="701_COL_CAST_Condiciones_particulares_del_servicio_de_Conectividad_miMovistar_hasta19-06-26 pdf" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Other",701_COL_CAST_Condiciones_particulares_del_servicio_de_Conectividad_miMovistar_hasta19-06-26 pdf
-https://prod.adb.col.movistar.es/content/dam/movistar/contratos/historico/701_COL_CAST_Condiciones_particulares_del_servicio_de_Conectividad_miMovistar_hasta19-06-26.pdf
-#EXTINF:-1 tvg-name="789 rss" group-title="Other",789 rss
-https://talk.collegeconfidential.com/c/resources/789.rss
-#EXTINF:-1 tvg-name="796 rss" group-title="Other",796 rss
-https://talk.collegeconfidential.com/c/college-confidential-community/forum-updates-and-issues/796.rss
-#EXTINF:-1 tvg-name="85884026007 webvtt m3u8" group-title="Other",85884026007 webvtt m3u8
-https://hlsmedia.gannett-cdn.com/_captions/85884026007.webvtt.m3u8
-#EXTINF:-1 tvg-name="94d09f2e4bc89f7f css" group-title="Other",94d09f2e4bc89f7f css
-https://ssr.col.movistar.es/mas-servicios/mufbn3h0/_next/static/css/94d09f2e4bc89f7f.css
-#EXTINF:-1 tvg-name="_app-1f557c6366ee9c5b js" group-title="Other",_app-1f557c6366ee9c5b js
-https://ssr.col.movistar.es/mas-servicios/mufbn3h0/_next/static/chunks/pages/_app-1f557c6366ee9c5b.js
-#EXTINF:-1 tvg-name="base min js?v=101" group-title="Other",base min js?v=101
-https://ww2.movistar.cl/base/js/base.min.js?v=101
-#EXTINF:-1 tvg-name="base min js?v=19" group-title="Other",base min js?v=19
-https://ww2.movistar.cl/base/js/base.min.js?v=19
+#EXTINF:-1 tvg-name="0-cssda53db31b3b451b100448498156f3b77ee8b4067c56790ee8e3eb53b7d0a1 css" group-title="Other",0-cssda53db31b3b451b100448498156f3b77ee8b4067c56790ee8e3eb53b7d0a1 css
+https://blog.movistar.com.co/wp-content/cache/fvm/min/0-cssda53db31b3b451b100448498156f3b77ee8b4067c56790ee8e3eb53b7d0a1.css
+#EXTINF:-1 tvg-name="0-cssf6024d6405eba9bdb42d946d5dc26396a8b093f216561a9dec0596c42243a css" group-title="Other",0-cssf6024d6405eba9bdb42d946d5dc26396a8b093f216561a9dec0596c42243a css
+https://blog.movistar.com.co/wp-content/cache/fvm/min/0-cssf6024d6405eba9bdb42d946d5dc26396a8b093f216561a9dec0596c42243a.css
+#EXTINF:-1 tvg-name="1 %20Res _6333_-_T2 2 _Indicadores_de_calidad_Trafico_Voz_Aplic_Fases2Q pdf" group-title="Other",1 %20Res _6333_-_T2 2 _Indicadores_de_calidad_Trafico_Voz_Aplic_Fases2Q pdf
+https://mcprod.movistar.co/media/files/1.%20Res._6333_-_T2.2._Indicadores_de_calidad_Trafico_Voz_Aplic_Fases2Q.pdf
+#EXTINF:-1 tvg-name="1 res _6333_-_t2 2 _indicadores_de_calidad_trafico_voz_aplic_fases pdf" group-title="Other",1 res _6333_-_t2 2 _indicadores_de_calidad_trafico_voz_aplic_fases pdf
+https://mcprod.movistar.co/media/files/informacion-de-interes/nivel-de-calidad-movil/2026/Q1/1.res._6333_-_t2.2._indicadores_de_calidad_trafico_voz_aplic_fases.pdf
+#EXTINF:-1 tvg-name="1369-d6dcb997c876e915 js" group-title="Other",1369-d6dcb997c876e915 js
+https://ssr.col.movistar.es/fibra-optica/muuvqrq1/_next/static/chunks/1369-d6dcb997c876e915.js
+#EXTINF:-1 tvg-name="28ac66005712ff01 css" group-title="Other",28ac66005712ff01 css
+https://ssr.col.movistar.es/fibra-y-movil/muo12sfr/_next/static/css/28ac66005712ff01.css
+#EXTINF:-1 tvg-name="359-601ee4c5708d1aad js" group-title="Other",359-601ee4c5708d1aad js
+https://ssr.col.movistar.es/tv/mumapt3v/_next/static/chunks/359-601ee4c5708d1aad.js
+#EXTINF:-1 tvg-name="4923-b24c785187506f82 js" group-title="Other",4923-b24c785187506f82 js
+https://ssr.col.movistar.es/tv/mumapt3v/_next/static/chunks/4923-b24c785187506f82.js
+#EXTINF:-1 tvg-name="5014-2cfb54641552bab2 js" group-title="Other",5014-2cfb54641552bab2 js
+https://ssr.col.movistar.es/fibra-optica/muuvqrq1/_next/static/chunks/5014-2cfb54641552bab2.js
+#EXTINF:-1 tvg-name="51cfce1603580a6d css" group-title="Other",51cfce1603580a6d css
+https://ssr.col.movistar.es/fibra-optica/muuvqrq1/_next/static/css/51cfce1603580a6d.css
+#EXTINF:-1 tvg-name="6 %20Res _6333_-_T2 3 _Indicadores_de_calidad_para_servicios_de_datos_TPA_4G_Satelital2Q pdf" group-title="Other",6 %20Res _6333_-_T2 3 _Indicadores_de_calidad_para_servicios_de_datos_TPA_4G_Satelital2Q pdf
+https://mcprod.movistar.co/media/files/6.%20Res._6333_-_T2.3._Indicadores_de_calidad_para_servicios_de_datos_TPA_4G_Satelital2Q.pdf
+#EXTINF:-1 tvg-name="7984 f9aa353959f8eec6 js" group-title="Other",7984 f9aa353959f8eec6 js
+https://ssr.col.movistar.es/dispos/mup909kc/_next/static/chunks/7984.f9aa353959f8eec6.js
+#EXTINF:-1 tvg-name="_app-51e8c27fdb00c2b5 js" group-title="Other",_app-51e8c27fdb00c2b5 js
+https://ssr.col.movistar.es/tv/mumapt3v/_next/static/chunks/pages/_app-51e8c27fdb00c2b5.js
+#EXTINF:-1 tvg-name="_app-8c871aeaead1b5d0 js" group-title="Other",_app-8c871aeaead1b5d0 js
+https://prod.cms.col.movistar.es/_next/static/chunks/pages/_app-8c871aeaead1b5d0.js
+#EXTINF:-1 tvg-name="ac1866f7a9a3957ab8b34a4e7329e58egfg-HowFunctionsWork m3u8" group-title="Other",ac1866f7a9a3957ab8b34a4e7329e58egfg-HowFunctionsWork m3u8
+https://cdnvideos.geeksforgeeks.org/hls/ac1866f7a9a3957ab8b34a4e7329e58egfg-HowFunctionsWork.m3u8
+#EXTINF:-1 tvg-name="AR: Echorouk TV HD" group-title="Other",AR: Echorouk TV HD
+http://vip-max.com:5555/user/pass/11328
+#EXTINF:-1 tvg-name="AR: ECHOUROUK TV FHD" group-title="Other",AR: ECHOUROUK TV FHD
+http://vip-max.com:5555/user/pass/110901
+#EXTINF:-1 tvg-name="AR: HEKAYA HINDI TV" group-title="Other",AR: HEKAYA HINDI TV
+http://vip-max.com:5555/user/pass/101655
+#EXTINF:-1 tvg-name="AR: MBC BOLLYWOOD" group-title="Other",AR: MBC BOLLYWOOD
+http://vip-max.com:5555/user/pass/21
+#EXTINF:-1 tvg-name="AR: MBC BOLLYWOOD +2" group-title="Other",AR: MBC BOLLYWOOD +2
+http://vip-max.com:5555/user/pass/23910
+#EXTINF:-1 tvg-name="AR: MBC BOLLYWOOD +4" group-title="Other",AR: MBC BOLLYWOOD +4
+http://vip-max.com:5555/user/pass/23911
+#EXTINF:-1 tvg-name="AR: ZEE AFLAM" group-title="Other",AR: ZEE AFLAM
+http://vip-max.com:5555/user/pass/2234
+#EXTINF:-1 tvg-name="AR: ZEE ALWAN" group-title="Other",AR: ZEE ALWAN
+http://vip-max.com:5555/user/pass/2235
 #EXTINF:-1 tvg-name="base min js?v=26" group-title="Other",base min js?v=26
 https://ww2.movistar.cl/base/js/base.min.js?v=26
 #EXTINF:-1 tvg-name="black" group-title="Other",black
-https://ssr.col.movistar.es/api/v1/get-glyph/filtro-m/1.13/black
-#EXTINF:-1 tvg-name="blue" group-title="Other",blue
-https://ssr.col.movistar.es/api/v1/get-glyph/Movistar-letra-m/7/blue
-#EXTINF:-1 tvg-name="bootstrap min css?f=1801091323" group-title="Other",bootstrap min css?f=1801091323
-https://store.movistar.com/sc/sitesource/movistarstore/lib/bootstrap/css/bootstrap.min.css?f=1801091323
-#EXTINF:-1 tvg-name="bWVkLTE3OTA3NTkyMTYwH m3u8" group-title="Other",bWVkLTE3OTA3NTkyMTYwH m3u8
-https://d2g1p0cv65b13g.cloudfront.net/abphls/2026/09/bWVkLTE3OTA3NTkyMTYwH.m3u8
-#EXTINF:-1 tvg-name="c54c8f5bd987c70b0bf34e570a50ade6gfg-CIntroduction m3u8" group-title="Other",c54c8f5bd987c70b0bf34e570a50ade6gfg-CIntroduction m3u8
-https://cdnvideos.geeksforgeeks.org/hls/c54c8f5bd987c70b0bf34e570a50ade6gfg-CIntroduction.m3u8
-#EXTINF:-1 tvg-name="c54c8f5bd987c70b0bf34e570a50ade6gfg-CIntroduction-hlsx480p m3u8" group-title="Other",c54c8f5bd987c70b0bf34e570a50ade6gfg-CIntroduction-hlsx480p m3u8
-https://cdnvideos.geeksforgeeks.org/hls/c54c8f5bd987c70b0bf34e570a50ade6gfg-CIntroduction-hlsx480p.m3u8
+https://ssr.col.movistar.es/api/v1/get-glyph/liga-m/20/black
+#EXTINF:-1 tvg-name="black" group-title="Other",black
+https://ssr.col.movistar.es/api/v1/get-glyph/euro-circulo-m/25/black
+#EXTINF:-1 tvg-name="black" group-title="Other",black
+https://ssr.col.movistar.es/api/v1/get-glyph/soporte-tecnico-m/20/black
+#EXTINF:-1 tvg-name="BLUE_MOVISTAR" group-title="Other",BLUE_MOVISTAR
+https://ssr.col.movistar.es/api/v1/get-glyph/Movistar-m/1.88/BLUE_MOVISTAR
+#EXTINF:-1 tvg-name="bWVkLTE3OTA2ODEyOTIiG m3u8" group-title="Other",bWVkLTE3OTA2ODEyOTIiG m3u8
+https://d2g1p0cv65b13g.cloudfront.net/abphls/2026/09/bWVkLTE3OTA2ODEyOTIiG.m3u8
+#EXTINF:-1 tvg-name="bWVkLTE3OTExOTEwNDAVs m3u8" group-title="Other",bWVkLTE3OTExOTEwNDAVs m3u8
+https://d2g1p0cv65b13g.cloudfront.net/abphls/2026/10/bWVkLTE3OTExOTEwNDAVs.m3u8
+#EXTINF:-1 tvg-name="bWVkLTE3OTEyMjE4NTEeO m3u8" group-title="Other",bWVkLTE3OTEyMjE4NTEeO m3u8
+https://d2g1p0cv65b13g.cloudfront.net/abphls/2026/10/bWVkLTE3OTEyMjE4NTEeO.m3u8
+#EXTINF:-1 tvg-name="ch004 m3u8" group-title="Other",ch004 m3u8
+https://alpha.tv.online.tm/hls/ch004.m3u8
 #EXTINF:-1 tvg-name="ClausulaPermanencia%20%281%29 pdf" group-title="Other",ClausulaPermanencia%20%281%29 pdf
 http://atencionalcliente.movistar.co/proteccion-al-usuario/pdf/ClausulaPermanencia%20%281%29.pdf
-#EXTINF:-1 tvg-name="clientlib-base lc-9e54f58df680b7398ec307826cea4e5f-lc min js" group-title="Other",clientlib-base lc-9e54f58df680b7398ec307826cea4e5f-lc min js
-https://prod.adb.col.movistar.es/etc.clientlibs/movistar/clientlibs/clientlib-base.lc-9e54f58df680b7398ec307826cea4e5f-lc.min.js
+#EXTINF:-1 tvg-name="colormag-custom min js?ver=4 1 2" group-title="Other",colormag-custom min js?ver=4 1 2
+https://blog.movistar.com.co/wp-content/themes/colormag/assets/js/colormag-custom.min.js?ver=4.1.2
 #EXTINF:-1 tvg-name="compartir_js js" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Other",compartir_js js
 https://atencionalcliente.movistar.cl/wp-content/themes/movistar/js/compartir_js.js
-#EXTINF:-1 tvg-name="condiciones-generales-pack-telefono-mantenimiento-servicios pdf" group-title="Other",condiciones-generales-pack-telefono-mantenimiento-servicios pdf
-https://prod.adb.col.movistar.es/content/dam/movistar/contratos/condiciones-generales-pack-telefono-mantenimiento-servicios.pdf
-#EXTINF:-1 tvg-name="condiciones-movistar-car pdf" group-title="Other",condiciones-movistar-car pdf
-https://prod.adb.col.movistar.es/content/dam/movistar/contratos/condiciones-movistar-car.pdf
-#EXTINF:-1 tvg-name="condiciones-particulares-movistar-home pdf" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Other",condiciones-particulares-movistar-home pdf
-https://prod.adb.col.movistar.es/content/dam/movistar/contratos/condiciones-particulares-movistar-home.pdf
-#EXTINF:-1 tvg-name="condiciones-uso-portal-app-movistar-salud pdf" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Other",condiciones-uso-portal-app-movistar-salud pdf
-https://prod.adb.col.movistar.es/content/dam/movistar/contratos/condiciones-uso-portal-app-movistar-salud.pdf
-#EXTINF:-1 tvg-name="CONDICIONES_COMERCIALES_DEL_SERVICIO_DE_INTERNET_BANDA_ANCHA_FIJA pdf?v=2" group-title="Other",CONDICIONES_COMERCIALES_DEL_SERVICIO_DE_INTERNET_BANDA_ANCHA_FIJA pdf?v=2
-https://ww2.movistar.cl/terminos-regulaciones/condiciones-comerciales-y-contractuales-hogar/pdf/CONDICIONES_COMERCIALES_DEL_SERVICIO_DE_INTERNET_BANDA_ANCHA_FIJA.pdf?v=2
-#EXTINF:-1 tvg-name="Condiciones_Generales_del_Servicio_Movistar_Internet_BandaAnchaFija_hasta17-05-26 pdf" group-title="Other",Condiciones_Generales_del_Servicio_Movistar_Internet_BandaAnchaFija_hasta17-05-26 pdf
-https://prod.adb.col.movistar.es/content/dam/movistar/contratos/historico/Condiciones_Generales_del_Servicio_Movistar_Internet_BandaAnchaFija_hasta17-05-26.pdf
-#EXTINF:-1 tvg-name="Condiciones_Particulares_Contrato_2_(enero_2026_hasta_09032026) pdf" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Other",Condiciones_Particulares_Contrato_2_(enero_2026_hasta_09032026) pdf
-https://prod.adb.col.movistar.es/content/dam/movistar/contratos/historico/Condiciones_Particulares_Contrato_2_(enero_2026_hasta_09032026).pdf
-#EXTINF:-1 tvg-name="Condiciones_Particulares_del_Servicio_Hogar_Conectado_5G_hasta04-02-26 pdf" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Other",Condiciones_Particulares_del_Servicio_Hogar_Conectado_5G_hasta04-02-26 pdf
-https://prod.adb.col.movistar.es/content/dam/movistar/contratos/historico/Condiciones_Particulares_del_Servicio_Hogar_Conectado_5G_hasta04-02-26.pdf
-#EXTINF:-1 tvg-name="Condiciones_particulares_del_servicio_Movistar_Conecta_600 pdf" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Other",Condiciones_particulares_del_servicio_Movistar_Conecta_600 pdf
-https://prod.adb.col.movistar.es/content/dam/movistar/contratos/Condiciones_particulares_del_servicio_Movistar_Conecta_600.pdf
-#EXTINF:-1 tvg-name="Condiciones_Particulares_Linea_adicional_Infinita_(enero_2026_hasta_09032026) pdf" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Other",Condiciones_Particulares_Linea_adicional_Infinita_(enero_2026_hasta_09032026) pdf
-https://prod.adb.col.movistar.es/content/dam/movistar/contratos/historico/Condiciones_Particulares_Linea_adicional_Infinita_(enero_2026_hasta_09032026).pdf
-#EXTINF:-1 tvg-name="Condiciones_Particulares_Linea_adicional_L_(enero_2026_hasta_09032026) pdf" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Other",Condiciones_Particulares_Linea_adicional_L_(enero_2026_hasta_09032026) pdf
-https://prod.adb.col.movistar.es/content/dam/movistar/contratos/historico/Condiciones_Particulares_Linea_adicional_L_(enero_2026_hasta_09032026).pdf
-#EXTINF:-1 tvg-name="Condiciones_Particulares_Tarifa_6_(enero_2026_hasta_09032026) pdf" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Other",Condiciones_Particulares_Tarifa_6_(enero_2026_hasta_09032026) pdf
-https://prod.adb.col.movistar.es/content/dam/movistar/contratos/historico/Condiciones_Particulares_Tarifa_6_(enero_2026_hasta_09032026).pdf
-#EXTINF:-1 tvg-name="core min js" group-title="Other",core min js
-https://c0.wp.com/c/7.1.2/wp-includes/js/jquery/ui/core.min.js
-#EXTINF:-1 tvg-name="cp-linea-xl%20(13en-13%20dic2025) pdf" group-title="Other",cp-linea-xl%20(13en-13%20dic2025) pdf
-https://prod.adb.col.movistar.es/content/dam/movistar/contratos/historico/cp-linea-xl%20(13en-13%20dic2025).pdf
-#EXTINF:-1 tvg-name="d3 min js" group-title="Other",d3 min js
-https://atencionalcliente.movistar.cl/wp-content/plugins/cogdev/js/d3.min.js
-#EXTINF:-1 tvg-name="datatables min css" group-title="Other",datatables min css
-https://atencionalcliente.movistar.cl/wp-content/plugins/cogdev/css/datatables.min.css
-#EXTINF:-1 tvg-name="datatables min js" group-title="Other",datatables min js
-https://atencionalcliente.movistar.cl/wp-content/plugins/cogdev/js/datatables.min.js
+#EXTINF:-1 tvg-name="Condiciones_legales_de_la_promocion_de_LALIGA_captacion pdf" group-title="Other",Condiciones_legales_de_la_promocion_de_LALIGA_captacion pdf
+https://prod.adb.col.movistar.es/content/dam/movistar/precontratos/Condiciones_legales_de_la_promocion_de_LALIGA_captacion.pdf
+#EXTINF:-1 tvg-name="DE: Zee One FHD" group-title="Other",DE: Zee One FHD
+http://vip-max.com:5555/user/pass/30250
+#EXTINF:-1 tvg-name="DE: ZEE One HD" group-title="Other",DE: ZEE One HD
+http://vip-max.com:5555/user/pass/10505
+#EXTINF:-1 tvg-name="Decreto_1499_de_%202014 pdf" group-title="Other",Decreto_1499_de_%202014 pdf
+https://mcprod.movistar.co/media/files/Decreto_1499_de_%202014.pdf
+#EXTINF:-1 tvg-name="Discovery Hindi" group-title="Other",Discovery Hindi
+http://192.168.1.36:8086/live/high/575.m3u8
 #EXTINF:-1 tvg-name="embed?url=https%3A%2F%2Fatencionalcliente movistar cl%2Fmovistar-pass%2Fcomo-crear-mi-clave-movistar-pass%2F&format=xml" group-title="Other",embed?url=https%3A%2F%2Fatencionalcliente movistar cl%2Fmovistar-pass%2Fcomo-crear-mi-clave-movistar-pass%2F&format=xml
 https://atencionalcliente.movistar.cl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fatencionalcliente.movistar.cl%2Fmovistar-pass%2Fcomo-crear-mi-clave-movistar-pass%2F&format=xml
-#EXTINF:-1 tvg-name="embed?url=https%3A%2F%2Fatencionalcliente movistar cl%2Ftelevision%2Fcomo-instalar-movistar-play-en-tu-smart-tv%2F&format=xml" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Other",embed?url=https%3A%2F%2Fatencionalcliente movistar cl%2Ftelevision%2Fcomo-instalar-movistar-play-en-tu-smart-tv%2F&format=xml
-https://atencionalcliente.movistar.cl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fatencionalcliente.movistar.cl%2Ftelevision%2Fcomo-instalar-movistar-play-en-tu-smart-tv%2F&format=xml
-#EXTINF:-1 tvg-name="Factores%20de%20la%20velocidad%20de%20Internet pdf" group-title="Other",Factores%20de%20la%20velocidad%20de%20Internet pdf
-https://atencionalcliente.movistar.co/proteccion-al-usuario/pdf/Factores%20de%20la%20velocidad%20de%20Internet.pdf
-#EXTINF:-1 tvg-name="Factores%20de%20la%20velocidad%20de%20Internet pdf?_ga=2 233583518 1413228917 1639400975-1232039735 1638881236" group-title="Other",Factores%20de%20la%20velocidad%20de%20Internet pdf?_ga=2 233583518 1413228917 1639400975-1232039735 1638881236
-https://atencionalcliente.movistar.co/proteccion-al-usuario/pdf/Factores%20de%20la%20velocidad%20de%20Internet.pdf?_ga=2.233583518.1413228917.1639400975-1232039735.1638881236
-#EXTINF:-1 tvg-name="footer lc-5de8dfcf4276629210ebbb36fd1736f5-lc min js" group-title="Other",footer lc-5de8dfcf4276629210ebbb36fd1736f5-lc min js
-https://prod.adb.col.movistar.es/etc.clientlibs/movistar/components/molecules/menu/linklist/v1/linklist/clientlibs/site/footer.lc-5de8dfcf4276629210ebbb36fd1736f5-lc.min.js
-#EXTINF:-1 tvg-name="Forerunner-170-back avif" group-title="Other",Forerunner-170-back avif
-https://runninggearlab.com/wp-content/uploads/2026/08/Forerunner-170-back.avif
+#EXTINF:-1 tvg-name="fixtures?token=f3DD3uYNhLSK7aC5tkQu7pI5g2jGvS&page=-1&numDays=12&tz=UTC&dayBreakHour=0" group-title="Other",fixtures?token=f3DD3uYNhLSK7aC5tkQu7pI5g2jGvS&page=-1&numDays=12&tz=UTC&dayBreakHour=0
+https://api2.roninmedia.io/2/fixtures?token=f3DD3uYNhLSK7aC5tkQu7pI5g2jGvS&page=-1&numDays=12&tz=UTC&dayBreakHour=0
+#EXTINF:-1 tvg-name="Foodxp" group-title="Other",Foodxp
+http://192.168.1.36:8086/live/high/1955.m3u8
+#EXTINF:-1 tvg-name="FR: LUCKY JACK TV" group-title="Other",FR: LUCKY JACK TV
+http://vip-max.com:5555/user/pass/38287
+#EXTINF:-1 tvg-name="framework-2a00069ad984417b js" group-title="Other",framework-2a00069ad984417b js
+https://ssr.col.movistar.es/dispos/mup909kc/_next/static/chunks/framework-2a00069ad984417b.js
 #EXTINF:-1 tvg-name="framework-40461e51349ca8e7 js" group-title="Other",framework-40461e51349ca8e7 js
-https://ssr.col.movistar.es/mas-servicios/mufbn3h0/_next/static/chunks/framework-40461e51349ca8e7.js
-#EXTINF:-1 tvg-name="framework-b78bc773b89d3272 js" group-title="Other",framework-b78bc773b89d3272 js
-https://ssr.col.movistar.es/fibra-y-movil/muo12sfr/_next/static/chunks/framework-b78bc773b89d3272.js
-#EXTINF:-1 tvg-name="functions js" group-title="Other",functions js
-https://atencionalcliente.movistar.cl/wp-content/themes/movistar/assets/js/functions.js
-#EXTINF:-1 tvg-name="grey600" group-title="Other",grey600
-https://ssr.col.movistar.es/api/v1/get-glyph/lavadora-m/1.00/grey600
-#EXTINF:-1 tvg-name="index m3u8?hls" group-title="Other",index m3u8?hls
-http://103.151.60.162:2122/play/a00w/index.m3u8?hls
-#EXTINF:-1 tvg-name="Informacion_de_Velocidad_Planes_Moviles pdf" group-title="Other",Informacion_de_Velocidad_Planes_Moviles pdf
-https://ww2.movistar.cl/documents/Informacion_de_Velocidad_Planes_Moviles.pdf
-#EXTINF:-1 tvg-name="Intentos_No_Exitosos_Mun_3_Menos_EB pdf" group-title="Other",Intentos_No_Exitosos_Mun_3_Menos_EB pdf
-https://mcprod.movistar.co/media/files/docs-calidad-movil/Intentos_No_Exitosos_Mun_3_Menos_EB.pdf
-#EXTINF:-1 tvg-name="jquery-ui min css" group-title="Other",jquery-ui min css
-https://store.movistar.com/sc/sitesource/movistarstore/lib/jquery/jquery-ui.min.css
-#EXTINF:-1 tvg-name="liveView php?s=121764&cbuster=1791065006&pubUrl=https%3A%2F%2Fcrossword-solver io%2Fclue%2Fleaks%2F&x=400&y=272&playerApiId=freestarPrimisPlayer&schain=1 0,1!freestar com,704,1" group-title="Other",liveView php?s=121764&cbuster=1791065006&pubUrl=https%3A%2F%2Fcrossword-solver io%2Fclue%2Fleaks%2F&x=400&y=272&playerApiId=freestarPrimisPlayer&schain=1 0,1!freestar com,704,1
-https://live.primis.tech/live/liveView.php?s=121764&cbuster=1791065006&pubUrl=https%3A%2F%2Fcrossword-solver.io%2Fclue%2Fleaks%2F&x=400&y=272&playerApiId=freestarPrimisPlayer&schain=1.0,1!freestar.com,704,1
-#EXTINF:-1 tvg-name="liveView php?s=121764&cbuster=1791065006&pubUrl=https%3A%2F%2Fcrossword-solver io%2Fclue%2Fleaks%2F&x=400&y=272&playerApiId=freestarPrimisPlayer&schain=1 0,1!freestar com,704,1&cbuster=1791065006&pubUrlAuto=https%3A%2F%2Fcrossword-solver io%2Fclue%2Fleaks%2F&videoType=slider&floatWidth=&floatHeight=&floatDirection=&floatVerticalOffset=&floatHorizontalOffset=&floatCloseBtn=&flowMode=&flowCloseButtonPosition=" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Other",liveView php?s=121764&cbuster=1791065006&pubUrl=https%3A%2F%2Fcrossword-solver io%2Fclue%2Fleaks%2F&x=400&y=272&playerApiId=freestarPrimisPlayer&schain=1 0,1!freestar com,704,1&cbuster=1791065006&pubUrlAuto=https%3A%2F%2Fcrossword-solver io%2Fclue%2Fleaks%2F&videoType=slider&floatWidth=&floatHeight=&floatDirection=&floatVerticalOffset=&floatHorizontalOffset=&floatCloseBtn=&flowMode=&flowCloseButtonPosition=
-https://live.primis.tech/live/liveView.php?s=121764&cbuster=1791065006&pubUrl=https%3A%2F%2Fcrossword-solver.io%2Fclue%2Fleaks%2F&x=400&y=272&playerApiId=freestarPrimisPlayer&schain=1.0,1!freestar.com,704,1&cbuster=1791065006&pubUrlAuto=https%3A%2F%2Fcrossword-solver.io%2Fclue%2Fleaks%2F&videoType=slider&floatWidth=&floatHeight=&floatDirection=&floatVerticalOffset=&floatHorizontalOffset=&floatCloseBtn=&flowMode=&flowCloseButtonPosition=
+https://ssr.col.movistar.es/mas-servicios/muuvpmmq/_next/static/chunks/framework-40461e51349ca8e7.js
+#EXTINF:-1 tvg-name="framework-f2dce2cb2619c491 js" group-title="Other",framework-f2dce2cb2619c491 js
+https://ssr.col.movistar.es/tv/mumapt3v/_next/static/chunks/framework-f2dce2cb2619c491.js
+#EXTINF:-1 tvg-name="framework-f2dce2cb2619c491 js" group-title="Other",framework-f2dce2cb2619c491 js
+https://ssr.col.movistar.es/fibra-optica/muuvqrq1/_next/static/chunks/framework-f2dce2cb2619c491.js
+#EXTINF:-1 tvg-name="FTA_channel_03122024 pdf" group-title="Other",FTA_channel_03122024 pdf
+https://www.trai.gov.in/sites/default/files/2024-12/FTA_channel_03122024.pdf
+#EXTINF:-1 tvg-name="GREY3" group-title="Other",GREY3
+https://ssr.col.movistar.es/api/v1/get-glyph/facebook-m/28/GREY3
+#EXTINF:-1 tvg-name="GREY3" group-title="Other",GREY3
+https://ssr.col.movistar.es/api/v1/get-glyph/sello-confianza-online-letras-m/2.01/GREY3
+#EXTINF:-1 tvg-name="GREY3" group-title="Other",GREY3
+https://ssr.col.movistar.es/api/v1/get-glyph/logo-junta-arbitral-consumo-m/2.04/GREY3
+#EXTINF:-1 tvg-name="Hegyvidék TV" group-title="Other",Hegyvidék TV
+https://tv.hegyvidek.hu/hvtv/hvstream.m3u8
+#EXTINF:-1 tvg-name="index m3u8" group-title="Other",index m3u8
+http://217.174.225.146/legacyhls/ch004_400/index.m3u8
+#EXTINF:-1 tvg-name="index m3u8" group-title="Other",index m3u8
+http://digicom.hls.iptvdc.com/canalmotor/index.m3u8
+#EXTINF:-1 tvg-name="index m3u8" group-title="Other",index m3u8
+http://alpha.tv.online.tm/legacyhls/ch004_720/index.m3u8
+#EXTINF:-1 tvg-name="index m3u8" group-title="Other",index m3u8
+http://alpha.tv.online.tm/hls/ch004_400/index.m3u8
+#EXTINF:-1 tvg-name="index m3u8" group-title="Other",index m3u8
+https://digicom.hls.iptvdc.com/canalmotor/index.m3u8
+#EXTINF:-1 tvg-name="index m3u8" group-title="Other",index m3u8
+https://alpha.tv.online.tm/legacyhls/ch004_400/index.m3u8
+#EXTINF:-1 tvg-name="index m3u8" group-title="Other",index m3u8
+https://alpha.tv.online.tm/legacyhls/ch004_720/index.m3u8
+#EXTINF:-1 tvg-name="livescores xml?t=" group-title="Other",livescores xml?t=
+https://proxy.livesoccertv.com/rss/livescores.xml?t=
+#EXTINF:-1 tvg-name="liveView php?s=117669&schain=1 0,1!snack-media com,SNM_3594,1" group-title="Other",liveView php?s=117669&schain=1 0,1!snack-media com,SNM_3594,1
+https://live.primis.tech/live/liveView.php?s=117669&schain=1.0,1!snack-media.com,SNM_3594,1
+#EXTINF:-1 tvg-name="LPG_Sitemap pdf" group-title="Other",LPG_Sitemap pdf
+https://laspalmasgrand55.com/wp-content/uploads/sites/4/2020/08/LPG_Sitemap.pdf
 #EXTINF:-1 tvg-name="main css" group-title="Other",main css
-https://atencion.movistar.com.co/static/version1787747297/frontend/Vass/colombia/en_US/css/main.css
-#EXTINF:-1 tvg-name="main css" group-title="Other",main css
-https://tienda.movistar.com.co/static/version1787747297/frontend/Vass/colombia/en_US/css/main.css
-#EXTINF:-1 tvg-name="main-2e3127df4417c47d js" group-title="Other",main-2e3127df4417c47d js
-https://ssr.col.movistar.es/fibra-y-movil/muo12sfr/_next/static/chunks/main-2e3127df4417c47d.js
-#EXTINF:-1 tvg-name="manual_reporte pdf" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Other",manual_reporte pdf
-https://atencionalcliente.movistar.co/movistar-formularios/assets/bloqueoformulario/descargables/manual_reporte.pdf
-#EXTINF:-1 tvg-name="MB-inter-5marz-desk mp4" group-title="Other",MB-inter-5marz-desk mp4
-https://aprodmovistarcomsa.z13.web.core.windows.net/persons/planes-moviles/pospago-rd/banners/MB-inter-5marz-desk.mp4
-#EXTINF:-1 tvg-name="MB-inter-5marz-mov mp4" group-title="Other",MB-inter-5marz-mov mp4
-https://aprodmovistarcomsa.z13.web.core.windows.net/persons/planes-moviles/pospago-rd/banners/MB-inter-5marz-mov.mp4
+https://prod.cms.col.movistar.es/app/header_/main.css
+#EXTINF:-1 tvg-name="main js" group-title="Other",main js
+https://prod.cms.col.movistar.es/app/header/assets/main.js
+#EXTINF:-1 tvg-name="main-59a306b9de0a325a js" group-title="Other",main-59a306b9de0a325a js
+https://prod.cms.col.movistar.es/_next/static/chunks/main-59a306b9de0a325a.js
+#EXTINF:-1 tvg-name="master m3u8" group-title="Other",master m3u8
+http://iptvcasomsapi.jprdigital.in/x-media/C0510/master.m3u8
+#EXTINF:-1 tvg-name="master m3u8" group-title="Other",master m3u8
+https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8
+#EXTINF:-1 tvg-name="master m3u8?subtitles=en&fmp4=true" group-title="Other",master m3u8?subtitles=en&fmp4=true
+https://hdm-streaming-otfp.hearst.io/72cc25aa-dbd7-41c6-9743-59910c9eb6b3/video_9x16_1080p_hd,video_9x16_240p_sd,video_9x16_360p_sd,video_9x16_480p_sd,video_9x16_720p_hd/master.m3u8?subtitles=en&fmp4=true
+#EXTINF:-1 tvg-name="MBC Bollywood FHD (HEVC)" group-title="Other",MBC Bollywood FHD (HEVC)
+http://vip-max.com:5555/user/pass/91679
+#EXTINF:-1 tvg-name="ME: SONY SET MAX HD" group-title="Other",ME: SONY SET MAX HD
+http://vip-max.com:5555/user/pass/71473
 #EXTINF:-1 tvg-name="MedidasGestiondeRedMovil_actualizacion_planes_libres_marzo_22_vf pdf" group-title="Other",MedidasGestiondeRedMovil_actualizacion_planes_libres_marzo_22_vf pdf
 https://ww2.movistar.cl/documents/MedidasGestiondeRedMovil_actualizacion_planes_libres_marzo_22_vf.pdf
-#EXTINF:-1 tvg-name="menu css" group-title="Other",menu css
-https://atencionalcliente.movistar.co/recursos_proyectos/header_movistar_co/css/menu.css
 #EXTINF:-1 tvg-name="MOVISTAR_Devices_POP_UP_MOBILE png);}}@media" group-title="Other",MOVISTAR_Devices_POP_UP_MOBILE png);}}@media
-https://tienda.movistar.com.co/media/wysiwyg/MOVISTAR_Devices_POP_UP_MOBILE.png);}}@media
+https://atencion.movistar.com.co/media/wysiwyg/MOVISTAR_Devices_POP_UP_MOBILE.png);}}@media
 #EXTINF:-1 tvg-name="movistarBlack" group-title="Other",movistarBlack
 https://ssr.col.movistar.es/api/v1/get-glyph/tiendas-m/1.13/movistarBlack
 #EXTINF:-1 tvg-name="movistarBlue" group-title="Other",movistarBlue
 https://ssr.col.movistar.es/api/v1/get-glyph/hablar-m/48/movistarBlue
 #EXTINF:-1 tvg-name="movistarBlue" group-title="Other",movistarBlue
-https://ssr.col.movistar.es/api/v1/get-glyph/movistar-logo-h-m/2.00/movistarBlue
+https://ssr.col.movistar.es/api/v1/get-glyph/cheuron-down-m/20/movistarBlue
 #EXTINF:-1 tvg-name="movistarBlue" group-title="Other",movistarBlue
-https://ssr.col.movistar.es/api/v1/get-glyph/Cheuron-Up-m/20/movistarBlue
-#EXTINF:-1 tvg-name="NSU_2Q2025_Movistar_may pdf" group-title="Other",NSU_2Q2025_Movistar_may pdf
-https://mcprod.movistar.co/media/files/NSU_2Q2025_Movistar_may.pdf
-#EXTINF:-1 tvg-name="NSU_3Q2024_Movistar pdf" group-title="Other",NSU_3Q2024_Movistar pdf
-https://mcprod.movistar.co/media/files/NSU_3Q2024_Movistar.pdf
+https://ssr.col.movistar.es/api/v1/get-glyph/movistar-logo-h-m/2.02/movistarBlue
+#EXTINF:-1 tvg-name="NSU_1Q2024_Movistar pdf" group-title="Other",NSU_1Q2024_Movistar pdf
+https://mcprod.movistar.co/media/files/NSU_1Q2024_Movistar.pdf
 #EXTINF:-1 tvg-name="NSU_4Q2025_Movistar_octubre_2025 pdf" group-title="Other",NSU_4Q2025_Movistar_octubre_2025 pdf
 https://mcprod.movistar.co/media/files/NSU_4Q2025_Movistar_octubre_2025.pdf
-#EXTINF:-1 tvg-name="OBD9daQd m3u8" group-title="Other",OBD9daQd m3u8
-https://cdn.jwplayer.com/manifests/OBD9daQd.m3u8
+#EXTINF:-1 tvg-name="opensearch xml" group-title="Other",opensearch xml
+https://community.getchannels.com/opensearch.xml
+#EXTINF:-1 tvg-name="oppov2_POP_UP_DESK_1 png);}@media" group-title="Other",oppov2_POP_UP_DESK_1 png);}@media
+https://tienda.movistar.com.co/media/wysiwyg/oppov2_POP_UP_DESK_1.png);}@media
 #EXTINF:-1 tvg-name="oppov2_POP_UP_MOBILE_1 png);}}@media" group-title="Other",oppov2_POP_UP_MOBILE_1 png);}}@media
 https://tienda.movistar.com.co/media/wysiwyg/oppov2_POP_UP_MOBILE_1.png);}}@media
-#EXTINF:-1 tvg-name="politica_descuentos pdf" group-title="Other",politica_descuentos pdf
-https://ww2.movistar.cl/centro-de-ayuda/documentos/politica_descuentos.pdf
-#EXTINF:-1 tvg-name="qG5RlzZp m3u8" group-title="Other",qG5RlzZp m3u8
-https://cdn.jwplayer.com/manifests/qG5RlzZp.m3u8
-#EXTINF:-1 tvg-name="r9-flexi-multi-snackbars js?ver=36978348723" group-title="Other",r9-flexi-multi-snackbars js?ver=36978348723
-https://www.kayak.co.uk/c/wp-content/plugins/r9-flexi-multi/r9-flexi-multi-snackbars.js?ver=36978348723
-#EXTINF:-1 tvg-name="r9-gdpr-dialog js?ver=36978348723" group-title="Other",r9-gdpr-dialog js?ver=36978348723
-https://www.kayak.co.uk/c/wp-content/plugins/r9-gdpr-tcf/public/GDPRDialog/r9-gdpr-dialog.js?ver=36978348723
-#EXTINF:-1 tvg-name="r9-if-builder-kayak css?ver=36978348723" group-title="Other",r9-if-builder-kayak css?ver=36978348723
-https://www.kayak.co.uk/c/wp-content/plugins/r9-if-builder/r9-if-builder-kayak.css?ver=36978348723
-#EXTINF:-1 tvg-name="r9-modal js?ver=36978348723" group-title="Other",r9-modal js?ver=36978348723
-https://www.kayak.com/c/wp-content/plugins/r9-modal/r9-modal.js?ver=36978348723
-#EXTINF:-1 tvg-name="r9-modal js?ver=36978348723" group-title="Other",r9-modal js?ver=36978348723
-https://www.kayak.co.uk/c/wp-content/plugins/r9-modal/r9-modal.js?ver=36978348723
-#EXTINF:-1 tvg-name="r9-snackbar js?ver=36978348723" group-title="Other",r9-snackbar js?ver=36978348723
-https://www.kayak.co.uk/c/wp-content/plugins/r9-snackbar/r9-snackbar.js?ver=36978348723
-#EXTINF:-1 tvg-name="react-dom min js" group-title="Other",react-dom min js
-https://c0.wp.com/c/7.1.2/wp-includes/js/dist/vendor/react-dom.min.js
-#EXTINF:-1 tvg-name="react-dom min js?ver=36978348723" group-title="Other",react-dom min js?ver=36978348723
-https://www.kayak.co.uk/c/wp-includes/js/dist/vendor/react-dom.min.js?ver=36978348723
+#EXTINF:-1 tvg-name="Play m3u8" group-title="Other",Play m3u8
+https://github.com/fardinnb864457h/Colors-HD/raw/refs/heads/main/Play.m3u8
+#EXTINF:-1 tvg-name="Play m3u8?raw=true" group-title="Other",Play m3u8?raw=true
+https://github.com/fardinnb864457h/Colors-HD/blob/main/Play.m3u8?raw=true
+#EXTINF:-1 tvg-name="playlist m3u8" group-title="Other",playlist m3u8
+https://9a81dd4ee3884d0dbcacafaf0d81327a.mediatailor.us-east-1.amazonaws.com/v1/master/04fd913bb278d8775298c26fdca9d9841f37601f/RakutenTV-eu_BilliardsTV/playlist.m3u8
+#EXTINF:-1 tvg-name="playlist m3u8" group-title="Other",playlist m3u8
+https://rakutenaa-mainstreammediafreesportsintl-rakuten-t7dc0.amagi.tv/playlist/rakutenAA-mainstreammediafreesportsintl-rakuten/playlist.m3u8
+#EXTINF:-1 tvg-name="playlist m3u8" group-title="Other",playlist m3u8
+https://pac12-roku-us.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="playlist m3u8" group-title="Other",playlist m3u8
+https://streams2.sofast.tv/vglive-sk-462904/playlist.m3u8
+#EXTINF:-1 tvg-name="playlist m3u8" group-title="Other",playlist m3u8
+https://sportsgrid-tribal.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="playlist m3u8" group-title="Other",playlist m3u8
+https://unlimited6-cl.dps.live/sportinghd/sportinghd.smil/playlist.m3u8
+#EXTINF:-1 tvg-name="playlist m3u8" group-title="Other",playlist m3u8
+https://livetr.teleromagna.it/mia/live/playlist.m3u8
+#EXTINF:-1 tvg-name="playlist m3u8" group-title="Other",playlist m3u8
+https://unbeaten-tcl.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="playlist m3u8" group-title="Other",playlist m3u8
+https://2-fss-2.streamhoster.com/pl_118/204972-2205186-1/playlist.m3u8
+#EXTINF:-1 tvg-name="playlist m3u8" group-title="Other",playlist m3u8
+https://trace-sportstars-samsungnz.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="playlist1080p m3u8" group-title="Other",playlist1080p m3u8
+https://sportsgrid-tribal.amagi.tv/playlist1080p.m3u8
+#EXTINF:-1 tvg-name="polyfills-42372ed130431b0a js" group-title="Other",polyfills-42372ed130431b0a js
+https://ssr.col.movistar.es/mas-servicios/muuvpmmq/_next/static/chunks/polyfills-42372ed130431b0a.js
+#EXTINF:-1 tvg-name="polyfills-c67a75d1b6f99dc8 js" group-title="Other",polyfills-c67a75d1b6f99dc8 js
+https://ssr.col.movistar.es/dispos/mup909kc/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js
 #EXTINF:-1 tvg-name="require js" group-title="Other",require js
 https://tienda.movistar.com.co/static/version1787747297/frontend/Vass/colombia/en_US/requirejs/require.js
 #EXTINF:-1 tvg-name="require min js" group-title="Other",require min js
-https://catalogo.movistar.cl/static/version1790888761/frontend/Vdshop/servicioshogar/es_CL/requirejs/require.min.js
-#EXTINF:-1 tvg-name="requirejs-config js" group-title="Other",requirejs-config js
-https://tienda.movistar.com.co/static/version1787747297/frontend/Vass/colombia/en_US/requirejs-config.js
-#EXTINF:-1 tvg-name="requirejs-config min js" group-title="Other",requirejs-config min js
-https://catalogo.movistar.cl/static/version1790888761/frontend/Vdshop/movistar/es_CL/requirejs-config.min.js
+https://catalogo.movistar.cl/static/version1790888761/frontend/Vdshop/tiendaunificada/es_CL/requirejs/require.min.js
 #EXTINF:-1 tvg-name="requirejs-config min js" group-title="Other",requirejs-config min js
 https://catalogo.movistar.cl/static/version1790888761/frontend/Vdshop/tiendaunificada/es_CL/requirejs-config.min.js
-#EXTINF:-1 tvg-name="requirejs-config min js" group-title="Other",requirejs-config min js
-https://catalogo.movistar.cl/static/version1790888761/frontend/Vdshop/servicioshogar/es_CL/requirejs-config.min.js
-#EXTINF:-1 tvg-name="Res _6333_-_T 2 4 _Indicadores_de_calidad_para_el_servicio_de_datos_fijos_RETARDO_EN_UN_SENTIDO_RET_4Q pdf" group-title="Other",Res _6333_-_T 2 4 _Indicadores_de_calidad_para_el_servicio_de_datos_fijos_RETARDO_EN_UN_SENTIDO_RET_4Q pdf
-https://mcprod.movistar.co/media/files/Res._6333_-_T.2.4._Indicadores_de_calidad_para_el_servicio_de_datos_fijos_RETARDO_EN_UN_SENTIDO_RET_4Q.pdf
-#EXTINF:-1 tvg-name="Res _6333_-_T2 2 _Indicadores_de_calidad_Llamadas_Caidas_2G_3G_Satelital_12_02_24 pdf" group-title="Other",Res _6333_-_T2 2 _Indicadores_de_calidad_Llamadas_Caidas_2G_3G_Satelital_12_02_24 pdf
-https://mcprod.movistar.co/media/files/Res._6333_-_T2.2._Indicadores_de_calidad_Llamadas_Caidas_2G_3G_Satelital_12_02_24.pdf
-#EXTINF:-1 tvg-name="Res _6333_-_T2 2 _Indicadores_de_calidad_Llamadas_Caidas_2G_3G_Satelital_2024 pdf" group-title="Other",Res _6333_-_T2 2 _Indicadores_de_calidad_Llamadas_Caidas_2G_3G_Satelital_2024 pdf
-https://mcprod.movistar.co/media/files/Res._6333_-_T2.2._Indicadores_de_calidad_Llamadas_Caidas_2G_3G_Satelital_2024.pdf
-#EXTINF:-1 tvg-name="Res _6333_-_T2 2 _Indicadores_de_calidad_Trafico_Voz_Aplic_Fases-2Q pdf" group-title="Other",Res _6333_-_T2 2 _Indicadores_de_calidad_Trafico_Voz_Aplic_Fases-2Q pdf
-https://mcprod.movistar.co/media/files/Res._6333_-_T2.2._Indicadores_de_calidad_Trafico_Voz_Aplic_Fases-2Q.pdf
-#EXTINF:-1 tvg-name="Res _6333_-_T2 2 _Indicadores_de_calidad_Trafico_Voz_Aplic_Fases_2024 pdf" group-title="Other",Res _6333_-_T2 2 _Indicadores_de_calidad_Trafico_Voz_Aplic_Fases_2024 pdf
-https://mcprod.movistar.co/media/files/Res._6333_-_T2.2._Indicadores_de_calidad_Trafico_Voz_Aplic_Fases_2024.pdf
-#EXTINF:-1 tvg-name="Res _6333_-_T2 4_Indicadores_de_calidad_para_el_servicio_de_datos_fijos_velocidad%20de%20transmisi%C3%B3n%20de%20datos%20alcanzada_2023 pdf" group-title="Other",Res _6333_-_T2 4_Indicadores_de_calidad_para_el_servicio_de_datos_fijos_velocidad%20de%20transmisi%C3%B3n%20de%20datos%20alcanzada_2023 pdf
-https://mcprod.movistar.co/media/files/Res._6333_-_T2.4_Indicadores_de_calidad_para_el_servicio_de_datos_fijos_velocidad%20de%20transmisi%C3%B3n%20de%20datos%20alcanzada_2023.pdf
-#EXTINF:-1 tvg-name="Res _6333_-_T2 5_Indicadores_de_disponibilidad_Elemento_Red_Central pdf" group-title="Other",Res _6333_-_T2 5_Indicadores_de_disponibilidad_Elemento_Red_Central pdf
-https://mcprod.movistar.co/media/files/docs-calidad-movil/Res._6333_-_T2.5_Indicadores_de_disponibilidad_Elemento_Red_Central.pdf
-#EXTINF:-1 tvg-name="Res _6890_-_TIC_-_T 2 6 Indicadores_de_calidad_para_el_servicio_de_datos_moviles_basados_en_medicion_%" group-title="Other",Res _6890_-_TIC_-_T 2 6 Indicadores_de_calidad_para_el_servicio_de_datos_moviles_basados_en_medicion_%
-https://mcprod.movistar.co/media/files/Res._6890_-_TIC_-_T.2.6.Indicadores_de_calidad_para_el_servicio_de_datos_moviles_basados_en_medicion_%
+#EXTINF:-1 tvg-name="Res _6333_-_T2 2 _Indicadores_de_calidad_Trafico_Voz_Aplic_Fases-3Q pdf" group-title="Other",Res _6333_-_T2 2 _Indicadores_de_calidad_Trafico_Voz_Aplic_Fases-3Q pdf
+https://mcprod.movistar.co/media/files/Res._6333_-_T2.2._Indicadores_de_calidad_Trafico_Voz_Aplic_Fases-3Q.pdf
+#EXTINF:-1 tvg-name="Res _6333_-_T2 3 _Indicadores_de_calidad_para_servicios_de_datos_TPA_4G_Satelital_12-02-2024 pdf" group-title="Other",Res _6333_-_T2 3 _Indicadores_de_calidad_para_servicios_de_datos_TPA_4G_Satelital_12-02-2024 pdf
+https://mcprod.movistar.co/media/files/Res._6333_-_T2.3._Indicadores_de_calidad_para_servicios_de_datos_TPA_4G_Satelital_12-02-2024.pdf
 #EXTINF:-1 tvg-name="Res _6890_-_TIC_-_T 2 6 Indicadores_de_calidad_para_el_servicio_de_datos_moviles_basados_en_medicion_%20IND_DAT_MOV_3G4G_SAT pdf" group-title="Other",Res _6890_-_TIC_-_T 2 6 Indicadores_de_calidad_para_el_servicio_de_datos_moviles_basados_en_medicion_%20IND_DAT_MOV_3G4G_SAT pdf
 https://mcprod.movistar.co/media/files/Res._6890_-_TIC_-_T.2.6.Indicadores_de_calidad_para_el_servicio_de_datos_moviles_basados_en_medicion_%20IND_DAT_MOV_3G4G_SAT.pdf
-#EXTINF:-1 tvg-name="Res _6890_-_TIC_-_T 2 6 Indicadores_de_calidad_para_el_servicio_de_datos_moviles_basados_en_medicion_IND_DAT_MOV_3G4G_SAT_2Q pdf" group-title="Other",Res _6890_-_TIC_-_T 2 6 Indicadores_de_calidad_para_el_servicio_de_datos_moviles_basados_en_medicion_IND_DAT_MOV_3G4G_SAT_2Q pdf
-https://mcprod.movistar.co/media/files/Res._6890_-_TIC_-_T.2.6.Indicadores_de_calidad_para_el_servicio_de_datos_moviles_basados_en_medicion_IND_DAT_MOV_3G4G_SAT_2Q.pdf
-#EXTINF:-1 tvg-name="res _6890_-_tic_-_t 2 6 indicadores_de_calidad_para_el_servicio_de_datos_moviles_basados_en_medicion_ind_dat_mov_4g5g_sat pdf" group-title="Other",res _6890_-_tic_-_t 2 6 indicadores_de_calidad_para_el_servicio_de_datos_moviles_basados_en_medicion_ind_dat_mov_4g5g_sat pdf
-https://mcprod.movistar.co/media/files/informacion-de-interes/nivel-de-calidad-movil/2026/Q1/res._6890_-_tic_-_t.2.6.indicadores_de_calidad_para_el_servicio_de_datos_moviles_basados_en_medicion_ind_dat_mov_4g5g_sat.pdf
-#EXTINF:-1 tvg-name="scripts-kayak js?ver=36978348723" group-title="Other",scripts-kayak js?ver=36978348723
-https://www.kayak.co.uk/c/wp-content/plugins/r9-components/public/Footer/scripts-kayak.js?ver=36978348723
-#EXTINF:-1 tvg-name="site lc-780c5d7baee3afdc8e5cd4365b25e5ba-lc min js" group-title="Other",site lc-780c5d7baee3afdc8e5cd4365b25e5ba-lc min js
-https://prod.adb.col.movistar.es/etc.clientlibs/movistar/components/structures/contentpage/v1/contentpage/clientlibs/site.lc-780c5d7baee3afdc8e5cd4365b25e5ba-lc.min.js
-#EXTINF:-1 tvg-name="slick min js?f=1708201138" group-title="Other",slick min js?f=1708201138
-https://store.movistar.com/sc/sitesource/movistarstore/lib/slick/slick/slick.min.js?f=1708201138
-#EXTINF:-1 tvg-name="Sony Six HD" group-title="Other",Sony Six HD
-http://23.237.4.162:8080/sonysixhd/index.m3u8
-#EXTINF:-1 tvg-name="style css" group-title="Other",style css
-https://atencionalcliente.movistar.cl/wp-content/themes/movistar/style.css
-#EXTINF:-1 tvg-name="style css?v=1 0 0" group-title="Other",style css?v=1 0 0
-https://atencionalcliente.movistar.cl/wp-content/themes/movistar/style.css?v=1.0.0
-#EXTINF:-1 tvg-name="style css?ver=36978348723" group-title="Other",style css?ver=36978348723
-https://www.kayak.co.uk/c/wp-content/themes/le-grand-k2/style.css?ver=36978348723
-#EXTINF:-1 tvg-name="style css?ver=36978348723" group-title="Other",style css?ver=36978348723
-https://www.kayak.com/c/wp-content/themes/r9-flexi-theme-kk/style.css?ver=36978348723
-#EXTINF:-1 tvg-name="styles-l min css" group-title="Other",styles-l min css
-https://catalogo.movistar.cl/static/version1790888761/frontend/Vdshop/servicioshogar/es_CL/css/styles-l.min.css
-#EXTINF:-1 tvg-name="styles-m min css" group-title="Other",styles-m min css
-https://catalogo.movistar.cl/static/version1790888761/frontend/Vdshop/servicioshogar/es_CL/css/styles-m.min.css
-#EXTINF:-1 tvg-name="swiper_sliders js" group-title="Other",swiper_sliders js
-https://tienda.movistar.com.co/static/version1787747297/frontend/Vass/colombia/en_US/js/swiper_sliders.js
-#EXTINF:-1 tvg-name="Terminos_Condiciones_Servicio_Movistar_ChatGPT_Plus pdf" group-title="Other",Terminos_Condiciones_Servicio_Movistar_ChatGPT_Plus pdf
-https://prod.adb.col.movistar.es/content/dam/movistar/contratos/Terminos_Condiciones_Servicio_Movistar_ChatGPT_Plus.pdf
-#EXTINF:-1 tvg-name="tmStore min js?f=202604201630" group-title="Other",tmStore min js?f=202604201630
-https://store.movistar.com/sc/sitesource/movistarstore/js/tmStore.min.js?f=202604201630
-#EXTINF:-1 tvg-name="TWDC-Web-Header-1920x754-1 mp4" group-title="Other",TWDC-Web-Header-1920x754-1 mp4
-https://thewaltdisneycompany.com/app/uploads/2026/02/TWDC-Web-Header-1920x754-1.mp4
-#EXTINF:-1 tvg-name="TWDC-Web-Header-720x1280-1 mp4" group-title="Other",TWDC-Web-Header-720x1280-1 mp4
-https://thewaltdisneycompany.com/app/uploads/2026/03/TWDC-Web-Header-720x1280-1.mp4
-#EXTINF:-1 tvg-name="wlwmanifest xml" group-title="Other",wlwmanifest xml
-https://pragadvisors.com/wp-includes/wlwmanifest.xml
-#EXTINF:-1 tvg-name="wp-emoji-release min js?ver=36978348723" group-title="Other",wp-emoji-release min js?ver=36978348723
-https://www.kayak.com/c/wp-includes/js/wp-emoji-release.min.js?ver=36978348723
-#EXTINF:-1 tvg-name="wp-emoji-release min js?ver=36978348723" group-title="Other",wp-emoji-release min js?ver=36978348723
-https://www.kayak.co.uk/c/wp-includes/js/wp-emoji-release.min.js?ver=36978348723
-#EXTINF:-1 tvg-name="wp-polyfill min js?ver=36978348723" group-title="Other",wp-polyfill min js?ver=36978348723
-https://www.kayak.com/c/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=36978348723
-#EXTINF:-1 tvg-name="Z6kwLi8u m3u8" group-title="Other",Z6kwLi8u m3u8
-https://cdn.jwplayer.com/manifests/Z6kwLi8u.m3u8
-#EXTINF:-1 tvg-name="ZqtPoh5LeNNTxtgp_3444b217-6614-45ef-aec5-11bcd0dab00c_Evolution_FirstPersonDragonTiger-v2_logo avif?auto=format&w=130" group-title="Other",ZqtPoh5LeNNTxtgp_3444b217-6614-45ef-aec5-11bcd0dab00c_Evolution_FirstPersonDragonTiger-v2_logo avif?auto=format&w=130
-https://images.prismic.io/fanduel-canada-casino/ZqtPoh5LeNNTxtgp_3444b217-6614-45ef-aec5-11bcd0dab00c_Evolution_FirstPersonDragonTiger-v2_logo.avif?auto=format&w=130
-#EXTINF:-1 tvg-name="ZqtPoh5LeNNTxtgp_3444b217-6614-45ef-aec5-11bcd0dab00c_Evolution_FirstPersonDragonTiger-v2_logo avif?auto=format&w=195" group-title="Other",ZqtPoh5LeNNTxtgp_3444b217-6614-45ef-aec5-11bcd0dab00c_Evolution_FirstPersonDragonTiger-v2_logo avif?auto=format&w=195
-https://images.prismic.io/fanduel-canada-casino/ZqtPoh5LeNNTxtgp_3444b217-6614-45ef-aec5-11bcd0dab00c_Evolution_FirstPersonDragonTiger-v2_logo.avif?auto=format&w=195
-#EXTINF:-1 tvg-name="ZqtPoh5LeNNTxtgp_3444b217-6614-45ef-aec5-11bcd0dab00c_Evolution_FirstPersonDragonTiger-v2_logo avif?auto=format&w=260" group-title="Other",ZqtPoh5LeNNTxtgp_3444b217-6614-45ef-aec5-11bcd0dab00c_Evolution_FirstPersonDragonTiger-v2_logo avif?auto=format&w=260
-https://images.prismic.io/fanduel-canada-casino/ZqtPoh5LeNNTxtgp_3444b217-6614-45ef-aec5-11bcd0dab00c_Evolution_FirstPersonDragonTiger-v2_logo.avif?auto=format&w=260
-#EXTINF:-1 tvg-name="ZqtPoh5LeNNTxtgp_3444b217-6614-45ef-aec5-11bcd0dab00c_Evolution_FirstPersonDragonTiger-v2_logo avif?auto=format&w=390" group-title="Other",ZqtPoh5LeNNTxtgp_3444b217-6614-45ef-aec5-11bcd0dab00c_Evolution_FirstPersonDragonTiger-v2_logo avif?auto=format&w=390
-https://images.prismic.io/fanduel-canada-casino/ZqtPoh5LeNNTxtgp_3444b217-6614-45ef-aec5-11bcd0dab00c_Evolution_FirstPersonDragonTiger-v2_logo.avif?auto=format&w=390
-#EXTINF:-1 tvg-name="ZqtPqh5LeNNTxtgr_69547f3b-4a1b-4a67-9543-9014c9b1f375_Evolution_FirstPersonDragonTiger-v2_bg avif?auto=format&w=130" group-title="Other",ZqtPqh5LeNNTxtgr_69547f3b-4a1b-4a67-9543-9014c9b1f375_Evolution_FirstPersonDragonTiger-v2_bg avif?auto=format&w=130
-https://images.prismic.io/fanduel-canada-casino/ZqtPqh5LeNNTxtgr_69547f3b-4a1b-4a67-9543-9014c9b1f375_Evolution_FirstPersonDragonTiger-v2_bg.avif?auto=format&w=130
-#EXTINF:-1 tvg-name="ZqtPqh5LeNNTxtgr_69547f3b-4a1b-4a67-9543-9014c9b1f375_Evolution_FirstPersonDragonTiger-v2_bg avif?auto=format&w=195" group-title="Other",ZqtPqh5LeNNTxtgr_69547f3b-4a1b-4a67-9543-9014c9b1f375_Evolution_FirstPersonDragonTiger-v2_bg avif?auto=format&w=195
-https://images.prismic.io/fanduel-canada-casino/ZqtPqh5LeNNTxtgr_69547f3b-4a1b-4a67-9543-9014c9b1f375_Evolution_FirstPersonDragonTiger-v2_bg.avif?auto=format&w=195
-#EXTINF:-1 tvg-name="ZqtPqh5LeNNTxtgr_69547f3b-4a1b-4a67-9543-9014c9b1f375_Evolution_FirstPersonDragonTiger-v2_bg avif?auto=format&w=260" group-title="Other",ZqtPqh5LeNNTxtgr_69547f3b-4a1b-4a67-9543-9014c9b1f375_Evolution_FirstPersonDragonTiger-v2_bg avif?auto=format&w=260
-https://images.prismic.io/fanduel-canada-casino/ZqtPqh5LeNNTxtgr_69547f3b-4a1b-4a67-9543-9014c9b1f375_Evolution_FirstPersonDragonTiger-v2_bg.avif?auto=format&w=260
-#EXTINF:-1 tvg-name="ZqtPqh5LeNNTxtgr_69547f3b-4a1b-4a67-9543-9014c9b1f375_Evolution_FirstPersonDragonTiger-v2_bg avif?auto=format&w=390" group-title="Other",ZqtPqh5LeNNTxtgr_69547f3b-4a1b-4a67-9543-9014c9b1f375_Evolution_FirstPersonDragonTiger-v2_bg avif?auto=format&w=390
-https://images.prismic.io/fanduel-canada-casino/ZqtPqh5LeNNTxtgr_69547f3b-4a1b-4a67-9543-9014c9b1f375_Evolution_FirstPersonDragonTiger-v2_bg.avif?auto=format&w=390
-#EXTINF:-1 tvg-name="gstv" tvg-logo="https://i.imgur.com/1vQH3cM.png" group-title="Religious",gstv
-https://mumt05.tangotv.in/87NeALx2GSTV/index.m3u8
-#EXTINF:-1 tvg-name="China:Star Sports HD" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Sports",China:Star Sports HD
-http://183.207.255.190:80/live/program/live/ssty/1300000/mnf.m3u8
-#EXTINF:-1 tvg-name="Star Sports 1" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/7482/1782284567482-h.jpg" group-title="Sports",Star Sports 1
-http://23.237.4.162:8080/INSP_STARSPORTS1SD-SPORTS/index.m3u8
-#EXTINF:-1 tvg-name="Star Sports 1 HD" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Sports",Star Sports 1 HD
-http://23.237.4.162:8080/StarSports_Hd1/index.m3u8
-#EXTINF:-1 tvg-name="Star Sports 2" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/7957/1783000567957-h.jpg" group-title="Sports",Star Sports 2
-http://23.237.4.162:8080/INSP_STARSPORTS2SD-SPORTS/index.m3u8
-#EXTINF:-1 tvg-name="Star Sports 2 HD" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Sports",Star Sports 2 HD
-http://23.237.4.162:8080/StarSports_Hd2/index.m3u8
-#EXTINF:-1 tvg-name="Star Sports 3 HD" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Sports",Star Sports 3 HD
-http://23.237.4.162:8080/StarSports_Hd3/index.m3u8
-#EXTINF:-1 tvg-name="Star Sports 4 HD" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Sports",Star Sports 4 HD
-http://23.237.4.162:8080/StarSports_Hd4/index.m3u8
+#EXTINF:-1 tvg-name="Res _6890_-_TIC_-_T 2 6 Indicadores_de_calidad_para_el_servicio_de_datos_moviles_basados_en_medicion_%25%20IND_DAT_MOV_3G4G_RESTDEP pdf" group-title="Other",Res _6890_-_TIC_-_T 2 6 Indicadores_de_calidad_para_el_servicio_de_datos_moviles_basados_en_medicion_%25%20IND_DAT_MOV_3G4G_RESTDEP pdf
+https://mcprod.movistar.co/media/files/informacion-de-interes/nivel-de-calidad-movil/2025/Q4/Res._6890_-_TIC_-_T.2.6.Indicadores_de_calidad_para_el_servicio_de_datos_moviles_basados_en_medicion_%25%20IND_DAT_MOV_3G4G_RESTDEP.pdf
+#EXTINF:-1 tvg-name="Res _6890_-_TIC_-_T 2 6 Indicadores_de_calidad_para_el_servicio_de_datos_moviles_basados_en_medicion_IND_DAT_MOV_3G4G_SAT_2024 pdf" group-title="Other",Res _6890_-_TIC_-_T 2 6 Indicadores_de_calidad_para_el_servicio_de_datos_moviles_basados_en_medicion_IND_DAT_MOV_3G4G_SAT_2024 pdf
+https://mcprod.movistar.co/media/files/Res._6890_-_TIC_-_T.2.6.Indicadores_de_calidad_para_el_servicio_de_datos_moviles_basados_en_medicion_IND_DAT_MOV_3G4G_SAT_2024.pdf
+#EXTINF:-1 tvg-name="sfl-461 pdf" group-title="Other",sfl-461 pdf
+https://ahcdr.cdn.sos.ca.gov/forms/sfl-461.pdf
+#EXTINF:-1 tvg-name="SL Sony BBC Earth HD" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Other",SL Sony BBC Earth HD
+http://192.168.1.36:8086/live/high/sl852.m3u8
+#EXTINF:-1 tvg-name="streams json" group-title="Other",streams json
+https://github.com/Abinanthankv/tv.m3u/raw/refs/heads/main/streams.json
+#EXTINF:-1 tvg-name="streams json?raw=true" group-title="Other",streams json?raw=true
+https://github.com/Abinanthankv/tv.m3u/blob/main/streams.json?raw=true
+#EXTINF:-1 tvg-name="tarifas_cargo_acceso pdf" group-title="Other",tarifas_cargo_acceso pdf
+https://mcprod.movistar.co/media/files/tarifas_cargo_acceso.pdf
+#EXTINF:-1 tvg-name="the-charisma-killers avif" group-title="Other",the-charisma-killers avif
+https://images.justwatch.com/poster/321815373/s332/the-charisma-killers.avif
+#EXTINF:-1 tvg-name="UK: PEACE TV URDU (UK)" group-title="Other",UK: PEACE TV URDU (UK)
+http://vip-max.com:5555/user/pass/81608
+#EXTINF:-1 tvg-name="UK: SONY SET MAX" group-title="Other",UK: SONY SET MAX
+http://vip-max.com:5555/user/pass/33755
+#EXTINF:-1 tvg-name="UK: URDU 1 EUROPE (UK)" group-title="Other",UK: URDU 1 EUROPE (UK)
+http://vip-max.com:5555/user/pass/81595
+#EXTINF:-1 tvg-name="UK| ISLAM CH URDU" group-title="Other",UK| ISLAM CH URDU
+http://vip-max.com:5555/user/pass/81599
+#EXTINF:-1 tvg-name="video_9x16_1080p_hd m3u8?fmp4=true" group-title="Other",video_9x16_1080p_hd m3u8?fmp4=true
+https://hdm-streaming-otfp.hearst.io/72cc25aa-dbd7-41c6-9743-59910c9eb6b3/video_9x16_1080p_hd.m3u8?fmp4=true
+#EXTINF:-1 tvg-name="video_9x16_360p_sd m3u8?fmp4=true" group-title="Other",video_9x16_360p_sd m3u8?fmp4=true
+https://hdm-streaming-otfp.hearst.io/72cc25aa-dbd7-41c6-9743-59910c9eb6b3/video_9x16_360p_sd.m3u8?fmp4=true
+#EXTINF:-1 tvg-name="VIP: MBC BOLLYWOOD HD" group-title="Other",VIP: MBC BOLLYWOOD HD
+http://vip-max.com:5555/user/pass/26936
+#EXTINF:-1 tvg-name="white" group-title="Other",white
+https://ssr.col.movistar.es/api/v1/get-glyph/fibra-m/50/white
+#EXTINF:-1 tvg-name="WHITE" group-title="Other",WHITE
+https://ssr.col.movistar.es/api/v1/get-glyph/teatro-m/22/WHITE
+#EXTINF:-1 tvg-name="World  Punjabi" group-title="Other",World  Punjabi
+http://192.168.1.36:8086/live/high/1534.m3u8
+#EXTINF:-1 tvg-name="youngvoicesnw-overview pdf" group-title="Other",youngvoicesnw-overview pdf
+https://portlandoperaguild.squarespace.com/s/youngvoicesnw-overview.pdf
+#EXTINF:-1 tvg-name="And TV" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Anand_TV.png" group-title="Religious",And TV
+http://192.168.1.36:8086/live/high/2024.m3u8
+#EXTINF:-1 tvg-name="GSTV" tvg-logo="https://i.imgur.com/1vQH3cM.png" group-title="Religious",GSTV
+https://gemstv.wide-stream.net/gemstv01/smil:gemstv01.smil/chunklist.m3u8
+#EXTINF:-1 tvg-name="Zee Cafe HD" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022ZMMH.png?lock=720x540" group-title="Series",Zee Cafe HD
+http://192.168.1.36:8086/live/high/1319.m3u8
+#EXTINF:-1 tvg-name="Zee Cafe SD" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022ZMMH.png?lock=720x540" group-title="Series",Zee Cafe SD
+http://192.168.1.36:8086/live/high/1364.m3u8
+#EXTINF:-1 tvg-name="BEK TV Sports West (720p)" tvg-logo="https://i.imgur.com/1l3t5jd.png" group-title="Sports",BEK TV Sports West (720p)
+https://cdn3.wowza.com/5/ZWQ1K2NYTmpFbGsr/BEK-WOWZA-1/smil:BEKPRIMEW.smil/playlist.m3u8
+#EXTINF:-1 tvg-name="DD Sports" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Sports.png" group-title="Sports",DD Sports
+http://192.168.1.36:8086/live/high/204.m3u8
+#EXTINF:-1 tvg-name="DD SPORTS (576p)" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_DD_SPORTS/images/LOGO_HD/image.png" group-title="Sports",DD SPORTS (576p)
+http://103.78.149.54:8000/play/a02r/index.m3u8
+#EXTINF:-1 tvg-name="DD SPORTS HD (1080p)" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_DD_SPORTS/images/LOGO_HD/image.png" group-title="Sports",DD SPORTS HD (1080p)
+http://103.78.149.54:8000/play/a02i/index.m3u8
+#EXTINF:-1 tvg-name="QazSport (480p) [Geo-blocked]" tvg-logo="https://i.imgur.com/UDJ0P5Q.png" group-title="Sports",QazSport (480p) [Geo-blocked]
+https://qazsporttv-stream.qazcdn.com/qazsporttv/qazsporttv/playlist.m3u8
+#EXTINF:-1 tvg-name="SL Sony TEN 1 HD" group-title="Sports",SL Sony TEN 1 HD
+http://192.168.1.36:8086/live/high/sl162.m3u8
+#EXTINF:-1 tvg-name="SL Sony TEN 2 HD" group-title="Sports",SL Sony TEN 2 HD
+http://192.168.1.36:8086/live/high/sl891.m3u8
+#EXTINF:-1 tvg-name="SL Sony TEN 3 HD" group-title="Sports",SL Sony TEN 3 HD
+http://192.168.1.36:8086/live/high/sl892.m3u8
+#EXTINF:-1 tvg-name="SL Sony TEN 5 HD" group-title="Sports",SL Sony TEN 5 HD
+http://192.168.1.36:8086/live/high/sl155.m3u8
+#EXTINF:-1 tvg-name="Sony Max HD" tvg-logo="https://dtil.tmsimg.com/assets/s157593_ld_h15_aa.png?lock=720x540" group-title="Sports",Sony Max HD
+http://192.168.1.36:8086/live/high/476.m3u8
+#EXTINF:-1 tvg-name="Sony Ten 2 HD" group-title="Sports",Sony Ten 2 HD
+http://192.168.1.36:8086/live/high/891.m3u8
+#EXTINF:-1 tvg-name="Sony Ten 3 HD Hindi" group-title="Sports",Sony Ten 3 HD Hindi
+http://192.168.1.36:8086/live/high/892.m3u8
+#EXTINF:-1 tvg-name="Sony Ten 3 Hindi" group-title="Sports",Sony Ten 3 Hindi
+http://192.168.1.36:8086/live/high/524.m3u8
+#EXTINF:-1 tvg-name="Sports TV (720p) [Geo-blocked]" tvg-logo="https://i.imgur.com/tGTVcVe.jpg" group-title="Sports",Sports TV (720p) [Geo-blocked]
+https://live.sportstv.com.tr/hls/low/sportstv.m3u8
+#EXTINF:-1 tvg-name="UK: SONY TEN 1 HD" group-title="Sports",UK: SONY TEN 1 HD
+http://vip-max.com:5555/user/pass/82042
+#EXTINF:-1 tvg-name="UK: SONY TEN 2 HD" group-title="Sports",UK: SONY TEN 2 HD
+http://vip-max.com:5555/user/pass/82041
+#EXTINF:-1 tvg-name="UK: STAR SPORTS 1 HINDI HD" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Sports",UK: STAR SPORTS 1 HINDI HD
+http://vip-max.com:5555/user/pass/82039
+#EXTINF:-1 tvg-name="Travelxp HD Hindi" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Travelxp%20HD.png" group-title="Travel",Travelxp HD Hindi
+http://192.168.1.36:8086/live/high/562.m3u8

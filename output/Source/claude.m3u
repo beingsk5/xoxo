@@ -1,3 +1,5 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
-#EXTINF:-1 tvg-name="bootstrap cmd" group-title="Other",bootstrap cmd
-https://downloads.claude.ai/claude-code-releases/bootstrap.cmd
+#EXTINF:-1 tvg-name="bootstrap sh" group-title="Other",bootstrap sh
+https://downloads.claude.ai/claude-code-releases/bootstrap.sh
+#EXTINF:-1 tvg-name="install cmd" group-title="Other",install cmd
+https://claude.ai/install.cmd

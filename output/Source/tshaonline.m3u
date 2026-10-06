@@ -1,7 +1,7 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
-#EXTINF:-1 tvg-name="annual-report-v20260204 pdf" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Other",annual-report-v20260204 pdf
-https://www.tshaonline.org/pdf/annual-reports/annual-report-v20260204.pdf
 #EXTINF:-1 tvg-name="app css" group-title="Other",app css
 https://www.tshaonline.org/css/app.css
 #EXTINF:-1 tvg-name="app js" group-title="Other",app js
 https://www.tshaonline.org/js/app.js
+#EXTINF:-1 tvg-name="highcharts js" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Other",highcharts js
+https://www.tshaonline.org/js/highcharts/highcharts.js

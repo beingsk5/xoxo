@@ -1,7 +1,3 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
-#EXTINF:-1 tvg-name="Discovery Turbo TV" tvg-logo="https://dtil.tmsimg.com/assets/s159108_ld_h15_aa.png?lock=720x540" group-title="Auto",Discovery Turbo TV
-https://live-manifest.production-public.tubi.io/live/e7be5ad5-9044-4151-95d4-a9aae10ab0a5/playlist.m3u8
-#EXTINF:-1 tvg-name="FilmRise Black TV" group-title="Entertainment",FilmRise Black TV
-https://live-manifest.production-public.tubi.io/live/da01f337-3ba0-4b43-b675-b0f155153fb0/playlist.m3u8
-#EXTINF:-1 tvg-name="KOAA News 5 Colorado" group-title="News",KOAA News 5 Colorado
-https://live-manifest.production-public.tubi.io/live/13925190-f7d7-4b7a-ada9-12544c2c77f8/playlist.m3u8
+#EXTINF:-1 tvg-name="playlist m3u8" group-title="Other",playlist m3u8
+https://aegis-cloudfront-1.tubi.video/8d1f164d-34ef-4f70-b948-ae33826a0aaa/playlist.m3u8
