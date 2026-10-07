@@ -1,9 +1,0 @@
-#EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
-#EXTINF:-1 tvg-name="claude" group-title="Other",claude
-https://downloads.claude.ai/claude-code-releases/bootstrap.cmd
-#EXTINF:-1 tvg-name="claude" group-title="Other",claude
-https://downloads.claude.ai/claude-desktop/apt/stable/dists/stable/main/binary-amd64/Packages
-#EXTINF:-1 tvg-name="install" group-title="Other",install
-https://claude.ai/install.cmd
-#EXTINF:-1 tvg-name="desktop" group-title="Other",desktop
-https://claude.ai/api/desktop/win32/x64/exe/latest/redirect
