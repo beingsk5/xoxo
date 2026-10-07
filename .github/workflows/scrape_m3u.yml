@@ -6,7 +6,8 @@ on:
   workflow_dispatch:
     inputs:
       # One checkbox per language (GitHub has no native multi-select choice —
-      # actions/runner#2076). All unchecked = run all 14.
+      # actions/runner#2076). All unchecked (or a schedule) = one full run
+      # over all_indian_channels.json; ticked boxes run only those languages.
       lang_hindi:
         description: 'Hindi'
         type: boolean
@@ -88,7 +89,6 @@ jobs:
     runs-on: ubuntu-26.04
     outputs:
       matrix: ${{ steps.set.outputs.matrix }}
-      list: ${{ steps.set.outputs.list }}
     steps:
       - name: Build matrix from checkboxes
         id: set
@@ -126,18 +126,20 @@ jobs:
               if os.environ.get("LANG_" + lang.upper(), "").lower() == "true"
           ]
 
-          # Schedule (or no checkbox ticked) → every language
+          # Schedule (or no checkbox ticked) → one full run over
+          # channel_lists/all_indian_channels.json; ticked boxes → only
+          # those particular languages.
           if os.environ.get("EVENT_NAME") != "workflow_dispatch" or not checked:
-              checked = list(LANGS)
+              languages = ["All"]
+          else:
+              languages = checked
 
-          matrix = {"include": [{"language": lang} for lang in checked]}
-          list_csv = ",".join(checked)
+          matrix = {"include": [{"language": lang} for lang in languages]}
 
           out = os.environ["GITHUB_OUTPUT"]
           with open(out, "a", encoding="utf-8") as f:
               f.write(f"matrix={json.dumps(matrix)}\n")
-              f.write(f"list={list_csv}\n")
-          print(f"Selected: {list_csv}")
+          print(f"Selected: {','.join(languages)}")
           print(f"Matrix: {json.dumps(matrix)}")
           PY
 
@@ -219,7 +221,10 @@ jobs:
     timeout-minutes: 180
     strategy:
       fail-fast: false
-      max-parallel: 3
+      # 13 languages in 2 waves (public runners: up to 20 concurrent jobs).
+      # Each job is internally capped at 80/60 min, so a full scrape lands
+      # around ~2.5-3h instead of queueing 5 waves of near-timeout jobs.
+      max-parallel: 8
       matrix: ${{ fromJson(needs.select-languages.outputs.matrix) }}
 
     env:
@@ -338,7 +343,17 @@ jobs:
             if [ "$attempt" != "1" ] && [ "$FORCE_FRESH" != "true" ]; then
               FRESH_FLAG=""
             fi
-            if python -m scrapers.language "${{ matrix.language }}" $FRESH_FLAG; then
+            # Internal time budget: search/crawl/validate stop themselves
+            # and the run checkpoint-exports, so every attempt finishes and
+            # publishes well before the 180-min job cap (which cancels the
+            # job and loses its publish window). Attempt 2 resumes attempt
+            # 1's state.
+            if [ "$attempt" = "1" ]; then
+              TFLAG="--timeout-minutes 80"
+            else
+              TFLAG="--timeout-minutes 60"
+            fi
+            if python -m scrapers.language "${{ matrix.language }}" $FRESH_FLAG $TFLAG; then
               echo "SUCCESS on attempt $attempt"
               exit 0
             fi
@@ -352,15 +367,21 @@ jobs:
         if: always()
         run: python3 scripts/show_results.py "${{ matrix.language }}" || true
 
-      # Recall signal: how many of this language's targets we produced.
-      # Fails the job only if the state store ended up empty.
+      # Recall signal: how many of this run's targets we produced.
+      # Fails the job only if the state store ended up empty; coverage
+      # below the threshold is a warning, never a failure.
       - name: Coverage
-        run: python3 scripts/coverage.py "${{ matrix.language }}"
+        run: |
+          if [ "${{ matrix.language }}" = "All" ]; then
+            python3 scripts/coverage.py
+          else
+            python3 scripts/coverage.py "${{ matrix.language }}"
+          fi
 
       # One transport file per job: type-tagged JSONL carrying the probe
-      # verdicts (shared with sibling jobs) AND this language's channels
-      # (the merge job's input). Runtime state itself lives in state/store.db,
-      # which never leaves the runner — output/ holds published files only.
+      # verdicts AND this run's channels, shared with sibling jobs (they
+      # download it into .probe_cache). Runtime state itself lives in
+      # state/store.db, which never leaves the runner.
       - name: Upload state
         if: always()
         uses: actions/upload-artifact@v7
@@ -370,96 +391,46 @@ jobs:
           retention-days: 5
           if-no-files-found: warn
 
-  # ═══════════════════════════════════════════════════════════════
-  # MERGE: Fan-in — only this run's selected-language artifacts
-  # ═══════════════════════════════════════════════════════════════
-  merge:
-    name: Merge & Package
-    needs: [select-languages, scrape-language]
-    if: ${{ !cancelled() }}
-    runs-on: ubuntu-26.04
-    steps:
-      - uses: actions/checkout@v7
-
-      - uses: actions/setup-python@v7
-        with:
-          python-version: ${{ env.PYTHON }}
-          cache: pip
-
-      - run: pip install -r requirements.txt
-
-      - name: Clear stale state inputs
-        run: |
-          # Only the imported state files are cleared (never *.m3u outputs).
-          # output/Language/*.m3u and output/Source/*.m3u from previous runs
-          # stay on disk untouched — this run only UPDATES the files it writes.
-          rm -rf state
-          mkdir -p state
-
-      - name: Download state artifacts (selected languages only)
-        uses: actions/download-artifact@v8
-        with:
-          pattern: state-*
-          path: state
-          merge-multiple: true
-
-      - name: Show raw inputs
-        run: |
-          echo "Selected languages: ${{ needs.select-languages.outputs.list }}"
-          python3 scripts/show_raw_inputs.py
-
-      - name: Merge into M3U
-        run: python merge.py
-
-      - name: Validate output
-        run: python3 scripts/validate_output.py
-
-      - name: Build file list from merge manifest (selected languages only)
-        id: manifest
-        run: |
-          # merge.py records every file it wrote this run. Anything not in the
-          # manifest (e.g. Language/<unselected>.m3u from an earlier run) is
-          # left untouched and excluded from artifact + commit.
-          test -f output/merge_manifest.txt || { echo "merge_manifest.txt missing"; exit 1; }
-          {
-            echo "files<<EOF"
-            tr -d '\r' < output/merge_manifest.txt
-            echo "EOF"
-          } >> "$GITHUB_OUTPUT"
-          echo "Files produced this run:"
-          tr -d '\r' < output/merge_manifest.txt
-
-      - name: Upload final artifacts
-        uses: actions/upload-artifact@v7
-        with:
-          name: india-iptv-${{ github.run_id }}
-          path: ${{ steps.manifest.outputs.files }}
-          retention-days: 60
-          if-no-files-found: error
-
-      - name: Commit results
+      # Publish this run's M3U files (written by the scraper itself):
+      # single-language jobs write Language/<lang>.m3u; the full "All" run
+      # writes all_indian_channels.m3u + Language/* + Source/*. output/ is
+      # gitignored, so files are force-staged; other runs' tracked files
+      # stay untouched. Concurrent language jobs race on push and retry
+      # with rebase.
+      - name: Commit output
+        id: commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          # state/ (store.db + imported *.jsonl) is gitignored runtime state —
-          # never staged, never fetched by rebase, so no cleanup is needed
-          # before pulling.
+          shopt -s nullglob
+          if [ "${{ matrix.language }}" = "All" ]; then
+            files=(output/all_indian_channels.m3u output/Language/*.m3u output/Source/*.m3u)
+          else
+            LF=$(echo "${{ matrix.language }}" | tr '[:upper:]' '[:lower:]' | tr ' ' '_')
+            files=("output/Language/${LF}.m3u")
+          fi
+          if [ ${#files[@]} -eq 0 ] || [ ! -e "${files[0]}" ]; then
+            echo "No output files written by this run"
+            exit 1
+          fi
 
-          # Stage ONLY the files merge produced this run (selected languages).
-          # Unselected Language/*.m3u files stay tracked and unchanged — no
-          # deletion, no update.
-          tr -d '\r' < output/merge_manifest.txt | xargs -d '\n' git add -f --
+          {
+            echo "files<<EOF"
+            printf '%s\n' "${files[@]}"
+            echo "EOF"
+          } >> "$GITHUB_OUTPUT"
 
+          git add -f "${files[@]}"
           if git diff --staged --quiet; then
             echo "No changes to commit"
             exit 0
           fi
 
-          CHANNELS=$(grep -c '^#EXTINF' output/India.m3u 2>/dev/null || echo "0")
-          git commit -m "scrape: $CHANNELS channels $(date -u +'%Y-%m-%d %H:%M UTC')"
+          CHANNELS=$(cat "${files[@]}" | grep -c '^#EXTINF' || true)
+          git commit -m "scrape: ${CHANNELS:-0} channels $(date -u +'%Y-%m-%d %H:%M UTC')"
 
-          for i in 1 2 3; do
+          for i in 1 2 3 4 5; do
             # Recover from a half-finished rebase
             git rebase --abort 2>/dev/null || true
             if git pull --rebase --autostash origin main && git push; then
@@ -467,11 +438,15 @@ jobs:
               exit 0
             fi
             echo "Push failed (attempt $i), retrying..."
-            sleep 10
+            sleep 15
           done
-          echo "Push failed after 3 attempts"
+          echo "Push failed after 5 attempts"
           exit 1
 
-      - name: Summary
-        if: always()
-        run: python3 scripts/summary.py
+      - name: Upload output
+        uses: actions/upload-artifact@v7
+        with:
+          name: output-${{ matrix.language }}
+          path: ${{ steps.commit.outputs.files }}
+          retention-days: 60
+          if-no-files-found: warn
