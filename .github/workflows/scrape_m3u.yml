@@ -79,6 +79,10 @@ concurrency:
 
 env:
   PYTHON: '3.12'
+  # Coverage ratchet: attempts keep resuming until Covered% reaches this
+  # target (or no work remains). 100 = chase every channel in the list.
+  COVERAGE_TARGET: '100'
+  SCRAPER_MAX_ATTEMPTS: '3'
 
 jobs:
   # ═══════════════════════════════════════════════════════════════
@@ -323,6 +327,21 @@ jobs:
           PY
           fi
 
+      # Coverage ratchet: carry state/store.db across runs so attempts and
+      # scheduled runs resume the previous one — searched queries, pending
+      # URLs and found channels accumulate until the coverage target is hit.
+      # force_fresh (attempt 1 --fresh) still wipes this language's rows as
+      # the manual reset. Verdict TTLs keep restored state from going stale.
+      - name: Restore cross-run state
+        continue-on-error: true
+        uses: actions/cache/restore@v4
+        with:
+          path: state/store.db
+          key: scrape-state-${{ github.run_id }}-${{ matrix.language }}
+          restore-keys: |
+            scrape-state-${{ matrix.language }}-
+            scrape-state-
+
       - name: Download shared state (earlier jobs in this run)
         continue-on-error: true
         uses: actions/download-artifact@v8
@@ -331,36 +350,65 @@ jobs:
           path: .probe_cache
           merge-multiple: true
 
-      - name: Scrape ${{ matrix.language }} channels (retry once)
+      - name: Scrape ${{ matrix.language }} channels (coverage-driven retries)
         run: |
           FORCE_FRESH="${{ github.event.inputs.force_fresh }}"
-          for attempt in 1 2; do
-            echo "=== Attempt $attempt ==="
-            # Attempt 1 always starts clean so committed stale state cannot
-            # short-circuit the run. Attempt 2 resumes attempt 1 via the
-            # resume row in state/store.db unless force_fresh was requested.
-            FRESH_FLAG="--fresh"
-            if [ "$attempt" != "1" ] && [ "$FORCE_FRESH" != "true" ]; then
-              FRESH_FLAG=""
+          ATTEMPTS="${SCRAPER_MAX_ATTEMPTS:-3}"
+          LAST_RC=1
+          for attempt in $(seq 1 "$ATTEMPTS"); do
+            echo "=== Attempt $attempt/$ATTEMPTS ==="
+            # Attempts resume the restored cross-run store; only attempt 1
+            # honors force_fresh (later attempts must keep the progress).
+            FRESH_FLAG=""
+            if [ "$attempt" = "1" ] && [ "$FORCE_FRESH" = "true" ]; then
+              FRESH_FLAG="--fresh"
             fi
-            # Internal time budget: search/crawl/validate stop themselves
-            # and the run checkpoint-exports, so every attempt finishes and
-            # publishes well before the 180-min job cap (which cancels the
-            # job and loses its publish window). Attempt 2 resumes attempt
-            # 1's state.
+            # Internal time budget: every phase stops itself and
+            # checkpoint-exports, so each attempt publishes well before the
+            # 180-min job cap (which would cancel the job and lose the
+            # publish window). The window is split across attempts so the
+            # resumed chain stays inside the cap.
             if [ "$attempt" = "1" ]; then
-              TFLAG="--timeout-minutes 80"
+              TFLAG="--timeout-minutes 65"
             else
-              TFLAG="--timeout-minutes 60"
+              TFLAG="--timeout-minutes 50"
             fi
-            if python -m scrapers.language "${{ matrix.language }}" $FRESH_FLAG $TFLAG; then
-              echo "SUCCESS on attempt $attempt"
+            set +e
+            python -m scrapers.language "${{ matrix.language }}" $FRESH_FLAG $TFLAG
+            LAST_RC=$?
+            set -e
+            if [ "$LAST_RC" = "0" ]; then
+              echo "Complete on attempt $attempt (queries exhausted)"
               exit 0
             fi
-            echo "Attempt $attempt failed, retrying..."
+            if [ "$LAST_RC" = "3" ]; then
+              # Budget hit with work pending: the partial playlist is
+              # already published by the scraper. Stop early once the
+              # target is met; otherwise resume and keep chasing.
+              COV_JSON="$(python3 scripts/coverage.py "${{ matrix.language }}" --json 2>/dev/null || true)"
+              PCT=$(printf '%s' "$COV_JSON" | python3 -c 'import sys,json;print(float(json.loads(sys.stdin.read() or "{}").get("pct",0)))' 2>/dev/null || echo 0)
+              echo "Incomplete: coverage ${PCT}% (target ${COVERAGE_TARGET}%)"
+              if awk -v p="$PCT" -v t="$COVERAGE_TARGET" 'BEGIN { exit !(p >= t) }'; then
+                echo "Coverage target reached - done"
+                exit 0
+              fi
+              if [ "$attempt" -lt "$ATTEMPTS" ]; then
+                echo "Resuming on next attempt..."
+                sleep 10
+                continue
+              fi
+              break
+            fi
+            # rc=1 (hard failure): retry like a flaky network.
+            echo "Attempt $attempt failed (rc=$LAST_RC), retrying..."
             sleep 15
           done
-          echo "Both attempts failed"
+          if [ "$LAST_RC" = "3" ]; then
+            echo "Attempts exhausted below the ${COVERAGE_TARGET}% target -"
+            echo "partial output published; the next run resumes from state."
+            exit 0
+          fi
+          echo "All attempts failed"
           exit 1
 
       - name: Show results
@@ -390,6 +438,16 @@ jobs:
           path: state/${{ matrix.language }}.jsonl
           retention-days: 5
           if-no-files-found: warn
+
+      # Persist this attempt's store for the next attempt/run (the ratchet).
+      # Runs even after a failed scrape so partial progress still carries over.
+      - name: Save cross-run state
+        if: always()
+        continue-on-error: true
+        uses: actions/cache/save@v4
+        with:
+          path: state/store.db
+          key: scrape-state-${{ github.run_id }}-${{ matrix.language }}
 
       # Publish this run's M3U files (written by the scraper itself):
       # single-language jobs write Language/<lang>.m3u; the full "All" run
