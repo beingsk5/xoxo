@@ -1,0 +1,15 @@
+#EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
+#EXTINF:-1 tvg-name="DVB TV (720p) [Geo-blocked]" group-title="News",DVB TV (720p) [Geo-blocked]
+https://live-stream.dvb.no/hls/stream_src/index.m3u8
+#EXTINF:-1 tvg-name="TV SUD (1080p) [Geo-blocked]" group-title="News",TV SUD (1080p) [Geo-blocked]
+https://stream2.live-stream.ro/WebRTCApp/streams/118334672595255049029831.m3u8
+#EXTINF:-1 tvg-name="TVE Internacional America (576p) [Geo-blocked]" group-title="Other",TVE Internacional America (576p) [Geo-blocked]
+https://rtvelivestream-rtveplayplus.rtve.es/rtvesec/int/tvei_ame_main_576.m3u8
+#EXTINF:-1 tvg-name="TVE Internacional Asia-Oceania (576p) [Geo-blocked]" group-title="Other",TVE Internacional Asia-Oceania (576p) [Geo-blocked]
+https://rtvelivestream-rtveplayplus.rtve.es/rtvesec/int/tvei_asia_main_576.m3u8
+#EXTINF:-1 tvg-name="Hong Kong International Business Channel (1080p) [Geo-blocked]" group-title="Other",Hong Kong International Business Channel (1080p) [Geo-blocked]
+https://hoytv-live-stream.hoy.tv/ch76/index-fhd.m3u8
+#EXTINF:-1 tvg-name="HOY Infotainment (1080p) [Geo-blocked]" group-title="Other",HOY Infotainment (1080p) [Geo-blocked]
+https://hoytv-live-stream.hoy.tv/ch78/index.m3u8
+#EXTINF:-1 tvg-name="HOY TV (1080p) [Geo-blocked]" group-title="Other",HOY TV (1080p) [Geo-blocked]
+https://hoytv-live-stream.hoy.tv/ch77/index.m3u8

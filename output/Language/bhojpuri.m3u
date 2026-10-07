@@ -1,0 +1,41 @@
+#EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
+#EXTINF:-1 tvg-name="Nepal 1" tvg-logo="https://dtil.tmsimg.com/assets/s143584_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Nepal 1
+https://cdn.pishow.tv/ott/live/1490/master.m3u8
+#EXTINF:-1 tvg-name="Punjabi TV" tvg-logo="https://papaji.freetvindia.com/media/World_Punjabi_TV.png" group-title="News",Punjabi TV
+http://cdn9.live247stream.com/punjabitvcanada/tv/playlist.m3u8
+#EXTINF:-1 tvg-name="ABP Majha (360p)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/ABP_Majha_logo.svg/500px-ABP_Majha_logo.svg.png" group-title="News",ABP Majha (360p)
+https://yupprestreamliveus.akamaized.net/vglive-sk-355289/majha/master.m3u8
+#EXTINF:-1 tvg-name="NDTV India (480p) [Not 24/7]" tvg-logo="https://dtil.tmsimg.com/assets/s157588_ld_h15_aa.png?lock=720x540" group-title="News",NDTV India (480p) [Not 24/7]
+https://ndtvindiaelemarchana.akamaized.net/hls/live/2003679/ndtvindia/master.m3u8
+#EXTINF:-1 tvg-name="First India News (360p) [Not 24/7]" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_FIRST_INDIA_NEWS_RAJASTHAN/images/LOGO_HD/image.png" group-title="News",First India News (360p) [Not 24/7]
+https://xlbor37ydvaj-hls-live.wmncdn.net/firstindianewstv1/live.stream/index.m3u8
+#EXTINF:-1 tvg-name="India Today" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/INDIA-TODAY_transparent.png" group-title="News",India Today
+https://feeds.intoday.in/hltapps/api/master.m3u8
+#EXTINF:-1 tvg-name="6 TV Telugu (360p)" tvg-logo="https://i.imgur.com/l3EcRnZ.png" group-title="News",6 TV Telugu (360p)
+https://mumt03.tangotv.in/Dsly5z3H6TVTELUGU/index.m3u8
+#EXTINF:-1 tvg-name="mta3alarabia" group-title="Other",mta3alarabia
+https://chlivemta1.akamaized.net/hls/live/2010556/mta3alarabia/playlist.m3u8
+#EXTINF:-1 tvg-name="webvideos" group-title="Other",webvideos
+https://hlsvod.dw.com/i/vps/webvideos/CHI/2026/DWVG/DWVGCHI260922_india-VERTICAL_01ICV_,AVC_270x480,AVC_360x640,AVC_540x960,AVC_720x1280,AVC_1080x1920,.mp4.csmil/master.m3u8
+#EXTINF:-1 tvg-name="asr-digital-radio - 0 - India -" group-title="Other",asr-digital-radio - 0 - India -
+https://moondigitaledge.radyotvonline.net/babyland/playlist.m3u8
+#EXTINF:-1 tvg-name="Desi Plus" group-title="Other",Desi Plus
+http://cdn2.live247stream.com/desiplus/tv/playlist.m3u8
+#EXTINF:-1 tvg-name="TV Punjab (720p) [Geo-blocked]" group-title="Other",TV Punjab (720p) [Geo-blocked]
+https://932y483pdjv8-hls-live.5centscdn.com/stream/deb10bae362f810630ec3abedcae5894.sdp/playlist.m3u8
+#EXTINF:-1 tvg-name="The Q India" group-title="Other",The Q India
+https://amg1-i.akamaihd.net/hls/live/784034/Q001/playlist.m3u8?__nn__=5606168722001&hdnea=st=1566232200~exp=1566235800~acl=/hls/live/784034/Q001/*~hmac=4de929fdc0ee53199a11237ee75a695383a82a42623fa92c1376493e5fc91d7b
+#EXTINF:-1 tvg-name="punjabitvcanada" group-title="Other",punjabitvcanada
+http://cdn9.live247stream.com:80/punjabitvcanada/tv/fazal/1/chunks.m3u8
+#EXTINF:-1 tvg-name="DD Vyas" group-title="Other",DD Vyas
+http://playhls.media.nic.in/live/vyas-360p/index.m3u8
+#EXTINF:-1 tvg-name="Air Telugu" group-title="Other",Air Telugu
+https://airhlspush.pc.cdn.bitgravity.com/httppush/hlspbaudio141/hlspbaudio141_Auto.m3u8
+#EXTINF:-1 tvg-name="Aastha Telugu (480p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Aastha.png" group-title="Religious",Aastha Telugu (480p)
+https://aasthaott.akamaized.net/110923/smil:aasthatelugu.smil/playlist.m3u8
+#EXTINF:-1 tvg-name="Aastha Gujarati (480p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Aastha.png" group-title="Religious",Aastha Gujarati (480p)
+https://aasthaott.akamaized.net/110923/smil:aasthagujrati.smil/playlist.m3u8
+#EXTINF:-1 tvg-name="Sony Ten 1 HD" group-title="Sports",Sony Ten 1 HD
+https://dl.dropbox.com/s/96ziqh1ehkhzh81/badminton1.m3u8?dl=0
+#EXTINF:-1 tvg-name="Travelxp HD (1080p) [Geo-blocked]" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Travelxp%20HD.png" group-title="Travel",Travelxp HD (1080p) [Geo-blocked]
+https://amg00416-amg00416c9-samsung-in-4882.playouts.now.amagi.tv/playlist/amg00416-travelxp-travelxphd-samsungin/playlist.m3u8

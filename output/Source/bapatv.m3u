@@ -1,0 +1,13 @@
+#EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
+#EXTINF:-1 tvg-name="Colors Bangla HD" tvg-logo="https://i.postimg.cc/LsyGKzFC/Colors-Bangla-HD.jpg" group-title="Entertainment",Colors Bangla HD
+http://bapatv.live:8080/colorsbangla2/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-name="Zee Bangla HD" tvg-logo="https://i.postimg.cc/QC6LfZkP/Zee-Bangla.jpg" group-title="Entertainment",Zee Bangla HD
+http://bapatv.live:8080/zeebangla/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-name="Zee Bangla Cinema" tvg-logo="https://i.postimg.cc/DZkPVJfM/Zee-Bangla-Cinema.jpg" group-title="Movies",Zee Bangla Cinema
+http://bapatv.live:8080/zeebncinema/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-name="Sony Sports 1 HD" tvg-logo="https://i.postimg.cc/m2sv0bW0/Sony-Sports-1-HD.jpg" group-title="Sports",Sony Sports 1 HD
+http://bapatv.live:8080/sonyten1/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-name="Sony Sports 2 HD" tvg-logo="https://i.postimg.cc/v8rY12Yw/Sony-Sports-2-HD.jpg" group-title="Sports",Sony Sports 2 HD
+http://bapatv.live:8080/sonyten2/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-name="Sony Sports 5 HD" tvg-logo="https://i.postimg.cc/G2NNQrzM/Sony-Sports-5-HD.jpg" group-title="Sports",Sony Sports 5 HD
+http://bapatv.live:8080/sonyten5/tracks-v1a1/mono.m3u8
