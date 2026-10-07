@@ -1,137 +1,69 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
-#EXTINF:-1 tvg-name="National Geographic (Finland) (720p) [Geo-blocked]" tvg-logo="https://dtil.tmsimg.com/assets/s143574_ld_h15_aa.png?lock=720x540" group-title="Documentary",National Geographic (Finland) (720p) [Geo-blocked]
-https://live-fi.tvkaista.net/national-geographic/live.m3u8?hd=true
-#EXTINF:-1 tvg-name="National Geographic Wild (India) (576p)" tvg-logo="https://dtil.tmsimg.com/assets/s143574_ld_h15_aa.png?lock=720x540" group-title="Documentary",National Geographic Wild (India) (576p)
-http://51.75.127.199:3141/natgeowild/index.m3u8
 #EXTINF:-1 tvg-name="Telugu One" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN400058AF_20260311T004509SQUARE.png" group-title="Entertainment",Telugu One
-https://vglivessai.akamaized.net/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/4eda1f4a-c0ee-4273-adfe-17afc51977fc/playlist.m3u8?hdnts=st=1791320446~exp=1791342046~acl=!*/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/4eda1f4a-c0ee-4273-adfe-17afc51977fc/*!/payload/yupptvott_5_-1_f858ba3b-5aa7-414e-8e3b-59d8bf9a84d9_US_52.150.30.129_yupptv_1_channel_7132_-1/*~data=yupptvott_5_-1_f858ba3b-5aa7-414e-8e3b-59d8bf9a84d9_US_52.150.30.129_yupptv_1_channel_7132_-1~hmac=3d7b73ab45b2ef11b0e2252f51023bde7127f12f4d2119496c7df047f7d77c92&ads.content_custom_3_param=yuppfastint&ads.ip=52.150.30.129&did=f858ba3b-5aa7-414e-8e3b-59d8bf9a84d9&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=ENTERTAINMENT&ads.content_custom_1_param=FAST&ads.channel=7132&ads.channel_name=TeluguOne&ads.language=TEL&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
+https://vglivessai.akamaized.net/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/4eda1f4a-c0ee-4273-adfe-17afc51977fc/playlist.m3u8?hdnts=st=1791367755~exp=1791389355~acl=!*/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/4eda1f4a-c0ee-4273-adfe-17afc51977fc/*!/payload/yupptvott_5_-1_c78d0c44-2b52-4667-b3d6-2f6ca9476ff2_US_52.159.247.145_yupptv_1_channel_7132_-1/*~data=yupptvott_5_-1_c78d0c44-2b52-4667-b3d6-2f6ca9476ff2_US_52.159.247.145_yupptv_1_channel_7132_-1~hmac=ae260cce6b21500e70caa8a1e208341d288092a8a2d860cd142a70661415a7b9&ads.content_custom_3_param=yuppfastint&ads.ip=52.159.247.145&did=c78d0c44-2b52-4667-b3d6-2f6ca9476ff2&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=ENTERTAINMENT&ads.content_custom_1_param=FAST&ads.channel=7132&ads.channel_name=TeluguOne&ads.language=TEL&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
 #EXTINF:-1 tvg-name="Mahaa Max" tvg-logo="https://objectstorage.ap-mumbai-1.oraclecloud.com/p/7Eg7LPw1gBcncVDrfwf__7yyrg13awaU6DmMk4gutavGYZgoAuAziv8e0aSEdU4G/n/bmaqqlwez184/b/GTPL_CHANNEL_LOGO/o/gtpl/MAHAA+MAX+LOGO.png" group-title="Entertainment",Mahaa Max
 https://d1msejlow1t3l4.cloudfront.net/fta/mahaamax/playlist.m3u8
 #EXTINF:-1 tvg-name="Studio Yuva" tvg-logo="https://i.imgur.com/BOhgz2T.png" group-title="Entertainment",Studio Yuva
-https://d2gvyg6lvauoko.cloudfront.net/230226/studioyuva/playlist.m3u8?hdnts=st=1791320446~exp=1791342046~acl=!*/230226/studioyuva/*!/payload/yupptvott_5_-1_c05f54d7-4eb6-4e6f-bf2a-0373df62d8f7_US_52.150.30.129_yupptv_1_channel_7107_-1/*~data=yupptvott_5_-1_c05f54d7-4eb6-4e6f-bf2a-0373df62d8f7_US_52.150.30.129_yupptv_1_channel_7107_-1~hmac=2a104c08c7109c04312b3342a0186d7825f0e4106de0c6b63147b91602b52840&ads.content_custom_3_param=yuppfastint&ads.ip=52.150.30.129&did=c05f54d7-4eb6-4e6f-bf2a-0373df62d8f7&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=ENTERTAINMENT&ads.content_custom_1_param=FAST&ads.channel=7107&ads.channel_name=StudioYuva&ads.language=TEL&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
+https://d2gvyg6lvauoko.cloudfront.net/230226/studioyuva/playlist.m3u8?hdnts=st=1791367755~exp=1791389355~acl=!*/230226/studioyuva/*!/payload/yupptvott_5_-1_8ebcf6ec-b0e8-4743-942f-ac893058e10d_US_52.159.247.145_yupptv_1_channel_7107_-1/*~data=yupptvott_5_-1_8ebcf6ec-b0e8-4743-942f-ac893058e10d_US_52.159.247.145_yupptv_1_channel_7107_-1~hmac=233053c0c3bf0adcbc9a7777055b0c0c1db6927755fe537b439ab10cbc644d12&ads.content_custom_3_param=yuppfastint&ads.ip=52.159.247.145&did=8ebcf6ec-b0e8-4743-942f-ac893058e10d&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=ENTERTAINMENT&ads.content_custom_1_param=FAST&ads.channel=7107&ads.channel_name=StudioYuva&ads.language=TEL&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
 #EXTINF:-1 tvg-name="Vanitha TV" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/VANITHA-Logo--without-BG_2000_X_1125.png" group-title="Entertainment",Vanitha TV
 https://cdn.pishow.tv/ott/live/393/master.m3u8
 #EXTINF:-1 tvg-name="ETV Plus" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/ETV-plus-HD-Logo_2000_X_1125_Transpharent.png" group-title="Entertainment",ETV Plus
 https://yupplivegcpusa.yuppcdn.net/100823/smil:etvplus.smil/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
-#EXTINF:-1 tvg-name="La5 [Geo-blocked]" group-title="Entertainment",La5 [Geo-blocked]
-https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(ka)/index.m3u8
-#EXTINF:-1 tvg-name="MBC Drama (South Korea) (480p) [Geo-blocked]" group-title="Entertainment",MBC Drama (South Korea) (480p) [Geo-blocked]
-http://mytv.dothome.co.kr/ch/catv/26.php
-#EXTINF:-1 tvg-name="Movistar Plus (576p)" tvg-logo="https://i.imgur.com/XUnWcZF.png" group-title="Entertainment",Movistar Plus (576p)
-http://45.4.1.201:8000/play/a19y/index.m3u8
-#EXTINF:-1 tvg-name="NRK3 (1080i) [Geo-blocked]" group-title="Entertainment",NRK3 (1080i) [Geo-blocked]
-https://nrk-live-no.akamaized.net/nrk3/muxed.m3u8
-#EXTINF:-1 tvg-name="SBS6 Classics (1080p) [Geo-blocked]" group-title="Entertainment",SBS6 Classics (1080p) [Geo-blocked]
-https://sbs6classic.prd1.talpatvcdn.nl/v1/master/8ada1ed2ae3b9c3db6fc5e604cfa78fc7d2d745e/sbs6classic_ssai/fea54560ba684701a2143f33a9cf4489/index.m3u8
-#EXTINF:-1 tvg-name="Show do Milhao (1080p) [Geo-blocked]" group-title="Entertainment",Show do Milhao (1080p) [Geo-blocked]
-https://d38s7rrdbnh4oy.cloudfront.net/v1/master/215c0da80606fed29372070168106400a6ca7e1a/SSAI-Saudades/index.m3u8
-#EXTINF:-1 tvg-name="Sony Marathi (1080p)" tvg-logo="https://dtil.tmsimg.com/assets/s157970_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Sony Marathi (1080p)
-https://cloudplay-sonyliv.pages.dev/marathi.m3u8
-#EXTINF:-1 tvg-name="Sony Pal (1080p)" tvg-logo="https://dtil.tmsimg.com/assets/s157973_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Sony Pal (1080p)
-https://cloudplay-sonyliv.pages.dev/pal.m3u8
-#EXTINF:-1 tvg-name="Star Kiran (576p)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a4/Star_Kiran_logo_2023.png" group-title="Entertainment",Star Kiran (576p)
-http://103.151.60.162:2122/play/a032/index.m3u8?hls
-#EXTINF:-1 tvg-name="Star Maa (576p)" tvg-logo="https://dtil.tmsimg.com/assets/s179620_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Star Maa (576p)
-http://51.75.127.199:3141/starmaa/index.m3u8
-#EXTINF:-1 tvg-name="Star Maa Gold (576p)" tvg-logo="https://dtil.tmsimg.com/assets/s179620_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Star Maa Gold (576p)
-http://51.75.127.199:3141/starmaagold/index.m3u8
-#EXTINF:-1 tvg-name="Star Maa Movies (576p)" tvg-logo="https://dtil.tmsimg.com/assets/s179620_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Star Maa Movies (576p)
-http://51.75.127.199:3141/starmaamovies/index.m3u8
-#EXTINF:-1 tvg-name="Star Pravah (576p)" tvg-logo="https://dtil.tmsimg.com/assets/s143834_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Star Pravah (576p)
-http://51.75.127.199:3141/starpravah/index.m3u8
-#EXTINF:-1 tvg-name="Star Suvarna (576p)" tvg-logo="https://dtil.tmsimg.com/assets/s143853_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Star Suvarna (576p)
-http://51.75.127.199:3141/starsuvarna/index.m3u8
-#EXTINF:-1 tvg-name="Star Vijay (576p)" tvg-logo="https://vignette.wikia.nocookie.net/logopedia/images/2/23/Vijay_tv.png/revision/latest?cb=20170719104859" group-title="Entertainment",Star Vijay (576p)
-http://51.75.127.199:3141/starvijay/index.m3u8
-#EXTINF:-1 tvg-name="StarPlus (India) HD (1080i)" tvg-logo="https://dtil.tmsimg.com/assets/s143832_ld_h15_aa.png?lock=720x540" group-title="Entertainment",StarPlus (India) HD (1080i)
-http://202.70.146.135:8000/play/a009/index.m3u8
-#EXTINF:-1 tvg-name="Sun TV HD (1080p)" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG002Z0M0Y.png?lock=720x540" group-title="Entertainment",Sun TV HD (1080p)
-http://103.151.60.162:2122/play/a02a/index.m3u8?hls
-#EXTINF:-1 tvg-name="TV ERA [Geo-blocked]" group-title="Entertainment",TV ERA [Geo-blocked]
-https://vipottbpkstream.vip.hr/Content/onevip-hls/Live/Channel(ERA)/index.m3u8
-#EXTINF:-1 tvg-name="Zee Horror Nights (1080p)" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN2100004C4_20260325T012334SQUARE.png" group-title="Entertainment",Zee Horror Nights (1080p)
-https://amg00862-amg00862c7-amgplt0173.playout.now3.amagi.tv/playlist/amg00862-amg00862c7-amgplt0173/playlist.m3u8
-#EXTINF:-1 tvg-name="Zee Marathi HD (1080p)" tvg-logo="https://i.imgur.com/vv9ysD3.png" group-title="Entertainment",Zee Marathi HD (1080p)
-http://51.75.127.199:3141/zeemarathihd/index.m3u8
-#EXTINF:-1 tvg-name="Zee Power HD (1080p)" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0028ZJ97.png?lock=720x540" group-title="Entertainment",Zee Power HD (1080p)
-http://51.75.127.199:3141/zeepowerhd/index.m3u8
-#EXTINF:-1 tvg-name="Zee Telugu HD (1080p)" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022S99J.png?lock=720x540" group-title="Entertainment",Zee Telugu HD (1080p)
-http://51.75.127.199:3141/zeeteluguhd/index.m3u8
-#EXTINF:-1 tvg-name="Star Tamil Television (360p)" tvg-logo="https://i.imgur.com/YozqNL3.jpg" group-title="General",Star Tamil Television (360p)
-https://edge4-moblive.yuppcdn.net/trans1sd/smil:strtml19.smil/playlist.m3u8?dvr=
-#EXTINF:-1 tvg-name="Pop Up (1080p) [Geo-blocked]" group-title="Kids",Pop Up (1080p) [Geo-blocked]
-https://amg01753-amg01753c9-samsung-gb-8005.playouts.now.amagi.tv/ts-eu-w1-n2/playlist/amg01753-narrativeuk-popup-samsunggb/playlist.m3u8
-#EXTINF:-1 tvg-name="YAAAS! (720p) [Geo-blocked]" group-title="Kids",YAAAS! (720p) [Geo-blocked]
-https://d3knqoaufvjug3.cloudfront.net/yas.m3u8
 #EXTINF:-1 tvg-name="NTV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Fashion_TV_logo.svg/960px-Fashion_TV_logo.svg.png" group-title="Lifestyle",NTV
 https://cdn4.skygo.mn/live/disk1/NTVHD/HLSv3-FTA/NTVHD.m3u8
-#EXTINF:-1 tvg-name="ayush tv" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/AYTV_transparent.png" group-title="Lifestyle",ayush tv
-https://d1msejlow1t3l4.cloudfront.net/fta/ayushtv/playlist.m3u8
 #EXTINF:-1 tvg-name="ETV Cinema" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/ETV-cinema-HD-Logo_2000_X_1125_Transpharent.png" group-title="Movies",ETV Cinema
 https://yupplivegcpusa.yuppcdn.net/100823/smil:etvcinema.smil/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
-#EXTINF:-1 tvg-name="Kantipur Max [Geo-blocked]" group-title="Movies",Kantipur Max [Geo-blocked]
-https://ktvhdsg.ekantipur.com:8443/ktvmax2025/match2/playlist.m3u8
-#EXTINF:-1 tvg-name="ServusTV (1080p) [Geo-blocked]" group-title="Movies",ServusTV (1080p) [Geo-blocked]
-https://stv-live.akamaized.net/hls/live/2031011/lingeoSTVATwebPri/master.m3u8
-#EXTINF:-1 tvg-name="Sony Max (576p) [Geo-blocked]" tvg-logo="https://dtil.tmsimg.com/assets/s157590_ld_h15_aa.png?lock=720x540" group-title="Movies",Sony Max (576p) [Geo-blocked]
-http://dksmedia.tv/play/live.php?mac=00:1A:79:B6:60:3D&stream=156013&extension=ts&play_token=slNi06NyY0
-#EXTINF:-1 tvg-name="Sony Pix HD (1080p)" tvg-logo="https://dtil.tmsimg.com/assets/s143803_ld_h15_aa.png?lock=720x540" group-title="Movies",Sony Pix HD (1080p)
-https://cloudplay-sonyliv.pages.dev/pixhd.m3u8
-#EXTINF:-1 tvg-name="Star Gold 2 (576p)" tvg-logo="https://dtil.tmsimg.com/assets/s143815_ld_h15_aa.png?lock=720x540" group-title="Movies",Star Gold 2 (576p)
-http://51.75.127.199:3141/stargold2/index.m3u8
-#EXTINF:-1 tvg-name="Star Gold Select (576p)" tvg-logo="https://dtil.tmsimg.com/assets/s143815_ld_h15_aa.png?lock=720x540" group-title="Movies",Star Gold Select (576p)
-http://51.75.127.199:3141/stargoldselect/index.m3u8
-#EXTINF:-1 tvg-name="Star Movies (India) (576p)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/STAR_Movies_logo.svg/960px-STAR_Movies_logo.svg.png" group-title="Movies",Star Movies (India) (576p)
-http://51.75.127.199:3141/starmovies/index.m3u8
-#EXTINF:-1 tvg-name="Vijay Super (576p)" tvg-logo="https://dtil.tmsimg.com/assets/s158319_ld_h15_aa.png?lock=720x540" group-title="Movies",Vijay Super (576p)
-http://51.75.127.199:3141/vijaysuper/index.m3u8
-#EXTINF:-1 tvg-name="Zee South Flix (1080p)" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN2100005T2_20260325T012340SQUARE.png" group-title="Movies",Zee South Flix (1080p)
-https://amg00862-amg00862c9-amgplt0173.playout.now3.amagi.tv/playlist/amg00862-amg00862c9-amgplt0173/playlist.m3u8
 #EXTINF:-1 tvg-name="ETV Music" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/ETVMusic12.png" group-title="Music",ETV Music
 https://cc-szivnms4rlah6.akamaized.net/WWBI/Amagi/ETV_Music_IN/playlist.m3u8
-#EXTINF:-1 tvg-name="Wah Punjabi (576p)" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/tv/480/270/languages/Wah-Punjabi_TV.jpg" group-title="Music",Wah Punjabi (576p)
-http://51.75.127.199:3141/wahpunjabi/index.m3u8
-#EXTINF:-1 tvg-name="Zee Dil Se (1080p)" tvg-logo="https://i.imgur.com/zYbltEk.png" group-title="Music",Zee Dil Se (1080p)
-https://amg00862-amg00862c6-amgplt0173.playout.now3.amagi.tv/playlist/amg00862-amg00862c6-amgplt0173/playlist.m3u8
+#EXTINF:-1 tvg-name="CBS News Colorado" group-title="News",CBS News Colorado
+https://amd-mediator-eolq3tk4la-uk.a.run.app/cbs/map.m3u8?am.originUrl=https%3A%2F%2Fdai.google.com%2Flinear%2Fhls%2Fevent%2FE9CkyheTSKeGiOiICU_JBQ%2Fmaster.m3u8&imafw_csid=desktop_web&imafw__fw_did=&imafw__fw_is_lat=&imafw__fw_vcid2=&imafw__fw_app_bundle=&imafw__fw_us_privacy=1YNY&height=1080&ip_addr=185.217.168.164&page_url=https%25253A%25252F%25252Flocalnow.com%25252Fchannels%25252Fcbs-news-chicago-hyperlocal&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F122.0.0.0%20Safari%2F537.36&width=1920&app_version=0.0.0
+#EXTINF:-1 tvg-name="KOAA News 5 Colorado" group-title="News",KOAA News 5 Colorado
+https://s3host3.localnow.api.cms.amdvids.com/v1/master/c189661feba961c19bc5fb60b57879ee9b84548a/config4/playlist.m3u8?ads.cdnhost=s3host3.localnow.api.cms.amdvids.com&ads.playbackid=A3737EDE-EA54-440D-99A6-DFFCF39C6FE6&ads.n1=rule_id&ads.v1=E7BB7BA1-D932-4E65-BD9F-93731E6E87C5-1744054592&ads.n3=qp_content_id&ads.v3=A3737EDE-EA54-440D-99A6-DFFCF39C6FE6&ads.n4=content_name&ads.v4=EPG%20%7C%20KOAA%20Pueblo%2FColorado%20Springs%2C%20CO&ads.n21=ua&ads.v21=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F122.0.0.0%20Safari%2F537.36&ads.n22=url&ads.v22=https%25253A%25252F%25252Flocalnow.com%25252Fchannels%25252Fcbs-news-chicago-hyperlocal&ads.n23=channel_genre&ads.v23=News&ads.n24=w&ads.v24=1920&ads.n25=app_name&ads.v25=&ads.n26=cust_devicename&ads.v26=desktop_web&ads.n27=content_provider&ads.v27=koaa&ads.n28=did&ads.v28=&ads.n29=device_make&ads.v29=&ads.n30=content_custom_2_param&ads.v30=AMDB012738&ads.n31=content_producer_name&ads.v31=Scripps%20Media%20INC&ads.n32=channel_ext_id&ads.v32=626c292fdd02e34a6c3f4023&ads.n33=channel_brand_id&ads.v33=AMDB012738&ads.n34=h&ads.v34=1080&ads.n35=app_store_url&ads.v35=&ads.n36=channel_rating&ads.v36=TV-PG&ads.n37=channel_company_id&ads.v37=AMDP500135&ads.n38=app_bundle&ads.v38=&ads.n39=device_model&ads.v39=&ads.n40=content_livestream&ads.v40=1&ads.n41=gpp_sid&ads.v41=&ads.n42=content_custom_3_param&ads.v42=channel&ads.n43=channel_title&ads.v43=EPG%20%20KOAA%20Pueblo%2FColorado%20Springs%2C%20CO&ads.n44=channel_name&ads.v44=EPG%20%20KOAA%20Pueblo%2FColorado%20Springs%2C%20CO&ads.n45=gpp&ads.v45=&ads.n46=us_privacy&ads.v46=1YNY&ads.n47=ifa_type&ads.v47=&ads.n48=channel_id&ads.v48=A3737EDE-EA54-440D-99A6-DFFCF39C6FE6&ads.n49=content_custom_1_param&ads.v49=A3737EDE-EA54-440D-99A6-DFFCF39C6FE6&ads.n50=ip&ads.v50=185.217.168.164&ads.n51=channel_language&ads.v51=en&ads.n52=app_version&ads.v52=0.0.0&ads.n53=pos&ads.v53=midroll&ads.n54=dnt&ads.v54=&ads.n55=device_type&ads.v55=&ads.n56=network_name&ads.v56=koaa&ads.n57=content_type&ads.v57=channel&ads.n58=channel_corp&ads.v58=Scripps%20Media%20INC
+#EXTINF:-1 tvg-name="10 tv" tvg-logo="https://dtil.tmsimg.com/assets/s142495_ld_h15_aa.png?lock=720x540" group-title="News",10 tv
+https://cmp-abcnews.media.dssott.com/opp/cmaf/abcnews/2026/10/261006_abcnl_headlines_,500,800,1200,1800,2500,3200,4500,.mp4.csmil/playlist.m3u8
+#EXTINF:-1 tvg-name="KRDO ABC 13 News Colorado Springs CO" group-title="News",KRDO ABC 13 News Colorado Springs CO
+https://s9host2.localnow.api.cms.amdvids.com/v1/master/c189661feba961c19bc5fb60b57879ee9b84548a/config11/m2/localnow/a5e2bd24aaa1e1d1ab93d017bc3fde2a7ee1203041e523ac605c2cb5ae02cdcdaa551f05de38/master.m3u8?ads.cdnhost=s9host2.localnow.api.cms.amdvids.com&ads.playbackid=BDAF0B8B-8BD0-47C4-8A59-C944C2E32DE9&ads.n1=rule_id&ads.v1=E7BB7BA1-D932-4E65-BD9F-93731E6E87C5-1744054592&ads.n3=qp_content_id&ads.v3=BDAF0B8B-8BD0-47C4-8A59-C944C2E32DE9&ads.n4=content_name&ads.v4=KRDO-TV%20Colorado%20Springs%20CO&ads.n21=gpp_sid&ads.v21=&ads.n22=pos&ads.v22=midroll&ads.n23=ua&ads.v23=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F122.0.0.0%20Safari%2F537.36&ads.n24=channel_id&ads.v24=BDAF0B8B-8BD0-47C4-8A59-C944C2E32DE9&ads.n25=channel_genre&ads.v25=News&ads.n26=us_privacy&ads.v26=1YNY&ads.n27=gpp&ads.v27=&ads.n28=app_store_url&ads.v28=&ads.n29=content_custom_3_param&ads.v29=channel&ads.n30=network_name&ads.v30=krdotv&ads.n31=ifa_type&ads.v31=&ads.n32=url&ads.v32=https%25253A%25252F%25252Flocalnow.com%25252Fchannels%25252Fcbs-news-chicago-hyperlocal&ads.n33=device_make&ads.v33=&ads.n34=content_producer_name&ads.v34=News%20Press%20and%20Gazette%20Company&ads.n35=w&ads.v35=1920&ads.n36=content_custom_1_param&ads.v36=BDAF0B8B-8BD0-47C4-8A59-C944C2E32DE9&ads.n37=app_name&ads.v37=&ads.n38=channel_corp&ads.v38=News%20Press%20and%20Gazette%20Company&ads.n39=content_livestream&ads.v39=1&ads.n40=channel_company_id&ads.v40=AMDP500545&ads.n41=content_provider&ads.v41=krdotv&ads.n42=device_type&ads.v42=&ads.n43=channel_ext_id&ads.v43=&ads.n44=content_custom_2_param&ads.v44=AMDB013505&ads.n45=app_version&ads.v45=0.0.0&ads.n46=h&ads.v46=1080&ads.n47=channel_language&ads.v47=en&ads.n48=device_model&ads.v48=&ads.n49=channel_title&ads.v49=KRDO-TV%20Colorado%20Springs%20CO&ads.n50=content_type&ads.v50=channel&ads.n51=app_bundle&ads.v51=&ads.n52=cust_devicename&ads.v52=desktop_web&ads.n53=did&ads.v53=&ads.n54=channel_name&ads.v54=KRDO-TV%20Colorado%20Springs%20CO&ads.n55=channel_brand_id&ads.v55=AMDB013505&ads.n56=ip&ads.v56=185.217.168.164&ads.n57=dnt&ads.v57=&ads.n58=channel_rating&ads.v58=TV-14
+#EXTINF:-1 tvg-name="TV9 Bangla (IN)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/TV9-Bangla1.png" group-title="News",TV9 Bangla (IN)
+https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01106-associatedbroad-tv9bangla-lgin/playlist.m3u8
+#EXTINF:-1 tvg-name="TV9 Bharatvarsh (IN)" tvg-logo="https://dtil.tmsimg.com/assets/s144027_ld_h15_aa.png?lock=720x540" group-title="News",TV9 Bharatvarsh (IN)
+https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01106-associatedbroad-tv9bharatvarsh-lgin/playlist.m3u8
+#EXTINF:-1 tvg-name="TV9 Kannada (IN)" tvg-logo="https://dtil.tmsimg.com/assets/s144029_ld_h15_aa.png?lock=720x540" group-title="News",TV9 Kannada (IN)
+https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01106-associatedbroad-tv9kannada-lgin/playlist.m3u8
+#EXTINF:-1 tvg-name="TV9 Telugu (IN)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/TV9%20Telugu1.png" group-title="News",TV9 Telugu (IN)
+https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01106-associatedbroad-tv9telugu-lgin/playlist.m3u8
 #EXTINF:-1 tvg-name="V6 News" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/V6%20News.png" group-title="News",V6 News
 https://yuppmedtaorire.akamaized.net/v1/master/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/v6news_nim_https/140622/v6news/playlist.m3u8
+#EXTINF:-1 tvg-name="i news" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e6/Janasri_News_Channel_Logo.jpg" group-title="News",i news
+https://hlsvod.dw.com/i/vps/webvideos/ENG/2026/NEWS/NEWSENG260929_NEWSENG260929_Moment_Merz_Schu_01ICV_,AVC_270x480,AVC_360x640,AVC_540x960,AVC_720x1280,AVC_1080x1920,.mp4.csmil/master.m3u8
+#EXTINF:-1 tvg-name="NDTV 24x7 (IN)" tvg-logo="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Ndtv-logo-new.svg/1280px-Ndtv-logo-new.svg.png" group-title="News",NDTV 24x7 (IN)
+https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01605-ndtvconvergence-ndtv24x7-lgin/playlist.m3u8
+#EXTINF:-1 tvg-name="NDTV India (IN)" tvg-logo="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Ndtv-logo-new.svg/1280px-Ndtv-logo-new.svg.png" group-title="News",NDTV India (IN)
+https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01605-ndtvconvergence-ndtvindia-lgin/playlist.m3u8
+#EXTINF:-1 tvg-name="TV9 Marathi (IN)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/TV9%20Marathi1.png" group-title="News",TV9 Marathi (IN)
+https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01106-associatedbroad-tv9marathi-lgin/playlist.m3u8
+#EXTINF:-1 tvg-name="India TV (IN)" tvg-logo="https://dtil.tmsimg.com/assets/s143199_ld_h15_aa.png?lock=720x540" group-title="News",India TV (IN)
+https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01550-indiatv-indiatvlive-lg-lgin/playlist.m3u8
 #EXTINF:-1 tvg-name="TV5 News KB" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/TV5%20News.png" group-title="News",TV5 News KB
 https://yuppmedtaorire.akamaized.net/v1/master/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/tv5_nim_https/110322/tv5/playlist.m3u8
-#EXTINF:-1 tvg-name="i news" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e6/Janasri_News_Channel_Logo.jpg" group-title="News",i news
-https://prodamdnewsencoding.akamaized.net/NBC_News_Digital/wnn_botched_execution_fallout_261004/1/abs/index.m3u8
 #EXTINF:-1 tvg-name="TV5 News" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/TV5%20News.png" group-title="News",TV5 News
 https://mumbai-edge.smartplaytv.in/TV5Telugu/index.m3u8
-#EXTINF:-1 tvg-name="10 tv" tvg-logo="https://dtil.tmsimg.com/assets/s142495_ld_h15_aa.png?lock=720x540" group-title="News",10 tv
-https://d2a4o9jbsl6pnp.cloudfront.net/2026/10/05/54ec3e37-45e8-4964-81e6-514a67610310/2_1791216567366/54ec3e37-45e8-4964-81e6-514a67610310_6ac3cae25175a1235b19cc43.m3u8
-#EXTINF:-1 tvg-name="Sach Bedhadak (576p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Sach-Bedhadak_Transparent.png" group-title="News",Sach Bedhadak (576p)
-https://sbnews.nexcdn.online/sbnews/live/index.m3u8
-#EXTINF:-1 tvg-name="360 (720p) [Not 24/7]" group-title="News",360 (720p) [Not 24/7]
-https://turkmedya-live.ercdn.net/tv360/tv360.m3u8
 #EXTINF:-1 tvg-name="T News" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/T%20News.png" group-title="News",T News
 https://cdn.pishow.tv/ott/live/385/master.m3u8
-#EXTINF:-1 tvg-name="NDTV LANKA (1080p)" group-title="News",NDTV LANKA (1080p)
-https://g4wlkqqwl23a-hls-live.5centscdn.com/NDTVLANKA/1ff5fa54d14c3ff6c6bd3918bbb7db5d.sdp/playlist.m3u8
-#EXTINF:-1 tvg-name="webobjects" group-title="Other",webobjects
-https://play-edge-anon.itunes.apple.com/WebObjects/MZPlayLocal.woa/hls/anonymous/subscription/playlist.m3u8?cc=US&svcId=tvs.vds.241305&a=6807461184&isExternal=true&brandId=tvs.sbd.4000&id=1483221511&l=en-US&aec=HD
-#EXTINF:-1 tvg-name="anonymous" group-title="Other",anonymous
-https://linear-anon.tv.apple.com/v1/hls/anonymous/playlist.m3u8?serviceId=tvs.vds.241505&l=en-US&referenceId=umc.cmr.f1svod.ex.7ekszhqmn2f3f77981vhytfni
+#EXTINF:-1 tvg-name="Baby Shark TV (CA)" group-title="Other",Baby Shark TV (CA)
+https://newidco-babysharktv-1-ca.lg.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="LocalNow - Colorado Springs" group-title="Other",LocalNow - Colorado Springs
+https://amg01583-localnow-amg01583c81-lg-us-1484.playouts.now.amagi.tv/playlist/amg01583-localnowfast-localnowcoloradosprings-lgus/playlist.m3u8
 #EXTINF:-1 tvg-name="ETV (Guadeloupe) (1080p)" group-title="Other",ETV (Guadeloupe) (1080p)
 https://edge12.vedge.infomaniak.com/livecast/ik:etvgp/manifest.m3u8
 #EXTINF:-1 tvg-name="10 HD" group-title="Other",10 HD
 https://i.mjh.nz/.r/10-nsw.m3u8
-#EXTINF:-1 tvg-name="Love The Planet DE (1080p) [Geo-blocked]" group-title="Other",Love The Planet DE (1080p) [Geo-blocked]
-https://amg01821-amg01821c12-rlaxx-gb-10461.playouts.now.amagi.tv/playlist.m3u8
-#EXTINF:-1 tvg-name="Love The Planet ES (1080p) [Geo-blocked]" group-title="Other",Love The Planet ES (1080p) [Geo-blocked]
-https://amg01821-lovetv-amg01821c9-rlaxx-gb-10458.playouts.now.amagi.tv/playlist.m3u8
-#EXTINF:-1 tvg-name="Love The Planet IT (1080p) [Geo-blocked]" group-title="Other",Love The Planet IT (1080p) [Geo-blocked]
-https://amg01821-amg01821c11-rlaxx-gb-10459.playouts.now.amagi.tv/playlist.m3u8
-#EXTINF:-1 tvg-name="S4C (1080p) [Geo-blocked]" group-title="Other",S4C (1080p) [Geo-blocked]
-https://v2.uk.live.s4c-cdn.co.uk/out/v1/S4C/UK_TX/uk_live/uk-tx-dvb.mpd
-#EXTINF:-1 tvg-name="TVA (Canada) CFTM-DT [Geo-blocked]" group-title="Other",TVA (Canada) CFTM-DT [Geo-blocked]
-https://tvalive-dai01.akamaized.net/Content/HLS/Live/channel(575b93c5-be31-ee34-6285-14620fd14048)/index.m3u8
-#EXTINF:-1 tvg-name="SVBC Sri Venkateswara Bhakti Channel" tvg-logo="https://dtil.tmsimg.com/assets/s143889_ld_h9_ab.png?lock=720x540" group-title="Religious",SVBC Sri Venkateswara Bhakti Channel
-https://player.mslivestream.net/telugu/5d076e5c3d34cb8bb08e54a4bb7e223e.sdp/playlist.m3u8
+#EXTINF:-1 tvg-name="black" group-title="Other",black
+https://hesads.akamaized.net/ns/1732626603190/black_screen_15_sec_test_r3_v2/master.mpd
+#EXTINF:-1 tvg-name="All India Radio - AIR Markapur" group-title="Other",All India Radio - AIR Markapur
+http://air.pc.cdn.bitgravity.com/air/live/pbaudio039/playlist.m3u8
+#EXTINF:-1 tvg-name="Bark TV" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/nimbarktv.png" group-title="Religious",Bark TV
+https://s2host2.localnow.api.cms.amdvids.com/v1/master/c189661feba961c19bc5fb60b57879ee9b84548a/config2/bbb/barkt/barkt.m3u8?ads.cdnhost=s2host2.localnow.api.cms.amdvids.com&ads.playbackid=2F313B57-C7AE-4230-8EF0-CA6078850402&ads.n1=rule_id&ads.v1=E7BB7BA1-D932-4E65-BD9F-93731E6E87C5-1744054592&ads.n3=qp_content_id&ads.v3=2F313B57-C7AE-4230-8EF0-CA6078850402&ads.n4=content_name&ads.v4=Bark%20TV&ads.n21=app_version&ads.v21=0.0.0&ads.n22=us_privacy&ads.v22=1YNY&ads.n23=channel_corp&ads.v23=Triple-B%20Media%20LLC&ads.n24=did&ads.v24=&ads.n25=content_custom_2_param&ads.v25=AMDB012152&ads.n26=content_producer_name&ads.v26=Triple-B%20Media%20LLC&ads.n27=channel_id&ads.v27=2F313B57-C7AE-4230-8EF0-CA6078850402&ads.n28=content_custom_3_param&ads.v28=channel&ads.n29=channel_title&ads.v29=Bark%20TV&ads.n30=content_provider&ads.v30=fido-tv&ads.n31=url&ads.v31=https%25253A%25252F%25252Flocalnow.com%25252Fchannels%25252Fcbs-news-chicago-hyperlocal&ads.n32=device_model&ads.v32=&ads.n33=channel_brand_id&ads.v33=AMDB012152&ads.n34=app_name&ads.v34=&ads.n35=channel_rating&ads.v35=TV-PG&ads.n36=pos&ads.v36=midroll&ads.n37=content_type&ads.v37=channel&ads.n38=dnt&ads.v38=&ads.n39=channel_ext_id&ads.v39=60d203fd9004e453316e7b92&ads.n40=app_store_url&ads.v40=&ads.n41=app_bundle&ads.v41=&ads.n42=ifa_type&ads.v42=&ads.n43=channel_genre&ads.v43=Nature&ads.n44=gpp&ads.v44=&ads.n45=h&ads.v45=1080&ads.n46=ip&ads.v46=185.217.168.164&ads.n47=device_type&ads.v47=&ads.n48=ua&ads.v48=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F122.0.0.0%20Safari%2F537.36&ads.n49=device_make&ads.v49=&ads.n50=channel_name&ads.v50=Bark%20TV&ads.n51=gpp_sid&ads.v51=&ads.n52=content_livestream&ads.v52=1&ads.n53=cust_devicename&ads.v53=desktop_web&ads.n54=channel_language&ads.v54=en&ads.n55=w&ads.v55=1920&ads.n56=channel_company_id&ads.v56=AMDP500174&ads.n57=content_custom_1_param&ads.v57=2F313B57-C7AE-4230-8EF0-CA6078850402&ads.n58=network_name&ads.v58=fido-tv
 #EXTINF:-1 tvg-name="Bhakthi TV" tvg-logo="https://upload.wikimedia.org/wikipedia/en/6/61/Bhakthi_TV_logo.jpg" group-title="Religious",Bhakthi TV
 https://mumbai-edge.smartplaytv.in/BhakthiTv/index.m3u8
 #EXTINF:-1 tvg-name="Hindu Dharmam" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Hindu%20Dharmam.png" group-title="Religious",Hindu Dharmam
-http://51.75.127.199:3141/hindudharmam/index.m3u8
+https://mumt01.tangotv.in/O5aw8Zn3HINDUDHARMAM/index.m3u8

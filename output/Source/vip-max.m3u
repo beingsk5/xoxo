@@ -1,14 +1,10 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
 #EXTINF:-1 tvg-name="EX-YU: Star  Plus" group-title="Entertainment",EX-YU: Star  Plus
 http://vip-max.com:5555/user/pass/62152
-#EXTINF:-1 tvg-name="ME: SONY SAB HD" tvg-logo="https://dtil.tmsimg.com/assets/s159099_ld_h15_ab.png?lock=720x540" group-title="Entertainment",ME: SONY SAB HD
-http://vip-max.com:5555/user/pass/71472
 #EXTINF:-1 tvg-name="OSN PEHLA: Colors" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/Colors_Transparent_16069908-8494-4eb4-bd40-5afca3969088.png" group-title="Entertainment",OSN PEHLA: Colors
 http://vip-max.com:5555/user/pass/10261
 #EXTINF:-1 tvg-name="OSN PEHLA: Star Vijay" tvg-logo="https://vignette.wikia.nocookie.net/logopedia/images/2/23/Vijay_tv.png/revision/latest?cb=20170719104859" group-title="Entertainment",OSN PEHLA: Star Vijay
 http://vip-max.com:5555/user/pass/11707
-#EXTINF:-1 tvg-name="OSN PEHLA: Zee TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Zee_TV_Logo_2025.svg/960px-Zee_TV_Logo_2025.svg.png" group-title="Entertainment",OSN PEHLA: Zee TV
-http://vip-max.com:5555/user/pass/11703
 #EXTINF:-1 tvg-name="RUS: ZEE TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Zee_TV_Logo_2025.svg/960px-Zee_TV_Logo_2025.svg.png" group-title="Entertainment",RUS: ZEE TV
 http://vip-max.com:5555/user/pass/115991
 #EXTINF:-1 tvg-name="TR: SONY TV" group-title="Entertainment",TR: SONY TV
@@ -19,17 +15,13 @@ http://vip-max.com:5555/user/pass/30881
 http://vip-max.com:5555/user/pass/103111
 #EXTINF:-1 tvg-name="US: Folk TV" group-title="Entertainment",US: Folk TV
 http://vip-max.com:5555/user/pass/117460
-#EXTINF:-1 tvg-name="beIN STAR MOVIES HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/STAR_Movies_logo.svg/960px-STAR_Movies_logo.svg.png" group-title="Movies",beIN STAR MOVIES HD
-http://vip-max.com:5555/user/pass/37218
 #EXTINF:-1 tvg-name="OSN PEHLA: Zee Cinema" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022HVX3.png?lock=720x540" group-title="Movies",OSN PEHLA: Zee Cinema
 http://vip-max.com:5555/user/pass/11701
-#EXTINF:-1 tvg-name="OSN Star Movies HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/STAR_Movies_logo.svg/960px-STAR_Movies_logo.svg.png" group-title="Movies",OSN Star Movies HD
-http://vip-max.com:5555/user/pass/94656
 #EXTINF:-1 tvg-name="UK: SONY MAX 2 (Indian)" tvg-logo="https://dtil.tmsimg.com/assets/s157590_ld_h15_aa.png?lock=720x540" group-title="Movies",UK: SONY MAX 2 (Indian)
 http://vip-max.com:5555/user/pass/103109
 #EXTINF:-1 tvg-name="UK| KTV (india)" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG002Z1SEP.png?lock=720x540" group-title="Movies",UK| KTV (india)
 http://vip-max.com:5555/user/pass/103086
-#EXTINF:-1 tvg-name="DSTV: NDTV247" group-title="News",DSTV: NDTV247
+#EXTINF:-1 tvg-name="DSTV: NDTV247" tvg-logo="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Ndtv-logo-new.svg/1280px-Ndtv-logo-new.svg.png" group-title="News",DSTV: NDTV247
 http://vip-max.com:5555/user/pass/113267
 #EXTINF:-1 tvg-name="OSN PEHLA: ABP News" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/ABP_News_logo.svg/500px-ABP_News_logo.svg.png" group-title="News",OSN PEHLA: ABP News
 http://vip-max.com:5555/user/pass/11699
@@ -39,7 +31,7 @@ http://vip-max.com:5555/user/pass/103110
 http://vip-max.com:5555/user/pass/82051
 #EXTINF:-1 tvg-name="UK| AAJ TAK" tvg-logo="https://i.imgur.com/gS9Qkfy.png" group-title="News",UK| AAJ TAK
 http://vip-max.com:5555/user/pass/82016
-#EXTINF:-1 tvg-name="UK| NDTV 24x7" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/NDTV24x7_Transparent_9b042a6f-d40f-465a-998f-627ee6841919.png" group-title="News",UK| NDTV 24x7
+#EXTINF:-1 tvg-name="UK| NDTV 24x7" tvg-logo="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Ndtv-logo-new.svg/1280px-Ndtv-logo-new.svg.png" group-title="News",UK| NDTV 24x7
 http://vip-max.com:5555/user/pass/81701
 #EXTINF:-1 tvg-name="5 HD" tvg-logo="" group-title="TURK TV",TR: TV8,5 HD" group-title="Other",5 HD" tvg-logo="" group-title="TURK TV",TR: TV8,5 HD
 http://vip-max.com:5555/user/pass/2472
@@ -87,8 +79,6 @@ http://vip-max.com:5555/user/pass/62263
 http://vip-max.com:5555/user/pass/38287
 #EXTINF:-1 tvg-name="HR: Klasik TV" group-title="Other",HR: Klasik TV
 http://vip-max.com:5555/user/pass/149203
-#EXTINF:-1 tvg-name="ME: SONY SET MAX HD" group-title="Other",ME: SONY SET MAX HD
-http://vip-max.com:5555/user/pass/71473
 #EXTINF:-1 tvg-name="NL: Duck TV" group-title="Other",NL: Duck TV
 http://vip-max.com:5555/user/pass/25106
 #EXTINF:-1 tvg-name="NL: Omroep Zeeland HD" group-title="Other",NL: Omroep Zeeland HD
@@ -121,8 +111,6 @@ http://vip-max.com:5555/user/pass/33755
 http://vip-max.com:5555/user/pass/81595
 #EXTINF:-1 tvg-name="UK| ISLAM CH URDU" group-title="Other",UK| ISLAM CH URDU
 http://vip-max.com:5555/user/pass/81599
-#EXTINF:-1 tvg-name="VIP: MBC BOLLYWOOD HD" group-title="Other",VIP: MBC BOLLYWOOD HD
-http://vip-max.com:5555/user/pass/26936
 #EXTINF:-1 tvg-name="UK: SONY TEN 1 HD" group-title="Sports",UK: SONY TEN 1 HD
 http://vip-max.com:5555/user/pass/82042
 #EXTINF:-1 tvg-name="UK: SONY TEN 2 HD" group-title="Sports",UK: SONY TEN 2 HD

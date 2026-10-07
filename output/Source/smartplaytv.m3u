@@ -1,5 +1,19 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
+#EXTINF:-1 tvg-name="Jaya Plus (576p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Jaya%20Plus.png" group-title="Culture",Jaya Plus (576p)
+https://mumbai-edge.smartplaytv.in/JayaPLus/index.m3u8
+#EXTINF:-1 tvg-name="Captain (576p)" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0029CNNM.png?lock=720x540" group-title="Entertainment",Captain (576p)
+https://mumbai-edge.smartplaytv.in/captain/index.m3u8
+#EXTINF:-1 tvg-name="DD Urdu (576p)" tvg-logo="https://dtil.tmsimg.com/assets/s142808_ld_h9_aa.png?lock=720x540" group-title="General",DD Urdu (576p)
+https://mumbai-edge.smartplaytv.in/DDUrdu/index.m3u8
+#EXTINF:-1 tvg-name="Zee Cinemalu HD (720p)" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022HVX3.png?lock=720x540" group-title="Movies",Zee Cinemalu HD (720p)
+https://mumbai-edge.smartplaytv.in/ZeeCinemaluHD/index.m3u8
 #EXTINF:-1 tvg-name="CVR News (576p)" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_CVR_NEWS/images/LOGO_HD/LOGO_HD_image.png" group-title="News",CVR News (576p)
 https://mumbai-edge.smartplaytv.in/CVRNews/index.m3u8
+#EXTINF:-1 tvg-name="News18 Odia (1080p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/News18%20Odia.png" group-title="News",News18 Odia (1080p)
+https://mumbai-edge.smartplaytv.in/news18odiya/index.m3u8
+#EXTINF:-1 tvg-name="TV5 Kannada (576p)" tvg-logo="https://dtil.tmsimg.com/assets/s144024_ld_h15_aa.png?lock=720x540" group-title="News",TV5 Kannada (576p)
+https://mumbai-edge.smartplaytv.in/tv5kannada/index.m3u8
+#EXTINF:-1 tvg-name="Angel TV (720p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Angel-TV-hd-transparent.png" group-title="Religious",Angel TV (720p)
+https://mumbai-edge.smartplaytv.in/AngelTV/index.m3u8
 #EXTINF:-1 tvg-name="Hosanna TV Hindi (720p)" tvg-logo="https://i.imgur.com/VYorU1L.png" group-title="Religious",Hosanna TV Hindi (720p)
 https://mumbai-edge.smartplaytv.in/HosannaTV/index.m3u8
