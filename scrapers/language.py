@@ -173,6 +173,7 @@ class LanguageScraper:
         self._hard_deadline = 0.0   # absolute epoch time when validation must stop
         self._crawl_deadline = 0.0  # absolute epoch time when official-site crawl must stop
         self._start_t = 0.0
+        self._incomplete = False    # a phase stopped early on its time budget
         self._names = NameIndex()          # O(1) channel-name matching
         self._allowed_names: Set[str] = set()  # kept for len() logging
         self._ott_seeds: List[str] = []    # MIB OTT platform names (search seeds)
@@ -336,14 +337,25 @@ class LanguageScraper:
         result.urls_valid = len(result.channels)
         self._checkpoint(result)
         self._export_state()
-        if resume.pending_urls:
+        # A run is incomplete when any phase stopped on its budget, any
+        # query of this batch never went out, or URLs still await probing.
+        # Incomplete + published = exit 3, so CI resumes instead of giving up.
+        searched_now = set(resume.searched_queries)
+        left_queries = [q for q in pending_queries if q not in searched_now]
+        result.incomplete = bool(
+            self._incomplete or left_queries or resume.pending_urls
+        )
+        if resume.pending_urls or left_queries:
             self._save_resume(resume)
             log.info(
-                f"[{self.language}] incomplete: {len(resume.pending_urls)} URLs "
-                f"left for retry (resume kept)"
+                f"[{self.language}] incomplete: {len(left_queries)} queries, "
+                f"{len(resume.pending_urls)} URLs left for retry (resume kept)"
             )
         else:
             self._clear_resume()
+        if result.incomplete:
+            log.info(f"[{self.language}] INCOMPLETE: pending work remains — "
+                     f"the next attempt resumes this run")
         log.info(f"[{self.language}] DONE: {len(result.channels)} channels found")
         log.info(f"[{self.language}] {result.urls_found} URLs found, "
                  f"{result.urls_valid} valid")
@@ -542,6 +554,7 @@ class LanguageScraper:
         )
         result.urls_found = len(pending_urls.as_set())
         if remaining:
+            self._incomplete = True
             log.info(f"[{self.language}] time budget reached: {remaining}/{total} "
                      f"queries deferred to retry")
         log.info(f"[{self.language}] {result.urls_found} unique URLs to validate")
@@ -644,6 +657,7 @@ class LanguageScraper:
         self._save_resume(resume)
         result.urls_valid = len(result.channels)
         if remaining_pending:
+            self._incomplete = True
             log.info(f"[{self.language}] validation cut short: "
                      f"{len(remaining_pending)} URLs remain for retry")
         if harvested:
@@ -1153,6 +1167,16 @@ class LanguageScraper:
             errors=list(meta.get("errors", []) or []),
         )
         if stored:
+            # Cross-run persistence keeps earlier finds alive; drop the ones
+            # a later verdict has since proven dead so the ratchet never
+            # republishes a broken URL from a previous run.
+            live = [c for c in stored if not store.known_dead(c.url)]
+            if len(live) != len(stored):
+                log.info(f"[{self.language}] dropped "
+                         f"{len(stored) - len(live)} stored channels with "
+                         f"dead verdicts")
+                stored = live
+        if stored:
             log.info(f"[{self.language}] resuming with {len(stored)} "
                      f"channels already found")
             result.channels = stored
@@ -1312,6 +1336,8 @@ class LanguageScraper:
             crawled=crawled,
         )
         self._save_resume(resume)
+        if site_idx < len(to_crawl):
+            self._incomplete = True
         log.info(f"[{self.language}] site crawl: {len(crawled)} sites, "
                  f"{len(pending.as_set())} total URLs")
 
@@ -1327,6 +1353,11 @@ class LanguageScraper:
                                                (deep pages of the official site)
           alt:     "alt_name" m3u8 / "alt_name" iptv
           prime:   "name" network
+          deep:    "name" filetype:m3u / playlist / github (+ alt filetype)
+                                                (recall tier, sent last —
+                                                reached only after the
+                                                precision tiers, i.e. in
+                                                later resumed attempts)
           ott:     MIB OTT platform names, language-tagged (global, sent last)
 
         Channel-fair scheduling: the per-channel lists are interleaved
@@ -1334,7 +1365,9 @@ class LanguageScraper:
         time-budget cut always leaves every channel with an equal share of
         its priority queries — no channel starves with zero searches while
         others get theirs. Uncapped here: the search phase stops by time
-        budget; this schedule decides how far it gets.
+        budget; this schedule decides how far it gets. Because resume keeps
+        the searched set across attempts and runs, exhausted rounds roll the
+        schedule forward into the deep tier instead of re-searching.
         """
         seen = set()
 
@@ -1372,6 +1405,17 @@ class LanguageScraper:
             network = (ch.get("network") or "").strip()
             if network and network.lower() not in name.lower():
                 add(f'"{name}" {network}', mine)
+            # Deep deficit tier: recall queries parked after every precision
+            # tier, so fair rounds only reach them in later attempts/runs —
+            # the ratchet that keeps a resumed run chasing still-missing
+            # targets once the precision queries are exhausted.
+            add(f'"{name}" filetype:m3u', mine)
+            add(f'"{name}" playlist', mine)
+            add(f'"{name}" github', mine)
+            for alt_name in ch.get("alt_names", [])[:1]:
+                an = alt_name.strip()
+                if an and an.lower() != name.lower():
+                    add(f'"{an}" filetype:m3u', mine)
             by_ch.append(mine)
 
         random.shuffle(by_ch)  # no list-order bias between rounds
@@ -1399,16 +1443,20 @@ def probe_source(url: str) -> str:
 
 
 def exit_code(result: ScrapeResult) -> int:
-    """Non-zero when the run cannot be trusted: errors or zero channels.
+    """0 = complete and trusted; 1 = unusable; 3 = incomplete (resume me).
 
-    CI treats exit 0 as success, so a missing channel list, a wiped database
-    or an all-dead search must fail the job (and trigger its retry) instead
-    of publishing an empty playlist silently.
+    CI treats exit 0 as done, exit 1 as a failed attempt (retry it) and
+    exit 3 as "budget hit with work pending": the channels found are real
+    and already published, so the workflow resumes the run on the next
+    attempt. Errors or zero channels must fail (exit 1) instead of
+    publishing an empty playlist silently.
     """
     if result.errors:
         return 1
     if not result.channels:
         return 1
+    if result.incomplete:
+        return 3
     return 0
 
 
@@ -1448,14 +1496,16 @@ def main():
     print(f"\n[{args.language}] {len(result.channels)} channels, "
           f"{result.urls_valid} valid URLs")
     code = exit_code(result)
-    if code:
+    if code == 1:
         print(f"[{args.language}] FAILED: " + "; ".join(result.errors)
               if result.errors else
               f"[{args.language}] FAILED: no channels found")
-        sys.exit(code)
+        sys.exit(1)
 
-    # Success: publish this run's M3U files. A write failure must fail the
-    # job (and trigger the retry) instead of committing half an output set.
+    # Publish complete (0) and budget-capped (3) runs alike: the channels
+    # found are probed and real, and the ratchet must never lose ground
+    # between resumed attempts. A write failure must fail the job instead
+    # of committing half an output set.
     try:
         written = write_outputs(result.channels, args.language)
     except Exception as e:
@@ -1463,7 +1513,11 @@ def main():
         sys.exit(1)
     for path in written:
         print(f"[{args.language}] wrote {path}")
-    sys.exit(0)
+    if code == 3:
+        print(f"[{args.language}] INCOMPLETE: published "
+              f"{len(result.channels)} channels; pending work resumes on "
+              f"the next attempt")
+    sys.exit(code)
 
 
 if __name__ == "__main__":

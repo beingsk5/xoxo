@@ -4,6 +4,7 @@
 Usage:
     python scripts/coverage.py            # every stored language
     python scripts/coverage.py Hindi      # one language
+    python scripts/coverage.py All --json # one JSON line for the CI retry loop
 
 Compares the channels stored by the scraper against channel_lists/<lang>,
 so "41 channels" becomes "41 of 545 targets (7.5%)" and the missing names
@@ -93,10 +94,15 @@ def main() -> int:
         default=float(os.environ.get("COVERAGE_MIN", "50")),
         help="warn (never fail) below this Covered%% (env COVERAGE_MIN, 0=off)",
     )
+    ap.add_argument(
+        "--json", action="store_true",
+        help="single JSON line on stdout (for the workflow's retry loop); "
+             "table, warnings and step summary are skipped",
+    )
     args = ap.parse_args()
 
     logging.basicConfig(
-        level=logging.INFO,
+        level=logging.WARNING if args.json else logging.INFO,
         format="%(message)s",
         handlers=[logging.StreamHandler(sys.stdout)],
     )
@@ -104,40 +110,75 @@ def main() -> int:
     store = get_cache()
     by_lang = store.channels_by_lang()
     if not by_lang:
-        print(f"No channels in state store ({store.path})")
+        if args.json:
+            print(json.dumps({"error": "empty store", "found": 0, "missing": 0,
+                              "total": 0, "pct": 0.0, "languages": {},
+                              "low": [], "missing_names": []}))
+        else:
+            print(f"No channels in state store ({store.path})")
         return 1
 
     langs = [args.language] if args.language else sorted(by_lang)
     rc = 0
     warn_langs = []
     rows_md = []
-    print(f"{'Language':<14} {'Found':>7} {'Missing':>8} {'Covered':>9}")
-    print("-" * 40)
+    per_lang = {}
+    tot_found = tot_missing = tot_total = 0
+    missing_names: List[str] = []
+    if not args.json:
+        print(f"{'Language':<14} {'Found':>7} {'Missing':>8} {'Covered':>9}")
+        print("-" * 40)
     for lang in langs:
         rows = by_lang.get(lang, [])
         cov = coverage_for(lang, rows)
         if not cov:
-            print(f"{lang:<14} {len(rows):>7} {'n/a':>8} {'n/a':>9}")
-            rows_md.append(f"| {lang} | {len(rows)} | n/a | n/a |")
+            per_lang[lang] = {"n/a": True, "found": len(rows)}
+            if not args.json:
+                print(f"{lang:<14} {len(rows):>7} {'n/a':>8} {'n/a':>9}")
+                rows_md.append(f"| {lang} | {len(rows)} | n/a | n/a |")
             continue
-        print(f"{lang:<14} {cov['found']:>7} {cov['missing']:>8} "
-              f"{cov['pct']:>8.1f}%")
+        per_lang[lang] = {
+            "found": cov["found"], "missing": cov["missing"],
+            "total": cov["total"], "pct": cov["pct"],
+        }
+        tot_found += cov["found"]
+        tot_missing += cov["missing"]
+        tot_total += cov["total"]
+        missing_names.extend(cov["missing_names"])
+        if not args.json:
+            print(f"{lang:<14} {cov['found']:>7} {cov['missing']:>8} "
+                  f"{cov['pct']:>8.1f}%")
         flag = ""
         if cov["missing"] == cov["total"]:
-            print(f"    WARNING: zero targets matched for {lang}")
+            if not args.json:
+                print(f"    WARNING: zero targets matched for {lang}")
             warn_langs.append(lang)
             flag = " :warning:"
         elif args.min_coverage > 0 and cov["pct"] < args.min_coverage:
-            print(f"    WARNING: {lang} coverage {cov['pct']:.1f}% below "
-                  f"{args.min_coverage:.0f}% threshold")
+            if not args.json:
+                print(f"    WARNING: {lang} coverage {cov['pct']:.1f}% below "
+                      f"{args.min_coverage:.0f}% threshold")
             warn_langs.append(lang)
             flag = " :warning:"
-        rows_md.append(
-            f"| {lang} | {cov['found']} | {cov['missing']} | "
-            f"{cov['pct']:.1f}%{flag} |")
-        if cov["missing"] and cov["missing"] <= 15:
-            for name in cov["missing"]:
-                print(f"    missing: {name}")
+        if not args.json:
+            rows_md.append(
+                f"| {lang} | {cov['found']} | {cov['missing']} | "
+                f"{cov['pct']:.1f}%{flag} |")
+            if cov["missing"] and cov["missing"] <= 15:
+                for name in cov["missing"]:
+                    print(f"    missing: {name}")
+
+    if args.json:
+        print(json.dumps({
+            "found": tot_found,
+            "missing": tot_missing,
+            "total": tot_total,
+            "pct": round(100.0 * tot_found / tot_total, 1) if tot_total else 0.0,
+            "languages": per_lang,
+            "low": warn_langs,
+            "missing_names": missing_names[:100],
+        }))
+        return rc
 
     if warn_langs:
         print(f"WARNING: low coverage: {', '.join(warn_langs)} "

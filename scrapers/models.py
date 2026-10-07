@@ -52,6 +52,9 @@ class ScrapeResult:
     urls_found: int = 0
     urls_valid: int = 0
     errors: List[str] = field(default_factory=list)
+    # True when the run stopped on its time budget with queries/URLs still
+    # pending — CI exits 3 so the workflow resumes it instead of giving up.
+    incomplete: bool = False
 
 
 @dataclass

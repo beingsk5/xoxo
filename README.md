@@ -19,8 +19,10 @@ and packaged automatically on a schedule.
 - **Three output views** — one combined playlist (`all_indian_channels.m3u`),
   one per language, one per source
 - **Coverage report** — see at a glance how much of the reference channel list
-  was found and verified
-- **Resumable** — interrupt a run and the next one picks up where it left off
+  was found and verified, with missing channels listed by name
+- **Keeps going until covered** — runs that stop early resume where they left
+  off, attempt after attempt and run after run, until every channel of the list
+  is found or every lead is exhausted
 - **Unattended CI** — GitHub Actions scrapes on a schedule, reports coverage,
   uploads artifacts, and commits the results
 
@@ -67,7 +69,7 @@ Results land in `output/`:
 
 | Workflow | Purpose |
 |---|---|
-| `scrape_m3u.yml` | Scheduled scrape → coverage report → publish |
+| `scrape_m3u.yml` | Scheduled scrape → coverage-driven retries → report → publish |
 | `sync_data.yml` | Refreshes the reference channel database |
 | `sync_channel_lists.yml` | Refreshes the per-language channel lists |
 
