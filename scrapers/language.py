@@ -12,7 +12,7 @@ Pipeline (cheap/high-precision first, then breadth, then depth):
                   (GitHub/GitLab/Bitbucket/Codeberg, no token required)
   4. site crawl   official channel websites from the iptv-org database,
                   live-ish paths first, CRAWL_PAGES per site
-  5. web search   Bing / DuckDuckGo / Brave (parallel, per-engine breaker),
+  5. web search   Bing / DDGS metasearch (parallel, per-engine breaker),
                   including site: queries against the official domains
   6. validate     probe + SCORE every candidate (scrapers.probe), cache the
                   verdicts (scrapers.cache), mine pages that look like players
@@ -929,7 +929,12 @@ class LanguageScraper:
                      if str(x).strip()]
             lang = langs[0] if langs else \
                 str(ch.get("language_raw") or "").split(";")[0].strip()
-            if not lang:
+            low = lang.lower()
+            # Portal artifacts are not languages: the umbrella phrase and
+            # NA markers must fall through to the "Other" bucket instead of
+            # spawning junk Language/<slug>.m3u files.
+            if (not lang or "all indian scheduled" in low
+                    or low in {"na", "n/a", "-", "none", "other"}):
                 continue
             names = [ch.get("name", ""), ch.get("canonical_name", "")]
             names += list(ch.get("alt_names") or [])

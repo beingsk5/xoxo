@@ -56,7 +56,9 @@ Results land in `output/`:
 | `sync_channel_lists.yml` | Refreshes the per-language channel lists |
 
 Builds run on a schedule or on demand — for the full list, or for selected
-languages only. Everything is reproducible locally with the same commands the
+languages only. While coverage is below target, a finished build automatically
+queues the next one, so runs follow each other until the list is covered or no
+work remains. Everything is reproducible locally with the same commands the
 CI runs.
 
 ## Disclaimer

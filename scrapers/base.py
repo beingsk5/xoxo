@@ -225,7 +225,7 @@ def get_database():
 
 def __getattr__(name):
     if name in ("ENGINE_LIST", "search_with_tracking", "engine_stats_summary",
-                "search_bing", "search_ddg", "search_brave", "engine_list"):
+                "search_bing", "search_ddg", "engine_list"):
         from scrapers import search as _search
         return getattr(_search, name)
     raise AttributeError(f"module {__name__!r} has no attribute {name!r}")

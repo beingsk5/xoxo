@@ -10,7 +10,6 @@ import importlib
 _LAZY = {
     "search_bing": "scrapers.base",
     "search_ddg": "scrapers.base",
-    "search_brave": "scrapers.base",
     "safe_get": "scrapers.base",
     "LanguageScraper": "scrapers.language",
     "Channel": "scrapers.models",

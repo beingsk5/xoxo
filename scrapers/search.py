@@ -1,13 +1,15 @@
 """Search engines with a shared circuit breaker.
 
 Split out of base.py. All HTTP goes through `scrapers.httpclient`
-(curl_cffi impersonation) instead of cloudscraper — verified against the
-live engines during the rewrite:
+(curl_cffi impersonation) instead of cloudscraper. Behaviour measured
+from CI runner IPs with every ddgs backend queried:
 
-    Bing     200, 10 results/page, pagination works, NOT blocked
-    DDG      200 via ddgs lib + html/lite endpoints, NOT blocked
-    Brave    sometimes 429 -> circuit breaker cools it down
-    Mojeek / Qwant / Ecosia / public SearXNG -> CAPTCHA walls (dropped)
+    Bing     200, 10 results/page, pagination works, NOT blocked — primary
+    DDGS     ddgs library, backends pinned via DDGS_BACKENDS: yahoo +
+             startpage answer 200 and return direct result URLs
+    google / mojeek / brave -> 403 / 403 / 429 from datacenter IPs, always
+    ddg html endpoints      -> timeouts / anomaly pages, no usable results
+    Qwant / Ecosia / public SearXNG -> CAPTCHA walls (dropped)
     SearXNG  kept but OFF unless SEARXNG_INSTANCES is configured (self-hosted)
 
 Circuit breaker: N consecutive empty results => skip the engine for
@@ -17,6 +19,7 @@ from __future__ import annotations
 
 import base64
 import logging
+import os
 import threading
 import time
 from typing import Dict, List, Set, Tuple
@@ -46,13 +49,21 @@ try:
 except Exception:                                # pragma: no cover
     _Soup = None
 
-# Hostnames that must never be treated as a search hit.
+# Search surfaces (and their redirect wrappers) — never a result target.
 _ENGINE_HOSTS = (
-    "bing.com", "duckduckgo.com", "brave.com", "searx.be", "searxng",
+    "bing.com", "duckduckgo.com", "brave.com", "google.com", "yahoo.com",
+    "startpage.com", "mojeek.com", "wikipedia.org", "grokipedia.com",
+    "yandex.com", "ecosia.org", "qwant.com", "searx.be", "searxng",
     "go.microsoft.com", "spredbird.com", "microsoft.com", "msn.com",
 )
 
 RESULT_TIMEOUT = 12.0
+
+# ddgs backends (comma-separated), pinned to what answers 200 from runner
+# IPs. The default auto fan-out wastes one round-trip per query on engines
+# that hard-block datacenter addresses and on backends that never return
+# usable results.
+DDGS_BACKENDS = os.environ.get("DDGS_BACKENDS", "yahoo,startpage")
 
 
 # ── HTML helpers ────────────────────────────────────────────────
@@ -167,55 +178,23 @@ def search_bing(query: str, max_results: int = 10) -> Set[str]:
 
 
 def search_ddg(query: str, max_results: int = 10) -> Set[str]:
-    """DuckDuckGo via the ddgs library, with an HTML-endpoint fallback."""
+    """Metasearch through the ddgs library on the pinned backends.
+
+    The html/lite DuckDuckGo endpoints were dropped as a fallback: they
+    time out or answer with an anomaly page from runner IPs, so they only
+    added seconds to every empty query.
+    """
     links: Set[str] = set()
     try:
         from ddgs import DDGS
         with DDGS(timeout=10) as d:
-            for r in d.text(query, max_results=max_results) or []:
+            for r in d.text(query, max_results=max_results,
+                            backend=DDGS_BACKENDS) or []:
                 href = r.get("href", "")
                 if _keep(href):
                     links.add(unwrap_result_url(href))
-        if links:
-            return links
     except Exception:
         pass
-
-    # Fallback: hit the HTML/lite endpoints directly through curl_cffi.
-    for endpoint in (
-        "https://html.duckduckgo.com/html/?q=",
-        "https://lite.duckduckgo.com/lite/?q=",
-    ):
-        resp = httpclient.fetch(
-            endpoint + quote_plus(query), accept="text/html",
-            timeout=RESULT_TIMEOUT, max_bytes=500_000,
-        )
-        if resp is None:
-            continue
-        for href in _links_from(
-            resp.text, ("a.result__a", "a.result-link", "a[href].result__a")
-        ):
-            if _keep(href):
-                links.add(unwrap_result_url(href))
-        if links:
-            break
-    return links
-
-
-def search_brave(query: str, max_results: int = 10) -> Set[str]:
-    """Brave Search. Often 429s — the circuit breaker absorbs that."""
-    links: Set[str] = set()
-    resp = httpclient.fetch(
-        "https://search.brave.com/search?q=" + quote_plus(query),
-        accept="text/html", timeout=RESULT_TIMEOUT, max_bytes=600_000,
-    )
-    if resp is None:
-        return links
-    for href in _links_from(resp.text, ("a[href]",)):
-        if _keep(href) and href not in links:
-            links.add(unwrap_result_url(href))
-        if len(links) >= max_results:
-            break
     return links
 
 
@@ -225,7 +204,6 @@ def search_searxng(query: str, max_results: int = 10) -> Set[str]:
     Public instances sit behind bot walls (verified), so this stays opt-in
     for self-hosted deployments: SEARXNG_INSTANCES="https://searx.my,http://x:8080"
     """
-    import os
     instances = [
         u.strip().rstrip("/")
         for u in os.environ.get("SEARXNG_INSTANCES", "").split(",")
@@ -255,13 +233,11 @@ def search_searxng(query: str, max_results: int = 10) -> Set[str]:
 
 ENGINE_LIST: List[Tuple[str, object]] = [
     ("Bing", search_bing),
-    ("DuckDuckGo", search_ddg),
-    ("Brave", search_brave),
+    ("DDGS", search_ddg),
 ]
 
 # Extra engines appended when configured (keeps the default path predictable).
 def engine_list() -> List[Tuple[str, object]]:
-    import os
     engines = list(ENGINE_LIST)
     if os.environ.get("SEARXNG_INSTANCES", "").strip():
         engines.append(("SearXNG", search_searxng))
