@@ -1,9 +1,9 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
 #EXTINF:-1 tvg-name="Star Jalsha" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Star-Jalsha--2000-x-1125--Transparent.png" group-title="Entertainment",Star Jalsha
 http://103.151.60.162:2122/play/a00w/index.m3u8?hls
-#EXTINF:-1 tvg-name="Star Maa Movies HD" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/1759/1782290731759-h.jpg" group-title="Entertainment",Star Maa Movies HD
+#EXTINF:-1 tvg-name="Star Maa Movies HD" tvg-logo="https://dtil.tmsimg.com/assets/s179620_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Star Maa Movies HD
 https://da86m1sqpm3o0.cloudfront.net/28072023/smil:maamovies.smil/chunklist_b2628000.m3u8
-#EXTINF:-1 tvg-name="Star Pravah HD" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/5780/1782291675780-h.jpg" group-title="Entertainment",Star Pravah HD
+#EXTINF:-1 tvg-name="Star Pravah HD" tvg-logo="https://dtil.tmsimg.com/assets/s143834_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Star Pravah HD
 https://da86m1sqpm3o0.cloudfront.net/28072023/smil:starpravah.smil/chunklist_b1928000.m3u8
 #EXTINF:-1 tvg-name="Jonack" tvg-logo="https://dtil.tmsimg.com/assets/s143238_ld_h15_aa.png?lock=720x540" group-title="General",Jonack
 https://cdn.pishow.tv/ott/live/10006/master.m3u8
@@ -23,7 +23,7 @@ https://d1msejlow1t3l4.cloudfront.net/fta/rengonitv/playlist.m3u8?hdnts=st=17914
 https://live.villagetv.net/villagetv/hd/index.m3u8
 #EXTINF:-1 tvg-name="Star Sports Select 1 HD" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Sports",Star Sports Select 1 HD
 http://103.151.60.162:2122/play/a026/index.m3u8?hls
-#EXTINF:-1 tvg-name="Star Sports 2" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/7957/1783000567957-h.jpg" group-title="Sports",Star Sports 2
+#EXTINF:-1 tvg-name="Star Sports 2" tvg-logo="https://dtil.tmsimg.com/assets/s143845_ld_h15_aa.png?lock=720x540" group-title="Sports",Star Sports 2
 http://103.151.60.162:2122/play/a00v/index.m3u8?hls
 #EXTINF:-1 tvg-name="Star Sports Select 2 HD" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Sports",Star Sports Select 2 HD
 http://tvsen7.aynascope.net/ssport2hd/index.m3u8

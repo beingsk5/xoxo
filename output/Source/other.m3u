@@ -1,3 +1,25 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
-#EXTINF:-1 tvg-name="10 tv" tvg-logo="https://dtil.tmsimg.com/assets/s142495_ld_h15_aa.png?lock=720x540" group-title="News",10 tv
-https://mlb-cuts-diamond.mlb.com/FORGE/2026/2026-10/07/84d2bb0d-1e4693f3-a4b38eb0-csvm-diamondgcp-asset.m3u8
+#EXTINF:-1 tvg-name="Discovery Channel" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG002E9L1W.png?lock=720x540" group-title="Entertainment",Discovery Channel
+http://143.244.60.30/Discovery_Channel/index.m3u8
+#EXTINF:-1 tvg-name="ETV Telugu HD" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/ETV%20HD.png" group-title="Entertainment",ETV Telugu HD
+https://mhdtv.co.in/jio/app/webapi.php?action=direct_play&c=ETV_HD&e=.m3u8
+#EXTINF:-1 tvg-name="MTV Live" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/MTV-WB-Transparent.png" group-title="Entertainment",MTV Live
+http://143.244.60.30/MTV_LIVE/index.m3u8
+#EXTINF:-1 tvg-name="NICK" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Nick.png" group-title="Kids",NICK
+https://drewski2423-dproxy.hf.space/watch/aHR0cHM6Ly93aW5kbmV3Lm5ld2tzby5ydS93aW5kL3ByZW1pdW0zMzAvbW9uby5tM3U4.m3u8
+#EXTINF:-1 tvg-name="NICK JR" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Nick%20Jr.png" group-title="Kids",NICK JR
+https://drewski2423-dproxy.hf.space/watch/aHR0cHM6Ly93aW5kbmV3Lm5ld2tzby5ydS93aW5kL3ByZW1pdW0zMjkvbW9uby5tM3U4.m3u8
+#EXTINF:-1 tvg-name="TLC" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/TLC%20HD.png" group-title="Lifestyle",TLC
+http://143.244.60.30/TLC/index.m3u8
+#EXTINF:-1 tvg-name="Zee Cinemalu HD" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022HVX3.png?lock=720x540" group-title="Movies",Zee Cinemalu HD
+https://mhdtv.co.in/jio/app/webapi.php?action=direct_play&c=Zee_Cinemalu&e=.m3u8
+#EXTINF:-1 tvg-name="7" tvg-logo="https://i.imgur.com/zDiIhdN.png" group-title="Music",7
+http://tvhe.neez.id.au/stream/channelid/1539335094?profile=pass
+#EXTINF:-1 tvg-name="i news" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e6/Janasri_News_Channel_Logo.jpg" group-title="News",i news
+https://hlsvod.dw.com/i/vps/webvideos/ENG/2026/NEWS/NEWSENG260924_Vienna_Vert_Dirty_11SMV_,AVC_270x480,AVC_360x640,AVC_540x960,AVC_720x1280,AVC_1080x1920,.mp4.csmil/master.m3u8
+#EXTINF:-1 tvg-name="BBC WORLD NEWS" group-title="News",BBC WORLD NEWS
+http://143.244.60.30/BBC_WORLD_NEWS/index.m3u8
+#EXTINF:-1 tvg-name="CNN INTERNATIONAL" group-title="News",CNN INTERNATIONAL
+http://143.244.60.30/CNN_INTERNATIONAL/index.m3u8
+#EXTINF:-1 tvg-name="Discovery Science" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Discovery%20Science.png" group-title="Science",Discovery Science
+http://143.244.60.30/Discovery_Science/index.m3u8

@@ -1,3 +1,5 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
-#EXTINF:-1 tvg-name="i news" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e6/Janasri_News_Channel_Logo.jpg" group-title="News",i news
-https://prodamdnewsencoding.akamaized.net/NBC_News_Digital/now_daily_a_aca_polymarket_260930/1/abs/index.m3u8
+#EXTINF:-1 tvg-name="zee tv" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Zee_TV_Logo_2025.svg/960px-Zee_TV_Logo_2025.svg.png" group-title="Entertainment",zee tv
+https://service-pkgabcnews.akamaized.net/opp/hls/abcnews/2025/10/251017_gma_gutman_zee_alaska_0707_,500,800,1200,1800,2500,3200,4500,.mp4.csmil/playlist.m3u8
+#EXTINF:-1 tvg-name="brk news" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/brk-news.png" group-title="News",brk news
+https://prodamdnewsencoding.akamaized.net/NBC_News_Digital/now_brk_election_special_261006/1/abs/index.m3u8

@@ -7,24 +7,32 @@ https://vglivessai.akamaized.net/sg/v1/master/611d79b11b77e2f571934fd80ca1413453
 https://d1msejlow1t3l4.cloudfront.net/fta/mahaamax/playlist.m3u8
 #EXTINF:-1 tvg-name="Vanitha TV" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/VANITHA-Logo--without-BG_2000_X_1125.png" group-title="Entertainment",Vanitha TV
 https://cdn.pishow.tv/ott/live/393/master.m3u8
-#EXTINF:-1 tvg-name="Star Maa HD" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/1759/1782290731759-h.jpg" group-title="Entertainment",Star Maa HD
+#EXTINF:-1 tvg-name="Star Maa HD" tvg-logo="https://dtil.tmsimg.com/assets/s179620_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Star Maa HD
 https://da86m1sqpm3o0.cloudfront.net/28072023/smil:starmaa1.smil/chunklist_b2628000.m3u8
 #EXTINF:-1 tvg-name="ETV Plus" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/ETV-plus-HD-Logo_2000_X_1125_Transpharent.png" group-title="Entertainment",ETV Plus
 https://yupplivegcpusa.yuppcdn.net/100823/smil:etvplus.smil/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
+#EXTINF:-1 tvg-name="ETV Telugu HD" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/ETV%20HD.png" group-title="Entertainment",ETV Telugu HD
+https://mhdtv.co.in/jio/app/webapi.php?action=direct_play&c=ETV_HD&e=.m3u8
 #EXTINF:-1 tvg-name="DD Saptagiri" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Saptagiri.png" group-title="General",DD Saptagiri
 https://cdn.pishow.tv/ott/live/22/master.m3u8
 #EXTINF:-1 tvg-name="DD Yadagiri" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Yadagiri.png" group-title="General",DD Yadagiri
 https://cdn.pishow.tv/ott/live/21/master.m3u8
-#EXTINF:-1 tvg-name="Disney Channel" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/1540/1785251571540-h.jpg" group-title="Kids",Disney Channel
+#EXTINF:-1 tvg-name="Disney Channel" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/f/ff/2024_Disney_Channel_text_logo.svg" group-title="Kids",Disney Channel
 http://51.75.127.199:3141/disneychannel/index.m3u8
+#EXTINF:-1 tvg-name="NTV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Fashion_TV_logo.svg/960px-Fashion_TV_logo.svg.png" group-title="Lifestyle",NTV
+http://vthanh.utako.moe/Nippon_TV/index.m3u8
 #EXTINF:-1 tvg-name="ETV Cinema" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/ETV-cinema-HD-Logo_2000_X_1125_Transpharent.png" group-title="Movies",ETV Cinema
 https://yupplivegcpusa.yuppcdn.net/100823/smil:etvcinema.smil/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
+#EXTINF:-1 tvg-name="Zee Cinemalu HD" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022HVX3.png?lock=720x540" group-title="Movies",Zee Cinemalu HD
+https://mhdtv.co.in/jio/app/webapi.php?action=direct_play&c=Zee_Cinemalu&e=.m3u8
 #EXTINF:-1 tvg-name="ETV Music" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/ETVMusic12.png" group-title="Music",ETV Music
 https://cc-szivnms4rlah6.akamaized.net/WWBI/Amagi/ETV_Music_IN/playlist.m3u8
 #EXTINF:-1 tvg-name="Raj Musix Telugu" tvg-logo="https://dtil.tmsimg.com/assets/s143708_ld_h15_aa.png?lock=720x540" group-title="Music",Raj Musix Telugu
 https://cdn.pishow.tv/ott/live/1213/master.m3u8
 #EXTINF:-1 tvg-name="V6 News" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/V6%20News.png" group-title="News",V6 News
 https://yuppmedtaorire.akamaized.net/v1/master/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/v6news_nim_https/140622/v6news/playlist.m3u8
+#EXTINF:-1 tvg-name="brk news" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/brk-news.png" group-title="News",brk news
+https://prodamdnewsencoding.akamaized.net/NBC_News_Digital/now_brk_election_special_261006/1/abs/index.m3u8
 #EXTINF:-1 tvg-name="6 TV Telugu" tvg-logo="https://i.imgur.com/l3EcRnZ.png" group-title="News",6 TV Telugu
 https://mumbai-edge.smartplaytv.in/6TVTelugu/index.m3u8
 #EXTINF:-1 tvg-name="NTV Telugu" tvg-logo="https://dtil.tmsimg.com/assets/s154897_ld_h15_aa.png?lock=720x540" group-title="News",NTV Telugu
