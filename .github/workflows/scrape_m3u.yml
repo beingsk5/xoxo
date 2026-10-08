@@ -69,13 +69,22 @@ on:
         required: false
         default: false
         type: boolean
+      chain:
+        description: 'Internal: chained-run depth (auto-incremented, leave 0)'
+        required: false
+        default: '0'
+        type: string
 
 permissions:
   contents: write
+  # Needed to queue the next chained run of this workflow (coverage ratchet).
+  actions: write
 
 concurrency:
   group: scrape-iptv
-  cancel-in-progress: true
+  # One running + one queued run: chained re-triggers wait their turn so a
+  # run that is still publishing can never be cancelled mid-flight.
+  cancel-in-progress: false
 
 env:
   PYTHON: '3.12'
@@ -83,6 +92,9 @@ env:
   # target (or no work remains). 100 = chase every channel in the list.
   COVERAGE_TARGET: '100'
   SCRAPER_MAX_ATTEMPTS: '3'
+  # Run-level chain cap: how many follow-up runs one wave may queue
+  # (the schedule starts a fresh wave).
+  CHAIN_MAX: '5'
 
 jobs:
   # ═══════════════════════════════════════════════════════════════
@@ -225,9 +237,9 @@ jobs:
     timeout-minutes: 180
     strategy:
       fail-fast: false
-      # 13 languages in 2 waves (public runners: up to 20 concurrent jobs).
-      # Each job is internally capped at 80/60 min, so a full scrape lands
-      # around ~2.5-3h instead of queueing 5 waves of near-timeout jobs.
+      # 14 languages in 2 waves (public runners: up to 20 concurrent jobs).
+      # Each job is internally capped at 65/50 min, so a full scrape lands
+      # around ~2.5-3h instead of queueing waves of near-timeout jobs.
       max-parallel: 8
       matrix: ${{ fromJson(needs.select-languages.outputs.matrix) }}
 
@@ -334,7 +346,7 @@ jobs:
       # the manual reset. Verdict TTLs keep restored state from going stale.
       - name: Restore cross-run state
         continue-on-error: true
-        uses: actions/cache/restore@v4
+        uses: actions/cache/restore@v6
         with:
           path: state/store.db
           key: scrape-state-${{ github.run_id }}-${{ matrix.language }}
@@ -351,8 +363,15 @@ jobs:
           merge-multiple: true
 
       - name: Scrape ${{ matrix.language }} channels (coverage-driven retries)
+        id: scrape
         run: |
           FORCE_FRESH="${{ github.event.inputs.force_fresh }}"
+          if [ "${{ matrix.language }}" = "All" ]; then
+            # The full run rewrites every output view; start clean so files
+            # this run no longer emits (stale/junk views) are dropped from
+            # the repo instead of being republished from the checkout.
+            rm -rf output
+          fi
           ATTEMPTS="${SCRAPER_MAX_ATTEMPTS:-3}"
           LAST_RC=1
           for attempt in $(seq 1 "$ATTEMPTS"); do
@@ -377,6 +396,7 @@ jobs:
             python -m scrapers.language "${{ matrix.language }}" $FRESH_FLAG $TFLAG
             LAST_RC=$?
             set -e
+            echo "last_rc=$LAST_RC" >> "$GITHUB_OUTPUT"
             if [ "$LAST_RC" = "0" ]; then
               echo "Complete on attempt $attempt (queries exhausted)"
               exit 0
@@ -444,7 +464,7 @@ jobs:
       - name: Save cross-run state
         if: always()
         continue-on-error: true
-        uses: actions/cache/save@v4
+        uses: actions/cache/save@v6
         with:
           path: state/store.db
           key: scrape-state-${{ github.run_id }}-${{ matrix.language }}
@@ -452,9 +472,10 @@ jobs:
       # Publish this run's M3U files (written by the scraper itself):
       # single-language jobs write Language/<lang>.m3u; the full "All" run
       # writes all_indian_channels.m3u + Language/* + Source/*. output/ is
-      # gitignored, so files are force-staged; other runs' tracked files
-      # stay untouched. Concurrent language jobs race on push and retry
-      # with rebase.
+      # gitignored, so files are force-staged; the full run stages the whole
+      # directory (with deletions, so output views this run no longer emits
+      # are dropped), other runs' tracked files stay untouched. Concurrent
+      # language jobs race on push and retry with rebase.
       - name: Commit output
         id: commit
         run: |
@@ -479,13 +500,21 @@ jobs:
             echo "EOF"
           } >> "$GITHUB_OUTPUT"
 
-          git add -f "${files[@]}"
+          if [ "${{ matrix.language }}" = "All" ]; then
+            git add -A -f output/
+            COUNT_FILE=output/all_indian_channels.m3u
+          else
+            git add -f "${files[@]}"
+            COUNT_FILE="${files[0]}"
+          fi
           if git diff --staged --quiet; then
             echo "No changes to commit"
             exit 0
           fi
 
-          CHANNELS=$(cat "${files[@]}" | grep -c '^#EXTINF' || true)
+          # Count the primary playlist only: counting every view would
+          # multiply the same channels by combined + language + source.
+          CHANNELS=$(grep -c '^#EXTINF' "$COUNT_FILE" || true)
           git commit -m "scrape: ${CHANNELS:-0} channels $(date -u +'%Y-%m-%d %H:%M UTC')"
 
           for i in 1 2 3 4 5; do
@@ -502,9 +531,47 @@ jobs:
           exit 1
 
       - name: Upload output
+        if: always() && steps.commit.outputs.files != ''
         uses: actions/upload-artifact@v7
         with:
           name: output-${{ matrix.language }}
           path: ${{ steps.commit.outputs.files }}
           retention-days: 60
           if-no-files-found: warn
+
+      # Run-level ratchet: while coverage is below the target AND the scrape
+      # reported pending work (exit 3), queue the next run of this workflow —
+      # one at a time via the concurrency group, so runs follow each other
+      # until 100% (or until no work / CHAIN_MAX remains). workflow_dispatch
+      # triggered with GITHUB_TOKEN is exempt from the recursion guard, so
+      # this chaining is allowed. Never fails this job.
+      - name: Queue next run until coverage target
+        if: always()
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+          CHAIN: ${{ inputs.chain || '0' }}
+        run: |
+          LAST_RC="${{ steps.scrape.outputs.last_rc }}"
+          CHAIN=$(printf '%s' "${CHAIN:-0}" | tr -cd '0-9'); CHAIN=${CHAIN:-0}
+          NEXT=$((CHAIN + 1))
+          COV_JSON="$(python3 scripts/coverage.py "${{ matrix.language }}" --json 2>/dev/null || true)"
+          PCT=$(printf '%s' "$COV_JSON" | python3 -c 'import sys,json;print(float(json.loads(sys.stdin.read() or "{}").get("pct",0)))' 2>/dev/null || echo 0)
+          echo "chain=$CHAIN coverage=$PCT% target=$COVERAGE_TARGET% last_rc=$LAST_RC"
+          if [ "$LAST_RC" != "3" ]; then
+            echo "Not queueing: scrape reported no pending work (rc=${LAST_RC:-skipped})"
+          elif awk -v p="$PCT" -v t="$COVERAGE_TARGET" 'BEGIN { exit !(p >= t) }'; then
+            echo "Coverage target reached - chain complete"
+          elif [ "$NEXT" -gt "${CHAIN_MAX:-5}" ]; then
+            echo "Chain limit reached ($CHAIN_MAX runs) with coverage still below target"
+            echo "The schedule (or a manual run) picks the ratchet up again."
+          else
+            ARGS=()
+            if [ "${{ matrix.language }}" != "All" ]; then
+              KEY="lang_$(echo '${{ matrix.language }}' | tr '[:upper:]' '[:lower:]')"
+              ARGS+=(-f "${KEY}=true")
+            fi
+            ARGS+=(-f "chain=${NEXT}")
+            gh workflow run scrape_m3u.yml "${ARGS[@]}"
+            echo "Queued chained run #$NEXT (coverage $PCT% -> target $COVERAGE_TARGET%)"
+          fi
