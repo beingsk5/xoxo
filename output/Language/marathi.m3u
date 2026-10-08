@@ -3,10 +3,16 @@
 https://da86m1sqpm3o0.cloudfront.net/28072023/smil:colorsmarathihd.smil/playlist.m3u8
 #EXTINF:-1 tvg-name="Zee Marathi HD" tvg-logo="https://i.imgur.com/vv9ysD3.png" group-title="Entertainment",Zee Marathi HD
 https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/in/YuppTV/ZeeMarathiHD.m3u8
+#EXTINF:-1 tvg-name="group-title="Marathi",Zee Marathi" tvg-logo="https://i.imgur.com/vv9ysD3.png" group-title="Entertainment",group-title="Marathi",Zee Marathi
+http://z5ams.akamaized.net/zmarathisd/tracks-v1a1/index.m3u8
 #EXTINF:-1 tvg-name="DD Sahyadri KB" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Sahyadri.png" group-title="General",DD Sahyadri KB
 https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/66dcc3ebe182447ba42837e746cf0c7c/index.m3u8
+#EXTINF:-1 tvg-name="group-title="Marathi",DD Sahyadri" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Sahyadri.png" group-title="General",group-title="Marathi",DD Sahyadri
+http://z5ams.akamaized.net/ddsahyadri/tracks-v1a1/index.m3u8
 #EXTINF:-1 tvg-name="Zee Talkies" tvg-logo="https://i.imgur.com/GowDXFz.png" group-title="Movies",Zee Talkies
 http://107.167.16.138/zeetalkies/index.m3u8?token=test
+#EXTINF:-1 tvg-name="group-title="Marathi",Zee Talkies" tvg-logo="https://i.imgur.com/GowDXFz.png" group-title="Movies",group-title="Marathi",Zee Talkies
+http://z5ams.akamaized.net/zeetalkies/tracks-v1a1/index.m3u8
 #EXTINF:-1 tvg-name="9X Jhakaas" tvg-logo="https://dtil.tmsimg.com/assets/s90012_ld_h15_aa.png?lock=720x540" group-title="Music",9X Jhakaas
 https://amg01281-9xmediapvtltd-9xjhakaas-samsungin-ci2cs.amagi.tv/playlist/amg01281-9xmediapvtltd-9xjhakaas-samsungin/playlist.m3u8
 #EXTINF:-1 tvg-name="Sangeet Marathi" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Sangeet_Marathi.jpg/960px-Sangeet_Marathi.jpg" group-title="Music",Sangeet Marathi

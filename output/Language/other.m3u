@@ -1,34 +1,96 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
+#EXTINF:-1 tvg-name="Bark TV (1080p)" group-title="Entertainment",Bark TV (1080p)
+https://bbb-barkt-streamstak.otteravision.com/bbb/barkt/barkt.m3u8
+#EXTINF:-1 tvg-name="KRGV-TV 5.2 [Geo-blocked]" group-title="Entertainment",KRGV-TV 5.2 [Geo-blocked]
+https://d3svnrf3rmq619.cloudfront.net/krgv-live/smil:krgv-somos.smil/playlist.m3u8
+#EXTINF:-1 tvg-name="LATV (1080p) [Geo-blocked]" group-title="Entertainment",LATV (1080p) [Geo-blocked]
+https://amg00779-latv-amg00779c1-cineverse-us-1746.playouts.now.amagi.tv/playlist/amg00779-latvnetworkllc-latv-cineverseus/playlist.m3u8
 #EXTINF:-1 tvg-name="Zarok TV Sorani (720p)" group-title="Kids",Zarok TV Sorani (720p)
 https://zindisorani.zaroktv.com.tr/hls/stream.m3u8
+#EXTINF:-1 tvg-name="Baby Shark TV (1080p)" group-title="Kids",Baby Shark TV (1080p)
+https://newidco-babysharktv-1-us.roku.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Hasbro Legends (1080p) [Geo-blocked]" group-title="Kids",Hasbro Legends (1080p) [Geo-blocked]
+https://amg02713-amg02713c11-amgplt0852.playout.now3.amagi.tv/ts-us-e2-n2/playlist/amg02713-amg02713c11-amgplt0852/playlist.m3u8
+#EXTINF:-1 tvg-name="KidOO (1080p) [Geo-blocked]" group-title="Kids",KidOO (1080p) [Geo-blocked]
+http://15.204.246.24:8080/KidooHD/index.m3u8
+#EXTINF:-1 tvg-name="Kids Tv India" group-title="Kids",Kids Tv India
+https://d35j504z0x2vu2.cloudfront.net/v1/manifest/0bc8e8376bd8417a1b6761138aa41c26c7309312/kids-tv-india-nursery-rhymes-and-baby-songs/bf5a4742-7214-4f66-9bf8-307fb0a11a6e/2.m3u8
 #EXTINF:-1 tvg-name="KCM (1080p) [Geo-blocked]" group-title="Movies",KCM (1080p) [Geo-blocked]
 https://amg02159-amg02159c7-samsung-in-4001.playouts.now.amagi.tv/playlist/amg02159-kcglobal-kcm-samsungin/playlist.m3u8
 #EXTINF:-1 tvg-name="Hindi Classic 24" tvg-logo="https://imglink.cc/cdn/cScI5tEUjV.png" group-title="Movies",Hindi Classic 24
 https://vods2.aynaott.com/hindimovies/index.m3u8
+#EXTINF:-1 tvg-name="Bollywood & Indian Cinema" group-title="Movies",Bollywood & Indian Cinema
+https://dbrb49pjoymg4.cloudfront.net/manifest/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod_default_xumo-ams-aws/8630eb73-5053-4482-bd84-27c8bc5db017/4.m3u8
+#EXTINF:-1 tvg-name="Bollywood Movies" group-title="Movies",Bollywood Movies
+https://live20.bozztv.com/giatvplayout7/giatv-209612/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 tvg-name="FilmRise Forensic Files (720p) [Geo-blocked]" group-title="Movies",FilmRise Forensic Files (720p) [Geo-blocked]
+https://pb-x9qsxrudiq9d2.akamaized.net/webvtt/v1/18584c3f3a2a4df8/88886014/master.m3u8
 #EXTINF:-1 tvg-name="MBC Bollywood (1080p) [Geo-blocked]" group-title="Movies",MBC Bollywood (1080p) [Geo-blocked]
 https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-bollywood/546eb40d7dcf9a209255dd2496903764/index.m3u8
 #EXTINF:-1 tvg-name="RAJ MUSIC TELUGU" group-title="Music",RAJ MUSIC TELUGU
 https://tinyurl.com/yaarokayaar1110-channel59
 #EXTINF:-1 tvg-name="Nick Music" group-title="Music",Nick Music
 http://cdn1host.online:2999/kratorius/opLcbhlXaT/50786
+#EXTINF:-1 tvg-name="Stryk TV (1080p)" group-title="Music",Stryk TV (1080p)
+https://fffffff110156200.tvustream.com:8298/ryfy.m3u8
 #EXTINF:-1 tvg-name="CNA News" group-title="News",CNA News
 https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index_5.m3u8
 #EXTINF:-1 tvg-name="BBC WORLD NEWS" group-title="News",BBC WORLD NEWS
 http://143.244.60.30/BBC_WORLD_NEWS/index.m3u8
-#EXTINF:-1 tvg-name="CBS News Colorado" group-title="News",CBS News Colorado
-https://jmp2.uk/plu-5eb1b12146cba40007aa7e5d.m3u8
+#EXTINF:-1 tvg-name="CBS News Colorado (720p)" group-title="News",CBS News Colorado (720p)
+https://cbsn-den.cbsnstream.cbsnews.com/out/v1/2e49baf2906244ecb01b07d9885fbe7a/master.m3u8
+#EXTINF:-1 tvg-name="Digital Once (Dominican Republic)" group-title="News",Digital Once (Dominican Republic)
+https://live4.telemicro.com.do/digital15cast_1080p/playlist.m3u8
+#EXTINF:-1 tvg-name="group-title="Marathi",News 18 Lokmat" group-title="News",group-title="Marathi",News 18 Lokmat
+http://ibn_lokmat_hls-lh.akamaihd.net/i/ibn_lokmat_hls_n_1@178974/index_5.m3u8
+#EXTINF:-1 tvg-name="News 18 India" tvg-logo="https://raw.githubusercontent.com/SweetBoy4141/iptv/main/logo/News_18_India.jpg" group-title="News",News 18 India
+https://nw18live.cdn.jio.com/bpk-tv/News18_India_NW18_MOB/output01/News18_India_NW18_MOB-audio_98835_eng=98800-video=3724000.m3u8
+#EXTINF:-1 tvg-name="News12 Bronx [Geo-blocked]" group-title="News",News12 Bronx [Geo-blocked]
+https://mdc.ott.alticeusa.net/live4.ott.optimum.net/live4-uploads/N12XH_A1/index_new.m3u8?omap=https
+#EXTINF:-1 tvg-name="News12 Brooklyn [Geo-blocked]" group-title="News",News12 Brooklyn [Geo-blocked]
+https://mdc.ott.alticeusa.net/live4.ott.optimum.net/live4-uploads/N12KH_A1/index_new.m3u8?omap=https
+#EXTINF:-1 tvg-name="News12 Conneticut [Geo-blocked]" group-title="News",News12 Conneticut [Geo-blocked]
+https://mdc.ott.alticeusa.net/live4.ott.optimum.net/live4-uploads/N12CH_FFLD_MILF_A1/index_new.m3u8?omap=https
+#EXTINF:-1 tvg-name="News12 Hudson Valley [Geo-blocked]" group-title="News",News12 Hudson Valley [Geo-blocked]
+https://mdc.ott.alticeusa.net/live4.ott.optimum.net/live4-uploads/N12HH_A1/index_new.m3u8?omap=https
+#EXTINF:-1 tvg-name="News12 Long Island (1080p) [Geo-blocked]" group-title="News",News12 Long Island (1080p) [Geo-blocked]
+https://mdc.ott.alticeusa.net/live4.ott.optimum.net/live4-uploads/N12LH_WEST_A1/index_new.m3u8?omap=https
+#EXTINF:-1 tvg-name="News12 New Jersey [Geo-blocked]" group-title="News",News12 New Jersey [Geo-blocked]
+https://mdc.ott.alticeusa.net/live4.ott.optimum.net/live4-uploads/N12JH_CENT_A1/index_new.m3u8?omap=https
+#EXTINF:-1 tvg-name="News12 Westchester [Geo-blocked]" group-title="News",News12 Westchester [Geo-blocked]
+https://mdc.ott.alticeusa.net/live4.ott.optimum.net/live4-uploads/N12WH_A1/index_new.m3u8?omap=https
+#EXTINF:-1 tvg-name="News12+ Connecticut (1080p) [Geo-blocked]" group-title="News",News12+ Connecticut (1080p) [Geo-blocked]
+https://mdc.ott.alticeusa.net/live4.ott.optimum.net/live4-uploads/N12PLUS_H_CT_A1/index_new.m3u8
+#EXTINF:-1 tvg-name="News12+ Hudson Valley (1080p) [Geo-blocked]" group-title="News",News12+ Hudson Valley (1080p) [Geo-blocked]
+https://mdc.ott.alticeusa.net/live4.ott.optimum.net/live4-uploads/N12PLUS_H_WC_A1/index_new.m3u8
+#EXTINF:-1 tvg-name="News12+ Long Island (1080p) [Geo-blocked]" group-title="News",News12+ Long Island (1080p) [Geo-blocked]
+https://mdc.ott.alticeusa.net/live4.ott.optimum.net/live4-uploads/N12PLUS_H_LI_A1/index_new.m3u8
+#EXTINF:-1 tvg-name="News12+ New Jersey (1080p) [Geo-blocked]" group-title="News",News12+ New Jersey (1080p) [Geo-blocked]
+https://mdc.ott.alticeusa.net/live4.ott.optimum.net/live4-uploads/N12PLUS_H_NJ_A1/index_new.m3u8
+#EXTINF:-1 tvg-name="News12+ New York (1080p) [Geo-blocked]" group-title="News",News12+ New York (1080p) [Geo-blocked]
+https://mdc.ott.alticeusa.net/live4.ott.optimum.net/live4-uploads/N12PLUS_H_NYC_A1/index_new.m3u8
 #EXTINF:-1 tvg-name="Palestine Today (480p) [Geo-blocked]" group-title="News",Palestine Today (480p) [Geo-blocked]
 https://live.paltodaytv.com/paltv/live/playlist.m3u8
+#EXTINF:-1 tvg-name="Payvand TV (United States) (720p)" group-title="News",Payvand TV (United States) (720p)
+https://tgn.bozztv.com/cus01/ucur1/Payvand/index.m3u8
+#EXTINF:-1 tvg-name="Telemicro (Dominican Republic)" group-title="News",Telemicro (Dominican Republic)
+https://live4.telemicro.com.do/telemicrocast_1080p/playlist.m3u8
+#EXTINF:-1 tvg-name="WSOC Now (1080p) [Geo-blocked]" group-title="News",WSOC Now (1080p) [Geo-blocked]
+https://amg00327-coxmediagroup-wsocbreaking-plex-t51et.amagi.tv/playlist/amg00327-coxmediagroup-wsocbreaking-plex/playlist.m3u8
+#EXTINF:-1 tvg-name="BOLLYWOOD 4U" group-title="Other",BOLLYWOOD 4U
+https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/22d13e33-8705-40e8-9809-4e80aa795f15/manifest.m3u8?hdnts=st=1791482469~exp=1791504069~acl=!*/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/22d13e33-8705-40e8-9809-4e80aa795f15/*!/payload/yupptvott_5_-1_bf330519-7337-4b43-ab46-af8206df2ac3_US_52.176.123.178_yupptv_1_channel_6604_-1/*~data=yupptvott_5_-1_bf330519-7337-4b43-ab46-af8206df2ac3_US_52.176.123.178_yupptv_1_channel_6604_-1~hmac=4d0027518cb2b05b9de5c5ce2e9b458c331d2476cfffc4ddd2c4c3e0a14a3a72&ads.content_custom_3_param=yuppfastint&ads.ip=52.176.123.178&did=bf330519-7337-4b43-ab46-af8206df2ac3&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=ENTERTAINMENT&ads.content_custom_1_param=FAST&ads.channel=6604&ads.channel_name=BOLLYWOOD4U&ads.language=HIN&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
 #EXTINF:-1 tvg-name="webobjects" group-title="Other",webobjects
 https://play-edge.itunes.apple.com/WebObjects/MZPlayLocal.woa/hls/subscription/playlist.m3u8?cc=US&svcId=tvs.vds.4105&a=6804903704&isExternal=true&brandId=tvs.sbd.4000&id=1486426873&l=en-US&aec=UHD
 #EXTINF:-1 tvg-name="content" group-title="Other",content
 https://cdn-dynmedia-1.microsoft.com/is/content/microsoftassets/How-to-Download-and-Install_en-us-AVS.mpd
+#EXTINF:-1 tvg-name="trailers" group-title="Other",trailers
+https://cdn.trailers.xboxservices.com/trailers/7f35992d-67ab-48c9-b1a2-c8aaff46236e/is/content/microsoftassets/D4_X2AnnuncGmplyTrlr_enUS_Xbox-AVS.mpd
 #EXTINF:-1 tvg-name="ABN TV India (540p)" group-title="Other",ABN TV India (540p)
 https://mediaserver.abnvideos.com/streams/abntvindia.m3u8
-#EXTINF:-1 tvg-name="BOLLYWOOD 4U" group-title="Other",BOLLYWOOD 4U
-https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/22d13e33-8705-40e8-9809-4e80aa795f15/manifest.m3u8?hdnts=st=1791439654~exp=1791461254~acl=!*/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/22d13e33-8705-40e8-9809-4e80aa795f15/*!/payload/yupptvott_5_-1_c3a9449f-20ef-4671-a434-05f2658bfdd4_US_4.149.236.244_yupptv_1_channel_6604_-1/*~data=yupptvott_5_-1_c3a9449f-20ef-4671-a434-05f2658bfdd4_US_4.149.236.244_yupptv_1_channel_6604_-1~hmac=a8dae9f1cecb065a717f520b6be2b612e219cc97dbced68f1c24ae453b8dff2c&ads.content_custom_3_param=yuppfastint&ads.ip=4.149.236.244&did=c3a9449f-20ef-4671-a434-05f2658bfdd4&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=ENTERTAINMENT&ads.content_custom_1_param=FAST&ads.channel=6604&ads.channel_name=BOLLYWOOD4U&ads.language=HIN&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
-#EXTINF:-1 tvg-name="trailers" group-title="Other",trailers
-https://cdn.trailers.xboxservices.com/trailers/7f35992d-67ab-48c9-b1a2-c8aaff46236e/is/content/microsoftassets/SmurfsDLCTrailer_XBOX_ESRB_16x9_EN_01-AVS.mpd
+#EXTINF:-1 tvg-name="anonymous" group-title="Other",anonymous
+https://linear-anon.tv.apple.com/v1/hls/anonymous/playlist.m3u8?serviceId=tvs.vds.5505&l=en-US&referenceId=umc.cmr.mls.ex.3zgmoez3qzjrwoamvl5xj539w
+#EXTINF:-1 tvg-name="images" group-title="Other",images
+https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/d6c49047-dd82-431b-ab74-2b64edaf78c6/default.vertical.jobtemplate.hls.m3u8
 #EXTINF:-1 tvg-name="1.FM – Bombay Beats India Radio" group-title="Other",1.FM – Bombay Beats India Radio
 http://strm112.1.fm/bombaybeats_mobile_mp3
 #EXTINF:-1 tvg-name="The Q India" group-title="Other",The Q India
@@ -43,43 +105,145 @@ http://airhlspush.pc.cdn.bitgravity.com/httppush/hlspbaudio005/hlspbaudio005_Aut
 http://air.pc.cdn.bitgravity.com/air/live/pbaudio022/playlist.m3u8
 #EXTINF:-1 tvg-name="All India Radio - FM Gold" group-title="Other",All India Radio - FM Gold
 https://air.pc.cdn.bitgravity.com/air/live/pbaudio021/playlist.m3u8
+#EXTINF:-1 tvg-name="7X PUNJABI TV" group-title="Other",7X PUNJABI TV
+https://stream.e2is.in/hls/7xMusic.m3u8
 #EXTINF:-1 tvg-name="Al Jazeera Documentary (1080p) [Geo-blocked]" group-title="Other",Al Jazeera Documentary (1080p) [Geo-blocked]
 https://live-hls-apps-ajd-fa.getaj.net/AJD/index.m3u8
-#EXTINF:-1 tvg-name="BABY SHARK TV" group-title="Other",BABY SHARK TV
-https://epg.provider.plex.tv/library/parts/5e20b730f2f8d5003d739db7-60d4eddeb2fdec002c141137.m3u8?X-Plex-Token=RzgvtzLKLMWEJWtrNSfc
+#EXTINF:-1 tvg-name="Animation+ (1080p) [Geo-blocked]" group-title="Other",Animation+ (1080p) [Geo-blocked]
+https://pb-ioe9d0fpkd6pp.akamaized.net/playlist.m3u8
+#EXTINF:-1 tvg-name="Big Star Bollywood" group-title="Other",Big Star Bollywood
+https://amigofx.com:1936/bigstarmovie/bigstarmovie/chunklist_w466807892.m3u8
+#EXTINF:-1 tvg-name="Celebrity Name Game (1080p) [Geo-blocked]" group-title="Other",Celebrity Name Game (1080p) [Geo-blocked]
+https://amg00353-amg00353c19-xumo-us-2608.playouts.now.amagi.tv/lionsgate-clbng/playlist.m3u8
+#EXTINF:-1 tvg-name="Cinevault Westerns (540p) [Geo-blocked]" group-title="Other",Cinevault Westerns (540p) [Geo-blocked]
+https://gsn-cinevault-westerns-2-us.roku.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="City of Fairfield Channel 26 (720p) [Geo-blocked]" group-title="Other",City of Fairfield Channel 26 (720p) [Geo-blocked]
+https://reflect-fairfield-ca.cablecast.tv/live-8/live/live.m3u8
+#EXTINF:-1 tvg-name="City of Loveland TV (1080p)" group-title="Other",City of Loveland TV (1080p)
+https://reflect-cityofloveland-co.cablecast.tv/live-3/live/live.m3u8
+#EXTINF:-1 tvg-name="Clarity 4K (2160p) [Geo-blocked]" group-title="Other",Clarity 4K (2160p) [Geo-blocked]
+https://pb-qyrvophnifz47.akamaized.net/Clarity_4K.m3u8
+#EXTINF:-1 tvg-name="CNBC (720p) [Geo-blocked]" group-title="Other",CNBC (720p) [Geo-blocked]
+http://41.205.93.154/CNBC/index.m3u8
+#EXTINF:-1 tvg-name="CommunityTV Channel 189 (1080p) [Geo-blocked]" group-title="Other",CommunityTV Channel 189 (1080p) [Geo-blocked]
+https://reflect-tacm.cablecast.tv/live-3/live/live.m3u8
+#EXTINF:-1 tvg-name="Contra Costa TV [Geo-blocked]" group-title="Other",Contra Costa TV [Geo-blocked]
+https://reflect-contra-costa.cablecast.tv/live-7/live/live.m3u8
+#EXTINF:-1 tvg-name="D5 Punjabi" group-title="Other",D5 Punjabi
+https://d5.tv360.ca:3453/live/cd5live.m3u8
+#EXTINF:-1 tvg-name="Desi Holliwood" group-title="Other",Desi Holliwood
+https://cc-u6hadnoh0u6td.akamaized.net/v1/manifest/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-u6hadnoh0u6td/5ba0779e-63a9-4621-87ce-525e060419a0/1.m3u8
 #EXTINF:-1 tvg-name="Desi Play TV" group-title="Other",Desi Play TV
 https://epg.provider.plex.tv/library/parts/5e20b730f2f8d5003d739db7-634dddc8a319c6df243f521f.m3u8?X-Plex-Token=RzgvtzLKLMWEJWtrNSfc
+#EXTINF:-1 tvg-name="DESI TASHAN" tvg-logo="https://raw.githubusercontent.com/SweetBoy4141/iptv/main/logo/desi_tashan.jpg" group-title="Other",DESI TASHAN
+https://cloudcdn.in/livetv/DesiTashan/index.m3u8
+#EXTINF:-1 tvg-name="Designated Survivor (1080p) [Geo-blocked]" group-title="Other",Designated Survivor (1080p) [Geo-blocked]
+https://amg00353-amg00353c40-xumo-us-4839.playouts.now.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-name="DW" group-title="Other",DW
 https://jmp2.uk/sam-GB1300001RX.m3u8
+#EXTINF:-1 tvg-name="Fakat Marathi" group-title="Other",Fakat Marathi
+https://d1g8wgjurz8via.cloudfront.net/bpk-tv/Faktmarathi/default/faktmarathi-audio_208482_und=208000-video=2137600.m3u8
+#EXTINF:-1 tvg-name="Ghant Punjabi" group-title="Other",Ghant Punjabi
+https://amg00223-unisys-amg00223c3-lg-in-2050.playouts.now.amagi.tv/playlist/amg00223-sevencolorsbroadcastingprivatelimited-ghaintpunjab-lgin/playlist.m3u8
+#EXTINF:-1 tvg-name="Glendale TV (720p) [Geo-blocked]" group-title="Other",Glendale TV (720p) [Geo-blocked]
+https://reflect-gtv6-glendale.cablecast.tv/live-2/live/live.m3u8
+#EXTINF:-1 tvg-name="GLOBEL DESI" group-title="Other",GLOBEL DESI
+https://live.ottlive.co.in/globaldesi/globaldesi/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-name="GoTraveler (720p) [Geo-blocked]" group-title="Other",GoTraveler (720p) [Geo-blocked]
+https://amg09501-amg09501c1-klowdtv-us-2398.playouts.now.amagi.tv/playlist/amg09501-quester-gotraveler-klowdtvus/playlist.m3u8
+#EXTINF:-1 tvg-name="Hindi Hits" tvg-logo="https://raw.githubusercontent.com/SweetBoy4141/iptv/main/logo/hits.jpg" group-title="Other",Hindi Hits
+http://146.59.253.52:8080/hindihitshd/index.m3u8
+#EXTINF:-1 tvg-name="India Todat" group-title="Other",India Todat
+https://indiatodaylive.akamaized.net/hls/live/2014320-b/indiatoday/indiatodaylive/live_720p/chunks.m3u8
+#EXTINF:-1 tvg-name="Jus Hindi (1080p)" group-title="Other",Jus Hindi (1080p)
+http://103.154.3.101:5001/live/960.m3u8
+#EXTINF:-1 tvg-name="Jus Punjabi (1080p)" group-title="Other",Jus Punjabi (1080p)
+http://103.154.3.101:5001/live/959.m3u8
 #EXTINF:-1 tvg-name="Local Now Colorado Springs" group-title="Other",Local Now Colorado Springs
 https://epg.provider.plex.tv/library/parts/5e20b730f2f8d5003d739db7-62aa3052e038c5467eebbc47.m3u8?X-Plex-Token=RzgvtzLKLMWEJWtrNSfc
 #EXTINF:-1 tvg-name="location, location" tvg-id="620f6f9e36a49b000761f0d5" tvg-logo="https://images.pluto.tv/channels/620f6f9e36a49b000761f0d5/colorLogoPNG.png" tvg-chno="833" ,location" group-title="Other",location, location" tvg-id="620f6f9e36a49b000761f0d5" tvg-logo="https://images.pluto.tv/channels/620f6f9e36a49b000761f0d5/colorLogoPNG.png" tvg-chno="833" ,location
 https://jmp2.uk/plu-620f6f9e36a49b000761f0d5.m3u8
+#EXTINF:-1 tvg-name="Love Nature en Espanol (1080p) [Geo-blocked]" group-title="Other",Love Nature en Espanol (1080p) [Geo-blocked]
+https://amg01515-amg01515c17-xumo-us-2489.playouts.now.amagi.tv/bamus-lovenaturespanish-roku/playlist.m3u8
+#EXTINF:-1 tvg-name="NH Bollywood" group-title="Other",NH Bollywood
+https://nh-runntv-blygld.cdn.runn.tv/nhstdz/stream/blygld/manifest/2.m3u8
+#EXTINF:-1 tvg-name="OnTV4U (1080p) [Geo-blocked]" group-title="Other",OnTV4U (1080p) [Geo-blocked]
+https://stirr.b-cdn.net/stirr/playlist.m3u8
+#EXTINF:-1 tvg-name="PBS (1080p) [Geo-blocked]" group-title="Other",PBS (1080p) [Geo-blocked]
+https://pbs.lls.cdn.pbs.org/est/index.m3u8
+#EXTINF:-1 tvg-name="PBS KETS [Geo-blocked]" group-title="Other",PBS KETS [Geo-blocked]
+https://ketsdt.lls.pbs.org/out/v1/03c094dbd7874a4a8c3fe9fb10081bdb/index.m3u8
+#EXTINF:-1 tvg-name="PBS KMOS-TV (1080p) [Geo-blocked]" group-title="Other",PBS KMOS-TV (1080p) [Geo-blocked]
+https://hls-kmosdt.lls.cdn.pbs.org/hls/live/index.m3u8
+#EXTINF:-1 tvg-name="PBS KUON-TV (1080p) [Geo-blocked]" group-title="Other",PBS KUON-TV (1080p) [Geo-blocked]
+https://kuondt.lls.pbs.org/out/v1/91d8b5ffc5c1453c8a621508a07749a6/index.m3u8
+#EXTINF:-1 tvg-name="Punjabi Beats" group-title="Other",Punjabi Beats
+http://146.59.253.52:8080/punjabihitshd/index.m3u8
+#EXTINF:-1 tvg-name="PURE PUNJABI" group-title="Other",PURE PUNJABI
+http://livestream.unlimitedcdn.com/agm-pp/pure-punjabi/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-name="Retro TV (720p) [Geo-blocked]" group-title="Other",Retro TV (720p) [Geo-blocked]
+https://freecast-lukentvlive.vgcdn.net/out/v1/665e9f91614b43b0a0654e9317f1d9f3/index.m3u8
+#EXTINF:-1 tvg-name="Saga Haryanvi" group-title="Other",Saga Haryanvi
+https://amg00223-unisys-amg00223c4-lg-in-2049.playouts.now.amagi.tv/playlist/amg00223-sevencolorsbroadcastingprivatelimited-sagamusicharyanvi-lgin/playlist.m3u8
+#EXTINF:-1 tvg-name="Samsung Wildlife (720p) [Geo-blocked]" group-title="Other",Samsung Wildlife (720p) [Geo-blocked]
+https://pb-olm46bexcljjf.akamaized.net/Samsung_Wild_Life.m3u8
 #EXTINF:-1 tvg-name="She Wrote" tvg-id="6549337183595c000815ad05" tvg-logo="https://images.pluto.tv/channels/6549337183595c000815ad05/colorLogoPNG.png" tvg-chno="690" ,She Wrote" group-title="Other",She Wrote" tvg-id="6549337183595c000815ad05" tvg-logo="https://images.pluto.tv/channels/6549337183595c000815ad05/colorLogoPNG.png" tvg-chno="690" ,She Wrote
 https://jmp2.uk/plu-6549337183595c000815ad05.m3u8
 #EXTINF:-1 tvg-name="Sister" tvg-id="6695294632e25300084bb61b" tvg-logo="https://images.pluto.tv/channels/6695294632e25300084bb61b/colorLogoPNG.png" tvg-chno="306" ,Sister" group-title="Other",Sister" tvg-id="6695294632e25300084bb61b" tvg-logo="https://images.pluto.tv/channels/6695294632e25300084bb61b/colorLogoPNG.png" tvg-chno="306" ,Sister
 https://jmp2.uk/plu-6695294632e25300084bb61b.m3u8
+#EXTINF:-1 tvg-name="Sony KAL Hindi (1080p)" group-title="Other",Sony KAL Hindi (1080p)
+https://wurlsonypicturestv.global.transmit.live/hls/68deeb1c0238cda82df543dd/v1/spt_sonykal_1/lg_us/latest/main/hls/playlist.m3u8
 #EXTINF:-1 tvg-name="Spark TV Light & Love" group-title="Other",Spark TV Light & Love
 https://epg.provider.plex.tv/library/parts/5e20b730f2f8d5003d739db7-614a11bfa6f839154ee3306d.m3u8?X-Plex-Token=RzgvtzLKLMWEJWtrNSfc
 #EXTINF:-1 tvg-name="Spark TV Luz y Amor" group-title="Other",Spark TV Luz y Amor
 https://epg.provider.plex.tv/library/parts/5e20b730f2f8d5003d739db7-661d6a8db518ef381a85ed60.m3u8?X-Plex-Token=RzgvtzLKLMWEJWtrNSfc
+#EXTINF:-1 tvg-name="The Doctors (720p) [Geo-blocked]" group-title="Other",The Doctors (720p) [Geo-blocked]
+https://lukentvlive.vgcdn.net/v1/master/cef183924f24adfa3d5d7601c3a17769082c0c2b/Doctors/index.m3u8
+#EXTINF:-1 tvg-name="The Hill TV (1080p) [Geo-blocked]" group-title="Other",The Hill TV (1080p) [Geo-blocked]
+https://amg01312-cw-amg01312c15-firetv-us-3444.playouts.now.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="The Walk TV" group-title="Other",The Walk TV
+https://wggstv16.ddns.net:9953/hls/walk1.m3u8
 #EXTINF:-1 tvg-name="Thikrayat TV (1080p) [Geo-blocked]" group-title="Other",Thikrayat TV (1080p) [Geo-blocked]
 https://shd-gcp-live.edgenextcdn.net/live/bitmovin-thikrayat/8cfa8fe0c96275735745b89c683b27e3/index.m3u8
+#EXTINF:-1 tvg-name="Tribeca Channel (1080p) [Geo-blocked]" group-title="Other",Tribeca Channel (1080p) [Geo-blocked]
+https://amg02507-giantpictures-tribeca-xumo-ey2b7.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="True Crime Network (1080p) [Geo-blocked]" group-title="Other",True Crime Network (1080p) [Geo-blocked]
+https://amg00979-amg00979c1-firetv-us-3622.playouts.now.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-name="TV Punjab (720p) [Geo-blocked]" group-title="Other",TV Punjab (720p) [Geo-blocked]
 https://932y483pdjv8-hls-live.5centscdn.com/stream/deb10bae362f810630ec3abedcae5894.sdp/playlist.m3u8
+#EXTINF:-1 tvg-name="TVE Internacional America HD (1080p) [Geo-blocked]" group-title="Other",TVE Internacional America HD (1080p) [Geo-blocked]
+https://rtvelivestream-rtveplayplus.rtve.es/rtvesec/int/tvei_ame_main_1080.m3u8
 #EXTINF:-1 tvg-name="UK | Talk TV" group-title="Other",UK | Talk TV
 https://live-talktv-ssai.simplestreamcdn.com/v1/master/774d979dd66704abea7c5b62cb34c6815fda0d35/talktv-live/index.m3u8
+#EXTINF:-1 tvg-name="UniMas KFTR-DT [Geo-blocked]" group-title="Other",UniMas KFTR-DT [Geo-blocked]
+https://streaming-live-fcdn.api.prd.univisionnow.com/kftr/kftr.isml/hls/kftr.m3u8
+#EXTINF:-1 tvg-name="UniMas WFUT-DT (720p) [Geo-blocked]" group-title="Other",UniMas WFUT-DT (720p) [Geo-blocked]
+https://streaming-live-fcdn.api.prd.univisionnow.com/wfut/wfut.isml/hls/wfut.m3u8
+#EXTINF:-1 tvg-name="Wired2FishTV (720p) [Geo-blocked]" group-title="Other",Wired2FishTV (720p) [Geo-blocked]
+https://wire2fish-klowdtv.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-name="Zee BollyWorld" group-title="Other",Zee BollyWorld
 https://epg.provider.plex.tv/library/parts/5e20b730f2f8d5003d739db7-678287e75fe5e4eb1e030c65.m3u8?X-Plex-Token=RzgvtzLKLMWEJWtrNSfc
 #EXTINF:-1 tvg-name="Zee One" group-title="Other",Zee One
 https://jmp2.uk/sam-GBBD1100013BJ.m3u8
 #EXTINF:-1 tvg-name="Peace TV Urdu (1080p)" group-title="Religious",Peace TV Urdu (1080p)
 https://dzkyvlfyge.erbvr.com/PeaceTvUrdu/index.m3u8
+#EXTINF:-1 tvg-name="ABN Urdu (540p)" group-title="Religious",ABN Urdu (540p)
+https://mediaserver.abnvideos.com/streams/abnurdu.m3u8
+#EXTINF:-1 tvg-name="EWTN (United States) (720p) [Geo-blocked]" group-title="Religious",EWTN (United States) (720p) [Geo-blocked]
+https://cdn3.wowza.com/1/QjRzVXJtVml5SUVx/WGJRSWxz/hls/live/playlist.m3u8
+#EXTINF:-1 tvg-name="EWTN (United States) Spanish (720p) [Geo-blocked]" group-title="Religious",EWTN (United States) Spanish (720p) [Geo-blocked]
+https://cdn3.wowza.com/1/TUI5dU5ucnUxdGFD/ZFlVeGRl/hls/live/playlist.m3u8
 #EXTINF:-1 tvg-name="Muslim Network TV" group-title="Religious",Muslim Network TV
 https://afghantv.app/hls2/muslimnetwork/index.m3u8
 #EXTINF:-1 tvg-name="Desi Plus" group-title="Sports",Desi Plus
 http://cdn2.live247stream.com/desiplus/tv/playlist.m3u8
 #EXTINF:-1 tvg-name="Sony Ten 5" group-title="Sports",Sony Ten 5
 https://stream.ottplus.live/live/ten_5_hd_abr/live/ten_5_hd_720/index.m3u8
+#EXTINF:-1 tvg-name="Billiard TV (1080p) [Geo-blocked]" group-title="Sports",Billiard TV (1080p) [Geo-blocked]
+https://pb-wm04vonaerv0k.akamaized.net/billi.m3u8
 #EXTINF:-1 tvg-name="Colorado Rockies @ Washington Nationals (06/16 6:46 PM ET) HD" group-title="Sports",Colorado Rockies @ Washington Nationals (06/16 6:46 PM ET) HD
 https://tvpass.org/live/mlb-01/hd
+#EXTINF:-1 tvg-name="F1 Channel (1080p) [Geo-blocked]" group-title="Sports",F1 Channel (1080p) [Geo-blocked]
+https://amg12058-c15studio-amg12058c1-lg-us-5787.playouts.now.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="REV'N Action (720p) [Geo-blocked]" group-title="Sports",REV'N Action (720p) [Geo-blocked]
+https://freecast-lukentvlive.vgcdn.net/out/v1/a4f31f297fc5440f814bd2cffd77e689/index.m3u8

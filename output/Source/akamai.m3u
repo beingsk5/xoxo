@@ -1,7 +1,39 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
 #EXTINF:-1 tvg-name="zee tv" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Zee_TV_Logo_2025.svg/960px-Zee_TV_Logo_2025.svg.png" group-title="Entertainment",zee tv
 https://service-pkgabcnews.akamaized.net/opp/hls/abcnews/2025/10/251017_gma_gutman_zee_alaska_0707_,500,800,1200,1800,2500,3200,4500,.mp4.csmil/playlist.m3u8
+#EXTINF:-1 tvg-name="Epic" tvg-logo="https://raw.githubusercontent.com/SweetBoy4141/iptv/main/logo/Epic.jpg" group-title="Entertainment",Epic
+https://epiconvh.akamaized.net/live/epic/master_480.m3u8
+#EXTINF:-1 tvg-name="group-title="Marathi",Zee 24 Taas" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_E24/images/LOGO_HD/image.png" group-title="Entertainment",group-title="Marathi",Zee 24 Taas
+http://z5ams.akamaized.net/24taas/tracks-v1a1/index.m3u8
+#EXTINF:-1 tvg-name="group-title="Marathi",Zee Marathi" tvg-logo="https://i.imgur.com/vv9ysD3.png" group-title="Entertainment",group-title="Marathi",Zee Marathi
+http://z5ams.akamaized.net/zmarathisd/tracks-v1a1/index.m3u8
+#EXTINF:-1 tvg-name="group-title="Marathi",DD Sahyadri" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Sahyadri.png" group-title="General",group-title="Marathi",DD Sahyadri
+http://z5ams.akamaized.net/ddsahyadri/tracks-v1a1/index.m3u8
+#EXTINF:-1 tvg-name="FilmRise Forensic Files (720p) [Geo-blocked]" group-title="Movies",FilmRise Forensic Files (720p) [Geo-blocked]
+https://pb-x9qsxrudiq9d2.akamaized.net/webvtt/v1/18584c3f3a2a4df8/88886014/master.m3u8
+#EXTINF:-1 tvg-name="group-title="Marathi",Zee Talkies" tvg-logo="https://i.imgur.com/GowDXFz.png" group-title="Movies",group-title="Marathi",Zee Talkies
+http://z5ams.akamaized.net/zeetalkies/tracks-v1a1/index.m3u8
 #EXTINF:-1 tvg-name="brk news" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/brk-news.png" group-title="News",brk news
 https://prodamdnewsencoding.akamaized.net/NBC_News_Digital/now_brk_election_special_261006/1/abs/index.m3u8
+#EXTINF:-1 tvg-name="ABC News Australia" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/ABC_News.png" group-title="News",ABC News Australia
+https://abc-news-dmd-streams-1.akamaized.net/out/v1/701126012d044971b3fa89406a440133/index.m3u8
+#EXTINF:-1 tvg-name="group-title="Marathi",News 18 Lokmat" group-title="News",group-title="Marathi",News 18 Lokmat
+http://ibn_lokmat_hls-lh.akamaihd.net/i/ibn_lokmat_hls_n_1@178974/index_5.m3u8
 #EXTINF:-1 tvg-name="etv hd" group-title="Other",etv hd
 https://cc-uyh1ow5zouoio.akamaized.net/WWBI/Amagi/ETV_Josh_IN/playlist.m3u8
+#EXTINF:-1 tvg-name="Animation+ (1080p) [Geo-blocked]" group-title="Other",Animation+ (1080p) [Geo-blocked]
+https://pb-ioe9d0fpkd6pp.akamaized.net/playlist.m3u8
+#EXTINF:-1 tvg-name="Clarity 4K (2160p) [Geo-blocked]" group-title="Other",Clarity 4K (2160p) [Geo-blocked]
+https://pb-qyrvophnifz47.akamaized.net/Clarity_4K.m3u8
+#EXTINF:-1 tvg-name="Desi Holliwood" group-title="Other",Desi Holliwood
+https://cc-u6hadnoh0u6td.akamaized.net/v1/manifest/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-u6hadnoh0u6td/5ba0779e-63a9-4621-87ce-525e060419a0/1.m3u8
+#EXTINF:-1 tvg-name="India Todat" group-title="Other",India Todat
+https://indiatodaylive.akamaized.net/hls/live/2014320-b/indiatoday/indiatodaylive/live_720p/chunks.m3u8
+#EXTINF:-1 tvg-name="Samsung Wildlife (720p) [Geo-blocked]" group-title="Other",Samsung Wildlife (720p) [Geo-blocked]
+https://pb-olm46bexcljjf.akamaized.net/Samsung_Wild_Life.m3u8
+#EXTINF:-1 tvg-name="goodnews tv" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_GOODNEWS_TV/images/LOGO_HD/image.png" group-title="Religious",goodnews tv
+https://prodamdnewsencoding.akamaized.net/NBC_News_Digital/nn_tla_GoodNews_260730/2/abs/index.m3u8
+#EXTINF:-1 tvg-name="Astha Tamil" tvg-logo="https://i.imgur.com/YQK9ewf.png" group-title="Religious",Astha Tamil
+https://aasthaott.akamaized.net/110923/smil:aasthatamil.smil/chunklist_b1928000.m3u8
+#EXTINF:-1 tvg-name="Billiard TV (1080p) [Geo-blocked]" group-title="Sports",Billiard TV (1080p) [Geo-blocked]
+https://pb-wm04vonaerv0k.akamaized.net/billi.m3u8

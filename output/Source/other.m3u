@@ -1,31 +1,83 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
+#EXTINF:-1 tvg-name="Discovery Turbo (720p)" tvg-logo="https://dtil.tmsimg.com/assets/s159108_ld_h15_aa.png?lock=720x540" group-title="Auto",Discovery Turbo (720p)
+http://41.205.93.154/ESPNNEWS/index.m3u8
+#EXTINF:-1 tvg-name="Anmol Tv" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/AnmolTV_Transparent_6e1b4782-0685-4ccd-bac0-436a0c0ea947.png" group-title="Entertainment",Anmol Tv
+http://103.175.73.12:8080/live/256/master.m3u8
+#EXTINF:-1 tvg-name="Big Magic" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG002YJ850.png?lock=720x540" group-title="Entertainment",Big Magic
+http://103.175.73.12:8080/live/13/13_0.m3u8
 #EXTINF:-1 tvg-name="Discovery Channel" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG002E9L1W.png?lock=720x540" group-title="Entertainment",Discovery Channel
 http://143.244.60.30/Discovery_Channel/index.m3u8
-#EXTINF:-1 tvg-name="ETV Telugu HD" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/ETV%20HD.png" group-title="Entertainment",ETV Telugu HD
-https://mhdtv.co.in/jio/app/webapi.php?action=direct_play&c=ETV_HD&e=.m3u8
+#EXTINF:-1 tvg-name="Gtc Punjabi Tv" tvg-logo="https://media.thegtcnetwork.com/uploads/gtc-pujabin-s.jpg" group-title="Entertainment",Gtc Punjabi Tv
+https://gtc.ottlive.co.in/gtcpunjabi/tracks-v4a1/mono.m3u8
 #EXTINF:-1 tvg-name="Mango (576p)" tvg-logo="https://i.imgur.com/neZm4CY.png" group-title="Entertainment",Mango (576p)
 https://stmv6.voxtvhd.com.br/cinehindi/cinehindi/playlist.m3u8
-#EXTINF:-1 tvg-name="MTV Live" tvg-logo="https://img10.hotstar.com/image/upload/sources/r1/cms/prod/8633/1786020488633-h.jpg" group-title="Entertainment",MTV Live
-http://143.244.60.30/MTV_LIVE/index.m3u8
+#EXTINF:-1 tvg-name="MTV Live (720p)" tvg-logo="https://img10.hotstar.com/image/upload/sources/r1/cms/prod/8633/1786020488633-h.jpg" group-title="Entertainment",MTV Live (720p)
+http://23.237.104.106:8080/USA_MTV_LIVE/index.m3u8
+#EXTINF:-1 tvg-name="The Q Tv" tvg-logo="https://www.theq.tv/wp-content/uploads/2023/10/The-Q-new-Logo.png" group-title="Entertainment",The Q Tv
+http://103.175.73.12:8080/live/25/25_0.m3u8
+#EXTINF:-1 tvg-name="KidOO (1080p) [Geo-blocked]" group-title="Kids",KidOO (1080p) [Geo-blocked]
+http://15.204.246.24:8080/KidooHD/index.m3u8
 #EXTINF:-1 tvg-name="NICK" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/6807/1784039246807-h.jpg" group-title="Kids",NICK
 https://drewski2423-dproxy.hf.space/watch/aHR0cHM6Ly93aW5kbmV3Lm5ld2tzby5ydS93aW5kL3ByZW1pdW0zMzAvbW9uby5tM3U4.m3u8
 #EXTINF:-1 tvg-name="NICK JR" tvg-logo="https://img10.hotstar.com/image/upload/sources/r1/cms/prod/1730/1785252911730-h.jpg" group-title="Kids",NICK JR
 https://drewski2423-dproxy.hf.space/watch/aHR0cHM6Ly93aW5kbmV3Lm5ld2tzby5ydS93aW5kL3ByZW1pdW0zMjkvbW9uby5tM3U4.m3u8
 #EXTINF:-1 tvg-name="TLC" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/TLC%20HD.png" group-title="Lifestyle",TLC
 http://143.244.60.30/TLC/index.m3u8
+#EXTINF:-1 tvg-name="Zee Anmol Cinema 2" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/c/c8/Zee_Anmol_Cinema_2_logo.png" group-title="Movies",Zee Anmol Cinema 2
+http://103.175.73.12:8080/live/257/master.m3u8
 #EXTINF:-1 tvg-name="Zee Cinemalu HD" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022HVX3.png?lock=720x540" group-title="Movies",Zee Cinemalu HD
 https://mhdtv.co.in/jio/app/webapi.php?action=direct_play&c=Zee_Cinemalu&e=.m3u8
 #EXTINF:-1 tvg-name="7" tvg-logo="https://i.imgur.com/zDiIhdN.png" group-title="Music",7
 http://tvhe.neez.id.au/stream/channelid/1539335094?profile=pass
+#EXTINF:-1 tvg-name="Dhoom Music Bangla" tvg-logo="https://dtil.tmsimg.com/assets/s142882_ld_h15_aa.png?lock=720x540" group-title="Music",Dhoom Music Bangla
+http://103.175.73.12:8080/live/378/master.m3u8
 #EXTINF:-1 tvg-name="i news" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e6/Janasri_News_Channel_Logo.jpg" group-title="News",i news
 https://hlsvod.dw.com/i/vps/webvideos/ENG/2026/NEWS/NEWSENG260924_Vienna_Vert_Dirty_11SMV_,AVC_270x480,AVC_360x640,AVC_540x960,AVC_720x1280,AVC_1080x1920,.mp4.csmil/master.m3u8
 #EXTINF:-1 tvg-name="BBC WORLD NEWS" group-title="News",BBC WORLD NEWS
 http://143.244.60.30/BBC_WORLD_NEWS/index.m3u8
 #EXTINF:-1 tvg-name="CNN INTERNATIONAL" group-title="News",CNN INTERNATIONAL
 http://143.244.60.30/CNN_INTERNATIONAL/index.m3u8
+#EXTINF:-1 tvg-name="Digital Once (Dominican Republic)" group-title="News",Digital Once (Dominican Republic)
+https://live4.telemicro.com.do/digital15cast_1080p/playlist.m3u8
+#EXTINF:-1 tvg-name="News 18 India" tvg-logo="https://raw.githubusercontent.com/SweetBoy4141/iptv/main/logo/News_18_India.jpg" group-title="News",News 18 India
+https://nw18live.cdn.jio.com/bpk-tv/News18_India_NW18_MOB/output01/News18_India_NW18_MOB-audio_98835_eng=98800-video=3724000.m3u8
 #EXTINF:-1 tvg-name="News Leader (576p)" tvg-logo="https://img-cdn.publive.online/fit-in/360x280/filters:format(webp)/newsleaderlive/media/agency_attachments/2026/04/15/2026-04-15t100517555z-news-leader-640-480-1-sarvajeet-singh-chauhan-2026-04-15-15-35-17.png" group-title="News",News Leader (576p)
 https://stream.ottlive.co.in/newsleader/index.m3u8
+#EXTINF:-1 tvg-name="News Nation" tvg-logo="https://dtil.tmsimg.com/assets/s143596_ld_h15_aa.png?lock=720x540" group-title="News",News Nation
+http://206.212.244.63/129/index.m3u8
+#EXTINF:-1 tvg-name="News x" group-title="News",News x
+https://indianews.ottlive.co.in/newsx/newsx/tracks-v1/index.fmp4.m3u8
+#EXTINF:-1 tvg-name="Public First" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Public_First.png" group-title="News",Public First
+http://103.175.73.12:8080/live/237/master.m3u8
+#EXTINF:-1 tvg-name="Telemicro (Dominican Republic)" group-title="News",Telemicro (Dominican Republic)
+https://live4.telemicro.com.do/telemicrocast_1080p/playlist.m3u8
 #EXTINF:-1 tvg-name="dw tv" group-title="Other",dw tv
 https://hlsvod.dw.com/i/vps/webvideos/ENG/2026/SHIF/SHIFENG261005_AI-loans_DIRTY_01SMV_,AVC_270x480,AVC_360x640,AVC_540x960,AVC_720x1280,AVC_1080x1920,.mp4.csmil/master.m3u8
+#EXTINF:-1 tvg-name="CNBC (720p) [Geo-blocked]" group-title="Other",CNBC (720p) [Geo-blocked]
+http://41.205.93.154/CNBC/index.m3u8
+#EXTINF:-1 tvg-name="Cnbc Tv 18" group-title="Other",Cnbc Tv 18
+https://nw18live.cdn.jio.com/bpk-tv/CNBC_TV18_NW18_MOB/output01/CNBC_TV18_NW18_MOB-audio_98834_eng=98800-video=3766800.m3u8
+#EXTINF:-1 tvg-name="GLOBEL DESI" group-title="Other",GLOBEL DESI
+https://live.ottlive.co.in/globaldesi/globaldesi/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-name="Hindi Hits" tvg-logo="https://raw.githubusercontent.com/SweetBoy4141/iptv/main/logo/hits.jpg" group-title="Other",Hindi Hits
+http://146.59.253.52:8080/hindihitshd/index.m3u8
+#EXTINF:-1 tvg-name="Jus Hindi (1080p)" group-title="Other",Jus Hindi (1080p)
+http://103.154.3.101:5001/live/960.m3u8
+#EXTINF:-1 tvg-name="Jus Punjabi (1080p)" group-title="Other",Jus Punjabi (1080p)
+http://103.154.3.101:5001/live/959.m3u8
+#EXTINF:-1 tvg-name="PBS (1080p) [Geo-blocked]" group-title="Other",PBS (1080p) [Geo-blocked]
+https://pbs.lls.cdn.pbs.org/est/index.m3u8
+#EXTINF:-1 tvg-name="PBS KETS [Geo-blocked]" group-title="Other",PBS KETS [Geo-blocked]
+https://ketsdt.lls.pbs.org/out/v1/03c094dbd7874a4a8c3fe9fb10081bdb/index.m3u8
+#EXTINF:-1 tvg-name="PBS KMOS-TV (1080p) [Geo-blocked]" group-title="Other",PBS KMOS-TV (1080p) [Geo-blocked]
+https://hls-kmosdt.lls.cdn.pbs.org/hls/live/index.m3u8
+#EXTINF:-1 tvg-name="PBS KUON-TV (1080p) [Geo-blocked]" group-title="Other",PBS KUON-TV (1080p) [Geo-blocked]
+https://kuondt.lls.pbs.org/out/v1/91d8b5ffc5c1453c8a621508a07749a6/index.m3u8
+#EXTINF:-1 tvg-name="Punjabi Beats" group-title="Other",Punjabi Beats
+http://146.59.253.52:8080/punjabihitshd/index.m3u8
+#EXTINF:-1 tvg-name="We TV (1080p)" group-title="Other",We TV (1080p)
+http://23.237.104.106:8080/USA_WE_TV/index.m3u8
+#EXTINF:-1 tvg-name="GOD TV" group-title="Religious",GOD TV
+https://ott.god.tv/us/master.m3u8
 #EXTINF:-1 tvg-name="Discovery Science" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Discovery%20Science.png" group-title="Science",Discovery Science
 http://143.244.60.30/Discovery_Science/index.m3u8
