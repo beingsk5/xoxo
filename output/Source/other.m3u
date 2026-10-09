@@ -11,10 +11,16 @@ http://143.244.60.30/Discovery_Channel/index.m3u8
 https://gtc.ottlive.co.in/gtcpunjabi/tracks-v4a1/mono.m3u8
 #EXTINF:-1 tvg-name="Mango (576p)" tvg-logo="https://i.imgur.com/neZm4CY.png" group-title="Entertainment",Mango (576p)
 https://stmv6.voxtvhd.com.br/cinehindi/cinehindi/playlist.m3u8
+#EXTINF:-1 tvg-name="Mega" tvg-logo="https://dtil.tmsimg.com/assets/s143425_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Mega
+https://unlimited2-cl-isp.dps.live/mega/mega.smil/playlist.m3u8
 #EXTINF:-1 tvg-name="MTV Live (720p)" tvg-logo="https://img10.hotstar.com/image/upload/sources/r1/cms/prod/8633/1786020488633-h.jpg" group-title="Entertainment",MTV Live (720p)
 http://23.237.104.106:8080/USA_MTV_LIVE/index.m3u8
 #EXTINF:-1 tvg-name="The Q Tv" tvg-logo="https://www.theq.tv/wp-content/uploads/2023/10/The-Q-new-Logo.png" group-title="Entertainment",The Q Tv
 http://103.175.73.12:8080/live/25/25_0.m3u8
+#EXTINF:-1 tvg-name="Disney India SD 6" group-title="Kids",Disney India SD 6
+https://nayeemparvez.my.id/stbx/playlist.m3u8?id=9b4a905dbc5d96657|Referer=https://xnxx.com/
+#EXTINF:-1 tvg-name="Hungama Kids 6" group-title="Kids",Hungama Kids 6
+http://xtv.ooo:8080/live/927382370/837382809/150480.m3u8
 #EXTINF:-1 tvg-name="KidOO (1080p) [Geo-blocked]" group-title="Kids",KidOO (1080p) [Geo-blocked]
 http://15.204.246.24:8080/KidooHD/index.m3u8
 #EXTINF:-1 tvg-name="NICK" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/6807/1784039246807-h.jpg" group-title="Kids",NICK
@@ -37,6 +43,8 @@ https://hlsvod.dw.com/i/vps/webvideos/ENG/2026/NEWS/NEWSENG260924_Vienna_Vert_Di
 http://143.244.60.30/BBC_WORLD_NEWS/index.m3u8
 #EXTINF:-1 tvg-name="CNN INTERNATIONAL" group-title="News",CNN INTERNATIONAL
 http://143.244.60.30/CNN_INTERNATIONAL/index.m3u8
+#EXTINF:-1 tvg-name="CNN-News18" group-title="News",CNN-News18
+https://nw18live.cdn.jio.com/bpk-tv/CNN_News18_NW18_MOB/output01/index.m3u8
 #EXTINF:-1 tvg-name="Digital Once (Dominican Republic)" group-title="News",Digital Once (Dominican Republic)
 https://live4.telemicro.com.do/digital15cast_1080p/playlist.m3u8
 #EXTINF:-1 tvg-name="News 18 India" tvg-logo="https://raw.githubusercontent.com/SweetBoy4141/iptv/main/logo/News_18_India.jpg" group-title="News",News 18 India
@@ -47,16 +55,16 @@ https://stream.ottlive.co.in/newsleader/index.m3u8
 http://206.212.244.63/129/index.m3u8
 #EXTINF:-1 tvg-name="News x" group-title="News",News x
 https://indianews.ottlive.co.in/newsx/newsx/tracks-v1/index.fmp4.m3u8
-#EXTINF:-1 tvg-name="Public First" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Public_First.png" group-title="News",Public First
-http://103.175.73.12:8080/live/237/master.m3u8
+#EXTINF:-1 tvg-name="News18 India Ⓨ" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/News18%20India.png" group-title="News",News18 India Ⓨ
+https://nw18live.cdn.jio.com/bpk-tv/News18_India_NW18_MOB/output01/index.m3u8
 #EXTINF:-1 tvg-name="Telemicro (Dominican Republic)" group-title="News",Telemicro (Dominican Republic)
 https://live4.telemicro.com.do/telemicrocast_1080p/playlist.m3u8
 #EXTINF:-1 tvg-name="dw tv" group-title="Other",dw tv
 https://hlsvod.dw.com/i/vps/webvideos/ENG/2026/SHIF/SHIFENG261005_AI-loans_DIRTY_01SMV_,AVC_270x480,AVC_360x640,AVC_540x960,AVC_720x1280,AVC_1080x1920,.mp4.csmil/master.m3u8
+#EXTINF:-1 tvg-name="10 HD" group-title="Other",10 HD
+https://i.mjh.nz/.r/10-nsw.m3u8
 #EXTINF:-1 tvg-name="CNBC (720p) [Geo-blocked]" group-title="Other",CNBC (720p) [Geo-blocked]
 http://41.205.93.154/CNBC/index.m3u8
-#EXTINF:-1 tvg-name="Cnbc Tv 18" group-title="Other",Cnbc Tv 18
-https://nw18live.cdn.jio.com/bpk-tv/CNBC_TV18_NW18_MOB/output01/CNBC_TV18_NW18_MOB-audio_98834_eng=98800-video=3766800.m3u8
 #EXTINF:-1 tvg-name="GLOBEL DESI" group-title="Other",GLOBEL DESI
 https://live.ottlive.co.in/globaldesi/globaldesi/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-name="Hindi Hits" tvg-logo="https://raw.githubusercontent.com/SweetBoy4141/iptv/main/logo/hits.jpg" group-title="Other",Hindi Hits
@@ -75,6 +83,8 @@ https://hls-kmosdt.lls.cdn.pbs.org/hls/live/index.m3u8
 https://kuondt.lls.pbs.org/out/v1/91d8b5ffc5c1453c8a621508a07749a6/index.m3u8
 #EXTINF:-1 tvg-name="Punjabi Beats" group-title="Other",Punjabi Beats
 http://146.59.253.52:8080/punjabihitshd/index.m3u8
+#EXTINF:-1 tvg-name="Seven" group-title="Other",Seven
+https://i.mjh.nz/.r/seven-syd.m3u8
 #EXTINF:-1 tvg-name="We TV (1080p)" group-title="Other",We TV (1080p)
 http://23.237.104.106:8080/USA_WE_TV/index.m3u8
 #EXTINF:-1 tvg-name="GOD TV" group-title="Religious",GOD TV
