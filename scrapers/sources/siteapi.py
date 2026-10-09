@@ -12,12 +12,15 @@ endpoints with the page as Referer -> harvest stream URLs from every response.
 Four HTTP round trips per site instead of a headless browser with scroll,
 cookie-banner and play-click heuristics.
 
-Bounded by construction: N bundles, M endpoints, K bytes each.
+Bounded by construction: N bundles, M endpoints, K bytes each, plus an
+optional wall-clock deadline (`mine(..., deadline=)`) so a caller running
+inside a worker pool can cap how long the walk may take.
 """
 from __future__ import annotations
 
 import logging
 import re
+import time
 from typing import Dict, List, Optional, Set
 from urllib.parse import urljoin, urlparse
 
@@ -126,11 +129,14 @@ def _endpoints_in(text: str, base_url: str) -> List[str]:
     return out
 
 
-def mine(page_url: str, html: Optional[str] = None) -> Dict[str, str]:
+def mine(page_url: str, html: Optional[str] = None,
+         deadline: float = 0.0) -> Dict[str, str]:
     """Harvest stream URLs from a page + its JS bundles + their API calls.
 
     Returns {stream_url: referer} so the follow-up probe can send the origin
     the player page would have sent (hotlink-protected CDNs require it).
+    `deadline` is an absolute time.monotonic() cut-off: once passed, the
+    bundle and endpoint walks stop — mining is best-effort, never a stall.
     Never raises.
     """
     out: Dict[str, str] = {}
@@ -138,6 +144,8 @@ def mine(page_url: str, html: Optional[str] = None) -> Dict[str, str]:
         return out
 
     if html is None:
+        if deadline and time.monotonic() >= deadline:
+            return out
         resp = httpclient.fetch(
             page_url, accept="text/html,application/xhtml+xml;q=0.9,*/*;q=0.8",
             timeout=BUNDLE_TIMEOUT, max_bytes=MAX_PAGE_BYTES,
@@ -157,6 +165,8 @@ def mine(page_url: str, html: Optional[str] = None) -> Dict[str, str]:
     endpoints: List[str] = []
     seen_ep: Set[str] = set()
     for src in _script_srcs(html, page_url)[:MAX_BUNDLES]:
+        if deadline and time.monotonic() >= deadline:
+            break
         resp = httpclient.fetch(src, accept="*/*", timeout=BUNDLE_TIMEOUT,
                                 max_bytes=MAX_BUNDLE_BYTES, referer=page_url)
         if resp is None:
@@ -170,6 +180,8 @@ def mine(page_url: str, html: Optional[str] = None) -> Dict[str, str]:
 
     # (c) call the endpoints with the page as Referer
     for ep in endpoints[:MAX_ENDPOINTS]:
+        if deadline and time.monotonic() >= deadline:
+            break
         resp = httpclient.fetch(ep, accept="application/json,text/plain,*/*",
                                 timeout=BUNDLE_TIMEOUT, max_bytes=1_500_000,
                                 referer=page_url)

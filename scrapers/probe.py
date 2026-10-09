@@ -40,7 +40,7 @@ from urllib.parse import urljoin, urlparse
 
 from scrapers import flaresolverr
 from scrapers import httpclient
-from scrapers.urls import is_blocked_domain, is_non_media_url
+from scrapers.urls import is_blocked_domain, is_non_media_url, is_probe_worthy
 
 log = logging.getLogger("scraper")
 
@@ -410,10 +410,17 @@ def probe_stream(
 
     # ── Bot challenge (Cloudflare etc.) ────────────────────────
     # Solve it via FlareSolverr when configured; otherwise mark the probe
-    # retryable-blocked so it is never cached as dead.
+    # retryable-blocked so it is never cached as dead. A solve costs up to
+    # ~45s of headless browsing, so it is only spent on URLs worth keeping:
+    # a challenge on a dictionary page or forum thread can never yield a
+    # stream and is cached as plain dead instead.
     if flaresolverr.is_challenge(text, resp.status_code):
-        solved = flaresolverr.fetch(url) if flaresolverr.enabled() else None
+        worthy = is_probe_worthy(url)
+        solved = (flaresolverr.fetch(url)
+                  if worthy and flaresolverr.enabled() else None)
         if solved is None:
+            if not worthy:
+                return Probe(kind="dead", note="challenge_junk")
             return Probe(kind="dead", blocked=True, note="challenge",
                          sample=text[:2000])
         _status, text, final_url = solved

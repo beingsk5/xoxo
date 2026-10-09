@@ -38,6 +38,7 @@ import random
 import re
 import sys
 import time
+from collections import deque
 from concurrent.futures import ThreadPoolExecutor, as_completed, FIRST_COMPLETED, wait
 from pathlib import Path
 from threading import Lock
@@ -60,6 +61,7 @@ from scrapers.sources import github as github_source
 from scrapers.sources import grepapp as grepapp_source
 from scrapers.sources import iptvorg as iptvorg_source
 from scrapers.sources import siteapi as siteapi_source
+from scrapers.urls import is_probe_worthy, probe_priority
 
 # Repo root on sys.path so channel_lists.py is importable as a top-level module
 # when this package is launched via `python -m scrapers.language`.
@@ -74,13 +76,15 @@ BASE_DIR = Path(__file__).parent.parent
 CHANNEL_LISTS_DIR = BASE_DIR / "channel_lists"
 STATE_DIR = BASE_DIR / "state"           # store.db + per-language export files
 SEARCH_WORKERS = 10          # parallel query workers (engines pooled on top)
-VALIDATE_WORKERS = 25        # parallel URL probe workers
+VALIDATE_WORKERS = int(os.environ.get("VALIDATE_WORKERS", "25"))  # parallel URL probe workers
 CRAWL_WORKERS = 8            # parallel official-site crawlers
 RESUME_EVERY = 100           # persist resume state every N completed items
 SITES_CAP = int(os.environ.get("SITES_CAP", "40"))   # max official websites crawled per run
 URLS_PER_SITE = 300          # max URLs collected from a single site
 HARVEST_CAP = 3000           # max stream URLs mined from pages
+HARVEST_BACKLOG_MAX = int(os.environ.get("HARVEST_BACKLOG_MAX", "20000"))  # stop mining pages once this many URLs await probing
 HARVEST_PER_PAGE = 40        # max stream URLs kept per page
+MINE_BUDGET = float(os.environ.get("MINE_BUDGET", "20"))  # seconds of deep JS/iframe mining per page
 EXTRACT_CAP = int(os.environ.get("EXTRACT_CAP", "40"))   # yt-dlp pages / run
 RESCORE_CAP = int(os.environ.get("RESCORE_CAP", "400"))  # playlist children probed/run
 SITEAPI_MIN_LINKS = 3        # mine a page's JS only when static harvest is thin
@@ -275,6 +279,15 @@ class LanguageScraper:
         resume = ResumeState.from_dict(get_cache().load_resume(self.language))
         if self.fresh:
             log.info(f"[{self.language}] fresh mode: ignoring prior stored state")
+        # Prefilter the stored backlog: URLs that cannot lead to a stream
+        # (articles, forum threads, dictionary entries, ...) only burn probe
+        # budget on every retry — drop them before any phase runs.
+        kept_urls = [u for u in resume.pending_urls if is_probe_worthy(u)]
+        if len(kept_urls) != len(resume.pending_urls):
+            log.info(f"[{self.language}] prefilter: dropped "
+                     f"{len(resume.pending_urls) - len(kept_urls)} stored URLs "
+                     f"that cannot lead to a stream ({len(kept_urls)} kept)")
+            resume.update(pending=kept_urls)
         self._apply_budget()
 
         # Checkpoint immediately so the store always has rows for this
@@ -486,9 +499,11 @@ class LanguageScraper:
                     hits.update(f.result() or set())
                 except Exception as e:            # one engine must not kill the query
                     log.debug(f"[{self.language}] engine error for {q!r}: {e}")
-            # YouTube (and its CDN) is allowed as a search result host only to
-            # discover pages — never as a channel URL in the playlist.
-            hits = {u for u in hits if not is_blocked_domain(u)}
+            # Only URLs that could lead to a stream survive: broad channel
+            # queries also match articles, forum threads and dictionary
+            # entries, which can never yield one. This also drops YouTube
+            # and its CDN (blocked domains) — never valid playlist entries.
+            hits = {u for u in hits if is_probe_worthy(u)}
             if hits:
                 pending_urls.update(hits)
                 if proves:
@@ -564,13 +579,19 @@ class LanguageScraper:
 
         Cache-aware: a URL already judged dead (this run or a previous one) is
         skipped without a network round-trip.
+
+        Throughput-critical: a sliding window keeps VALIDATE_WORKERS probes in
+        flight (a chunk barrier used to idle the whole pool behind its single
+        slowest URL), direct-stream URLs are probed before page URLs, and page
+        mining runs inside the worker while this thread only does fast
+        bookkeeping — so one straggler costs one slot, never the batch.
         """
         cache = get_cache()
         validated: Set[str] = set(resume.validated_urls)
         proven: Set[str] = set(resume.proven_urls)
         pending: Set[str] = {
             u for u in (set(resume.pending_urls) - validated)
-            if not is_blocked_domain(u)
+            if is_probe_worthy(u)
         }
         shared_dead = _load_shared_dead_urls()
         if shared_dead:
@@ -581,7 +602,8 @@ class LanguageScraper:
                 log.info(f"[{self.language}] skipping {len(pre_dead)} URLs known "
                          f"dead from a sibling job")
 
-        queue: List[str] = list(pending)
+        queue: List[str] = sorted(pending, key=probe_priority)
+        frontier: deque[str] = deque()   # freshly mined links, probed next
         harvested: Set[str] = set()
         referer_of: Dict[str, str] = {}
 
@@ -590,64 +612,86 @@ class LanguageScraper:
 
         done = 0
         idx = 0
+        last_ckpt = 0
+
+        def work(url: str):
+            """Probe one URL; mine candidates inside the worker thread."""
+            probe = probe_stream(url, referer=referer_of.get(url))
+            if probe.kind != "page":
+                return probe, {}
+            if len(queue) - idx + len(frontier) >= HARVEST_BACKLOG_MAX:
+                return probe, {}    # backlog already deep enough to drain
+            try:
+                return probe, self._mine_page(url, probe, referer_of)
+            except Exception:
+                return probe, {}
 
         with ThreadPoolExecutor(max_workers=VALIDATE_WORKERS) as executor:
-            while idx < len(queue) and not self._validate_exhausted():
-                chunk = queue[idx: idx + VALIDATE_WORKERS]
-                idx += VALIDATE_WORKERS
-                # Known-dead URLs are dropped from the chunk (no I/O at all).
-                work = [u for u in chunk
-                        if u not in validated and not cache.known_dead(u)]
-                skipped = len(chunk) - len(work)
-                if skipped:
-                    validated.update(u for u in chunk if cache.known_dead(u))
-                    done += skipped
-                futures = {
-                    executor.submit(
-                        probe_stream, url,
-                        referer=referer_of.get(url),
-                    ): url
-                    for url in work
-                }
-                new_links: List[str] = []
-                for completed in as_completed(futures):
-                    url = futures[completed]
+            in_flight: Dict[object, str] = {}
+
+            def fill() -> None:
+                """Keep every worker busy: frontier links first, then queue."""
+                nonlocal idx, done
+                while (len(in_flight) < VALIDATE_WORKERS
+                       and not self._validate_exhausted()):
+                    if frontier:
+                        url = frontier.popleft()
+                    elif idx < len(queue):
+                        url = queue[idx]
+                        idx += 1
+                    else:
+                        return
+                    if url in validated:
+                        done += 1
+                    elif cache.known_dead(url):
+                        validated.add(url)
+                        done += 1
+                    else:
+                        in_flight[executor.submit(work, url)] = url
+
+            fill()
+            while in_flight:
+                finished, _ = wait(set(in_flight), return_when=FIRST_COMPLETED)
+                for completed in finished:
+                    url = in_flight.pop(completed)
                     try:
-                        probe = completed.result()
+                        probe, page_links = completed.result()
                     except Exception:
-                        probe = Probe(kind="dead", note="exception")
+                        probe, page_links = Probe(kind="dead", note="exception"), {}
                     cache.remember(url, probe)
-                    if probe.kind != "dead":
-                        page_links = self._handle_probe(
-                            result, url, probe, proven, referer_of,
-                        )
-                        for link, ref in page_links.items():
-                            if link in validated or link in pending:
-                                continue
-                            if len(harvested) >= HARVEST_CAP:
-                                break
-                            new_links.append(link)
-                            pending.add(link)
-                            harvested.add(link)
-                            referer_of.setdefault(link, ref or url)
+                    if probe.kind in ("playlist", "stream"):
+                        self._handle_probe(result, url, probe, proven)
+                    for link, ref in page_links.items():
+                        if link in validated or link in pending:
+                            continue
+                        if len(harvested) >= HARVEST_CAP:
+                            break
+                        if (len(queue) - idx + len(frontier)
+                                >= HARVEST_BACKLOG_MAX):
+                            break
+                        pending.add(link)
+                        harvested.add(link)
+                        referer_of.setdefault(link, ref or url)
+                        frontier.append(link)
 
                     validated.add(url)
                     done += 1
-                    if done % RESUME_EVERY == 0:
+                    if done - last_ckpt >= RESUME_EVERY:
+                        last_ckpt = done
                         resume.update(searched=set(resume.searched_queries),
-                                      pending=set(pending), validated=validated)
+                                      pending=set(pending),
+                                      validated=validated)
                         self._save_resume(resume)
                         self._checkpoint(result)
                         log.info(
-                            f"[{self.language}] Validated [{done}/{len(queue)}] - "
+                            f"[{self.language}] Validated "
+                            f"[{done}/{len(queue) + len(harvested)}] - "
                             f"{len(result.channels)} Indian channels, "
                             f"{len(harvested)} harvested links queued"
                         )
+                fill()
 
-                if new_links and not self._validate_exhausted():
-                    queue.extend(new_links)
-
-        remaining_pending = set(queue[idx:]) if idx < len(queue) else set()
+        remaining_pending = set(queue[idx:]) | set(frontier)
         resume.update(
             searched=set(resume.searched_queries),
             pending=remaining_pending,
@@ -732,26 +776,21 @@ class LanguageScraper:
         url: str,
         probe: Probe,
         proven: Set[str],
-        referer_of: Dict[str, str],
-    ) -> Dict[str, str]:
-        """Accept what the probe found; return newly harvested stream links.
+    ) -> None:
+        """Accept what a playlist/stream probe found (main thread only).
 
-        Returns {stream_url: referer} (empty when nothing new was found).
+        Page candidates are mined inside the validate worker, so their links
+        come back from there instead of being handled here.
         """
         if probe.kind == "playlist":
             self._accept_playlist(result, probe, proven)
-            return {}
-        if probe.kind == "stream":
+        elif probe.kind == "stream":
             indian = is_indian(probe.sample) or is_indian(url)
             self._accept_stream_channel(
                 result, url, probe.extinf, indian, proven,
                 score=probe.score, quality=probe.quality,
                 source=probe_source(url),
             )
-            return {}
-        if probe.kind == "page":
-            return self._mine_page(url, probe, referer_of)
-        return {}
 
     def _accept_probe(
         self,
@@ -827,11 +866,18 @@ class LanguageScraper:
         probe: Probe,
         referer_of: Dict[str, str],
     ) -> Dict[str, str]:
-        """Static harvest -> embed/iframe follow -> JS-bundle API mining -> yt-dlp."""
+        """Static harvest -> embed/iframe follow -> JS-bundle API mining -> yt-dlp.
+
+        Wall-clock bounded by MINE_BUDGET: one slow origin can cost a validate
+        worker that long at most, never the minutes an unbounded bundle +
+        endpoint + yt-dlp walk needs.
+        """
+        deadline = time.monotonic() + MINE_BUDGET
         streams: Dict[str, str] = dict(probe.harvested)
         try:
-            if len(streams) < SITEAPI_MIN_LINKS:
-                streams.update(siteapi_source.mine(url, html=probe.sample or None))
+            if len(streams) < SITEAPI_MIN_LINKS and time.monotonic() < deadline:
+                streams.update(siteapi_source.mine(url, html=probe.sample or None,
+                                                   deadline=deadline))
         except Exception as e:
             log.debug(f"[{self.language}] siteapi {url}: {e}")
 
@@ -839,10 +885,12 @@ class LanguageScraper:
         # JS variable) on another host. Probe up to 3 embeds per page.
         if len(streams) < SITEAPI_MIN_LINKS:
             for embed in extract_embeds(probe.sample or "", url)[:3]:
-                if (self._iframes_used >= IFRAME_CAP
-                        or self._validate_exhausted()):
+                if time.monotonic() >= deadline or self._validate_exhausted():
                     break
-                self._iframes_used += 1
+                with self._extract_lock:
+                    if self._iframes_used >= IFRAME_CAP:
+                        break
+                    self._iframes_used += 1
                 try:
                     p = probe_stream(embed, budget=IFRAME_BUDGET)
                 except Exception:
@@ -854,7 +902,9 @@ class LanguageScraper:
                     for link, ref in (p.harvested or {}).items():
                         streams.setdefault(link, ref or embed)
 
-        if not streams and extract_source.available() and self._claim_extract():
+        if (not streams and time.monotonic() < deadline
+                and not self._validate_exhausted()
+                and extract_source.available() and self._claim_extract()):
             try:
                 streams.update(extract_source.extract(url))
             except Exception as e:
@@ -1292,7 +1342,7 @@ class LanguageScraper:
                 urls = crawl_website(site)
                 if len(urls) > URLS_PER_SITE:
                     urls = set(list(urls)[:URLS_PER_SITE])
-                pending.update(u for u in urls if not is_blocked_domain(u))
+                pending.update(u for u in urls if is_probe_worthy(u))
             except Exception:
                 pass
             with crawled_lock:
