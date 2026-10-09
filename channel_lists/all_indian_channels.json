@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-09T02:30:10.057545",
+  "timestamp": "2026-10-09T11:12:15.990865",
   "source": "https://new.broadcastseva.gov.in/digigov-portal-web-app/webHP?requestType=ApplicationRH&actionVal=userInformationSystem&screenId=2",
   "total": 916,
   "channels": [
@@ -5521,6 +5521,22 @@
       "source": "broadcastseva"
     },
     {
+      "name": "KTV PRIME",
+      "languages": [
+        "Hindi",
+        "English"
+      ],
+      "categories": [
+        "Entertainment"
+      ],
+      "company": "Kalyani Solvex (P) Ltd",
+      "language_raw": "All Indian Scheduled langauge, Hindi, English",
+      "category_raw": "NON- News and Current Affairs",
+      "satellite_type": "Indian",
+      "permission_type": "Uplinking and Downlinking",
+      "source": "broadcastseva"
+    },
+    {
       "name": "KUSHI TV",
       "languages": [
         "English"
@@ -9217,6 +9233,21 @@
       "source": "broadcastseva"
     },
     {
+      "name": "RT India",
+      "languages": [
+        "English"
+      ],
+      "categories": [
+        "News"
+      ],
+      "company": "LAMHAS SATELLITE SERVICES LIMITED",
+      "language_raw": "English",
+      "category_raw": "NEWS and Current Affairs",
+      "satellite_type": "Foreign",
+      "permission_type": "Downlinking Only",
+      "source": "broadcastseva"
+    },
+    {
       "name": "RUDRAKSH",
       "languages": [
         "Hindi"
@@ -9242,21 +9273,6 @@
       "category_raw": "NON- News and Current Affairs",
       "satellite_type": "Indian",
       "permission_type": "Uplinking and Downlinking",
-      "source": "broadcastseva"
-    },
-    {
-      "name": "RUSSIA TODAY",
-      "languages": [
-        "English"
-      ],
-      "categories": [
-        "News"
-      ],
-      "company": "LAMHAS SATELLITE SERVICES LIMITED",
-      "language_raw": "English",
-      "category_raw": "NEWS and Current Affairs",
-      "satellite_type": "Foreign",
-      "permission_type": "Downlinking Only",
       "source": "broadcastseva"
     },
     {
@@ -13676,7 +13692,7 @@
       "company": "POLIMER MEDIA PRIVATE LIMITED",
       "language_raw": "All Indian Scheduled langauge",
       "category_raw": "NEWS and Current Affairs",
-      "satellite_type": "Indian",
+      "satellite_type": "Foreign",
       "permission_type": "Uplinking and Downlinking",
       "source": "broadcastseva"
     },
@@ -13829,22 +13845,6 @@
       ],
       "company": "UNISSION NETWORK MEDIA PVT[dot]LTD[dot]",
       "language_raw": "Hindi",
-      "category_raw": "NON- News and Current Affairs",
-      "satellite_type": "Indian",
-      "permission_type": "Uplinking and Downlinking",
-      "source": "broadcastseva"
-    },
-    {
-      "name": "Tribe Plus",
-      "languages": [
-        "Hindi",
-        "English"
-      ],
-      "categories": [
-        "Entertainment"
-      ],
-      "company": "Kalyani Solvex (P) Ltd",
-      "language_raw": "All Indian Scheduled langauge, Hindi, English",
       "category_raw": "NON- News and Current Affairs",
       "satellite_type": "Indian",
       "permission_type": "Uplinking and Downlinking",
