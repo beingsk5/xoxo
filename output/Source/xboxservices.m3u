@@ -1,3 +1,5 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
 #EXTINF:-1 tvg-name="trailers" group-title="Other",trailers
 https://cdn.trailers.xboxservices.com/trailers/7f35992d-67ab-48c9-b1a2-c8aaff46236e/is/content/microsoftassets/D4_X2AnnuncGmplyTrlr_enUS_Xbox-AVS.mpd
+#EXTINF:-1 tvg-name="on tv" group-title="Other",on tv
+https://cdn.trailers.xboxservices.com/trailers/7f35992d-67ab-48c9-b1a2-c8aaff46236e/is/content/microsoftassets/High-On-Life-2-AnnounceTrailer-AVS.mpd

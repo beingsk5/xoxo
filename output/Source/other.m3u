@@ -1,44 +1,58 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
+#EXTINF:-1 tvg-name="Cartoon Network Latin America Brazil (720p) [Geo-blocked]" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_2010_logo.svg/960px-Cartoon_Network_2010_logo.svg.png" group-title="Animation",Cartoon Network Latin America Brazil (720p) [Geo-blocked]
+http://15.204.246.24:8080/CartoonNetworkHD/index.m3u8
 #EXTINF:-1 tvg-name="Discovery Turbo (720p)" tvg-logo="https://dtil.tmsimg.com/assets/s159108_ld_h15_aa.png?lock=720x540" group-title="Auto",Discovery Turbo (720p)
 http://41.205.93.154/ESPNNEWS/index.m3u8
-#EXTINF:-1 tvg-name="Anmol Tv" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/AnmolTV_Transparent_6e1b4782-0685-4ccd-bac0-436a0c0ea947.png" group-title="Entertainment",Anmol Tv
-http://103.175.73.12:8080/live/256/master.m3u8
+#EXTINF:-1 tvg-name="Animal Planet Latin America HD (720p) [Geo-blocked]" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/AnimalPlanetHD_Transparent_d36c0ee3-3e3f-4e0c-b3b2-23bfb3c3c2b0.png" group-title="Documentary",Animal Planet Latin America HD (720p) [Geo-blocked]
+http://15.204.246.24:8080/AnimalPlanetHD/index.m3u8
 #EXTINF:-1 tvg-name="Big Magic" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG002YJ850.png?lock=720x540" group-title="Entertainment",Big Magic
 http://103.175.73.12:8080/live/13/13_0.m3u8
-#EXTINF:-1 tvg-name="Discovery Channel" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG002E9L1W.png?lock=720x540" group-title="Entertainment",Discovery Channel
-http://143.244.60.30/Discovery_Channel/index.m3u8
+#EXTINF:-1 tvg-name="Discovery Channel (1080p) [Geo-blocked]" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG002E9L1W.png?lock=720x540" group-title="Entertainment",Discovery Channel (1080p) [Geo-blocked]
+http://212.5.144.156:8080/discovery/index.m3u8
+#EXTINF:-1 tvg-name="Discovery World Brazil (720p) [Geo-blocked]" group-title="Entertainment",Discovery World Brazil (720p) [Geo-blocked]
+http://15.204.246.24:8080/DiscoveryWorldHD/index.m3u8
+#EXTINF:-1 tvg-name="Falak TV" group-title="Entertainment",Falak TV
+https://falak.rst.ae/index.m3u8
 #EXTINF:-1 tvg-name="Gtc Punjabi Tv" tvg-logo="https://media.thegtcnetwork.com/uploads/gtc-pujabin-s.jpg" group-title="Entertainment",Gtc Punjabi Tv
 https://gtc.ottlive.co.in/gtcpunjabi/tracks-v4a1/mono.m3u8
 #EXTINF:-1 tvg-name="Mango (576p)" tvg-logo="https://i.imgur.com/neZm4CY.png" group-title="Entertainment",Mango (576p)
 https://stmv6.voxtvhd.com.br/cinehindi/cinehindi/playlist.m3u8
 #EXTINF:-1 tvg-name="Mega" tvg-logo="https://dtil.tmsimg.com/assets/s143425_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Mega
 https://unlimited2-cl-isp.dps.live/mega/mega.smil/playlist.m3u8
-#EXTINF:-1 tvg-name="MTV Live (720p)" tvg-logo="https://img10.hotstar.com/image/upload/sources/r1/cms/prod/8633/1786020488633-h.jpg" group-title="Entertainment",MTV Live (720p)
+#EXTINF:-1 tvg-name="MTV Live (720p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/MTV-WB-Transparent.png" group-title="Entertainment",MTV Live (720p)
 http://23.237.104.106:8080/USA_MTV_LIVE/index.m3u8
-#EXTINF:-1 tvg-name="The Q Tv" tvg-logo="https://www.theq.tv/wp-content/uploads/2023/10/The-Q-new-Logo.png" group-title="Entertainment",The Q Tv
-http://103.175.73.12:8080/live/25/25_0.m3u8
-#EXTINF:-1 tvg-name="Disney India SD 6" group-title="Kids",Disney India SD 6
-https://nayeemparvez.my.id/stbx/playlist.m3u8?id=9b4a905dbc5d96657|Referer=https://xnxx.com/
+#EXTINF:-1 tvg-name="CBeebies (Poland) (576p)" group-title="Kids",CBeebies (Poland) (576p)
+http://92.114.85.87:8017/play/a004/index.m3u8
+#EXTINF:-1 tvg-name="Discovery Kids Latin America Brazil (720p) [Geo-blocked]" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Discovery%20Kids.png" group-title="Kids",Discovery Kids Latin America Brazil (720p) [Geo-blocked]
+http://15.204.246.24:8080/DiscoveryKidsHD/index.m3u8
 #EXTINF:-1 tvg-name="Hungama Kids 6" group-title="Kids",Hungama Kids 6
 http://xtv.ooo:8080/live/927382370/837382809/150480.m3u8
 #EXTINF:-1 tvg-name="KidOO (1080p) [Geo-blocked]" group-title="Kids",KidOO (1080p) [Geo-blocked]
 http://15.204.246.24:8080/KidooHD/index.m3u8
-#EXTINF:-1 tvg-name="NICK" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/6807/1784039246807-h.jpg" group-title="Kids",NICK
+#EXTINF:-1 tvg-name="NICK" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Nick.png" group-title="Kids",NICK
 https://drewski2423-dproxy.hf.space/watch/aHR0cHM6Ly93aW5kbmV3Lm5ld2tzby5ydS93aW5kL3ByZW1pdW0zMzAvbW9uby5tM3U4.m3u8
-#EXTINF:-1 tvg-name="NICK JR" tvg-logo="https://img10.hotstar.com/image/upload/sources/r1/cms/prod/1730/1785252911730-h.jpg" group-title="Kids",NICK JR
+#EXTINF:-1 tvg-name="Nick HD+" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/8c/Nickelodeon_HD%2B_Logo_2024.png" group-title="Kids",Nick HD+
+http://103.68.28.58:5001/live/1226.m3u8
+#EXTINF:-1 tvg-name="NICK JR" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Nick%20Jr.png" group-title="Kids",NICK JR
 https://drewski2423-dproxy.hf.space/watch/aHR0cHM6Ly93aW5kbmV3Lm5ld2tzby5ydS93aW5kL3ByZW1pdW0zMjkvbW9uby5tM3U4.m3u8
 #EXTINF:-1 tvg-name="TLC" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/TLC%20HD.png" group-title="Lifestyle",TLC
 http://143.244.60.30/TLC/index.m3u8
+#EXTINF:-1 tvg-name="Gold Star" group-title="Movies",Gold Star
+https://moviethls.wns.live/hls/stream.m3u8
 #EXTINF:-1 tvg-name="Zee Anmol Cinema 2" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/c/c8/Zee_Anmol_Cinema_2_logo.png" group-title="Movies",Zee Anmol Cinema 2
 http://103.175.73.12:8080/live/257/master.m3u8
-#EXTINF:-1 tvg-name="Zee Cinemalu HD" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022HVX3.png?lock=720x540" group-title="Movies",Zee Cinemalu HD
-https://mhdtv.co.in/jio/app/webapi.php?action=direct_play&c=Zee_Cinemalu&e=.m3u8
 #EXTINF:-1 tvg-name="7" tvg-logo="https://i.imgur.com/zDiIhdN.png" group-title="Music",7
 http://tvhe.neez.id.au/stream/channelid/1539335094?profile=pass
 #EXTINF:-1 tvg-name="Dhoom Music Bangla" tvg-logo="https://dtil.tmsimg.com/assets/s142882_ld_h15_aa.png?lock=720x540" group-title="Music",Dhoom Music Bangla
 http://103.175.73.12:8080/live/378/master.m3u8
+#EXTINF:-1 tvg-name="Eska Rock TV (1080p)" group-title="Music",Eska Rock TV (1080p)
+http://92.114.85.87:8016/play/a005/index.m3u8
+#EXTINF:-1 tvg-name="Gugak TV" group-title="Music",Gugak TV
+https://mgugaklive.nowcdn.co.kr/gugakvideo/gugakvideo.stream/playlist.m3u8
 #EXTINF:-1 tvg-name="i news" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e6/Janasri_News_Channel_Logo.jpg" group-title="News",i news
-https://hlsvod.dw.com/i/vps/webvideos/ENG/2026/NEWS/NEWSENG260924_Vienna_Vert_Dirty_11SMV_,AVC_270x480,AVC_360x640,AVC_540x960,AVC_720x1280,AVC_1080x1920,.mp4.csmil/master.m3u8
+https://hlsvod.dw.com/i/vps/webvideos/ENG/2026/NEWS/NEWSENG261001_seagrass-edit-dirty_01IMV_,AVC_270x480,AVC_360x640,AVC_540x960,AVC_720x1280,AVC_1080x1920,.mp4.csmil/master.m3u8
+#EXTINF:-1 tvg-name="24 TV" group-title="News",24 TV
+http://185.234.111.229:8000/play/a056
 #EXTINF:-1 tvg-name="BBC WORLD NEWS" group-title="News",BBC WORLD NEWS
 http://143.244.60.30/BBC_WORLD_NEWS/index.m3u8
 #EXTINF:-1 tvg-name="CNN INTERNATIONAL" group-title="News",CNN INTERNATIONAL
@@ -47,6 +61,14 @@ http://143.244.60.30/CNN_INTERNATIONAL/index.m3u8
 https://nw18live.cdn.jio.com/bpk-tv/CNN_News18_NW18_MOB/output01/index.m3u8
 #EXTINF:-1 tvg-name="Digital Once (Dominican Republic)" group-title="News",Digital Once (Dominican Republic)
 https://live4.telemicro.com.do/digital15cast_1080p/playlist.m3u8
+#EXTINF:-1 tvg-name="Global TV (Dominican Republic) (720p)" group-title="News",Global TV (Dominican Republic) (720p)
+https://stmv4.voxtvhd.com.br/globaltv/globaltv/playlist.m3u8
+#EXTINF:-1 tvg-name="HRT 4 HD (720p) [Geo-blocked]" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="News",HRT 4 HD (720p) [Geo-blocked]
+https://bpcdnmanprod.nexttv.ht.hr/bpk-tv/HRT4/default/index.mpd
+#EXTINF:-1 tvg-name="Khabar" tvg-logo="https://m.media-amazon.com/images/I/71q8sOMPwHL.png" group-title="News",Khabar
+http://120.70.60.179:9901/tsfile/live/1000_1.m3u8?authid=0&key=txiptv&playlive=0
+#EXTINF:-1 tvg-name="NDTV Record TV Criciuma" group-title="News",NDTV Record TV Criciuma
+https://caikron.com.br:19360/criciuma/criciuma.m3u8
 #EXTINF:-1 tvg-name="News 18 India" tvg-logo="https://raw.githubusercontent.com/SweetBoy4141/iptv/main/logo/News_18_India.jpg" group-title="News",News 18 India
 https://nw18live.cdn.jio.com/bpk-tv/News18_India_NW18_MOB/output01/News18_India_NW18_MOB-audio_98835_eng=98800-video=3724000.m3u8
 #EXTINF:-1 tvg-name="News Leader (576p)" tvg-logo="https://img-cdn.publive.online/fit-in/360x280/filters:format(webp)/newsleaderlive/media/agency_attachments/2026/04/15/2026-04-15t100517555z-news-leader-640-480-1-sarvajeet-singh-chauhan-2026-04-15-15-35-17.png" group-title="News",News Leader (576p)
@@ -61,18 +83,48 @@ https://nw18live.cdn.jio.com/bpk-tv/News18_India_NW18_MOB/output01/index.m3u8
 https://live4.telemicro.com.do/telemicrocast_1080p/playlist.m3u8
 #EXTINF:-1 tvg-name="dw tv" group-title="Other",dw tv
 https://hlsvod.dw.com/i/vps/webvideos/ENG/2026/SHIF/SHIFENG261005_AI-loans_DIRTY_01SMV_,AVC_270x480,AVC_360x640,AVC_540x960,AVC_720x1280,AVC_1080x1920,.mp4.csmil/master.m3u8
+#EXTINF:-1 tvg-name="vtvgujarati" group-title="Other",vtvgujarati
+https://live1.ottlive.co.in/vtvgujarati/vtvgujarati/index.m3u8
 #EXTINF:-1 tvg-name="10 HD" group-title="Other",10 HD
 https://i.mjh.nz/.r/10-nsw.m3u8
+#EXTINF:-1 tvg-name="6 TV Gorlovka (720p) [Geo-blocked]" group-title="Other",6 TV Gorlovka (720p) [Geo-blocked]
+http://91.214.48.158:4022/udp/224.2.2.4:10000
+#EXTINF:-1 tvg-name="Anadolu Dernek TV" group-title="Other",Anadolu Dernek TV
+http://185.234.111.229:8000/play/a020
+#EXTINF:-1 tvg-name="Balti TV (1080p) [Geo-blocked]" group-title="Other",Balti TV (1080p) [Geo-blocked]
+http://77.89.199.174:8000/play/1024/index.m3u8
+#EXTINF:-1 tvg-name="BBC Red Button 1 (720p) [Geo-blocked]" group-title="Other",BBC Red Button 1 (720p) [Geo-blocked]
+https://vs-cmaf-pushb-uk.live.cf.md.bbci.co.uk/x=4/i=urn:bbc:pips:service:red_button_one/iptv_hd_abr_v1.mpd
+#EXTINF:-1 tvg-name="Benguturk TV" group-title="Other",Benguturk TV
+http://185.234.111.229:8000/play/a05u
+#EXTINF:-1 tvg-name="Canal 10 (Nicaragua) (360p) [Geo-blocked]" group-title="Other",Canal 10 (Nicaragua) (360p) [Geo-blocked]
+https://www.canal10.com.ni/envivo
+#EXTINF:-1 tvg-name="Channel A [Geo-blocked]" group-title="Other",Channel A [Geo-blocked]
+http://channelalive.ktcdn.co.kr/chalivepc/_definst_/atv2/playlist.m3u8
 #EXTINF:-1 tvg-name="CNBC (720p) [Geo-blocked]" group-title="Other",CNBC (720p) [Geo-blocked]
 http://41.205.93.154/CNBC/index.m3u8
 #EXTINF:-1 tvg-name="GLOBEL DESI" group-title="Other",GLOBEL DESI
 https://live.ottlive.co.in/globaldesi/globaldesi/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-name="GSTV (720p)" group-title="Other",GSTV (720p)
+https://japaneast.av.mk.io/mediakindcdn-mediakind/ca01a143-f823-4432-b670-c22ff9643ce4/index.qfm/manifest(format=m3u8-cmaf)
+#EXTINF:-1 tvg-name="HBO Latin America (720p) [Geo-blocked]" group-title="Other",HBO Latin America (720p) [Geo-blocked]
+http://15.204.246.24:8080/HBOHD/index.m3u8
 #EXTINF:-1 tvg-name="Hindi Hits" tvg-logo="https://raw.githubusercontent.com/SweetBoy4141/iptv/main/logo/hits.jpg" group-title="Other",Hindi Hits
 http://146.59.253.52:8080/hindihitshd/index.m3u8
+#EXTINF:-1 tvg-name="HRT 1 HD (1080p) [Geo-blocked]" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Other",HRT 1 HD (1080p) [Geo-blocked]
+https://bpcdnmanprod.nexttv.ht.hr/bpk-tv/HRT1/default/index.mpd
+#EXTINF:-1 tvg-name="HRT 2 HD (1080p) [Geo-blocked]" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Other",HRT 2 HD (1080p) [Geo-blocked]
+https://bpcdnmanprod.nexttv.ht.hr/bpk-tv/HRT2/default/index.mpd
+#EXTINF:-1 tvg-name="HRT 3 HD (720p) [Geo-blocked]" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Other",HRT 3 HD (720p) [Geo-blocked]
+https://bpcdnmanprod.nexttv.ht.hr/bpk-tv/HRT3/default/index.mpd
+#EXTINF:-1 tvg-name="Jek TV" group-title="Other",Jek TV
+http://61.8.64.138:1935/jektv/myStream/playlist.m3u8
 #EXTINF:-1 tvg-name="Jus Hindi (1080p)" group-title="Other",Jus Hindi (1080p)
 http://103.154.3.101:5001/live/960.m3u8
 #EXTINF:-1 tvg-name="Jus Punjabi (1080p)" group-title="Other",Jus Punjabi (1080p)
 http://103.154.3.101:5001/live/959.m3u8
+#EXTINF:-1 tvg-name="M5" group-title="Other",M5
+http://146.59.85.40:89/m5/index.m3u8
 #EXTINF:-1 tvg-name="PBS (1080p) [Geo-blocked]" group-title="Other",PBS (1080p) [Geo-blocked]
 https://pbs.lls.cdn.pbs.org/est/index.m3u8
 #EXTINF:-1 tvg-name="PBS KETS [Geo-blocked]" group-title="Other",PBS KETS [Geo-blocked]
@@ -87,7 +139,7 @@ http://146.59.253.52:8080/punjabihitshd/index.m3u8
 https://i.mjh.nz/.r/seven-syd.m3u8
 #EXTINF:-1 tvg-name="We TV (1080p)" group-title="Other",We TV (1080p)
 http://23.237.104.106:8080/USA_WE_TV/index.m3u8
-#EXTINF:-1 tvg-name="GOD TV" group-title="Religious",GOD TV
-https://ott.god.tv/us/master.m3u8
 #EXTINF:-1 tvg-name="Discovery Science" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Discovery%20Science.png" group-title="Science",Discovery Science
 http://143.244.60.30/Discovery_Science/index.m3u8
+#EXTINF:-1 tvg-name="[COLOR WHITE] [/COLOR] ESPN2 HD www.achoAPPS.com" tvg-logo="https://i.imgur.com/ZY71cCY.png" group-title="Sports",[COLOR WHITE] [/COLOR] ESPN2 HD www.achoAPPS.com
+http://189.216.247.113/Content/HLS/Live/Channel(ESPN2_HD)/Stream(04)/index.m3u8
