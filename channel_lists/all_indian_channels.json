@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-09-24T02:34:20.532678",
+  "timestamp": "2026-10-09T20:27:50.363238",
   "source": "https://new.broadcastseva.gov.in/digigov-portal-web-app/webHP?requestType=ApplicationRH&actionVal=userInformationSystem&screenId=2",
-  "total": 918,
+  "total": 916,
   "channels": [
     {
       "name": "& PICTURES HD",
@@ -1729,6 +1729,19 @@
       ],
       "company": "PRAVASA MEDIA LLP",
       "language_raw": "Tamil",
+      "category_raw": "NEWS and Current Affairs",
+      "satellite_type": "Indian",
+      "permission_type": "Uplinking and Downlinking",
+      "source": "broadcastseva"
+    },
+    {
+      "name": "BP NEWS",
+      "languages": [],
+      "categories": [
+        "News"
+      ],
+      "company": "SHAFFER ELECTRO ENGINEERS PRIVATE LIMITED",
+      "language_raw": "All Indian Scheduled langauge",
       "category_raw": "NEWS and Current Affairs",
       "satellite_type": "Indian",
       "permission_type": "Uplinking and Downlinking",
@@ -3718,19 +3731,6 @@
       "source": "broadcastseva"
     },
     {
-      "name": "FPlus",
-      "languages": [],
-      "categories": [
-        "News"
-      ],
-      "company": "SHAFFER ELECTRO ENGINEERS PRIVATE LIMITED",
-      "language_raw": "All Indian Scheduled langauge",
-      "category_raw": "NEWS and Current Affairs",
-      "satellite_type": "Indian",
-      "permission_type": "Uplinking and Downlinking",
-      "source": "broadcastseva"
-    },
-    {
       "name": "FRANCE 24",
       "languages": [],
       "categories": [
@@ -5516,6 +5516,22 @@
       "company": "Kalyani Solvex (P) Ltd",
       "language_raw": "All Indian Scheduled langauge, English, Hindi",
       "category_raw": "NEWS and Current Affairs",
+      "satellite_type": "Indian",
+      "permission_type": "Uplinking and Downlinking",
+      "source": "broadcastseva"
+    },
+    {
+      "name": "KTV PRIME",
+      "languages": [
+        "Hindi",
+        "English"
+      ],
+      "categories": [
+        "Entertainment"
+      ],
+      "company": "Kalyani Solvex (P) Ltd",
+      "language_raw": "All Indian Scheduled langauge, Hindi, English",
+      "category_raw": "NON- News and Current Affairs",
       "satellite_type": "Indian",
       "permission_type": "Uplinking and Downlinking",
       "source": "broadcastseva"
@@ -7815,13 +7831,14 @@
     {
       "name": "News 360",
       "languages": [
-        "Telugu"
+        "English",
+        "Hindi"
       ],
       "categories": [
         "News"
       ],
       "company": "SEE MEDIA SERVICES PVT LTD",
-      "language_raw": "Telugu",
+      "language_raw": "English, Hindi",
       "category_raw": "NEWS and Current Affairs",
       "satellite_type": "Indian",
       "permission_type": "Uplinking and Downlinking",
@@ -9216,6 +9233,21 @@
       "source": "broadcastseva"
     },
     {
+      "name": "RT India",
+      "languages": [
+        "English"
+      ],
+      "categories": [
+        "News"
+      ],
+      "company": "LAMHAS SATELLITE SERVICES LIMITED",
+      "language_raw": "English",
+      "category_raw": "NEWS and Current Affairs",
+      "satellite_type": "Foreign",
+      "permission_type": "Downlinking Only",
+      "source": "broadcastseva"
+    },
+    {
       "name": "RUDRAKSH",
       "languages": [
         "Hindi"
@@ -9241,21 +9273,6 @@
       "category_raw": "NON- News and Current Affairs",
       "satellite_type": "Indian",
       "permission_type": "Uplinking and Downlinking",
-      "source": "broadcastseva"
-    },
-    {
-      "name": "RUSSIA TODAY",
-      "languages": [
-        "English"
-      ],
-      "categories": [
-        "News"
-      ],
-      "company": "LAMHAS SATELLITE SERVICES LIMITED",
-      "language_raw": "English",
-      "category_raw": "NEWS and Current Affairs",
-      "satellite_type": "Foreign",
-      "permission_type": "Downlinking Only",
       "source": "broadcastseva"
     },
     {
@@ -11697,37 +11714,7 @@
       "source": "broadcastseva"
     },
     {
-      "name": "Shemaroo Bhakti",
-      "languages": [
-        "Hindi"
-      ],
-      "categories": [
-        "Entertainment"
-      ],
-      "company": "SHEMAROO ENTERTAINMENT LIMITED",
-      "language_raw": "Hindi",
-      "category_raw": "NON- News and Current Affairs",
-      "satellite_type": "Indian",
-      "permission_type": "Uplinking and Downlinking",
-      "source": "broadcastseva"
-    },
-    {
       "name": "Shemaroo Bollywood",
-      "languages": [
-        "Hindi"
-      ],
-      "categories": [
-        "Entertainment"
-      ],
-      "company": "SHEMAROO ENTERTAINMENT LIMITED",
-      "language_raw": "Hindi",
-      "category_raw": "NON- News and Current Affairs",
-      "satellite_type": "Indian",
-      "permission_type": "Uplinking and Downlinking",
-      "source": "broadcastseva"
-    },
-    {
-      "name": "Shemaroo Comedy",
       "languages": [
         "Hindi"
       ],
@@ -13705,7 +13692,7 @@
       "company": "POLIMER MEDIA PRIVATE LIMITED",
       "language_raw": "All Indian Scheduled langauge",
       "category_raw": "NEWS and Current Affairs",
-      "satellite_type": "Indian",
+      "satellite_type": "Foreign",
       "permission_type": "Uplinking and Downlinking",
       "source": "broadcastseva"
     },
@@ -13858,22 +13845,6 @@
       ],
       "company": "UNISSION NETWORK MEDIA PVT[dot]LTD[dot]",
       "language_raw": "Hindi",
-      "category_raw": "NON- News and Current Affairs",
-      "satellite_type": "Indian",
-      "permission_type": "Uplinking and Downlinking",
-      "source": "broadcastseva"
-    },
-    {
-      "name": "Tribe Plus",
-      "languages": [
-        "Hindi",
-        "English"
-      ],
-      "categories": [
-        "Entertainment"
-      ],
-      "company": "Kalyani Solvex (P) Ltd",
-      "language_raw": "All Indian Scheduled langauge, Hindi, English",
       "category_raw": "NON- News and Current Affairs",
       "satellite_type": "Indian",
       "permission_type": "Uplinking and Downlinking",
