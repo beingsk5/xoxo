@@ -1,0 +1,27 @@
+#EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
+#EXTINF:-1 tvg-name="Star Jalsha" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Star-Jalsha--2000-x-1125--Transparent.png" group-title="Entertainment",Star Jalsha
+http://103.151.60.162:2122/play/a00w/index.m3u8?hls
+#EXTINF:-1 tvg-name="Star Maa Movies HD" tvg-logo="https://dtil.tmsimg.com/assets/s179620_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Star Maa Movies HD
+https://da86m1sqpm3o0.cloudfront.net/28072023/smil:maamovies.smil/chunklist_b2628000.m3u8
+#EXTINF:-1 tvg-name="Star Pravah HD" tvg-logo="https://dtil.tmsimg.com/assets/s143834_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Star Pravah HD
+https://da86m1sqpm3o0.cloudfront.net/28072023/smil:starpravah.smil/chunklist_b1928000.m3u8
+#EXTINF:-1 tvg-name="Jonack" tvg-logo="https://dtil.tmsimg.com/assets/s143238_ld_h15_aa.png?lock=720x540" group-title="General",Jonack
+https://cdn.pishow.tv/ott/live/10006/master.m3u8
+#EXTINF:-1 tvg-name="DD Assam KB" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20North%20East.png" group-title="General",DD Assam KB
+https://d2lk5u59tns74c.cloudfront.net/out/v1/d380bf5c167b4319a46cdd8204bc26b2/index.m3u8
+#EXTINF:-1 tvg-name="Star Movies Select HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/STAR_Movies_logo.svg/960px-STAR_Movies_logo.svg.png" group-title="Movies",Star Movies Select HD
+http://103.151.60.162:2122/play/a02l/index.m3u8?hls
+#EXTINF:-1 tvg-name="India Voice" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/India_Voice.png" group-title="News",India Voice
+https://d1msejlow1t3l4.cloudfront.net/fta/indiavoice/playlist.m3u8
+#EXTINF:-1 tvg-name="Rengoni" tvg-logo="https://dtil.tmsimg.com/assets/s143722_ld_h15_aa.png?lock=720x540" group-title="Other",Rengoni
+https://d1msejlow1t3l4.cloudfront.net/fta/rengonitv/playlist.m3u8
+#EXTINF:-1 tvg-name="Rengoni TV" tvg-logo="https://dtil.tmsimg.com/assets/s143722_ld_h15_aa.png?lock=720x540" group-title="Other",Rengoni TV
+https://d1msejlow1t3l4.cloudfront.net/fta/rengonitv/playlist.m3u8?hdnts=st=1791635056~exp=1791656656~acl=!*/fta/rengonitv/*!/payload/yupptvott_5_-1_b84569b4-97e5-45d6-8916-b2751e984e3a_US_172.212.172.240_yupptv_1_channel_6649_-1/*~data=yupptvott_5_-1_b84569b4-97e5-45d6-8916-b2751e984e3a_US_172.212.172.240_yupptv_1_channel_6649_-1~hmac=900d92ee90a5ab57f27cf6e59ec76b6884c18414ad482ffcc26c1e429446dec0&ads.content_custom_3_param=yuppfastint&ads.ip=172.212.172.240&did=b84569b4-97e5-45d6-8916-b2751e984e3a&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=ENTERTAINMENT&ads.content_custom_1_param=FAST&ads.channel=6649&ads.channel_name=RengoniTV&ads.language=ASM&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
+#EXTINF:-1 tvg-name="Village TV" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/VillageTV.png" group-title="Religious",Village TV
+https://live.villagetv.net/villagetv/hd/index.m3u8
+#EXTINF:-1 tvg-name="Star Sports 2" tvg-logo="https://dtil.tmsimg.com/assets/s143845_ld_h15_aa.png?lock=720x540" group-title="Sports",Star Sports 2
+http://103.151.60.162:2122/play/a00v/index.m3u8?hls
+#EXTINF:-1 tvg-name="Star Sports Select 1 HD" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Sports",Star Sports Select 1 HD
+http://103.151.60.162:2122/play/a026/index.m3u8?hls
+#EXTINF:-1 tvg-name="Star Sports Select 2 HD" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Sports",Star Sports Select 2 HD
+http://103.151.60.162:2122/play/a027/index.m3u8?hls

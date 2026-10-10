@@ -1,0 +1,29 @@
+#EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
+#EXTINF:-1 tvg-name="Colors Marathi HD" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/Colors_Transparent_16069908-8494-4eb4-bd40-5afca3969088.png" group-title="Entertainment",Colors Marathi HD
+https://da86m1sqpm3o0.cloudfront.net/28072023/smil:colorsmarathihd.smil/playlist.m3u8
+#EXTINF:-1 tvg-name="Zee Marathi HD" tvg-logo="https://i.imgur.com/vv9ysD3.png" group-title="Entertainment",Zee Marathi HD
+https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/in/YuppTV/ZeeMarathiHD.m3u8
+#EXTINF:-1 tvg-name="Fakt Marathi" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Fakt%20Marathi.png" group-title="Entertainment",Fakt Marathi
+https://mumt07.tangotv.in/zHjX9OFlFAKTMARATHI/index.m3u8
+#EXTINF:-1 tvg-name="DD Sahyadri KB" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Sahyadri.png" group-title="General",DD Sahyadri KB
+https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/66dcc3ebe182447ba42837e746cf0c7c/index.m3u8
+#EXTINF:-1 tvg-name="Zee Talkies" tvg-logo="https://i.imgur.com/GowDXFz.png" group-title="Movies",Zee Talkies
+http://107.167.16.138/zeetalkies/index.m3u8?token=test
+#EXTINF:-1 tvg-name="9X Jhakaas" tvg-logo="https://dtil.tmsimg.com/assets/s90012_ld_h15_aa.png?lock=720x540" group-title="Music",9X Jhakaas
+https://amg01281-9xmediapvtltd-9xjhakaas-samsungin-ci2cs.amagi.tv/playlist/amg01281-9xmediapvtltd-9xjhakaas-samsungin/playlist.m3u8
+#EXTINF:-1 tvg-name="Sangeet Marathi" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Sangeet_Marathi.jpg/960px-Sangeet_Marathi.jpg" group-title="Music",Sangeet Marathi
+https://cdn.pishow.tv/ott/live/1229/master.m3u8
+#EXTINF:-1 tvg-name="NDTV Marathi" tvg-logo="https://dtil.tmsimg.com/assets/s166276_ld_h15_aa.png?lock=720x540" group-title="News",NDTV Marathi
+https://web-ndtv-marathi.akamaized.net/hls/live/2110470/ndtvmarathi/master_1.m3u8
+#EXTINF:-1 tvg-name="Top News Marathi" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/topnewsmarathi.png" group-title="News",Top News Marathi
+https://live1.ottlive.co.in/topnewsmarathi/topnewsmarathi/index.m3u8
+#EXTINF:-1 tvg-name="News18 Marathi" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_NEWS18_LOKMAT/images/LOGO_HD/image.png" group-title="News",News18 Marathi
+https://n18syndication.akamaized.net/bpk-tv/News18_Lokmat_NW18_MOB/output01/master.m3u8
+#EXTINF:-1 tvg-name="News Marathi 24x7" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/channel/cb84d7f7e19bcbfb9b6d664e7fb2adee.png" group-title="News",News Marathi 24x7
+https://live1.ottlive.co.in/newsmarathi/newsmarathi/index.m3u8
+#EXTINF:-1 tvg-name="Zee 24 Taas" tvg-logo="https://english.cdn.zeenews.com/images/logo/zee-24-taas-08.svg" group-title="News",Zee 24 Taas
+https://dgrvlduwztkd4.cloudfront.net/index_5.m3u8
+#EXTINF:-1 tvg-name="Saam TV" tvg-logo="https://dtil.tmsimg.com/assets/s143735_ld_h15_aa.png?lock=720x540" group-title="Other",Saam TV
+https://cdn.pishow.tv/ott/live/437/master.m3u8
+#EXTINF:-1 tvg-name="Shemaroo Marathi Bana" tvg-logo="https://dtil.tmsimg.com/assets/s143777_ld_h15_aa.png?lock=720x540" group-title="Other",Shemaroo Marathi Bana
+https://airtelapp.shemaroo.com/marathibana/smil:marathibanaadp.smil/playlist.m3u8

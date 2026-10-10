@@ -1,0 +1,11 @@
+#EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
+#EXTINF:-1 tvg-name="food food tv" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Food%20Food.png" group-title="Cooking",food food tv
+https://prodamdnewsencoding.akamaized.net/NBC_News_Digital/tdy_food_8a_pizza_bombs_wings_261009/1/abs/index.m3u8
+#EXTINF:-1 tvg-name="DW" group-title="News",DW
+https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8
+#EXTINF:-1 tvg-name="i news" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e6/Janasri_News_Channel_Logo.jpg" group-title="News",i news
+https://prodamdnewsencoding.akamaized.net/NBC_News_Digital/ott_now_trumpelection_201030/1/index.m3u8
+#EXTINF:-1 tvg-name="brk news" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/brk-news.png" group-title="News",brk news
+https://prodamdnewsencoding.akamaized.net/NBC_News_Digital/f_vert_brk_la_isaias_landfall_261009/1/abs/index.m3u8
+#EXTINF:-1 tvg-name="BBC News" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/BBC_Hindi.png" group-title="News",BBC News
+https://vs-hls-push-ww-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_news_channel_hd/t=3840/v=pv14/b=5070016/main.m3u8
