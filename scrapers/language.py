@@ -196,7 +196,16 @@ class LanguageScraper:
             reserve = int(min(reserve_seconds, total * 0.5))
             save_buffer = int(min(60, total * 0.1))
             search_window = total - reserve
-            crawl_slice = int(min(150, max(30, search_window * 0.3)))
+            # The discovery sources (iptv-org, YuppTV, code search, site
+            # crawl) share this slice; it must fit their normal cost
+            # (iptv-org alone is ~130s on a fresh run) or the later sources
+            # never run. Kept comfortably below the search deadline so a
+            # slow source can only cost *itself* time, never search time.
+            try:
+                crawl_slice = int(os.environ.get("BUDGET_CRAWL_S", "480"))
+            except ValueError:
+                crawl_slice = 480
+            crawl_slice = max(30, min(crawl_slice, search_window - 60))
             # Search must not swallow the whole job: discovery only matters
             # insofar as validation turns the hits into channels, so search
             # gets a share of the window and validation owns the rest.
@@ -231,6 +240,7 @@ class LanguageScraper:
             if n:
                 log.info(f"[{self.language}] wiped {n} {label} from store")
         store.clear_resume(self.language)
+        store.clear_run_meta(self.language)
         for path in (self.export_path,):
             try:
                 if path.exists():
@@ -374,6 +384,14 @@ class LanguageScraper:
                 f"[{self.language}] incomplete: {len(left_queries)} queries, "
                 f"{len(resume.pending_urls)} URLs left for retry (resume kept)"
             )
+        elif result.incomplete:
+            # A phase stopped on its budget with no per-item leftovers: the
+            # searched set and crawled sites must still survive, otherwise
+            # the next attempt/chain re-searches every query that already
+            # found nothing (~30 min wasted per retry).
+            self._save_resume(resume)
+            log.info(f"[{self.language}] incomplete (phase budget): "
+                     f"resume kept")
         else:
             self._clear_resume()
         if result.incomplete:
@@ -387,6 +405,54 @@ class LanguageScraper:
 
     # ── Phases ────────────────────────────────────────────────────
 
+    def _budgeted_window(self, items: List, work, on_done,
+                         max_workers: int) -> int:
+        """Run `work` over `items` in a rolling window honouring the crawl budget.
+
+        New items are only submitted while `_crawl_exhausted()` is false
+        (crawl slice spent or search window reached); in-flight work is then
+        drained. This is what keeps a slow discovery source — e.g. GitHub
+        code search over thousands of candidates — from eating the search
+        and validation phases, which is how a 50-minute attempt once burned
+        25 minutes on crawl and got 149 of 4039 queries out.
+
+        Returns the number of items deferred to a later attempt.
+        """
+        submitted = 0
+        item_iter = iter(items)
+        with ThreadPoolExecutor(max_workers=max_workers) as executor:
+            futures = {}
+
+            def launch() -> None:
+                nonlocal submitted
+                while len(futures) < max_workers and not self._crawl_exhausted():
+                    try:
+                        item = next(item_iter)
+                    except StopIteration:
+                        return
+                    futures[executor.submit(work, item)] = item
+                    submitted += 1
+
+            launch()
+            while futures:
+                finished, _ = wait(set(futures),
+                                   return_when=FIRST_COMPLETED, timeout=10)
+                for fut in finished:
+                    item = futures.pop(fut)
+                    try:
+                        on_done(item, fut.result())
+                    except Exception:
+                        continue
+                if futures and not self._crawl_exhausted():
+                    launch()
+
+        deferred = len(items) - submitted
+        if deferred:
+            self._incomplete = True
+            log.info(f"[{self.language}] crawl budget: {deferred} candidates "
+                     f"deferred to retry")
+        return deferred
+
     def _iptvorg_phase(self, result: ScrapeResult) -> None:
         """iptv-org structured feed: known Indian streams, zero search."""
         try:
@@ -399,33 +465,29 @@ class LanguageScraper:
         existing = {ch.url for ch in result.channels}
         cache = get_cache()
         accepted = 0
-        with ThreadPoolExecutor(max_workers=VALIDATE_WORKERS) as ex:
-            futures = {
-                ex.submit(
-                    probe_stream, s["url"],
-                    referer=s.get("referer") or None,
-                    user_agent=s.get("user_agent") or None,
-                ): s
-                for s in seeds
-                if s["url"] not in existing and not cache.known_dead(s["url"])
-            }
-            for fut in as_completed(futures):
-                s = futures[fut]
-                try:
-                    probe = fut.result()
-                except Exception:
-                    continue
-                get_cache().remember(s["url"], probe)
-                if not probe.ok or s["url"] in existing:
-                    continue
-                if self._accept_probe(
-                    result, s["url"], probe,
-                    name_hint=s.get("name", ""),
-                    source=s.get("source", "iptv-org"),
-                    logo_hint=s.get("logo", ""),
-                ):
-                    existing.add(s["url"])
-                    accepted += 1
+        candidates = [s for s in seeds
+                      if s["url"] not in existing and not cache.known_dead(s["url"])]
+
+        def work(s: dict):
+            return probe_stream(s["url"],
+                                referer=s.get("referer") or None,
+                                user_agent=s.get("user_agent") or None)
+
+        def on_done(s: dict, probe) -> None:
+            nonlocal accepted
+            cache.remember(s["url"], probe)
+            if not probe.ok or s["url"] in existing:
+                return
+            if self._accept_probe(
+                result, s["url"], probe,
+                name_hint=s.get("name", ""),
+                source=s.get("source", "iptv-org"),
+                logo_hint=s.get("logo", ""),
+            ):
+                existing.add(s["url"])
+                accepted += 1
+
+        self._budgeted_window(candidates, work, on_done, VALIDATE_WORKERS)
         if accepted:
             log.info(f"[{self.language}] iptv-org: {accepted} channels accepted "
                      f"from {len(seeds)} seeds")
@@ -437,6 +499,13 @@ class LanguageScraper:
         which is what the unauthenticated local runs (and token-less CI runs)
         could never reach before.
         """
+        if self._crawl_exhausted():
+            # Candidate generation alone walks GitHub repos for ~25s; when
+            # the crawl slice is already spent, skip it whole and let a
+            # later attempt (cheaper: verdicts cached) take this tier.
+            self._incomplete = True
+            log.info(f"[{self.language}] code search skipped: crawl budget spent")
+            return
         names = sorted(self._names.raw)
         seeds: List[dict] = []
         try:
@@ -451,34 +520,31 @@ class LanguageScraper:
             return
         existing = {ch.url for ch in result.channels}
         accepted = 0
-        with ThreadPoolExecutor(max_workers=VALIDATE_WORKERS) as ex:
-            futures = {
-                ex.submit(
-                    probe_stream, s["url"],
-                    referer=s.get("referer") or None,
-                    user_agent=s.get("user_agent") or None,
-                ): s
-                for s in seeds
-                if s["url"] not in existing and not get_cache().known_dead(s["url"])
-            }
-            for fut in as_completed(futures):
-                s = futures[fut]
-                try:
-                    probe = fut.result()
-                except Exception:
-                    continue
-                get_cache().remember(s["url"], probe)
-                if not probe.ok or s["url"] in existing:
-                    continue
-                if self._accept_probe(
-                    result, s["url"], probe,
-                    name_hint=s.get("name", ""),
-                    source=s.get("source", "github"),
-                    extinf_hint=s.get("extinf", ""),
-                    logo_hint=s.get("logo", ""),
-                ):
-                    existing.add(s["url"])
-                    accepted += 1
+        cache = get_cache()
+        candidates = [s for s in seeds
+                      if s["url"] not in existing and not cache.known_dead(s["url"])]
+
+        def work(s: dict):
+            return probe_stream(s["url"],
+                                referer=s.get("referer") or None,
+                                user_agent=s.get("user_agent") or None)
+
+        def on_done(s: dict, probe) -> None:
+            nonlocal accepted
+            cache.remember(s["url"], probe)
+            if not probe.ok or s["url"] in existing:
+                return
+            if self._accept_probe(
+                result, s["url"], probe,
+                name_hint=s.get("name", ""),
+                source=s.get("source", "github"),
+                extinf_hint=s.get("extinf", ""),
+                logo_hint=s.get("logo", ""),
+            ):
+                existing.add(s["url"])
+                accepted += 1
+
+        self._budgeted_window(candidates, work, on_done, VALIDATE_WORKERS)
         if accepted:
             log.info(f"[{self.language}] code search: {accepted} channels "
                      f"accepted from {len(seeds)} candidates")
@@ -1145,31 +1211,30 @@ class LanguageScraper:
             return entry, probed
 
         accepted = 0
-        with ThreadPoolExecutor(max_workers=6) as ex:
-            futures = [ex.submit(work, e) for e in entries]
-            for fut in as_completed(futures):
-                try:
-                    entry, probed = fut.result()
-                except Exception:
+
+        def on_done(entry: dict, work_result) -> None:
+            nonlocal accepted
+            _, probed = work_result
+            for u, probe in probed:
+                get_cache().remember(u, probe)
+                if not probe.ok or u in existing:
                     continue
-                for u, probe in probed:
-                    get_cache().remember(u, probe)
-                    if not probe.ok or u in existing:
-                        continue
-                    if probe.kind == "playlist":
-                        before = len(result.channels)
-                        self._accept_playlist(result, probe, set(), source="yupptv")
-                        if len(result.channels) > before:
-                            existing.add(u)
-                            accepted += 1
-                        continue
-                    if self._accept_stream_channel(
-                        result, u, probe.extinf, is_indian(probe.sample) or is_indian(u),
-                        set(), name_hint=entry["name"], source="yupptv",
-                        score=probe.score, quality=probe.quality,
-                    ):
+                if probe.kind == "playlist":
+                    before = len(result.channels)
+                    self._accept_playlist(result, probe, set(), source="yupptv")
+                    if len(result.channels) > before:
                         existing.add(u)
                         accepted += 1
+                    continue
+                if self._accept_stream_channel(
+                    result, u, probe.extinf, is_indian(probe.sample) or is_indian(u),
+                    set(), name_hint=entry["name"], source="yupptv",
+                    score=probe.score, quality=probe.quality,
+                ):
+                    existing.add(u)
+                    accepted += 1
+
+        self._budgeted_window(entries, work, on_done, 6)
         log.info(f"[{self.language}] YuppTV fast path: {accepted} channels accepted")
 
     # ── Channel construction ─────────────────────────────────────
@@ -1211,7 +1276,15 @@ class LanguageScraper:
         self._seen_urls.add(url)
 
     def _load_existing_result(self) -> ScrapeResult:
-        """Load channels already found by a previous partial run (store)."""
+        """Load channels already found by a previous partial run (store).
+
+        Errors are deliberately NOT restored: they describe what happened in
+        *their* process. Round-tripping them through the runs table made one
+        historical failure (an empty channel list) persist forever via the
+        state cache and fail every later run's exit code before it even
+        started. A current-run failure still appends to `result.errors`
+        normally, so genuine failures keep exiting 1.
+        """
         store = get_cache()
         stored = store.channels(self.language)
         meta = store.run_meta(self.language)
@@ -1221,7 +1294,6 @@ class LanguageScraper:
             queries_sent=int(meta.get("queries_sent", 0) or 0),
             urls_found=int(meta.get("urls_found", 0) or 0),
             urls_valid=int(meta.get("urls_valid", 0) or 0),
-            errors=list(meta.get("errors", []) or []),
         )
         if stored:
             # Cross-run persistence keeps earlier finds alive; drop the ones

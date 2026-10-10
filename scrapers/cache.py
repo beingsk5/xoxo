@@ -378,6 +378,18 @@ class ProbeCache:
         except Exception:                            # pragma: no cover
             pass
 
+    def clear_run_meta(self, lang: str) -> None:
+        """Drop a language's run counters + stored errors (fresh-mode wipe)."""
+        conn = self._conn()
+        if conn is None:
+            return
+        try:
+            with self._write_lock:
+                conn.execute("DELETE FROM runs WHERE lang=?", (lang,))
+                conn.commit()
+        except Exception:                            # pragma: no cover
+            pass
+
     def save_run_meta(self, lang: str, *, queries_sent: int = 0,
                       urls_found: int = 0, urls_valid: int = 0,
                       errors=()) -> None:
