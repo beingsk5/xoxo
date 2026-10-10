@@ -99,6 +99,9 @@ env:
   # take a full All-run attempt to well under one hour).
   VALIDATE_WORKERS: '40'
   MINE_BUDGET: '8'
+  # Discovery-source crawl slice (seconds): iptv-org + YuppTV + code search
+  # + site crawl must all fit inside it before search starts.
+  BUDGET_CRAWL_S: '480'
   # One search engine only — Bing answers 200 with full SERPs from runner
   # IPs; a second engine doubles query cost for little recall.
   SCRAPER_ENGINES: 'bing'
