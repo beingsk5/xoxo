@@ -2,7 +2,7 @@ name: Scrape Indian IPTV Channels
 
 on:
   schedule:
-    - cron: '0 6 * * 1,4'
+    - cron: '0 6 * * *'
   workflow_dispatch:
     inputs:
       # One checkbox per language (GitHub has no native multi-select choice —
@@ -94,7 +94,18 @@ env:
   SCRAPER_MAX_ATTEMPTS: '3'
   # Run-level chain cap: how many follow-up runs one wave may queue
   # (the schedule starts a fresh wave).
-  CHAIN_MAX: '5'
+  CHAIN_MAX: '2'
+  # Throughput knobs (validated against the ~1 URL/s old pipeline: these
+  # take a full All-run attempt to well under one hour).
+  VALIDATE_WORKERS: '40'
+  MINE_BUDGET: '8'
+  # One search engine only — Bing answers 200 with full SERPs from runner
+  # IPs; a second engine doubles query cost for little recall.
+  SCRAPER_ENGINES: 'bing'
+  # Per-attempt internal budgets (minutes). Search stops before validate so
+  # every attempt publishes well inside the job cap.
+  SCRAPER_TIMEOUT_M1: '50'
+  SCRAPER_TIMEOUT_M2: '40'
 
 jobs:
   # ═══════════════════════════════════════════════════════════════
@@ -231,16 +242,16 @@ jobs:
     name: Scrape ${{ matrix.language }}
     needs: [select-languages, sync-data, sync-channels]
     runs-on: ubuntu-26.04
-    # Safety net only — the scraper itself runs until its queries are
-    # exhausted (or --timeout-minutes is passed). Without this a hung
-    # request could hold a runner for the 6h default.
-    timeout-minutes: 180
+    # Safety net only — the scraper itself stops on its internal budget
+    # (SCRAPER_TIMEOUT_M1/M2 per attempt). Without this a hung request
+    # could hold a runner for the 6h default.
+    timeout-minutes: 150
     strategy:
       fail-fast: false
       # 14 languages in 2 waves (public runners: up to 20 concurrent jobs).
-      # Each job is internally capped at 65/50 min, so a full scrape lands
-      # around ~2.5-3h instead of queueing waves of near-timeout jobs.
-      max-parallel: 8
+      # Each job is internally capped at 50/40 min, so a full scrape lands
+      # around ~1-3h instead of queueing waves of near-timeout jobs.
+      max-parallel: 16
       matrix: ${{ fromJson(needs.select-languages.outputs.matrix) }}
 
     env:
@@ -388,9 +399,9 @@ jobs:
             # publish window). The window is split across attempts so the
             # resumed chain stays inside the cap.
             if [ "$attempt" = "1" ]; then
-              TFLAG="--timeout-minutes 65"
+              TFLAG="--timeout-minutes ${SCRAPER_TIMEOUT_M1:-50}"
             else
-              TFLAG="--timeout-minutes 50"
+              TFLAG="--timeout-minutes ${SCRAPER_TIMEOUT_M2:-40}"
             fi
             set +e
             python -m scrapers.language "${{ matrix.language }}" $FRESH_FLAG $TFLAG
