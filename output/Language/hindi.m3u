@@ -533,6 +533,8 @@ https://live1.ottlive.co.in/newsmarathi/newsmarathi/index.m3u8
 https://hls.pragnews.com/master.m3u8
 #EXTINF:-1 tvg-name="Swatantra TV" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Swatantra_News.png" group-title="News",Swatantra TV
 https://mumbai-edge.smartplaytv.in/SwatantraTV/index.m3u8
+#EXTINF:-1 tvg-name="tv 24" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/TV24.png" group-title="News",tv 24
+https://media.nw18.com/media-assets/m402fn/f75a9d15-19a3-481e-8ae8-002edbec17d9/08-2024/24-2024/ELssPxP995-66c96705ab5e866c8cbdd342-zRzKv3UsE5/manifest.m3u8
 #EXTINF:-1 tvg-name="TV9 Bangla" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/TV9-Bangla1.png" group-title="News",TV9 Bangla
 https://dyjmyiv3bp2ez.cloudfront.net/pub-iotv9banaen8yq/liveabr/playlist.m3u8
 #EXTINF:-1 tvg-name="TV9 Gujarati" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/TV9%20Gujarati1.png" group-title="News",TV9 Gujarati
@@ -657,6 +659,10 @@ https://d2g1vdc6ozl2o8.cloudfront.net/out/v1/0a0dc7d7911b4fddbb4dfc963fdd4b9e/in
 http://103.185.24.134:3001/SONY-BBC/index.m3u8
 #EXTINF:-1 tvg-name="Desi Plus" group-title="Other",Desi Plus
 http://cdn2.live247stream.com/desiplus/tv/playlist.m3u8
+#EXTINF:-1 tvg-name="0f9a" group-title="Other",0f9a
+https://media.nw18.com/media-assets/hf20px/dd9c87f5-0f9a-48e8-bc6b-dd5370207488/10-2024/08-2024/6704c38453ee996a864618ba/manifest.m3u8
+#EXTINF:-1 tvg-name="a45b" group-title="Other",a45b
+https://media.nw18.com/media-assets/m402fn/5e3f26ec-2955-4f28-a45b-dded1962be88/07-2024/2-2024/VScuarcXSA-6683e3b6e52018ba2ec6e267-3DaA0rS0DE/manifest.m3u8
 #EXTINF:-1 tvg-name="Ramdhenu" tvg-logo="https://dtil.tmsimg.com/assets/s143717_ld_h15_aa.png?lock=720x540" group-title="Other",Ramdhenu
 https://mumt01.tangotv.in/O5aw8Zn3RAMDHENU/index.m3u8
 #EXTINF:-1 tvg-name="Rang" tvg-logo="https://dtil.tmsimg.com/assets/s143718_ld_h15_aa.png?lock=720x540" group-title="Other",Rang
@@ -665,6 +671,8 @@ https://mumt01.tangotv.in/O5aw8Zn3RANG/index.m3u8
 https://mumt06.tangotv.in/qYyB8fXVSHARNAMTV/index.m3u8
 #EXTINF:-1 tvg-name="Sarv Dharm Sangam" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SARV_DHARAM_SANGAM/images/LOGO_HD/image.png" group-title="Other",Sarv Dharm Sangam
 https://d1msejlow1t3l4.cloudfront.net/fta/sarvdharmsangam/playlist.m3u8
+#EXTINF:-1 tvg-name="Hotmixradio India" group-title="Other",Hotmixradio India
+https://streaming.hotmixradio.fr/hotmix-india-en-mp3
 #EXTINF:-1 tvg-name="mvstsnyy0la" group-title="Other",mvstsnyy0la
 https://hls-gcore.xvideos-cdn.com/jMC9R4Dskq-mvSTSnYY0LA==,1791686643/109e6cc8-c7e5-40cb-9ea7-13fbfac5096d/0/hls.m3u8
 #EXTINF:-1 tvg-name="Radio Suno Malayalam 91.7" group-title="Other",Radio Suno Malayalam 91.7
