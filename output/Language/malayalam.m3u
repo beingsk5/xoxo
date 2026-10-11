@@ -7,20 +7,32 @@ https://mmtv-vglivessai.akamaized.net/v1/master/673630b269b766886555eebfddd4f27f
 https://d3eyhgoylams0m.cloudfront.net/v1/manifest/93ce20f0f52760bf38be911ff4c91ed02aa2fd92/ed7bd2c7-8d10-4051-b397-2f6b90f99acb/562ee8f9-9950-48a0-ba1d-effa00cf0478/2.m3u8
 #EXTINF:-1 tvg-name="Darshana TV" tvg-logo="https://dtil.tmsimg.com/assets/s142774_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Darshana TV
 https://cdn.pishow.tv/ott/live/1453/master.m3u8
-#EXTINF:-1 tvg-name="Asianet HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e3/Asianet_2023_logo.png" group-title="Entertainment",Asianet HD
+#EXTINF:-1 tvg-name="Asianet HD" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/7408/1782289617408-h.jpg" group-title="Entertainment",Asianet HD
 https://da86m1sqpm3o0.cloudfront.net/28072023/smil:starasianet.smil/chunklist_b1928000.m3u8
 #EXTINF:-1 tvg-name="DD Malayalam KB" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Malayalam.png" group-title="Entertainment",DD Malayalam KB
 https://d2lk5u59tns74c.cloudfront.net/out/v1/c313674ffced4c9a90f1bba436df2b9b/index.m3u8
 #EXTINF:-1 tvg-name="NKR TV" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/NKRTV.png" group-title="General",NKR TV
 https://vglivessai.akamaized.net/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/bd25b31b-5ce2-453d-a544-d073555d85f3/index.m3u8?hdnts=st=1791668198~exp=1791689798~acl=!*/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/bd25b31b-5ce2-453d-a544-d073555d85f3/*!/payload/yupptvott_5_-1_feafebff-83f5-4f51-8293-de0b450fd4f7_US_20.106.182.101_yupptv_1_channel_7177_-1/*~data=yupptvott_5_-1_feafebff-83f5-4f51-8293-de0b450fd4f7_US_20.106.182.101_yupptv_1_channel_7177_-1~hmac=9c3de9d949f7481e8aab7c9bcf9412f412e0bc2fdf92f5e7674944bf71f18e65&ads.content_custom_3_param=yuppfastint&ads.ip=20.106.182.101&did=feafebff-83f5-4f51-8293-de0b450fd4f7&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=ENTERTAINMENT&ads.content_custom_1_param=FAST&ads.channel=7177&ads.channel_name=NKRTV&ads.language=KAN&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
+#EXTINF:-1 tvg-name="Galavision East HD (1080p) [Geo-blocked]" tvg-logo="https://i.imgur.com/YozqNL3.jpg" group-title="General",Galavision East HD (1080p) [Geo-blocked]
+https://streaming-live-fcdn.api.prd.univisionnow.com/galaeast/galaeast.isml/hls/galaeast.m3u8
+#EXTINF:-1 tvg-name="Galavision West HD (1080p) [Geo-blocked]" tvg-logo="https://i.imgur.com/YozqNL3.jpg" group-title="General",Galavision West HD (1080p) [Geo-blocked]
+https://streaming-live-fcdn.api.prd.univisionnow.com/galawest/galawest.isml/hls/galawest.m3u8
+#EXTINF:-1 tvg-name="Color Vision (720p) [Geo-blocked]" tvg-logo="https://i.imgur.com/YozqNL3.jpg" group-title="General",Color Vision (720p) [Geo-blocked]
+https://cdn4.wind.do/streams/colorvision/colorvision_master.m3u8
 #EXTINF:-1 tvg-name="NKR TV Kannada" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/NKRTV.png" group-title="General",NKR TV Kannada
 https://stream.ottlive.co.in/nkrtv/index.m3u8
+#EXTINF:-1 tvg-name="Digital Vision 63 (720p) [Geo-blocked]" tvg-logo="https://i.imgur.com/YozqNL3.jpg" group-title="General",Digital Vision 63 (720p) [Geo-blocked]
+https://ss2.tvrdomi.com:1936/digitalvision/digitalvision/playlist.m3u8
+#EXTINF:-1 tvg-name="Carivision (1080p) [Geo-blocked]" tvg-logo="https://i.imgur.com/YozqNL3.jpg" group-title="General",Carivision (1080p) [Geo-blocked]
+https://ss2.tvrdomi.com:1936/carivision/carivision/playlist.m3u8
 #EXTINF:-1 tvg-name="Jeevan TV" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Jeevan_TV.png" group-title="General",Jeevan TV
 https://cdn.pishow.tv/ott/live/1467/master.m3u8
 #EXTINF:-1 tvg-name="Kaumudy TV" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Kaumudy-Logo-trasparent.png" group-title="General",Kaumudy TV
 https://cdn.pishow.tv/ott/live/1237/master.m3u8
 #EXTINF:-1 tvg-name="Sony Television" tvg-logo="https://i.postimg.cc/XYfRvKzz/20240823_023036.png" group-title="General",Sony Television
 https://stream.ottplus.live/live/sony_ent_sd_abr/index.m3u8
+#EXTINF:-1 tvg-name="Kairali Arabia" tvg-logo="https://i.imgur.com/BBEfplL.png" group-title="General",Kairali Arabia
+https://mumt03.tangotv.in/Dsly5z3HKAIRALIARABIA/index.m3u8
 #EXTINF:-1 tvg-name="Kairali TV" tvg-logo="https://dtil.tmsimg.com/assets/s143247_ld_h15_aa.png?lock=720x540" group-title="General",Kairali TV
 https://mumt01.tangotv.in/O5aw8Zn3KAIRALI/index.m3u8
 #EXTINF:-1 tvg-name="Kappa TV" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Kappa%20TV.png" group-title="Lifestyle",Kappa TV
