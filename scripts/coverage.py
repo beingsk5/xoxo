@@ -8,7 +8,10 @@ Usage:
 
 Compares the channels stored by the scraper against channel_lists/<lang>,
 so "41 channels" becomes "41 of 545 targets (7.5%)" and the missing names
-are listed. Exit 1 only when the store is empty.
+are listed. Target matching uses the scraper's own NameIndex matcher (token
+sets + SAFE_EXTRAS), so quality/extra-token variants ("Zee TV HD" for
+"Zee TV") count as covered — no exact string match required. Exit 1 only
+when the store is empty.
 
 Coverage below --min-coverage (env COVERAGE_MIN, default 50) prints a
 WARNING and a GitHub step-summary note — warnings only, never a failure.
@@ -24,7 +27,12 @@ from typing import List
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from scrapers.cache import get_cache
-from scrapers.nameindex import QUALITY_TOKENS, norm_name
+from scrapers.nameindex import (
+    QUALITY_TOKENS,
+    SAFE_EXTRAS,
+    NameIndex,
+    norm_name,
+)
 
 CHANNEL_LISTS_DIR = Path(__file__).resolve().parent.parent / "channel_lists"
 
@@ -61,12 +69,27 @@ def coverage_key(name: str) -> str:
     return " ".join(t for t in norm_name(name).split() if t not in QUALITY_TOKENS)
 
 
+def _core_tokens(name: str) -> frozenset:
+    """Distinctive tokens of a name (quality/SAFE extras removed)."""
+    return frozenset(t for t in coverage_key(name).split()
+                     if t and t not in SAFE_EXTRAS)
+
+
 def coverage_for(lang: str, channels) -> dict:
     """Found/missing counts of this language's targets among stored channels.
 
     Missing names are the honest measure of a scrape's recall: channels we
-    should have produced but did not. Returns {} when the language has no
-    channel list to compare against.
+    should have produced but did not. A target counts as covered when any
+    stored channel matches it, in this order:
+
+      1. NameIndex.has — the scraper's own gate (token sets + SAFE_EXTRAS);
+      2. loose containment — the distinctive tokens of one name are a
+         subset of the other's ("Zee" ~ "Zee TV" ~ "Zee Marathi"), or one
+         compact form is a substring of the other ("zeetv" ~ "zeetvtv").
+
+    Cross-crediting similar names is intentional: a stored channel may
+    cover several targets, and coverage is a recall dashboard, not an
+    accept/reject gate. Returns {} when the language has no list.
     """
     targets = target_names(lang)
     if not targets:
@@ -74,9 +97,31 @@ def coverage_for(lang: str, channels) -> dict:
     wanted: dict = {}                      # unique key -> display name
     for t in targets:
         wanted.setdefault(coverage_key(t), t)
-    have = {coverage_key(c.name) for c in channels if c.name}
-    found = [t for k, t in wanted.items() if k in have]
-    missing = [t for k, t in wanted.items() if k not in have]
+    rows = [c.name for c in channels if c.name]
+    have = NameIndex(rows)
+    stored_keys = [coverage_key(n) for n in rows]
+    stored_cores = [_core_tokens(n) for n in rows]
+    stored_compacts = ["".join(k.split()) for k in stored_keys]
+    found, missing = [], []
+    for t in wanted.values():
+        if have.has(t):
+            found.append(t)
+            continue
+        t_core = _core_tokens(t)
+        t_compact = "".join(coverage_key(t).split())
+        hit = False
+        if t_core:
+            for s_core, s_compact in zip(stored_cores, stored_compacts):
+                # Non-empty cores only: an all-extras stored name ("TV")
+                # must never cover everything by empty-subset.
+                if s_core and (t_core <= s_core or s_core <= t_core):
+                    hit = True
+                    break
+                if (len(t_compact) >= 4 and len(s_compact) >= 4
+                        and (t_compact in s_compact or s_compact in t_compact)):
+                    hit = True
+                    break
+        (found if hit else missing).append(t)
     return {
         "total": len(wanted),
         "found": len(found),
