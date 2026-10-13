@@ -70,6 +70,11 @@ def _parse_playlist(text: str, *, name_hint: str = "",
     """EXTINF entries of a downloaded file -> seed candidates."""
     if not text or "#EXTINF" not in text.upper():
         return []
+    head = text[:2048].upper()
+    if "#EXT-X-TARGETDURATION" in head or "#EXT-X-STREAM-INF" in head:
+        # HLS master/media playlist: the EXTINF+segment lines are the
+        # playlist's own media, not channel entries — never seed them.
+        return []
     from scrapers.base import extract_extinf_blocks
     out: List[Candidate] = []
     for url, blk in extract_extinf_blocks(text).items():

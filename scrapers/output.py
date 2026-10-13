@@ -225,6 +225,12 @@ def language_filename(lang: str) -> str:
 
 def prepare_channels(channels: List[Channel]) -> List[Channel]:
     """Dedup, rank, filter and enrich a run's channels before writing."""
+    from scrapers.urls import is_raw_file_url
+    before = len(channels)
+    channels = [ch for ch in channels if not is_raw_file_url(ch.url)]
+    if len(channels) != before:
+        log.info(f"  Dropped {before - len(channels)} raw-file links "
+                 f"(code-forge file storage, not streams)")
     channels = dedup_channels(channels)
     log.info(f"  After URL dedup: {len(channels)} unique URLs")
     channels = best_per_channel(channels)

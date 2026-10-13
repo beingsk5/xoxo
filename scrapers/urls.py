@@ -82,6 +82,48 @@ def is_non_media_url(url: str) -> bool:
     return path.endswith(NON_MEDIA_EXTS)
 
 
+# Code-forge raw-file hosts: repository file storage, not stream CDNs.
+# A .m3u8 here is a checked-in manifest whose playable variant (a real CDN
+# chunklist) lives inside it; the file link itself must never be kept as a
+# channel entry.
+RAW_FILE_HOSTS: Tuple[str, ...] = (
+    "raw.githubusercontent.com",
+    "gist.githubusercontent.com",
+    "objects.githubusercontent.com",
+)
+_RAW_FILE_FORGE_HOSTS: Tuple[str, ...] = (
+    "github.com", "gitlab.com", "bitbucket.org", "codeberg.org",
+)
+
+
+def is_raw_file_url(url: str) -> bool:
+    """True when the URL is a code-forge raw-file link, not a stream host.
+
+    GitHub/GitLab store repository files on separate raw hosts (and under
+    `/raw/` or `/blob/` paths on the main host). Those links serve *files*,
+    not streams: a checked-in `.m3u8` there is a manifest whose playable
+    variant points at a real CDN. The probe resolves that variant; the file
+    link itself is never kept as a channel.
+    """
+    host = host_of(url)
+    if not host:
+        return False
+    if any(host == h or host.endswith("." + h) for h in RAW_FILE_HOSTS):
+        return True
+    if host == "cdn.jsdelivr.net":
+        try:
+            return (urlparse(url).path or "").lower().startswith("/gh/")
+        except Exception:
+            return False
+    if host in _RAW_FILE_FORGE_HOSTS:
+        try:
+            path = (urlparse(url).path or "").lower()
+        except Exception:
+            return False
+        return "/raw/" in path or "/blob/" in path
+    return False
+
+
 # URL fragments that point straight at a media endpoint or a channel API:
 # always worth a probe, and probed before ordinary page URLs.
 DIRECT_STREAM_HINTS: Tuple[str, ...] = (

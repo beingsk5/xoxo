@@ -40,7 +40,9 @@ from urllib.parse import urljoin, urlparse
 
 from scrapers import flaresolverr
 from scrapers import httpclient
-from scrapers.urls import is_blocked_domain, is_non_media_url, is_probe_worthy
+from scrapers.urls import (
+    is_blocked_domain, is_non_media_url, is_probe_worthy, is_raw_file_url,
+)
 
 log = logging.getLogger("scraper")
 
@@ -74,6 +76,10 @@ class Probe:
     needs_ua: bool = False
     blocked: bool = False           # bot challenge: retryable, not dead
     note: str = ""
+    # For HLS/DASH masters whose *input* URL is a code-forge raw-file link:
+    # the playable variant URL actually resolved from the manifest (the real
+    # CDN stream). The accept path keeps this instead of the file link.
+    resolved_url: str = ""
 
     @property
     def ok(self) -> bool:
@@ -469,6 +475,7 @@ def probe_stream(
             return Probe(kind="stream", detail="hls_master", score=score,
                          quality=quality, bandwidth=bw, latency_ms=latency,
                          sample=text[:60000],
+                         resolved_url=(abs_var if is_raw_file_url(url) else ""),
                          note=f"variants={len(variants)} seg_ok={seg_ok}")
 
     # ── HLS media playlist ──────────────────────────────────────

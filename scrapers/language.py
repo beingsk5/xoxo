@@ -60,8 +60,8 @@ from scrapers.sources import grepapp as grepapp_source
 from scrapers.sources import iptvorg as iptvorg_source
 from scrapers.sources import siteapi as siteapi_source
 from scrapers.urls import (
-    is_placeholder_token_url, is_probe_worthy, looks_like_player_page,
-    probe_priority,
+    is_placeholder_token_url, is_probe_worthy, is_raw_file_url,
+    looks_like_player_page, probe_priority,
 )
 
 # Repo root on sys.path so channel_lists.py is importable as a top-level module
@@ -868,9 +868,23 @@ class LanguageScraper:
         if probe.kind == "playlist":
             self._accept_playlist(result, probe, proven)
         elif probe.kind == "stream":
-            indian = is_indian(probe.sample) or is_indian(url)
+            stream_url = url
+            name_hint = ""
+            if is_raw_file_url(url):
+                # Code-forge raw-file link: keep the real CDN stream the
+                # probe resolved inside the manifest, not the file itself.
+                alt = probe.resolved_url
+                if not alt or is_raw_file_url(alt):
+                    return
+                stream_url = alt
+                # The file path carries the channel name; the CDN variant
+                # does not — preserve it for naming/indian checks.
+                name_hint = self._names.best_for_url(url)
+            indian = (is_indian(probe.sample) or is_indian(url)
+                      or is_indian(stream_url) or is_indian(name_hint))
             self._accept_stream_channel(
-                result, url, probe.extinf, indian, proven,
+                result, stream_url, probe.extinf, indian, proven,
+                name_hint=name_hint,
                 score=probe.score, quality=probe.quality,
                 source=probe_source(url),
             )
@@ -901,11 +915,18 @@ class LanguageScraper:
                                   source=source, logo_hint=logo_hint)
             return len(result.channels) > before
         if probe.kind == "stream":
+            stream_url = url
+            if is_raw_file_url(url):
+                alt = probe.resolved_url
+                if not alt or is_raw_file_url(alt):
+                    return False
+                stream_url = alt
             extinf = probe.extinf or extinf_hint
             indian = (is_indian(probe.sample) or is_indian(url)
+                      or is_indian(stream_url)
                       or is_indian(name_hint) or is_indian(extinf))
             return self._accept_stream_channel(
-                result, url, extinf, indian, set(),
+                result, stream_url, extinf, indian, set(),
                 name_hint=name_hint, source=source, logo_hint=logo_hint,
                 score=probe.score, quality=probe.quality,
             )
@@ -1246,7 +1267,7 @@ class LanguageScraper:
                      name: str = "", logo: str = "", source: str = "",
                      score: int = 0, quality: str = ""):
         if (not url or is_blocked_domain(url) or url in self._seen_urls
-                or is_placeholder_token_url(url)):
+                or is_placeholder_token_url(url) or is_raw_file_url(url)):
             return
         parsed = {}
         if extinf:
@@ -1319,6 +1340,19 @@ class LanguageScraper:
                 log.info(f"[{self.language}] dropped "
                          f"{len(stored) - len(clean)} stored channels with "
                          f"placeholder tokens (re-searching)")
+                stored = clean
+        if stored:
+            # Code-forge raw-file links (raw.githubusercontent.com/...) are
+            # repository file storage, not stream hosts. A checked-in .m3u8
+            # there is a manifest whose playable variant (the real CDN
+            # chunklist) lives inside it — the raw file itself is never a
+            # channel. Dropping it marks the channel unfound so search
+            # re-finds the link and the probe resolves the inner variant.
+            clean = [c for c in stored if not is_raw_file_url(c.url)]
+            if len(clean) != len(stored):
+                log.info(f"[{self.language}] dropped "
+                         f"{len(stored) - len(clean)} stored raw-file links "
+                         f"(re-searching)")
                 stored = clean
         if stored:
             log.info(f"[{self.language}] resuming with {len(stored)} "
