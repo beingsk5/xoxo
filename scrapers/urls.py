@@ -119,6 +119,57 @@ _PLAYER_WORD_RE = re.compile(
     re.IGNORECASE,
 )
 
+# Credential-bearing query parameters. A real token is a long opaque string
+# tied to a paid account; the values below are obvious placeholders shared
+# by every anonymous visitor of a public list. Panels that accept them are
+# oversold shared relays: everyone hits the same per-user connection quota
+# (x-deny-reason: per_user_limit), so the stream plays a few seconds and
+# then403s. Such links can never be a reliable channel — reject outright
+# instead of probing and publishing them.
+_CRED_PARAM_RE = re.compile(
+    r"(?:^|[?&])(token|auth_key|authkey|key|sign|sig|signature|hmac|"
+    r"password|passwd|pwd|pass|username|user|login|session(?:_id|id)?|sid|"
+    r"api_key|apikey|access_token|secret)=([^&#]*)",
+    re.IGNORECASE,
+)
+
+_PLACEHOLDER_TOKEN_VALUES = frozenset({
+    "test", "demo", "sample", "example", "xxx", "abc", "changeme",
+    "default", "password", "pass", "qwerty", "guest", "null", "none",
+    "undefined", "foobar", "foo", "bar", "temp", "tmp", "user",
+})
+
+_PLACEHOLDER_TOKEN_RE = re.compile(
+    r"(?:test|demo|abc|xxx|user|pass|temp|tmp|sample|example)\d*\Z")
+
+
+def is_placeholder_token_url(url: str) -> bool:
+    """True when a credential query param holds an obvious dummy value.
+
+    Catches shared-placeholder links like `...?token=test` — the panel
+    ignores the token and serves anyone, but every viewer burns the same
+    per-user connection quota, so the stream dies with an I/O error a few
+    seconds in. Empty values are kept (the server ignores a missing token,
+    so the link may still be a genuine open endpoint).
+    """
+    if "=" not in url or "?" not in url:
+        return False
+    try:
+        query = urlparse(url).query
+    except Exception:
+        return False
+    if not query:
+        return False
+    for m in _CRED_PARAM_RE.finditer(query):
+        val = unquote(m.group(2)).strip().lower()
+        if not val:
+            continue
+        if val in _PLACEHOLDER_TOKEN_VALUES or _PLACEHOLDER_TOKEN_RE.fullmatch(val):
+            return True
+        if val.isdigit() and len(val) <= 4:
+            return True
+    return False
+
 
 def _path_query(url: str) -> str:
     """Lowercased `path?query` of `url` ('' when unparsable)."""
@@ -144,6 +195,8 @@ def is_probe_worthy(url: str) -> bool:
     if not url.startswith(("http://", "https://")):
         return False
     if is_blocked_domain(url) or is_non_media_url(url):
+        return False
+    if is_placeholder_token_url(url):
         return False
     lower = url.lower()
     if any(h in lower for h in DIRECT_STREAM_HINTS):

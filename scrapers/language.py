@@ -59,7 +59,10 @@ from scrapers.sources import github as github_source
 from scrapers.sources import grepapp as grepapp_source
 from scrapers.sources import iptvorg as iptvorg_source
 from scrapers.sources import siteapi as siteapi_source
-from scrapers.urls import is_probe_worthy, looks_like_player_page, probe_priority
+from scrapers.urls import (
+    is_placeholder_token_url, is_probe_worthy, looks_like_player_page,
+    probe_priority,
+)
 
 # Repo root on sys.path so channel_lists.py is importable as a top-level module
 # when this package is launched via `python -m scrapers.language`.
@@ -1242,7 +1245,8 @@ class LanguageScraper:
     def _add_channel(self, result: ScrapeResult, url: str, extinf: str,
                      name: str = "", logo: str = "", source: str = "",
                      score: int = 0, quality: str = ""):
-        if not url or is_blocked_domain(url) or url in self._seen_urls:
+        if (not url or is_blocked_domain(url) or url in self._seen_urls
+                or is_placeholder_token_url(url)):
             return
         parsed = {}
         if extinf:
@@ -1305,6 +1309,17 @@ class LanguageScraper:
                          f"{len(stored) - len(live)} stored channels with "
                          f"dead verdicts")
                 stored = live
+        if stored:
+            # Placeholder-token links (`...?token=test`) are shared junk on
+            # oversold panels — they die with per_user_limit a few seconds
+            # in. Dropping them marks the channel unfound again so its
+            # queries reopen and search keeps hunting a real URL.
+            clean = [c for c in stored if not is_placeholder_token_url(c.url)]
+            if len(clean) != len(stored):
+                log.info(f"[{self.language}] dropped "
+                         f"{len(stored) - len(clean)} stored channels with "
+                         f"placeholder tokens (re-searching)")
+                stored = clean
         if stored:
             log.info(f"[{self.language}] resuming with {len(stored)} "
                      f"channels already found")
