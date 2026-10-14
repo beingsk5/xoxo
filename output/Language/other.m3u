@@ -1,8 +1,6 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
-#EXTINF:-1 tvg-name="Bark TV (1080p)" group-title="Entertainment",Bark TV (1080p)
-https://bbb-barkt-streamstak.otteravision.com/bbb/barkt/barkt.m3u8
-#EXTINF:-1 tvg-name="Italia 2 (480p) [Geo-blocked]" group-title="Entertainment",Italia 2 (480p) [Geo-blocked]
-https://59d7d6f47d7fc.streamlock.net/italia2/italia2/playlist.m3u8
+#EXTINF:-1 tvg-name="Adult Swim West [Not 24/7;Geo-blocked]" group-title="Entertainment",Adult Swim West [Not 24/7;Geo-blocked]
+https://turnerlive.warnermediacdn.com/hls/live/2023185/aswest/noslate/VIDEO_1_5128000.m3u8
 #EXTINF:-1 tvg-name="India (576p)" group-title="Entertainment",India (576p)
 https://fs.uplink.kz/india/mono.m3u8?token=onlinetv
 #EXTINF:-1 tvg-name="Baby Shark TV (1080p)" group-title="Kids",Baby Shark TV (1080p)
@@ -13,76 +11,82 @@ https://amg02713-amg02713c11-amgplt0852.playout.now3.amagi.tv/ts-us-e2-n2/playli
 https://d6lk10bkdgfae.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-n0stmvwxmsf5c/playlist.m3u8
 #EXTINF:-1 tvg-name="Zarok TV Sorani (720p)" group-title="Kids",Zarok TV Sorani (720p)
 https://zindisorani.zaroktv.com.tr/hls/stream.m3u8
-#EXTINF:-1 tvg-name="Sony YAY [Jannat]" group-title="Kids",Sony YAY [Jannat]
-https://media.hmair.xyz/api/play/Sony%20YAY.m3u8
 #EXTINF:-1 tvg-name="God Stands Kids Club TV Urdu" group-title="Kids",God Stands Kids Club TV Urdu
 https://online.godstands.tv:5443/WebRTCApp/streams/KidsUrdu.m3u8
-#EXTINF:-1 tvg-name="KCM (1080p) [Geo-blocked]" group-title="Movies",KCM (1080p) [Geo-blocked]
-https://amg02159-amg02159c7-samsung-in-4001.playouts.now.amagi.tv/playlist/amg02159-kcglobal-kcm-samsungin/playlist.m3u8
 #EXTINF:-1 tvg-name="FilmRise Forensic Files (720p) [Geo-blocked]" group-title="Movies",FilmRise Forensic Files (720p) [Geo-blocked]
 https://pb-x9qsxrudiq9d2.akamaized.net/webvtt/v1/18584c3f3a2a4df8/88886014/master.m3u8
-#EXTINF:-1 tvg-name="Bollywood HD Russia (576p)" group-title="Movies",Bollywood HD Russia (576p)
-https://xykt-fix.github.io/cinerama_edge01/hls/BOLLYWOOD_RU/Movie009.m3u8
 #EXTINF:-1 tvg-name="Filmex (1080p) [Geo-blocked]" group-title="Movies",Filmex (1080p) [Geo-blocked]
 https://filmex-filmex-xumo.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-name="Filmex Clasico (1080p) [Geo-blocked]" group-title="Movies",Filmex Clasico (1080p) [Geo-blocked]
 https://filmex-filmexclasico-xumo.amagi.tv/playlist.m3u8
-#EXTINF:-1 tvg-name="Bollywood HD (576p)" group-title="Movies",Bollywood HD (576p)
-http://176.118.197.101/Bollywood_HD/index.m3u8
 #EXTINF:-1 tvg-name="Hindi Movie Classic 24" group-title="Movies",Hindi Movie Classic 24
 http://b.nvisionbd.com:80/play/kw2_GErRljFvFzQcnPaNHcyWD9ydNgGR7Klza_EhD-1jzFaJ47UO8mbWrYDSo7xu
-#EXTINF:-1 tvg-name="Hindi Classic 24" tvg-logo="https://imglink.cc/cdn/cScI5tEUjV.png" group-title="Movies",Hindi Classic 24
-https://vods2.aynaott.com/hindimovies/index.m3u8
+#EXTINF:-1 tvg-name="Bollywood Classic Romania (576p)" group-title="Movies",Bollywood Classic Romania (576p)
+http://rpprod.hbbtv.cdn.cra.cz:8080/hbbTV/cme-ro-bollywood-classic/live_hq?offsetSeconds=0
+#EXTINF:-1 tvg-name="Cinemax (Czech Republic)" group-title="Movies",Cinemax (Czech Republic)
+http://88.212.15.17/live/test_cinemax_hd_hevc/playlist.m3u8
 #EXTINF:-1 tvg-name="Hindi Movies" group-title="Movies",Hindi Movies
 https://live20.bozztv.com/giatvplayout7/giatv-209612/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 tvg-name="MBC Bollywood HD" group-title="Movies",MBC Bollywood HD
+http://b.nvisionbd.com:80/play/kw2_GErRljFvFzQcnPaNHcyWD9ydNgGR7Klza_EhD-2liCa210ImbnkDwFv4UGJA
 #EXTINF:-1 tvg-name="Gold Star" group-title="Movies",Gold Star
 https://moviethls.wns.live/hls/stream.m3u8
 #EXTINF:-1 tvg-name="RAJ MUSIC TELUGU" group-title="Music",RAJ MUSIC TELUGU
 https://tinyurl.com/yaarokayaar1110-channel59
-#EXTINF:-1 tvg-name="Eska Rock TV (1080p)" group-title="Music",Eska Rock TV (1080p)
-http://92.114.85.87:8016/play/a005/index.m3u8
-#EXTINF:-1 tvg-name="Hindi Hits" group-title="Music",Hindi Hits
-http://146.59.253.52:8080/hindihitshd/index.m3u8
 #EXTINF:-1 tvg-name="Gugak TV (1080p)" group-title="Music",Gugak TV (1080p)
 https://mgugaklive.nowcdn.co.kr/gugakvideo/gugakvideo.stream/playlist.m3u8
 #EXTINF:-1 tvg-name="El Sol Network TV (1080p)" group-title="Music",El Sol Network TV (1080p)
 https://tv.wracanal10.com:3025/live/elsoltvlive.m3u8
-#EXTINF:-1 tvg-name="Bilyonaryo News Channel (1080p) [Geo-blocked]" group-title="News",Bilyonaryo News Channel (1080p) [Geo-blocked]
-https://amg19223-amg19223c11-amgplt0352.playout.now3.amagi.tv/playlist/amg19223-amg19223c11-amgplt0352/playlist.m3u8
+#EXTINF:-1 tvg-name="CBS News Colorado" group-title="News",CBS News Colorado
+https://amd-mediator-eolq3tk4la-uk.a.run.app/cbs/map.m3u8?am.originUrl=https%3A%2F%2Fdai.google.com%2Flinear%2Fhls%2Fevent%2FE9CkyheTSKeGiOiICU_JBQ%2Fmaster.m3u8&imafw_csid=desktop_web&imafw__fw_did=&imafw__fw_is_lat=&imafw__fw_vcid2=&imafw__fw_app_bundle=&imafw__fw_us_privacy=1YNY&height=1080&ip_addr=185.217.168.164&page_url=https%25253A%25252F%25252Flocalnow.com%25252Fchannels%25252Fcbs-news-chicago-hyperlocal&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F122.0.0.0%20Safari%2F537.36&width=1920&app_version=0.0.0
+#EXTINF:-1 tvg-name="KOAA News 5 Colorado" group-title="News",KOAA News 5 Colorado
+https://s3host3.localnow.api.cms.amdvids.com/v1/master/c189661feba961c19bc5fb60b57879ee9b84548a/config4/playlist.m3u8?ads.cdnhost=s3host3.localnow.api.cms.amdvids.com&ads.playbackid=A3737EDE-EA54-440D-99A6-DFFCF39C6FE6&ads.n1=rule_id&ads.v1=E7BB7BA1-D932-4E65-BD9F-93731E6E87C5-1744054592&ads.n3=qp_content_id&ads.v3=A3737EDE-EA54-440D-99A6-DFFCF39C6FE6&ads.n4=content_name&ads.v4=EPG%20%7C%20KOAA%20Pueblo%2FColorado%20Springs%2C%20CO&ads.n21=ua&ads.v21=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F122.0.0.0%20Safari%2F537.36&ads.n22=url&ads.v22=https%25253A%25252F%25252Flocalnow.com%25252Fchannels%25252Fcbs-news-chicago-hyperlocal&ads.n23=channel_genre&ads.v23=News&ads.n24=w&ads.v24=1920&ads.n25=app_name&ads.v25=&ads.n26=cust_devicename&ads.v26=desktop_web&ads.n27=content_provider&ads.v27=koaa&ads.n28=did&ads.v28=&ads.n29=device_make&ads.v29=&ads.n30=content_custom_2_param&ads.v30=AMDB012738&ads.n31=content_producer_name&ads.v31=Scripps%20Media%20INC&ads.n32=channel_ext_id&ads.v32=626c292fdd02e34a6c3f4023&ads.n33=channel_brand_id&ads.v33=AMDB012738&ads.n34=h&ads.v34=1080&ads.n35=app_store_url&ads.v35=&ads.n36=channel_rating&ads.v36=TV-PG&ads.n37=channel_company_id&ads.v37=AMDP500135&ads.n38=app_bundle&ads.v38=&ads.n39=device_model&ads.v39=&ads.n40=content_livestream&ads.v40=1&ads.n41=gpp_sid&ads.v41=&ads.n42=content_custom_3_param&ads.v42=channel&ads.n43=channel_title&ads.v43=EPG%20%20KOAA%20Pueblo%2FColorado%20Springs%2C%20CO&ads.n44=channel_name&ads.v44=EPG%20%20KOAA%20Pueblo%2FColorado%20Springs%2C%20CO&ads.n45=gpp&ads.v45=&ads.n46=us_privacy&ads.v46=1YNY&ads.n47=ifa_type&ads.v47=&ads.n48=channel_id&ads.v48=A3737EDE-EA54-440D-99A6-DFFCF39C6FE6&ads.n49=content_custom_1_param&ads.v49=A3737EDE-EA54-440D-99A6-DFFCF39C6FE6&ads.n50=ip&ads.v50=185.217.168.164&ads.n51=channel_language&ads.v51=en&ads.n52=app_version&ads.v52=0.0.0&ads.n53=pos&ads.v53=midroll&ads.n54=dnt&ads.v54=&ads.n55=device_type&ads.v55=&ads.n56=network_name&ads.v56=koaa&ads.n57=content_type&ads.v57=channel&ads.n58=channel_corp&ads.v58=Scripps%20Media%20INC
+#EXTINF:-1 tvg-name="News12 Brooklyn [Geo-blocked]" group-title="News",News12 Brooklyn [Geo-blocked]
+https://mdc.ott.alticeusa.net/live4.ott.optimum.net/live4-uploads/N12KH_A1/index_new.m3u8?omap=https
+#EXTINF:-1 tvg-name="News12 Hudson Valley [Geo-blocked]" group-title="News",News12 Hudson Valley [Geo-blocked]
+https://mdc.ott.alticeusa.net/live4.ott.optimum.net/live4-uploads/N12HH_A1/index_new.m3u8?omap=https
+#EXTINF:-1 tvg-name="News12 New Jersey [Geo-blocked]" group-title="News",News12 New Jersey [Geo-blocked]
+https://mdc.ott.alticeusa.net/live4.ott.optimum.net/live4-uploads/N12JH_CENT_A1/index_new.m3u8?omap=https
+#EXTINF:-1 tvg-name="News12 Westchester [Geo-blocked]" group-title="News",News12 Westchester [Geo-blocked]
+https://mdc.ott.alticeusa.net/live4.ott.optimum.net/live4-uploads/N12WH_A1/index_new.m3u8?omap=https
+#EXTINF:-1 tvg-name="News12+ Hudson Valley (1080p) [Geo-blocked]" group-title="News",News12+ Hudson Valley (1080p) [Geo-blocked]
+https://mdc.ott.alticeusa.net/live4.ott.optimum.net/live4-uploads/N12PLUS_H_WC_A1/index_new.m3u8
+#EXTINF:-1 tvg-name="KRDO ABC 13 News Colorado Springs CO" group-title="News",KRDO ABC 13 News Colorado Springs CO
+https://s9host2.localnow.api.cms.amdvids.com/v1/master/c189661feba961c19bc5fb60b57879ee9b84548a/config11/m2/localnow/a5e2bd24aaa1e1d1ab93d017bc3fde2a7ee1203041e523ac605c2cb5ae02cdcdaa551f05de38/master.m3u8?ads.cdnhost=s9host2.localnow.api.cms.amdvids.com&ads.playbackid=BDAF0B8B-8BD0-47C4-8A59-C944C2E32DE9&ads.n1=rule_id&ads.v1=E7BB7BA1-D932-4E65-BD9F-93731E6E87C5-1744054592&ads.n3=qp_content_id&ads.v3=BDAF0B8B-8BD0-47C4-8A59-C944C2E32DE9&ads.n4=content_name&ads.v4=KRDO-TV%20Colorado%20Springs%20CO&ads.n21=gpp_sid&ads.v21=&ads.n22=pos&ads.v22=midroll&ads.n23=ua&ads.v23=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F122.0.0.0%20Safari%2F537.36&ads.n24=channel_id&ads.v24=BDAF0B8B-8BD0-47C4-8A59-C944C2E32DE9&ads.n25=channel_genre&ads.v25=News&ads.n26=us_privacy&ads.v26=1YNY&ads.n27=gpp&ads.v27=&ads.n28=app_store_url&ads.v28=&ads.n29=content_custom_3_param&ads.v29=channel&ads.n30=network_name&ads.v30=krdotv&ads.n31=ifa_type&ads.v31=&ads.n32=url&ads.v32=https%25253A%25252F%25252Flocalnow.com%25252Fchannels%25252Fcbs-news-chicago-hyperlocal&ads.n33=device_make&ads.v33=&ads.n34=content_producer_name&ads.v34=News%20Press%20and%20Gazette%20Company&ads.n35=w&ads.v35=1920&ads.n36=content_custom_1_param&ads.v36=BDAF0B8B-8BD0-47C4-8A59-C944C2E32DE9&ads.n37=app_name&ads.v37=&ads.n38=channel_corp&ads.v38=News%20Press%20and%20Gazette%20Company&ads.n39=content_livestream&ads.v39=1&ads.n40=channel_company_id&ads.v40=AMDP500545&ads.n41=content_provider&ads.v41=krdotv&ads.n42=device_type&ads.v42=&ads.n43=channel_ext_id&ads.v43=&ads.n44=content_custom_2_param&ads.v44=AMDB013505&ads.n45=app_version&ads.v45=0.0.0&ads.n46=h&ads.v46=1080&ads.n47=channel_language&ads.v47=en&ads.n48=device_model&ads.v48=&ads.n49=channel_title&ads.v49=KRDO-TV%20Colorado%20Springs%20CO&ads.n50=content_type&ads.v50=channel&ads.n51=app_bundle&ads.v51=&ads.n52=cust_devicename&ads.v52=desktop_web&ads.n53=did&ads.v53=&ads.n54=channel_name&ads.v54=KRDO-TV%20Colorado%20Springs%20CO&ads.n55=channel_brand_id&ads.v55=AMDB013505&ads.n56=ip&ads.v56=185.217.168.164&ads.n57=dnt&ads.v57=&ads.n58=channel_rating&ads.v58=TV-14
 #EXTINF:-1 tvg-name="DW" group-title="News",DW
 https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8
-#EXTINF:-1 tvg-name="Omroep Zeeland" group-title="News",Omroep Zeeland
-http://d3isaxd2t6q8zm.cloudfront.net/live/omroepzeeland/tv/index.m3u8
+#EXTINF:-1 tvg-name="News12 Long Island (1080p) [Geo-blocked]" group-title="News",News12 Long Island (1080p) [Geo-blocked]
+https://mdc.ott.alticeusa.net/live4.ott.optimum.net/live4-uploads/N12LH_WEST_A1/index_new.m3u8?omap=https
+#EXTINF:-1 tvg-name="News12 Conneticut [Geo-blocked]" group-title="News",News12 Conneticut [Geo-blocked]
+https://mdc.ott.alticeusa.net/live4.ott.optimum.net/live4-uploads/N12CH_FFLD_MILF_A1/index_new.m3u8?omap=https
 #EXTINF:-1 tvg-name="Halk TV SD (1080p)" group-title="News",Halk TV SD (1080p)
 https://halktv-live.daioncdn.net/halktv/halktv.m3u8
-#EXTINF:-1 tvg-name="CBS News Colorado (720p)" group-title="News",CBS News Colorado (720p)
-https://cbsn-den.cbsnstream.cbsnews.com/out/v1/2e49baf2906244ecb01b07d9885fbe7a/master.m3u8
-#EXTINF:-1 tvg-name="7 News (720p)" group-title="News",7 News (720p)
-https://sscsott.com/7news/live/index.m3u8
-#EXTINF:-1 tvg-name="Finans Turk TV (720p)" group-title="News",Finans Turk TV (720p)
-https://yayin30.haber100.com/live/finansturk/playlist.m3u8
+#EXTINF:-1 tvg-name="SABC Lehae [Geo-blocked]" group-title="News",SABC Lehae [Geo-blocked]
+https://sabctretalh.cdn.mangomolo.com/lehae/smil:lehae.stream.smil/master.m3u8
 #EXTINF:-1 tvg-name="24 TV (720p)" group-title="News",24 TV (720p)
 https://turkmedya-live.ercdn.net/tv24/tv24.m3u8
 #EXTINF:-1 tvg-name="360 (720p) [Not 24/7]" group-title="News",360 (720p) [Not 24/7]
 https://turkmedya-live.ercdn.net/tv360/tv360.m3u8
-#EXTINF:-1 tvg-name="51 Radio TV (480p) [Geo-blocked]" group-title="News",51 Radio TV (480p) [Geo-blocked]
-http://wms.shared.streamshow.it/canale51/canale51/playlist.m3u8
-#EXTINF:-1 tvg-name="Acustik TV" group-title="News",Acustik TV
-https://s5.mexside.net:1936/clientetv/clientetv/playlist.m3u8
+#EXTINF:-1 tvg-name="Food Network (Czech Republic)" group-title="News",Food Network (Czech Republic)
+http://88.212.15.17/live/test_food_network_atk_tv/playlist.m3u8
+#EXTINF:-1 tvg-name="HBO (Czech Republic)" group-title="News",HBO (Czech Republic)
+http://88.212.15.17/live/test_hbo_hd_hevc/playlist.m3u8
+#EXTINF:-1 tvg-name="HGTV (Czech Republic)" group-title="News",HGTV (Czech Republic)
+http://88.212.15.17/live/test_hgtv_hevc_25p/playlist.m3u8
 #EXTINF:-1 tvg-name="CNA News" group-title="News",CNA News
 https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index_5.m3u8
 #EXTINF:-1 tvg-name="DVB TV (720p) [Geo-blocked]" group-title="News",DVB TV (720p) [Geo-blocked]
 https://live-stream.dvb.no/hls/stream_src/index.m3u8
 #EXTINF:-1 tvg-name="FREEDOM (1080p)" group-title="News",FREEDOM (1080p)
 https://dash4.antik.sk/live/test_uatv/playlist.m3u8
+#EXTINF:-1 tvg-name="TeleMoldova + [Geo-blocked]" group-title="News",TeleMoldova + [Geo-blocked]
+https://vdo.ssl-stream.com:3247/stream/play.m3u8
 #EXTINF:-1 tvg-name="BOLLYWOOD 4U" group-title="Other",BOLLYWOOD 4U
 https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/22d13e33-8705-40e8-9809-4e80aa795f15/manifest.m3u8?hdnts=st=1791638609~exp=1791660209~acl=!*/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/22d13e33-8705-40e8-9809-4e80aa795f15/*!/payload/yupptvott_5_-1_8995de6f-d10c-4023-9f8a-2f5d4dcf55b3_US_172.212.172.240_yupptv_1_channel_6604_-1/*~data=yupptvott_5_-1_8995de6f-d10c-4023-9f8a-2f5d4dcf55b3_US_172.212.172.240_yupptv_1_channel_6604_-1~hmac=14fda0e99d42d4de6586bbe229a6995168642cac7b94863bbf79e81476046506&ads.content_custom_3_param=yuppfastint&ads.ip=172.212.172.240&did=8995de6f-d10c-4023-9f8a-2f5d4dcf55b3&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=ENTERTAINMENT&ads.content_custom_1_param=FAST&ads.channel=6604&ads.channel_name=BOLLYWOOD4U&ads.language=HIN&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
 #EXTINF:-1 tvg-name="production" group-title="Other",production
 https://med-tv-it.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-hls-aes128-medtv-1-restreaming/bitok/eyJzdGlkIjoiMGUzYjU2OWQtYTY3NC00ZDQxLThmZmMtNjA2NWU5YzMwNTViIiwibWt0IjoiaXQiLCJjaCI6IjUiLCJwdGYiOjV9/hls/main.m3u8
 #EXTINF:-1 tvg-name="stage" group-title="Other",stage
 https://stage-playlistserver.aws.syncbak.com/spl/cbshls/2.0/master.m3u8?api_token=eyJhbGciOiJIUzI1NiIsImtpZCI6IjVhNDcwMDI0MmNkZDRkNzViYmMxYzExMzE2YWI2MTE0IiwidHlwIjoiSldUIn0.eyJiYXNlQ2hhbm5lbElkIjoxNiwibXZwZElkIjoiQWxsQWNjZXNzIiwiZHRwIjo4LCJleHAiOjE3OTE5NzgzNTQsImlzcyI6IkNCUy5jb20iLCJhdWQiOiJwbGF5bGlzdHNlcnZlci5hd3Muc3luY2Jhay5jb20iLCJtZDUiOiJlN2UwNGRmYmMxYWU2NmJlNWJjYTFiMzA5NzBiMGFhOSIsImlwIjoiMjAuMTY4LjExMC4xNyIsImRjIjp7IjYwRlBTIjp0cnVlfSwiZXVhIjpmYWxzZSwiZWlkIjpmYWxzZSwiaWF0IjoxNzkxOTc4MjY0fQ.HNbor8SLNpjVf9PZDDfgSd_sLwmgWm1Wsg79vPvz9fg
-#EXTINF:-1 tvg-name="webobjects" group-title="Other",webobjects
-https://play-edge.itunes.apple.com/WebObjects/MZPlayLocal.woa/hls/subscription/playlist.m3u8?cc=US&svcId=tvs.vds.5305&a=1896791023&isExternal=true&brandId=tvs.sbd.4000&id=1389793879&l=en-US&aec=UHD
 #EXTINF:-1 tvg-name="Wild Flix Hindi" group-title="Other",Wild Flix Hindi
 https://cc-qgrxgp51645lw.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-qgrxgp51645lw/IQJW/WBD/WildFlix_IN/WildFlix_IN.m3u8
 #EXTINF:-1 tvg-name="XXTreme Jobs Hindi" group-title="Other",XXTreme Jobs Hindi
@@ -91,10 +95,6 @@ https://cc-zko1curyce7jh.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da6
 https://gsn-cinevault-westerns-2-us.roku.wurl.tv/playlist.m3u8
 #EXTINF:-1 tvg-name="ABN TV India (540p)" group-title="Other",ABN TV India (540p)
 https://mediaserver.abnvideos.com/streams/abntvindia.m3u8
-#EXTINF:-1 tvg-name="anonymous" group-title="Other",anonymous
-https://linear-anon.tv.apple.com/v1/hls/anonymous/playlist.m3u8?serviceId=tvs.vds.5505&l=en-US&referenceId=umc.cmr.mls.ex.3zgmoez3qzjrwoamvl5xj539w
-#EXTINF:-1 tvg-name="GoTraveler (720p) [Geo-blocked]" group-title="Other",GoTraveler (720p) [Geo-blocked]
-https://amg09501-amg09501c1-klowdtv-us-2398.playouts.now.amagi.tv/playlist/amg09501-quester-gotraveler-klowdtvus/playlist.m3u8
 #EXTINF:-1 tvg-name="Celebrity Name Game (1080p) [Geo-blocked]" group-title="Other",Celebrity Name Game (1080p) [Geo-blocked]
 https://amg00353-amg00353c19-xumo-us-2608.playouts.now.amagi.tv/lionsgate-clbng/playlist.m3u8
 #EXTINF:-1 tvg-name="Clarity 4K (2160p) [Geo-blocked]" group-title="Other",Clarity 4K (2160p) [Geo-blocked]
@@ -111,28 +111,24 @@ https://cdn1.etbon.eus/etb2/index.m3u8
 https://cdn1.etbon.eus/etb1/index.m3u8
 #EXTINF:-1 tvg-name="9 la Loma TV (1080p) [Geo-blocked]" group-title="Other",9 la Loma TV (1080p) [Geo-blocked]
 https://9laloma.tv/live.m3u8
-#EXTINF:-1 tvg-name="Alb UK TV (1080p) [Not 24/7]" group-title="Other",Alb UK TV (1080p) [Not 24/7]
-http://albuk.dyndns.tv:1935/albuk/albuk.stream/playlist.m3u8
-#EXTINF:-1 tvg-name="playmanifest" group-title="Other",playmanifest
-https://cdnapisec.kaltura.com/p/1999781/sp/199978100/playManifest/entryId/1_lv4mvozp/format/applehttp/protocol/https/a.m3u8?ks=djJ8MTk5OTc4MXwFQ5UGHMbF9Ytfzfd2lnGBpYE0Mj_p7EpLJsqbqpQZt47_gZkXBaqR6ANbdsvoIKOaKvkZ3bIVv-AMlz0hbrp8w_d2B3OuzflKWIjUnPnlsYOftwVrR7sWW0-5mUeREJw=
-#EXTINF:-1 tvg-name="Canal 22 Nacional (720p) [Geo-blocked]" group-title="Other",Canal 22 Nacional (720p) [Geo-blocked]
-https://5fc584f3f19c9.streamlock.net/canal22/smil:canal22.smil/playlist.m3u8
+#EXTINF:-1 tvg-name="EnerGeek (1080p) [Geo-blocked]" group-title="Other",EnerGeek (1080p) [Geo-blocked]
+https://cl-2.backend.energeek.cl/bkp/egretroweb/index.m3u8?token=IPTVgh26
+#EXTINF:-1 tvg-name="CNBC TV 18 (IN) Geo" group-title="Other",CNBC TV 18 (IN) Geo
+https://amg00866-amg00866c9-lg-in-4409.playouts.now.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-name="Nagorik TV" group-title="Other",Nagorik TV
 http://livetv.akr4m.com:8080/bdtv/restrem/38.m3u8
-#EXTINF:-1 tvg-name="oephruicta0m" group-title="Other",oephruicta0m
-https://dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S76960628/OEPHRUIctA0M/playlist_video.m3u8
+#EXTINF:-1 tvg-name="1.FM – Bombay Beats India Radio" group-title="Other",1.FM – Bombay Beats India Radio
+http://strm112.1.fm/bombaybeats_mobile_mp3
 #EXTINF:-1 tvg-name="10 HD" group-title="Other",10 HD
 https://i.mjh.nz/.r/10-nsw.m3u8
-#EXTINF:-1 tvg-name="Seven" group-title="Other",Seven
-https://i.mjh.nz/.r/seven-syd.m3u8
-#EXTINF:-1 tvg-name="Antena Seis TV (720p) [Geo-blocked]" group-title="Other",Antena Seis TV (720p) [Geo-blocked]
-https://video1.azulstream.com:8081/antenaseistv/index.m3u8
 #EXTINF:-1 tvg-name="content" group-title="Other",content
 https://weltwoche.de/wp-content/uploads/video-stream/fyvzcogn/hls/v2/fileSequence17.ts
 #EXTINF:-1 tvg-name="ENTER 10 BANGLA" group-title="Other",ENTER 10 BANGLA
 http://dvltv.cc:80/play/uxN8_xYmP3o_GFqK372_hw6MN-lPmKrUpPVq8M9-2kM
-#EXTINF:-1 tvg-name="MBC Bollywood" group-title="Other",MBC Bollywood
-http://93.184.10.248/MBCBollywood/index.m3u8
+#EXTINF:-1 tvg-name="Nat Geo Hindi" group-title="Other",Nat Geo Hindi
+https://alex4528.site/k7m2q9x4b8nc/stream.ts?id=176
+#EXTINF:-1 tvg-name="Nat Geo Wild Hindi" group-title="Other",Nat Geo Wild Hindi
+https://alex4528.site/k7m2q9x4b8nc/stream.ts?id=177
 #EXTINF:-1 tvg-name="The Q India" group-title="Other",The Q India
 https://amg1-i.akamaihd.net/hls/live/784034/Q001/playlist.m3u8?__nn__=5606168722001&hdnea=st=1566232200~exp=1566235800~acl=/hls/live/784034/Q001/*~hmac=4de929fdc0ee53199a11237ee75a695383a82a42623fa92c1376493e5fc91d7b
 #EXTINF:-1 tvg-name="x0g3yypavwzducrmuic0xq" group-title="Other",x0g3yypavwzducrmuic0xq
@@ -143,8 +139,6 @@ https://live20.bozztv.com/giatvplayout7/giatv-209587/tracks-v1a1/mono.ts.m3u8
 http://41.205.93.154/CNBC/index.m3u8
 #EXTINF:-1 tvg-name="Stryk TV" group-title="Other",Stryk TV
 https://FFFFFFF110156200.tvustream.com/ryfy.m3u8
-#EXTINF:-1 tvg-name="Italia2TV (480p) [Geo-blocked]" group-title="Other",Italia2TV (480p) [Geo-blocked]
-http://wms.shared.streamshow.it/italia2/mp4:italia2/playlist.m3u8
 #EXTINF:-1 tvg-name="Madani Channel Urdu" group-title="Other",Madani Channel Urdu
 https://streaming.madanichannel.tv/static/streaming-playlists/hls/b9790f10-cb0d-4e30-82bf-84a756234e58/master.m3u8
 #EXTINF:-1 tvg-name="360 RFTV (576p) [Geo-blocked]" group-title="Other",360 RFTV (576p) [Geo-blocked]
@@ -181,16 +175,10 @@ https://mntv.livebox.co.in/mntvhls/live.m3u8
 https://ncdn.telewebion.ir/aflak/live/playlist.m3u8
 #EXTINF:-1 tvg-name="Atrak TV" group-title="Other",Atrak TV
 https://ncdn.telewebion.ir/atrak/live/playlist.m3u8
-#EXTINF:-1 tvg-name="Faros TV2 (480p) [Geo-blocked]" group-title="Other",Faros TV2 (480p) [Geo-blocked]
-https://s1.cystream.net/live/faros2/playlist.m3u8
 #EXTINF:-1 tvg-name="DTV-8 [Geo-blocked]" group-title="Other",DTV-8 [Geo-blocked]
 https://watch.davestv8.com/hls/stream.m3u8
-#EXTINF:-1 tvg-name="Peace TV Urdu (1080p)" group-title="Religious",Peace TV Urdu (1080p)
-https://dzkyvlfyge.erbvr.com/PeaceTvUrdu/index.m3u8
 #EXTINF:-1 tvg-name="ABN Urdu (540p)" group-title="Religious",ABN Urdu (540p)
 https://mediaserver.abnvideos.com/streams/abnurdu.m3u8
-#EXTINF:-1 tvg-name="Ark TV (1080p) [Not 24/7]" group-title="Religious",Ark TV (1080p) [Not 24/7]
-https://stream.hydeinnovations.com/arktv-international/index.fmp4.m3u8
 #EXTINF:-1 tvg-name="EWTN (United States) (720p) [Geo-blocked]" group-title="Religious",EWTN (United States) (720p) [Geo-blocked]
 https://cdn3.wowza.com/1/QjRzVXJtVml5SUVx/WGJRSWxz/hls/live/playlist.m3u8
 #EXTINF:-1 tvg-name="EWTN (United States) Spanish (720p) [Geo-blocked]" group-title="Religious",EWTN (United States) Spanish (720p) [Geo-blocked]
@@ -201,8 +189,6 @@ https://online.godstands.tv:5443/WebRTCApp/streams/HindiStreaming.m3u8
 https://online.godstands.tv:5443/WebRTCApp/streams/PunjabiStreaming.m3u8
 #EXTINF:-1 tvg-name="God Stands TV Urdu" group-title="Religious",God Stands TV Urdu
 https://online.godstands.tv:5443/WebRTCApp/streams/UrduStreaming.m3u8
-#EXTINF:-1 tvg-name="Akaal Channel (396p) [Geo-blocked]" group-title="Religious",Akaal Channel (396p) [Geo-blocked]
-https://cdn-globecast.akamaized.net/live/eds/akaal_tv/hls1_smart_akaal/akaal_tv.m3u8
 #EXTINF:-1 tvg-name="Billiard TV (1080p) [Geo-blocked]" group-title="Sports",Billiard TV (1080p) [Geo-blocked]
 https://pb-wm04vonaerv0k.akamaized.net/billi.m3u8
 #EXTINF:-1 tvg-name="F1 Channel (1080p) [Geo-blocked]" group-title="Sports",F1 Channel (1080p) [Geo-blocked]
@@ -211,7 +197,5 @@ https://amg12058-c15studio-amg12058c1-lg-us-5787.playouts.now.amagi.tv/playlist.
 http://tv.streambox.fr/live/testlivestream/testlivestream/49.m3u8
 #EXTINF:-1 tvg-name="FUEL TV US (1080p) [Geo-blocked]" group-title="Sports",FUEL TV US (1080p) [Geo-blocked]
 https://amg01074-fueltv-amg01074c1-firetv-us-3150.playouts.now.amagi.tv/playlist.m3u8
-#EXTINF:-1 tvg-name="Desi Plus" group-title="Sports",Desi Plus
-http://cdn2.live247stream.com/desiplus/tv/playlist.m3u8
-#EXTINF:-1 tvg-name="Sony Ten 5" group-title="Sports",Sony Ten 5
-https://stream.ottplus.live/live/ten_5_hd_abr/live/ten_5_hd_720/index.m3u8
+#EXTINF:-1 tvg-name="REV'N Action (720p) [Geo-blocked]" group-title="Sports",REV'N Action (720p) [Geo-blocked]
+https://freecast-lukentvlive.vgcdn.net/out/v1/a4f31f297fc5440f814bd2cffd77e689/index.m3u8
