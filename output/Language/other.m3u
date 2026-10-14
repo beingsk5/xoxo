@@ -79,6 +79,8 @@ https://dash4.antik.sk/live/test_uatv/playlist.m3u8
 https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/22d13e33-8705-40e8-9809-4e80aa795f15/manifest.m3u8?hdnts=st=1791638609~exp=1791660209~acl=!*/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/22d13e33-8705-40e8-9809-4e80aa795f15/*!/payload/yupptvott_5_-1_8995de6f-d10c-4023-9f8a-2f5d4dcf55b3_US_172.212.172.240_yupptv_1_channel_6604_-1/*~data=yupptvott_5_-1_8995de6f-d10c-4023-9f8a-2f5d4dcf55b3_US_172.212.172.240_yupptv_1_channel_6604_-1~hmac=14fda0e99d42d4de6586bbe229a6995168642cac7b94863bbf79e81476046506&ads.content_custom_3_param=yuppfastint&ads.ip=172.212.172.240&did=8995de6f-d10c-4023-9f8a-2f5d4dcf55b3&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=ENTERTAINMENT&ads.content_custom_1_param=FAST&ads.channel=6604&ads.channel_name=BOLLYWOOD4U&ads.language=HIN&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
 #EXTINF:-1 tvg-name="production" group-title="Other",production
 https://med-tv-it.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-hls-aes128-medtv-1-restreaming/bitok/eyJzdGlkIjoiMGUzYjU2OWQtYTY3NC00ZDQxLThmZmMtNjA2NWU5YzMwNTViIiwibWt0IjoiaXQiLCJjaCI6IjUiLCJwdGYiOjV9/hls/main.m3u8
+#EXTINF:-1 tvg-name="stage" group-title="Other",stage
+https://stage-playlistserver.aws.syncbak.com/spl/cbshls/2.0/master.m3u8?api_token=eyJhbGciOiJIUzI1NiIsImtpZCI6IjVhNDcwMDI0MmNkZDRkNzViYmMxYzExMzE2YWI2MTE0IiwidHlwIjoiSldUIn0.eyJiYXNlQ2hhbm5lbElkIjoxNiwibXZwZElkIjoiQWxsQWNjZXNzIiwiZHRwIjo4LCJleHAiOjE3OTE5NzgzNTQsImlzcyI6IkNCUy5jb20iLCJhdWQiOiJwbGF5bGlzdHNlcnZlci5hd3Muc3luY2Jhay5jb20iLCJtZDUiOiJlN2UwNGRmYmMxYWU2NmJlNWJjYTFiMzA5NzBiMGFhOSIsImlwIjoiMjAuMTY4LjExMC4xNyIsImRjIjp7IjYwRlBTIjp0cnVlfSwiZXVhIjpmYWxzZSwiZWlkIjpmYWxzZSwiaWF0IjoxNzkxOTc4MjY0fQ.HNbor8SLNpjVf9PZDDfgSd_sLwmgWm1Wsg79vPvz9fg
 #EXTINF:-1 tvg-name="webobjects" group-title="Other",webobjects
 https://play-edge.itunes.apple.com/WebObjects/MZPlayLocal.woa/hls/subscription/playlist.m3u8?cc=US&svcId=tvs.vds.5305&a=1896791023&isExternal=true&brandId=tvs.sbd.4000&id=1389793879&l=en-US&aec=UHD
 #EXTINF:-1 tvg-name="Wild Flix Hindi" group-title="Other",Wild Flix Hindi
@@ -111,6 +113,8 @@ https://cdn1.etbon.eus/etb1/index.m3u8
 https://9laloma.tv/live.m3u8
 #EXTINF:-1 tvg-name="Alb UK TV (1080p) [Not 24/7]" group-title="Other",Alb UK TV (1080p) [Not 24/7]
 http://albuk.dyndns.tv:1935/albuk/albuk.stream/playlist.m3u8
+#EXTINF:-1 tvg-name="playmanifest" group-title="Other",playmanifest
+https://cdnapisec.kaltura.com/p/1999781/sp/199978100/playManifest/entryId/1_lv4mvozp/format/applehttp/protocol/https/a.m3u8?ks=djJ8MTk5OTc4MXwFQ5UGHMbF9Ytfzfd2lnGBpYE0Mj_p7EpLJsqbqpQZt47_gZkXBaqR6ANbdsvoIKOaKvkZ3bIVv-AMlz0hbrp8w_d2B3OuzflKWIjUnPnlsYOftwVrR7sWW0-5mUeREJw=
 #EXTINF:-1 tvg-name="Canal 22 Nacional (720p) [Geo-blocked]" group-title="Other",Canal 22 Nacional (720p) [Geo-blocked]
 https://5fc584f3f19c9.streamlock.net/canal22/smil:canal22.smil/playlist.m3u8
 #EXTINF:-1 tvg-name="Nagorik TV" group-title="Other",Nagorik TV
@@ -123,6 +127,8 @@ https://i.mjh.nz/.r/10-nsw.m3u8
 https://i.mjh.nz/.r/seven-syd.m3u8
 #EXTINF:-1 tvg-name="Antena Seis TV (720p) [Geo-blocked]" group-title="Other",Antena Seis TV (720p) [Geo-blocked]
 https://video1.azulstream.com:8081/antenaseistv/index.m3u8
+#EXTINF:-1 tvg-name="content" group-title="Other",content
+https://weltwoche.de/wp-content/uploads/video-stream/fyvzcogn/hls/v2/fileSequence17.ts
 #EXTINF:-1 tvg-name="ENTER 10 BANGLA" group-title="Other",ENTER 10 BANGLA
 http://dvltv.cc:80/play/uxN8_xYmP3o_GFqK372_hw6MN-lPmKrUpPVq8M9-2kM
 #EXTINF:-1 tvg-name="MBC Bollywood" group-title="Other",MBC Bollywood
