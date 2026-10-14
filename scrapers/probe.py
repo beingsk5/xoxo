@@ -511,7 +511,7 @@ def probe_stream(
         if looks_like_vod(text):
             # A finite pre-encoded clip is not a live channel — reject it.
             return Probe(kind="dead", detail="vod_clip", sample=text[:60000],
-                         note="finite vod clip, not live")
+                         vod=True, note="finite vod clip, not live")
         segments = media_segments(text, final_url)
         seg_ok = _segments_ok(segments, referer=referer, deadline=deadline) if segments else 0
         first = ""

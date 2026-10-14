@@ -48,6 +48,9 @@ OK_TTL = float(os.environ.get("CACHE_OK_TTL", str(3 * 86400)))
 DEAD_TTL = float(os.environ.get("CACHE_DEAD_TTL", str(7 * 86400)))
 # Challenge-walled URLs get retried much sooner than dead ones.
 BLOCKED_TTL = float(os.environ.get("CACHE_BLOCKED_TTL", str(86400)))
+# A finite VOD clip is never a live channel; keep it out of the pool for the
+# whole ratchet window so it is judged once, not re-probed on every attempt.
+VOD_TTL = float(os.environ.get("CACHE_VOD_TTL", str(30 * 86400)))
 SCHEMA = """
 CREATE TABLE IF NOT EXISTS probes (
     url        TEXT PRIMARY KEY,
@@ -140,7 +143,8 @@ class ProbeCache:
 
     @staticmethod
     def _alive(status: str, checked_at: float) -> bool:
-        ttl = {"ok": OK_TTL, "blocked": BLOCKED_TTL}.get(status, DEAD_TTL)
+        ttl = {"ok": OK_TTL, "blocked": BLOCKED_TTL,
+               "vod": VOD_TTL}.get(status, DEAD_TTL)
         return (time.time() - checked_at) < ttl
 
     def get(self, url: str) -> Optional[dict]:
@@ -176,6 +180,11 @@ class ProbeCache:
         v = self.get(url)
         return bool(v and v["status"] == "dead")
 
+    def known_vod(self, url: str) -> bool:
+        """True when the URL was already judged a finite VOD clip."""
+        v = self.get(url)
+        return bool(v and v["status"] == "vod")
+
     def best_score(self, url: str) -> int:
         v = self.get(url)
         return int(v["score"]) if v and v["status"] == "ok" else 0
@@ -207,8 +216,14 @@ class ProbeCache:
 
     def remember(self, url: str, probe) -> None:
         """Store a `scrapers.probe.Probe` result."""
-        status = "ok" if getattr(probe, "ok", False) else (
-            "blocked" if getattr(probe, "blocked", False) else "dead")
+        if getattr(probe, "vod", False):
+            status = "vod"
+        elif getattr(probe, "ok", False):
+            status = "ok"
+        elif getattr(probe, "blocked", False):
+            status = "blocked"
+        else:
+            status = "dead"
         self.put(
             url, status,
             score=int(getattr(probe, "score", 0) or 0),
@@ -229,7 +244,7 @@ class ProbeCache:
                 cur = conn.execute(
                     "DELETE FROM probes WHERE (status='ok' AND checked_at<?) "
                     "OR (status='blocked' AND checked_at<?) "
-                    "OR (status NOT IN ('ok','blocked') AND checked_at<?)",
+                    "OR (status NOT IN ('ok','blocked','vod') AND checked_at<?)",
                     (cutoff_ok, cutoff_blocked, cutoff_dead),
                 )
                 conn.commit()

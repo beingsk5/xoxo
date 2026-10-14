@@ -1359,24 +1359,16 @@ class LanguageScraper:
                          f"(re-searching)")
                 stored = clean
         if stored:
-            # Finite HLS VOD clips (a short fixed-segment playlist that never
-            # rolls) are not live channels. Re-probe the survivors and drop
-            # any that flag vod — the channel is marked unfound so its queries
-            # reopen and search hunts a real live URL instead.
-            def _is_vod(ch):
-                try:
-                    return probe_stream(ch.url).vod
-                except Exception:
-                    return False
-
-            with ThreadPoolExecutor(max_workers=VALIDATE_WORKERS) as ex:
-                flags = list(ex.map(_is_vod, stored))
-            clean = [c for c, bad in zip(stored, flags) if not bad]
-            if len(clean) != len(stored):
-                log.info(f"[{self.language}] dropped "
-                         f"{len(stored) - len(clean)} stored VOD clips "
-                         f"(re-searching)")
-                stored = clean
+            # A URL already judged a finite VOD clip is never a live channel.
+            # This is a free cache lookup — no network I/O, no re-probe churn.
+            # Dropping marks the channel unfound so its queries reopen and
+            # search hunts a real live URL.
+            cache = get_cache()
+            vod = [c for c in stored if cache.known_vod(c.url)]
+            if vod:
+                log.info(f"[{self.language}] dropped {len(vod)} stored VOD "
+                         f"links (re-searching)")
+                stored = [c for c in stored if c not in vod]
         if stored:
             log.info(f"[{self.language}] resuming with {len(stored)} "
                      f"channels already found")
