@@ -868,6 +868,8 @@ class LanguageScraper:
         if probe.kind == "playlist":
             self._accept_playlist(result, probe, proven)
         elif probe.kind == "stream":
+            if probe.vod:
+                return
             stream_url = url
             name_hint = ""
             if is_raw_file_url(url):
@@ -915,6 +917,8 @@ class LanguageScraper:
                                   source=source, logo_hint=logo_hint)
             return len(result.channels) > before
         if probe.kind == "stream":
+            if probe.vod:
+                return False
             stream_url = url
             if is_raw_file_url(url):
                 alt = probe.resolved_url
@@ -1352,6 +1356,25 @@ class LanguageScraper:
             if len(clean) != len(stored):
                 log.info(f"[{self.language}] dropped "
                          f"{len(stored) - len(clean)} stored raw-file links "
+                         f"(re-searching)")
+                stored = clean
+        if stored:
+            # Finite HLS VOD clips (a short fixed-segment playlist that never
+            # rolls) are not live channels. Re-probe the survivors and drop
+            # any that flag vod — the channel is marked unfound so its queries
+            # reopen and search hunts a real live URL instead.
+            def _is_vod(ch):
+                try:
+                    return probe_stream(ch.url).vod
+                except Exception:
+                    return False
+
+            with ThreadPoolExecutor(max_workers=VALIDATE_WORKERS) as ex:
+                flags = list(ex.map(_is_vod, stored))
+            clean = [c for c, bad in zip(stored, flags) if not bad]
+            if len(clean) != len(stored):
+                log.info(f"[{self.language}] dropped "
+                         f"{len(stored) - len(clean)} stored VOD clips "
                          f"(re-searching)")
                 stored = clean
         if stored:

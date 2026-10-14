@@ -75,6 +75,7 @@ class Probe:
     latency_ms: float = 0.0
     needs_ua: bool = False
     blocked: bool = False           # bot challenge: retryable, not dead
+    vod: bool = False               # finite pre-encoded clip, NOT a live channel
     note: str = ""
     # For HLS/DASH masters whose *input* URL is a code-forge raw-file link:
     # the playable variant URL actually resolved from the manifest (the real
@@ -208,6 +209,30 @@ def _is_master(text: str) -> bool:
 def _looks_playlist_body(text: str) -> bool:
     head = text[:4000]
     return "#EXTM3U" in head or "#EXTINF" in head
+
+
+def looks_like_vod(text: str) -> bool:
+    """Heuristic: is this HLS media playlist a finite VOD clip, not live?
+
+    Live event playlists carry `#EXT-X-PLAYLIST-TYPE:EVENT` (or no type at
+    all, sliding window). A plain VOD clip is a short fixed segment list with
+    no EVENT marker and a small total duration.
+    """
+    head = text[:8000]
+    if "#EXT-X-PLAYLIST-TYPE:EVENT" in head:
+        return False          # explicitly a live/event window
+    if "#EXT-X-PLAYLIST-TYPE:VOD" in head:
+        return True
+    # No EVENT marker: count segments + total duration. A rolling live window
+    # keeps many recent segments; a clip has a handful and a short runtime.
+    segs = len(re.findall(r"#EXTINF:", head))
+    dur = 0.0
+    for m in re.finditer(r"#EXTINF:([\d.]+)", head):
+        try:
+            dur += float(m.group(1))
+        except ValueError:
+            pass
+    return 0 < segs <= 8 and 0 < dur <= 400
 
 
 # ── Scoring ─────────────────────────────────────────────────────
@@ -452,6 +477,7 @@ def probe_stream(
             abs_var = urljoin(final_url, var_url)
             quality = _quality_from_resolution(res, bw)
             segments: List[str] = []
+            vod = False
             if time.monotonic() < deadline:
                 r2 = _resp(abs_var, ref=referer, ua=user_agent)
                 if r2 is None:
@@ -459,6 +485,7 @@ def probe_stream(
                 if r2 is not None:
                     media = r2.content.decode("utf-8", errors="ignore")
                     segments = media_segments(media, r2.url or abs_var)
+                    vod = looks_like_vod(media)
                     if not quality:
                         m = re.search(r"RESOLUTION=(\d+x\d+)", media, re.IGNORECASE)
                         if m:
@@ -474,12 +501,17 @@ def probe_stream(
             )
             return Probe(kind="stream", detail="hls_master", score=score,
                          quality=quality, bandwidth=bw, latency_ms=latency,
-                         sample=text[:60000],
+                         sample=text[:60000], vod=vod,
                          resolved_url=(abs_var if is_raw_file_url(url) else ""),
-                         note=f"variants={len(variants)} seg_ok={seg_ok}")
+                         note=f"variants={len(variants)} seg_ok={seg_ok}"
+                              + (" vod" if vod else ""))
 
     # ── HLS media playlist ──────────────────────────────────────
     if _is_hls_media(text):
+        if looks_like_vod(text):
+            # A finite pre-encoded clip is not a live channel — reject it.
+            return Probe(kind="dead", detail="vod_clip", sample=text[:60000],
+                         note="finite vod clip, not live")
         segments = media_segments(text, final_url)
         seg_ok = _segments_ok(segments, referer=referer, deadline=deadline) if segments else 0
         first = ""
