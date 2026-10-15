@@ -22,7 +22,6 @@ from typing import List
 
 from scrapers.base import get_database
 from scrapers.models import Channel
-from scrapers.nameindex import QUALITY_TOKENS, norm_name
 
 log = logging.getLogger("output")
 
@@ -35,17 +34,6 @@ _QUALITY_RANK = {"2160p": 5, "1440p": 4, "1080p": 4, "720p": 3, "576p": 2,
                  "540p": 2, "480p": 1, "360p": 1, "240p": 0}
 
 
-def dedup_channels(channels: List[Channel]) -> List[Channel]:
-    """Deduplicate by URL (keep first occurrence)."""
-    seen_urls = set()
-    deduped = []
-    for ch in channels:
-        if ch.url not in seen_urls:
-            seen_urls.add(ch.url)
-            deduped.append(ch)
-    return deduped
-
-
 def rank_key(ch: Channel) -> tuple:
     """Sort key for competing URLs of one channel: best first."""
     return (
@@ -56,38 +44,39 @@ def rank_key(ch: Channel) -> tuple:
     )
 
 
-def channel_key(ch: Channel) -> str:
-    """Identity of a channel for dedupe: name minus quality/region tokens.
-
-    "Zee TV", "Zee TV HD" and "zee-tv" are one channel carrying three
-    URLs — without dropping the quality tokens they would never collapse.
-    """
-    tokens = [t for t in norm_name(ch.name).split() if t not in QUALITY_TOKENS]
-    return " ".join(tokens) or (ch.url or "").lower()
+def _url_key(url: str) -> str:
+    """Merge key for one stream. Trailing slash and case are not identity."""
+    return (url or "").strip().rstrip("/").lower()
 
 
 def best_per_channel(channels: List[Channel]) -> List[Channel]:
-    """Keep one URL per (channel name, language): the highest-scoring one.
+    """Collapse only *the same stream* found twice. Never merge on name.
 
-    Several sources routinely find the same channel several times — an
-    iptv-org feed, a GitHub list and a search hit can all carry Zee TV. Only
-    the best-ranked URL survives, so downstream players get one working link
-    per channel instead of three where two are dead.
+    Several sources carry the same stream URL, so it would otherwise ship
+    three times. Only an identical URL (modulo trailing slash and case) is
+    merged; the highest-scoring copy survives.
+
+    Names are never a merge key. "Zee TV" and "Zee TV HD" are two distinct
+    channels and both are kept — merging them would silently delete a real
+    channel the moment two lists used different display names.
     """
-    best: dict = {}
-    order: List[tuple] = []
+    best: dict = {}          # url key -> Channel
+    order: List[str] = []
     for ch in channels:
-        key = (channel_key(ch), ch.language or "")
+        key = _url_key(ch.url)
+        if not key:
+            continue
         cur = best.get(key)
         if cur is None:
             best[key] = ch
             order.append(key)
         elif rank_key(ch) > rank_key(cur):
             best[key] = ch
+
     deduped = [best[k] for k in order]
     removed = len(channels) - len(deduped)
     if removed:
-        log.info(f"  Kept best of {removed} duplicate channel entries")
+        log.info(f"  Kept best of {removed} duplicate URLs")
     return deduped
 
 
@@ -231,8 +220,6 @@ def prepare_channels(channels: List[Channel]) -> List[Channel]:
     if len(channels) != before:
         log.info(f"  Dropped {before - len(channels)} raw-file links "
                  f"(code-forge file storage, not streams)")
-    channels = dedup_channels(channels)
-    log.info(f"  After URL dedup: {len(channels)} unique URLs")
     channels = best_per_channel(channels)
     channels = filter_blocked(channels)
     enrich_from_database(channels)

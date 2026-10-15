@@ -379,11 +379,18 @@ class IPTVDatabase:
         }
 
     def is_name_blocked(self, name):
-        """Check if a channel name is on the NSFW blocklist."""
-        cid = self.get_channel_id_fast(name)
-        if cid:
-            return cid in self.blocked
-        return False
+        """Check if a channel name is on the NSFW blocklist.
+
+        Exact name/alt-name match only. Deliberately NOT the containment
+        fallback used for enrichment: "Zee TV HD" contains "Zee TV", so a
+        partial match would drop a legitimate channel whenever a shorter
+        name happens to be blocked. Blocking must never guess.
+        """
+        if not name:
+            return False
+        key = name.lower().strip()
+        cid = self._name_index.get(key) or self._alt_index.get(key)
+        return bool(cid and cid in self.blocked)
 
     def get_alt_names(self, channel_id):
         """Get list of alt names for a channel."""
