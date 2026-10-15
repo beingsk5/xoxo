@@ -1,41 +1,49 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
-#EXTINF:-1 tvg-name="Duck TV" group-title="Kids",Duck TV
-https://d6lk10bkdgfae.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-n0stmvwxmsf5c/playlist.m3u8
 #EXTINF:-1 tvg-name="Baby Shark TV" group-title="Kids",Baby Shark TV
 https://newidco-babysharktv-1-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Duck TV" group-title="Kids",Duck TV
+https://d6lk10bkdgfae.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-n0stmvwxmsf5c/playlist.m3u8
 #EXTINF:-1 tvg-name="Zarok TV Sorani (720p)" group-title="Kids",Zarok TV Sorani (720p)
 https://zindisorani.zaroktv.com.tr/hls/stream.m3u8
 #EXTINF:-1 tvg-name="Hindi Movies" group-title="Movies",Hindi Movies
 https://live20.bozztv.com/giatvplayout7/giatv-209612/tracks-v1a1/mono.ts.m3u8
 #EXTINF:-1 tvg-name="CNA News" group-title="News",CNA News
 https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index_5.m3u8
-#EXTINF:-1 tvg-name="XXTreme Jobs Hindi" group-title="Other",XXTreme Jobs Hindi
-https://cc-zko1curyce7jh.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-zko1curyce7jh/IQJW/WBD/XXtremeJobs_IN/XXtremeJobs_IN.m3u8
-#EXTINF:-1 tvg-name="Wild Flix Hindi" group-title="Other",Wild Flix Hindi
-https://cc-qgrxgp51645lw.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-qgrxgp51645lw/IQJW/WBD/WildFlix_IN/WildFlix_IN.m3u8
+#EXTINF:-1 tvg-name="webobjects" group-title="Other",webobjects
+https://play-edge.itunes.apple.com/WebObjects/MZPlayLocal.woa/hls/subscription/playlist.m3u8?cc=US&svcId=tvs.vds.4105&a=6796440078&isExternal=true&brandId=tvs.sbd.4000&id=1470205163&l=en-US&aec=UHD
+#EXTINF:-1 tvg-name="webobjects" group-title="Other",webobjects
+https://play-edge.itunes.apple.com/WebObjects/MZPlayLocal.woa/hls/subscription/playlist.m3u8?cc=US&svcId=tvs.vds.4105&a=6792833656&isExternal=true&brandId=tvs.sbd.4000&id=1461795587&l=en-US&aec=UHD
+#EXTINF:-1 tvg-name="webobjects" group-title="Other",webobjects
+https://play-edge.itunes.apple.com/WebObjects/MZPlayLocal.woa/hls/subscription/playlist.m3u8?cc=US&svcId=tvs.vds.4105&a=6777170798&isExternal=true&brandId=tvs.sbd.4000&id=1471145038&l=en-US&aec=UHD
+#EXTINF:-1 tvg-name="webobjects" group-title="Other",webobjects
+https://play-edge.itunes.apple.com/WebObjects/MZPlayLocal.woa/hls/subscription/playlist.m3u8?cc=US&svcId=tvs.vds.4105&a=1855667906&isExternal=true&brandId=tvs.sbd.4000&id=1477680007&l=en-US&aec=UHD
+#EXTINF:-1 tvg-name="webobjects" group-title="Other",webobjects
+https://play-edge.itunes.apple.com/WebObjects/MZPlayLocal.woa/hls/subscription/playlist.m3u8?cc=US&svcId=tvs.vds.4105&a=6800879989&isExternal=true&brandId=tvs.sbd.4000&id=1497775822&l=en-US&aec=UHD
+#EXTINF:-1 tvg-name="webobjects" group-title="Other",webobjects
+https://play-edge.itunes.apple.com/WebObjects/MZPlayLocal.woa/hls/subscription/playlist.m3u8?cc=US&svcId=tvs.vds.4105&a=6796533236&isExternal=true&brandId=tvs.sbd.4000&id=1468799839&l=en-US&aec=UHD
 #EXTINF:-1 tvg-name="ABN TV India (540p)" group-title="Other",ABN TV India (540p)
 https://mediaserver.abnvideos.com/streams/abntvindia.m3u8
 #EXTINF:-1 tvg-name="BOLLYWOOD 4U" group-title="Other",BOLLYWOOD 4U
-https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/22d13e33-8705-40e8-9809-4e80aa795f15/manifest.m3u8?hdnts=st=1792068551~exp=1792090151~acl=!*/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/22d13e33-8705-40e8-9809-4e80aa795f15/*!/payload/yupptvott_5_-1_44b6ce5a-e1b2-4e05-bd7e-862117dfb2f5_US_52.154.132.179_yupptv_1_channel_6604_-1/*~data=yupptvott_5_-1_44b6ce5a-e1b2-4e05-bd7e-862117dfb2f5_US_52.154.132.179_yupptv_1_channel_6604_-1~hmac=ff0d1766c93030884d77c5760836803c16a05335deeb7aaa11062af16d17ce61&ads.content_custom_3_param=yuppfastint&ads.ip=52.154.132.179&did=44b6ce5a-e1b2-4e05-bd7e-862117dfb2f5&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=ENTERTAINMENT&ads.content_custom_1_param=FAST&ads.channel=6604&ads.channel_name=BOLLYWOOD4U&ads.language=HIN&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
+https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/22d13e33-8705-40e8-9809-4e80aa795f15/manifest.m3u8?hdnts=st=1792082595~exp=1792104195~acl=!*/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/22d13e33-8705-40e8-9809-4e80aa795f15/*!/payload/yupptvott_5_-1_a3548e10-9eef-4a8b-9f13-98d5120bf15c_US_4.154.7.25_yupptv_1_channel_6604_-1/*~data=yupptvott_5_-1_a3548e10-9eef-4a8b-9f13-98d5120bf15c_US_4.154.7.25_yupptv_1_channel_6604_-1~hmac=0823ee04a638cbf685762ee6fc221989fa72160ec0938d645d62ef07e591d4d6&ads.content_custom_3_param=yuppfastint&ads.ip=4.154.7.25&did=a3548e10-9eef-4a8b-9f13-98d5120bf15c&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=ENTERTAINMENT&ads.content_custom_1_param=FAST&ads.channel=6604&ads.channel_name=BOLLYWOOD4U&ads.language=HIN&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
 #EXTINF:-1 tvg-name="BOLLYWOOD 4U" group-title="Other",BOLLYWOOD 4U
-https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/22d13e33-8705-40e8-9809-4e80aa795f15/manifest.m3u8?hdnts=st=1792071487~exp=1792093087~acl=!*/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/22d13e33-8705-40e8-9809-4e80aa795f15/*!/payload/yupptvott_5_-1_31aac8fa-862f-463f-bd7b-119690b22d56_US_52.154.132.179_yupptv_1_channel_6604_-1/*~data=yupptvott_5_-1_31aac8fa-862f-463f-bd7b-119690b22d56_US_52.154.132.179_yupptv_1_channel_6604_-1~hmac=ca6459bacc3f3e5c418e9a9d091144f67bd20249eefdedf30b607adaa9314c39&ads.content_custom_3_param=yuppfastint&ads.ip=52.154.132.179&did=31aac8fa-862f-463f-bd7b-119690b22d56&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=ENTERTAINMENT&ads.content_custom_1_param=FAST&ads.channel=6604&ads.channel_name=BOLLYWOOD4U&ads.language=HIN&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
+https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/22d13e33-8705-40e8-9809-4e80aa795f15/manifest.m3u8?hdnts=st=1792084296~exp=1792105896~acl=!*/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/22d13e33-8705-40e8-9809-4e80aa795f15/*!/payload/yupptvott_5_-1_7b6eed7f-4e98-4f60-bea9-16d6d7a9de78_US_4.154.7.25_yupptv_1_channel_6604_-1/*~data=yupptvott_5_-1_7b6eed7f-4e98-4f60-bea9-16d6d7a9de78_US_4.154.7.25_yupptv_1_channel_6604_-1~hmac=a34ab56b95d57f7fceab384f90f62dd3100b61d8c9d84b2a98eae3ee8fd63a55&ads.content_custom_3_param=yuppfastint&ads.ip=4.154.7.25&did=7b6eed7f-4e98-4f60-bea9-16d6d7a9de78&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=ENTERTAINMENT&ads.content_custom_1_param=FAST&ads.channel=6604&ads.channel_name=BOLLYWOOD4U&ads.language=HIN&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
+#EXTINF:-1 tvg-name="Wild Flix Hindi" group-title="Other",Wild Flix Hindi
+https://cc-qgrxgp51645lw.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-qgrxgp51645lw/IQJW/WBD/WildFlix_IN/WildFlix_IN.m3u8
+#EXTINF:-1 tvg-name="XXTreme Jobs Hindi" group-title="Other",XXTreme Jobs Hindi
+https://cc-zko1curyce7jh.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-zko1curyce7jh/IQJW/WBD/XXtremeJobs_IN/XXtremeJobs_IN.m3u8
 #EXTINF:-1 tvg-name="BOLLYWOOD 4U" group-title="Other",BOLLYWOOD 4U
-https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/22d13e33-8705-40e8-9809-4e80aa795f15/manifest.m3u8?hdnts=st=1792073841~exp=1792095441~acl=!*/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/22d13e33-8705-40e8-9809-4e80aa795f15/*!/payload/yupptvott_5_-1_c44311e8-8e31-4d47-aa01-a3f4dfda482d_US_52.154.132.179_yupptv_1_channel_6604_-1/*~data=yupptvott_5_-1_c44311e8-8e31-4d47-aa01-a3f4dfda482d_US_52.154.132.179_yupptv_1_channel_6604_-1~hmac=4fc18dd0b06fa52c0c99ef02feb51b5516ce3a8596d5f21c3a4c310e10de2613&ads.content_custom_3_param=yuppfastint&ads.ip=52.154.132.179&did=c44311e8-8e31-4d47-aa01-a3f4dfda482d&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=ENTERTAINMENT&ads.content_custom_1_param=FAST&ads.channel=6604&ads.channel_name=BOLLYWOOD4U&ads.language=HIN&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
+https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/22d13e33-8705-40e8-9809-4e80aa795f15/manifest.m3u8?hdnts=st=1792085644~exp=1792107244~acl=!*/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/22d13e33-8705-40e8-9809-4e80aa795f15/*!/payload/yupptvott_5_-1_cde4a969-f70e-4d0e-8aa0-0b0062e867df_US_4.154.7.25_yupptv_1_channel_6604_-1/*~data=yupptvott_5_-1_cde4a969-f70e-4d0e-8aa0-0b0062e867df_US_4.154.7.25_yupptv_1_channel_6604_-1~hmac=770701b2d56f1ad1a609e1f14a2e6974b1c859b415582fdea934f22667e06f33&ads.content_custom_3_param=yuppfastint&ads.ip=4.154.7.25&did=cde4a969-f70e-4d0e-8aa0-0b0062e867df&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=ENTERTAINMENT&ads.content_custom_1_param=FAST&ads.channel=6604&ads.channel_name=BOLLYWOOD4U&ads.language=HIN&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
+#EXTINF:-1 tvg-name="webobjects" group-title="Other",webobjects
+https://play-edge.itunes.apple.com/WebObjects/MZPlayLocal.woa/hls/subscription/playlist.m3u8?cc=US&svcId=tvs.vds.4105&a=6789654568&isExternal=true&brandId=tvs.sbd.4000&id=1460337941&l=en-US&aec=UHD
 #EXTINF:-1 tvg-name="1.FM – Bombay Beats India Radio" group-title="Other",1.FM – Bombay Beats India Radio
 http://strm112.1.fm/bombaybeats_mobile_mp3
-#EXTINF:-1 tvg-name="manifest" group-title="Other",manifest
-http://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/5359769168001/ef01be19-e81b-4e27-9181-233d5cbf9804/2s/manifest.mpd?fastly_token=NmM5ZjFiN2NfN2YwYjMwOTFiYjIyMjdlMzIzMDAyNTBhZWYxYThjODEzNzdjZjQxOGUzOWM0ODk5ZmY0YzEwZjBkMTdjMGM0ZA%3D%3D
-#EXTINF:-1 tvg-name="manifest" group-title="Other",manifest
-https://manifest.prod.boltdns.net/manifest/v2/dash/live-baseurl/clear/avc1_mp4a/5359769168001/374f9bfe-7451-44ec-8eba-6ec146ba2bf2/2s/manifest.mpd?fastly_token=NmM5ZjFiMGVfYjQ1ZjViYThmZjEzMmY3YjVkODFkM2I3YjVkOTBhYjdkMmQzY2NmMjUwZWQxMzVmOTUzMGM5YWE1OTVmZWM4Nw%3D%3D
 #EXTINF:-1 tvg-name="Bengali Beats" group-title="Other",Bengali Beats
 https://live20.bozztv.com/giatvplayout7/giatv-209587/tracks-v1a1/mono.ts.m3u8
-#EXTINF:-1 tvg-name="7X Punjabi" group-title="Other",7X Punjabi
-https://cdn2.in/7xPunjabihls/live.m3u8
-#EXTINF:-1 tvg-name="TV9 MR" group-title="Other",TV9 MR
-https://dyjmyiv3bp2ez.cloudfront.net/pub-iotv9marlygv8h/liveabr/pub-iotv9marlygv8h/live_720p/chunks.m3u8
-#EXTINF:-1 tvg-name="manifest" group-title="Other",manifest
-http://manifest.prod.boltdns.net/manifest/v1/dash/live-baseurl/clear/5359769168001/c5578038-c479-47b3-8442-a58005c8a33a/2s/manifest.mpd?fastly_token=NmM5ZjFiNWRfYTJhZmQ2ZWQ1ZmVmMjI4YmM4MjljZjg0ZWMwYzI4MzM3NGFhMDFmZjQxMzg2ZjZlNjQwNTUzMzFmYzhkNDgyOQ%3D%3D
 #EXTINF:-1 tvg-name="Bollywood Film" group-title="Other",Bollywood Film
 https://tvextra-hls.b-cdn.net/bollywoodfilm/bollywoodfilm.m3u8
+#EXTINF:-1 tvg-name="7X Punjabi" group-title="Other",7X Punjabi
+https://cdn2.in/7xPunjabihls/live.m3u8
 #EXTINF:-1 tvg-name="MNTV (Tamil)" group-title="Other",MNTV (Tamil)
 https://mntv.livebox.co.in/mntvhls/live.m3u8
+#EXTINF:-1 tvg-name="TV9 MR" group-title="Other",TV9 MR
+https://dyjmyiv3bp2ez.cloudfront.net/pub-iotv9marlygv8h/liveabr/pub-iotv9marlygv8h/live_720p/chunks.m3u8
