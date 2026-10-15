@@ -65,7 +65,7 @@ on:
         type: boolean
         default: false
       force_fresh:
-        description: 'Force fresh data sync'
+        description: 'Reset search progress only (found channels kept)'
         required: false
         default: false
         type: boolean
@@ -360,8 +360,10 @@ jobs:
       # Coverage ratchet: carry state/store.db across runs so attempts and
       # scheduled runs resume the previous one — searched queries, pending
       # URLs and found channels accumulate until the coverage target is hit.
-      # force_fresh (attempt 1 --fresh) still wipes this language's rows as
-      # the manual reset. Verdict TTLs keep restored state from going stale.
+      # force_fresh (attempt 1 --fresh) only resets search progress (resume
+      # + counters); found channel rows are kept — wiping them cost the
+      # store two full rebuilds and the rebuild can never re-find names the
+      # engine no longer surfaces. Verdict TTLs keep restored state fresh.
       - name: Restore cross-run state
         continue-on-error: true
         uses: actions/cache/restore@v6
