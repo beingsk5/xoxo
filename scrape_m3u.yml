@@ -1,0 +1,601 @@
+name: Scrape Indian IPTV Channels
+
+on:
+  schedule:
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+    inputs:
+      # One checkbox per language (GitHub has no native multi-select choice —
+      # actions/runner#2076). All unchecked (or a schedule) = one full run
+      # over all_indian_channels.json; ticked boxes run only those languages.
+      lang_hindi:
+        description: 'Hindi'
+        type: boolean
+        default: false
+      lang_tamil:
+        description: 'Tamil'
+        type: boolean
+        default: false
+      lang_telugu:
+        description: 'Telugu'
+        type: boolean
+        default: false
+      lang_malayalam:
+        description: 'Malayalam'
+        type: boolean
+        default: false
+      lang_kannada:
+        description: 'Kannada'
+        type: boolean
+        default: false
+      lang_bengali:
+        description: 'Bengali'
+        type: boolean
+        default: false
+      lang_marathi:
+        description: 'Marathi'
+        type: boolean
+        default: false
+      lang_punjabi:
+        description: 'Punjabi'
+        type: boolean
+        default: false
+      lang_gujarati:
+        description: 'Gujarati'
+        type: boolean
+        default: false
+      lang_odia:
+        description: 'Odia'
+        type: boolean
+        default: false
+      lang_urdu:
+        description: 'Urdu'
+        type: boolean
+        default: false
+      lang_bhojpuri:
+        description: 'Bhojpuri'
+        type: boolean
+        default: false
+      lang_assamese:
+        description: 'Assamese'
+        type: boolean
+        default: false
+      lang_english:
+        description: 'English'
+        type: boolean
+        default: false
+      force_fresh:
+        description: 'Force fresh data sync'
+        required: false
+        default: false
+        type: boolean
+      chain:
+        description: 'Internal: chained-run depth (auto-incremented, leave 0)'
+        required: false
+        default: '0'
+        type: string
+
+permissions:
+  contents: write
+  # Needed to queue the next chained run of this workflow (coverage ratchet).
+  actions: write
+
+concurrency:
+  group: scrape-iptv
+  # One running + one queued run: chained re-triggers wait their turn so a
+  # run that is still publishing can never be cancelled mid-flight.
+  cancel-in-progress: false
+
+env:
+  PYTHON: '3.12'
+  # Coverage ratchet: attempts keep resuming until Covered% reaches this
+  # target (or no work remains). 100 = chase every channel in the list.
+  COVERAGE_TARGET: '100'
+  SCRAPER_MAX_ATTEMPTS: '3'
+  # Run-level chain cap: how many follow-up runs one wave may queue
+  # (the schedule starts a fresh wave).
+  CHAIN_MAX: '2'
+  # A chained re-trigger waits this long before it is dispatched, so a
+  # follow-up never starts the instant the previous run finishes.
+  CHAIN_DELAY_S: '600'
+  # Throughput knobs (validated against the ~1 URL/s old pipeline: these
+  # take a full All-run attempt to well under one hour).
+  VALIDATE_WORKERS: '40'
+  MINE_BUDGET: '8'
+  # Discovery-source crawl slice (seconds): iptv-org + YuppTV + code search
+  # + site crawl must all fit inside it before search starts.
+  BUDGET_CRAWL_S: '480'
+  # One search engine only — Bing answers 200 with full SERPs from runner
+  # IPs; a second engine doubles query cost for little recall.
+  SCRAPER_ENGINES: 'bing'
+  # Per-attempt internal budgets (minutes). Search stops before validate so
+  # every attempt publishes well inside the job cap.
+  SCRAPER_TIMEOUT_M1: '50'
+  SCRAPER_TIMEOUT_M2: '40'
+
+jobs:
+  # ═══════════════════════════════════════════════════════════════
+  # SELECT: Resolve language list (dispatch menu or full schedule set)
+  # ═══════════════════════════════════════════════════════════════
+  select-languages:
+    name: Select Languages
+    runs-on: ubuntu-26.04
+    outputs:
+      matrix: ${{ steps.set.outputs.matrix }}
+    steps:
+      - name: Build matrix from checkboxes
+        id: set
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          LANG_HINDI: ${{ inputs.lang_hindi }}
+          LANG_TAMIL: ${{ inputs.lang_tamil }}
+          LANG_TELUGU: ${{ inputs.lang_telugu }}
+          LANG_MALAYALAM: ${{ inputs.lang_malayalam }}
+          LANG_KANNADA: ${{ inputs.lang_kannada }}
+          LANG_BENGALI: ${{ inputs.lang_bengali }}
+          LANG_MARATHI: ${{ inputs.lang_marathi }}
+          LANG_PUNJABI: ${{ inputs.lang_punjabi }}
+          LANG_GUJARATI: ${{ inputs.lang_gujarati }}
+          LANG_ODIA: ${{ inputs.lang_odia }}
+          LANG_URDU: ${{ inputs.lang_urdu }}
+          LANG_BHOJPURI: ${{ inputs.lang_bhojpuri }}
+          LANG_ASSAMESE: ${{ inputs.lang_assamese }}
+          LANG_ENGLISH: ${{ inputs.lang_english }}
+        run: |
+          python3 <<'PY'
+          import json, os
+
+          # Languages in the canonical matrix order (no per-language time
+          # limits — the scraper runs until its queries are exhausted).
+          LANGS = [
+              "Hindi", "Tamil", "Telugu", "Bengali", "English", "Gujarati",
+              "Malayalam", "Kannada", "Marathi", "Odia", "Urdu",
+              "Punjabi", "Bhojpuri", "Assamese",
+          ]
+
+          checked = [
+              lang
+              for lang in LANGS
+              if os.environ.get("LANG_" + lang.upper(), "").lower() == "true"
+          ]
+
+          # Schedule (or no checkbox ticked) → one full run over
+          # channel_lists/all_indian_channels.json; ticked boxes → only
+          # those particular languages.
+          if os.environ.get("EVENT_NAME") != "workflow_dispatch" or not checked:
+              languages = ["All"]
+          else:
+              languages = checked
+
+          matrix = {"include": [{"language": lang} for lang in languages]}
+
+          out = os.environ["GITHUB_OUTPUT"]
+          with open(out, "a", encoding="utf-8") as f:
+              f.write(f"matrix={json.dumps(matrix)}\n")
+          print(f"Selected: {','.join(languages)}")
+          print(f"Matrix: {json.dumps(matrix)}")
+          PY
+
+  # ═══════════════════════════════════════════════════════════════
+  # SYNC: Download data files + channel lists (runs once)
+  # ═══════════════════════════════════════════════════════════════
+  sync-data:
+    name: Sync Database
+    runs-on: ubuntu-26.04
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Download iptv-org CSVs
+        run: |
+          mkdir -p data
+          for file in channels.csv feeds.csv logos.csv languages.csv categories.csv blocklist.csv subdivisions.csv countries.csv; do
+            curl -sSfL --retry 3 --retry-delay 5 \
+              "https://raw.githubusercontent.com/iptv-org/database/master/data/$file" \
+              -o "data/$file" && echo "  $file OK" || echo "  WARN: $file failed"
+          done
+
+      - name: Validate
+        run: python scripts/validate_data.py
+
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/ || true
+          git diff --staged --quiet || {
+            git commit -m "sync(iptv-org): $(date -u +'%Y-%m-%d')"
+            for i in 1 2 3; do
+              git pull --rebase --autostash origin main && git push && break
+              echo "Push failed (attempt $i), retrying..."
+              sleep 10
+            done
+          }
+
+  sync-channels:
+    name: Sync Channel Lists
+    runs-on: ubuntu-26.04
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: ${{ env.PYTHON }}
+          cache: pip
+
+      - run: pip install requests beautifulsoup4 lxml
+
+      - name: Refresh from BroadcastSeva
+        run: python scripts/sync_channel_lists.py
+
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add channel_lists/ || true
+          git diff --staged --quiet || {
+            git commit -m "sync(channel-lists): $(date -u +'%Y-%m-%d')"
+            for i in 1 2 3; do
+              git pull --rebase --autostash origin main && git push && break
+              echo "Push failed (attempt $i), retrying..."
+              sleep 10
+            done
+          }
+
+  # ═══════════════════════════════════════════════════════════════
+  # SCRAPE: Fan-out — one job per *selected* language
+  # ═══════════════════════════════════════════════════════════════
+  scrape-language:
+    name: Scrape ${{ matrix.language }}
+    needs: [select-languages, sync-data, sync-channels]
+    runs-on: ubuntu-26.04
+    # Safety net only — the scraper itself stops on its internal budget
+    # (SCRAPER_TIMEOUT_M1/M2 per attempt). Without this a hung request
+    # could hold a runner for the 6h default. Headroom covers 3 attempts
+    # (50+40+40 min) + publish + the chained-run delay (CHAIN_DELAY_S).
+    timeout-minutes: 170
+    strategy:
+      fail-fast: false
+      # 14 languages in 2 waves (public runners: up to 20 concurrent jobs).
+      # Each job is internally capped at 50/40 min, so a full scrape lands
+      # around ~1-3h instead of queueing waves of near-timeout jobs.
+      max-parallel: 16
+      matrix: ${{ fromJson(needs.select-languages.outputs.matrix) }}
+
+    env:
+      PYTHONUNBUFFERED: '1'
+      # Shared verdicts/scores (dead + live) so later jobs in this run skip
+      # URLs their siblings already probed. GITHUB_TOKEN enables GitHub code
+      # search, which returns 401 without auth.
+      PROBE_CACHE_DIR: .probe_cache
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      FFMPEG_VERIFY: '1'
+      # Self-hosted FlareSolverr (free, MIT) clears Cloudflare challenge
+      # pages. If the service is down the code degrades gracefully:
+      # challenges are recorded as retryable "blocked", never as dead.
+      FLARESOLVERR_URL: http://localhost:8191
+
+    # Free self-hosted challenge solver (no paid API). Browser boots on
+    # first use, hence the explicit wait step below.
+    services:
+      flaresolverr:
+        image: ghcr.io/flaresolverr/flaresolverr:latest
+        ports:
+          - 8191:8191
+
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: ${{ env.PYTHON }}
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Wait for FlareSolverr
+        run: |
+          for i in $(seq 1 45); do
+            if curl -sf http://localhost:8191/health >/dev/null 2>&1; then
+              echo "flaresolverr ready"
+              exit 0
+            fi
+            sleep 2
+          done
+          echo "flaresolverr not ready - continuing (challenges -> blocked)"
+
+      - name: Install ffmpeg (manifest decode verification)
+        run: |
+          if command -v ffmpeg >/dev/null 2>&1; then
+            echo "ffmpeg present: $(ffmpeg -version | head -1)"
+          else
+            sudo apt-get update -q
+            sudo apt-get install -y --no-install-recommends ffmpeg
+          fi
+          ffmpeg -version | head -1
+
+      - name: Ensure MIB OTT search seeds
+        run: |
+          # Standalone script — no import from channel_lists (avoids stale-module ImportError).
+          if [ -f scripts/ensure_mib_ott.py ]; then
+            python scripts/ensure_mib_ott.py
+          else
+            python - <<'PY'
+          import json, sys
+          from pathlib import Path
+          import requests
+          from bs4 import BeautifulSoup
+          out = Path("channel_lists/mib_ott_platforms.json")
+          if out.exists():
+              try:
+                  n = int(json.loads(out.read_text(encoding="utf-8")).get("total") or 0)
+                  if n > 0:
+                      print(f"MIB OTT platforms (existing): {n}")
+                      sys.exit(0)
+              except Exception:
+                  pass
+          url = "https://mib.gov.in/en/node/4054"
+          r = requests.get(url, timeout=45, headers={"User-Agent": "Mozilla/5.0"})
+          r.raise_for_status()
+          table = BeautifulSoup(r.text, "lxml").find("table")
+          rows = []
+          for tr in (table.find_all("tr") if table else []):
+              td = tr.find_all("td")
+              if len(td) >= 3 and td[0].get_text(strip=True).isdigit():
+                  rows.append({
+                      "s_no": int(td[0].get_text(strip=True)),
+                      "name": td[1].get_text(" ", strip=True),
+                      "entity": td[2].get_text(" ", strip=True),
+                  })
+          if not rows:
+              raise SystemExit("MIB OTT parse failed")
+          out.parent.mkdir(parents=True, exist_ok=True)
+          out.write_text(json.dumps({
+              "source": url, "title": "List of OTT platforms",
+              "total": len(rows), "platforms": rows,
+          }, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+          print(f"MIB OTT platforms (fetched): {len(rows)}")
+          PY
+          fi
+
+      # Coverage ratchet: carry state/store.db across runs so attempts and
+      # scheduled runs resume the previous one — searched queries, pending
+      # URLs and found channels accumulate until the coverage target is hit.
+      # force_fresh (attempt 1 --fresh) still wipes this language's rows as
+      # the manual reset. Verdict TTLs keep restored state from going stale.
+      - name: Restore cross-run state
+        continue-on-error: true
+        uses: actions/cache/restore@v6
+        with:
+          path: state/store.db
+          key: scrape-state-${{ github.run_id }}-${{ matrix.language }}
+          restore-keys: |
+            scrape-state-${{ matrix.language }}-
+            scrape-state-
+
+      - name: Download shared state (earlier jobs in this run)
+        continue-on-error: true
+        uses: actions/download-artifact@v8
+        with:
+          pattern: state-*
+          path: .probe_cache
+          merge-multiple: true
+
+      - name: Scrape ${{ matrix.language }} channels (coverage-driven retries)
+        id: scrape
+        run: |
+          FORCE_FRESH="${{ github.event.inputs.force_fresh }}"
+          if [ "${{ matrix.language }}" = "All" ]; then
+            # The full run rewrites every output view; start clean so files
+            # this run no longer emits (stale/junk views) are dropped from
+            # the repo instead of being republished from the checkout.
+            rm -rf output
+          fi
+          ATTEMPTS="${SCRAPER_MAX_ATTEMPTS:-3}"
+          LAST_RC=1
+          for attempt in $(seq 1 "$ATTEMPTS"); do
+            echo "=== Attempt $attempt/$ATTEMPTS ==="
+            # Attempts resume the restored cross-run store; only attempt 1
+            # honors force_fresh (later attempts must keep the progress).
+            FRESH_FLAG=""
+            if [ "$attempt" = "1" ] && [ "$FORCE_FRESH" = "true" ]; then
+              FRESH_FLAG="--fresh"
+            fi
+            # Internal time budget: every phase stops itself and
+            # checkpoint-exports, so each attempt publishes well before the
+            # 170-min job cap (which would cancel the job and lose the
+            # publish window). The window is split across attempts so the
+            # resumed chain stays inside the cap.
+            if [ "$attempt" = "1" ]; then
+              TFLAG="--timeout-minutes ${SCRAPER_TIMEOUT_M1:-50}"
+            else
+              TFLAG="--timeout-minutes ${SCRAPER_TIMEOUT_M2:-40}"
+            fi
+            set +e
+            python -m scrapers.language "${{ matrix.language }}" $FRESH_FLAG $TFLAG
+            LAST_RC=$?
+            set -e
+            echo "last_rc=$LAST_RC" >> "$GITHUB_OUTPUT"
+            if [ "$LAST_RC" = "0" ]; then
+              echo "Complete on attempt $attempt (queries exhausted)"
+              exit 0
+            fi
+            if [ "$LAST_RC" = "3" ]; then
+              # Budget hit with work pending: the partial playlist is
+              # already published by the scraper. Stop early once the
+              # target is met; otherwise resume and keep chasing.
+              COV_JSON="$(python3 scripts/coverage.py "${{ matrix.language }}" --json 2>/dev/null || true)"
+              PCT=$(printf '%s' "$COV_JSON" | python3 -c 'import sys,json;print(float(json.loads(sys.stdin.read() or "{}").get("pct",0)))' 2>/dev/null || echo 0)
+              echo "Incomplete: coverage ${PCT}% (target ${COVERAGE_TARGET}%)"
+              if awk -v p="$PCT" -v t="$COVERAGE_TARGET" 'BEGIN { exit !(p >= t) }'; then
+                echo "Coverage target reached - done"
+                exit 0
+              fi
+              if [ "$attempt" -lt "$ATTEMPTS" ]; then
+                echo "Resuming on next attempt..."
+                sleep 10
+                continue
+              fi
+              break
+            fi
+            # rc=1 (hard failure): retry like a flaky network.
+            echo "Attempt $attempt failed (rc=$LAST_RC), retrying..."
+            sleep 15
+          done
+          if [ "$LAST_RC" = "3" ]; then
+            echo "Attempts exhausted below the ${COVERAGE_TARGET}% target -"
+            echo "partial output published; the next run resumes from state."
+            exit 0
+          fi
+          echo "All attempts failed"
+          exit 1
+
+      - name: Show results
+        if: always()
+        run: python3 scripts/show_results.py "${{ matrix.language }}" || true
+
+      # Recall signal: how many of this run's targets we produced.
+      # Fails the job only if the state store ended up empty; coverage
+      # below the threshold is a warning, never a failure.
+      - name: Coverage
+        run: |
+          if [ "${{ matrix.language }}" = "All" ]; then
+            python3 scripts/coverage.py
+          else
+            python3 scripts/coverage.py "${{ matrix.language }}"
+          fi
+
+      # One transport file per job: type-tagged JSONL carrying the probe
+      # verdicts AND this run's channels, shared with sibling jobs (they
+      # download it into .probe_cache). Runtime state itself lives in
+      # state/store.db, which never leaves the runner.
+      - name: Upload state
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: state-${{ matrix.language }}
+          path: state/${{ matrix.language }}.jsonl
+          retention-days: 5
+          if-no-files-found: warn
+
+      # Persist this attempt's store for the next attempt/run (the ratchet).
+      # Runs even after a failed scrape so partial progress still carries over.
+      - name: Save cross-run state
+        if: always()
+        continue-on-error: true
+        uses: actions/cache/save@v6
+        with:
+          path: state/store.db
+          key: scrape-state-${{ github.run_id }}-${{ matrix.language }}
+
+      # Publish this run's M3U files (written by the scraper itself):
+      # single-language jobs write Language/<lang>.m3u; the full "All" run
+      # writes all_indian_channels.m3u + Language/* + Source/*. output/ is
+      # gitignored, so files are force-staged; the full run stages the whole
+      # directory (with deletions, so output views this run no longer emits
+      # are dropped), other runs' tracked files stay untouched. Concurrent
+      # language jobs race on push and retry with rebase.
+      - name: Commit output
+        id: commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          shopt -s nullglob
+          if [ "${{ matrix.language }}" = "All" ]; then
+            files=(output/all_indian_channels.m3u output/Language/*.m3u output/Source/*.m3u)
+          else
+            LF=$(echo "${{ matrix.language }}" | tr '[:upper:]' '[:lower:]' | tr ' ' '_')
+            files=("output/Language/${LF}.m3u")
+          fi
+          if [ ${#files[@]} -eq 0 ] || [ ! -e "${files[0]}" ]; then
+            echo "No output files written by this run"
+            exit 1
+          fi
+
+          {
+            echo "files<<EOF"
+            printf '%s\n' "${files[@]}"
+            echo "EOF"
+          } >> "$GITHUB_OUTPUT"
+
+          if [ "${{ matrix.language }}" = "All" ]; then
+            git add -A -f output/
+            COUNT_FILE=output/all_indian_channels.m3u
+          else
+            git add -f "${files[@]}"
+            COUNT_FILE="${files[0]}"
+          fi
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+
+          # Count the primary playlist only: counting every view would
+          # multiply the same channels by combined + language + source.
+          CHANNELS=$(grep -c '^#EXTINF' "$COUNT_FILE" || true)
+          git commit -m "scrape: ${CHANNELS:-0} channels $(date -u +'%Y-%m-%d %H:%M UTC')"
+
+          for i in 1 2 3 4 5; do
+            # Recover from a half-finished rebase
+            git rebase --abort 2>/dev/null || true
+            if git pull --rebase --autostash origin main && git push; then
+              echo "Push OK on attempt $i"
+              exit 0
+            fi
+            echo "Push failed (attempt $i), retrying..."
+            sleep 15
+          done
+          echo "Push failed after 5 attempts"
+          exit 1
+
+      - name: Upload output
+        if: always() && steps.commit.outputs.files != ''
+        uses: actions/upload-artifact@v7
+        with:
+          name: output-${{ matrix.language }}
+          path: ${{ steps.commit.outputs.files }}
+          retention-days: 60
+          if-no-files-found: warn
+
+      # Run-level ratchet: while coverage is below the target AND the scrape
+      # reported pending work (exit 3), queue the next run of this workflow —
+      # one at a time via the concurrency group, so runs follow each other
+      # until 100% (or until no work / CHAIN_MAX remains). workflow_dispatch
+      # triggered with GITHUB_TOKEN is exempt from the recursion guard, so
+      # this chaining is allowed. Never fails this job.
+      - name: Queue next run until coverage target
+        if: always()
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+          CHAIN: ${{ inputs.chain || '0' }}
+        run: |
+          LAST_RC="${{ steps.scrape.outputs.last_rc }}"
+          CHAIN=$(printf '%s' "${CHAIN:-0}" | tr -cd '0-9'); CHAIN=${CHAIN:-0}
+          NEXT=$((CHAIN + 1))
+          COV_JSON="$(python3 scripts/coverage.py "${{ matrix.language }}" --json 2>/dev/null || true)"
+          PCT=$(printf '%s' "$COV_JSON" | python3 -c 'import sys,json;print(float(json.loads(sys.stdin.read() or "{}").get("pct",0)))' 2>/dev/null || echo 0)
+          echo "chain=$CHAIN coverage=$PCT% target=$COVERAGE_TARGET% last_rc=$LAST_RC"
+          if [ "$LAST_RC" != "3" ]; then
+            echo "Not queueing: scrape reported no pending work (rc=${LAST_RC:-skipped})"
+          elif awk -v p="$PCT" -v t="$COVERAGE_TARGET" 'BEGIN { exit !(p >= t) }'; then
+            echo "Coverage target reached - chain complete"
+          elif [ "$NEXT" -gt "${CHAIN_MAX:-5}" ]; then
+            echo "Chain limit reached ($CHAIN_MAX runs) with coverage still below target"
+            echo "The schedule (or a manual run) picks the ratchet up again."
+          else
+            ARGS=()
+            if [ "${{ matrix.language }}" != "All" ]; then
+              KEY="lang_$(echo '${{ matrix.language }}' | tr '[:upper:]' '[:lower:]')"
+              ARGS+=(-f "${KEY}=true")
+            fi
+            ARGS+=(-f "chain=${NEXT}")
+            # Never fire the instant this job ends: give the pipeline a
+            # cooling-off window before the chained run is auto-started.
+            DELAY="$(printf '%s' "${CHAIN_DELAY_S:-600}" | tr -cd '0-9')"
+            DELAY="${DELAY:-600}"
+            echo "Waiting ${DELAY}s before queueing chained run #$NEXT..."
+            sleep "$DELAY"
+            gh workflow run scrape_m3u.yml "${ARGS[@]}"
+            echo "Queued chained run #$NEXT (coverage $PCT% -> target $COVERAGE_TARGET%)"
+          fi
