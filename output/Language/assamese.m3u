@@ -1,6 +1,24 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
+#EXTINF:-1 tvg-name="Star Jalsha" tvg-logo="https://raw.githubusercontent.com/saeidrahmanbd/BDIX-IPTV/main/logos/star-jalsha.png" group-title="Entertainment",Star Jalsha
+http://103.151.60.162:2122/play/a00w/index.m3u8
+#EXTINF:-1 tvg-name="Star Jalsha" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Star-Jalsha--2000-x-1125--Transparent.png" group-title="Entertainment",Star Jalsha
+http://103.151.60.162:2122/play/a00w/index.m3u8?hls
+#EXTINF:-1 tvg-name="Star Jalsha HD" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Star-Jalsha--2000-x-1125--Transparent.png" group-title="Entertainment",Star Jalsha HD
+https://da86m1sqpm3o0.cloudfront.net/28072023/smil:starjalsha.smil/chunklist_b1928000.m3u8
+#EXTINF:-1 tvg-name="Star Maa Movies HD" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/1759/1782290731759-h.jpg" group-title="Entertainment",Star Maa Movies HD
+https://da86m1sqpm3o0.cloudfront.net/28072023/smil:maamovies.smil/chunklist_b2628000.m3u8
+#EXTINF:-1 tvg-name="Star Pravah HD" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/5780/1782291675780-h.jpg" group-title="Entertainment",Star Pravah HD
+https://da86m1sqpm3o0.cloudfront.net/28072023/smil:starpravah.smil/chunklist_b1928000.m3u8
+#EXTINF:-1 tvg-name="Pear TV" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_PEARS_TV/images/LOGO_HD/image.png" group-title="Entertainment",Pear TV
+https://mumt01.tangotv.in/O5aw8Zn3PEARTV/index.m3u8
+#EXTINF:-1 tvg-name="Jonack" tvg-logo="https://dtil.tmsimg.com/assets/s143238_ld_h15_aa.png?lock=720x540" group-title="General",Jonack
+https://cdn.pishow.tv/ott/live/10006/master.m3u8
 #EXTINF:-1 tvg-name="DD Assam" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20North%20East.png" group-title="General",DD Assam
 https://d2lk5u59tns74c.cloudfront.net/out/v1/d380bf5c167b4319a46cdd8204bc26b2/index.m3u8
+#EXTINF:-1 tvg-name="Star Movies Select" tvg-logo="https://dtil.tmsimg.com/assets/s143830_ld_h15_aa.png?lock=720x540" group-title="Movies",Star Movies Select
+http://103.151.60.162:2122/play/a02l/index.m3u8?hls
+#EXTINF:-1 tvg-name="Star Movies Select" tvg-logo="https://raw.githubusercontent.com/saeidrahmanbd/BDIX-IPTV/main/logos/star-movies-select-37627406.png" group-title="Movies",Star Movies Select
+http://103.151.60.162:2122/play/a02l/index.m3u8
 #EXTINF:-1 tvg-name="News18 Assam North-East KB" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/News18%20Assam%20North%20East.png" group-title="News",News18 Assam North-East KB
 https://n18syndication.akamaized.net/bpk-tv/News18_Assam_North_East_NW18_MOB/output01/master.m3u8
 #EXTINF:-1 tvg-name="India Voice" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/India_Voice.png" group-title="News",India Voice
@@ -14,4 +32,28 @@ https://d1msejlow1t3l4.cloudfront.net/fta/rengonitv/playlist.m3u8?hdnts=st=17920
 #EXTINF:-1 tvg-name="Rengoni TV" tvg-logo="https://dtil.tmsimg.com/assets/s143722_ld_h15_aa.png?lock=720x540" group-title="Other",Rengoni TV
 https://d1msejlow1t3l4.cloudfront.net/fta/rengonitv/playlist.m3u8?hdnts=st=1792088096~exp=1792109696~acl=!*/fta/rengonitv/*!/payload/yupptvott_5_-1_fc29a63f-df1e-41cc-8a9b-37e6a8138c69_US_48.217.228.128_yupptv_1_channel_6649_-1/*~data=yupptvott_5_-1_fc29a63f-df1e-41cc-8a9b-37e6a8138c69_US_48.217.228.128_yupptv_1_channel_6649_-1~hmac=91c7f0da219aac96d24d181af62b52da1c53f28724ee9c32e0a992cdc880d68a&ads.content_custom_3_param=yuppfastint&ads.ip=48.217.228.128&did=fc29a63f-df1e-41cc-8a9b-37e6a8138c69&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=ENTERTAINMENT&ads.content_custom_1_param=FAST&ads.channel=6649&ads.channel_name=RengoniTV&ads.language=ASM&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
 #EXTINF:-1 tvg-name="Rengoni TV" tvg-logo="https://dtil.tmsimg.com/assets/s143722_ld_h15_aa.png?lock=720x540" group-title="Other",Rengoni TV
+https://d1msejlow1t3l4.cloudfront.net/fta/rengonitv/playlist.m3u8?hdnts=st=1792096741~exp=1792118341~acl=!*/fta/rengonitv/*!/payload/yupptvott_5_-1_0dbf0650-0ce4-4ce3-93db-bf90c4912fcb_US_13.83.107.128_yupptv_1_channel_6649_-1/*~data=yupptvott_5_-1_0dbf0650-0ce4-4ce3-93db-bf90c4912fcb_US_13.83.107.128_yupptv_1_channel_6649_-1~hmac=ed3f40379e005e6960bcacca86043b450d58e4f0419e23750bca29b381375eef&ads.content_custom_3_param=yuppfastint&ads.ip=13.83.107.128&did=0dbf0650-0ce4-4ce3-93db-bf90c4912fcb&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=ENTERTAINMENT&ads.content_custom_1_param=FAST&ads.channel=6649&ads.channel_name=RengoniTV&ads.language=ASM&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
+#EXTINF:-1 tvg-name="Rengoni TV" tvg-logo="https://dtil.tmsimg.com/assets/s143722_ld_h15_aa.png?lock=720x540" group-title="Other",Rengoni TV
+https://d1msejlow1t3l4.cloudfront.net/fta/rengonitv/playlist.m3u8?hdnts=st=1792098791~exp=1792120391~acl=!*/fta/rengonitv/*!/payload/yupptvott_5_-1_39cbe1c5-5b71-4a7a-b96c-de2b312a1ea0_US_13.83.107.128_yupptv_1_channel_6649_-1/*~data=yupptvott_5_-1_39cbe1c5-5b71-4a7a-b96c-de2b312a1ea0_US_13.83.107.128_yupptv_1_channel_6649_-1~hmac=00bbae9df97c5c9547ead0b70bc64c6d8c89e93424761beea7a6703ddea521fa&ads.content_custom_3_param=yuppfastint&ads.ip=13.83.107.128&did=39cbe1c5-5b71-4a7a-b96c-de2b312a1ea0&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=ENTERTAINMENT&ads.content_custom_1_param=FAST&ads.channel=6649&ads.channel_name=RengoniTV&ads.language=ASM&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
+#EXTINF:-1 tvg-name="Rengoni TV" tvg-logo="https://dtil.tmsimg.com/assets/s143722_ld_h15_aa.png?lock=720x540" group-title="Other",Rengoni TV
 https://d1msejlow1t3l4.cloudfront.net/fta/rengonitv/playlist.m3u8?hdnts=st=1792084309~exp=1792105909~acl=!*/fta/rengonitv/*!/payload/yupptvott_5_-1_86a0581c-19da-43ce-a895-a922b7754c8d_US_4.154.7.25_yupptv_1_channel_6649_-1/*~data=yupptvott_5_-1_86a0581c-19da-43ce-a895-a922b7754c8d_US_4.154.7.25_yupptv_1_channel_6649_-1~hmac=ce469c4750fc7fbb6646484cd58b9cb8d7f05454caf9942fbbc4db41dc25274a&ads.content_custom_3_param=yuppfastint&ads.ip=4.154.7.25&did=86a0581c-19da-43ce-a895-a922b7754c8d&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=ENTERTAINMENT&ads.content_custom_1_param=FAST&ads.channel=6649&ads.channel_name=RengoniTV&ads.language=ASM&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
+#EXTINF:-1 tvg-name="Rengoni TV" tvg-logo="https://dtil.tmsimg.com/assets/s143722_ld_h15_aa.png?lock=720x540" group-title="Other",Rengoni TV
+https://d1msejlow1t3l4.cloudfront.net/fta/rengonitv/playlist.m3u8?hdnts=st=1792095038~exp=1792116638~acl=!*/fta/rengonitv/*!/payload/yupptvott_5_-1_7f6a2c29-6bd4-4d62-a0e2-4d43778a9721_US_13.83.107.128_yupptv_1_channel_6649_-1/*~data=yupptvott_5_-1_7f6a2c29-6bd4-4d62-a0e2-4d43778a9721_US_13.83.107.128_yupptv_1_channel_6649_-1~hmac=1f4cf9810066bd56367f9918d38751ad4353380c7fe1e2e5f351adca78e7c7c8&ads.content_custom_3_param=yuppfastint&ads.ip=13.83.107.128&did=7f6a2c29-6bd4-4d62-a0e2-4d43778a9721&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=ENTERTAINMENT&ads.content_custom_1_param=FAST&ads.channel=6649&ads.channel_name=RengoniTV&ads.language=ASM&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
+#EXTINF:-1 tvg-name="Rengoni" tvg-logo="https://dtil.tmsimg.com/assets/s143722_ld_h15_aa.png?lock=720x540" group-title="Other",Rengoni
+https://mumt05.tangotv.in/87NeALx2RENGONI/index.m3u8
+#EXTINF:-1 tvg-name="Rengoni" tvg-logo="https://dtil.tmsimg.com/assets/s143722_ld_h15_aa.png?lock=720x540" group-title="Other",Rengoni
+https://streams.tangotv.in/RENGONI/ORIGIN/index.m3u8
+#EXTINF:-1 tvg-name="Village TV" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/VillageTV.png" group-title="Religious",Village TV
+https://live.villagetv.net/villagetv/hd/index.m3u8
+#EXTINF:-1 tvg-name="Village TV" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/VillageTV.png" group-title="Religious",Village TV
+https://villagetv.applelive.in/villagetv/villagetv/index.m3u8
+#EXTINF:-1 tvg-name="Star Sports 2" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/7957/1783000567957-h.jpg" group-title="Sports",Star Sports 2
+http://103.151.60.162:2122/play/a00v/index.m3u8?hls
+#EXTINF:-1 tvg-name="Star Sports Select 1 HD" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Sports",Star Sports Select 1 HD
+http://103.151.60.162:2122/play/a026/index.m3u8?hls
+#EXTINF:-1 tvg-name="Star Sports Select 2 HD" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Sports",Star Sports Select 2 HD
+http://103.151.60.162:2122/play/a027/index.m3u8?hls
+#EXTINF:-1 tvg-name="Star Sports Select 2 HD" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Sports",Star Sports Select 2 HD
+http://tvsen7.aynascope.net/ssport2hd/index.m3u8
+#EXTINF:-1 tvg-name="Star Sports 2 Telugu HD" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Sports",Star Sports 2 Telugu HD
+https://real-vk.proxy.nellaiiptv.com/SDMEDIA/index.m3u8
