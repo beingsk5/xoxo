@@ -188,6 +188,9 @@ class LanguageScraper:
         self._seen_urls: Set[str] = set()  # URLS already accepted this run
         self._mine_lock = Lock()
         self._iframes_used = 0
+        # Stored channels whose URL carries a dead verdict: kept at load,
+        # re-probed by `_recheck_dead` before any drop.
+        self._dead_recheck: List[str] = []
 
     # ── Time budget ───────────────────────────────────────────────
 
@@ -302,6 +305,9 @@ class LanguageScraper:
         # Checkpoint immediately so the store always has rows for this
         # language, even if the job is killed before the first phase ends.
         self._checkpoint(result)
+        # Rows are safe now: dead-verdict channels get their one fresh probe
+        # here — only a confirmed-dead link drops out (and reopens queries).
+        self._recheck_dead(result)
 
         channels = self._load_channel_list()
         if not channels:
@@ -733,11 +739,18 @@ class LanguageScraper:
                 finished, _ = wait(set(in_flight), return_when=FIRST_COMPLETED)
                 for completed in finished:
                     url = in_flight.pop(completed)
+                    failed = False
                     try:
                         probe, page_links = completed.result()
                     except Exception:
                         probe, page_links = Probe(kind="dead", note="exception"), {}
-                    cache.remember(url, probe)
+                        failed = True
+                    # A transport failure proves nothing: caching "dead" for
+                    # an exception would poison the verdict for DEAD_TTL and
+                    # make the next load drop a good channel (and block every
+                    # source from re-finding its URL) over a network blip.
+                    if not failed:
+                        cache.remember(url, probe)
                     if probe.kind in ("playlist", "stream"):
                         self._handle_probe(result, url, probe, proven)
                     for link, ref in page_links.items():
@@ -806,8 +819,12 @@ class LanguageScraper:
         if not targets:
             return
         cache = get_cache()
-        dead_urls: List[str] = [c.url for c in targets if cache.known_dead(c.url)]
-        work = [c for c in targets if not cache.known_dead(c.url)][:RESCORE_CAP]
+        # Every target is probed — even ones already carrying a dead verdict:
+        # a stale verdict (imported from a sibling job, or a network blip in
+        # an earlier run) must never delete an already-found channel without
+        # a fresh probe of its own deciding that.
+        dead_urls: List[str] = []
+        work = targets[:RESCORE_CAP]
         attempted = 0
         scored = 0
         if work:
@@ -828,7 +845,10 @@ class LanguageScraper:
                         try:
                             probe = completed.result()
                         except Exception:
-                            probe = Probe(kind="dead", note="exception")
+                            # Transport failure, not evidence: remember no
+                            # verdict and keep the child unscored instead of
+                            # deleting an already-found channel over it.
+                            continue
                         cache.remember(ch.url, probe)
                         if probe.ok:
                             ch.score = probe.score
@@ -1317,6 +1337,7 @@ class LanguageScraper:
         store = get_cache()
         stored = store.channels(self.language)
         meta = store.run_meta(self.language)
+        self._dead_recheck = []      # rebuilt from what survives the filters
         result = ScrapeResult(
             source="web",
             language=self.language,
@@ -1324,16 +1345,6 @@ class LanguageScraper:
             urls_found=int(meta.get("urls_found", 0) or 0),
             urls_valid=int(meta.get("urls_valid", 0) or 0),
         )
-        if stored:
-            # Cross-run persistence keeps earlier finds alive; drop the ones
-            # a later verdict has since proven dead so the ratchet never
-            # republishes a broken URL from a previous run.
-            live = [c for c in stored if not store.known_dead(c.url)]
-            if len(live) != len(stored):
-                log.info(f"[{self.language}] dropped "
-                         f"{len(stored) - len(live)} stored channels with "
-                         f"dead verdicts")
-                stored = live
         if stored:
             # Placeholder-token links (`...?token=test`) are shared junk on
             # oversold panels — they die with per_user_limit a few seconds
@@ -1370,12 +1381,77 @@ class LanguageScraper:
                          f"links (re-searching)")
                 stored = [c for c in stored if c not in vod]
         if stored:
+            # A dead verdict alone must NOT drop a row: `save_channels`
+            # replaces this language's rows wholesale, so dropping on a stale
+            # verdict (a timeout, a CDN blip, a sibling job's flaky probe)
+            # would delete the channel for good — the ratchet could only
+            # recover it if search happened to re-find the name. Keep the
+            # channel and let `_recheck_dead` give the URL one fresh probe;
+            # only a confirmed-dead link is then removed (and dropping it
+            # reopens the channel's queries for search).
+            suspects = [c.url for c in stored if store.known_dead(c.url)]
+            if suspects:
+                log.info(f"[{self.language}] {len(suspects)} stored links "
+                         f"carry dead verdicts (re-probing before any drop)")
+                self._dead_recheck = suspects
+        if stored:
             log.info(f"[{self.language}] resuming with {len(stored)} "
                      f"channels already found")
             result.channels = stored
             for ch in stored:
                 self._seen_urls.add(ch.url)
         return result
+
+    def _recheck_dead(self, result: ScrapeResult) -> None:
+        """Fresh-probe stored channels whose URL carries a dead verdict.
+
+        The load path keeps these channels — a stale verdict must never
+        delete a found row, because `save_channels` replaces the language
+        wholesale — so each suspect gets exactly one fresh probe here. A
+        recovered (or challenge-walled) URL keeps its channel; only a
+        confirmed-dead link is dropped, which reopens its queries for search.
+        Transport exceptions prove nothing, so they are neither cached nor
+        allowed to drop a channel.
+        """
+        suspects, self._dead_recheck = list(self._dead_recheck), []
+        if not suspects:
+            return
+        live = {c.url for c in result.channels}
+        suspects = [u for u in suspects if u in live]
+        if not suspects:
+            return
+        cache = get_cache()
+        by_url = {c.url: c for c in result.channels}
+        dead: Set[str] = set()
+        kept = 0
+        with ThreadPoolExecutor(max_workers=VALIDATE_WORKERS) as executor:
+            futures = {executor.submit(probe_stream, u): u for u in suspects}
+            for completed in as_completed(futures):
+                url = futures[completed]
+                try:
+                    probe = completed.result()
+                except Exception:
+                    continue          # unproven: keep the channel as stored
+                cache.remember(url, probe)
+                if getattr(probe, "blocked", False):
+                    kept += 1         # challenge-walled, not dead: keep
+                    continue
+                if probe.ok:
+                    kept += 1
+                    ch = by_url.get(url)
+                    if ch is not None and ch.score <= 0:
+                        ch.score = probe.score
+                        ch.quality = probe.quality
+                    continue
+                dead.add(url)
+        if dead:
+            result.channels = [c for c in result.channels
+                               if c.url not in dead]
+            self._seen_urls -= dead
+        log.info(
+            f"[{self.language}] re-probed {len(suspects)} dead-verdict "
+            f"links: {kept} kept, {len(dead)} confirmed dead (dropped)"
+        )
 
     def _log_engine_stats(self):
         try:
