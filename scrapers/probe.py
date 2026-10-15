@@ -36,12 +36,13 @@ import subprocess
 import time
 from dataclasses import dataclass, field
 from typing import Dict, List, Optional, Tuple
-from urllib.parse import urljoin, urlparse
+from urllib.parse import urljoin, urlparse, urlsplit, urlunsplit
 
 from scrapers import flaresolverr
 from scrapers import httpclient
 from scrapers.urls import (
-    is_blocked_domain, is_non_media_url, is_probe_worthy, is_raw_file_url,
+    host_of, is_blocked_domain, is_non_media_url, is_probe_worthy,
+    is_raw_file_url,
 )
 
 log = logging.getLogger("scraper")
@@ -165,6 +166,91 @@ def media_segments(text: str, base_url: str) -> List[str]:
             if len(segs) >= 4:
                 break
     return segs
+
+
+def _stream_root_of(seg_url: str) -> str:
+    """Directory URL a media playlist's segments resolve against.
+
+    A checked-in .m3u8 lives on a code-forge raw host, but its segment URIs
+    point at the real stream host. Dropping the last path component gives
+    that host's directory, which is the closest thing to the original
+    stream URL a media playlist exposes (it has no variant line to follow).
+    Returns "" when that directory is itself on a code-forge raw host:
+    file storage is never the source a channel should keep.
+    """
+    try:
+        parts = urlsplit(seg_url)
+    except ValueError:
+        return ""
+    path = parts.path.rsplit("/", 1)[0]
+    if not path:
+        return ""
+    root = urlunsplit((parts.scheme, parts.netloc, path, "", ""))
+    return "" if is_raw_file_url(root) else root
+
+
+MAX_RAW_HOPS = 8
+
+
+def _resolve_chain(first_url: str, *, origin_is_raw: bool, get_text,
+                   first_text: str = "") -> str:
+    """Follow raw-file -> raw-file indirection until the real source appears.
+
+    A code-forge file may hold a manifest whose variant is *another*
+    code-forge file (a repo mirroring a channel tree, a gist pointing at a
+    repo, a master and its variant committed as separate files). Each hop
+    is fetched and parsed instead of rejected, so the original source is
+    found no matter how deep the chain runs. Returns the first URL outside
+    the code-forge raw hosts, or "" when there is nothing to resolve or the
+    chain runs out (bounded and cycle-guarded).
+    """
+    if not origin_is_raw:
+        return ""
+    url = first_url
+    pending = first_text      # body of `url` when the caller already has it
+    seen = set()
+    for _ in range(MAX_RAW_HOPS):
+        if not is_raw_file_url(url):
+            return url
+        if url in seen:
+            return ""
+        seen.add(url)
+        text = pending or ""
+        pending = ""
+        if not text:
+            text = get_text(url)
+        if not text:
+            return ""
+        if _is_master(text):
+            variants = master_variants(text)
+            if not variants:
+                return ""
+            variants.sort(key=lambda t: -t[0])
+            url = urljoin(url, variants[0][2])
+            continue
+        if _is_hls_media(text):
+            segs = media_segments(text, url)
+            if not segs:
+                return ""
+            first = segs[0]
+            if (is_raw_file_url(first)
+                    and first.split("?")[0].lower().endswith((".m3u8", ".m3u"))):
+                # a media playlist that points at another checked-in
+                # playlist: keep walking instead of dead-ending.
+                url = first
+                continue
+            # terminal media: the segment host's directory is the source
+            # ("" when the segments live in the repo itself).
+            return _stream_root_of(first)
+        if "<mpd" in text[:2000].lower():
+            variants = dash_variants(text, url)
+            if not variants:
+                return ""
+            variants.sort(key=lambda t: -t[0])
+            url = variants[0][2]     # already absolutized by dash_variants
+            continue
+        return ""            # HTML/JSON/segment body: no further indirection
+    return ""                # chain too deep (or cyclic) - never infinite
 
 
 def dash_variants(text: str, base_url: str) -> List[Tuple[int, str, str]]:
@@ -422,6 +508,15 @@ def probe_stream(
                       timeout=timeout if timeout is not None else max(1.0, deadline - time.monotonic()),
                       max_bytes=max_bytes)
 
+    def _chain_text(u: str) -> str:
+        """Body of one raw-file chain hop (same UA fallback as the probe)."""
+        r = _resp(u, ref=referer, ua=user_agent)
+        if r is None:
+            r = _resp(u, ref=referer, ua=None)
+        if r is None or r.status_code >= 400:
+            return ""
+        return r.content.decode("utf-8", errors="ignore")
+
     resp = _resp(url, ref=referer, ua=user_agent)
     needs_ua = bool(user_agent)      # source declared a required UA
     if resp is None and user_agent:
@@ -477,7 +572,7 @@ def probe_stream(
             abs_var = urljoin(final_url, var_url)
             quality = _quality_from_resolution(res, bw)
             segments: List[str] = []
-            vod = False
+            media = ""
             if time.monotonic() < deadline:
                 r2 = _resp(abs_var, ref=referer, ua=user_agent)
                 if r2 is None:
@@ -485,7 +580,17 @@ def probe_stream(
                 if r2 is not None:
                     media = r2.content.decode("utf-8", errors="ignore")
                     segments = media_segments(media, r2.url or abs_var)
-                    vod = looks_like_vod(media)
+                    # Judge VOD on the variant only when it stays on the
+                    # master's host: relative variants like `720p.m3u8` are
+                    # clip files next to the master, and a short window there
+                    # is a real finite clip. A variant on another host is the
+                    # CDN chunklist a code-forge file points at — a rolling
+                    # live window with no EVENT marker reads as "VOD" by the
+                    # segment-count heuristic, so judging it would reject the
+                    # channel outright (e.g. a raw.githubusercontent.com
+                    # master over a CloudFront variant).
+                    vod = (looks_like_vod(media)
+                           and host_of(abs_var or "") == host_of(final_url or ""))
                     if not quality:
                         m = re.search(r"RESOLUTION=(\d+x\d+)", media, re.IGNORECASE)
                         if m:
@@ -501,10 +606,12 @@ def probe_stream(
             )
             return Probe(kind="stream", detail="hls_master", score=score,
                          quality=quality, bandwidth=bw, latency_ms=latency,
-                         sample=text[:60000], vod=vod,
-                         resolved_url=(abs_var if is_raw_file_url(url) else ""),
-                         note=f"variants={len(variants)} seg_ok={seg_ok}"
-                              + (" vod" if vod else ""))
+                     sample=text[:60000], vod=vod,
+                     resolved_url=_resolve_chain(
+                         abs_var, origin_is_raw=is_raw_file_url(url),
+                         get_text=_chain_text, first_text=media),
+                     note=f"variants={len(variants)} seg_ok={seg_ok}"
+                          + (" vod" if vod else ""))
 
     # ── HLS media playlist ──────────────────────────────────────
     if _is_hls_media(text):
@@ -528,6 +635,10 @@ def probe_stream(
         )
         return Probe(kind="stream", detail="hls", score=score,
                      latency_ms=latency, extinf=first, sample=text[:60000],
+                     resolved_url=(_resolve_chain(
+                         url, origin_is_raw=is_raw_file_url(url),
+                         get_text=_chain_text, first_text=text)
+                     if is_raw_file_url(url) else ""),
                      note=f"seg_ok={seg_ok} segs={len(segments)}")
 
     # ── DASH ────────────────────────────────────────────────────
@@ -537,6 +648,7 @@ def probe_stream(
         seg_ok = 0
         quality = ""
         bw = 0
+        seg_url = ""
         if variants:
             bw, res, seg_url = variants[0]
             quality = _quality_from_resolution(res, bw)
@@ -550,8 +662,18 @@ def probe_stream(
         score = score_parts(parsed=bool(variants), segments_ok=seg_ok,
                             quality=quality, bandwidth=bw, latency_ms=latency,
                             needs_ua=needs_ua)
+        dash_resolved = ""
+        if is_raw_file_url(url) and seg_url:
+            if is_raw_file_url(seg_url):
+                # the representation URL is another checked-in file: keep
+                # walking the chain instead of dead-ending on it.
+                dash_resolved = _resolve_chain(seg_url, origin_is_raw=True,
+                                               get_text=_chain_text)
+            else:
+                dash_resolved = _stream_root_of(seg_url)
         return Probe(kind="stream", detail="dash", score=score, quality=quality,
-                     bandwidth=bw, latency_ms=latency, sample=text[:60000])
+                     bandwidth=bw, latency_ms=latency, sample=text[:60000],
+                     resolved_url=dash_resolved)
 
     # ── Channel-list playlist (generic M3U) ─────────────────────
     if _looks_playlist_body(text):
