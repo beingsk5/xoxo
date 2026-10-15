@@ -95,6 +95,9 @@ env:
   # Run-level chain cap: how many follow-up runs one wave may queue
   # (the schedule starts a fresh wave).
   CHAIN_MAX: '2'
+  # A chained re-trigger waits this long before it is dispatched, so a
+  # follow-up never starts the instant the previous run finishes.
+  CHAIN_DELAY_S: '600'
   # Throughput knobs (validated against the ~1 URL/s old pipeline: these
   # take a full All-run attempt to well under one hour).
   VALIDATE_WORKERS: '40'
@@ -247,8 +250,9 @@ jobs:
     runs-on: ubuntu-26.04
     # Safety net only — the scraper itself stops on its internal budget
     # (SCRAPER_TIMEOUT_M1/M2 per attempt). Without this a hung request
-    # could hold a runner for the 6h default.
-    timeout-minutes: 150
+    # could hold a runner for the 6h default. Headroom covers 3 attempts
+    # (50+40+40 min) + publish + the chained-run delay (CHAIN_DELAY_S).
+    timeout-minutes: 170
     strategy:
       fail-fast: false
       # 14 languages in 2 waves (public runners: up to 20 concurrent jobs).
@@ -398,7 +402,7 @@ jobs:
             fi
             # Internal time budget: every phase stops itself and
             # checkpoint-exports, so each attempt publishes well before the
-            # 180-min job cap (which would cancel the job and lose the
+            # 170-min job cap (which would cancel the job and lose the
             # publish window). The window is split across attempts so the
             # resumed chain stays inside the cap.
             if [ "$attempt" = "1" ]; then
@@ -586,6 +590,12 @@ jobs:
               ARGS+=(-f "${KEY}=true")
             fi
             ARGS+=(-f "chain=${NEXT}")
+            # Never fire the instant this job ends: give the pipeline a
+            # cooling-off window before the chained run is auto-started.
+            DELAY="$(printf '%s' "${CHAIN_DELAY_S:-600}" | tr -cd '0-9')"
+            DELAY="${DELAY:-600}"
+            echo "Waiting ${DELAY}s before queueing chained run #$NEXT..."
+            sleep "$DELAY"
             gh workflow run scrape_m3u.yml "${ARGS[@]}"
             echo "Queued chained run #$NEXT (coverage $PCT% -> target $COVERAGE_TARGET%)"
           fi
