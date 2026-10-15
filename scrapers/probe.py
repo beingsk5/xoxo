@@ -300,17 +300,29 @@ def _looks_playlist_body(text: str) -> bool:
 def looks_like_vod(text: str) -> bool:
     """Heuristic: is this HLS media playlist a finite VOD clip, not live?
 
-    Live event playlists carry `#EXT-X-PLAYLIST-TYPE:EVENT` (or no type at
-    all, sliding window). A plain VOD clip is a short fixed segment list with
-    no EVENT marker and a small total duration.
+    Segment count alone is NOT evidence: live rolling windows commonly hold
+    3-10 short segments, and classifying those as VOD destroyed found
+    channels (the 83%-coverage store collapsed to 37%). The signals that
+    separate a pre-encoded clip from a live window:
+
+      * `#EXT-X-PLAYLIST-TYPE:VOD` / `EVENT` tags (authoritative), else
+      * `#EXT-X-ENDLIST` — nothing rolls after this: the playlist is finite
+        (live windows never carry it while live), else
+      * a short finite list that starts at `#EXT-X-MEDIA-SEQUENCE:0` — a
+        clip recorded from the beginning. Live windows advance their
+        sequence as segments roll off; an absent sequence tag is treated
+        as live, never as VOD.
     """
     head = text[:8000]
     if "#EXT-X-PLAYLIST-TYPE:EVENT" in head:
         return False          # explicitly a live/event window
     if "#EXT-X-PLAYLIST-TYPE:VOD" in head:
         return True
-    # No EVENT marker: count segments + total duration. A rolling live window
-    # keeps many recent segments; a clip has a handful and a short runtime.
+    if "#EXT-X-ENDLIST" in head:
+        return True           # finite: no segment after this can roll in
+    m = re.search(r"#EXT-X-MEDIA-SEQUENCE:(\d+)", head)
+    if not m or int(m.group(1)) != 0:
+        return False          # advancing window (or unknown) -> live
     segs = len(re.findall(r"#EXTINF:", head))
     dur = 0.0
     for m in re.finditer(r"#EXTINF:([\d.]+)", head):
