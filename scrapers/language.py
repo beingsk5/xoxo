@@ -53,7 +53,7 @@ from scrapers.cache import get_cache
 from scrapers.models import Channel, ResumeState, ScrapeResult
 from scrapers.nameindex import NameIndex, QUALITY_TOKENS, norm_name
 from scrapers.output import write_outputs
-from scrapers.probe import Probe, probe_stream
+from scrapers.probe import Probe, is_definitively_dead, probe_stream
 from scrapers.search import engine_list, search_with_tracking
 from scrapers.sources import github as github_source
 from scrapers.sources import grepapp as grepapp_source
@@ -869,10 +869,11 @@ class LanguageScraper:
                             ch.score = probe.score
                             ch.quality = probe.quality
                             scored += 1
-                        elif getattr(probe, "blocked", False):
-                            pass          # challenge-walled: keep unscored
-                        else:
+                        elif is_definitively_dead(probe):
                             dead_urls.append(ch.url)
+                        # else: transient failure / challenge-walled —
+                        # keep the child unscored, never drop it (zero
+                        # false positives: only provably-gone links go)
         dropped = 0
         if dead_urls:
             dead = set(dead_urls)
@@ -1415,7 +1416,8 @@ class LanguageScraper:
         The load path keeps these channels — a stale verdict must never
         delete a found row, because `save_channels` replaces the language
         wholesale — so each suspect gets exactly one fresh probe here. A
-        recovered (or challenge-walled) URL keeps its channel; only a
+        recovered (or challenge-walled) URL keeps its channel; a transient
+        failure (timeout, 5xx, connection blip) also keeps it — only a
         confirmed-dead or confirmed-VOD link is dropped, which reopens its
         queries for search. Transport exceptions prove nothing, so they are
         neither cached nor allowed to drop a channel.
@@ -1453,7 +1455,10 @@ class LanguageScraper:
                         ch.score = probe.score
                         ch.quality = probe.quality
                     continue
-                dead.add(url)
+                if is_definitively_dead(probe):
+                    dead.add(url)
+                else:
+                    kept += 1         # transient failure: keep the channel
         if dead:
             result.channels = [c for c in result.channels
                                if c.url not in dead]

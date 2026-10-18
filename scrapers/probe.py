@@ -333,6 +333,34 @@ def looks_like_vod(text: str) -> bool:
     return 0 < segs <= 8 and 0 < dur <= 400
 
 
+#: HTTP statuses that prove the resource is gone (not a transient error).
+_DEFINITIVE_GONE = frozenset({"http404", "http410"})
+
+
+def is_definitively_dead(probe: "Probe") -> bool:
+    """True only when the probe proves the URL is gone or is not a channel.
+
+    Drop rules are deliberately narrow so a single network blip can never
+    delete a live source (user requirement: zero false positives — only
+    defective links may be removed):
+
+      * `vod=True` — a finite pre-encoded clip, not a live channel
+      * HTTP 404 / 410 — the server explicitly said the resource is gone
+
+    Everything else is ambiguous and the channel must be kept:
+
+      * ``unreachable`` / exceptions — timeouts, resets, DNS blips
+      * 5xx — server-side errors that often recover
+      * 403 / ``challenge`` — WAF or bot wall, not death
+      * ``page`` / HTML — temporary interstitial or wrong classification
+    """
+    if getattr(probe, "vod", False):
+        return True
+    if getattr(probe, "blocked", False):
+        return False          # challenge-walled: never evidence of death
+    return (getattr(probe, "note", "") or "") in _DEFINITIVE_GONE
+
+
 # ── Scoring ─────────────────────────────────────────────────────
 
 _QUALITY_POINTS = {"2160p": 20, "1440p": 20, "1080p": 20, "720p": 14,
