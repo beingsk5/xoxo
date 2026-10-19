@@ -184,6 +184,11 @@ jobs:
     runs-on: ubuntu-26.04
     steps:
       - uses: actions/checkout@v7
+        with:
+          # Branch tip at job start, not the run's trigger-time SHA: a run
+          # that waited in the concurrency queue would otherwise commit on
+          # a stale base and race everything pushed meanwhile.
+          ref: ${{ github.ref }}
 
       - name: Download iptv-org CSVs
         run: |
@@ -216,6 +221,9 @@ jobs:
     runs-on: ubuntu-26.04
     steps:
       - uses: actions/checkout@v7
+        with:
+          # Branch tip at job start (see sync-data); never the trigger SHA.
+          ref: ${{ github.ref }}
 
       - uses: actions/setup-python@v7
         with:
@@ -284,6 +292,11 @@ jobs:
 
     steps:
       - uses: actions/checkout@v7
+        with:
+          # Fresh branch tip: this job starts only after the run's own sync
+          # jobs have pushed, so a pinned trigger SHA would even miss this
+          # run's channel-list updates and force an avoidable push conflict.
+          ref: ${{ github.ref }}
 
       - uses: actions/setup-python@v7
         with:
@@ -495,7 +508,9 @@ jobs:
       # gitignored, so files are force-staged; the full run stages the whole
       # directory (with deletions, so output views this run no longer emits
       # are dropped), other runs' tracked files stay untouched. Concurrent
-      # language jobs race on push and retry with rebase.
+      # language jobs race on push: checkouts resolve the target branch at
+      # job start, and the push loop's rebase resolves output/ clashes in
+      # favor of this run's freshly generated files (-X theirs).
       - name: Commit output
         id: commit
         run: |
@@ -537,10 +552,18 @@ jobs:
           CHANNELS=$(grep -c '^#EXTINF' "$COUNT_FILE" || true)
           git commit -m "scrape: ${CHANNELS:-0} channels $(date -u +'%Y-%m-%d %H:%M UTC')"
 
+          # output/* is fully regenerated each run, so when a content clash
+          # happens (a run queued behind another carries the trigger-time
+          # checkout and its output/ differs from what landed meanwhile) our
+          # freshly generated files must win. Inside a rebase, -X theirs
+          # favors the replayed local commit; without it the identical
+          # conflict recurs on all 5 retries and the run never publishes
+          # (run 39250051139, 2026-10-19: 13:54 conflict on output/*,
+          # exit 1, repo left with the previous run's channel list).
           for i in 1 2 3 4 5; do
             # Recover from a half-finished rebase
             git rebase --abort 2>/dev/null || true
-            if git pull --rebase --autostash origin main && git push; then
+            if git pull --rebase --autostash -X theirs origin main && git push; then
               echo "Push OK on attempt $i"
               exit 0
             fi
