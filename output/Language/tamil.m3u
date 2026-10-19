@@ -33,6 +33,8 @@ http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=gx07&isp=7
 http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=gx07
 #EXTINF:-1 tvg-name="Vendhar TV" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Vendhar-transparent.png" group-title="Entertainment",Vendhar TV
 https://cdn.pishow.tv/ott/live/1271/master.m3u8
+#EXTINF:-1 tvg-name="Canal 3 KMK TV (720p)" tvg-logo="https://i.imgur.com/RyYmyWy.png" group-title="Entertainment",Canal 3 KMK TV (720p)
+https://live20.bozztv.com/giatv/giatv-KMKTV/KMKTV/chunks.m3u8
 #EXTINF:-1 tvg-name="Colors Tamil" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Colors%20Tamil%20HD.png" group-title="Entertainment",Colors Tamil
 https://da86m1sqpm3o0.cloudfront.net/28072023/smil:colorstamilhd11.smil/chunklist_b2628000.m3u8
 #EXTINF:-1 tvg-name="Kalaignar Murasu" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Murasu%20TV.png" group-title="Entertainment",Kalaignar Murasu
@@ -73,6 +75,10 @@ http://dsmqbfez.pardns.com/live/6CTB9BKG/4Q7Y9DFW/33583.ts
 http://yolomax.pro/live/A1U3S8XPVM58B23/iHeFx423Ac/1091270.ts
 #EXTINF:-1 tvg-name="RAJ DIGITAL PLUS" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Raj%20Digital%20Plus.png" group-title="Movies",RAJ DIGITAL PLUS
 https://tinyurl.com/yaarokayaar1110-channel58
+#EXTINF:-1 tvg-name="HKTV (1080p) [Geo-blocked]" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG002Z1SEP.png?lock=720x540" group-title="Movies",HKTV (1080p) [Geo-blocked]
+https://reflect-hktv.cablecast.tv/live-3/live/live.m3u8
+#EXTINF:-1 tvg-name="Ici Radio-Canada Tele CKTV-DT [Geo-blocked]" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG002Z1SEP.png?lock=720x540" group-title="Movies",Ici Radio-Canada Tele CKTV-DT [Geo-blocked]
+https://rcavlive.akamaized.net/hls/live/704023/cancktv/master.m3u8
 #EXTINF:-1 tvg-name="Raj Musix Tamil" tvg-logo="https://dtil.tmsimg.com/assets/s143707_ld_h15_aa.png?lock=720x540" group-title="Music",Raj Musix Tamil
 https://livestream.rajtv.tv/hlslive/Admin/px08241087/live/Raj_Musix/master_1.m3u8
 #EXTINF:-1 tvg-name="7S Music" tvg-logo="https://i.imgur.com/zDiIhdN.png" group-title="Music",7S Music
@@ -123,3 +129,5 @@ https://mumt04.tangotv.in/m18aqlK4SAIRAMTV/index.m3u8
 https://ktismaservers.in:3466/live/hosannattvhindhilive.m3u8
 #EXTINF:-1 tvg-name="Life TV (India) KBCT" tvg-logo="https://i.ibb.co/v1C0bdR/logo-1.png" group-title="Religious",Life TV (India) KBCT
 https://lifetv.livebox.co.in/lifetvhls/lifetv.m3u8
+#EXTINF:-1 tvg-name="SONY TEN 4" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0025T4PV.png?lock=720x540" group-title="Sports",SONY TEN 4
+https://la.drmlive.net/tp/sliv-ten4.m3u8

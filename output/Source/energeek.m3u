@@ -1,0 +1,7 @@
+#EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
+#EXTINF:-1 tvg-name="EnerGeek Radio (720p) [Geo-blocked]" group-title="Music",EnerGeek Radio (720p) [Geo-blocked]
+https://cl-2.backend.energeek.cl/bkp/egradio/mobile/index.m3u8?token=IPTVgh26
+#EXTINF:-1 tvg-name="EnerGeek (1080p) [Geo-blocked]" group-title="Other",EnerGeek (1080p) [Geo-blocked]
+https://cl-2.backend.energeek.cl/bkp/egretroweb/index.m3u8?token=IPTVgh26
+#EXTINF:-1 tvg-name="EnerGeek FAN (720p) [Geo-blocked]" group-title="Other",EnerGeek FAN (720p) [Geo-blocked]
+https://cl-2.backend.energeek.cl/bkp/egfan/mobile/index.m3u8?token=IPTVgh26
