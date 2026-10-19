@@ -96,6 +96,39 @@ SEARCH_RESULTS = int(os.environ.get("SEARCH_RESULTS", "15"))  # results/query/en
 # verdicts; skipping them for the full DEAD_TTL quarantined channels and the
 # rebuild could not climb (only a just-dead link is worth the blind skip).
 DEAD_SKIP_S = float(os.environ.get("DEAD_SKIP_S", str(24 * 3600)))
+# Stored links whose `ok` verdict is older than this get one fresh health
+# probe per run. The load path only used to re-probe dead/vod verdicts, so
+# a link that died AFTER it was accepted was never noticed at all — that is
+# why the output files only ever grew. One rolling sweep of the stored set
+# (probe budget caps each URL; VALIDATE_WORKERS run them in parallel).
+HEALTH_RECHECK_S = float(os.environ.get("HEALTH_RECHECK_S", str(24 * 3600)))
+# Two-strike drop window: a single transient failure (timeout, 5xx, CDN
+# blip) must never delete a channel — zero false positives — but the same
+# URL failing again at least this long after its previous dead verdict is
+# no longer a blip. Intra-job chains (~40 min apart) refresh `checked_at`
+# on every failure, so a chain can never strike; daily runs are ≥4h apart
+# and confirm the drop.
+STRIKE_GAP_S = float(os.environ.get("STRIKE_GAP_S", str(4 * 3600)))
+
+
+def _is_second_failure(prior: Optional[dict], now: Optional[float] = None) -> bool:
+    """True when `prior` proves this failure is a repeat worth dropping.
+
+    `prior` must be the cache row captured BEFORE `cache.remember()` stored
+    the current probe: remember refreshes `checked_at` on every failure, so
+    the post-probe row can never be older than the strike window. A dead
+    verdict older than DEAD_TTL reads back as None (expired) and counts as
+    a first failure again — deliberately conservative.
+    """
+    if not prior or prior.get("status") != "dead":
+        return False
+    if now is None:
+        now = time.time()
+    try:
+        checked = float(prior.get("checked_at") or 0.0)
+    except (TypeError, ValueError):
+        return False
+    return (now - checked) >= STRIKE_GAP_S
 
 
 def _load_shared_dead_urls() -> Set[str]:
@@ -196,6 +229,10 @@ class LanguageScraper:
         # Stored channels whose URL carries a dead verdict: kept at load,
         # re-probed by `_recheck_dead` before any drop.
         self._dead_recheck: List[str] = []
+        # Quality-stripped keys of channels dropped this run (load filters +
+        # health re-probe). `_reopen_queries` un-searches them once
+        # `_build_queries` has rebuilt the query→key map.
+        self._dropped_keys: Set[str] = set()
 
     # ── Time budget ───────────────────────────────────────────────
 
@@ -318,8 +355,9 @@ class LanguageScraper:
         # Checkpoint immediately so the store always has rows for this
         # language, even if the job is killed before the first phase ends.
         self._checkpoint(result)
-        # Rows are safe now: dead-verdict channels get their one fresh probe
-        # here — only a confirmed-dead link drops out (and reopens queries).
+        # Rows are safe now: every suspect stored link (stale/absent/failed
+        # verdict) gets one fresh health probe here — only a proven-bad link
+        # drops out (and reopens its queries).
         self._recheck_dead(result)
 
         channels = self._load_channel_list()
@@ -351,6 +389,12 @@ class LanguageScraper:
 
         queries = self._build_queries(channels)
         result.queries_sent = len(queries)
+        # Channels dropped at load (placeholder/raw junk) or by the health
+        # re-probe reopen here: their queries leave the searched set, so
+        # THIS run hunts a working replacement instead of the channel
+        # staying unfound behind an "already searched" flag forever.
+        self._reopen_queries(resume, self._dropped_keys)
+        self._dropped_keys = set()
 
         pending_queries = [q for q in queries if q not in set(resume.searched_queries)]
         if pending_queries:
@@ -370,9 +414,7 @@ class LanguageScraper:
         # B.1: a channel that already yielded a stream needs no further
         # searching — drop its queries so the budget only chases missing
         # channels (and so found channels cannot hold the run incomplete).
-        found_keys = {" ".join(t for t in norm_name(c.name).split()
-                               if t not in QUALITY_TOKENS)
-                      for c in result.channels if c.name}
+        found_keys = self._keys_of(list(result.channels))
         if found_keys and getattr(self, "_query_of", None):
             kept = [q for q in pending_queries
                     if self._query_of.get(q) not in found_keys]
@@ -386,7 +428,12 @@ class LanguageScraper:
         # ── Validation: probe + score + mine ─────────────────────
         self._validate_phase(resume, result)
         # Playlist children were queued unscored; measure them now.
-        self._rescore_phase(result)
+        rescore_dropped = self._rescore_phase(result)
+        if rescore_dropped and self._reopen_queries(resume, rescore_dropped):
+            # Search has already passed, so reopen now marks the run
+            # incomplete — the next attempt re-searches these channels'
+            # queries for a replacement URL.
+            self._incomplete = True
 
         # Final save
         result.urls_valid = len(result.channels)
@@ -412,8 +459,8 @@ class LanguageScraper:
             # the next attempt/chain re-searches every query that already
             # found nothing (~30 min wasted per retry).
             self._save_resume(resume)
-            log.info(f"[{self.language}] incomplete (phase budget): "
-                     f"resume kept")
+            log.info(f"[{self.language}] incomplete (phase budget or "
+                     f"reopened queries): resume kept")
         else:
             self._clear_resume()
         if result.incomplete:
@@ -821,18 +868,23 @@ class LanguageScraper:
 
     # ── Playlist-child rescoring ─────────────────────────────────
 
-    def _rescore_phase(self, result: ScrapeResult) -> None:
+    def _rescore_phase(self, result: ScrapeResult) -> Set[str]:
         """Probe playlist children so every kept channel has a measured score.
 
         Playlist expansion queues children with score 0: a live manifest
         proves the list, not each child URL. This pass measures up to
-        RESCORE_CAP of them, drops the ones that turn out dead/HTML and
-        leaves the overflow unscored so the output ranks them last instead of
-        letting them inherit a score they never earned.
+        RESCORE_CAP of them, drops the ones that turn out dead/VOD or that
+        fail a second time ≥ STRIKE_GAP_S after their last dead verdict and
+        leaves the transient-failure ones unscored so the output ranks them
+        last instead of letting them inherit a score they never earned.
+
+        Returns the quality-stripped keys of dropped channels so the caller
+        can reopen their queries (the search phase has already passed by
+        then, so the run is marked incomplete for the next attempt).
         """
         targets = [c for c in result.channels if c.score <= 0]
         if not targets:
-            return
+            return set()
         cache = get_cache()
         # Every target is probed — even ones already carrying a dead verdict:
         # a stale verdict (imported from a sibling job, or a network blip in
@@ -864,28 +916,38 @@ class LanguageScraper:
                             # verdict and keep the child unscored instead of
                             # deleting an already-found channel over it.
                             continue
+                        # Captured BEFORE remember(): a failure refreshes
+                        # checked_at, which would slide the strike window.
+                        prior = cache.get(ch.url)
                         cache.remember(ch.url, probe)
-                        if probe.ok:
+                        if is_definitively_dead(probe):
+                            dead_urls.append(ch.url)
+                        elif probe.ok:
                             ch.score = probe.score
                             ch.quality = probe.quality
                             scored += 1
-                        elif is_definitively_dead(probe):
+                        elif getattr(probe, "blocked", False):
+                            pass    # challenge-walled: keep unscored
+                        elif _is_second_failure(prior):
                             dead_urls.append(ch.url)
-                        # else: transient failure / challenge-walled —
-                        # keep the child unscored, never drop it (zero
-                        # false positives: only provably-gone links go)
-        dropped = 0
+                        # else: first transient failure — keep unscored,
+                        # never drop it (zero false positives: only
+                        # provably-gone or repeat-failing links go)
+        dropped_keys: Set[str] = set()
         if dead_urls:
             dead = set(dead_urls)
+            dropped_keys = self._keys_of(
+                [c for c in result.channels if c.url in dead])
             result.channels = [c for c in result.channels if c.url not in dead]
             self._seen_urls -= dead
-            dropped = len(dead_urls)
         unscored = sum(1 for c in result.channels if c.score <= 0)
+        dropped = len(dead_urls)
         log.info(
             f"[{self.language}] rescored {scored} playlist children "
             f"({attempted} probed), dropped {dropped} dead, "
             f"{unscored} left unverified"
         )
+        return dropped_keys
 
     # ── Probe handling ───────────────────────────────────────────
 
@@ -1340,6 +1402,37 @@ class LanguageScraper:
         result.channels.append(ch)
         self._seen_urls.add(url)
 
+    @staticmethod
+    def _keys_of(channels: List[Channel]) -> Set[str]:
+        """Quality-stripped name keys — the exact shape `_query_of` maps to.
+
+        Same construction as `_build_queries.key_of` and the B.1 found-key
+        filter, so a dropped channel's key lines up with its queries.
+        """
+        return {" ".join(t for t in norm_name(c.name).split()
+                         if t not in QUALITY_TOKENS)
+                for c in channels if c.name}
+
+    def _reopen_queries(self, resume: ResumeState, keys: Set[str]) -> int:
+        """Un-search the queries of dropped channels. Returns queries reopened.
+
+        `_build_queries` records each query's channel key in `self._query_of`,
+        so removing exactly those queries from the searched set makes search
+        hunt a replacement URL — a dropped channel becomes "unfound" again
+        instead of hiding behind an "already searched" flag (which is how
+        the output files used to only ever grow).
+        """
+        if not keys or not getattr(self, "_query_of", None):
+            return 0
+        before = len(resume.searched_queries)
+        resume.update(searched=[q for q in resume.searched_queries
+                                if self._query_of.get(q) not in keys])
+        reopened = before - len(resume.searched_queries)
+        if reopened:
+            log.info(f"[{self.language}] reopened {reopened} queries for "
+                     f"dropped channels (re-searching)")
+        return reopened
+
     def _load_existing_result(self) -> ScrapeResult:
         """Load channels already found by a previous partial run (store).
 
@@ -1354,6 +1447,7 @@ class LanguageScraper:
         stored = store.channels(self.language)
         meta = store.run_meta(self.language)
         self._dead_recheck = []      # rebuilt from what survives the filters
+        self._dropped_keys = set()   # filled by the junk filters below
         result = ScrapeResult(
             source="web",
             language=self.language,
@@ -1366,12 +1460,14 @@ class LanguageScraper:
             # oversold panels — they die with per_user_limit a few seconds
             # in. Dropping them marks the channel unfound again so its
             # queries reopen and search keeps hunting a real URL.
-            clean = [c for c in stored if not is_placeholder_token_url(c.url)]
-            if len(clean) != len(stored):
+            junk = [c for c in stored if is_placeholder_token_url(c.url)]
+            if junk:
+                self._dropped_keys |= self._keys_of(junk)
                 log.info(f"[{self.language}] dropped "
-                         f"{len(stored) - len(clean)} stored channels with "
+                         f"{len(junk)} stored channels with "
                          f"placeholder tokens (re-searching)")
-                stored = clean
+                stored = [c for c in stored
+                          if not is_placeholder_token_url(c.url)]
         if stored:
             # Code-forge raw-file links (raw.githubusercontent.com/...) are
             # repository file storage, not stream hosts. A checked-in .m3u8
@@ -1379,27 +1475,45 @@ class LanguageScraper:
             # chunklist) lives inside it — the raw file itself is never a
             # channel. Dropping it marks the channel unfound so search
             # re-finds the link and the probe resolves the inner variant.
-            clean = [c for c in stored if not is_raw_file_url(c.url)]
-            if len(clean) != len(stored):
+            junk = [c for c in stored if is_raw_file_url(c.url)]
+            if junk:
+                self._dropped_keys |= self._keys_of(junk)
                 log.info(f"[{self.language}] dropped "
-                         f"{len(stored) - len(clean)} stored raw-file links "
+                         f"{len(junk)} stored raw-file links "
                          f"(re-searching)")
-                stored = clean
+                stored = [c for c in stored if not is_raw_file_url(c.url)]
         if stored:
-            # A cached dead or VOD verdict alone must NOT drop a row:
-            # `save_channels` replaces this language's rows wholesale, so
-            # deleting on a stale verdict (a timeout, a CDN blip, a VOD
-            # heuristic that misfired on a live window) would lose the
-            # channel for good — search may never re-find its name. Keep
-            # the channel and let `_recheck_dead` give the URL one fresh
-            # probe under the current classifier; only a confirmed-bad link
-            # is then removed (which reopens the channel's queries).
+            # A cached verdict alone must NOT drop a row: `save_channels`
+            # replaces this language's rows wholesale, so deleting on a
+            # stale verdict (a timeout, a CDN blip, a VOD heuristic that
+            # misfired on a live window) would lose the channel for good —
+            # search may never re-find its name. Keep the channel and let
+            # `_recheck_dead` give the URL one fresh probe under the current
+            # classifier; only a confirmed-bad link is then removed (which
+            # reopens the channel's queries).
+            #
+            # Suspect = anything not provably healthy right now: a
+            # missing/expired verdict, a dead/VOD verdict, or an `ok`
+            # verdict older than HEALTH_RECHECK_S. The rolling `ok` check is
+            # what notices a link that died AFTER it was accepted — with
+            # only dead/vod suspects (the old rule) such a channel was
+            # never probed again, so output only ever grew. Live `blocked`
+            # (challenge) verdicts are left alone: re-hitting a wall only
+            # burns budget.
             cache = get_cache()
-            suspects = [c.url for c in stored
-                        if store.known_dead(c.url) or cache.known_vod(c.url)]
+            now = time.time()
+            suspects: List[str] = []
+            for c in stored:
+                v = cache.get(c.url)
+                if v is None or v.get("status") in ("dead", "vod"):
+                    suspects.append(c.url)
+                elif (v.get("status") == "ok"
+                      and now - float(v.get("checked_at") or 0.0)
+                      >= HEALTH_RECHECK_S):
+                    suspects.append(c.url)
             if suspects:
                 log.info(f"[{self.language}] {len(suspects)} stored links "
-                         f"carry cached dead/vod verdicts "
+                         f"need a health re-probe (no/stale/dead verdict) "
                          f"(re-probing before any drop)")
                 self._dead_recheck = suspects
         if stored:
@@ -1411,16 +1525,25 @@ class LanguageScraper:
         return result
 
     def _recheck_dead(self, result: ScrapeResult) -> None:
-        """Fresh-probe stored channels whose URL carries a dead or VOD verdict.
+        """Health-probe stored links before trusting their cached verdict.
 
-        The load path keeps these channels — a stale verdict must never
-        delete a found row, because `save_channels` replaces the language
-        wholesale — so each suspect gets exactly one fresh probe here. A
-        recovered (or challenge-walled) URL keeps its channel; a transient
-        failure (timeout, 5xx, connection blip) also keeps it — only a
-        confirmed-dead or confirmed-VOD link is dropped, which reopens its
-        queries for search. Transport exceptions prove nothing, so they are
-        neither cached nor allowed to drop a channel.
+        The load path keeps every stored channel — a stale verdict must
+        never delete a found row, because `save_channels` replaces the
+        language wholesale — so each suspect (missing/expired verdict, a
+        carried dead/VOD verdict, or an `ok` older than HEALTH_RECHECK_S)
+        gets exactly one fresh probe here:
+
+          * ok → keep (and score a still-unscored row)
+          * definitive (404/410/VOD/non-media/banned-host) → drop now
+          * challenge-walled → keep (a wall is not death)
+          * first transient failure → keep, but the dead verdict is cached
+            (strike one)
+          * repeat failure at least STRIKE_GAP_S after the previous dead
+            verdict → drop (strike two: it is not a blip)
+
+        Transport exceptions prove nothing, so they are neither cached nor
+        allowed to drop a channel. Dropped channels' queries reopen through
+        `self._dropped_keys`, so search hunts a working replacement.
         """
         suspects, self._dead_recheck = list(self._dead_recheck), []
         if not suspects:
@@ -1441,31 +1564,33 @@ class LanguageScraper:
                     probe = completed.result()
                 except Exception:
                     continue          # unproven: keep the channel as stored
+                # Captured BEFORE remember(): a failure refreshes checked_at,
+                # which would otherwise slide the strike window forward.
+                prior = cache.get(url)
                 cache.remember(url, probe)
-                if getattr(probe, "vod", False):
-                    dead.add(url)     # finite clip confirmed: not a channel
-                    continue
-                if getattr(probe, "blocked", False):
-                    kept += 1         # challenge-walled, not dead: keep
-                    continue
-                if probe.ok:
+                if is_definitively_dead(probe):
+                    dead.add(url)     # proven gone / not a channel
+                elif probe.ok:
                     kept += 1
                     ch = by_url.get(url)
                     if ch is not None and ch.score <= 0:
                         ch.score = probe.score
                         ch.quality = probe.quality
-                    continue
-                if is_definitively_dead(probe):
-                    dead.add(url)
+                elif getattr(probe, "blocked", False):
+                    kept += 1         # challenge-walled, not dead: keep
+                elif _is_second_failure(prior):
+                    dead.add(url)     # failed again ≥ STRIKE_GAP_S later
                 else:
-                    kept += 1         # transient failure: keep the channel
+                    kept += 1         # first transient failure: keep
         if dead:
+            dropped = [c for c in result.channels if c.url in dead]
+            self._dropped_keys |= self._keys_of(dropped)
             result.channels = [c for c in result.channels
                                if c.url not in dead]
             self._seen_urls -= dead
         log.info(
-            f"[{self.language}] re-probed {len(suspects)} cached-verdict "
-            f"links: {kept} kept, {len(dead)} confirmed dead/vod (dropped)"
+            f"[{self.language}] health re-probed {len(suspects)} stored "
+            f"links: {kept} kept, {len(dead)} dropped"
         )
 
     @staticmethod

@@ -333,8 +333,13 @@ def looks_like_vod(text: str) -> bool:
     return 0 < segs <= 8 and 0 < dur <= 400
 
 
-#: HTTP statuses that prove the resource is gone (not a transient error).
-_DEFINITIVE_GONE = frozenset({"http404", "http410"})
+#: Proofs the URL is gone or can never be a channel (drop immediately).
+#: `http404`/`http410` come from the server; `non_media_ext` and `blocked`
+#: are pre-network rejects decided from the URL alone (installer/archive/
+#: image path; banned host or non-http scheme) — no I/O happens, so they
+#: cannot be network misjudgements, and the same rules already gate every
+#: admission path (`is_probe_worthy`, `_add_channel`).
+_DEFINITIVE_GONE = frozenset({"http404", "http410", "non_media_ext", "blocked"})
 
 
 def is_definitively_dead(probe: "Probe") -> bool:
@@ -346,6 +351,10 @@ def is_definitively_dead(probe: "Probe") -> bool:
 
       * `vod=True` — a finite pre-encoded clip, not a live channel
       * HTTP 404 / 410 — the server explicitly said the resource is gone
+      * `non_media_ext` / `blocked` — pre-network URL-shape rejects
+        (file type that can never stream / banned host or non-http
+        scheme), decided without I/O so they are structural, not a
+        failed fetch
 
     Everything else is ambiguous and the channel must be kept:
 
