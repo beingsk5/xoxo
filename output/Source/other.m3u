@@ -1,14 +1,8 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
 #EXTINF:-1 tvg-name="Cartoon Network CEE Czech Republic" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_2010_logo.svg/960px-Cartoon_Network_2010_logo.svg.png" group-title="Animation",Cartoon Network CEE Czech Republic
 http://88.212.15.17/live/test_cartoon_network_tizen/playlist.m3u8
-#EXTINF:-1 tvg-name="Pogo" tvg-logo="https://dtil.tmsimg.com/assets/s143663_ld_h15_aa.png?lock=720x540" group-title="Animation",Pogo
-https://live.dinesh29.com.np/stream/jiotvplus/pogohindi/master.m3u8
-#EXTINF:-1 tvg-name="Super Hungama" tvg-logo="https://plain-apac-prod-public.komododecks.com/202609/07/lNjbGo0Rcgz3vhfoyTN7/image.png" group-title="Animation",Super Hungama
-https://live.dinesh29.com.np/stream/jiotvplus/superhungama/master.m3u8
 #EXTINF:-1 tvg-name="Discovery Turbo (United States) (720p)" tvg-logo="https://dtil.tmsimg.com/assets/s159108_ld_h15_aa.png?lock=720x540" group-title="Auto",Discovery Turbo (United States) (720p)
 http://41.205.93.154/ESPNNEWS/index.m3u8
-#EXTINF:-1 tvg-name="Food Food" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Food%20Food.png" group-title="Cooking",Food Food
-https://live.dinesh29.com.np/stream/jiotvplus/foodfood/master.m3u8
 #EXTINF:-1 tvg-name="Animal Planet Latin America HD (720p) [Geo-blocked]" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/AnimalPlanetHD_Transparent_d36c0ee3-3e3f-4e0c-b3b2-23bfb3c3c2b0.png" group-title="Documentary",Animal Planet Latin America HD (720p) [Geo-blocked]
 http://15.204.246.24:8080/AnimalPlanetHD/index.m3u8
 #EXTINF:-1 tvg-name="Animal Planet (Poland) HD (1080i)" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/AnimalPlanetHD_Transparent_d36c0ee3-3e3f-4e0c-b3b2-23bfb3c3c2b0.png" group-title="Documentary",Animal Planet (Poland) HD (1080i)
@@ -27,8 +21,6 @@ http://88.212.15.17/live/test_animal_planet_hd_hevc/playlist.m3u8
 http://88.212.15.17/live/animal_hun/index.m3u8
 #EXTINF:-1 tvg-name="Investigation Discovery (Czech Republic)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/InvestigationDiscoveryLogo2020.svg/960px-InvestigationDiscoveryLogo2020.svg.png" group-title="Documentary",Investigation Discovery (Czech Republic)
 http://88.212.15.17/live/test_id_hevc_atktv/playlist.m3u8
-#EXTINF:-1 tvg-name="Nat Geo Wild" tvg-logo="https://img10.hotstar.com/image/upload/sources/r1/cms/prod/5075/1785250005075-h.jpg" group-title="Documentary",Nat Geo Wild
-https://live.dinesh29.com.np/stream/jiotvplus/natgeowild/master.m3u8
 #EXTINF:-1 tvg-name="Mega" tvg-logo="https://dtil.tmsimg.com/assets/s143425_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Mega
 https://unlimited2-cl-isp.dps.live/mega/mega.smil/playlist.m3u8
 #EXTINF:-1 tvg-name="Discovery Channel (Poland) (1080p)" tvg-logo="https://dtil.tmsimg.com/assets/s159106_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Discovery Channel (Poland) (1080p)
@@ -41,22 +33,6 @@ http://212.5.144.156:8080/discovery/index.m3u8
 http://88.212.15.17/live/test_discovery_hd_hevc/playlist.m3u8
 #EXTINF:-1 tvg-name="Discovery Channel (Hungary)" tvg-logo="https://dtil.tmsimg.com/assets/s159106_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Discovery Channel (Hungary)
 http://88.212.15.17/live/discovery_hungary/index.m3u8
-#EXTINF:-1 tvg-name="Colors" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/Colors_Transparent_16069908-8494-4eb4-bd40-5afca3969088.png" group-title="Entertainment",Colors
-https://live.dinesh29.com.np/stream/jiotvplus/colorssd/master.m3u8
-#EXTINF:-1 tvg-name="Colors Infinity" tvg-logo="https://dtil.tmsimg.com/assets/s158150_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Colors Infinity
-https://live.dinesh29.com.np/stream/jiotvplus/colorsinfinitysd/master.m3u8
-#EXTINF:-1 tvg-name="France 24" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_E24/images/LOGO_HD/image.png" group-title="Entertainment",France 24
-http://92.114.85.80:8000/play/a03l
-#EXTINF:-1 tvg-name="Mega" tvg-logo="https://dtil.tmsimg.com/assets/s143425_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Mega
-http://149.5.17.34:20041/play/a05k
-#EXTINF:-1 tvg-name="Star Plus" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/2384/1782291852384-h.jpg" group-title="Entertainment",Star Plus
-https://live.dinesh29.com.np/stream/jiotvplus/starplus/master.m3u8
-#EXTINF:-1 tvg-name="Star Plus ᴴᴰ" tvg-logo="https://i.imgur.com/XUnWcZF.png" group-title="Entertainment",Star Plus ᴴᴰ
-https://live.dinesh29.com.np/stream/jiotvplus/starplushd/master.m3u8
-#EXTINF:-1 tvg-name="Star Utsav" tvg-logo="https://dtil.tmsimg.com/assets/s159132_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Star Utsav
-https://live.dinesh29.com.np/stream/jiotvplus/starutsav/master.m3u8
-#EXTINF:-1 tvg-name="The Q" group-title="Entertainment",The Q
-https://liveplay-g.instreamo.jio.com/hls/view-playlist/v2/fa2f92e3-67bb-4e68-b602-c67d631f5d96/main.m3u8?api-key=a4051010-e094-4701-9d16-77481226f70a
 #EXTINF:-1 tvg-name="CBeebies (Poland) (576p)" group-title="Kids",CBeebies (Poland) (576p)
 http://92.114.85.87:8017/play/a004/index.m3u8
 #EXTINF:-1 tvg-name="Disney Channel (Poland) HD (1080p)" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/1540/1785251571540-h.jpg" group-title="Kids",Disney Channel (Poland) HD (1080p)
@@ -69,56 +45,14 @@ http://57.128.231.171:8080/278/index.m3u8
 http://57.128.231.171:8080/277/index.m3u8
 #EXTINF:-1 tvg-name="Disney Channel (Czech Republic)" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/1540/1785251571540-h.jpg" group-title="Kids",Disney Channel (Czech Republic)
 http://88.212.15.17/live/test_disney/playlist.m3u8
-#EXTINF:-1 tvg-name="Disney Channel (576p) [Not 24/7]" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/1540/1785251571540-h.jpg" group-title="Kids",Disney Channel (576p) [Not 24/7]
-http://116.90.120.149:8000/play/a0bx/index.m3u8
-#EXTINF:-1 tvg-name="Disney Channel (Portugal) (1080p)" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/1540/1785251571540-h.jpg" group-title="Kids",Disney Channel (Portugal) (1080p)
-http://151.80.18.177:86/Disney_Channel_HD/index.m3u8
-#EXTINF:-1 tvg-name="Disney Junior (576p)" tvg-logo="https://plain-apac-prod-public.komododecks.com/202609/07/kDx5CloMCE4tFekQtkOQ/image.png" group-title="Kids",Disney Junior (576p)
-http://116.90.120.149:8000/play/a0b3/index.m3u8
-#EXTINF:-1 tvg-name="Nick" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/6807/1784039246807-h.jpg" group-title="Kids",Nick
-https://live.dinesh29.com.np/stream/jiotvplus/nickhindi/master.m3u8
-#EXTINF:-1 tvg-name="Nick HD+ (1080p) [Not 24/7]" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/470/1783938260470-h.jpg" group-title="Kids",Nick HD+ (1080p) [Not 24/7]
-http://116.90.120.149:8000/play/a0cw/index.m3u8
-#EXTINF:-1 tvg-name="Sonic" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/6294/1782290926294-h.jpg" group-title="Kids",Sonic
-https://live.dinesh29.com.np/stream/jiotvplus/sonichindi/master.m3u8
-#EXTINF:-1 tvg-name="TLC" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/TLC%20HD.png" group-title="Lifestyle",TLC
-https://live.dinesh29.com.np/stream/jiotvplus/tlchindi/master.m3u8
 #EXTINF:-1 tvg-name="Bollywood HD (576p)" group-title="Movies",Bollywood HD (576p)
 http://176.118.197.101/Bollywood_HD/index.m3u8
 #EXTINF:-1 tvg-name="Cinemax (Czech Republic)" group-title="Movies",Cinemax (Czech Republic)
 http://88.212.15.17/live/test_cinemax_hd_hevc/playlist.m3u8
 #EXTINF:-1 tvg-name="Gold Star" group-title="Movies",Gold Star
 https://moviethls.wns.live/hls/stream.m3u8
-#EXTINF:-1 tvg-name="Bollywood Classic Romania (576p)" group-title="Movies",Bollywood Classic Romania (576p)
-http://rpprod.hbbtv.cdn.cra.cz:8080/hbbTV/cme-ro-bollywood-classic/live_hq?offsetSeconds=0
-#EXTINF:-1 tvg-name="Colors Cineplex" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/3042/1782291173042-h.jpg" group-title="Movies",Colors Cineplex
-https://live.dinesh29.com.np/stream/jiotv/colorscineplex/master.m3u8
-#EXTINF:-1 tvg-name="Star Gold" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/6567/1784547656567-h.jpg" group-title="Movies",Star Gold
-https://live.dinesh29.com.np/stream/jiotvplus/stargold/master.m3u8
-#EXTINF:-1 tvg-name="Star Gold 2" tvg-logo="https://dtil.tmsimg.com/assets/s158297_ld_h15_aa.png?lock=720x540" group-title="Movies",Star Gold 2
-https://live.dinesh29.com.np/stream/jiotvplus/stargold2/master.m3u8
-#EXTINF:-1 tvg-name="Star Gold 2 ᴴᴰ" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/6567/1784547656567-h.jpg" group-title="Movies",Star Gold 2 ᴴᴰ
-https://live.dinesh29.com.np/stream/jiotvplus/stargold2hd/master.m3u8
-#EXTINF:-1 tvg-name="Star Gold Romance" tvg-logo="https://dtil.tmsimg.com/assets/s158298_ld_h15_aa.png?lock=720x540" group-title="Movies",Star Gold Romance
-https://live.dinesh29.com.np/stream/jiotvplus/stargoldromance/master.m3u8
-#EXTINF:-1 tvg-name="Star Gold Select" tvg-logo="https://dtil.tmsimg.com/assets/s143817_ld_h15_aa.png?lock=720x540" group-title="Movies",Star Gold Select
-https://live.dinesh29.com.np/stream/jiotvplus/stargoldselect/master.m3u8
-#EXTINF:-1 tvg-name="Star Gold Select ᴴᴰ" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/6567/1784547656567-h.jpg" group-title="Movies",Star Gold Select ᴴᴰ
-https://live.dinesh29.com.np/stream/jiotvplus/stargoldselecthd/master.m3u8
-#EXTINF:-1 tvg-name="Star Gold Thrills" tvg-logo="https://dtil.tmsimg.com/assets/s158822_ld_h15_aa.png?lock=720x540" group-title="Movies",Star Gold Thrills
-https://live.dinesh29.com.np/stream/jiotvplus/stargoldthrills/master.m3u8
-#EXTINF:-1 tvg-name="Star Gold ᴴᴰ" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/6567/1784547656567-h.jpg" group-title="Movies",Star Gold ᴴᴰ
-https://live.dinesh29.com.np/stream/jiotvplus/stargoldhd/master.m3u8
-#EXTINF:-1 tvg-name="Star Movies Select" tvg-logo="https://dtil.tmsimg.com/assets/s143830_ld_h15_aa.png?lock=720x540" group-title="Movies",Star Movies Select
-https://live.dinesh29.com.np/stream/jiotvplus/starmoviesselect/master.m3u8
-#EXTINF:-1 tvg-name="Star Utsav Movies" tvg-logo="https://dtil.tmsimg.com/assets/s143856_ld_h15_aa.png?lock=720x540" group-title="Movies",Star Utsav Movies
-https://live.dinesh29.com.np/stream/jiotvplus/starutsavmovies/master.m3u8
 #EXTINF:-1 tvg-name="Eska Rock TV (1080p)" group-title="Music",Eska Rock TV (1080p)
 http://92.114.85.87:8016/play/a005/index.m3u8
-#EXTINF:-1 tvg-name="Gugak TV (1080p)" group-title="Music",Gugak TV (1080p)
-https://mgugaklive.nowcdn.co.kr/gugakvideo/gugakvideo.stream/playlist.m3u8
-#EXTINF:-1 tvg-name="Zoom" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/TIMESPLAY/LIVECHANNEL/6904ba4039f3b175376a61de/images/LOGO_HD/LOGO_HD_KN-eM9VvQ_ZoomTV1_1.png" group-title="Music",Zoom
-http://149.5.17.34:20041/play/a05q
 #EXTINF:-1 tvg-name="CNN HD (720p) [Geo-blocked]" group-title="News",CNN HD (720p) [Geo-blocked]
 http://212.5.144.156:8080/cnn/index.m3u8
 #EXTINF:-1 tvg-name="HBO (Czech Republic)" group-title="News",HBO (Czech Republic)
@@ -131,65 +65,17 @@ http://88.212.15.17/live/test_hbo2_hd_hevc/playlist.m3u8
 http://88.212.15.17/live/test_hbo3_hd_hevc/playlist.m3u8
 #EXTINF:-1 tvg-name="HGTV (Czech Republic)" group-title="News",HGTV (Czech Republic)
 http://88.212.15.17/live/test_hgtv_hevc_25p/playlist.m3u8
-#EXTINF:-1 tvg-name="BBC News" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/BBC_Gujarati.png" group-title="News",BBC News
-http://45.153.35.210:8000/play/NEWS_bbc_news_HD/index.m3u8
-#EXTINF:-1 tvg-name="BBC News" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/BBC_Gujarati.png" group-title="News",BBC News
-http://92.114.85.81:8000/play/a00a/index.m3u8
-#EXTINF:-1 tvg-name="Clubland TV Ⓢ" group-title="News",Clubland TV Ⓢ
-http://92.114.85.79:8000/play/a0cx
-#EXTINF:-1 tvg-name="Global TV (Dominican Republic) (720p)" group-title="News",Global TV (Dominican Republic) (720p)
-https://stmv4.voxtvhd.com.br/globaltv/globaltv/playlist.m3u8
-#EXTINF:-1 tvg-name="HRT 4 HD (720p) [Geo-blocked]" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="News",HRT 4 HD (720p) [Geo-blocked]
-https://bpcdnmanprod.nexttv.ht.hr/bpk-tv/HRT4/default/index.mpd
-#EXTINF:-1 tvg-name="Star Bharat" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/8704/1782288318704-h.jpg" group-title="News",Star Bharat
-https://live.dinesh29.com.np/stream/jiotvplus/starbharat/master.m3u8
-#EXTINF:-1 tvg-name="Star Bharat ᴴᴰ" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/8704/1782288318704-h.jpg" group-title="News",Star Bharat ᴴᴰ
-https://live.dinesh29.com.np/stream/jiotvplus/starbharathd/master.m3u8
 #EXTINF:-1 tvg-name="GSTV (720p)" group-title="Other",GSTV (720p)
 https://japaneast.av.mk.io/mediakindcdn-mediakind/ca01a143-f823-4432-b670-c22ff9643ce4/index.qfm/manifest(format=m3u8-cmaf)
 #EXTINF:-1 tvg-name="HBO+ Latin America (720p) [Geo-blocked]" group-title="Other",HBO+ Latin America (720p) [Geo-blocked]
 http://15.204.246.24:8080/HBOPlusHD/index.m3u8
 #EXTINF:-1 tvg-name="10 HD" group-title="Other",10 HD
 https://i.mjh.nz/.r/10-nsw.m3u8
+#EXTINF:-1 tvg-name="6 TV Gorlovka (720p) [Geo-blocked]" group-title="Other",6 TV Gorlovka (720p) [Geo-blocked]
+http://91.214.48.158:4022/udp/224.2.2.4:10000
 #EXTINF:-1 tvg-name="Folk TV" group-title="Other",Folk TV
 https://stream.nasatv.com.mk/folktv/hls/folktv_live.m3u8
 #EXTINF:-1 tvg-name="ETV (Estonia) (720p)" group-title="Other",ETV (Estonia) (720p)
 https://sb.err.ee/live/etv.m3u8
-#EXTINF:-1 tvg-name="6 TV Gorlovka (720p) [Geo-blocked]" group-title="Other",6 TV Gorlovka (720p) [Geo-blocked]
-http://91.214.48.158:4022/udp/224.2.2.4:10000
-#EXTINF:-1 tvg-name="Alsat [Geo-blocked]" group-title="Other",Alsat [Geo-blocked]
-https://vipottbpkstream.vip.hr/Content/onevip-hls/Live/Channel(Alsat_M)/index.m3u8
-#EXTINF:-1 tvg-name="BBC Red Button 1 (720p) [Geo-blocked]" group-title="Other",BBC Red Button 1 (720p) [Geo-blocked]
-https://vs-cmaf-pushb-uk.live.cf.md.bbci.co.uk/x=4/i=urn:bbc:pips:service:red_button_one/iptv_hd_abr_v1.mpd
-#EXTINF:-1 tvg-name="Benguturk TV (1080p)" group-title="Other",Benguturk TV (1080p)
-http://185.234.111.229:8000/play/a05u
-#EXTINF:-1 tvg-name="Canal 10 (Nicaragua) (360p) [Geo-blocked]" group-title="Other",Canal 10 (Nicaragua) (360p) [Geo-blocked]
-https://www.canal10.com.ni/envivo
-#EXTINF:-1 tvg-name="Channel A [Geo-blocked]" group-title="Other",Channel A [Geo-blocked]
-http://channelalive.ktcdn.co.kr/chalivepc/_definst_/atv2/playlist.m3u8
-#EXTINF:-1 tvg-name="CNBC (720p) [Geo-blocked]" group-title="Other",CNBC (720p) [Geo-blocked]
-http://41.205.93.154/CNBC/index.m3u8
-#EXTINF:-1 tvg-name="ETV (Thailand) (1080p)" group-title="Other",ETV (Thailand) (1080p)
-http://150.95.66.20:1935/live/livestream/playlist.m3u8
-#EXTINF:-1 tvg-name="Hegyvidek TV" group-title="Other",Hegyvidek TV
-https://iptv02.eurocable.co.hu:15400/EC-HEGYVIDEKTV-FTA/index.m3u8
-#EXTINF:-1 tvg-name="HRT 1 HD (1080p) [Geo-blocked]" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Other",HRT 1 HD (1080p) [Geo-blocked]
-https://bpcdnmanprod.nexttv.ht.hr/bpk-tv/HRT1/default/index.mpd
-#EXTINF:-1 tvg-name="HRT 2 HD (1080p) [Geo-blocked]" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Other",HRT 2 HD (1080p) [Geo-blocked]
-https://bpcdnmanprod.nexttv.ht.hr/bpk-tv/HRT2/default/index.mpd
-#EXTINF:-1 tvg-name="HRT 3 HD (720p) [Geo-blocked]" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Other",HRT 3 HD (720p) [Geo-blocked]
-https://bpcdnmanprod.nexttv.ht.hr/bpk-tv/HRT3/default/index.mpd
 #EXTINF:-1 tvg-name="GOD TV" group-title="Religious",GOD TV
 https://ott.god.tv/live/us/master.m3u8
-#EXTINF:-1 tvg-name="Star Sports 1 ᴴᴰ" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Sports",Star Sports 1 ᴴᴰ
-https://live.dinesh29.com.np/stream/jiotvplus/starsportshd1/master.m3u8
-#EXTINF:-1 tvg-name="Star Sports 1 ᴴᴰ Hindi" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Sports",Star Sports 1 ᴴᴰ Hindi
-https://live.dinesh29.com.np/stream/jiotvplus/starsportshd1hindi/master.m3u8
-#EXTINF:-1 tvg-name="Star Sports 2 Hindi" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/6371/1783000736371-h.jpg" group-title="Sports",Star Sports 2 Hindi
-https://live.dinesh29.com.np/stream/jiotvplus/starsports2hindi/master.m3u8
-#EXTINF:-1 tvg-name="Star Sports 2 ᴴᴰ" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Sports",Star Sports 2 ᴴᴰ
-https://live.dinesh29.com.np/stream/jiotvplus/starsportshd2/master.m3u8
-#EXTINF:-1 tvg-name="Star Sports 3" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_STAR_SPORTS_3/images/LOGO_HD/image.png" group-title="Sports",Star Sports 3
-https://live.dinesh29.com.np/stream/jiotvplus/starsports3/master.m3u8
-#EXTINF:-1 tvg-name="Star Sports Khel" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/270/1782998020270-h.jpg" group-title="Sports",Star Sports Khel
-https://live.dinesh29.com.np/stream/jiotvplus/starsportskhel/master.m3u8
