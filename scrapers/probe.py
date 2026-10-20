@@ -77,6 +77,10 @@ class Probe:
     needs_ua: bool = False
     blocked: bool = False           # bot challenge: retryable, not dead
     vod: bool = False               # finite pre-encoded clip, NOT a live channel
+    # VOD judged only by the SEQUENCE:0 fallback (inference), not by the
+    # authoritative playlist tags: never definitive on its own — callers
+    # drop only after a second confirming probe ≥ STRIKE_GAP_S later.
+    vod_inferred: bool = False
     note: str = ""
     # For HLS/DASH masters whose *input* URL is a code-forge raw-file link:
     # the playable variant URL actually resolved from the manifest (the real
@@ -333,6 +337,13 @@ def looks_like_vod(text: str) -> bool:
     return 0 < segs <= 8 and 0 < dur <= 400
 
 
+def _vod_authoritative(text: str) -> bool:
+    """True when the playlist's own tags prove it finite (not a judgment)."""
+    head = text[:8000]
+    return ("#EXT-X-PLAYLIST-TYPE:VOD" in head
+            or "#EXT-X-ENDLIST" in head)
+
+
 #: Proofs the URL is gone or can never be a channel (drop immediately).
 #: `http404`/`http410` come from the server; `non_media_ext` and `blocked`
 #: are pre-network rejects decided from the URL alone (installer/archive/
@@ -349,7 +360,12 @@ def is_definitively_dead(probe: "Probe") -> bool:
     delete a live source (user requirement: zero false positives — only
     defective links may be removed):
 
-      * `vod=True` — a finite pre-encoded clip, not a live channel
+      * `vod=True` — a finite pre-encoded clip, but only when the
+        playlist's own tags prove it (`ENDLIST` / `PLAYLIST-TYPE:VOD`).
+        The SEQUENCE:0 fallback sets `vod_inferred` and is never
+        definitive alone: a just-started live window can look finite
+        once, so callers drop such a URL only after a second probe
+        ≥ STRIKE_GAP_S later still judges it a clip
       * HTTP 404 / 410 — the server explicitly said the resource is gone
       * `non_media_ext` / `blocked` — pre-network URL-shape rejects
         (file type that can never stream / banned host or non-http
@@ -364,7 +380,7 @@ def is_definitively_dead(probe: "Probe") -> bool:
       * ``page`` / HTML — temporary interstitial or wrong classification
     """
     if getattr(probe, "vod", False):
-        return True
+        return not getattr(probe, "vod_inferred", False)
     if getattr(probe, "blocked", False):
         return False          # challenge-walled: never evidence of death
     return (getattr(probe, "note", "") or "") in _DEFINITIVE_GONE
@@ -622,6 +638,14 @@ def probe_stream(
             quality = _quality_from_resolution(res, bw)
             segments: List[str] = []
             media = ""
+            # Assigned before the conditional variant fetch: when that fetch
+            # fails (or the deadline already passed) the master probe still
+            # returns below, and reading an unassigned local raised
+            # UnboundLocalError — 178/2188 URLs in run 2026-10-19 were
+            # permanently unjudgeable (crash -> swallowed -> kept forever).
+            # Unknown is NOT VOD: default False never rejects on missing data.
+            vod = False
+            vod_inferred = False
             if time.monotonic() < deadline:
                 r2 = _resp(abs_var, ref=referer, ua=user_agent)
                 if r2 is None:
@@ -640,6 +664,7 @@ def probe_stream(
                     # master over a CloudFront variant).
                     vod = (looks_like_vod(media)
                            and host_of(abs_var or "") == host_of(final_url or ""))
+                    vod_inferred = vod and not _vod_authoritative(media)
                     if not quality:
                         m = re.search(r"RESOLUTION=(\d+x\d+)", media, re.IGNORECASE)
                         if m:
@@ -656,6 +681,7 @@ def probe_stream(
             return Probe(kind="stream", detail="hls_master", score=score,
                          quality=quality, bandwidth=bw, latency_ms=latency,
                      sample=text[:60000], vod=vod,
+                     vod_inferred=vod_inferred,
                      resolved_url=_resolve_chain(
                          abs_var, origin_is_raw=is_raw_file_url(url),
                          get_text=_chain_text, first_text=media),
@@ -666,8 +692,12 @@ def probe_stream(
     if _is_hls_media(text):
         if looks_like_vod(text):
             # A finite pre-encoded clip is not a live channel — reject it.
+            # ENDLIST/PLAYLIST-TYPE:VOD prove it; the SEQUENCE:0 fallback
+            # is inference and marks the probe instead.
             return Probe(kind="dead", detail="vod_clip", sample=text[:60000],
-                         vod=True, note="finite vod clip, not live")
+                         vod=True,
+                         vod_inferred=not _vod_authoritative(text),
+                         note="finite vod clip, not live")
         segments = media_segments(text, final_url)
         seg_ok = _segments_ok(segments, referer=referer, deadline=deadline) if segments else 0
         first = ""

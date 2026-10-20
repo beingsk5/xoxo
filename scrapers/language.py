@@ -131,6 +131,28 @@ def _is_second_failure(prior: Optional[dict], now: Optional[float] = None) -> bo
     return (now - checked) >= STRIKE_GAP_S
 
 
+def _is_second_vod_finding(prior: Optional[dict],
+                           now: Optional[float] = None) -> bool:
+    """True when `prior` confirms this inferred-VOD judgment is a repeat.
+
+    `looks_like_vod`'s SEQUENCE:0 fallback is inference: a live stream in
+    its first minutes can look like a finite clip once. A second VOD verdict
+    at least STRIKE_GAP_S after the first shows the playlist never advanced
+    its window — two observations, so the drop stays evidence-based (zero
+    false positives). `prior` must be the cache row captured BEFORE
+    `cache.remember()` stored the current probe.
+    """
+    if not prior or prior.get("status") != "vod":
+        return False
+    if now is None:
+        now = time.time()
+    try:
+        checked = float(prior.get("checked_at") or 0.0)
+    except (TypeError, ValueError):
+        return False
+    return (now - checked) >= STRIKE_GAP_S
+
+
 def _load_shared_dead_urls() -> Set[str]:
     """Dead URLs already probed by an earlier language job in this run.
 
@@ -873,8 +895,9 @@ class LanguageScraper:
 
         Playlist expansion queues children with score 0: a live manifest
         proves the list, not each child URL. This pass measures up to
-        RESCORE_CAP of them, drops the ones that turn out dead/VOD or that
-        fail a second time ≥ STRIKE_GAP_S after their last dead verdict and
+        RESCORE_CAP of them, drops the ones that turn out dead/confirmed-VOD
+        or that fail a second time ≥ STRIKE_GAP_S after their last dead
+        verdict and
         leaves the transient-failure ones unscored so the output ranks them
         last instead of letting them inherit a score they never earned.
 
@@ -921,6 +944,9 @@ class LanguageScraper:
                         prior = cache.get(ch.url)
                         cache.remember(ch.url, probe)
                         if is_definitively_dead(probe):
+                            dead_urls.append(ch.url)
+                        elif (getattr(probe, "vod_inferred", False)
+                              and _is_second_vod_finding(prior)):
                             dead_urls.append(ch.url)
                         elif probe.ok:
                             ch.score = probe.score
@@ -1534,7 +1560,10 @@ class LanguageScraper:
         gets exactly one fresh probe here:
 
           * ok → keep (and score a still-unscored row)
-          * definitive (404/410/VOD/non-media/banned-host) → drop now
+          * definitive (404/410/authoritative VOD/non-media/banned-host)
+            → drop now
+          * inferred VOD (SEQUENCE:0 fallback) → drop only when the second
+            probe ≥ STRIKE_GAP_S later still judges it a finite clip
           * challenge-walled → keep (a wall is not death)
           * first transient failure → keep, but the dead verdict is cached
             (strike one)
@@ -1570,6 +1599,9 @@ class LanguageScraper:
                 cache.remember(url, probe)
                 if is_definitively_dead(probe):
                     dead.add(url)     # proven gone / not a channel
+                elif (getattr(probe, "vod_inferred", False)
+                      and _is_second_vod_finding(prior)):
+                    dead.add(url)     # same non-advancing clip ≥gap later
                 elif probe.ok:
                     kept += 1
                     ch = by_url.get(url)

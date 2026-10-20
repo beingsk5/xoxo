@@ -184,6 +184,15 @@ _PLACEHOLDER_TOKEN_VALUES = frozenset({
 _PLACEHOLDER_TOKEN_RE = re.compile(
     r"(?:test|demo|abc|xxx|user|pass|temp|tmp|sample|example)\d*\Z")
 
+# Account-identity params: short numeric values here (UID, PIN) can be real
+# issued credentials, so the digit heuristic never applies to them — only the
+# dummy-word rules do. Anonymous share tokens (token/key/sign/...) are opaque
+# by contract; a <=4-digit value there is still unmistakable junk.
+_ACCOUNT_PARAM_NAMES = frozenset({
+    "username", "user", "login", "password", "passwd", "pwd", "pass",
+    "session", "session_id", "sid",
+})
+
 
 def is_placeholder_token_url(url: str) -> bool:
     """True when a credential query param holds an obvious dummy value.
@@ -193,6 +202,11 @@ def is_placeholder_token_url(url: str) -> bool:
     per-user connection quota, so the stream dies with an I/O error a few
     seconds in. Empty values are kept (the server ignores a missing token,
     so the link may still be a genuine open endpoint).
+
+    A <=4-digit value counts as junk only on anonymous share-token params;
+    account params (username/password/...) are exempt because panels do
+    issue real numeric UIDs and PINs — a working account link must never
+    be judged by its shape alone.
     """
     if "=" not in url or "?" not in url:
         return False
@@ -208,7 +222,8 @@ def is_placeholder_token_url(url: str) -> bool:
             continue
         if val in _PLACEHOLDER_TOKEN_VALUES or _PLACEHOLDER_TOKEN_RE.fullmatch(val):
             return True
-        if val.isdigit() and len(val) <= 4:
+        if (val.isdigit() and len(val) <= 4
+                and m.group(1).lower() not in _ACCOUNT_PARAM_NAMES):
             return True
     return False
 
