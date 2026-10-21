@@ -350,7 +350,13 @@ def _vod_authoritative(text: str) -> bool:
 #: image path; banned host or non-http scheme) — no I/O happens, so they
 #: cannot be network misjudgements, and the same rules already gate every
 #: admission path (`is_probe_worthy`, `_add_channel`).
-_DEFINITIVE_GONE = frozenset({"http404", "http410", "non_media_ext", "blocked"})
+#: `playlist_serves_file` is body proof: a manifest URL answered with a
+#: finished progressive media file (magic bytes), which cannot be a live
+#: playlist — the only drop rule that inspects the response payload.
+_DEFINITIVE_GONE = frozenset({
+    "http404", "http410", "non_media_ext", "blocked",
+    "playlist_serves_file",
+})
 
 
 def is_definitively_dead(probe: "Probe") -> bool:
@@ -371,6 +377,12 @@ def is_definitively_dead(probe: "Probe") -> bool:
         (file type that can never stream / banned host or non-http
         scheme), decided without I/O so they are structural, not a
         failed fetch
+      * `playlist_serves_file` — a manifest URL (`.m3u8`/`.m3u`/`.mpd`
+        or `output=m3u8`) answered with a finished progressive media
+        file: the server stopped serving the live playlist entirely
+        (e.g. dead upstream leaving all channel routes serving one
+        identical static MP4), proven from the response body's magic
+        bytes
 
     Everything else is ambiguous and the channel must be kept:
 
@@ -539,6 +551,23 @@ def _looks_media(body: bytes) -> bool:
     if body[0] == 0x47 and len(body) >= 189 and body[188] == 0x47:
         return True                                   # MPEG-TS packet sync
     return False
+
+
+def _is_finished_media_file(body: bytes) -> bool:
+    """True when `body` is a finished progressive file, not a live feed.
+
+    Magic-byte proof of a static container (MP4/MOV, WebM/MKV, RIFF,
+    Ogg/FLAC/ID3, MPEG audio/ADTS): such a file has a fixed size and ends
+    when played — it can never be a live channel. Raw MPEG-TS is
+    deliberately excluded: chunks are the live transport, and a
+    playlist-less TS relay still plays in VLC, so it is never rejected on
+    shape alone.
+    """
+    if len(body) < 32:
+        return False              # too short for a trustworthy magic match
+    if body[0] == 0x47 and len(body) >= 189 and body[188] == 0x47:
+        return False              # raw TS — live-capable, keep
+    return _looks_media(body)
 
 
 def probe_stream(
@@ -792,6 +821,24 @@ def probe_stream(
     # claims a media extension or the body's magic bytes confirm it below.
     if by_ext or ct.startswith(("video/", "audio/")) or (
             ct.startswith("application/octet-stream") and not by_ext):
+        # A finished media file where a live playlist must be is proof the
+        # source is gone: `.m3u8`/`.m3u`/`.mpd` are manifest contracts
+        # (HLS/DASH text) and `output=m3u8` promises the same — a static
+        # progressive container with a known Content-Length is a finite
+        # artifact that plays a fixed clip then ends. Real case: four
+        # "different" Sony channel routes all 302-redirected to one
+        # identical 48.6 MB catbox MP4 after their upstream died, so the
+        # check runs on the ORIGINAL url (redirected finals land on
+        # `.mp4` file hosts and would look like legitimate direct
+        # channels). Judged from the response body itself (magic bytes),
+        # never from a fetch outcome; raw TS is excluded by
+        # `_is_finished_media_file`.
+        orig_path = (urlparse(url).path or "").lower()
+        if ((orig_path.endswith((".m3u8", ".m3u", ".mpd"))
+             or "output=m3u8" in url.lower())
+                and _is_finished_media_file(resp.content[:4096])):
+            return Probe(kind="dead", detail="playlist_serves_file",
+                         note="playlist_serves_file")
         resp2 = httpclient.fetch_partial(
             url, referer=referer,
             timeout=max(1.0, deadline - time.monotonic()), nbytes=min(8192, SEGMENT_BYTES),
