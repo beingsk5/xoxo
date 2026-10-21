@@ -105,9 +105,14 @@ env:
   # Discovery-source crawl slice (seconds): iptv-org + YuppTV + code search
   # + site crawl must all fit inside it before search starts.
   BUDGET_CRAWL_S: '480'
-  # One search engine only — Bing answers 200 with full SERPs from runner
-  # IPs; a second engine doubles query cost for little recall.
-  SCRAPER_ENGINES: 'bing'
+  # Two engines, union per query: direct Bing plus ddgs (yahoo,bing).
+  # Baseline was 1800 queries -> 224 probe-worthy URLs (0.12/query) on
+  # degraded direct-Bing SERPs; ddgs returns 7-10 real results/query.
+  # The circuit breaker (3 empties -> 300s cooldown) auto-disables any
+  # engine a runner IP cannot reach, so a failed engine costs a few
+  # calls, not the job budget.
+  SCRAPER_ENGINES: 'bing,ddgs'
+  DDGS_BACKENDS: 'yahoo,bing'
   # Per-attempt internal budgets (minutes). Search stops before validate so
   # every attempt publishes well inside the job cap.
   SCRAPER_TIMEOUT_M1: '50'
