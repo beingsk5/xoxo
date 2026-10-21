@@ -81,6 +81,50 @@ def norm_name(name: str) -> str:
     return " ".join(n.split())
 
 
+# Tokens that mark a parenthesised group as quality metadata, so norm_strict
+# drops "(720p HDR)" but keeps "(Russia)" — a country suffix must never be
+# normalized away when the comparison is an *exact* list equality.
+_STRICT_QUALITY_TOK = frozenset({
+    "hd", "fhd", "sd", "uhd", "4k", "hdr", "hlg", "hq", "fps",
+    "h264", "h265", "hevc", "aac", "ac3", "dolby", "vision",
+    "dual", "multi", "audio", "50fps", "60fps",
+})
+_STRICT_QUALITY_RES = re.compile(r"\d{3,4}[pi]\Z")
+_STRICT_PAREN = re.compile(r"\(\s*([^()]*?)\s*\)")
+# Dropped from BOTH sides of an exact key: quality + SAFE_EXTRAS tokens.
+# Country words are never in this set, so dropping extras can only merge
+# quality/suffix variants — it can never rescue a foreign feed.
+_STRICT_DROP_TOK = frozenset(SAFE_EXTRAS | QUALITY_TOKENS)
+
+
+def norm_strict(name: str) -> str:
+    """Exactness key for foreign-marked names: quality dropped, country kept.
+
+    `norm_name` strips *every* paren, so "Mega TV (Paraguay)" normalized to
+    the list entry "Mega TV" and rode in on it. norm_strict only removes a
+    paren whose content is pure quality ("(1080p)", "(720p HDR)") and drops
+    quality tokens elsewhere — "NHK World-Japan (1080p)" still equals list
+    entry "NHK World-Japan", while any country word survives and blocks the
+    rescue.
+    """
+    n = (name or "").lower()
+
+    def _paren(m):
+        toks = m.group(1).split()
+        if toks and all(
+            t in _STRICT_QUALITY_TOK or _STRICT_QUALITY_RES.fullmatch(t)
+            for t in toks
+        ):
+            return " "
+        return " " + m.group(1) + " "
+
+    n = _STRICT_PAREN.sub(_paren, n)
+    n = re.sub(r"\[[^\]]*\]", " ", n)          # [Geo-blocked] etc: annotations
+    n = re.sub(r"\b\d{3,4}[pi]\b", " ", n)
+    n = re.sub(r"[|_/\\-]+", " ", n)
+    return " ".join(t for t in n.split() if t not in _STRICT_DROP_TOK)
+
+
 def _core(tokens: Iterable[str]) -> frozenset:
     """Tokens that may not be explained away as an 'extra'."""
     return frozenset(t for t in tokens if t and t not in SAFE_EXTRAS)
@@ -97,7 +141,8 @@ def _subsets(items: Set[str]):
 class NameIndex:
     """Fast membership + URL matching over one language's channel list."""
 
-    __slots__ = ("raw", "norm", "_exact", "_tok", "_core", "_by_token", "_compact")
+    __slots__ = ("raw", "norm", "_exact", "_tok", "_core", "_by_token",
+                 "_compact", "_strict")
 
     def __init__(self, names: Iterable[str] = ()):
         self.raw: Set[str] = set()            # lowercased, as stored by the list
@@ -109,6 +154,9 @@ class NameIndex:
         # "zeetv"/"goldmines" (name with its separators removed) -> display name;
         # lets a single concatenated URL token match a multi-word channel name.
         self._compact: Dict[str, str] = {}
+        # norm_strict key -> display name: exact equality under the
+        # quality-only normalization (countries kept).
+        self._strict: Dict[str, str] = {}
         for n in names or ():
             self.add(n)
 
@@ -124,6 +172,9 @@ class NameIndex:
             return
         self.norm.add(n)
         self._exact.setdefault(n, raw)
+        s = norm_strict(raw)
+        if s:
+            self._strict.setdefault(s, raw)
         tokens = frozenset(t for t in n.split() if t)
         if tokens:
             self._tok.setdefault(tokens, raw)
@@ -182,6 +233,17 @@ class NameIndex:
                     if N <= A:
                         return True
         return False
+
+    def has_strict(self, name: str) -> bool:
+        """Exact equality under norm_strict — quality dropped, country kept.
+
+        The rescue path for a foreign-marked name: only a candidate the
+        target list names verbatim may override the foreign-country
+        rejection (loose has() can't be used — norm_name strips the
+        country paren before comparing).
+        """
+        k = norm_strict(name)
+        return bool(k) and k in self._strict
 
     # ── URL matching (old `_url_matches_channel_list`) ──────────
 

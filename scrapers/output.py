@@ -22,12 +22,30 @@ from typing import List
 
 from scrapers.base import get_database
 from scrapers.models import Channel
+from scrapers.nameindex import norm_name
 
 log = logging.getLogger("output")
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 OUTPUT_DIR = BASE_DIR / "output"
 CHANNEL_LISTS_DIR = BASE_DIR / "channel_lists"
+
+# Unknown adult names: the database only knows iptv-org's blocklist (exact
+# name/alt match), but random community lists carry channels it has never
+# heard of — "XXX: DDF NETWORK" passed every gate of run 107441320802 and
+# was not in blocklist.csv either. This pattern layer runs on every name at
+# write time, independent of the database.
+_NSFW_NAME_RE = re.compile(
+    r"(?<![a-z0-9])(?:xxx|porn|nsfw|nude|hentai|erotic|sex)(?![a-z0-9])"
+    r"|(?<![a-z0-9])18\+(?![a-z0-9])"
+    r"|(?<![a-z0-9])blue[\s-]*film(?![a-z0-9])",
+    re.IGNORECASE,
+)
+
+# How many URLs of ONE name ship at most (rank order). A mega-playlist
+# lists the same channel dozens of times with different URLs (mahaa max ×36,
+# nepal 1 ×33): the first copies are all the value, the rest are bloat.
+NAME_URL_CAP = 3
 
 # Higher is better; used to break score ties between two live URLs.
 _QUALITY_RANK = {"2160p": 5, "1440p": 4, "1080p": 4, "720p": 3, "576p": 2,
@@ -81,17 +99,54 @@ def best_per_channel(channels: List[Channel]) -> List[Channel]:
 
 
 def filter_blocked(channels: List[Channel]) -> List[Channel]:
-    """Remove NSFW channels only (blocklist.csv reason='nsfw' + is_nsfw/xxx).
+    """Remove NSFW channels (blocklist.csv reason='nsfw' + is_nsfw/xxx).
 
-    DMCA and other blocklist reasons are NOT filtered here.
+    DMCA and other blocklist reasons are NOT filtered here. The name
+    pattern layer catches adult channels the database has never heard of.
     """
     db = get_database()
     before = len(channels)
-    filtered = [ch for ch in channels if not db.is_name_blocked(ch.name)]
+    filtered = [
+        ch for ch in channels
+        if not (db.is_name_blocked(ch.name)
+                or _NSFW_NAME_RE.search(ch.name or ""))
+    ]
     removed = before - len(filtered)
     if removed:
         log.info(f"  Filtered {removed} NSFW channels")
     return filtered
+
+
+def cap_per_name(channels: List[Channel], cap: int = NAME_URL_CAP) -> List[Channel]:
+    """Keep only the best `cap` URLs per channel name.
+
+    URL dedup (best_per_channel) merges identical links but never equal
+    *names* with different URLs — playlist expansion produced 36 copies of
+    "Mahaa Max". Ranking is rank_key (score, quality, logo), first
+    insertion order breaks ties; unnamed entries are never touched.
+    """
+    groups: dict = {}
+    for ch in channels:
+        if not ch.name:
+            continue
+        key = norm_name(ch.name)
+        if not key:
+            continue
+        groups.setdefault(key, []).append(ch)
+    keep_ids = set()
+    for grp in groups.values():
+        if len(grp) <= cap:
+            keep_ids.update(id(c) for c in grp)
+            continue
+        for c in sorted(grp, key=rank_key, reverse=True)[:cap]:
+            keep_ids.add(id(c))
+    kept = [c for c in channels
+            if not c.name or not norm_name(c.name) or id(c) in keep_ids]
+    removed = len(channels) - len(kept)
+    if removed:
+        log.info(f"  Capped {removed} duplicate-name URLs "
+                 f"(kept best {cap} per name)")
+    return kept
 
 
 def enrich_from_database(channels: List[Channel]) -> int:
@@ -221,6 +276,7 @@ def prepare_channels(channels: List[Channel]) -> List[Channel]:
         log.info(f"  Dropped {before - len(channels)} raw-file links "
                  f"(code-forge file storage, not streams)")
     channels = best_per_channel(channels)
+    channels = cap_per_name(channels)
     channels = filter_blocked(channels)
     enrich_from_database(channels)
     enrich_from_channel_lists(channels)

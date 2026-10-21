@@ -23,7 +23,9 @@ from urllib.parse import unquote, urljoin, urlparse
 
 from scrapers import flaresolverr
 from scrapers import httpclient
-from scrapers.urls import BLOCKED_DOMAINS, is_blocked_domain, host_of
+from scrapers.urls import (
+    BLOCKED_DOMAINS, is_bare_xtream_id, is_blocked_domain, host_of,
+)
 # Re-exported through __all__ (search engines used to live here). Imported
 # eagerly so the names exist as real module attributes; `__getattr__` below
 # still covers the rest of the search API on first access.
@@ -134,7 +136,7 @@ INDIAN_KEYWORDS = [
     "mtv india", "andtv", "and tv", "&tv", "rishtey",
     "dd national", "dd news", "dd sports", "dd kisan", "dd bharti", "dd india", "doordarshan",
     "ndtv", "ndtv 24x7", "ndtv india", "ndtv profit",
-    "times now", "republic", "republic bharat", "aaj tak", "india today",
+    "times now", "republic bharat", "aaj tak", "india today",
     "india tv", "news18", "news18 india", "abp news", "abp ananda", "tv9",
     "sun tv", "sun music", "sun news", "jaya tv", "k tv",
     "hindi", "tamil", "telugu", "malayalam", "kannada", "bengali",
@@ -148,14 +150,17 @@ INDIAN_KEYWORDS = [
 
 # Strong Indian network/channel names. Weak global brands (Star/Sony/MTV/Sun)
 # only match with an Indian suffix so foreign feeds are rejected.
+# Continuations need `\s+`: with `\s*` the `DD\s*\w+` branch matched the
+# literal "DDF" (XXX: DDF NETWORK shipped as Indian) and `Colors?...`
+# matched "Colorado" (CBS News Colorado passed the same gate).
 INDIAN_NAMES_RE = re.compile(
     r"\b(?:"
     r"Star\s*(?:Plus|Sports|Gold|UTV|Maa|Jalsha|Pravah|Suvarna|Vijay|Bharat|One|Movies|Champions)|"
     r"Sony\s*(?:TV|SAB|SET|Ten|PIX|SIX|MAX|YAY|Marathi|Pal|Liv|Sports|BBC)|"
     r"Zee\s*\w+|"
-    r"Colors?(?:\s*\w+)?|"
+    r"Colors?(?:\s+\w+)?|"
     r"MTV\s*(?:India|Indies)|"
-    r"DD\s*\w+|Doordarshan|"
+    r"DD(?:\s+\w+)?|Doordarshan|"
     r"NDTV\s*\w*|News18\s*\w*|ABP\b(?:\s+\w+)?|TV9\s*\w*|"
     r"Sun\s*(?:TV|Music|News)|Jaya\s+TV|"
     r"Hindi|Tamil|Telugu|Malayalam|Kannada|Bengali|Marathi|Gujarati|Punjabi|"
@@ -172,11 +177,33 @@ INDIAN_KEYWORDS_RE = re.compile(
     r"(?<![\w])(" + "|".join(re.escape(k) for k in sorted(_KEYWORD_WORD, key=len, reverse=True)) + r")(?![\w])",
     re.IGNORECASE,
 )
+# Substring keywords must not START mid-word: "haberturk tv" contains
+# "k tv", so a Turkish channel passed the Indian-name gate on it. No
+# trailing lookahead — joined URL words like "zee tvlive" keep matching.
+_KEYWORD_SUBSTR_RE = re.compile(
+    r"(?<![a-z0-9])(?:" + "|".join(
+        re.escape(k) for k in sorted(_KEYWORD_SUBSTR, key=len, reverse=True)
+    ) + r")",
+    re.IGNORECASE,
+)
+
+# "Republic TV" (Indian news channel) — but NOT "<Country> Republic TV":
+# a country's republic sense ("Dominican Republic TV", "Czech Republic")
+# must never become Indian proof. The lookbehind rejects the phrase when
+# an English word+space precedes it. Checked raw and on the squashed form
+# so "republic-tv.m3u8" URL slugs still count.
+_REPUBLIC_TV_RE = re.compile(r"(?<![a-z]\s)\brepublic\s+tv\b",
+                             re.IGNORECASE)
 
 # Non-live assets that must never become playlist entries.
+# test/xxx/adult/18+/not-24-7: classes that shipped as channels before
+# ("America's Test Kitchen", /live/test_cartoon_network_tizen/..., "XXX:
+# DDF NETWORK", Haberturk "[Not 24/7]"). Boundaries keep "latest"/"contest"
+# URL slugs matching-safe.
 NON_LIVE_RE = re.compile(
     r"(?<![a-z0-9])(?:promo|trailer|teaser|sample|preview|behind[-_]?the[-_]?scenes|"
-    r"episode|full[-_]?show|highlights?|recap|vod|vhs|clip|s\d{1,2}e\d{1,3})(?![a-z0-9])"
+    r"episode|full[-_]?show|highlights?|recap|vod|vhs|clip|s\d{1,2}e\d{1,3}|"
+    r"test|xxx|porn|nsfw|adult|nude|hentai|erotic|18\+|not\s*24\s*/?\s*7)(?![a-z0-9])"
     # per-episode ids: show_sab_tenalirama_ep470_1200k.m3u8 -> one VOD asset
     r"|(?<![a-z0-9])ep\d{1,4}(?![a-z0-9])"
     r"|\.(?:png|jpe?g|gif|webp|svg|ico|bmp|mp4|mkv|avi|mov)(?:\?|$)",
@@ -354,14 +381,17 @@ def is_indian(text: str) -> bool:
         return False
     if INDIAN_NAMES_RE.search(text):
         return True
-    tl = text.lower()
-    if any(kw in tl for kw in _KEYWORD_SUBSTR):
+    if _KEYWORD_SUBSTR_RE.search(text):
         return True
     if INDIAN_KEYWORDS_RE.search(text):
         return True
+    if _REPUBLIC_TV_RE.search(text):
+        return True
     # Hyphen/underscore URL forms: zee-tv.m3u8, star_plus.m3u8
     squashed = re.sub(r"[-_./]+", " ", text)
-    return bool(INDIAN_KEYWORDS_RE.search(squashed) or INDIAN_NAMES_RE.search(squashed))
+    return bool(INDIAN_KEYWORDS_RE.search(squashed)
+                or INDIAN_NAMES_RE.search(squashed)
+                or _REPUBLIC_TV_RE.search(squashed))
 
 
 def is_live_candidate(url: str, name: str = "") -> bool:
@@ -369,6 +399,10 @@ def is_live_candidate(url: str, name: str = "") -> bool:
     if NON_LIVE_RE.search(name) or NON_LIVE_RE.search(url):
         return False
     if NON_LIVE_PATH_RE.search(url):
+        return False
+    # Bare Xtream ids (/user/token/id, no /live/ marker, no extension) are
+    # VOD-shaped by API design — the panel serves movies at the same shape.
+    if is_bare_xtream_id(url):
         return False
     return True
 

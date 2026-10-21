@@ -232,9 +232,30 @@ def _path_query(url: str) -> str:
     """Lowercased `path?query` of `url` ('' when unparsable)."""
     try:
         p = urlparse(url)
-        return f"{p.path or ''}?{p.query or ''}".lower()
+        return f"{p.path or ''}?{p.query}".lower()
     except Exception:
         return ""
+
+
+# Xtream-style bare panel ids: /{userId}/{token}/{streamId} with no /live/
+# (or /movie/ /series/) marker and no file extension. The API serves VOD
+# and series assets at exactly this shape too — a bare id is ambiguous by
+# design — so it is never probe-worthy and never a keepable live entry
+# (neorcqds.top/4241.../f206.../53373 shipped as "&TV" but is not live).
+_XTREAM_BARE_ID_RE = re.compile(r"^/\d{3,}/[0-9a-zA-Z]{6,}/\d{2,10}/?$")
+
+
+def is_bare_xtream_id(url: str) -> bool:
+    """True for extension-less bare Xtream panel ids (VOD-shaped links)."""
+    try:
+        path = urlparse(url).path or ""
+    except Exception:
+        return False
+    if "/live/" in path or "/movie/" in path or "/series/" in path:
+        return False
+    if "." in path.rsplit("/", 1)[-1]:
+        return False
+    return bool(_XTREAM_BARE_ID_RE.match(path))
 
 
 def is_probe_worthy(url: str) -> bool:
@@ -254,6 +275,8 @@ def is_probe_worthy(url: str) -> bool:
     if is_blocked_domain(url) or is_non_media_url(url):
         return False
     if is_placeholder_token_url(url):
+        return False
+    if is_bare_xtream_id(url):
         return False
     lower = url.lower()
     if any(h in lower for h in DIRECT_STREAM_HINTS):

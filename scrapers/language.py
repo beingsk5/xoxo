@@ -60,8 +60,8 @@ from scrapers.sources import grepapp as grepapp_source
 from scrapers.sources import iptvorg as iptvorg_source
 from scrapers.sources import siteapi as siteapi_source
 from scrapers.urls import (
-    is_placeholder_token_url, is_probe_worthy, is_raw_file_url,
-    looks_like_player_page, probe_priority,
+    is_bare_xtream_id, is_placeholder_token_url, is_probe_worthy,
+    is_raw_file_url, looks_like_player_page, probe_priority,
 )
 
 # Repo root on sys.path so channel_lists.py is importable as a top-level module
@@ -189,6 +189,31 @@ _GEO_BLOCKED_RE = re.compile(r"geo[\s_-]*blocked", re.IGNORECASE)
 def _is_geo_blocked_name(name: str) -> bool:
     """True when the channel name carries a Geo-blocked annotation."""
     return bool(_GEO_BLOCKED_RE.search(name or ""))
+
+
+# Explicit foreign country/region tokens in a *discovered* name. Reached
+# only after the Indian-brand gate, so Indian-brand diaspora variants
+# ("Zee TV UK", "IBC TAMIL Canada", "Bollywood HD Russia") still pass —
+# this rejects foreign-content feeds whose country the normalizer would
+# otherwise strip ("Discovery Channel (Russia)" -> norm_name "discovery
+# channel" -> loose has() rescued it from your own list's name).
+# Bracket-only geo tags are annotations, not country markers (the geo
+# branch of _matches_language handles those separately).
+_FOREIGN_NAME_RE = re.compile(
+    r"(?<![a-z])(?:"
+    r"russia(?:n)?|paraguay|korea|italy|italian|german(?:y)?|czech|"
+    r"france|french|poland|polish|latin(?:\s+america)?|america(?:n)?s?|"
+    r"united\s+states|united\s+kingdom|usa|uk|canada|australia|europe|"
+    r"turkey|turkish|azerbaijan|japan|hong[\s-]*kong|china|chinese|"
+    r"singapore|malaysia|vietnam|indonesia|thailand|philip(?:pines)?|"
+    r"nigeria|ghana|kenya|africa|spain|spanish|portugal|netherlands|"
+    r"dutch|belgium|sweden|norway|denmark|finland|greece|israel|"
+    r"lebanon|saudi|qatar|kuwait|oman|bahrain|uae|dubai|emirates|"
+    r"egypt|morocco|pakistan|bangladesh|nepal|sri[\s-]*lanka|afghan|"
+    r"arabic|taiwan|bronx|brooklyn|manhattan|latino"
+    r")(?![a-z])",
+    re.IGNORECASE,
+)
 
 
 def code_name_window(names: List[str], found_keys: Set[str],
@@ -933,9 +958,15 @@ class LanguageScraper:
         proves the list, not each child URL. This pass measures up to
         RESCORE_CAP of them, drops the ones that turn out dead/confirmed-VOD
         or that fail a second time ≥ STRIKE_GAP_S after their last dead
-        verdict and
-        leaves the transient-failure ones unscored so the output ranks them
-        last instead of letting them inherit a score they never earned.
+        verdict.
+
+        What the main pass never covered: budget/cap leftovers and pure
+        transient failures stayed unscored — and unscored channels still
+        shipped ("845 left unverified" in run 107441320802: 252 dead
+        watchindia links in the published file). The final sweep after the
+        main pass gives every remaining scoreless child one more bounded
+        probe: verified keeps a score, everything else drops (challenge-
+        walled keeps — a CI-IP wall may play fine for a real viewer).
 
         Returns the quality-stripped keys of dropped channels so the caller
         can reopen their queries (the search phase has already passed by
@@ -995,6 +1026,60 @@ class LanguageScraper:
                         # else: first transient failure — keep unscored,
                         # never drop it (zero false positives: only
                         # provably-gone or repeat-failing links go)
+        # ── Final sweep: an unverified child must not ship ────────────
+        # The main pass is capped (RESCORE_CAP + validate budget), so
+        # children reach this point never-probed or only ever transient-
+        # failing ("left unverified"). One bounded pass over everything
+        # still scoreless: verified keeps a real score; dead/VOD/unreachable
+        # drops and reopens its queries (active = passes the sweep; a drop
+        # is re-searched next attempt, never permanently lost); challenge-
+        # walled keeps — the wall is often CI-IP specific. Deadline:
+        # UNVERIFIED_SWEEP_S (default 120s), and never the run's hard
+        # deadline; what the deadline leaves unprobed is dropped unverified
+        # rather than shipped blind.
+        sweep_verified = 0
+        sweep_walled = 0
+        dead_set = set(dead_urls)
+        left = [c for c in result.channels
+                if c.score <= 0 and c.url not in dead_set]
+        if left:
+            sweep_deadline = (
+                time.time()
+                + float(os.environ.get("UNVERIFIED_SWEEP_S", "120"))
+            )
+            with ThreadPoolExecutor(max_workers=VALIDATE_WORKERS) as executor:
+                idx = 0
+                while (idx < len(left) and time.time() < sweep_deadline
+                       and not self._validate_exhausted()):
+                    chunk = left[idx: idx + VALIDATE_WORKERS]
+                    idx += VALIDATE_WORKERS
+                    futures = {
+                        executor.submit(probe_stream, ch.url, budget=6.0): ch
+                        for ch in chunk
+                    }
+                    for completed in as_completed(futures):
+                        ch = futures[completed]
+                        try:
+                            probe = completed.result()
+                        except Exception:
+                            # Never verified — same fate as a failed sweep.
+                            dead_urls.append(ch.url)
+                            continue
+                        cache.remember(ch.url, probe)
+                        if getattr(probe, "blocked", False):
+                            sweep_walled += 1
+                            continue
+                        if probe.ok:
+                            ch.score = probe.score if probe.score > 0 else 1
+                            ch.quality = probe.quality
+                            sweep_verified += 1
+                        else:
+                            # dead, VOD, unreachable, empty manifest — the
+                            # final verdict for this attempt.
+                            dead_urls.append(ch.url)
+            # What the deadline left unprobed stays unverified -> drop +
+            # reopen; the output only ever contains URLs somebody saw work.
+            dead_urls.extend(ch.url for ch in left[idx:])
         dropped_keys: Set[str] = set()
         if dead_urls:
             dead = set(dead_urls)
@@ -1006,7 +1091,8 @@ class LanguageScraper:
         dropped = len(dead_urls)
         log.info(
             f"[{self.language}] rescored {scored} playlist children "
-            f"({attempted} probed), dropped {dropped} dead, "
+            f"({attempted} probed), swept {sweep_verified} verified / "
+            f"{sweep_walled} walled, dropped {dropped} dead, "
             f"{unscored} left unverified"
         )
         return dropped_keys
@@ -1099,28 +1185,31 @@ class LanguageScraper:
     def _accept_playlist(self, result: ScrapeResult, probe: Probe,
                          proven: Set[str], source: str = "",
                          logo_hint: str = "") -> None:
-        """Expand a multi-channel playlist, applying every quality gate."""
+        """Expand a multi-channel playlist, applying every quality gate.
+
+        Every entry runs the same gates as a directly discovered stream.
+        The old `indian = is_indian(probe.sample)` parent waiver is gone:
+        one India-worded playlist body used to switch off per-entry proof
+        for the whole list, which is how Haberturk / CBS / "XXX: DDF
+        NETWORK" shipped from a mixed community playlist.
+        """
         if not probe.entries:
             return
-        indian = is_indian(probe.sample)
         for entry_url, blk in probe.entries.items():
             if is_blocked_domain(entry_url):
                 continue
             ename = blk["name"] or ""
             if not is_live_candidate(entry_url, ename):
                 continue
-            # Geo-blocked labels are annotations only — never a reject reason.
             if not self._matches_language(ename, entry_url, blk["extinf"], proven):
                 continue
-            if ename and not _is_geo_blocked_name(ename):
-                if not (indian or is_indian(ename) or is_indian(entry_url)):
-                    if not self._names.has(ename):
-                        continue
             if entry_url in self._seen_urls:
                 continue
             # Playlist children start UNSCORED: the parent manifest only
             # proves the list is alive, not each child URL. `_rescore_phase`
-            # measures them (or drops the dead ones) before output.
+            # verifies them — measured keeps a score; anything nobody ever
+            # saw working is dropped and its queries reopened (never shipped
+            # unverified).
             self._add_channel(
                 result, entry_url, blk["extinf"],
                 name=ename, logo=blk["logo"] or logo_hint,
@@ -1272,20 +1361,36 @@ class LanguageScraper:
                           proven: Optional[Set[str]] = None) -> bool:
         """True if a discovered stream plausibly belongs to this language's run.
 
-        Accepts when the language name appears in metadata, or the channel name
-        token-matches this language's known list (allowing only quality extras
-        like HD/FHD — never foreign country suffixes).
+        Gate order (every admission bug of run 107441320802 lives in the
+        old ordering):
+          1. Indian brand/network name — passes even with a foreign suffix
+             (Indian-brand diaspora feeds: "Zee TV UK", "IBC TAMIL Canada").
+          2. Geo-block annotation alone never admits: it now needs Indian
+             proof (name/URL/EXTINF), the language token, or an *exact*
+             list match — that is how News12 Bronx / RT / Galavision rode in.
+          3. Language token in metadata (non-All runs).
+          4. Foreign country marker in the name — only an exact (quality-
+             normalized, country-preserving) list match rescues it; loose
+             has() would strip "(Russia)" and self-match.
+          5. Unnamed entries keep the original proof requirements.
+          6. Indian proof in the URL (named entries) — this replaces the
+             parent-playlist sample waiver removed from _accept_playlist.
+          7. Known-list membership (token match with quality extras).
         """
         lang = "" if self.language == "All" else self.language.lower()
-        if _is_geo_blocked_name(name):
-            return True
         text = f"{name} {url} {extinf}".lower()
-        if lang and lang in text:
-            return True
-        # Indian brand/network names pass even when not on this language list
-        # (mixed playlists, multi-language channel lists).
         if name and is_indian(name):
             return True
+        if _is_geo_blocked_name(name):
+            return bool(
+                is_indian(url) or is_indian(extinf)
+                or (lang and lang in text)
+                or self._names.has_strict(name)
+            )
+        if lang and lang in text:
+            return True
+        if name and _FOREIGN_NAME_RE.search(name):
+            return self._names.has_strict(name)
         n = norm_name(name)
         if not n:
             # Unnamed: require Indian/language proof in the URL or EXTINF
@@ -1296,9 +1401,10 @@ class LanguageScraper:
                         or self._names.url_matches(url)
                         or bool(proven and url in proven)
                         or (lang and lang in probe_text))
+        if is_indian(url):
+            return True
         if not len(self._names):
-            return bool(is_indian(name) or is_indian(url) or is_indian(extinf)
-                        or (lang and lang in text))
+            return bool(is_indian(extinf) or (lang and lang in text))
         return self._names.has(n)
 
     def _accept_stream_channel(
@@ -1316,9 +1422,9 @@ class LanguageScraper:
     ) -> bool:
         """Accept one probed single-stream URL.
 
-        Live-candidate check, geo-block labels always kept, named entries must
-        match this language's list (or be Indian), unnamed entries need
-        Indian/language proof.
+        Live-candidate check, then the shared `_matches_language` gates —
+        geo-block labels included (a geo tag alone never admits: it must
+        carry Indian/list/language proof).
         """
         if not is_live_candidate(url, extinf or name_hint):
             return False
@@ -1329,10 +1435,6 @@ class LanguageScraper:
             dname = name_hint
         if url in self._seen_urls:
             return False
-        if dname and _is_geo_blocked_name(dname):
-            self._add_channel(result, url, extinf, name=dname, source=source,
-                              logo=logo_hint, score=score, quality=quality)
-            return True
         if dname:
             if self._matches_language(dname, url, extinf):
                 self._add_channel(result, url, extinf, name=dname, source=source,
@@ -1544,6 +1646,23 @@ class LanguageScraper:
                          f"{len(junk)} stored raw-file links "
                          f"(re-searching)")
                 stored = [c for c in stored if not is_raw_file_url(c.url)]
+        if stored:
+            # Pre-fix gates admitted entries the current gates reject: bare
+            # Xtream ids (VOD-shaped, never live) and names/urls that are
+            # non-live candidates (test/xxx/adult/[Not 24/7] classes).
+            # The store must not launder them past the new rules — drop and
+            # re-search, same as placeholders.
+            def _junk(c):
+                return (is_bare_xtream_id(c.url)
+                        or not is_live_candidate(c.url, c.name))
+            junk = [c for c in stored if _junk(c)]
+            if junk:
+                self._dropped_keys |= self._keys_of(junk)
+                log.info(f"[{self.language}] dropped "
+                         f"{len(junk)} stored junk entries "
+                         f"(bare panel ids / non-live candidates) "
+                         f"(re-searching)")
+                stored = [c for c in stored if not _junk(c)]
         if stored:
             # A cached verdict alone must NOT drop a row: `save_channels`
             # replaces this language's rows wholesale, so deleting on a
