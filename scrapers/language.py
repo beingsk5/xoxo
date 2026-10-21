@@ -41,7 +41,7 @@ from collections import deque
 from concurrent.futures import ThreadPoolExecutor, as_completed, FIRST_COMPLETED, wait
 from pathlib import Path
 from threading import Lock
-from typing import Dict, List, Optional, Set
+from typing import Dict, List, Optional, Set, Tuple
 from urllib.parse import urlparse
 
 from scrapers.base import (
@@ -189,6 +189,33 @@ _GEO_BLOCKED_RE = re.compile(r"geo[\s_-]*blocked", re.IGNORECASE)
 def _is_geo_blocked_name(name: str) -> bool:
     """True when the channel name carries a Geo-blocked annotation."""
     return bool(_GEO_BLOCKED_RE.search(name or ""))
+
+
+def code_name_window(names: List[str], found_keys: Set[str],
+                     offset: int, cap: int) -> Tuple[List[str], int]:
+    """Names for one code-search slice: still-missing targets first.
+
+    The window starts at `offset` in that pool and wraps, so a persisted
+    offset sweeps every missing name across runs. The alphabetical-head
+    selection it replaces (`names[:6]`/`names[:QUERIES_PER_RUN]`) was taken
+    from the sorted full list every run — SONY MARATHI (rank 629), ZEE
+    TALKIES (883) and 900+ others past the cap were never queried at all,
+    run after run.
+    """
+    missing: List[str] = []
+    found: List[str] = []
+    for n in names:
+        key = " ".join(t for t in norm_name(n).split()
+                       if t not in QUALITY_TOKENS)
+        (found if key in found_keys else missing).append(n)
+    pool = missing + found
+    if not pool or cap <= 0:
+        return [], 0
+    off = offset % len(pool)
+    window = pool[off:off + cap]
+    if len(window) < cap:
+        window += pool[:cap - len(window)]
+    return window, (off + cap) % len(pool)
 
 
 class _LockSet:
@@ -599,13 +626,22 @@ class LanguageScraper:
             log.info(f"[{self.language}] code search skipped: crawl budget spent")
             return
         names = sorted(self._names.raw)
+        # Rotate the name window each run (kv offset outlives resume): the
+        # fixed alphabetical head never reached names past the cap.
+        cap = max(6, int(getattr(grepapp_source, "QUERIES_PER_RUN", 25) or 6))
+        offset = get_cache().get_int(self.language, "code_offset", 0)
+        window, next_off = code_name_window(
+            names, self._keys_of(list(result.channels)), offset, cap)
+        get_cache().set_int(self.language, "code_offset", next_off)
+        log.info(f"[{self.language}] code window: {len(window)}/{len(names)} "
+                 f"names (offset -> {next_off})")
         seeds: List[dict] = []
         try:
-            seeds = list(github_source.candidates(self._source_language(), names))
+            seeds = list(github_source.candidates(self._source_language(), window))
         except Exception as e:
             log.warning(f"[{self.language}] github source failed: {e}")
         try:
-            seeds += list(grepapp_source.candidates(self._source_language(), names))
+            seeds += list(grepapp_source.candidates(self._source_language(), window))
         except Exception as e:
             log.warning(f"[{self.language}] grep.app source failed: {e}")
         if not seeds:

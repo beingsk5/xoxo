@@ -95,6 +95,14 @@ CREATE TABLE IF NOT EXISTS runs (
     errors       TEXT NOT NULL DEFAULT '',
     updated_at   REAL NOT NULL
 );
+
+CREATE TABLE IF NOT EXISTS kv (
+    lang       TEXT NOT NULL,
+    key        TEXT NOT NULL,
+    value      TEXT NOT NULL,
+    updated_at REAL NOT NULL,
+    PRIMARY KEY (lang, key)
+);
 """
 
 
@@ -447,6 +455,35 @@ class ProbeCache:
             }
         except Exception:                            # pragma: no cover
             return {}
+
+    # ── kv (per-language scalars that outlive resume/run_meta) ─
+
+    def get_int(self, lang: str, key: str, default: int = 0) -> int:
+        conn = self._conn()
+        if conn is None:
+            return default
+        try:
+            cur = conn.execute(
+                "SELECT value FROM kv WHERE lang=? AND key=?", (lang, key))
+            row = cur.fetchone()
+            return int(row[0]) if row else default
+        except Exception:                            # pragma: no cover
+            return default
+
+    def set_int(self, lang: str, key: str, value: int) -> None:
+        conn = self._conn()
+        if conn is None:
+            return
+        try:
+            with self._write_lock:
+                conn.execute(
+                    "INSERT INTO kv(lang,key,value,updated_at) VALUES(?,?,?,?) "
+                    "ON CONFLICT(lang,key) DO UPDATE SET "
+                    "value=excluded.value, updated_at=excluded.updated_at",
+                    (lang, key, str(int(value)), time.time()))
+                conn.commit()
+        except Exception as e:                       # pragma: no cover
+            log.debug(f"[cache] set_int failed: {e}")
 
     # ── artifact exchange ───────────────────────────────────────
 

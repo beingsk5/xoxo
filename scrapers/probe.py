@@ -150,8 +150,27 @@ def master_variants(text: str) -> List[Tuple[int, str, str]]:
     return out
 
 
+def _join_uri(base_url: str, uri: str) -> str:
+    """urljoin that never raises — the probe contract is "never raises"."""
+    try:
+        return urljoin(base_url, uri)
+    except (ValueError, TypeError):
+        return ""
+
+
 def media_segments(text: str, base_url: str) -> List[str]:
-    """Absolute segment URIs from an HLS media playlist (first N only)."""
+    """Segment URIs from an HLS media playlist, resolved against `base_url`.
+
+    RFC 8216: every non-comment line is a URI reference — absolute
+    (`http://…`), root-relative (`/seg.ts`), plain relative (`seg1.ts`,
+    `2026/10/21/x.ts`) or protocol-relative (`//cdn/x.ts`). urljoin resolves
+    all four. The old startswith("http") / startswith("/") filter kept only
+    the first two and skipped `//` as a comment, so relative playlists
+    yielded no segments at all: seg_ok=0 on ~half of the output (note
+    `segs=0`), ffmpeg_verify never ran for them, and raw-file chains
+    dead-ended at "" — rejecting code-forge channels whose manifests use
+    relative URIs.
+    """
     segs: List[str] = []
     for raw in text.splitlines():
         line = raw.strip()
@@ -159,16 +178,15 @@ def media_segments(text: str, base_url: str) -> List[str]:
             continue
         if line.startswith("#EXT-X-MAP:"):
             attrs = parse_attrs(line[line.index(":") + 1:])
-            uri = attrs.get("uri", "")
+            uri = _join_uri(base_url, attrs.get("uri", ""))
             if uri:
-                segs.append(urljoin(base_url, uri))
-            continue
-        if line.startswith("#") or line.startswith("//"):
-            continue
-        if line.startswith("http") or line.startswith("/"):
-            segs.append(urljoin(base_url, line))
-            if len(segs) >= 4:
-                break
+                segs.append(uri)
+        elif not line.startswith("#"):   # tags + comments only; `//` is a URL
+            uri = _join_uri(base_url, line)
+            if uri:
+                segs.append(uri)
+        if len(segs) >= 4:
+            break
     return segs
 
 
@@ -236,16 +254,28 @@ def _resolve_chain(first_url: str, *, origin_is_raw: bool, get_text,
             segs = media_segments(text, url)
             if not segs:
                 return ""
-            first = segs[0]
-            if (is_raw_file_url(first)
-                    and first.split("?")[0].lower().endswith((".m3u8", ".m3u"))):
-                # a media playlist that points at another checked-in
-                # playlist: keep walking instead of dead-ending.
-                url = first
+            hop = ""
+            for first in segs:
+                if (is_raw_file_url(first)
+                        and first.split("?")[0].lower().endswith((".m3u8", ".m3u"))):
+                    # a media playlist that points at another checked-in
+                    # playlist: keep walking instead of dead-ending.
+                    hop = first
+                    break
+                root = _stream_root_of(first)
+                if root:
+                    # terminal media: the segment host's directory is the
+                    # source ("" when the segments live in the repo itself).
+                    # Every segment is scanned, not just the first: a
+                    # relative URI of a raw-origin playlist resolves back
+                    # onto the forge (root "") while a later URI points at
+                    # the real host — stopping early would reject a channel
+                    # the absolute-only filter used to keep.
+                    return root
+            if hop:
+                url = hop
                 continue
-            # terminal media: the segment host's directory is the source
-            # ("" when the segments live in the repo itself).
-            return _stream_root_of(first)
+            return ""
         if "<mpd" in text[:2000].lower():
             variants = dash_variants(text, url)
             if not variants:
@@ -667,37 +697,57 @@ def probe_stream(
             quality = _quality_from_resolution(res, bw)
             segments: List[str] = []
             media = ""
-            # Assigned before the conditional variant fetch: when that fetch
-            # fails (or the deadline already passed) the master probe still
-            # returns below, and reading an unassigned local raised
-            # UnboundLocalError — 178/2188 URLs in run 2026-10-19 were
-            # permanently unjudgeable (crash -> swallowed -> kept forever).
-            # Unknown is NOT VOD: default False never rejects on missing data.
+            # Assigned before the conditional variant fetch: when the
+            # deadline passes before the fetch is attempted the master
+            # probe still returns below, and reading an unassigned local
+            # raised UnboundLocalError — 178/2188 URLs in run 2026-10-19
+            # were permanently unjudgeable (crash -> swallowed -> kept
+            # forever). Unknown is NOT VOD: default False never rejects
+            # on missing data.
             vod = False
             vod_inferred = False
+            variant_unreachable = False
             if time.monotonic() < deadline:
                 r2 = _resp(abs_var, ref=referer, ua=user_agent)
                 if r2 is None:
                     r2 = _resp(abs_var, ref=referer, ua=None)
-                if r2 is not None:
+                if r2 is None or r2.status_code >= 400:
+                    # The variant manifest IS the stream: a dead host or
+                    # error status means no player can follow this master.
+                    # A master that merely parses used to pass as ok
+                    # (score ~74) while its variant host was DNS-gone —
+                    # hollow verdicts that froze junk into the output.
+                    # Not definitive: a transient failure re-probes and
+                    # recovers on a later run.
+                    variant_unreachable = True
+                else:
                     media = r2.content.decode("utf-8", errors="ignore")
-                    segments = media_segments(media, r2.url or abs_var)
-                    # Judge VOD on the variant only when it stays on the
-                    # master's host: relative variants like `720p.m3u8` are
-                    # clip files next to the master, and a short window there
-                    # is a real finite clip. A variant on another host is the
-                    # CDN chunklist a code-forge file points at — a rolling
-                    # live window with no EVENT marker reads as "VOD" by the
-                    # segment-count heuristic, so judging it would reject the
-                    # channel outright (e.g. a raw.githubusercontent.com
-                    # master over a CloudFront variant).
-                    vod = (looks_like_vod(media)
-                           and host_of(abs_var or "") == host_of(final_url or ""))
-                    vod_inferred = vod and not _vod_authoritative(media)
-                    if not quality:
-                        m = re.search(r"RESOLUTION=(\d+x\d+)", media, re.IGNORECASE)
-                        if m:
-                            quality = _quality_from_resolution(m.group(1), bw)
+                    if not _looks_playlist_body(media):
+                        # 200 with an error/HTML body: no manifest there.
+                        variant_unreachable = True
+                        media = ""
+                    else:
+                        segments = media_segments(media, r2.url or abs_var)
+                        # Judge VOD on the variant only when it stays on the
+                        # master's host: relative variants like `720p.m3u8` are
+                        # clip files next to the master, and a short window there
+                        # is a real finite clip. A variant on another host is the
+                        # CDN chunklist a code-forge file points at — a rolling
+                        # live window with no EVENT marker reads as "VOD" by the
+                        # segment-count heuristic, so judging it would reject the
+                        # channel outright (e.g. a raw.githubusercontent.com
+                        # master over a CloudFront variant).
+                        vod = (looks_like_vod(media)
+                               and host_of(abs_var or "") == host_of(final_url or ""))
+                        vod_inferred = vod and not _vod_authoritative(media)
+                        if not quality:
+                            m = re.search(r"RESOLUTION=(\d+x\d+)", media, re.IGNORECASE)
+                            if m:
+                                quality = _quality_from_resolution(m.group(1), bw)
+            if variant_unreachable:
+                return Probe(kind="dead", detail="hls_master",
+                             sample=text[:60000],
+                             note="variant_unreachable")
             seg_ok = _segments_ok(segments, referer=referer, deadline=deadline) if segments else 0
             verified = False
             if seg_ok and time.monotonic() < deadline:
@@ -727,6 +777,16 @@ def probe_stream(
                          vod=True,
                          vod_inferred=not _vod_authoritative(text),
                          note="finite vod clip, not live")
+        if not any(ln.strip() and not ln.strip().startswith("#")
+                   for ln in text.splitlines()):
+            # A media manifest with zero URI lines plays nothing (offline
+            # template / empty error body). Lines are checked raw rather
+            # than via `segments`, so emptiness stays a pure parse property,
+            # independent of URI resolution. Not definitive — a transient
+            # empty body re-probes next run.
+            return Probe(kind="dead", detail="empty_playlist",
+                         sample=text[:60000],
+                         note="playlist has no segments")
         segments = media_segments(text, final_url)
         seg_ok = _segments_ok(segments, referer=referer, deadline=deadline) if segments else 0
         first = ""
