@@ -3,12 +3,30 @@
 https://d3eyhgoylams0m.cloudfront.net/v1/manifest/93ce20f0f52760bf38be911ff4c91ed02aa2fd92/ed7bd2c7-8d10-4051-b397-2f6b90f99acb/20c8ad14-a158-4a42-8889-e032d070856e/2.m3u8
 #EXTINF:-1 tvg-name="DD Punjabi" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Punjabi.png" group-title="Culture",DD Punjabi
 https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/da821c24a59d4e57960497aeaca8fb33/index.m3u8
+#EXTINF:-1 tvg-name="DD Punjabi" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Punjabi.png" group-title="Culture",DD Punjabi
+http://watchindia.net:8880/live/vvv/vvv/1947.ts
+#EXTINF:-1 tvg-name="DD Punjabi (576p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Punjabi.png" group-title="Culture",DD Punjabi (576p)
+http://103.78.149.54:8000/play/a00o/index.m3u8
+#EXTINF:-1 tvg-name="group-title="Punjabi",DD Punjabi" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Punjabi.png" group-title="Culture",group-title="Punjabi",DD Punjabi
+http://z5ams.akamaized.net/ddpunjabi/tracks-v1a1/index.m3u8
 #EXTINF:-1 tvg-name="Punjabi TV" tvg-logo="https://papaji.freetvindia.com/media/PunjabiTV.png" group-title="Entertainment",Punjabi TV
 http://cdn9.live247stream.com/punjabitvcanada/tv/playlist.m3u8
 #EXTINF:-1 tvg-name="Desi Channel" tvg-logo="https://desichannel.in/wp-content/uploads/2025/01/desi-channel.png" group-title="Entertainment",Desi Channel
 https://livestream.unlimitedcdn.com/agm-dc/desi-channel/index.m3u8
 #EXTINF:-1 tvg-name="Desi Channel" tvg-logo="https://raw.githubusercontent.com/saeidrahmanbd/BDIX-IPTV/main/logos/desi-channel.png" group-title="Entertainment",Desi Channel
 https://livestream.unlimitedcdn.com/agm-dc/desi-channel/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-name="Desi Channel" tvg-logo="https://desichannel.in/wp-content/uploads/2025/01/desi-channel.png" group-title="Entertainment",Desi Channel
+http://watchindia.net:8880/live/vvv/vvv/1954.ts
+#EXTINF:-1 tvg-name="group-title="Punjabi",Desi Channel" tvg-logo="https://desichannel.in/wp-content/uploads/2025/01/desi-channel.png" group-title="Entertainment",group-title="Punjabi",Desi Channel
+https://ayedewz3dnl6-hls-live.wmncdn.net/1167/desichannel/7e2dd0aed46b70a5c77f4affdb702e4b.sdp/tracks-v1a1/index.m3u8
+#EXTINF:-1 tvg-name="group-title="Punjabi",Zee Punjabi" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022JG14.png?lock=720x540" group-title="Entertainment",group-title="Punjabi",Zee Punjabi
+http://z5ams.akamaized.net/punjabi/tracks-v1a1/index.m3u8
+#EXTINF:-1 tvg-name="Punjabi TV" tvg-logo="https://papaji.freetvindia.com/media/PunjabiTV.png" group-title="Entertainment",Punjabi TV
+https://mumt02.tangotv.in/PUNJABITV/index.m3u8
+#EXTINF:-1 tvg-name="World Punjabi TV (576p)" tvg-logo="https://papaji.freetvindia.com/media/PunjabiTV.png" group-title="Entertainment",World Punjabi TV (576p)
+https://mumt06.tangotv.in/qYyB8fXVWPNWORLDPUNJABI/index.m3u8
+#EXTINF:-1 tvg-name="MH One Shraddha (360p)" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/mh1_Music.png" group-title="General",MH One Shraddha (360p)
+https://paramount.jswk.online/shraddhamhone/index.m3u8
 #EXTINF:-1 tvg-name="Punjabi Shorts" tvg-logo="https://www.thegtcnetwork.com/punjabi-shorts.jpg" group-title="Movies",Punjabi Shorts
 https://vglivessai.akamaized.net/ptnr-yupptv/title-Punjabi_Shorts/in/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/27c3fd7a-b01f-4b00-ac03-557ac77acd47/index.m3u8
 #EXTINF:-1 tvg-name="Punjabi Shorts" tvg-logo="https://www.thegtcnetwork.com/punjabi-shorts.jpg" group-title="Movies",Punjabi Shorts
@@ -54,6 +72,12 @@ https://vglivessai.akamaized.net/in/v1/master/611d79b11b77e2f571934fd80ca1413453
 #EXTINF:-1 tvg-name="Punjabi Shorts" tvg-logo="https://www.thegtcnetwork.com/punjabi-shorts.jpg" group-title="Movies",Punjabi Shorts
 https://vglivessai.akamaized.net/in/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/27c3fd7a-b01f-4b00-ac03-557ac77acd47/index.m3u8?hdnts=st=1792583555~exp=1792605155~acl=!*/in/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/27c3fd7a-b01f-4b00-ac03-557ac77acd47/*!/payload/yupptvott_5_-1_aa495fec-a759-4fc1-acda-7f4a2f96988c_US_20.169.67.54_yupptv_1_channel_7128_-1/*~data=yupptvott_5_-1_aa495fec-a759-4fc1-acda-7f4a2f96988c_US_20.169.67.54_yupptv_1_channel_7128_-1~hmac=e280d4d29836f31b1045a41e7e540aa94a428a0e09912efae93cd61a40998710&ads.content_custom_3_param=yuppfastint&ads.ip=20.169.67.54&did=aa495fec-a759-4fc1-acda-7f4a2f96988c&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=ENTERTAINMENT&ads.content_custom_1_param=FAST&ads.channel=7128&ads.channel_name=PunjabiShorts&ads.language=PUN&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
 #EXTINF:-1 tvg-name="Punjabi Shorts" tvg-logo="https://www.thegtcnetwork.com/punjabi-shorts.jpg" group-title="Movies",Punjabi Shorts
+https://vglivessai.akamaized.net/in/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/27c3fd7a-b01f-4b00-ac03-557ac77acd47/index.m3u8?hdnts=st=1792604235~exp=1792625835~acl=!*/in/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/27c3fd7a-b01f-4b00-ac03-557ac77acd47/*!/payload/yupptvott_5_-1_da006fc7-0899-45df-8989-67b0553cbad7_US_64.236.153.98_yupptv_1_channel_7128_-1/*~data=yupptvott_5_-1_da006fc7-0899-45df-8989-67b0553cbad7_US_64.236.153.98_yupptv_1_channel_7128_-1~hmac=1f378bdaec9c807ad92bad0fe898237c385eda6b73684c72c4f7dac75c12d765&ads.content_custom_3_param=yuppfastint&ads.ip=64.236.153.98&did=da006fc7-0899-45df-8989-67b0553cbad7&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=ENTERTAINMENT&ads.content_custom_1_param=FAST&ads.channel=7128&ads.channel_name=PunjabiShorts&ads.language=PUN&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
+#EXTINF:-1 tvg-name="Punjabi Shorts" tvg-logo="https://www.thegtcnetwork.com/punjabi-shorts.jpg" group-title="Movies",Punjabi Shorts
+https://vglivessai.akamaized.net/in/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/27c3fd7a-b01f-4b00-ac03-557ac77acd47/index.m3u8?hdnts=st=1792608397~exp=1792629997~acl=!*/in/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/27c3fd7a-b01f-4b00-ac03-557ac77acd47/*!/payload/yupptvott_5_-1_57ec228b-8bfd-4973-91ab-f678171f00e5_US_64.236.153.98_yupptv_1_channel_7128_-1/*~data=yupptvott_5_-1_57ec228b-8bfd-4973-91ab-f678171f00e5_US_64.236.153.98_yupptv_1_channel_7128_-1~hmac=f935b1b7344d2ff67550c7bff954ba0ffbd42be63857941cd50cc7e68ef85c5c&ads.content_custom_3_param=yuppfastint&ads.ip=64.236.153.98&did=57ec228b-8bfd-4973-91ab-f678171f00e5&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=ENTERTAINMENT&ads.content_custom_1_param=FAST&ads.channel=7128&ads.channel_name=PunjabiShorts&ads.language=PUN&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
+#EXTINF:-1 tvg-name="Punjabi Shorts" tvg-logo="https://www.thegtcnetwork.com/punjabi-shorts.jpg" group-title="Movies",Punjabi Shorts
+https://vglivessai.akamaized.net/in/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/27c3fd7a-b01f-4b00-ac03-557ac77acd47/index.m3u8?hdnts=st=1792606685~exp=1792628285~acl=!*/in/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/27c3fd7a-b01f-4b00-ac03-557ac77acd47/*!/payload/yupptvott_5_-1_a052dd33-db09-4114-85ef-34c6f3714914_US_64.236.153.98_yupptv_1_channel_7128_-1/*~data=yupptvott_5_-1_a052dd33-db09-4114-85ef-34c6f3714914_US_64.236.153.98_yupptv_1_channel_7128_-1~hmac=1c2c98ec38656f1c1746a65dc09e863ea83daae3283b4661f3bd0702a1996b7e&ads.content_custom_3_param=yuppfastint&ads.ip=64.236.153.98&did=a052dd33-db09-4114-85ef-34c6f3714914&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=ENTERTAINMENT&ads.content_custom_1_param=FAST&ads.channel=7128&ads.channel_name=PunjabiShorts&ads.language=PUN&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
+#EXTINF:-1 tvg-name="Punjabi Shorts" tvg-logo="https://www.thegtcnetwork.com/punjabi-shorts.jpg" group-title="Movies",Punjabi Shorts
 https://vglivessai.akamaized.net/in/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/27c3fd7a-b01f-4b00-ac03-557ac77acd47/index.m3u8?hdnts=st=1792084285~exp=1792105885~acl=!*/in/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/27c3fd7a-b01f-4b00-ac03-557ac77acd47/*!/payload/yupptvott_5_-1_bdabb5b1-da35-4c2e-9a8b-018dbdc69f8e_US_4.154.7.25_yupptv_1_channel_7128_-1/*~data=yupptvott_5_-1_bdabb5b1-da35-4c2e-9a8b-018dbdc69f8e_US_4.154.7.25_yupptv_1_channel_7128_-1~hmac=0ccea50626b220898767aafb885a48255f1b8c9f0cbb9e06c24ce47062ed516f&ads.content_custom_3_param=yuppfastint&ads.ip=4.154.7.25&did=bdabb5b1-da35-4c2e-9a8b-018dbdc69f8e&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=ENTERTAINMENT&ads.content_custom_1_param=FAST&ads.channel=7128&ads.channel_name=PunjabiShorts&ads.language=PUN&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
 #EXTINF:-1 tvg-name="Punjabi Shorts" tvg-logo="https://www.thegtcnetwork.com/punjabi-shorts.jpg" group-title="Movies",Punjabi Shorts
 https://vglivessai.akamaized.net/in/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/27c3fd7a-b01f-4b00-ac03-557ac77acd47/index.m3u8?hdnts=st=1792233935~exp=1792255535~acl=!*/in/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/27c3fd7a-b01f-4b00-ac03-557ac77acd47/*!/payload/yupptvott_5_-1_54bc374e-ccbb-4200-b2d8-818f13769a90_US_20.29.188.144_yupptv_1_channel_7128_-1/*~data=yupptvott_5_-1_54bc374e-ccbb-4200-b2d8-818f13769a90_US_20.29.188.144_yupptv_1_channel_7128_-1~hmac=ce2107e824676950438d5dfa79644ef1922a5df9d9d4951acf3dcdf7c7462d71&ads.content_custom_3_param=yuppfastint&ads.ip=20.29.188.144&did=54bc374e-ccbb-4200-b2d8-818f13769a90&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=ENTERTAINMENT&ads.content_custom_1_param=FAST&ads.channel=7128&ads.channel_name=PunjabiShorts&ads.language=PUN&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
@@ -75,6 +99,12 @@ https://vglivessai.akamaized.net/in/v1/master/611d79b11b77e2f571934fd80ca1413453
 https://mumt04.tangotv.in/m18aqlK4PITAARA/index.m3u8
 #EXTINF:-1 tvg-name="Pitaara" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Pitaara-Logo_2000_X_1125_Transpharent.png" group-title="Movies",Pitaara
 https://streams.tangotv.in/PITAARA/ORIGIN/index.m3u8
+#EXTINF:-1 tvg-name="group-title="Punjabi",Pitaara" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Pitaara-Logo_2000_X_1125_Transpharent.png" group-title="Movies",group-title="Punjabi",Pitaara
+https://livepitaara.planetcast.in/pitaaraTV.m3u8
+#EXTINF:-1 tvg-name="Pitaara (Asia)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Pitaara-Logo_2000_X_1125_Transpharent.png" group-title="Movies",Pitaara (Asia)
+https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01412-xiaomiasia-pitaaraxiaomiin-xiaomi/playlist.m3u8
+#EXTINF:-1 tvg-name="Punjabi Shorts" tvg-logo="https://www.thegtcnetwork.com/punjabi-shorts.jpg" group-title="Movies",Punjabi Shorts
+https://csm-e-runntvprdlive-eb.runnads.runn.media/csm/extlive/runntvprd01,punjabishortsvidaa.m3u8?yo.up=https%3A//gtc.ottlive.co.in/punjabshort/&yo.eb.fb=aHR0cHM6Ly9ndGMub3R0bGl2ZS5jby5pbi9wdW5qYWJzaG9ydC9pbmRleC5tM3U4&ads.vidaa_ads_param=1191723366
 #EXTINF:-1 tvg-name="Tabbar Hits" tvg-logo="https://dtil.tmsimg.com/assets/s143292_ld_h15_aa.png?lock=720x540" group-title="Music",Tabbar Hits
 https://vglivessai.akamaized.net/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/e11b0319-52e8-4190-ab03-3931cc68eac9/index.m3u8
 #EXTINF:-1 tvg-name="9X Tashan" tvg-logo="https://dtil.tmsimg.com/assets/s142504_ld_h15_aa.png?lock=720x540" group-title="Music",9X Tashan
@@ -103,6 +133,16 @@ http://yolomax.pro/live/A1U3S8XPVM58B23/iHeFx423Ac/809074.ts
 https://tvsen6.aynaott.com/sMqhLN6n/index.m3u8
 #EXTINF:-1 tvg-name="Tabbar Hits" tvg-logo="https://dtil.tmsimg.com/assets/s143292_ld_h15_aa.png?lock=720x540" group-title="Music",Tabbar Hits
 https://mumt04.tangotv.in/m18aqlK4TABBARHITS/index.m3u8
+#EXTINF:-1 tvg-name="9X Tashan" tvg-logo="https://dtil.tmsimg.com/assets/s142504_ld_h15_aa.png?lock=720x540" group-title="Music",9X Tashan
+https://9xjio.wiseplayout.com/9X_Tashan/master.m3u8
+#EXTINF:-1 tvg-name="9X Tashan" tvg-logo="https://dtil.tmsimg.com/assets/s142504_ld_h15_aa.png?lock=720x540" group-title="Music",9X Tashan
+http://watchindia.net:8880/live/vvv/vvv/1950.ts
+#EXTINF:-1 tvg-name="group-title="Punjabi",Wah Punjabi" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/tv/480/270/languages/Wah-Punjabi_TV.jpg" group-title="Music",group-title="Punjabi",Wah Punjabi
+http://cdn.samtv.ca/wahpunjabi/index.m3u8
+#EXTINF:-1 tvg-name="Punjabi Beats" tvg-logo="https://i.imgur.com/1Za9gNQ.jpg" group-title="Music",Punjabi Beats
+https://mumt02.tangotv.in/PUNJABIBEATS/index.m3u8
+#EXTINF:-1 tvg-name="Punjabi Music HD" tvg-logo="https://papaji.freetvindia.com/media/Punjabi_Music_HD.png" group-title="Music",Punjabi Music HD
+https://mumt02.tangotv.in/PUNJABIMUSICHD/index.m3u8
 #EXTINF:-1 tvg-name="GTC News" tvg-logo="https://www.thegtcnetwork.com/gtc-news.png" group-title="News",GTC News
 https://vglivessai.akamaized.net/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/921cca59-daee-4f89-8c38-7ffe8de44f4c/index.m3u8
 #EXTINF:-1 tvg-name="News State Punjab Haryana Himachal" group-title="News",News State Punjab Haryana Himachal
@@ -121,8 +161,12 @@ https://mumt03.tangotv.in/Dsly5z3HGTCNEWS/index.m3u8
 https://mumt04.tangotv.in/m18aqlK4MHONENEWS/index.m3u8
 #EXTINF:-1 tvg-name="Mh 1 News" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/MH%20One%20News.png" group-title="News",Mh 1 News
 https://streams.tangotv.in/MHONENEWS/ORIGIN/index.m3u8
-#EXTINF:-1 tvg-name="World Punjabi TV" tvg-logo="https://papaji.freetvindia.com/media/World_Punjabi_TV.png" group-title="News",World Punjabi TV
-https://mumt06.tangotv.in/qYyB8fXVWPNWORLDPUNJABI/index.m3u8
+#EXTINF:-1 tvg-name="group-title="Punjabi",Global Punjab" tvg-logo="https://i.imgur.com/WDLqcWW.png" group-title="News",group-title="Punjabi",Global Punjab
+http://207.244.112.71/globalpunjabhls/live.m3u8
+#EXTINF:-1 tvg-name="GTC News" tvg-logo="https://www.thegtcnetwork.com/gtc-news.png" group-title="News",GTC News
+https://csm-e-runntvprdlive-eb.runnads.runn.media/csm/extlive/runntvprd01,gtcnewsvidaa.m3u8?yo.up=https%3A//gtc.ottlive.co.in/gtcnews/&yo.eb.fb=aHR0cHM6Ly9ndGMub3R0bGl2ZS5jby5pbi9ndGNuZXdzL2luZGV4Lm0zdTg=&ads.vidaa_ads_param=1191723366
+#EXTINF:-1 tvg-name="World Punjabi Tv" tvg-logo="https://papaji.freetvindia.com/media/World_Punjabi_TV.png" group-title="News",World Punjabi Tv
+https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/world-punjabi-tv/index.m3u8?ads.vf=WolqoIq0cXy
 #EXTINF:-1 tvg-name="Fast1" tvg-logo="https://papaji.freetvindia.com/media/channels/fast1.png" group-title="Other",Fast1
 https://cdn.pishow.tv/ott/live/10008/master.m3u8
 #EXTINF:-1 tvg-name="Fast1" tvg-logo="https://papaji.freetvindia.com/media/channels/fast1.png" group-title="Other",Fast1

@@ -1,0 +1,5 @@
+#EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
+#EXTINF:-1 tvg-name="Zee TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Zee_TV_Logo_2025.svg/960px-Zee_TV_Logo_2025.svg.png" group-title="Entertainment",Zee TV
+http://cors.tundracast.com:2000/https://streamer2.nexgen.bz/ZEE/index.m3u8
+#EXTINF:-1 tvg-name="Sony Max (576p)" tvg-logo="https://dtil.tmsimg.com/assets/s157590_ld_h15_aa.png?lock=720x540" group-title="Movies",Sony Max (576p)
+http://cors.tundracast.com:2000/https://streamer2.nexgen.bz/SONYMAX/index.m3u8

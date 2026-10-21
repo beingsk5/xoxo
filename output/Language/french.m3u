@@ -1,5 +1,9 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
+#EXTINF:-1 tvg-name="france 24" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_E24/images/LOGO_HD/image.png" group-title="Entertainment",france 24
+https://live.france24.com/hls/live/2037218/F24_EN_HI_HLS/master_500.m3u8
+#EXTINF:-1 tvg-name="france 24" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_E24/images/LOGO_HD/image.png" group-title="Entertainment",france 24
+https://live.france24.com/hls/live/2037218-b/F24_EN_HI_HLS/master_2300.m3u8
+#EXTINF:-1 tvg-name="france 24" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_E24/images/LOGO_HD/image.png" group-title="Entertainment",france 24
+https://live.france24.com/hls/live/2037218-b/F24_EN_HI_HLS/master_900.m3u8
 #EXTINF:-1 tvg-name="France 24 (1080p)" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_E24/images/LOGO_HD/image.png" group-title="Entertainment",France 24 (1080p)
 https://live.france24.com/hls/live/2037179-b/F24_FR_HI_HLS/master_5000.m3u8
-#EXTINF:-1 tvg-name="France 24" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_E24/images/LOGO_HD/image.png" group-title="Entertainment",France 24
-https://mhd128.iptv2022.com/p/NnVvKVK4cJmz4cUDaHI2oQ,1743195612/streaming/france24/324/1/index.m3u8

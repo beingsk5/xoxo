@@ -1,3 +1,5 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
+#EXTINF:-1 tvg-name="k tv-hd" group-title="Other",k tv-hd
+https://5ed325193d4e1.streamlock.net:444/LiveTV/KTVHD/playlist.m3u8
 #EXTINF:-1 tvg-name="Canal 22 Nacional (720p) [Geo-blocked]" group-title="Other",Canal 22 Nacional (720p) [Geo-blocked]
 https://5fc584f3f19c9.streamlock.net/canal22/smil:canal22.smil/playlist.m3u8

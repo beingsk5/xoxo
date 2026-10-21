@@ -1,0 +1,9 @@
+#EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
+#EXTINF:-1 tvg-name="Maa TV" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/b/b5/Maa_TV_logo.svg" group-title="Entertainment",Maa TV
+http://live.singamcloud.in:1935/maatv/maatv/playlist.m3u8
+#EXTINF:-1 tvg-name="Tamil Star TV" tvg-logo="https://singamcloud.com/tv/upload/1628861175_IMG_20210813_185357.jpg" group-title="News",Tamil Star TV
+http://stream.singamcloud.in/tamilstartv/tamilstartv/index.m3u8
+#EXTINF:-1 tvg-name="Rasi Tamil" group-title="Other",Rasi Tamil
+http://singamcloud.in/rasinetworks/rasitamil/index.m3u8
+#EXTINF:-1 tvg-name="Grace TV" tvg-logo="https://singamcloud.com/tv/upload/1634613116_20210614_232948.png" group-title="Religious",Grace TV
+http://hdserver.singamcloud.in:1935/gracetv/gracetv/playlist.m3u8

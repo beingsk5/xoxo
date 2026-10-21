@@ -1,3 +1,7 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
 #EXTINF:-1 tvg-name="DVB TV (720p) [Geo-blocked]" group-title="News",DVB TV (720p) [Geo-blocked]
 https://live-stream.dvb.no/hls/stream_src/index.m3u8
+#EXTINF:-1 tvg-name="Moon TV" tvg-logo="https://singamcloud.com/tv/upload/1616432667_moon.png" group-title="News",Moon TV
+http://player.mslivestream.net/mslive/e10bb900976df9177b9a080314f26f86.sdp/chunks.m3u8
+#EXTINF:-1 tvg-name="SVBC Tamil" tvg-logo="http://jenohdtv.gq/wp-content/uploads/2019/11/SVBC-Tamil.png" group-title="Religious",SVBC Tamil
+http://player.mslivestream.net/tamil/ac206e74d75b285755ee4924df87d951.sdp/index.m3u8
