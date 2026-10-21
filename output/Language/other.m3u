@@ -17,8 +17,6 @@ https://d6lk10bkdgfae.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a
 https://zindisorani.zaroktv.com.tr/hls/stream.m3u8
 #EXTINF:-1 tvg-name="Nick Junior Gujarati" group-title="Kids",Nick Junior Gujarati
 http://dsmqbfez.pardns.com/live/6CTB9BKG/4Q7Y9DFW/132300.ts
-#EXTINF:-1 tvg-name="Nick Junior Malayalam" group-title="Kids",Nick Junior Malayalam
-http://dsmqbfez.pardns.com/live/6CTB9BKG/4Q7Y9DFW/132238.ts
 #EXTINF:-1 tvg-name="Nick Junior Telugu" group-title="Kids",Nick Junior Telugu
 http://dsmqbfez.pardns.com/live/6CTB9BKG/4Q7Y9DFW/150684.ts
 #EXTINF:-1 tvg-name="Nick Tamil" group-title="Kids",Nick Tamil
@@ -105,6 +103,8 @@ http://88.212.15.17/live/test_hbo3_hd_hevc/playlist.m3u8
 http://88.212.15.17/live/test_hgtv_hevc_25p/playlist.m3u8
 #EXTINF:-1 tvg-name="UTV (Czech Republic)" group-title="News",UTV (Czech Republic)
 https://vysilani.zaktv.cz/broadcast/hls/utv/index.m3u8
+#EXTINF:-1 tvg-name="Puntland TV Ⓢ" group-title="News",Puntland TV Ⓢ
+http://cdn.mediavisionuae.com:1935/live/putlandtv2.stream/playlist.m3u8
 #EXTINF:-1 tvg-name="BOLLYWOOD 4U" group-title="Other",BOLLYWOOD 4U
 https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/22d13e33-8705-40e8-9809-4e80aa795f15/manifest.m3u8?hdnts=st=1792352731~exp=1792374331~acl=!*/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/22d13e33-8705-40e8-9809-4e80aa795f15/*!/payload/yupptvott_5_-1_ef94d6c1-63e4-49cb-93bd-2bf7ef008adb_US_20.65.227.4_yupptv_1_channel_6604_-1/*~data=yupptvott_5_-1_ef94d6c1-63e4-49cb-93bd-2bf7ef008adb_US_20.65.227.4_yupptv_1_channel_6604_-1~hmac=4c533c743a8fee865bf82a0e54963033630f98e8635e070ff9f5e24dd0854fce&ads.content_custom_3_param=yuppfastint&ads.ip=20.65.227.4&did=ef94d6c1-63e4-49cb-93bd-2bf7ef008adb&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=ENTERTAINMENT&ads.content_custom_1_param=FAST&ads.channel=6604&ads.channel_name=BOLLYWOOD4U&ads.language=HIN&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
 #EXTINF:-1 tvg-name="BOLLYWOOD 4U" group-title="Other",BOLLYWOOD 4U
@@ -133,6 +133,10 @@ https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/22
 https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/22d13e33-8705-40e8-9809-4e80aa795f15/manifest.m3u8?hdnts=st=1792494746~exp=1792516346~acl=!*/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/22d13e33-8705-40e8-9809-4e80aa795f15/*!/payload/yupptvott_5_-1_b56841aa-8521-4c2d-84ba-37696ba78ed8_US_135.232.177.196_yupptv_1_channel_6604_-1/*~data=yupptvott_5_-1_b56841aa-8521-4c2d-84ba-37696ba78ed8_US_135.232.177.196_yupptv_1_channel_6604_-1~hmac=4b59810a2a810445ab1918cc15ab371714ddfeb6c25ea8d11f6edf9e690f255d&ads.content_custom_3_param=yuppfastint&ads.ip=135.232.177.196&did=b56841aa-8521-4c2d-84ba-37696ba78ed8&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=ENTERTAINMENT&ads.content_custom_1_param=FAST&ads.channel=6604&ads.channel_name=BOLLYWOOD4U&ads.language=HIN&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
 #EXTINF:-1 tvg-name="BOLLYWOOD 4U" group-title="Other",BOLLYWOOD 4U
 https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/22d13e33-8705-40e8-9809-4e80aa795f15/manifest.m3u8?hdnts=st=1792496973~exp=1792518573~acl=!*/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/22d13e33-8705-40e8-9809-4e80aa795f15/*!/payload/yupptvott_5_-1_c80bb5c9-cbb2-4e49-8ec0-1a5a5ce5c60b_US_135.232.177.196_yupptv_1_channel_6604_-1/*~data=yupptvott_5_-1_c80bb5c9-cbb2-4e49-8ec0-1a5a5ce5c60b_US_135.232.177.196_yupptv_1_channel_6604_-1~hmac=6696b9d8bf7859bfd6cb9d8c4c47c12c3cea38d373167c584a230e398bd87968&ads.content_custom_3_param=yuppfastint&ads.ip=135.232.177.196&did=c80bb5c9-cbb2-4e49-8ec0-1a5a5ce5c60b&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=ENTERTAINMENT&ads.content_custom_1_param=FAST&ads.channel=6604&ads.channel_name=BOLLYWOOD4U&ads.language=HIN&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
+#EXTINF:-1 tvg-name="BOLLYWOOD 4U" group-title="Other",BOLLYWOOD 4U
+https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/22d13e33-8705-40e8-9809-4e80aa795f15/manifest.m3u8?hdnts=st=1792571699~exp=1792593299~acl=!*/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/22d13e33-8705-40e8-9809-4e80aa795f15/*!/payload/yupptvott_5_-1_47c974e1-1e87-41b6-90b9-3835a1cddd01_US_172.215.147.121_yupptv_1_channel_6604_-1/*~data=yupptvott_5_-1_47c974e1-1e87-41b6-90b9-3835a1cddd01_US_172.215.147.121_yupptv_1_channel_6604_-1~hmac=96d75789db2d87ec05edc8300b6587369e81842c72abd6a01d065188f1aa77f9&ads.content_custom_3_param=yuppfastint&ads.ip=172.215.147.121&did=47c974e1-1e87-41b6-90b9-3835a1cddd01&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=ENTERTAINMENT&ads.content_custom_1_param=FAST&ads.channel=6604&ads.channel_name=BOLLYWOOD4U&ads.language=HIN&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
+#EXTINF:-1 tvg-name="BOLLYWOOD 4U" group-title="Other",BOLLYWOOD 4U
+https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/22d13e33-8705-40e8-9809-4e80aa795f15/manifest.m3u8?hdnts=st=1792574279~exp=1792595879~acl=!*/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/22d13e33-8705-40e8-9809-4e80aa795f15/*!/payload/yupptvott_5_-1_1c4a1461-6b02-44d4-9bcf-22d28dec4c3f_US_172.215.147.121_yupptv_1_channel_6604_-1/*~data=yupptvott_5_-1_1c4a1461-6b02-44d4-9bcf-22d28dec4c3f_US_172.215.147.121_yupptv_1_channel_6604_-1~hmac=ba58f20589e0e32c582b228ebc9061a65c9092cc48220fb452ac97ab8247d42a&ads.content_custom_3_param=yuppfastint&ads.ip=172.215.147.121&did=1c4a1461-6b02-44d4-9bcf-22d28dec4c3f&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=ENTERTAINMENT&ads.content_custom_1_param=FAST&ads.channel=6604&ads.channel_name=BOLLYWOOD4U&ads.language=HIN&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
 #EXTINF:-1 tvg-name="webobjects" group-title="Other",webobjects
 https://play-edge.itunes.apple.com/WebObjects/MZPlayLocal.woa/hls/subscription/playlist.m3u8?cc=US&svcId=tvs.vds.4105&a=1855667906&isExternal=true&brandId=tvs.sbd.4000&id=1477680007&l=en-US&aec=UHD
 #EXTINF:-1 tvg-name="webobjects" group-title="Other",webobjects
@@ -233,8 +237,6 @@ https://932y483pdjv8-hls-live.5centscdn.com/stream/deb10bae362f810630ec3abedcae5
 https://cl-2.backend.energeek.cl/bkp/egfan/mobile/index.m3u8?token=IPTVgh26
 #EXTINF:-1 tvg-name="PANIK TV Ⓖ" group-title="Other",PANIK TV Ⓖ
 https://livetv.streams.ovh:1936/paniktv/paniktv/playlist.m3u8
-#EXTINF:-1 tvg-name="Discovery Malayalam" group-title="Other",Discovery Malayalam
-http://dsmqbfez.pardns.com/live/6CTB9BKG/4Q7Y9DFW/132232.ts
 #EXTINF:-1 tvg-name="Discovery Telugu" group-title="Other",Discovery Telugu
 http://dsmqbfez.pardns.com/live/6CTB9BKG/4Q7Y9DFW/150677.ts
 #EXTINF:-1 tvg-name="MBC Bollywood" group-title="Other",MBC Bollywood
@@ -247,8 +249,6 @@ http://dsmqbfez.pardns.com/live/6CTB9BKG/4Q7Y9DFW/132290.ts
 http://yolomax.pro/live/A1U3S8XPVM58B23/iHeFx423Ac/809024.ts
 #EXTINF:-1 tvg-name="Nick Telugu" group-title="Other",Nick Telugu
 http://dsmqbfez.pardns.com/live/6CTB9BKG/4Q7Y9DFW/150683.ts
-#EXTINF:-1 tvg-name="Peace TV Urdu" group-title="Other",Peace TV Urdu
-http://dsmqbfez.pardns.com/live/6CTB9BKG/4Q7Y9DFW/131405.ts
 #EXTINF:-1 tvg-name="Suntv" group-title="Other",Suntv
 http://yolomax.pro/live/A1U3S8XPVM58B23/iHeFx423Ac/808902.ts
 #EXTINF:-1 tvg-name="XXX: DDF NETWORK" group-title="Other",XXX: DDF NETWORK
@@ -261,6 +261,8 @@ http://91.214.48.158:4022/udp/224.2.2.4:10000
 http://yolomax.pro/live/A1U3S8XPVM58B23/iHeFx423Ac/510484.ts
 #EXTINF:-1 tvg-name="History 18 Telugu" group-title="Other",History 18 Telugu
 http://yolomax.pro/live/A1U3S8XPVM58B23/iHeFx423Ac/551759.ts
+#EXTINF:-1 tvg-name="The Q India" group-title="Other",The Q India
+https://amg1-i.akamaihd.net/hls/live/784034/Q001/playlist.m3u8?__nn__=5606168722001&hdnea=st=1566232200~exp=1566235800~acl=/hls/live/784034/Q001/*~hmac=4de929fdc0ee53199a11237ee75a695383a82a42623fa92c1376493e5fc91d7b
 #EXTINF:-1 tvg-name="Urdu 1" group-title="Other",Urdu 1
 http://yolomax.pro/live/A1U3S8XPVM58B23/iHeFx423Ac/63108.ts
 #EXTINF:-1 tvg-name="360 RFTV (576p) [Geo-blocked]" group-title="Other",360 RFTV (576p) [Geo-blocked]
@@ -309,6 +311,8 @@ https://air.pc.cdn.bitgravity.com/air/live/pbaudio031/playlist.m3u8
 http://air.pc.cdn.bitgravity.com/air/live/pbaudio022/playlist.m3u8
 #EXTINF:-1 tvg-name="All India Radio - FM Gold" group-title="Other",All India Radio - FM Gold
 https://air.pc.cdn.bitgravity.com/air/live/pbaudio021/playlist.m3u8
+#EXTINF:-1 tvg-name="Faros TV2 (480p) [Geo-blocked]" group-title="Other",Faros TV2 (480p) [Geo-blocked]
+https://s1.cystream.net/live/faros2/playlist.m3u8
 #EXTINF:-1 tvg-name="DTV-8 [Geo-blocked]" group-title="Other",DTV-8 [Geo-blocked]
 https://watch.davestv8.com/hls/stream.m3u8
 #EXTINF:-1 tvg-name="ABN Urdu (540p)" group-title="Religious",ABN Urdu (540p)
