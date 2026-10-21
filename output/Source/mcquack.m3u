@@ -7,3 +7,7 @@ http://stream.mcquack.net/205/index.m3u8
 http://stream.mcquack.net/177/index.m3u8
 #EXTINF:-1 tvg-name="Al Jazeera English HD (576p)" group-title="News",Al Jazeera English HD (576p)
 http://stream.mcquack.net/131/index.m3u8
+#EXTINF:-1 tvg-name="tv 100" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/TV_100.png" group-title="Other",tv 100
+http://stream.mcquack.net/100/tracks-v1a1/mono.ts.m3u8?ads=1&amp;filter.tracks=v1a1
+#EXTINF:-1 tvg-name="tv 100" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/TV_100.png" group-title="Other",tv 100
+http://stream.mcquack.net/100/tracks-v1a1/mono.ts.m3u8?ads=1&filter.tracks=v1a1
