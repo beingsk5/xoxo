@@ -42,10 +42,15 @@ _NSFW_NAME_RE = re.compile(
     re.IGNORECASE,
 )
 
-# How many URLs of ONE name ship at most (rank order). A mega-playlist
-# lists the same channel dozens of times with different URLs (mahaa max ×36,
-# nepal 1 ×33): the first copies are all the value, the rest are bloat.
-NAME_URL_CAP = 3
+# How many URLs of ONE name ship at most. A mega-playlist lists the same
+# channel dozens of times with different URLs (mahaa max ×36): extras are
+# bloat, but real distinct URLs at different qualities are a buffering
+# fallback (1080p stutters -> open the 720p link of the same channel).
+# Selection therefore keeps the best real URL per quality tier first, then
+# fills by rank. Master-manifest sources (one URL, qualities inside the
+# stream) stay a single entry — the player switches quality itself; nothing
+# is ever cloned here, this only picks among URLs the search actually found.
+NAME_URL_CAP = 5
 
 # Higher is better; used to break score ties between two live URLs.
 _QUALITY_RANK = {"2160p": 5, "1440p": 4, "1080p": 4, "720p": 3, "576p": 2,
@@ -117,13 +122,58 @@ def filter_blocked(channels: List[Channel]) -> List[Channel]:
     return filtered
 
 
+def _quality_tier(ch: Channel) -> str:
+    """Bucket a channel's declared quality for diversity-aware selection.
+
+    The fallback ladder a viewer actually uses when a stream buffers:
+    fhd (1080p+) -> hd (720p) -> sd (480-576p) -> low (<=360p) -> unknown.
+    Unparsed/missing quality lands in "unknown" (kept, never dropped —
+    it is often the only URL that verified as playable).
+    """
+    m = re.search(r"(\d{3,4})", ch.quality or "")
+    if not m:
+        return "unknown"
+    n = int(m.group(1))
+    if n >= 1080:
+        return "fhd"
+    if n >= 720:
+        return "hd"
+    if n >= 480:
+        return "sd"
+    return "low"
+
+
+def _select_quality_diverse(ranked: List[Channel], cap: int) -> List[Channel]:
+    """Best URL per quality tier first, then fill remaining slots by rank."""
+    chosen: List[Channel] = []
+    seen_tiers = set()
+    for c in ranked:
+        tier = _quality_tier(c)
+        if tier in seen_tiers:
+            continue
+        chosen.append(c)
+        seen_tiers.add(tier)
+        if len(chosen) >= cap:
+            return chosen
+    chosen_ids = {id(c) for c in chosen}
+    for c in ranked:
+        if len(chosen) >= cap:
+            break
+        if id(c) not in chosen_ids:
+            chosen.append(c)
+            chosen_ids.add(id(c))
+    return chosen
+
+
 def cap_per_name(channels: List[Channel], cap: int = NAME_URL_CAP) -> List[Channel]:
-    """Keep only the best `cap` URLs per channel name.
+    """Keep up to `cap` URLs per channel name, quality-diverse.
 
     URL dedup (best_per_channel) merges identical links but never equal
     *names* with different URLs — playlist expansion produced 36 copies of
-    "Mahaa Max". Ranking is rank_key (score, quality, logo), first
-    insertion order breaks ties; unnamed entries are never touched.
+    "Mahaa Max". Within a name, the best URL of EACH quality tier is kept
+    first (so a buffering 1080p has a 720p/480p fallback of the same
+    channel); remaining slots fill by rank_key (score, quality, logo).
+    Unnamed entries are never touched.
     """
     groups: dict = {}
     for ch in channels:
@@ -138,14 +188,15 @@ def cap_per_name(channels: List[Channel], cap: int = NAME_URL_CAP) -> List[Chann
         if len(grp) <= cap:
             keep_ids.update(id(c) for c in grp)
             continue
-        for c in sorted(grp, key=rank_key, reverse=True)[:cap]:
+        ranked = sorted(grp, key=rank_key, reverse=True)
+        for c in _select_quality_diverse(ranked, cap):
             keep_ids.add(id(c))
     kept = [c for c in channels
             if not c.name or not norm_name(c.name) or id(c) in keep_ids]
     removed = len(channels) - len(kept)
     if removed:
         log.info(f"  Capped {removed} duplicate-name URLs "
-                 f"(kept best {cap} per name)")
+                 f"(kept best {cap} per name, quality-diverse)")
     return kept
 
 
