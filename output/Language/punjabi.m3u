@@ -3,12 +3,16 @@
 https://d3eyhgoylams0m.cloudfront.net/v1/manifest/93ce20f0f52760bf38be911ff4c91ed02aa2fd92/ed7bd2c7-8d10-4051-b397-2f6b90f99acb/20c8ad14-a158-4a42-8889-e032d070856e/2.m3u8
 #EXTINF:-1 tvg-name="DD Punjabi" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Punjabi.png" group-title="Culture",DD Punjabi
 https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/da821c24a59d4e57960497aeaca8fb33/index.m3u8
+#EXTINF:-1 tvg-name="DD Punjabi" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Punjabi.png" group-title="Culture",DD Punjabi
+http://103.17.193.159:5001/live/715.m3u8
 #EXTINF:-1 tvg-name="World Punjabi TV (576p)" tvg-logo="https://papaji.freetvindia.com/media/PunjabiTV.png" group-title="Entertainment",World Punjabi TV (576p)
 https://mumt06.tangotv.in/qYyB8fXVWPNWORLDPUNJABI/index.m3u8
 #EXTINF:-1 tvg-name="Punjabi TV" tvg-logo="https://papaji.freetvindia.com/media/PunjabiTV.png" group-title="Entertainment",Punjabi TV
 http://cdn9.live247stream.com/punjabitvcanada/tv/playlist.m3u8
 #EXTINF:-1 tvg-name="Desi Channel" tvg-logo="https://desichannel.in/wp-content/uploads/2025/01/desi-channel.png" group-title="Entertainment",Desi Channel
 https://livestream.unlimitedcdn.com/agm-dc/desi-channel/index.m3u8
+#EXTINF:-1 tvg-name="Desi Channel" tvg-logo="https://desichannel.in/wp-content/uploads/2025/01/desi-channel.png" group-title="Entertainment",Desi Channel
+http://103.17.193.159:5001/live/906.m3u8
 #EXTINF:-1 tvg-name="Punjabi TV" tvg-logo="https://papaji.freetvindia.com/media/PunjabiTV.png" group-title="Entertainment",Punjabi TV
 https://mumt07.tangotv.in/zHjX9OFlPUNJABITV/index.m3u8
 #EXTINF:-1 tvg-name="Desi Channel" tvg-logo="https://raw.githubusercontent.com/saeidrahmanbd/BDIX-IPTV/main/logos/desi-channel.png" group-title="Entertainment",Desi Channel
@@ -33,18 +37,22 @@ https://amg01281-9xmediapvtltd-9xtashan-samsungin-xz1sd.amagi.tv/playlist/amg012
 https://wiselp.wiseplayout.com/9X_Tashan/master.m3u8
 #EXTINF:-1 tvg-name="Mh 1 Music" tvg-logo="https://dtil.tmsimg.com/assets/s143539_ld_h15_aa.png?lock=720x540" group-title="Music",Mh 1 Music
 https://livestream.jswk.online/playlisttest/live/playlist.m3u8
+#EXTINF:-1 tvg-name="9X Tashan" tvg-logo="https://dtil.tmsimg.com/assets/s142504_ld_h15_aa.png?lock=720x540" group-title="Music",9X Tashan
+http://103.17.193.159:5001/live/732.m3u8
 #EXTINF:-1 tvg-name="Punjabi Hits" tvg-logo="https://dtil.tmsimg.com/assets/s143691_ld_h15_aa.png?lock=720x540" group-title="Music",Punjabi Hits
 https://stream.ottlive.co.in/punjabihits/index.m3u8
 #EXTINF:-1 tvg-name="Punjabi Music HD" tvg-logo="https://papaji.freetvindia.com/media/Punjabi_Music_HD.png" group-title="Music",Punjabi Music HD
 https://mumt07.tangotv.in/zHjX9OFlPUNJABIMUSICHD/index.m3u8
-#EXTINF:-1 tvg-name="9X Tashan" tvg-logo="https://dtil.tmsimg.com/assets/s142504_ld_h15_aa.png?lock=720x540" group-title="Music",9X Tashan
-https://mumt01.tangotv.in/O5aw8Zn39XTASHAN/index.m3u8
 #EXTINF:-1 tvg-name="Tabbar Hits" tvg-logo="https://dtil.tmsimg.com/assets/s143292_ld_h15_aa.png?lock=720x540" group-title="Music",Tabbar Hits
 https://streams.tangotv.in/TABBARHITS/ORIGIN/index.m3u8
 #EXTINF:-1 tvg-name="Tabbar Hits" tvg-logo="https://dtil.tmsimg.com/assets/s143292_ld_h15_aa.png?lock=720x540" group-title="Music",Tabbar Hits
 https://mumt04.tangotv.in/m18aqlK4TABBARHITS/index.m3u8
 #EXTINF:-1 tvg-name="GTC News" tvg-logo="https://www.thegtcnetwork.com/gtc-news.png" group-title="News",GTC News
 https://vglivessai.akamaized.net/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/921cca59-daee-4f89-8c38-7ffe8de44f4c/index.m3u8
+#EXTINF:-1 tvg-name="GTC News" tvg-logo="https://www.thegtcnetwork.com/gtc-news.png" group-title="News",GTC News
+https://vglivessai.akamaized.net/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/921cca59-daee-4f89-8c38-7ffe8de44f4c/index.m3u8?hdnts=st=1792629861~exp=1792651461~acl=!*/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/921cca59-daee-4f89-8c38-7ffe8de44f4c/*!/payload/yupptvott_5_-1_974cb77d-bf46-4b42-856c-3f397b9068ce_MX_158.23.146.211_yupptv_1_channel_7137_-1/*~data=yupptvott_5_-1_974cb77d-bf46-4b42-856c-3f397b9068ce_MX_158.23.146.211_yupptv_1_channel_7137_-1~hmac=563698e2866339e4b633379075671d34b4b5c7c6b17d387e653f9e99e15a843c&ads.content_custom_3_param=yuppfastint&ads.ip=158.23.146.211&did=974cb77d-bf46-4b42-856c-3f397b9068ce&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=NEWS&ads.content_custom_1_param=FAST&ads.channel=7137&ads.channel_name=GTCNews&ads.language=PUN&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
+#EXTINF:-1 tvg-name="GTC News" tvg-logo="https://www.thegtcnetwork.com/gtc-news.png" group-title="News",GTC News
+https://vglivessai.akamaized.net/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/921cca59-daee-4f89-8c38-7ffe8de44f4c/index.m3u8?hdnts=st=1792630569~exp=1792652169~acl=!*/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/921cca59-daee-4f89-8c38-7ffe8de44f4c/*!/payload/yupptvott_5_-1_5f123068-fc53-445d-9921-e1f4d48ca0f9_MX_158.23.146.211_yupptv_1_channel_7137_-1/*~data=yupptvott_5_-1_5f123068-fc53-445d-9921-e1f4d48ca0f9_MX_158.23.146.211_yupptv_1_channel_7137_-1~hmac=4dc31b594242383cc4b6e6916fdac38eb1619290ebd96c77039ac50a37546745&ads.content_custom_3_param=yuppfastint&ads.ip=158.23.146.211&did=5f123068-fc53-445d-9921-e1f4d48ca0f9&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=NEWS&ads.content_custom_1_param=FAST&ads.channel=7137&ads.channel_name=GTCNews&ads.language=PUN&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
 #EXTINF:-1 tvg-name="News State Punjab Haryana Himachal" group-title="News",News State Punjab Haryana Himachal
 https://jmp2.uk/stvp-IN300083R1
 #EXTINF:-1 tvg-name="Rozana Spokesman" tvg-logo="https://www.rozanaspokesman.in/images/logospokesman.png" group-title="News",Rozana Spokesman
@@ -55,8 +63,6 @@ https://live1.ottlive.co.in/worldpunjabitv/worldpunjabitv/index.m3u8
 https://livestream.jswk.online/mhonenews/live/playlist.m3u8
 #EXTINF:-1 tvg-name="Mh 1 News" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/MH%20One%20News.png" group-title="News",Mh 1 News
 https://livestream.jswk.online/mhonenews/live/index.m3u8
-#EXTINF:-1 tvg-name="GTC News" tvg-logo="https://www.thegtcnetwork.com/gtc-news.png" group-title="News",GTC News
-https://mumt03.tangotv.in/Dsly5z3HGTCNEWS/index.m3u8
 #EXTINF:-1 tvg-name="Mh 1 News" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/MH%20One%20News.png" group-title="News",Mh 1 News
 https://mumt04.tangotv.in/m18aqlK4MHONENEWS/index.m3u8
 #EXTINF:-1 tvg-name="Fast1" tvg-logo="https://papaji.freetvindia.com/media/channels/fast1.png" group-title="Other",Fast1

@@ -5,6 +5,12 @@ https://amg17931-zee-amg17931c6-samsung-au-8872.playouts.now.amagi.tv/playlist/a
 https://bbb-barkt-streamstak.otteravision.com/bbb/barkt/barkt.m3u8
 #EXTINF:-1 tvg-name="Discovery World Brazil (720p) [Geo-blocked]" group-title="Entertainment",Discovery World Brazil (720p) [Geo-blocked]
 http://15.204.246.24:8080/DiscoveryWorldHD/index.m3u8
+#EXTINF:-1 tvg-name="DD9 chandana (kannada)" group-title="Entertainment",DD9 chandana (kannada)
+http://103.17.193.159:5001/live/713.m3u8
+#EXTINF:-1 tvg-name="DD Oriya" group-title="Entertainment",DD Oriya
+http://103.17.193.159:5001/live/702.m3u8
+#EXTINF:-1 tvg-name="DD Sahayadri" group-title="Entertainment",DD Sahayadri
+http://103.17.193.159:5001/live/695.m3u8
 #EXTINF:-1 tvg-name="Baby Shark TV" group-title="Kids",Baby Shark TV
 https://6b54194cbd92493597e24bfa46ea7106.mediatailor.us-east-1.amazonaws.com/v1/master/04fd913bb278d8775298c26fdca9d9841f37601f/Vizio_BabySharkTV/playlist.m3u8?ads.wurl_channel=696&ads.wurl_name=BabySharkTV&ads.coppa=1&ads.psid=%7bADID%7d&ads.targetopt=%7bTARGETOPT%7d&ads.us_privacy=%7bUSPRIVACY%7d&ads.ifa_type=%7bIFATYPE%7d&ads.lmt=%7bLMT%7d&ads.app_bundle=%7bAPP_BUNDLE%7d&ads.app_name=%7bAPP_NAME%7d&ads.app_store_url=%7bAPP_STORE_URL%7d&ads.url=%7bDOMAIN%7d&ads.w=%7bWIDTH%7d&ads.h=%7bHEIGHT%7d&ads.device_make=%7bDEVICE_MAKE%7d&ads.vizdartoken=eyJhdWQiOiI5OCIsIndmcGNpZCI6MzMzNDA5MjY1MH0
 #EXTINF:-1 tvg-name="Baby Shark TV (1080p)" group-title="Kids",Baby Shark TV (1080p)
@@ -23,10 +29,16 @@ http://dsmqbfez.pardns.com/live/6CTB9BKG/4Q7Y9DFW/150684.ts
 http://dsmqbfez.pardns.com/live/6CTB9BKG/4Q7Y9DFW/132246.ts
 #EXTINF:-1 tvg-name="Nick Gujarati" group-title="Kids",Nick Gujarati
 http://yolomax.pro/live/A1U3S8XPVM58B23/iHeFx423Ac/809045.ts
+#EXTINF:-1 tvg-name="Nick Hindi" group-title="Kids",Nick Hindi
+http://103.17.193.159:5001/live/545.m3u8
 #EXTINF:-1 tvg-name="Nick Plus" tvg-logo="https://raw.githubusercontent.com/saeidrahmanbd/BDIX-IPTV/main/logos/nick.png" group-title="Kids",Nick Plus
 http://yolomax.pro/live/A1U3S8XPVM58B23/iHeFx423Ac/72232.ts
+#EXTINF:-1 tvg-name="Nick Tamil" group-title="Kids",Nick Tamil
+http://103.17.193.159:5001/live/546.m3u8
 #EXTINF:-1 tvg-name="Nick Telugu" group-title="Kids",Nick Telugu
 http://yolomax.pro/live/A1U3S8XPVM58B23/iHeFx423Ac/539489.ts
+#EXTINF:-1 tvg-name="Nick Telugu" group-title="Kids",Nick Telugu
+http://103.17.193.159:5001/live/543.m3u8
 #EXTINF:-1 tvg-name="Bollywood 4U" group-title="Movies",Bollywood 4U
 https://streams2.sofast.tv/ptnr-yupptv/title-BOLLYWOOD-4U-ENG_yupptv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/22d13e33-8705-40e8-9809-4e80aa795f15/manifest.m3u8
 #EXTINF:-1 tvg-name="Grjngo (720p) [Geo-blocked]" group-title="Movies",Grjngo (720p) [Geo-blocked]
@@ -61,18 +73,30 @@ https://moviethls.wns.live/hls/stream.m3u8
 https://live20.bozztv.com/giatvplayout7/giatv-209612/tracks-v1a1/mono.ts.m3u8
 #EXTINF:-1 tvg-name="Eska Rock TV (1080p)" group-title="Music",Eska Rock TV (1080p)
 http://92.114.85.87:8016/play/a005/index.m3u8
+#EXTINF:-1 tvg-name="Eye Tamil Music" group-title="Music",Eye Tamil Music
+http://198.144.149.196:8080/EyeMedia/music/index.m3u8
 #EXTINF:-1 tvg-name="Saga Music Haryanvi" group-title="Music",Saga Music Haryanvi
 https://amg01412-xiaomiasia-sagamusicharyanvi-xiaomi-0v34j.amagi.tv/playlist/amg01412-xiaomiasia-sagamusicharyanvi-xiaomi/playlist.m3u8
 #EXTINF:-1 tvg-name="Saga Music Haryanvi (Asia)" group-title="Music",Saga Music Haryanvi (Asia)
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01412-xiaomiasia-sagamusicharyanvi-xiaomi/playlist.m3u8
+#EXTINF:-1 tvg-name="Succes TV Tamil" group-title="Music",Succes TV Tamil
+https://stream.onecloudlive.in/successtv/successtvhd/index.m3u8
 #EXTINF:-1 tvg-name="C Malayalam TV" group-title="Music",C Malayalam TV
 https://2-fss-2.streamhoster.com/pl_120/206508-3261972-1/playlist.m3u8
+#EXTINF:-1 tvg-name="Raj Music Kannada" group-title="Music",Raj Music Kannada
+http://103.17.193.159:5001/live/743.m3u8
 #EXTINF:-1 tvg-name="EnerGeek Radio (720p) [Geo-blocked]" group-title="Music",EnerGeek Radio (720p) [Geo-blocked]
 https://cl-2.backend.energeek.cl/bkp/egradio/mobile/index.m3u8?token=IPTVgh26
 #EXTINF:-1 tvg-name="El Sol Network TV (1080p)" group-title="Music",El Sol Network TV (1080p)
 https://tv.wracanal10.com:3025/live/elsoltvlive.m3u8
+#EXTINF:-1 tvg-name="Raj Music Malayalam" group-title="Music",Raj Music Malayalam
+http://103.17.193.159:5001/live/739.m3u8
+#EXTINF:-1 tvg-name="Raj Music Telugu" group-title="Music",Raj Music Telugu
+http://103.17.193.159:5001/live/737.m3u8
 #EXTINF:-1 tvg-name="CBS News Colorado" group-title="News",CBS News Colorado
 https://amd-mediator-eolq3tk4la-uk.a.run.app/cbs/map.m3u8?am.originUrl=https%3A%2F%2Fdai.google.com%2Flinear%2Fhls%2Fevent%2FE9CkyheTSKeGiOiICU_JBQ%2Fmaster.m3u8&imafw_csid=desktop_web&imafw__fw_did=&imafw__fw_is_lat=&imafw__fw_vcid2=&imafw__fw_app_bundle=&imafw__fw_us_privacy=1YNY&height=1080&ip_addr=185.217.168.164&page_url=https%25253A%25252F%25252Flocalnow.com%25252Fchannels%25252Fcbs-news-chicago-hyperlocal&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F122.0.0.0%20Safari%2F537.36&width=1920&app_version=0.0.0
+#EXTINF:-1 tvg-name="JJ News Tamil" group-title="News",JJ News Tamil
+https://hlsstream.olidigital.in/jjtvnewstamil/jjtvnewstamil/index.m3u8
 #EXTINF:-1 tvg-name="KOAA News 5 Colorado" group-title="News",KOAA News 5 Colorado
 https://s3host3.localnow.api.cms.amdvids.com/v1/master/c189661feba961c19bc5fb60b57879ee9b84548a/config4/playlist.m3u8?ads.cdnhost=s3host3.localnow.api.cms.amdvids.com&ads.playbackid=A3737EDE-EA54-440D-99A6-DFFCF39C6FE6&ads.n1=rule_id&ads.v1=E7BB7BA1-D932-4E65-BD9F-93731E6E87C5-1744054592&ads.n3=qp_content_id&ads.v3=A3737EDE-EA54-440D-99A6-DFFCF39C6FE6&ads.n4=content_name&ads.v4=EPG%20%7C%20KOAA%20Pueblo%2FColorado%20Springs%2C%20CO&ads.n21=ua&ads.v21=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F122.0.0.0%20Safari%2F537.36&ads.n22=url&ads.v22=https%25253A%25252F%25252Flocalnow.com%25252Fchannels%25252Fcbs-news-chicago-hyperlocal&ads.n23=channel_genre&ads.v23=News&ads.n24=w&ads.v24=1920&ads.n25=app_name&ads.v25=&ads.n26=cust_devicename&ads.v26=desktop_web&ads.n27=content_provider&ads.v27=koaa&ads.n28=did&ads.v28=&ads.n29=device_make&ads.v29=&ads.n30=content_custom_2_param&ads.v30=AMDB012738&ads.n31=content_producer_name&ads.v31=Scripps%20Media%20INC&ads.n32=channel_ext_id&ads.v32=626c292fdd02e34a6c3f4023&ads.n33=channel_brand_id&ads.v33=AMDB012738&ads.n34=h&ads.v34=1080&ads.n35=app_store_url&ads.v35=&ads.n36=channel_rating&ads.v36=TV-PG&ads.n37=channel_company_id&ads.v37=AMDP500135&ads.n38=app_bundle&ads.v38=&ads.n39=device_model&ads.v39=&ads.n40=content_livestream&ads.v40=1&ads.n41=gpp_sid&ads.v41=&ads.n42=content_custom_3_param&ads.v42=channel&ads.n43=channel_title&ads.v43=EPG%20%20KOAA%20Pueblo%2FColorado%20Springs%2C%20CO&ads.n44=channel_name&ads.v44=EPG%20%20KOAA%20Pueblo%2FColorado%20Springs%2C%20CO&ads.n45=gpp&ads.v45=&ads.n46=us_privacy&ads.v46=1YNY&ads.n47=ifa_type&ads.v47=&ads.n48=channel_id&ads.v48=A3737EDE-EA54-440D-99A6-DFFCF39C6FE6&ads.n49=content_custom_1_param&ads.v49=A3737EDE-EA54-440D-99A6-DFFCF39C6FE6&ads.n50=ip&ads.v50=185.217.168.164&ads.n51=channel_language&ads.v51=en&ads.n52=app_version&ads.v52=0.0.0&ads.n53=pos&ads.v53=midroll&ads.n54=dnt&ads.v54=&ads.n55=device_type&ads.v55=&ads.n56=network_name&ads.v56=koaa&ads.n57=content_type&ads.v57=channel&ads.n58=channel_corp&ads.v58=Scripps%20Media%20INC
 #EXTINF:-1 tvg-name="NBC News NOW (1080p) [Geo-blocked]" group-title="News",NBC News NOW (1080p) [Geo-blocked]
@@ -131,26 +155,52 @@ https://jmp2.uk/plu-5eb1b12146cba40007aa7e5d.m3u8
 https://amg00866-amg00866c7-xiaomi-in-3551.playouts.now.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-name="News 18 Tamil Nadu Geo" group-title="News",News 18 Tamil Nadu Geo
 https://amg00866-amg00866c6-xiaomi-in-3554.playouts.now.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="News7 Tamil" group-title="News",News7 Tamil
+https://yuppmedtaorire.akamaized.net/v1/master/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/news7_nim_https/240122/news7dev/playlist.m3u8?hdnts=st=1792629813~exp=1792651413~acl=!*/v1/master/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/news7_nim_https/240122/news7dev/*!/payload/yupptvott_5_-1_c7dfc58d-9e0f-4507-9824-7db0aada781b_MX_158.23.146.211_yupptv_1_channel_2248_-1/*~data=yupptvott_5_-1_c7dfc58d-9e0f-4507-9824-7db0aada781b_MX_158.23.146.211_yupptv_1_channel_2248_-1~hmac=efdd3552c8b6cd0d5f24c6930ced91add69e4b20f831389549eef1340bee670e&ads.content_custom_3_param=yuppfastint&ads.ip=158.23.146.211&did=c7dfc58d-9e0f-4507-9824-7db0aada781b&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=NEWS&ads.content_custom_1_param=FAST&ads.channel=2248&ads.channel_name=News7Tamil&ads.language=TAM&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
+#EXTINF:-1 tvg-name="News7 Tamil" group-title="News",News7 Tamil
+https://yuppmedtaorire.akamaized.net/v1/master/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/news7_nim_https/240122/news7dev/playlist.m3u8?hdnts=st=1792630523~exp=1792652123~acl=!*/v1/master/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/news7_nim_https/240122/news7dev/*!/payload/yupptvott_5_-1_5f123068-fc53-445d-9921-e1f4d48ca0f9_MX_158.23.146.211_yupptv_1_channel_2248_-1/*~data=yupptvott_5_-1_5f123068-fc53-445d-9921-e1f4d48ca0f9_MX_158.23.146.211_yupptv_1_channel_2248_-1~hmac=9949900fdf3d7bf4122efe7e70c069268ba4ade99f7f1ac9c0334e0358a5be1e&ads.content_custom_3_param=yuppfastint&ads.ip=158.23.146.211&did=5f123068-fc53-445d-9921-e1f4d48ca0f9&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=NEWS&ads.content_custom_1_param=FAST&ads.channel=2248&ads.channel_name=News7Tamil&ads.language=TAM&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
 #EXTINF:-1 tvg-name="OlayTurk TV (720p) [Geo-blocked]" group-title="News",OlayTurk TV (720p) [Geo-blocked]
 https://live.artidijitalmedya.com/artidijital_olayturk/olayturk/playlist.m3u8
+#EXTINF:-1 tvg-name="TV9 News" group-title="News",TV9 News
+https://ssai.vgcdn.net/v1/master/tv9yupptv/tv9telugu/main.m3u8?hdnts=st=1792629805~exp=1792651405~acl=!*/v1/master/tv9yupptv/tv9telugu/*!/payload/yupptvott_5_-1_c7dfc58d-9e0f-4507-9824-7db0aada781b_MX_158.23.146.211_yupptv_1_channel_1317_-1/*~data=yupptvott_5_-1_c7dfc58d-9e0f-4507-9824-7db0aada781b_MX_158.23.146.211_yupptv_1_channel_1317_-1~hmac=61f323731a5c4848462f60c13bb767b9d5cdcf9e0d4bef71ba4c150bcbd4ef32&ads.content_custom_3_param=yuppfastint&ads.ip=158.23.146.211&did=c7dfc58d-9e0f-4507-9824-7db0aada781b&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=NEWS&ads.content_custom_1_param=FAST&ads.channel=1317&ads.channel_name=TV9News&ads.language=TEL&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
+#EXTINF:-1 tvg-name="TV9 News" group-title="News",TV9 News
+https://ssai.vgcdn.net/v1/master/tv9yupptv/tv9telugu/main.m3u8?hdnts=st=1792630516~exp=1792652116~acl=!*/v1/master/tv9yupptv/tv9telugu/*!/payload/yupptvott_5_-1_5ce22167-f950-409a-bb7b-efaee90ab0a2_MX_158.23.146.211_yupptv_1_channel_1317_-1/*~data=yupptvott_5_-1_5ce22167-f950-409a-bb7b-efaee90ab0a2_MX_158.23.146.211_yupptv_1_channel_1317_-1~hmac=6bff1f5ea3bfb55da0c077d861c6ae057c039d0aa962eb2c8ae1e8ad37bb19e2&ads.content_custom_3_param=yuppfastint&ads.ip=158.23.146.211&did=5ce22167-f950-409a-bb7b-efaee90ab0a2&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=NEWS&ads.content_custom_1_param=FAST&ads.channel=1317&ads.channel_name=TV9News&ads.language=TEL&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
+#EXTINF:-1 tvg-name="TV9 News" group-title="News",TV9 News
+https://ssai.vgcdn.net/v1/master/tv9yupptv/tv9telugu/main.m3u8?hdnts=st=1792631021~exp=1792652621~acl=!*/v1/master/tv9yupptv/tv9telugu/*!/payload/yupptvott_5_-1_6ee40e39-73f5-40c9-8ca7-a0e0faa9a9b5_MX_158.23.146.211_yupptv_1_channel_1317_-1/*~data=yupptvott_5_-1_6ee40e39-73f5-40c9-8ca7-a0e0faa9a9b5_MX_158.23.146.211_yupptv_1_channel_1317_-1~hmac=a029a0ba15ab640aef6bf404e0100d3340d7e8854896e3ab773c9ea216a8ff4e&ads.content_custom_3_param=yuppfastint&ads.ip=158.23.146.211&did=6ee40e39-73f5-40c9-8ca7-a0e0faa9a9b5&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=NEWS&ads.content_custom_1_param=FAST&ads.channel=1317&ads.channel_name=TV9News&ads.language=TEL&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
 #EXTINF:-1 tvg-name="TeleMoldova + [Geo-blocked]" group-title="News",TeleMoldova + [Geo-blocked]
 https://vdo.ssl-stream.com:3247/stream/play.m3u8
+#EXTINF:-1 tvg-name="News7 Tamil" group-title="News",News7 Tamil
+https://yuppmedtaorire.akamaized.net/v1/master/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/news7_nim_https/240122/news7dev/playlist.m3u8?hdnts=st=1792631028~exp=1792652628~acl=!*/v1/master/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/news7_nim_https/240122/news7dev/*!/payload/yupptvott_5_-1_be3cb83a-7417-4393-9fb3-ab35d616cfa6_MX_158.23.146.211_yupptv_1_channel_2248_-1/*~data=yupptvott_5_-1_be3cb83a-7417-4393-9fb3-ab35d616cfa6_MX_158.23.146.211_yupptv_1_channel_2248_-1~hmac=594989f42d3171459708e065a919b5eb5a1cf511cf62773a8ae393a251a8624f&ads.content_custom_3_param=yuppfastint&ads.ip=158.23.146.211&did=be3cb83a-7417-4393-9fb3-ab35d616cfa6&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=NEWS&ads.content_custom_1_param=FAST&ads.channel=2248&ads.channel_name=News7Tamil&ads.language=TAM&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
+#EXTINF:-1 tvg-name="900 Chanakya news india (national)" group-title="News",900 Chanakya news india (national)
+https://newsliveindia.com:4433/chanakyanational/index.m3u8
 #EXTINF:-1 tvg-name="Nachrichten 360 (1080p) [Geo-blocked]" group-title="News",Nachrichten 360 (1080p) [Geo-blocked]
 https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01821-lovetvfast-nachrichten360-samsungde/playlist.m3u8
 #EXTINF:-1 tvg-name="Omroep Zeeland" group-title="News",Omroep Zeeland
 http://d3isaxd2t6q8zm.cloudfront.net/live/omroepzeeland/tv/index.m3u8
+#EXTINF:-1 tvg-name="WPN World Punjabi News" group-title="News",WPN World Punjabi News
+https://vglivessai.akamaized.net/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/1cd73d38-bbd2-4d81-9ba7-58293f2e65a8/index.m3u8?hdnts=st=1792629862~exp=1792651462~acl=!*/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/1cd73d38-bbd2-4d81-9ba7-58293f2e65a8/*!/payload/yupptvott_5_-1_ebf9b70d-f72d-4498-89ca-054a521bd1ed_MX_158.23.146.211_yupptv_1_channel_7174_-1/*~data=yupptvott_5_-1_ebf9b70d-f72d-4498-89ca-054a521bd1ed_MX_158.23.146.211_yupptv_1_channel_7174_-1~hmac=8c469d482caa693a3a67c947212f1026919ee5c801f25c8382069cc5b715e853&ads.content_custom_3_param=yuppfastint&ads.ip=158.23.146.211&did=ebf9b70d-f72d-4498-89ca-054a521bd1ed&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=NEWS&ads.content_custom_1_param=FAST&ads.channel=7174&ads.channel_name=WPNWorldPunjabiNews&ads.language=PUN&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
+#EXTINF:-1 tvg-name="WPN World Punjabi News" group-title="News",WPN World Punjabi News
+https://vglivessai.akamaized.net/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/1cd73d38-bbd2-4d81-9ba7-58293f2e65a8/index.m3u8?hdnts=st=1792630571~exp=1792652171~acl=!*/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/1cd73d38-bbd2-4d81-9ba7-58293f2e65a8/*!/payload/yupptvott_5_-1_126472c4-1841-439c-b284-7b22f75e83d8_MX_158.23.146.211_yupptv_1_channel_7174_-1/*~data=yupptvott_5_-1_126472c4-1841-439c-b284-7b22f75e83d8_MX_158.23.146.211_yupptv_1_channel_7174_-1~hmac=c636f071f4cc08aae574995de6e982d2724cc65ff082c86bd4ed853c38f4f3ab&ads.content_custom_3_param=yuppfastint&ads.ip=158.23.146.211&did=126472c4-1841-439c-b284-7b22f75e83d8&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=NEWS&ads.content_custom_1_param=FAST&ads.channel=7174&ads.channel_name=WPNWorldPunjabiNews&ads.language=PUN&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
+#EXTINF:-1 tvg-name="WPN World Punjabi News" group-title="News",WPN World Punjabi News
+https://vglivessai.akamaized.net/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/1cd73d38-bbd2-4d81-9ba7-58293f2e65a8/index.m3u8?hdnts=st=1792631077~exp=1792652677~acl=!*/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/1cd73d38-bbd2-4d81-9ba7-58293f2e65a8/*!/payload/yupptvott_5_-1_7dc98b50-e574-45a6-a574-9b4e2331e9e0_MX_158.23.146.211_yupptv_1_channel_7174_-1/*~data=yupptvott_5_-1_7dc98b50-e574-45a6-a574-9b4e2331e9e0_MX_158.23.146.211_yupptv_1_channel_7174_-1~hmac=43c16a5faa7ad8e0f2f8e1639b928ac4b11615dfdf1d7d3e089e689a117fa808&ads.content_custom_3_param=yuppfastint&ads.ip=158.23.146.211&did=7dc98b50-e574-45a6-a574-9b4e2331e9e0&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=NEWS&ads.content_custom_1_param=FAST&ads.channel=7174&ads.channel_name=WPNWorldPunjabiNews&ads.language=PUN&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
 #EXTINF:-1 tvg-name="Halk TV SD (1080p)" group-title="News",Halk TV SD (1080p)
 https://halktv-live.daioncdn.net/halktv/halktv.m3u8
 #EXTINF:-1 tvg-name="DW" group-title="News",DW
 https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8
 #EXTINF:-1 tvg-name="CBS News Colorado (720p)" group-title="News",CBS News Colorado (720p)
 https://cbsn-den.cbsnstream.cbsnews.com/out/v1/2e49baf2906244ecb01b07d9885fbe7a/master.m3u8
+#EXTINF:-1 tvg-name="News18 MP Chhattisgarh" group-title="News",News18 MP Chhattisgarh
+http://103.17.193.159:5001/live/529.m3u8
+#EXTINF:-1 tvg-name="News18 UP Uttarakhand" group-title="News",News18 UP Uttarakhand
+http://103.17.193.159:5001/live/530.m3u8
 #EXTINF:-1 tvg-name="CNN HD (720p) [Geo-blocked]" group-title="News",CNN HD (720p) [Geo-blocked]
 http://212.5.144.156:8080/cnn/index.m3u8
 #EXTINF:-1 tvg-name="tv9 Telemaremma (576p)" group-title="News",tv9 Telemaremma (576p)
 https://rtmp-live-ingest-us-east-1-universe-dacast-com.akamaized.net/transmuxv1/streams/2095a288-1384-ed2e-5da0-278ccbb72295.m3u8
 #EXTINF:-1 tvg-name="Finans Turk TV (720p)" group-title="News",Finans Turk TV (720p)
 https://yayin30.haber100.com/live/finansturk/playlist.m3u8
+#EXTINF:-1 tvg-name="News 18 India" group-title="News",News 18 India
+http://103.17.193.159:5001/live/231.m3u8
 #EXTINF:-1 tvg-name="24 TV (720p)" group-title="News",24 TV (720p)
 https://turkmedya-live.ercdn.net/tv24/tv24.m3u8
 #EXTINF:-1 tvg-name="51 Radio TV (480p) [Geo-blocked]" group-title="News",51 Radio TV (480p) [Geo-blocked]
@@ -159,10 +209,22 @@ http://wms.shared.streamshow.it/canale51/canale51/playlist.m3u8
 https://s5.mexside.net:1936/clientetv/clientetv/playlist.m3u8
 #EXTINF:-1 tvg-name="CNA News" group-title="News",CNA News
 https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index_5.m3u8
+#EXTINF:-1 tvg-name="dw" group-title="News",dw
+http://103.17.193.159:5001/live/496.m3u8
+#EXTINF:-1 tvg-name="TV 5 News" group-title="News",TV 5 News
+http://103.17.193.159:5001/live/668.m3u8
+#EXTINF:-1 tvg-name="Zee MP Chattisgarh" group-title="News",Zee MP Chattisgarh
+http://103.17.193.159:5001/live/658.m3u8
+#EXTINF:-1 tvg-name="Zee Punjab Haryana HP" group-title="News",Zee Punjab Haryana HP
+http://103.17.193.159:5001/live/654.m3u8
+#EXTINF:-1 tvg-name="Zee UP UK" group-title="News",Zee UP UK
+http://103.17.193.159:5001/live/572.m3u8
 #EXTINF:-1 tvg-name="DVB TV (720p) [Geo-blocked]" group-title="News",DVB TV (720p) [Geo-blocked]
 https://live-stream.dvb.no/hls/stream_src/index.m3u8
 #EXTINF:-1 tvg-name="UTV (Czech Republic)" group-title="News",UTV (Czech Republic)
 https://vysilani.zaktv.cz/broadcast/hls/utv/index.m3u8
+#EXTINF:-1 tvg-name="News18 Assam NE" group-title="News",News18 Assam NE
+http://103.17.193.159:5001/live/627.m3u8
 #EXTINF:-1 tvg-name="AccuWeather Now (1080p) [Geo-blocked]" group-title="Other",AccuWeather Now (1080p) [Geo-blocked]
 https://amg00684-accuweather-accuweather-rokuus-0endj.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-name="AccuWeather Now (1080p) [Geo-blocked]" group-title="Other",AccuWeather Now (1080p) [Geo-blocked]
@@ -235,6 +297,10 @@ https://amg00353-lionsgatestudios-amg00353c11-xumo-us-2108.playouts.now.amagi.tv
 https://pb-aexv6wqzkg929.akamaized.net/ElectricNOW.m3u8
 #EXTINF:-1 tvg-name="Envoy FAST (720p) [Geo-blocked]" group-title="Other",Envoy FAST (720p) [Geo-blocked]
 https://pb-5uxlaafha3oi7.akamaized.net/ABR.m3u8
+#EXTINF:-1 tvg-name="Eye Tamil" group-title="Other",Eye Tamil
+http://198.144.149.196:8080/EyeMedia/EyeTV/index.m3u8
+#EXTINF:-1 tvg-name="Eye Tamil Comedy" group-title="Other",Eye Tamil Comedy
+http://198.144.149.196:8080/EyeMedia/comedy/index.m3u8
 #EXTINF:-1 tvg-name="FOX Weather (1080p) [Geo-blocked]" group-title="Other",FOX Weather (1080p) [Geo-blocked]
 https://pb-hum8cczphcrpf.akamaized.net/FOX_Weather.m3u8
 #EXTINF:-1 tvg-name="Grit Xtra (1080p) [Geo-blocked]" group-title="Other",Grit Xtra (1080p) [Geo-blocked]
@@ -483,6 +549,10 @@ https://mediaserver.abnvideos.com/streams/abntvindia.m3u8
 https://tv91.hostingnuclear.com:19360/intercable/intercable.m3u8
 #EXTINF:-1 tvg-name="group-title="Punjabi",PTV Pardesi" group-title="Other",group-title="Punjabi",PTV Pardesi
 http://stream.pardesitv.online/pardesi/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-name="VTV Gujarati" group-title="Other",VTV Gujarati
+https://d1msejlow1t3l4.cloudfront.net/fta/vtvgujarati/playlist.m3u8?hdnts=st=1792630537~exp=1792652137~acl=!*/fta/vtvgujarati/*!/payload/yupptvott_5_-1_61347671-a04d-4b04-ac3b-3d23b3f5a0ae_MX_158.23.146.211_yupptv_1_channel_6420_-1/*~data=yupptvott_5_-1_61347671-a04d-4b04-ac3b-3d23b3f5a0ae_MX_158.23.146.211_yupptv_1_channel_6420_-1~hmac=f5d5ce33ded3b156642f8f1cda56b66014303140a3ef9d6fe63e20698966f0d7&ads.content_custom_3_param=yuppfastint&ads.ip=158.23.146.211&did=61347671-a04d-4b04-ac3b-3d23b3f5a0ae&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=NEWS&ads.content_custom_1_param=FAST&ads.channel=6420&ads.channel_name=VTVGujarati&ads.language=GUJ&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
+#EXTINF:-1 tvg-name="VTV Gujarati" group-title="Other",VTV Gujarati
+https://d1msejlow1t3l4.cloudfront.net/fta/vtvgujarati/playlist.m3u8?hdnts=st=1792631043~exp=1792652643~acl=!*/fta/vtvgujarati/*!/payload/yupptvott_5_-1_780d5285-daab-44d1-8826-f3f4bc385006_MX_158.23.146.211_yupptv_1_channel_6420_-1/*~data=yupptvott_5_-1_780d5285-daab-44d1-8826-f3f4bc385006_MX_158.23.146.211_yupptv_1_channel_6420_-1~hmac=676632f94e4dccfe6431132472ceb5d3cf5a9b150e0d3a4889a28172e5ceae46&ads.content_custom_3_param=yuppfastint&ads.ip=158.23.146.211&did=780d5285-daab-44d1-8826-f3f4bc385006&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=NEWS&ads.content_custom_1_param=FAST&ads.channel=6420&ads.channel_name=VTVGujarati&ads.language=GUJ&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
 #EXTINF:-1 tvg-name="XHUNES-TDT (720p)" group-title="Other",XHUNES-TDT (720p)
 https://tv91.hostingnuclear.com:19360/xhunestv/xhunestv.m3u8
 #EXTINF:-1 tvg-name="GoTraveler (720p) [Geo-blocked]" group-title="Other",GoTraveler (720p) [Geo-blocked]
@@ -491,6 +561,8 @@ https://amg09501-amg09501c1-klowdtv-us-2398.playouts.now.amagi.tv/playlist/amg09
 https://amg01583-localnow-amg01583c81-lg-us-1484.playouts.now.amagi.tv/playlist/amg01583-localnowfast-localnowcoloradosprings-lgus/playlist.m3u8
 #EXTINF:-1 tvg-name="ramalive" group-title="Other",ramalive
 https://ramach.ddns.net/live/ramalive/index.m3u8
+#EXTINF:-1 tvg-name="Tamil TV" group-title="Other",Tamil TV
+https://ktismaservers.in:3220/hybrid/play.m3u8
 #EXTINF:-1 tvg-name="Wild Flix Hindi" group-title="Other",Wild Flix Hindi
 https://cc-qgrxgp51645lw.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-qgrxgp51645lw/IQJW/WBD/WildFlix_IN/WildFlix_IN.m3u8
 #EXTINF:-1 tvg-name="XXTreme Jobs Hindi" group-title="Other",XXTreme Jobs Hindi
@@ -501,6 +573,8 @@ https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01412-xiaomiasia-zeebihar-xiaomi/pl
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01412-xiaomiasia-zeetaas-xiaomi/playlist.m3u8
 #EXTINF:-1 tvg-name="ETB 2 (1080p) [Geo-blocked]" group-title="Other",ETB 2 (1080p) [Geo-blocked]
 https://cdn1.etbon.eus/etb2/index.m3u8
+#EXTINF:-1 tvg-name="ME24 Tamil" group-title="Other",ME24 Tamil
+https://stream.onecloudlive.in/orange/ME24TAMIL/index.m3u8
 #EXTINF:-1 tvg-name="Animation+ (1080p) [Geo-blocked]" group-title="Other",Animation+ (1080p) [Geo-blocked]
 https://pb-ioe9d0fpkd6pp.akamaized.net/playlist.m3u8
 #EXTINF:-1 tvg-name="Celebrity Name Game (1080p) [Geo-blocked]" group-title="Other",Celebrity Name Game (1080p) [Geo-blocked]
@@ -517,6 +591,8 @@ https://cdn1.etbon.eus/etb1/index.m3u8
 https://pb-xrdbj9zdgm6ez.akamaized.net/Vevo_Country.m3u8
 #EXTINF:-1 tvg-name="HBO+ Latin America (720p) [Geo-blocked]" group-title="Other",HBO+ Latin America (720p) [Geo-blocked]
 http://15.204.246.24:8080/HBOPlusHD/index.m3u8
+#EXTINF:-1 tvg-name="VTV Gujarati" group-title="Other",VTV Gujarati
+https://d1msejlow1t3l4.cloudfront.net/fta/vtvgujarati/playlist.m3u8?hdnts=st=1792629828~exp=1792651428~acl=!*/fta/vtvgujarati/*!/payload/yupptvott_5_-1_c7dfc58d-9e0f-4507-9824-7db0aada781b_MX_158.23.146.211_yupptv_1_channel_6420_-1/*~data=yupptvott_5_-1_c7dfc58d-9e0f-4507-9824-7db0aada781b_MX_158.23.146.211_yupptv_1_channel_6420_-1~hmac=5982df6afefea8a08b1f5aad922c81c8654b148ec80cdfe34cc0a29c2c269db5&ads.content_custom_3_param=yuppfastint&ads.ip=158.23.146.211&did=c7dfc58d-9e0f-4507-9824-7db0aada781b&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=NEWS&ads.content_custom_1_param=FAST&ads.channel=6420&ads.channel_name=VTVGujarati&ads.language=GUJ&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
 #EXTINF:-1 tvg-name="EnerGeek (1080p) [Geo-blocked]" group-title="Other",EnerGeek (1080p) [Geo-blocked]
 https://cl-2.backend.energeek.cl/bkp/egretroweb/index.m3u8?token=IPTVgh26
 #EXTINF:-1 tvg-name="Antena Seis TV (720p) [Geo-blocked]" group-title="Other",Antena Seis TV (720p) [Geo-blocked]
@@ -557,6 +633,12 @@ https://live20.bozztv.com/giatvplayout7/giatv-209587/tracks-v1a1/mono.ts.m3u8
 http://91.214.48.158:4022/udp/224.2.2.4:10000
 #EXTINF:-1 tvg-name="diegologonitv" group-title="Other",diegologonitv
 https://nd106.republicaservers.com:4433/hls/diegologonitv/index.m3u8
+#EXTINF:-1 tvg-name="Discovery Bengali" group-title="Other",Discovery Bengali
+http://103.17.193.159:5001/live/573.m3u8
+#EXTINF:-1 tvg-name="Discovery Hindi" group-title="Other",Discovery Hindi
+http://103.17.193.159:5001/live/575.m3u8
+#EXTINF:-1 tvg-name="Discovery Telugu" group-title="Other",Discovery Telugu
+http://103.17.193.159:5001/live/576.m3u8
 #EXTINF:-1 tvg-name="Enter 10 Bangla" group-title="Other",Enter 10 Bangla
 http://yolomax.pro/live/A1U3S8XPVM58B23/iHeFx423Ac/510484.ts
 #EXTINF:-1 tvg-name="History 18 Telugu" group-title="Other",History 18 Telugu
@@ -633,6 +715,10 @@ https://cdn3.wowza.com/1/QjRzVXJtVml5SUVx/WGJRSWxz/hls/live/playlist.m3u8
 https://cdn3.wowza.com/1/TUI5dU5ucnUxdGFD/ZFlVeGRl/hls/live/playlist.m3u8
 #EXTINF:-1 tvg-name="Divya TV" group-title="Religious",Divya TV
 https://alex4528.site/k7m2q9x4b8nc/stream.ts?id=33135
+#EXTINF:-1 tvg-name="Divya TV" group-title="Religious",Divya TV
+http://103.17.193.159:5001/live/801.m3u8
+#EXTINF:-1 tvg-name="Jinvani TV" group-title="Religious",Jinvani TV
+http://103.17.193.159:5001/live/596.m3u8
 #EXTINF:-1 tvg-name="Peace TV Urdu" group-title="Religious",Peace TV Urdu
 http://yolomax.pro/live/A1U3S8XPVM58B23/iHeFx423Ac/63210.ts
 #EXTINF:-1 tvg-name="Akaal Channel (396p) [Geo-blocked]" group-title="Religious",Akaal Channel (396p) [Geo-blocked]

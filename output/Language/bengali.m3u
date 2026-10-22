@@ -49,6 +49,8 @@ http://mfe02.cliptv.az/dash/Discovery_Channel_HDqwer456y.ism/playlist.mpd
 https://da86m1sqpm3o0.cloudfront.net/28072023/smil:rupashibangla.smil/playlist.m3u8
 #EXTINF:-1 tvg-name="Khushboo Bangla (576p) [Geo-blocked]" tvg-logo="https://dtil.tmsimg.com/assets/s143265_ld_h9_aa.png?lock=720x540" group-title="Entertainment",Khushboo Bangla (576p) [Geo-blocked]
 https://tvsen6.aynaott.com/mzwbzfZ4/index.m3u8
+#EXTINF:-1 tvg-name="Colors Bangla HD" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/Colors_Transparent_16069908-8494-4eb4-bd40-5afca3969088.png" group-title="Entertainment",Colors Bangla HD
+http://103.17.193.159:5001/live/756.m3u8
 #EXTINF:-1 tvg-name="DD Bangla" tvg-logo="https://dtil.tmsimg.com/assets/s142778_ld_h15_aa.png?lock=720x540" group-title="General",DD Bangla
 https://cdn.pishow.tv/ott/live/37/master.m3u8
 #EXTINF:-1 tvg-name="DD Bangla" tvg-logo="https://dtil.tmsimg.com/assets/s142778_ld_h15_aa.png?lock=720x540" group-title="General",DD Bangla
@@ -95,10 +97,12 @@ https://wiselp.wiseplayout.com/9X_Jalwa/master.m3u8
 https://d3kdywbtdfbp9z.cloudfront.net/v1/manifest/93ce20f0f52760bf38be911ff4c91ed02aa2fd92/dff423e0-3c82-46d6-9ecb-3baa96b5694a/70fca4d1-156e-4c03-baa4-9a4b602e33d5/0.m3u8
 #EXTINF:-1 tvg-name="9XM" tvg-logo="https://dtil.tmsimg.com/assets/s77447_ld_h15_aa.png?lock=720x540" group-title="Music",9XM
 https://wiselp.wiseplayout.com/9XM/master.m3u8
+#EXTINF:-1 tvg-name="Sangeet Bangla" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Sangeet%20Bangla.png" group-title="Music",Sangeet Bangla
+http://103.17.193.159:5001/live/740.m3u8
 #EXTINF:-1 tvg-name="9X Jalwa" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_9X_JALWA/images/LOGO_HD/image.png" group-title="Music",9X Jalwa
-https://alex4528.site/k7m2q9x4b8nc/stream.ts?id=142
+http://103.17.193.159:5001/live/440.m3u8
 #EXTINF:-1 tvg-name="9XM" tvg-logo="https://dtil.tmsimg.com/assets/s77447_ld_h15_aa.png?lock=720x540" group-title="Music",9XM
-http://dsmqbfez.pardns.com/live/6CTB9BKG/4Q7Y9DFW/97544.ts
+http://103.17.193.159:5001/live/587.m3u8
 #EXTINF:-1 tvg-name="Dhoom Music Bangla" tvg-logo="https://dtil.tmsimg.com/assets/s142882_ld_h15_aa.png?lock=720x540" group-title="Music",Dhoom Music Bangla
 https://cdn.pishow.tv/ott/live/1456/master.m3u8
 #EXTINF:-1 tvg-name="Orange Bangla TV" tvg-logo="https://i.imgur.com/wjSaHj5.png" group-title="Music",Orange Bangla TV
@@ -107,10 +111,10 @@ https://cdn.pishow.tv/ott/live/1499/master.m3u8
 https://cdn.pishow.tv/ott/live/1143/master.m3u8
 #EXTINF:-1 tvg-name="Ramdhenu" tvg-logo="https://dtil.tmsimg.com/assets/s143717_ld_h15_aa.png?lock=720x540" group-title="Music",Ramdhenu
 https://mumt01.tangotv.in/O5aw8Zn3RAMDHENU/mpegts
+#EXTINF:-1 tvg-name="Ramdhenu" tvg-logo="https://dtil.tmsimg.com/assets/s143717_ld_h15_aa.png?lock=720x540" group-title="Music",Ramdhenu
+http://103.17.193.159:5001/live/639.m3u8
 #EXTINF:-1 tvg-name="Sangeet Bangla" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Sangeet%20Bangla.png" group-title="Music",Sangeet Bangla
 http://yolomax.pro/live/A1U3S8XPVM58B23/iHeFx423Ac/34727.ts
-#EXTINF:-1 tvg-name="Sangeet Bangla" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Sangeet%20Bangla.png" group-title="Music",Sangeet Bangla
-https://tvsen6.aynaott.com/hT5jHczt/index.m3u8
 #EXTINF:-1 tvg-name="Dhoom Music Bangla" tvg-logo="https://dtil.tmsimg.com/assets/s142882_ld_h15_aa.png?lock=720x540" group-title="Music",Dhoom Music Bangla
 https://mumt06.tangotv.in/qYyB8fXVDHOOMMUSIC/index.m3u8
 #EXTINF:-1 tvg-name="Orange Bangla" tvg-logo="https://i.imgur.com/wjSaHj5.png" group-title="Music",Orange Bangla
@@ -125,30 +129,44 @@ https://d1msejlow1t3l4.cloudfront.net/fta/ctvnakdplus/playlist.m3u8?hdnts=st=179
 https://d1msejlow1t3l4.cloudfront.net/fta/ctvnakdplus/playlist.m3u8?hdnts=st=1792608426~exp=1792630026~acl=!*/fta/ctvnakdplus/*!/payload/yupptvott_5_-1_87b904cd-4845-4e76-8dbb-e132b9820bf8_US_64.236.153.98_yupptv_1_channel_6654_-1/*~data=yupptvott_5_-1_87b904cd-4845-4e76-8dbb-e132b9820bf8_US_64.236.153.98_yupptv_1_channel_6654_-1~hmac=6276587d690653b4d19c639b40cac54f6f95a969f9172f5f0c7f8d4defcaad7e&ads.content_custom_3_param=yuppfastint&ads.ip=64.236.153.98&did=87b904cd-4845-4e76-8dbb-e132b9820bf8&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=ENTERTAINMENT&ads.content_custom_1_param=FAST&ads.channel=6654&ads.channel_name=CTVNAKDPlus&ads.language=BEN&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
 #EXTINF:-1 tvg-name="News18 Bangla" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/News18%20Bangla.png" group-title="News",News18 Bangla
 https://amg01448-samsungin-news18bangla-samsungin-ad-qy.amagi.tv/playlist/amg01448-samsungin-news18bangla-samsungin/playlist.m3u8
+#EXTINF:-1 tvg-name="24" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/24hourstv.png" group-title="News",24
+https://yuppmedtaorire.akamaized.net/v1/master/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/24_nim_https/110322/channel24dev/playlist.m3u8?hdnts=st=1792629813~exp=1792651413~acl=!*/v1/master/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/24_nim_https/110322/channel24dev/*!/payload/yupptvott_5_-1_a7e78ff9-b13f-4094-80ae-7555b5da8a45_MX_158.23.146.211_yupptv_1_channel_4261_-1/*~data=yupptvott_5_-1_a7e78ff9-b13f-4094-80ae-7555b5da8a45_MX_158.23.146.211_yupptv_1_channel_4261_-1~hmac=cf061fc83c4adee6a3dda1d3de43d9454a9a0daf5fa5045e772365022ad5ddaf&ads.content_custom_3_param=yuppfastint&ads.ip=158.23.146.211&did=a7e78ff9-b13f-4094-80ae-7555b5da8a45&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=NEWS&ads.content_custom_1_param=FAST&ads.channel=4261&ads.channel_name=24&ads.language=MAL&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
+#EXTINF:-1 tvg-name="24" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/24hourstv.png" group-title="News",24
+https://yuppmedtaorire.akamaized.net/v1/master/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/24_nim_https/110322/channel24dev/playlist.m3u8?hdnts=st=1792630523~exp=1792652123~acl=!*/v1/master/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/24_nim_https/110322/channel24dev/*!/payload/yupptvott_5_-1_61347671-a04d-4b04-ac3b-3d23b3f5a0ae_MX_158.23.146.211_yupptv_1_channel_4261_-1/*~data=yupptvott_5_-1_61347671-a04d-4b04-ac3b-3d23b3f5a0ae_MX_158.23.146.211_yupptv_1_channel_4261_-1~hmac=286bad62a62ddf16f085645b124a816897aec8b39d89062152533c8ed138352f&ads.content_custom_3_param=yuppfastint&ads.ip=158.23.146.211&did=61347671-a04d-4b04-ac3b-3d23b3f5a0ae&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=NEWS&ads.content_custom_1_param=FAST&ads.channel=4261&ads.channel_name=24&ads.language=MAL&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
+#EXTINF:-1 tvg-name="24" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/24hourstv.png" group-title="News",24
+https://yuppmedtaorire.akamaized.net/v1/master/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/24_nim_https/110322/channel24dev/playlist.m3u8?hdnts=st=1792631028~exp=1792652628~acl=!*/v1/master/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/24_nim_https/110322/channel24dev/*!/payload/yupptvott_5_-1_0043757d-09aa-4092-8188-fd27babae5da_MX_158.23.146.211_yupptv_1_channel_4261_-1/*~data=yupptvott_5_-1_0043757d-09aa-4092-8188-fd27babae5da_MX_158.23.146.211_yupptv_1_channel_4261_-1~hmac=6b5da5f79c7edb3656a0108ce2c96c1d60abf8589a23bfd6627a80d1ff679dde&ads.content_custom_3_param=yuppfastint&ads.ip=158.23.146.211&did=0043757d-09aa-4092-8188-fd27babae5da&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=NEWS&ads.content_custom_1_param=FAST&ads.channel=4261&ads.channel_name=24&ads.language=MAL&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
 #EXTINF:-1 tvg-name="ABP Ananda" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/ABP_Ananda_logo.svg/500px-ABP_Ananda_logo.svg.png" group-title="News",ABP Ananda
 https://amg01448-samsungin-abpananda-samsungin-ad-pw.amagi.tv/playlist/amg01448-samsungin-abpananda-samsungin/playlist.m3u8
 #EXTINF:-1 tvg-name="ABP Ananda (Asia)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/ABP_Ananda_logo.svg/500px-ABP_Ananda_logo.svg.png" group-title="News",ABP Ananda (Asia)
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01412-xiaomiasia-abpananda-xiaomi/playlist.m3u8
 #EXTINF:-1 tvg-name="Star Bharat" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/8704/1782288318704-h.jpg" group-title="News",Star Bharat
 http://103.135.253.32:8080/STAR-BHARAT/index.m3u8
+#EXTINF:-1 tvg-name="Calcutta News" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG002EF87T.png?lock=720x540" group-title="News",Calcutta News
+https://d1msejlow1t3l4.cloudfront.net/fta/calcuttanews/playlist.m3u8?hdnts=st=1792631070~exp=1792652670~acl=!*/fta/calcuttanews/*!/payload/yupptvott_5_-1_0043757d-09aa-4092-8188-fd27babae5da_MX_158.23.146.211_yupptv_1_channel_6643_-1/*~data=yupptvott_5_-1_0043757d-09aa-4092-8188-fd27babae5da_MX_158.23.146.211_yupptv_1_channel_6643_-1~hmac=6aae5dd60c795aaf9e4b4f2c2101fe984a2da251375f9460db7eeed6ed924303&ads.content_custom_3_param=yuppfastint&ads.ip=158.23.146.211&did=0043757d-09aa-4092-8188-fd27babae5da&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=NEWS&ads.content_custom_1_param=FAST&ads.channel=6643&ads.channel_name=CalcuttaNews&ads.language=BEN&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
 #EXTINF:-1 tvg-name="ABP Ananda" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/ABP_Ananda_logo.svg/500px-ABP_Ananda_logo.svg.png" group-title="News",ABP Ananda
-https://d2l4ar6y3mrs4k.cloudfront.net/live-streaming/ananda-livetv/master.m3u8
+https://vglivessai.akamaized.net/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/e7aa105c-50e9-4ab1-aa63-a25bec36c472/master.m3u8?hdnts=st=1792630519~exp=1792652119~acl=!*/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/e7aa105c-50e9-4ab1-aa63-a25bec36c472/*!/payload/yupptvott_5_-1_5f123068-fc53-445d-9921-e1f4d48ca0f9_MX_158.23.146.211_yupptv_1_channel_2275_-1/*~data=yupptvott_5_-1_5f123068-fc53-445d-9921-e1f4d48ca0f9_MX_158.23.146.211_yupptv_1_channel_2275_-1~hmac=58c2e9ac7ebe7b6b806ccb38c0f8275ae657ce6f1fb49825b3e04fe2d253bded&ads.content_custom_3_param=yuppfastint&ads.ip=158.23.146.211&did=5f123068-fc53-445d-9921-e1f4d48ca0f9&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=NEWS&ads.content_custom_1_param=FAST&ads.channel=2275&ads.channel_name=ABPAnanda&ads.language=BEN&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
 #EXTINF:-1 tvg-name="News18 Bangla KB" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/News18%20Bangla.png" group-title="News",News18 Bangla KB
 https://n18syndication.akamaized.net/bpk-tv/News18_Bangla_NW18_MOB/output01/master.m3u8
 #EXTINF:-1 tvg-name="NK TV Bangla" tvg-logo="https://www.nktvbangla.com/wp-content/uploads/2023/09/WhatsApp-Image-2023-09-12-at-2.59.18-PM.jpg" group-title="News",NK TV Bangla
 https://nktv.smartstream.video/smartstream-us/nkbangla/nkbangla/playlist.m3u8
+#EXTINF:-1 tvg-name="Calcutta News" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG002EF87T.png?lock=720x540" group-title="News",Calcutta News
+https://d1msejlow1t3l4.cloudfront.net/fta/calcuttanews/playlist.m3u8?hdnts=st=1792629854~exp=1792651454~acl=!*/fta/calcuttanews/*!/payload/yupptvott_5_-1_a7e78ff9-b13f-4094-80ae-7555b5da8a45_MX_158.23.146.211_yupptv_1_channel_6643_-1/*~data=yupptvott_5_-1_a7e78ff9-b13f-4094-80ae-7555b5da8a45_MX_158.23.146.211_yupptv_1_channel_6643_-1~hmac=a42647312505f20c39c3f2cdfbabc9693154aff17d5295661487c5d6c721ff95&ads.content_custom_3_param=yuppfastint&ads.ip=158.23.146.211&did=a7e78ff9-b13f-4094-80ae-7555b5da8a45&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=NEWS&ads.content_custom_1_param=FAST&ads.channel=6643&ads.channel_name=CalcuttaNews&ads.language=BEN&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
 #EXTINF:-1 tvg-name="TV9" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/TV9-Bangla1.png" group-title="News",TV9
 https://cdn4.skygo.mn/live/disk1/TV9HD/HLSv3-FTA/TV9HD.m3u8
 #EXTINF:-1 tvg-name="Republic Bangla" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/REPUBLIC-BANGLA-LOGO_RGB_Transparent.png" group-title="News",Republic Bangla
 https://cdn.pishow.tv/ott/live/270/master.m3u8
 #EXTINF:-1 tvg-name="Star Bharat" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/8704/1782288318704-h.jpg" group-title="News",Star Bharat
 https://alex4528.site/k7m2q9x4b8nc/stream.ts?id=195
+#EXTINF:-1 tvg-name="Calcutta News" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG002EF87T.png?lock=720x540" group-title="News",Calcutta News
+https://d1msejlow1t3l4.cloudfront.net/fta/calcuttanews/playlist.m3u8?hdnts=st=1792630562~exp=1792652162~acl=!*/fta/calcuttanews/*!/payload/yupptvott_5_-1_5ce22167-f950-409a-bb7b-efaee90ab0a2_MX_158.23.146.211_yupptv_1_channel_6643_-1/*~data=yupptvott_5_-1_5ce22167-f950-409a-bb7b-efaee90ab0a2_MX_158.23.146.211_yupptv_1_channel_6643_-1~hmac=4a23685b88aba2705fdad34c7341017d121152e97e004f3cdff96be7ad7026fe&ads.content_custom_3_param=yuppfastint&ads.ip=158.23.146.211&did=5ce22167-f950-409a-bb7b-efaee90ab0a2&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=NEWS&ads.content_custom_1_param=FAST&ads.channel=6643&ads.channel_name=CalcuttaNews&ads.language=BEN&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
 #EXTINF:-1 tvg-name="Republic Bangla" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/REPUBLIC-BANGLA-LOGO_RGB_Transparent.png" group-title="News",Republic Bangla
 https://streams.tangotv.in/RBANGLA/ORIGIN/index.m3u8
 #EXTINF:-1 tvg-name="Zee 24 Ghanta" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022KGXP.png?lock=720x540" group-title="News",Zee 24 Ghanta
-https://d2dsoyvkr33m05.cloudfront.net/index_4.m3u8
+http://103.17.193.159:5001/live/464.m3u8
 #EXTINF:-1 tvg-name="Zee 24 Ghanta" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022KGXP.png?lock=720x540" group-title="News",Zee 24 Ghanta
-https://d2dsoyvkr33m05.cloudfront.net/index_5.m3u8
+https://d2dsoyvkr33m05.cloudfront.net/index_4.m3u8
+#EXTINF:-1 tvg-name="News18 Bangla" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/News18%20Bangla.png" group-title="News",News18 Bangla
+http://103.17.193.159:5001/live/717.m3u8
 #EXTINF:-1 tvg-name="R Plus Gold" tvg-logo="https://i.imgur.com/dpI7XPC.png" group-title="Other",R Plus Gold
 https://vglivessai.akamaized.net/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/cf883da3-f9f5-4c70-b0ef-b3ac2e2ad1e3/index.m3u8
 #EXTINF:-1 tvg-name="R Plus Gold" tvg-logo="https://i.imgur.com/dpI7XPC.png" group-title="Other",R Plus Gold
