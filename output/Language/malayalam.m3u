@@ -21,8 +21,6 @@ http://fortv.cc:8080/live/yd6H5yb2kK/nrkVd2ex3X/315855.ts
 http://103.17.193.159:5001/live/443.m3u8
 #EXTINF:-1 tvg-name="Asianet Movies HD" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/7408/1782289617408-h.jpg" group-title="Entertainment",Asianet Movies HD
 http://103.17.193.159:5001/live/459.m3u8
-#EXTINF:-1 tvg-name="Asianet" tvg-logo="https://raw.githubusercontent.com/saeidrahmanbd/BDIX-IPTV/main/logos/asianet-576p.png" group-title="Entertainment",Asianet
-http://yolomax.pro/live/A1U3S8XPVM58B23/iHeFx423Ac/364793.ts
 #EXTINF:-1 tvg-name="Asianet Plus" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Asianet%20Plus.png" group-title="Entertainment",Asianet Plus
 http://dsmqbfez.pardns.com/live/6CTB9BKG/4Q7Y9DFW/89817.ts
 #EXTINF:-1 tvg-name="Darshana TV" tvg-logo="https://dtil.tmsimg.com/assets/s142774_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Darshana TV
@@ -45,6 +43,10 @@ https://yuppparoriglin.akamaized.net/181224/smil:darshanatv.smil/playlist.m3u8?h
 https://d2lk5u59tns74c.cloudfront.net/out/v1/c313674ffced4c9a90f1bba436df2b9b/index.m3u8
 #EXTINF:-1 tvg-name="DD Malayalam" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Malayalam.png" group-title="Entertainment",DD Malayalam
 http://103.17.193.159:5001/live/699.m3u8
+#EXTINF:-1 tvg-name="Mazhavil Manorama" tvg-logo="https://dtil.tmsimg.com/assets/s147769_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Mazhavil Manorama
+https://d1taaads3ztvmu.cloudfront.net/120723/smil:mazhavilmanoramainternational.smil/chunklist_b1928000.m3u8
+#EXTINF:-1 tvg-name="Mazhavil Manorama" tvg-logo="https://dtil.tmsimg.com/assets/s147769_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Mazhavil Manorama
+http://103.17.193.159:5001/live/648.m3u8
 #EXTINF:-1 tvg-name="Darshana TV" tvg-logo="https://dtil.tmsimg.com/assets/s142774_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Darshana TV
 https://mumt04.tangotv.in/m18aqlK4DARSHANATV/index.m3u8
 #EXTINF:-1 tvg-name="Mazhavil Manorama HD" tvg-logo="https://dtil.tmsimg.com/assets/s147769_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Mazhavil Manorama HD
@@ -55,6 +57,10 @@ https://vglivessai.akamaized.net/sg/v1/master/611d79b11b77e2f571934fd80ca1413453
 https://vglivessai.akamaized.net/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/bd25b31b-5ce2-453d-a544-d073555d85f3/index.m3u8?hdnts=st=1792096742~exp=1792118342~acl=!*/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/bd25b31b-5ce2-453d-a544-d073555d85f3/*!/payload/yupptvott_5_-1_0dbf0650-0ce4-4ce3-93db-bf90c4912fcb_US_13.83.107.128_yupptv_1_channel_7177_-1/*~data=yupptvott_5_-1_0dbf0650-0ce4-4ce3-93db-bf90c4912fcb_US_13.83.107.128_yupptv_1_channel_7177_-1~hmac=33d2733a96287c7bef5ac0aa1c24259dd52a89a6adf358984312fdcdd634c904&ads.content_custom_3_param=yuppfastint&ads.ip=13.83.107.128&did=0dbf0650-0ce4-4ce3-93db-bf90c4912fcb&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=ENTERTAINMENT&ads.content_custom_1_param=FAST&ads.channel=7177&ads.channel_name=NKRTV&ads.language=KAN&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
 #EXTINF:-1 tvg-name="NKR TV" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/NKRTV.png" group-title="General",NKR TV
 https://vglivessai.akamaized.net/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/bd25b31b-5ce2-453d-a544-d073555d85f3/index.m3u8?hdnts=st=1792098792~exp=1792120392~acl=!*/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/bd25b31b-5ce2-453d-a544-d073555d85f3/*!/payload/yupptvott_5_-1_39cbe1c5-5b71-4a7a-b96c-de2b312a1ea0_US_13.83.107.128_yupptv_1_channel_7177_-1/*~data=yupptvott_5_-1_39cbe1c5-5b71-4a7a-b96c-de2b312a1ea0_US_13.83.107.128_yupptv_1_channel_7177_-1~hmac=c60d64302ed6b5ee86a89f3e42552f80d6095eb090ede2ed26130c96291d704b&ads.content_custom_3_param=yuppfastint&ads.ip=13.83.107.128&did=39cbe1c5-5b71-4a7a-b96c-de2b312a1ea0&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=ENTERTAINMENT&ads.content_custom_1_param=FAST&ads.channel=7177&ads.channel_name=NKRTV&ads.language=KAN&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
+#EXTINF:-1 tvg-name="NKR TV" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/NKRTV.png" group-title="General",NKR TV
+https://vglivessai.akamaized.net/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/bd25b31b-5ce2-453d-a544-d073555d85f3/index.m3u8?hdnts=st=1792409446~exp=1792431046~acl=!*/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/bd25b31b-5ce2-453d-a544-d073555d85f3/*!/payload/yupptvott_5_-1_cf4d8d79-35fc-433a-85cb-5ce508706fe2_US_172.212.151.227_yupptv_1_channel_7177_-1/*~data=yupptvott_5_-1_cf4d8d79-35fc-433a-85cb-5ce508706fe2_US_172.212.151.227_yupptv_1_channel_7177_-1~hmac=315d880852fc6b3e8eb14be3d87ae914f47f471852eeb6d63c3d28b0df091252&ads.content_custom_3_param=yuppfastint&ads.ip=172.212.151.227&did=cf4d8d79-35fc-433a-85cb-5ce508706fe2&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=ENTERTAINMENT&ads.content_custom_1_param=FAST&ads.channel=7177&ads.channel_name=NKRTV&ads.language=KAN&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
+#EXTINF:-1 tvg-name="NKR TV" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/NKRTV.png" group-title="General",NKR TV
+https://vglivessai.akamaized.net/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/bd25b31b-5ce2-453d-a544-d073555d85f3/index.m3u8?hdnts=st=1792412014~exp=1792433614~acl=!*/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/bd25b31b-5ce2-453d-a544-d073555d85f3/*!/payload/yupptvott_5_-1_4714a7b2-e2a3-4e99-b2d1-616e0c07537c_US_172.212.151.227_yupptv_1_channel_7177_-1/*~data=yupptvott_5_-1_4714a7b2-e2a3-4e99-b2d1-616e0c07537c_US_172.212.151.227_yupptv_1_channel_7177_-1~hmac=5c4748433eaf1ec144d8b4a02e7d5a771ede4fd104f57eb201c9bb384b088ee9&ads.content_custom_3_param=yuppfastint&ads.ip=172.212.151.227&did=4714a7b2-e2a3-4e99-b2d1-616e0c07537c&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=ENTERTAINMENT&ads.content_custom_1_param=FAST&ads.channel=7177&ads.channel_name=NKRTV&ads.language=KAN&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
 #EXTINF:-1 tvg-name="Tamil Vision International" tvg-logo="https://i.imgur.com/YozqNL3.jpg" group-title="General",Tamil Vision International
 https://live.cmr24.fm/TVI/HD/playlist.m3u8
 #EXTINF:-1 tvg-name="Galavision East HD (1080p) [Geo-blocked]" tvg-logo="https://i.imgur.com/YozqNL3.jpg" group-title="General",Galavision East HD (1080p) [Geo-blocked]
@@ -93,12 +99,12 @@ http://103.17.193.159:5001/live/563.m3u8
 https://mumt03.tangotv.in/Dsly5z3HKAIRALIARABIA/index.m3u8
 #EXTINF:-1 tvg-name="Kairali TV" tvg-logo="https://dtil.tmsimg.com/assets/s143247_ld_h15_aa.png?lock=720x540" group-title="General",Kairali TV
 https://mumt01.tangotv.in/O5aw8Zn3KAIRALI/index.m3u8
+#EXTINF:-1 tvg-name="Kairali TV" tvg-logo="https://dtil.tmsimg.com/assets/s143247_ld_h15_aa.png?lock=720x540" group-title="General",Kairali TV
+https://streams.tangotv.in/KAIRALI/ORIGIN/index.m3u8
 #EXTINF:-1 tvg-name="Discovery Kids Latin America Brazil (720p) [Geo-blocked]" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Discovery%20Kids.png" group-title="Kids",Discovery Kids Latin America Brazil (720p) [Geo-blocked]
 http://15.204.246.24:8080/DiscoveryKidsHD/index.m3u8
 #EXTINF:-1 tvg-name="Discovery Kids Gujarati" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Discovery%20Kids.png" group-title="Kids",Discovery Kids Gujarati
 http://dsmqbfez.pardns.com/live/6CTB9BKG/4Q7Y9DFW/132295.ts
-#EXTINF:-1 tvg-name="Discovery Kids Tamil" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Discovery%20Kids.png" group-title="Kids",Discovery Kids Tamil
-http://yolomax.pro/live/A1U3S8XPVM58B23/iHeFx423Ac/510452.ts
 #EXTINF:-1 tvg-name="Discovery Kids Tamil" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Discovery%20Kids.png" group-title="Kids",Discovery Kids Tamil
 http://dsmqbfez.pardns.com/live/6CTB9BKG/4Q7Y9DFW/132242.ts
 #EXTINF:-1 tvg-name="Discovery Kids Hindi" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Discovery%20Kids.png" group-title="Kids",Discovery Kids Hindi
@@ -113,12 +119,20 @@ http://yolomax.pro/live/A1U3S8XPVM58B23/iHeFx423Ac/285816.ts
 https://cdn.pishow.tv/ott/live/1123/master.m3u8
 #EXTINF:-1 tvg-name="Kappa TV" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Kappa%20TV.png" group-title="Lifestyle",Kappa TV
 https://d1msejlow1t3l4.cloudfront.net/fta/kappatv/playlist.m3u8
+#EXTINF:-1 tvg-name="Kappa TV" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Kappa%20TV.png" group-title="Lifestyle",Kappa TV
+http://103.17.193.159:5001/live/786.m3u8
+#EXTINF:-1 tvg-name="Kappa TV" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Kappa%20TV.png" group-title="Lifestyle",Kappa TV
+https://mumt03.tangotv.in/Dsly5z3HKAPPATV/index.m3u8
 #EXTINF:-1 tvg-name="we" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/We%20TV.png" group-title="Movies",we
 https://d2pnr7z8mre86q.cloudfront.net/WE_IFB_9/dash/manifest.mpd
 #EXTINF:-1 tvg-name="we" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/We%20TV.png" group-title="Movies",we
 https://d2pnr7z8mre86q.cloudfront.net/WE_IFB_12/dash/manifest.mpd
 #EXTINF:-1 tvg-name="we" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/We%20TV.png" group-title="Movies",we
 https://d2pnr7z8mre86q.cloudfront.net/WE_IFB_5/dash/manifest.mpd
+#EXTINF:-1 tvg-name="we" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/We%20TV.png" group-title="Movies",we
+https://d2pnr7z8mre86q.cloudfront.net/WE_IFB_11/dash/manifest.mpd
+#EXTINF:-1 tvg-name="we" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/We%20TV.png" group-title="Movies",we
+https://d2pnr7z8mre86q.cloudfront.net/WE_IFB_9/hls/index.m3u8
 #EXTINF:-1 tvg-name="Asianet Movies" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/7227/1782288617227-h.jpg" group-title="Movies",Asianet Movies
 http://dsmqbfez.pardns.com/live/6CTB9BKG/4Q7Y9DFW/291172.ts
 #EXTINF:-1 tvg-name="Asianet Movies" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/7227/1782288617227-h.jpg" group-title="Movies",Asianet Movies
@@ -151,8 +165,14 @@ http://cdn1.live-tv.od.ua:8081/31chod/31chod-abr/31chod/31chod/playlist.m3u8
 https://segment.yuppcdn.net/050522/reporterdev/playlist.m3u8?hdnts=st=1792629814~exp=1792651414~acl=!*/050522/reporterdev/*!/payload/yupptvott_5_-1_974cb77d-bf46-4b42-856c-3f397b9068ce_MX_158.23.146.211_yupptv_1_channel_703_-1/*~data=yupptvott_5_-1_974cb77d-bf46-4b42-856c-3f397b9068ce_MX_158.23.146.211_yupptv_1_channel_703_-1~hmac=195a3efb15d103115d9703dfb9104bd98944946b527aaa3cf2531521c19a1b24&ads.content_custom_3_param=yuppfastint&ads.ip=158.23.146.211&did=974cb77d-bf46-4b42-856c-3f397b9068ce&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=NEWS&ads.content_custom_1_param=FAST&ads.channel=703&ads.channel_name=ReporterTV&ads.language=MAL&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
 #EXTINF:-1 tvg-name="Reporter TV" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/REPORTER-logo_2000_X_1125-Transpharent.png" group-title="News",Reporter TV
 https://segment.yuppcdn.net/050522/reporterdev/playlist.m3u8?hdnts=st=1792630524~exp=1792652124~acl=!*/050522/reporterdev/*!/payload/yupptvott_5_-1_27ada39d-7433-4a99-9f95-4677d7af0c7b_MX_158.23.146.211_yupptv_1_channel_703_-1/*~data=yupptvott_5_-1_27ada39d-7433-4a99-9f95-4677d7af0c7b_MX_158.23.146.211_yupptv_1_channel_703_-1~hmac=c9249fb07bdae3cf3c021884ec7e3db3f8b96da076d345836a13341778d1f3bb&ads.content_custom_3_param=yuppfastint&ads.ip=158.23.146.211&did=27ada39d-7433-4a99-9f95-4677d7af0c7b&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=NEWS&ads.content_custom_1_param=FAST&ads.channel=703&ads.channel_name=ReporterTV&ads.language=MAL&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
+#EXTINF:-1 tvg-name="Asianet News" tvg-logo="https://dtil.tmsimg.com/assets/s142679_ld_h15_aa.png?lock=720x540" group-title="News",Asianet News
+https://yuppmedtaorire.akamaized.net/v1/master/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/asianetnews_nim_https/240122/asianetnewsdev/playlist.m3u8?hdnts=st=1792629803~exp=1792651403~acl=!*/v1/master/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/asianetnews_nim_https/240122/asianetnewsdev/*!/payload/yupptvott_5_-1_706609ab-56bc-49f2-817e-52ba0ff0a399_MX_158.23.146.211_yupptv_1_channel_144_-1/*~data=yupptvott_5_-1_706609ab-56bc-49f2-817e-52ba0ff0a399_MX_158.23.146.211_yupptv_1_channel_144_-1~hmac=3b4ab3fb0c8efcc7402bd53892685f6a6958a0a7561f7bf018bd5f5d7907a7c4&ads.content_custom_3_param=yuppfastint&ads.ip=158.23.146.211&did=706609ab-56bc-49f2-817e-52ba0ff0a399&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=NEWS&ads.content_custom_1_param=FAST&ads.channel=144&ads.channel_name=AsianetNews&ads.language=MAL&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
 #EXTINF:-1 tvg-name="Mathrubhumi News" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Mathrubhumi%20News.png" group-title="News",Mathrubhumi News
 https://yuppmedtaorire.akamaized.net/v1/master/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/mathrubhuminews_nim_https/110322/mathrubhuminews/playlist.m3u8
+#EXTINF:-1 tvg-name="Mathrubhumi News" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Mathrubhumi%20News.png" group-title="News",Mathrubhumi News
+https://yuppmedtaorire.akamaized.net/v1/master/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/mathrubhuminews_nim_https/110322/mathrubhuminewsdev/playlist.m3u8?hdnts=st=1792629813~exp=1792651413~acl=!*/v1/master/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/mathrubhuminews_nim_https/110322/mathrubhuminewsdev/*!/payload/yupptvott_5_-1_706609ab-56bc-49f2-817e-52ba0ff0a399_MX_158.23.146.211_yupptv_1_channel_1309_-1/*~data=yupptvott_5_-1_706609ab-56bc-49f2-817e-52ba0ff0a399_MX_158.23.146.211_yupptv_1_channel_1309_-1~hmac=0d5afa4fb340db54441401f9ddcbdb6c14d3f35a6315f45469acae23baf5fb96&ads.content_custom_3_param=yuppfastint&ads.ip=158.23.146.211&did=706609ab-56bc-49f2-817e-52ba0ff0a399&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=NEWS&ads.content_custom_1_param=FAST&ads.channel=1309&ads.channel_name=MathrubhumiNews&ads.language=MAL&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
+#EXTINF:-1 tvg-name="Asianet News" tvg-logo="https://dtil.tmsimg.com/assets/s142679_ld_h15_aa.png?lock=720x540" group-title="News",Asianet News
+https://cdn.pishow.tv/ott/live/1297/master.m3u8
 #EXTINF:-1 tvg-name="Big TV 24x7" tvg-logo="https://yt3.googleusercontent.com/blnfLkIGphkSPHfWy4SVOVyHlrWSAEn2pArAS5wdH7tYmXAFD4dVMGLtSmZr5R5CNl1d2cUuDw=s512-c-k-c0x00ffffff-no-rj" group-title="News",Big TV 24x7
 https://stream.ottlive.co.in/bigtvmalayalam/index.m3u8
 #EXTINF:-1 tvg-name="News18 Gujarati" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/News18%20Gujarati.png" group-title="News",News18 Gujarati
@@ -161,12 +181,18 @@ https://n18syndication.akamaized.net/bpk-tv/News18_Gujarati_NW18_MOB/output01/ma
 http://103.17.193.159:5001/live/620.m3u8
 #EXTINF:-1 tvg-name="Big TV 24x7" tvg-logo="https://yt3.googleusercontent.com/blnfLkIGphkSPHfWy4SVOVyHlrWSAEn2pArAS5wdH7tYmXAFD4dVMGLtSmZr5R5CNl1d2cUuDw=s512-c-k-c0x00ffffff-no-rj" group-title="News",Big TV 24x7
 https://d2gvyg6lvauoko.cloudfront.net/230226/bigtvmalyalam/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
+#EXTINF:-1 tvg-name="Reporter TV" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/REPORTER-logo_2000_X_1125-Transpharent.png" group-title="News",Reporter TV
+https://segment.yuppcdn.net/050522/reporter/playlist.m3u8
 #EXTINF:-1 tvg-name="Kairali News" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/KAIRALI-NEWS.png" group-title="News",Kairali News
 https://cdn.pishow.tv/ott/live/1469/master.m3u8
+#EXTINF:-1 tvg-name="Reporter TV" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/REPORTER-logo_2000_X_1125-Transpharent.png" group-title="News",Reporter TV
+https://cdn.pishow.tv/ott/live/1510/master.m3u8
 #EXTINF:-1 tvg-name="Big TV 24x7" tvg-logo="https://yt3.googleusercontent.com/blnfLkIGphkSPHfWy4SVOVyHlrWSAEn2pArAS5wdH7tYmXAFD4dVMGLtSmZr5R5CNl1d2cUuDw=s512-c-k-c0x00ffffff-no-rj" group-title="News",Big TV 24x7
 https://d2gvyg6lvauoko.cloudfront.net/230226/bigtvmalyalam/chunks.m3u8
 #EXTINF:-1 tvg-name="Kairali News" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/KAIRALI-NEWS.png" group-title="News",Kairali News
 http://103.17.193.159:5001/live/725.m3u8
+#EXTINF:-1 tvg-name="Mathrubhumi News" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Mathrubhumi%20News.png" group-title="News",Mathrubhumi News
+http://103.17.193.159:5001/live/780.m3u8
 #EXTINF:-1 tvg-name="Raj News Malayalam" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Raj%20News%20Malayalam.png" group-title="News",Raj News Malayalam
 http://103.17.193.159:5001/live/650.m3u8
 #EXTINF:-1 tvg-name="Kairali News" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/KAIRALI-NEWS.png" group-title="News",Kairali News

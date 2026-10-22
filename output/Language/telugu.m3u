@@ -1,4 +1,6 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
+#EXTINF:-1 tvg-name="etv" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/ETV%20Abhiruchi.png" group-title="Cooking",etv
+https://liveingesta318.cdnmedia.tv/tvetvlive/smil:rtmp01.smil/playlist.m3u8
 #EXTINF:-1 tvg-name="ETV" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/ETV%20Abhiruchi.png" group-title="Cooking",ETV
 https://cdn4.skygo.mn/live/disk1/ETV/HLSv3-FTA/ETV.m3u8
 #EXTINF:-1 tvg-name="ETV" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/ETV%20Abhiruchi.png" group-title="Cooking",ETV
@@ -9,14 +11,22 @@ https://vglivessai.akamaized.net/sg/v1/master/611d79b11b77e2f571934fd80ca1413453
 https://vglivessai.akamaized.net/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/4eda1f4a-c0ee-4273-adfe-17afc51977fc/playlist.m3u8?hdnts=st=1792630471~exp=1792652071~acl=!*/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/4eda1f4a-c0ee-4273-adfe-17afc51977fc/*!/payload/yupptvott_5_-1_27ada39d-7433-4a99-9f95-4677d7af0c7b_MX_158.23.146.211_yupptv_1_channel_7132_-1/*~data=yupptvott_5_-1_27ada39d-7433-4a99-9f95-4677d7af0c7b_MX_158.23.146.211_yupptv_1_channel_7132_-1~hmac=42b79dc57153e5ac7d547deda46441015d7a9da46ae22b99e50dba10ae1edb5b&ads.content_custom_3_param=yuppfastint&ads.ip=158.23.146.211&did=27ada39d-7433-4a99-9f95-4677d7af0c7b&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=ENTERTAINMENT&ads.content_custom_1_param=FAST&ads.channel=7132&ads.channel_name=TeluguOne&ads.language=TEL&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
 #EXTINF:-1 tvg-name="Telugu One" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN400058AF_20260311T004509SQUARE.png" group-title="Entertainment",Telugu One
 https://vglivessai.akamaized.net/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/4eda1f4a-c0ee-4273-adfe-17afc51977fc/playlist.m3u8?hdnts=st=1792630976~exp=1792652576~acl=!*/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/4eda1f4a-c0ee-4273-adfe-17afc51977fc/*!/payload/yupptvott_5_-1_7dc98b50-e574-45a6-a574-9b4e2331e9e0_MX_158.23.146.211_yupptv_1_channel_7132_-1/*~data=yupptvott_5_-1_7dc98b50-e574-45a6-a574-9b4e2331e9e0_MX_158.23.146.211_yupptv_1_channel_7132_-1~hmac=96b1c580f88cf2e24f7f767d7d7adc789320dacdbf8b8ae3e45cfc195d3d2f37&ads.content_custom_3_param=yuppfastint&ads.ip=158.23.146.211&did=7dc98b50-e574-45a6-a574-9b4e2331e9e0&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=ENTERTAINMENT&ads.content_custom_1_param=FAST&ads.channel=7132&ads.channel_name=TeluguOne&ads.language=TEL&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
+#EXTINF:-1 tvg-name="Telugu One" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN400058AF_20260311T004509SQUARE.png" group-title="Entertainment",Telugu One
+https://vglivessai.akamaized.net/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/4eda1f4a-c0ee-4273-adfe-17afc51977fc/playlist.m3u8?hdnts=st=1792627811~exp=1792649411~acl=!*/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/4eda1f4a-c0ee-4273-adfe-17afc51977fc/*!/payload/yupptvott_5_-1_12910a93-94a6-4fcb-98fc-9c8573c08604_US_172.182.226.129_yupptv_1_channel_7132_-1/*~data=yupptvott_5_-1_12910a93-94a6-4fcb-98fc-9c8573c08604_US_172.182.226.129_yupptv_1_channel_7132_-1~hmac=9ad5138f611a5a8dc522b6b7ef9f63f74b46fe56d87e4f24a40836a7b8184e69&ads.content_custom_3_param=yuppfastint&ads.ip=172.182.226.129&did=12910a93-94a6-4fcb-98fc-9c8573c08604&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=ENTERTAINMENT&ads.content_custom_1_param=FAST&ads.channel=7132&ads.channel_name=TeluguOne&ads.language=TEL&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
 #EXTINF:-1 tvg-name="Mahaa Max" tvg-logo="https://objectstorage.ap-mumbai-1.oraclecloud.com/p/7Eg7LPw1gBcncVDrfwf__7yyrg13awaU6DmMk4gutavGYZgoAuAziv8e0aSEdU4G/n/bmaqqlwez184/b/GTPL_CHANNEL_LOGO/o/gtpl/MAHAA+MAX+LOGO.png" group-title="Entertainment",Mahaa Max
 https://d1msejlow1t3l4.cloudfront.net/fta/mahaamax/playlist.m3u8?hdnts=st=1792604239~exp=1792625839~acl=!*/fta/mahaamax/*!/payload/yupptvott_5_-1_f3f46fd9-2849-41e5-8807-3b25167d495f_US_64.236.153.98_yupptv_1_channel_7052_-1/*~data=yupptvott_5_-1_f3f46fd9-2849-41e5-8807-3b25167d495f_US_64.236.153.98_yupptv_1_channel_7052_-1~hmac=501c480cee6ca0d8fb8761e80539c8ca60b5f851e612831e9a7382d57a5cbf3c&ads.content_custom_3_param=yuppfastint&ads.ip=64.236.153.98&did=f3f46fd9-2849-41e5-8807-3b25167d495f&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=ENTERTAINMENT&ads.content_custom_1_param=FAST&ads.channel=7052&ads.channel_name=MahaaMax&ads.language=TEL&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
 #EXTINF:-1 tvg-name="Mahaa Max" tvg-logo="https://objectstorage.ap-mumbai-1.oraclecloud.com/p/7Eg7LPw1gBcncVDrfwf__7yyrg13awaU6DmMk4gutavGYZgoAuAziv8e0aSEdU4G/n/bmaqqlwez184/b/GTPL_CHANNEL_LOGO/o/gtpl/MAHAA+MAX+LOGO.png" group-title="Entertainment",Mahaa Max
 https://d1msejlow1t3l4.cloudfront.net/fta/mahaamax/playlist.m3u8?hdnts=st=1792606689~exp=1792628289~acl=!*/fta/mahaamax/*!/payload/yupptvott_5_-1_a052dd33-db09-4114-85ef-34c6f3714914_US_64.236.153.98_yupptv_1_channel_7052_-1/*~data=yupptvott_5_-1_a052dd33-db09-4114-85ef-34c6f3714914_US_64.236.153.98_yupptv_1_channel_7052_-1~hmac=3bb3f713568fc8ed677129cc74f63f5a443641cdc97dae92abcf92c60b621d3e&ads.content_custom_3_param=yuppfastint&ads.ip=64.236.153.98&did=a052dd33-db09-4114-85ef-34c6f3714914&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=ENTERTAINMENT&ads.content_custom_1_param=FAST&ads.channel=7052&ads.channel_name=MahaaMax&ads.language=TEL&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
 #EXTINF:-1 tvg-name="Mahaa Max" tvg-logo="https://objectstorage.ap-mumbai-1.oraclecloud.com/p/7Eg7LPw1gBcncVDrfwf__7yyrg13awaU6DmMk4gutavGYZgoAuAziv8e0aSEdU4G/n/bmaqqlwez184/b/GTPL_CHANNEL_LOGO/o/gtpl/MAHAA+MAX+LOGO.png" group-title="Entertainment",Mahaa Max
 https://d1msejlow1t3l4.cloudfront.net/fta/mahaamax/playlist.m3u8?hdnts=st=1792608401~exp=1792630001~acl=!*/fta/mahaamax/*!/payload/yupptvott_5_-1_57ec228b-8bfd-4973-91ab-f678171f00e5_US_64.236.153.98_yupptv_1_channel_7052_-1/*~data=yupptvott_5_-1_57ec228b-8bfd-4973-91ab-f678171f00e5_US_64.236.153.98_yupptv_1_channel_7052_-1~hmac=a64a6791a3c604aea8da70ab30ebab7171abb55a797b7d1b31c5ca974ec151df&ads.content_custom_3_param=yuppfastint&ads.ip=64.236.153.98&did=57ec228b-8bfd-4973-91ab-f678171f00e5&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=ENTERTAINMENT&ads.content_custom_1_param=FAST&ads.channel=7052&ads.channel_name=MahaaMax&ads.language=TEL&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
+#EXTINF:-1 tvg-name="Mahaa Max" tvg-logo="https://objectstorage.ap-mumbai-1.oraclecloud.com/p/7Eg7LPw1gBcncVDrfwf__7yyrg13awaU6DmMk4gutavGYZgoAuAziv8e0aSEdU4G/n/bmaqqlwez184/b/GTPL_CHANNEL_LOGO/o/gtpl/MAHAA+MAX+LOGO.png" group-title="Entertainment",Mahaa Max
+https://d1msejlow1t3l4.cloudfront.net/fta/mahaamax/playlist.m3u8?hdnts=st=1792619796~exp=1792641396~acl=!*/fta/mahaamax/*!/payload/yupptvott_5_-1_1e948b4a-4fe8-499f-906d-e80cd15592b1_US_20.163.133.225_yupptv_1_channel_7052_-1/*~data=yupptvott_5_-1_1e948b4a-4fe8-499f-906d-e80cd15592b1_US_20.163.133.225_yupptv_1_channel_7052_-1~hmac=ef574bdd43cb927502995f19a22a3ea765627b82ded6f507a3a3e5ee27fec7be&ads.content_custom_3_param=yuppfastint&ads.ip=20.163.133.225&did=1e948b4a-4fe8-499f-906d-e80cd15592b1&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=ENTERTAINMENT&ads.content_custom_1_param=FAST&ads.channel=7052&ads.channel_name=MahaaMax&ads.language=TEL&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
+#EXTINF:-1 tvg-name="Telugu One (1080p)" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN400058AF_20260311T004509SQUARE.png" group-title="Entertainment",Telugu One (1080p)
+https://teluguone-yupptv.vgcdn.net/v1/019be9e3f04d1ea55784338b5c3e89/019be9e4474415fc60e93459e1e808/teluguone_2500k.m3u8
 #EXTINF:-1 tvg-name="Zee Telugu HD" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022S99J.png?lock=720x540" group-title="Entertainment",Zee Telugu HD
 https://d1rc86nwwc9fag.cloudfront.net/260723/smil:zeetelugu.smil/chunklist_b2628000.m3u8
+#EXTINF:-1 tvg-name="Mahaa Max (576p)" tvg-logo="https://objectstorage.ap-mumbai-1.oraclecloud.com/p/7Eg7LPw1gBcncVDrfwf__7yyrg13awaU6DmMk4gutavGYZgoAuAziv8e0aSEdU4G/n/bmaqqlwez184/b/GTPL_CHANNEL_LOGO/o/gtpl/MAHAA+MAX+LOGO.png" group-title="Entertainment",Mahaa Max (576p)
+https://cdn.pishow.tv/ott/live/1147/master.m3u8
 #EXTINF:-1 tvg-name="Star Maa HD" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/1759/1782290731759-h.jpg" group-title="Entertainment",Star Maa HD
 https://da86m1sqpm3o0.cloudfront.net/28072023/smil:starmaa1.smil/chunklist_b2628000.m3u8
 #EXTINF:-1 tvg-name="ETV Plus" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/ETV-plus-HD-Logo_2000_X_1125_Transpharent.png" group-title="Entertainment",ETV Plus
@@ -57,10 +67,12 @@ https://s6.hopslan.com/disneyX/index.m3u8
 https://dogus.daioncdn.net/ntv/ntv.m3u8?app=ntv_web
 #EXTINF:-1 tvg-name="NTV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Fashion_TV_logo.svg/960px-Fashion_TV_logo.svg.png" group-title="Lifestyle",NTV
 https://yuppmedtaorire.akamaized.net/v1/master/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/ntv_nim_https/110322/ntvdev/playlist.m3u8?hdnts=st=1792629806~exp=1792651406~acl=!*/v1/master/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/ntv_nim_https/110322/ntvdev/*!/payload/yupptvott_5_-1_ebf9b70d-f72d-4498-89ca-054a521bd1ed_MX_158.23.146.211_yupptv_1_channel_58_-1/*~data=yupptvott_5_-1_ebf9b70d-f72d-4498-89ca-054a521bd1ed_MX_158.23.146.211_yupptv_1_channel_58_-1~hmac=2f8cb440b91ec5f1a47557e7c10125b6416ab16aa7823762a44eab9017c0c57e&ads.content_custom_3_param=yuppfastint&ads.ip=158.23.146.211&did=ebf9b70d-f72d-4498-89ca-054a521bd1ed&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=NEWS&ads.content_custom_1_param=FAST&ads.channel=58&ads.channel_name=NTV&ads.language=TEL&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
+#EXTINF:-1 tvg-name="NTV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Fashion_TV_logo.svg/960px-Fashion_TV_logo.svg.png" group-title="Lifestyle",NTV
+http://103.17.193.159:5001/live/646.m3u8
+#EXTINF:-1 tvg-name="NTV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Fashion_TV_logo.svg/960px-Fashion_TV_logo.svg.png" group-title="Lifestyle",NTV
+http://yolomax.pro/live/A1U3S8XPVM58B23/iHeFx423Ac/76181.ts
 #EXTINF:-1 tvg-name="ETV Life" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/ETV_life-Logo_2000_X_1125_Transphrent.png" group-title="Lifestyle",ETV Life
 http://103.17.193.159:5001/live/570.m3u8
-#EXTINF:-1 tvg-name="ETV Cinema" tvg-logo="https://raw.githubusercontent.com/saeidrahmanbd/BDIX-IPTV/main/logos/etv-cinema.png" group-title="Movies",ETV Cinema
-http://yolomax.pro/live/A1U3S8XPVM58B23/iHeFx423Ac/1020218.ts
 #EXTINF:-1 tvg-name="Zee Cinemalu" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022ZEQ9.png?lock=720x540" group-title="Movies",Zee Cinemalu
 http://yolomax.pro/live/A1U3S8XPVM58B23/iHeFx423Ac/1019635.ts
 #EXTINF:-1 tvg-name="Zee Cinemalu" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022ZEQ9.png?lock=720x540" group-title="Movies",Zee Cinemalu
@@ -70,7 +82,11 @@ http://yolomax.pro/live/A1U3S8XPVM58B23/iHeFx423Ac/551765.ts
 #EXTINF:-1 tvg-name="ETV Cinema" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/ETV-cinema-HD-Logo_2000_X_1125_Transpharent.png" group-title="Movies",ETV Cinema
 https://yupplivegcpusa.yuppcdn.net/100823/smil:etvcinema.smil/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
 #EXTINF:-1 tvg-name="ETV Cinema" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/ETV-cinema-HD-Logo_2000_X_1125_Transpharent.png" group-title="Movies",ETV Cinema
+http://yolomax.pro/live/A1U3S8XPVM58B23/iHeFx423Ac/551755.ts
+#EXTINF:-1 tvg-name="ETV Cinema" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/ETV-cinema-HD-Logo_2000_X_1125_Transpharent.png" group-title="Movies",ETV Cinema
 http://103.17.193.159:5001/live/252.m3u8
+#EXTINF:-1 tvg-name="Zee Cinemalu" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022ZEQ9.png?lock=720x540" group-title="Movies",Zee Cinemalu
+http://yolomax.pro/live/A1U3S8XPVM58B23/iHeFx423Ac/1019636.ts
 #EXTINF:-1 tvg-name="ETV Music (1080p)" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/ETVMusic12.png" group-title="Music",ETV Music (1080p)
 https://cc-szivnms4rlah6.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-szivnms4rlah6/WWBI/Amagi/ETV_Music_IN/playlist.m3u8
 #EXTINF:-1 tvg-name="ETV Music" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/ETVMusic12.png" group-title="Music",ETV Music
@@ -105,8 +121,6 @@ https://d2gvyg6lvauoko.cloudfront.net/230226/bigtvmalyalam/playlist.m3u8?hdnts=s
 https://d2gvyg6lvauoko.cloudfront.net/230226/brknews/playlist.m3u8?hdnts=st=1792629840~exp=1792651440~acl=!*/230226/brknews/*!/payload/yupptvott_5_-1_e36fb4ed-5fc4-4e51-a9da-658f34ebe60c_MX_158.23.146.211_yupptv_1_channel_7106_-1/*~data=yupptvott_5_-1_e36fb4ed-5fc4-4e51-a9da-658f34ebe60c_MX_158.23.146.211_yupptv_1_channel_7106_-1~hmac=29f594c840140c56e51983e0a1f75a0a623cc8d887708c4a8dbcb3b8e9b557ba&ads.content_custom_3_param=yuppfastint&ads.ip=158.23.146.211&did=e36fb4ed-5fc4-4e51-a9da-658f34ebe60c&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=NEWS&ads.content_custom_1_param=FAST&ads.channel=7106&ads.channel_name=BRKNews&ads.language=TEL&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
 #EXTINF:-1 tvg-name="BRK News" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/brk-news.png" group-title="News",BRK News
 https://d2gvyg6lvauoko.cloudfront.net/230226/brknews/playlist.m3u8?hdnts=st=1792630549~exp=1792652149~acl=!*/230226/brknews/*!/payload/yupptvott_5_-1_5b8a9ff6-d488-4dda-97a3-4fb9062866f4_MX_158.23.146.211_yupptv_1_channel_7106_-1/*~data=yupptvott_5_-1_5b8a9ff6-d488-4dda-97a3-4fb9062866f4_MX_158.23.146.211_yupptv_1_channel_7106_-1~hmac=f461293cb23a723893b0b12348057080c6aa3e9d0d68df732139fdf2f7cc8d87&ads.content_custom_3_param=yuppfastint&ads.ip=158.23.146.211&did=5b8a9ff6-d488-4dda-97a3-4fb9062866f4&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=NEWS&ads.content_custom_1_param=FAST&ads.channel=7106&ads.channel_name=BRKNews&ads.language=TEL&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
-#EXTINF:-1 tvg-name="BRK News" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/brk-news.png" group-title="News",BRK News
-https://d2gvyg6lvauoko.cloudfront.net/230226/brknews/playlist.m3u8?hdnts=st=1792631054~exp=1792652654~acl=!*/230226/brknews/*!/payload/yupptvott_5_-1_0043757d-09aa-4092-8188-fd27babae5da_MX_158.23.146.211_yupptv_1_channel_7106_-1/*~data=yupptvott_5_-1_0043757d-09aa-4092-8188-fd27babae5da_MX_158.23.146.211_yupptv_1_channel_7106_-1~hmac=af698810951bb84e50712e4930dc2ad2644f72d79b4135ecd1234f75eaaead5a&ads.content_custom_3_param=yuppfastint&ads.ip=158.23.146.211&did=0043757d-09aa-4092-8188-fd27babae5da&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=NEWS&ads.content_custom_1_param=FAST&ads.channel=7106&ads.channel_name=BRKNews&ads.language=TEL&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
 #EXTINF:-1 tvg-name="ETV Telangana" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/ETV%20Telengana.png" group-title="News",ETV Telangana
 https://yupplivegcp1.yuppcdn.net/120723/smil:etvtelangana.smil/playlist.m3u8?hdnts=st=1792629807~exp=1792651407~acl=!*/120723/smil:etvtelangana.smil/*!/payload/yupptvott_5_-1_a7e78ff9-b13f-4094-80ae-7555b5da8a45_MX_158.23.146.211_yupptv_1_channel_2308_-1/*~data=yupptvott_5_-1_a7e78ff9-b13f-4094-80ae-7555b5da8a45_MX_158.23.146.211_yupptv_1_channel_2308_-1~hmac=92748ac656af36bacedb09b3190d65c1f9da12444d1fdd8acf9a2cbbf79a31a2&ads.content_custom_3_param=yuppfastint&ads.ip=158.23.146.211&did=a7e78ff9-b13f-4094-80ae-7555b5da8a45&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=NEWS&ads.content_custom_1_param=FAST&ads.channel=2308&ads.channel_name=ETVTelangana&ads.language=TEL&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
 #EXTINF:-1 tvg-name="ETV Telangana" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/ETV%20Telengana.png" group-title="News",ETV Telangana
@@ -123,30 +137,54 @@ https://yupplivegcp1.yuppcdn.net/120723/smil:tnews.smil/playlist.m3u8?hdnts=st=1
 https://mumbai-edge.smartplaytv.in/6TVTelugu/index.m3u8
 #EXTINF:-1 tvg-name="ABN Andhra Jyothi" group-title="News",ABN Andhra Jyothi
 http://103.17.193.159:5001/live/666.m3u8
+#EXTINF:-1 tvg-name="brk news" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/brk-news.png" group-title="News",brk news
+https://prodamdnewsencoding.akamaized.net/NBC_News_Digital/f_vert_brk_ohio_resident_evacuation_261021/1/abs/index.m3u8
+#EXTINF:-1 tvg-name="BRK News" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/brk-news.png" group-title="News",BRK News
+https://mumbai-edge.smartplaytv.in/BRKNEWS/index.m3u8
 #EXTINF:-1 tvg-name="TV9 Telugu" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/TV9%20Telugu1.png" group-title="News",TV9 Telugu
 https://dyjmyiv3bp2ez.cloudfront.net/pub-iotv9telcmjhcs/liveabr/playlist.m3u8
 #EXTINF:-1 tvg-name="NTV Telugu" tvg-logo="https://dtil.tmsimg.com/assets/s154897_ld_h15_aa.png?lock=720x540" group-title="News",NTV Telugu
 https://mumt01.tangotv.in/O5aw8Zn3NTVTELUGU/index.m3u8
+#EXTINF:-1 tvg-name="BRK News" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/brk-news.png" group-title="News",BRK News
+https://cdn.pishow.tv/ott/live/1037/master.m3u8
 #EXTINF:-1 tvg-name="HMTV (India) (720p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/HM%20TV.png" group-title="News",HMTV (India) (720p)
 https://cdn.pishow.tv/ott/live/280/master.m3u8
 #EXTINF:-1 tvg-name="NTV Telugu" tvg-logo="https://dtil.tmsimg.com/assets/s154897_ld_h15_aa.png?lock=720x540" group-title="News",NTV Telugu
 https://cdn.pishow.tv/ott/live/383/master.m3u8
 #EXTINF:-1 tvg-name="Sach Bedhadak" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Sach-Bedhadak_Transparent.png" group-title="News",Sach Bedhadak
 https://sbnews.nexcdn.online/sbnews/live/index.m3u8
+#EXTINF:-1 tvg-name="T News" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/T%20News.png" group-title="News",T News
+https://cdn.pishow.tv/ott/live/385/master.m3u8
+#EXTINF:-1 tvg-name="V6 News" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/V6%20News.png" group-title="News",V6 News
+https://cdn.pishow.tv/ott/live/389/master.m3u8
 #EXTINF:-1 tvg-name="NTV Telugu" tvg-logo="https://dtil.tmsimg.com/assets/s154897_ld_h15_aa.png?lock=720x540" group-title="News",NTV Telugu
 https://mumbai-edge.smartplaytv.in/NTVTelugu/index.m3u8
+#EXTINF:-1 tvg-name="T News" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/T%20News.png" group-title="News",T News
+https://mumbai-edge.smartplaytv.in/TNews/index.m3u8
 #EXTINF:-1 tvg-name="6 TV Telugu" tvg-logo="https://i.imgur.com/l3EcRnZ.png" group-title="News",6 TV Telugu
 https://yuppparoriglin.akamaized.net/181224/smil:6tv.smil/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
 #EXTINF:-1 tvg-name="Raj Pariwar" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/raj_pariwar_alpha_2000_X_1125_Transpharent.png" group-title="News",Raj Pariwar
 http://103.17.193.159:5001/live/533.m3u8
 #EXTINF:-1 tvg-name="TV9 Telugu" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/TV9%20Telugu1.png" group-title="News",TV9 Telugu
 http://103.17.193.159:5001/live/618.m3u8
+#EXTINF:-1 tvg-name="TV9 Telugu" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/TV9%20Telugu1.png" group-title="News",TV9 Telugu
+https://mumt04.tangotv.in/m18aqlK4TV9TELUGU/index.m3u8
+#EXTINF:-1 tvg-name="NTV Telugu" tvg-logo="https://dtil.tmsimg.com/assets/s154897_ld_h15_aa.png?lock=720x540" group-title="News",NTV Telugu
+https://yuppmedtaorire.akamaized.net/v1/master/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/ntv_nim_https/110322/ntv/playlist.m3u8
+#EXTINF:-1 tvg-name="ETV Telangana" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/ETV%20Telengana.png" group-title="News",ETV Telangana
+http://103.17.193.159:5001/live/630.m3u8
 #EXTINF:-1 tvg-name="Mojo TV" tvg-logo="https://upload.wikimedia.org/wikipedia/en/1/19/MOJO_TV_LOGO.png" group-title="News",Mojo TV
 https://mumt07.tangotv.in/zHjX9OFlMOJOTV/index.m3u8
+#EXTINF:-1 tvg-name="TV9 Telugu" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/TV9%20Telugu1.png" group-title="News",TV9 Telugu
+https://streams.tangotv.in/TV9TELUGU/ORIGIN/index.m3u8
+#EXTINF:-1 tvg-name="V6 News" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/V6%20News.png" group-title="News",V6 News
+https://mumt05.tangotv.in/87NeALx2V6NEWS/index.m3u8
 #EXTINF:-1 tvg-name="ETV (Guadeloupe) (1080p)" group-title="Other",ETV (Guadeloupe) (1080p)
 https://edge12.vedge.infomaniak.com/livecast/ik:etvgp/manifest.m3u8
 #EXTINF:-1 tvg-name="Calvary TV" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Calvary.png" group-title="Other",Calvary TV
 https://cdn.pishow.tv/ott/live/963/master.m3u8
+#EXTINF:-1 tvg-name="ETV (Estonia) (720p)" group-title="Other",ETV (Estonia) (720p)
+https://sb.err.ee/live/etv.m3u8
 #EXTINF:-1 tvg-name="SVBC Sri Venkateswara Bhakti Channel" tvg-logo="https://dtil.tmsimg.com/assets/s143889_ld_h9_ab.png?lock=720x540" group-title="Religious",SVBC Sri Venkateswara Bhakti Channel
 https://player.mslivestream.net/telugu/5d076e5c3d34cb8bb08e54a4bb7e223e.sdp/playlist.m3u8
 #EXTINF:-1 tvg-name="SVBC Tamil" tvg-logo="http://jenohdtv.gq/wp-content/uploads/2019/11/SVBC-Tamil.png" group-title="Religious",SVBC Tamil
@@ -179,6 +217,8 @@ https://cdn.pishow.tv/ott/live/957/master.m3u8
 https://cdn.pishow.tv/ott/live/959/master.m3u8
 #EXTINF:-1 tvg-name="Nireekshana TV" tvg-logo="https://i.imgur.com/nGJv6QR.png" group-title="Religious",Nireekshana TV
 https://cdn.pishow.tv/ott/live/965/master.m3u8
+#EXTINF:-1 tvg-name="CVR OM Spiritual" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/CVR_OM_Spiritual.png" group-title="Religious",CVR OM Spiritual
+https://yuppnimrestreammum.akamaized.net/181224/smil:cvrom1.smil/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
 #EXTINF:-1 tvg-name="Chhaya Chitram Telugu" tvg-logo="https://papaji.freetvindia.com/media/channels/Chhaya_Chitram_Telugu.png" group-title="Religious",Chhaya Chitram Telugu
 https://mumt04.tangotv.in/m18aqlK4CHHAYACHITRAMTELUGU/index.m3u8
 #EXTINF:-1 tvg-name="Nireekshana TV" tvg-logo="https://i.imgur.com/nGJv6QR.png" group-title="Religious",Nireekshana TV

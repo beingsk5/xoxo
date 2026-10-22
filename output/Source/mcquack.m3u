@@ -5,6 +5,8 @@ http://stream.mcquack.net/149/index.m3u8
 http://stream.mcquack.net/114/index.m3u8
 #EXTINF:-1 tvg-name="Investigation Discovery (Russia) (1080p)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/InvestigationDiscoveryLogo2020.svg/960px-InvestigationDiscoveryLogo2020.svg.png" group-title="Documentary",Investigation Discovery (Russia) (1080p)
 http://stream.mcquack.net/205/index.m3u8
+#EXTINF:-1 tvg-name="National Geographic" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/3329/1786019023329-h.jpg" group-title="Documentary",National Geographic
+http://stream.mcquack.net/116/index.m3u8
 #EXTINF:-1 tvg-name="National Geographic HD" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/3329/1786019023329-h.jpg" group-title="Documentary",National Geographic HD
 http://stream.mcquack.net/116/tracks-v1a1/mono.ts.m3u8
 #EXTINF:-1 tvg-name="Investigation Discovery HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/InvestigationDiscoveryLogo2020.svg/960px-InvestigationDiscoveryLogo2020.svg.png" group-title="Documentary",Investigation Discovery HD
@@ -27,3 +29,5 @@ http://stream.mcquack.net/131/index.m3u8
 http://stream.mcquack.net/149/tracks-v1a1/mono.ts.m3u8
 #EXTINF:-1 tvg-name="Travel XP HD" group-title="Other",Travel XP HD
 http://stream.mcquack.net/451/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 tvg-name="tv 100" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/TV_100.png" group-title="Other",tv 100
+http://stream.mcquack.net/100/tracks-v1a1/mono.ts.m3u8?ads=1&amp;filter.tracks=v1a1

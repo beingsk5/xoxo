@@ -215,8 +215,12 @@ https://s5.mexside.net:1936/clientetv/clientetv/playlist.m3u8
 https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index_5.m3u8
 #EXTINF:-1 tvg-name="dw" group-title="News",dw
 http://103.17.193.159:5001/live/496.m3u8
+#EXTINF:-1 tvg-name="News7 Tamil" group-title="News",News7 Tamil
+http://103.17.193.159:5001/live/673.m3u8
 #EXTINF:-1 tvg-name="TV 5 News" group-title="News",TV 5 News
 http://103.17.193.159:5001/live/668.m3u8
+#EXTINF:-1 tvg-name="VTV Gujarati" group-title="News",VTV Gujarati
+http://103.17.193.159:5001/live/642.m3u8
 #EXTINF:-1 tvg-name="Zee MP Chattisgarh" group-title="News",Zee MP Chattisgarh
 http://103.17.193.159:5001/live/658.m3u8
 #EXTINF:-1 tvg-name="Zee Punjab Haryana HP" group-title="News",Zee Punjab Haryana HP
@@ -243,6 +247,8 @@ https://pb-k9ikw6ov8z4qi.akamaized.net/American_Pickers_by_History.m3u8
 https://d3f088nnrrvkwf.cloudfront.net/v1/amc_anime_x_hidive_1/samsungheadend_us/latest/main/hls/playlist.m3u8
 #EXTINF:-1 tvg-name="Baby Shark TV (CA)" group-title="Other",Baby Shark TV (CA)
 https://newidco-babysharktv-1-ca.lg.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Baby Shark TV (GB)" group-title="Other",Baby Shark TV (GB)
+https://newidco-babysharktv-1-gb.lg.wurl.tv/playlist.m3u8
 #EXTINF:-1 tvg-name="Backstage (1080p) [Geo-blocked]" group-title="Other",Backstage (1080p) [Geo-blocked]
 https://fuse-backstage-xumo.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-name="Bark TV (US)" group-title="Other",Bark TV (US)
@@ -259,6 +265,10 @@ https://pb-0ix3l1oxmg1fj.akamaized.net/playlist.m3u8
 https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/22d13e33-8705-40e8-9809-4e80aa795f15/manifest.m3u8?hdnts=st=1792352731~exp=1792374331~acl=!*/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/22d13e33-8705-40e8-9809-4e80aa795f15/*!/payload/yupptvott_5_-1_ef94d6c1-63e4-49cb-93bd-2bf7ef008adb_US_20.65.227.4_yupptv_1_channel_6604_-1/*~data=yupptvott_5_-1_ef94d6c1-63e4-49cb-93bd-2bf7ef008adb_US_20.65.227.4_yupptv_1_channel_6604_-1~hmac=4c533c743a8fee865bf82a0e54963033630f98e8635e070ff9f5e24dd0854fce&ads.content_custom_3_param=yuppfastint&ads.ip=20.65.227.4&did=ef94d6c1-63e4-49cb-93bd-2bf7ef008adb&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=ENTERTAINMENT&ads.content_custom_1_param=FAST&ads.channel=6604&ads.channel_name=BOLLYWOOD4U&ads.language=HIN&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
 #EXTINF:-1 tvg-name="BOLLYWOOD 4U" group-title="Other",BOLLYWOOD 4U
 https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/22d13e33-8705-40e8-9809-4e80aa795f15/manifest.m3u8?hdnts=st=1792409432~exp=1792431032~acl=!*/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/22d13e33-8705-40e8-9809-4e80aa795f15/*!/payload/yupptvott_5_-1_c7436d4a-b25c-4dc7-910e-d104768e13ff_US_172.212.151.227_yupptv_1_channel_6604_-1/*~data=yupptvott_5_-1_c7436d4a-b25c-4dc7-910e-d104768e13ff_US_172.212.151.227_yupptv_1_channel_6604_-1~hmac=082edd553956d4ba4b928f268318f24b88f43b1097dee95d4df2bf9b95afdd6c&ads.content_custom_3_param=yuppfastint&ads.ip=172.212.151.227&did=c7436d4a-b25c-4dc7-910e-d104768e13ff&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=ENTERTAINMENT&ads.content_custom_1_param=FAST&ads.channel=6604&ads.channel_name=BOLLYWOOD4U&ads.language=HIN&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
+#EXTINF:-1 tvg-name="BOLLYWOOD 4U" group-title="Other",BOLLYWOOD 4U
+https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/22d13e33-8705-40e8-9809-4e80aa795f15/manifest.m3u8?hdnts=st=1792581274~exp=1792602874~acl=!*/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/22d13e33-8705-40e8-9809-4e80aa795f15/*!/payload/yupptvott_5_-1_77f837f7-890e-4fd3-b8a1-cebd36c3dc8a_US_20.169.67.54_yupptv_1_channel_6604_-1/*~data=yupptvott_5_-1_77f837f7-890e-4fd3-b8a1-cebd36c3dc8a_US_20.169.67.54_yupptv_1_channel_6604_-1~hmac=a00b78680682ab1b7e154ed180da2743b59b13c09c068b57bff5522b9237a2ba&ads.content_custom_3_param=yuppfastint&ads.ip=20.169.67.54&did=77f837f7-890e-4fd3-b8a1-cebd36c3dc8a&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=ENTERTAINMENT&ads.content_custom_1_param=FAST&ads.channel=6604&ads.channel_name=BOLLYWOOD4U&ads.language=HIN&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
+#EXTINF:-1 tvg-name="BOLLYWOOD 4U" group-title="Other",BOLLYWOOD 4U
+https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/22d13e33-8705-40e8-9809-4e80aa795f15/manifest.m3u8?hdnts=st=1792608412~exp=1792630012~acl=!*/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/22d13e33-8705-40e8-9809-4e80aa795f15/*!/payload/yupptvott_5_-1_57ec228b-8bfd-4973-91ab-f678171f00e5_US_64.236.153.98_yupptv_1_channel_6604_-1/*~data=yupptvott_5_-1_57ec228b-8bfd-4973-91ab-f678171f00e5_US_64.236.153.98_yupptv_1_channel_6604_-1~hmac=577d43956398e58f986ca12575294ab1379d63d91f1ddf72957d875dfdf2ec88&ads.content_custom_3_param=yuppfastint&ads.ip=64.236.153.98&did=57ec228b-8bfd-4973-91ab-f678171f00e5&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=ENTERTAINMENT&ads.content_custom_1_param=FAST&ads.channel=6604&ads.channel_name=BOLLYWOOD4U&ads.language=HIN&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
 #EXTINF:-1 tvg-name="Bollywood HD" group-title="Other",Bollywood HD
 http://62.89.17.130:4451/play/a00h/index.m3u8
 #EXTINF:-1 tvg-name="Bondi Rescue (1080p) [Geo-blocked]" group-title="Other",Bondi Rescue (1080p) [Geo-blocked]
@@ -475,6 +485,8 @@ https://play-edge.itunes.apple.com/WebObjects/MZPlayLocal.woa/hls/subscription/p
 https://play-edge.itunes.apple.com/WebObjects/MZPlayLocal.woa/hls/subscription/playlist.m3u8?cc=US&svcId=tvs.vds.4105&a=6792833656&isExternal=true&brandId=tvs.sbd.4000&id=1461795587&l=en-US&aec=UHD
 #EXTINF:-1 tvg-name="webobjects" group-title="Other",webobjects
 https://play-edge.itunes.apple.com/WebObjects/MZPlayLocal.woa/hls/subscription/playlist.m3u8?cc=US&svcId=tvs.vds.4105&a=6777170798&isExternal=true&brandId=tvs.sbd.4000&id=1471145038&l=en-US&aec=UHD
+#EXTINF:-1 tvg-name="webobjects" group-title="Other",webobjects
+https://play-edge.itunes.apple.com/WebObjects/MZPlayLocal.woa/hls/subscription/playlist.m3u8?cc=US&svcId=tvs.vds.4105&a=6787904941&isExternal=true&brandId=tvs.sbd.4000&id=1438140646&l=en-US&aec=UHD
 #EXTINF:-1 tvg-name="Wild West TV (1080p) [Geo-blocked]" group-title="Other",Wild West TV (1080p) [Geo-blocked]
 https://pb-7m2kwpwgu3dqf.akamaized.net/playlist.m3u8
 #EXTINF:-1 tvg-name="World Poker Tour (1080p) [Geo-blocked]" group-title="Other",World Poker Tour (1080p) [Geo-blocked]
@@ -549,6 +561,8 @@ https://gsn-cinevault-80s-2-us.roku.wurl.tv/playlist.m3u8
 https://gsn-cinevault-westerns-2-us.roku.wurl.tv/playlist.m3u8
 #EXTINF:-1 tvg-name="group-title="Punjabi",Toronto 360" group-title="Other",group-title="Punjabi",Toronto 360
 http://toronto3.live247stream.com/toronto360/tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Baby Shark TV" group-title="Other",Baby Shark TV
+https://jmp2.uk/plu-60faffc3fbbc120007fc4376.m3u8
 #EXTINF:-1 tvg-name="Luxe Fireplace Vibes (1080p) [Geo-blocked]" group-title="Other",Luxe Fireplace Vibes (1080p) [Geo-blocked]
 https://pb-0yvknepz2ngjh.akamaized.net/playlist.m3u8
 #EXTINF:-1 tvg-name="Million Dollar Dream Home (1080p) [Geo-blocked]" group-title="Other",Million Dollar Dream Home (1080p) [Geo-blocked]
@@ -587,6 +601,8 @@ https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01412-xiaomiasia-zeetaas-xiaomi/pla
 https://cdn1.etbon.eus/etb2/index.m3u8
 #EXTINF:-1 tvg-name="ME24 Tamil" group-title="Other",ME24 Tamil
 https://stream.onecloudlive.in/orange/ME24TAMIL/index.m3u8
+#EXTINF:-1 tvg-name="webobjects" group-title="Other",webobjects
+https://play-edge.itunes.apple.com/WebObjects/MZPlayLocal.woa/hls/playlist.m3u8?cc=US&a=278349177&id=48724177&l=en-US&aec=HD
 #EXTINF:-1 tvg-name="Animation+ (1080p) [Geo-blocked]" group-title="Other",Animation+ (1080p) [Geo-blocked]
 https://pb-ioe9d0fpkd6pp.akamaized.net/playlist.m3u8
 #EXTINF:-1 tvg-name="Celebrity Name Game (1080p) [Geo-blocked]" group-title="Other",Celebrity Name Game (1080p) [Geo-blocked]
@@ -617,8 +633,6 @@ https://5fc584f3f19c9.streamlock.net/canal22/smil:canal22.smil/playlist.m3u8
 https://box.bbaria.net:8083/Nagorik_TV/video.m3u8
 #EXTINF:-1 tvg-name="10 HD" group-title="Other",10 HD
 https://i.mjh.nz/.r/10-nsw.m3u8
-#EXTINF:-1 tvg-name="ottliv" group-title="Other",ottliv
-https://xykt-fix.github.io/channel/ottliv-036/index.m3u8
 #EXTINF:-1 tvg-name="1.FM – Bombay Beats India Radio" group-title="Other",1.FM – Bombay Beats India Radio
 http://strm112.1.fm/bombaybeats_mobile_mp3
 #EXTINF:-1 tvg-name="Travel XP Hindi" group-title="Other",Travel XP Hindi
@@ -629,6 +643,8 @@ https://cl-2.backend.energeek.cl/bkp/egfan/mobile/index.m3u8?token=IPTVgh26
 https://livetv.streams.ovh:1936/paniktv/paniktv/playlist.m3u8
 #EXTINF:-1 tvg-name="Steiermark TV (1080p)" group-title="Other",Steiermark TV (1080p)
 https://h056.video-stream-hosting.de/easycast8-live/_definst_/mp4:livestreamhd4/playlist.m3u8?ref=
+#EXTINF:-1 tvg-name="Bollywood HD" group-title="Other",Bollywood HD
+http://45.159.94.49:8080/play/live.php?mac=00:1A:79:0F:46:C6&stream=869451&extension=ts
 #EXTINF:-1 tvg-name="MBC Bollywood" group-title="Other",MBC Bollywood
 http://93.184.10.248/MBCBollywood/index.m3u8
 #EXTINF:-1 tvg-name="Nat Geo Hindi" group-title="Other",Nat Geo Hindi
@@ -653,12 +669,8 @@ http://103.17.193.159:5001/live/573.m3u8
 http://103.17.193.159:5001/live/575.m3u8
 #EXTINF:-1 tvg-name="Discovery Telugu" group-title="Other",Discovery Telugu
 http://103.17.193.159:5001/live/576.m3u8
-#EXTINF:-1 tvg-name="Enter 10 Bangla" group-title="Other",Enter 10 Bangla
-http://yolomax.pro/live/A1U3S8XPVM58B23/iHeFx423Ac/510484.ts
 #EXTINF:-1 tvg-name="History 18 Telugu" group-title="Other",History 18 Telugu
 http://yolomax.pro/live/A1U3S8XPVM58B23/iHeFx423Ac/551759.ts
-#EXTINF:-1 tvg-name="The Q India" group-title="Other",The Q India
-https://amg1-i.akamaihd.net/hls/live/784034/Q001/playlist.m3u8?__nn__=5606168722001&hdnea=st=1566232200~exp=1566235800~acl=/hls/live/784034/Q001/*~hmac=4de929fdc0ee53199a11237ee75a695383a82a42623fa92c1376493e5fc91d7b
 #EXTINF:-1 tvg-name="Urdu 1" group-title="Other",Urdu 1
 http://yolomax.pro/live/A1U3S8XPVM58B23/iHeFx423Ac/63108.ts
 #EXTINF:-1 tvg-name="360 HD" group-title="Other",360 HD
@@ -667,6 +679,8 @@ http://185.221.213.254/live/stream112.php?q=h0c5Eyuek0CppzJQmzPiyBmI9DfhNnGVuNxz
 https://acceso.mediosdecostarica.com:3638/live/360rftvcrlive.m3u8
 #EXTINF:-1 tvg-name="BNR Nieuwsradio (720p) [Geo-blocked]" group-title="Other",BNR Nieuwsradio (720p) [Geo-blocked]
 https://bnr-cache-cdp.triple-it.nl/studio/index.m3u8
+#EXTINF:-1 tvg-name="Bollywood HD" group-title="Other",Bollywood HD
+http://185.221.213.254/live/stream112.php?q=h0c5Eyuek0CppzJQmzPiyBmI9DfhNnGVuNxzdYNOfd9ssyKJuQoiDQFde-j43g82TglQ6QupvsjzmaF14fmDpTACWFDWkqFBmkC3oLinlBk
 #EXTINF:-1 tvg-name="Bollywood HD orig" group-title="Other",Bollywood HD orig
 http://185.221.213.254/live/stream112.php?q=h0c5Eyuek0CppzJQmzPiyBmI9DfhNnGVuNxzdYNOfd-EeeZuSIwEhDAlo0Tul56Vp6CeiEb6jNbIs_OvxsxLFyHHSrtv1x3dWo7ORCoOukU
 #EXTINF:-1 tvg-name="Diaspora 24 [Geo-blocked]" group-title="Other",Diaspora 24 [Geo-blocked]
@@ -745,8 +759,6 @@ https://cdn-globecast.akamaized.net/live/eds/akaal_tv/hls1_smart_akaal/akaal_tv.
 https://freecast-lukentvlive.vgcdn.net/out/v1/a4f31f297fc5440f814bd2cffd77e689/index.m3u8
 #EXTINF:-1 tvg-name="TJK TV (1080p)" group-title="Sports",TJK TV (1080p)
 https://tjktv-live.tjk.org/tjktv.m3u8
-#EXTINF:-1 tvg-name="Golf + (1080p) [Geo-blocked]" group-title="Sports",Golf + (1080p) [Geo-blocked]
-http://tv.streambox.fr/live/testlivestream/testlivestream/49.m3u8
 #EXTINF:-1 tvg-name="F1 Channel (1080p) [Geo-blocked]" group-title="Sports",F1 Channel (1080p) [Geo-blocked]
 https://amg12058-c15studio-amg12058c1-lg-us-5787.playouts.now.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-name="Teletrak TV (720p)" group-title="Sports",Teletrak TV (720p)

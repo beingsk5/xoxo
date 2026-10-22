@@ -17,10 +17,14 @@ https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/ef4ea632b77a480ebd77106968aa99a9/in
 https://mumbai-edge.smartplaytv.in/ddodiya/index.m3u8
 #EXTINF:-1 tvg-name="MBC" tvg-logo="https://dtil.tmsimg.com/assets/s135691_ld_h15_aa.png?lock=720x540" group-title="General",MBC
 http://103.17.193.159:5001/live/631.m3u8
+#EXTINF:-1 tvg-name="Nandighosha TV" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/NANDIGHOS_LOGO_NEW-transparent.png" group-title="General",Nandighosha TV
+https://mumt05.tangotv.in/87NeALx2NANDIGHOSHATV/index.m3u8
 #EXTINF:-1 tvg-name="Tarang Music" tvg-logo="https://dtil.tmsimg.com/assets/s143926_ld_h15_aa.png?lock=720x540" group-title="Music",Tarang Music
 http://103.17.193.159:5001/live/751.m3u8
 #EXTINF:-1 tvg-name="Tarang Music" tvg-logo="https://dtil.tmsimg.com/assets/s143926_ld_h15_aa.png?lock=720x540" group-title="Music",Tarang Music
 https://livetv.tarangplus.in/tarangmusic-origin/live/playlist.m3u8
+#EXTINF:-1 tvg-name="Tarang Music" tvg-logo="https://dtil.tmsimg.com/assets/s143926_ld_h15_aa.png?lock=720x540" group-title="Music",Tarang Music
+http://yolomax.pro/live/A1U3S8XPVM58B23/iHeFx423Ac/1021515.ts
 #EXTINF:-1 tvg-name="Tarang Music" tvg-logo="https://raw.githubusercontent.com/saeidrahmanbd/BDIX-IPTV/main/logos/tarang-music.png" group-title="Music",Tarang Music
 http://yolomax.pro/live/A1U3S8XPVM58B23/iHeFx423Ac/343364.ts
 #EXTINF:-1 tvg-name="Argus News" tvg-logo="https://dtil.tmsimg.com/assets/s142650_ld_h15_aa.png?lock=720x540" group-title="News",Argus News
@@ -35,12 +39,18 @@ https://d1msejlow1t3l4.cloudfront.net/fta/kanaknews/playlist.m3u8?hdnts=st=17926
 https://d1msejlow1t3l4.cloudfront.net/fta/kanaknews/playlist.m3u8?hdnts=st=1792630553~exp=1792652153~acl=!*/fta/kanaknews/*!/payload/yupptvott_5_-1_27ada39d-7433-4a99-9f95-4677d7af0c7b_MX_158.23.146.211_yupptv_1_channel_6928_-1/*~data=yupptvott_5_-1_27ada39d-7433-4a99-9f95-4677d7af0c7b_MX_158.23.146.211_yupptv_1_channel_6928_-1~hmac=0a5480c16665639f85e44088fb1b8068d289037bc6070f1c5abdb5ccdda6e85e&ads.content_custom_3_param=yuppfastint&ads.ip=158.23.146.211&did=27ada39d-7433-4a99-9f95-4677d7af0c7b&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=NEWS&ads.content_custom_1_param=FAST&ads.channel=6928&ads.channel_name=KanakNews&ads.language=ORI&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
 #EXTINF:-1 tvg-name="Kanak News" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Kanak%20News.png" group-title="News",Kanak News
 https://d1msejlow1t3l4.cloudfront.net/fta/kanaknews/playlist.m3u8?hdnts=st=1792631058~exp=1792652658~acl=!*/fta/kanaknews/*!/payload/yupptvott_5_-1_7dc98b50-e574-45a6-a574-9b4e2331e9e0_MX_158.23.146.211_yupptv_1_channel_6928_-1/*~data=yupptvott_5_-1_7dc98b50-e574-45a6-a574-9b4e2331e9e0_MX_158.23.146.211_yupptv_1_channel_6928_-1~hmac=5dd6746adb69b177efd7fbf53363f3314abdd7d00fa6360e644ec08851db0b12&ads.content_custom_3_param=yuppfastint&ads.ip=158.23.146.211&did=7dc98b50-e574-45a6-a574-9b4e2331e9e0&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=NEWS&ads.content_custom_1_param=FAST&ads.channel=6928&ads.channel_name=KanakNews&ads.language=ORI&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
+#EXTINF:-1 tvg-name="Argus News" tvg-logo="https://dtil.tmsimg.com/assets/s142650_ld_h15_aa.png?lock=720x540" group-title="News",Argus News
+https://stream.ottlive.co.in/argus/index.m3u8
 #EXTINF:-1 tvg-name="News18 Odia" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/News18%20Odia.png" group-title="News",News18 Odia
 https://n18syndication.akamaized.net/bpk-tv/News18_Odia_NW18_MOB/output01/master.m3u8
 #EXTINF:-1 tvg-name="News18 Odia" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/News18%20Odia.png" group-title="News",News18 Odia
 http://103.17.193.159:5001/live/696.m3u8
+#EXTINF:-1 tvg-name="Kanak News" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Kanak%20News.png" group-title="News",Kanak News
+http://103.17.193.159:5001/live/718.m3u8
 #EXTINF:-1 tvg-name="Ekamra Bharat Odia" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Ekamra_Bharat_Odia.png" group-title="News",Ekamra Bharat Odia
 https://live.ekamraott.com/bharat/bharat/index.m3u8
+#EXTINF:-1 tvg-name="Argus News" tvg-logo="https://dtil.tmsimg.com/assets/s142650_ld_h15_aa.png?lock=720x540" group-title="News",Argus News
+https://mumt05.tangotv.in/87NeALx2ARGUSNEWS/index.m3u8
 #EXTINF:-1 tvg-name="Prarthana Life" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Prarthana_Life.png" group-title="Other",Prarthana Life
 https://livetv.tarangplus.in/prarthana-origin/live/playlist.m3u8
 #EXTINF:-1 tvg-name="Prarthana Life" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Prarthana_Life.png" group-title="Other",Prarthana Life
