@@ -203,14 +203,21 @@ _FOREIGN_NAME_RE = re.compile(
     r"(?<![a-z])(?:"
     r"russia(?:n)?|paraguay|korea|italy|italian|german(?:y)?|czech|"
     r"france|french|poland|polish|latin(?:\s+america)?|america(?:n)?s?|"
-    r"united\s+states|united\s+kingdom|usa|uk|canada|australia|europe|"
-    r"turkey|turkish|azerbaijan|japan|hong[\s-]*kong|china|chinese|"
+    r"united\s+states|united\s+kingdom|us(?:a)?|uk|canada|australia|europe|"
+    r"turkey|turkish|turkiye|azerbaijan|japan|hong[\s-]*kong|china|chinese|"
     r"singapore|malaysia|vietnam|indonesia|thailand|philip(?:pines)?|"
     r"nigeria|ghana|kenya|africa|spain|spanish|portugal|netherlands|"
     r"dutch|belgium|sweden|norway|denmark|finland|greece|israel|"
     r"lebanon|saudi|qatar|kuwait|oman|bahrain|uae|dubai|emirates|"
     r"egypt|morocco|pakistan|bangladesh|nepal|sri[\s-]*lanka|afghan|"
-    r"arabic|taiwan|bronx|brooklyn|manhattan|latino"
+    r"arabic|taiwan|bronx|brooklyn|manhattan|latino|"
+    # Shipped junk + common list feeds not yet covered: (Mexico)/(Croatia)
+    # National Geographic, TLC (Hungary), Travel XP (DE/FR/EU), Bark TV
+    # (US), Baby Shark TV (CA/GB), Mercy TV (Sierra Leone), turkiye.
+    r"mexico|croatia|colombia|estonia|hungary|romania|serbia|bulgaria|"
+    r"slovakia|slovenia|ukraine|argentina|brazil|chile|peru|ecuador|"
+    r"venezuela|bolivia|guadeloupe|sierra\s+leone|asia|"
+    r"ca|de|fr|gb|it|eu"     # two-letter country codes in "(US)"/"(DE)" parens
     r")(?![a-z])",
     re.IGNORECASE,
 )
@@ -443,6 +450,10 @@ class LanguageScraper:
 
         log.info(f"[{self.language}] {len(channels)} channels in list")
         self._build_name_index(channels)
+        # The store predates gate hardenings: re-run today's name gates over
+        # restored rows so foreign/short-name junk can't launder through the
+        # resume path (drops reopen queries below via _dropped_keys).
+        self._drop_stored_junk(result)
         self._ott_seeds = load_ott_platforms()
         if self._ott_seeds:
             log.info(f"[{self.language}] {len(self._ott_seeds)} MIB OTT search seeds")
@@ -1704,6 +1715,36 @@ class LanguageScraper:
             for ch in stored:
                 self._seen_urls.add(ch.url)
         return result
+
+    def _drop_stored_junk(self, result: ScrapeResult) -> None:
+        """Re-run the current name gates over store-restored channels.
+
+        Runs after `_build_name_index` (the gates need the index). The store
+        predates every gate hardening, so entries the fresh path rejects —
+        foreign feeds ("UTV (Czech Republic)", "Animal Planet (Russia)"),
+        geo names without proof, short generic names ("360" riding the
+        list's "News 360" through extras-dropping) — would otherwise
+        persist forever via resume. All named admissions go through
+        `_matches_language`, so re-running it here is exactly faithful to
+        today's fresh-accept rules. Unnamed rows are left alone: they were
+        admitted by URL proof and are covered by the load-time URL filters.
+        Dropped channels reopen their queries via `_dropped_keys`.
+        """
+        if not result.channels:
+            return
+
+        def keep(c: Channel) -> bool:
+            name = (c.name or "").strip()
+            if not name:
+                return True
+            return self._matches_language(name, c.url, c.extinf or "")
+
+        junk = [c for c in result.channels if not keep(c)]
+        if junk:
+            self._dropped_keys |= self._keys_of(junk)
+            result.channels = [c for c in result.channels if keep(c)]
+            log.info(f"[{self.language}] dropped {len(junk)} stored "
+                     f"channels failing current name gates (re-searching)")
 
     def _recheck_dead(self, result: ScrapeResult) -> None:
         """Health-probe stored links before trusting their cached verdict.

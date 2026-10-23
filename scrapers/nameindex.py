@@ -216,6 +216,12 @@ class NameIndex:
         # (1) token-set equality
         if N in self._tok:
             return True
+        if len(N) <= 1:
+            # One-word query: token equality above is all it gets. The
+            # extras-subset rules drop list words like "news"/"tv" from both
+            # sides, which merged the Indian list's "News 360" into a bare
+            # "360" query — that is how foreign 360/TV360 feeds rode in.
+            return False
         core_n = _core(N)
         # (2) allowed subset of discovered, leftover all in SAFE_EXTRAS
         #     <=> core(allowed) == core(N) and allowed <= N
@@ -243,7 +249,15 @@ class NameIndex:
         country paren before comparing).
         """
         k = norm_strict(name)
-        return bool(k) and k in self._strict
+        if not k or k not in self._strict:
+            return False
+        if " " not in k:
+            # Single-word strict key: norm_strict drops SAFE words on both
+            # sides, so strict("News 360") collapsed to "360" and a bare
+            # "360" query looked like verbatim equality. Demand the query's
+            # own normalized name exist in the list ("News 360" yes, no).
+            return norm_name(name) in self.norm
+        return True
 
     # ── URL matching (old `_url_matches_channel_list`) ──────────
 
