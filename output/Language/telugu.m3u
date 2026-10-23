@@ -1,10 +1,4 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
-#EXTINF:-1 tvg-name="etv" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/ETV%20Abhiruchi.png" group-title="Cooking",etv
-https://liveingesta318.cdnmedia.tv/tvetvlive/smil:rtmp01.smil/playlist.m3u8
-#EXTINF:-1 tvg-name="ETV" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/ETV%20Abhiruchi.png" group-title="Cooking",ETV
-https://cdn4.skygo.mn/live/disk1/ETV/HLSv3-FTA/ETV.m3u8
-#EXTINF:-1 tvg-name="ETV" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/ETV%20Abhiruchi.png" group-title="Cooking",ETV
-http://yolomax.pro/live/A1U3S8XPVM58B23/iHeFx423Ac/34443.ts
 #EXTINF:-1 tvg-name="Telugu One" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN400058AF_20260311T004509SQUARE.png" group-title="Entertainment",Telugu One
 https://vglivessai.akamaized.net/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/4eda1f4a-c0ee-4273-adfe-17afc51977fc/playlist.m3u8?hdnts=st=1792629759~exp=1792651359~acl=!*/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/4eda1f4a-c0ee-4273-adfe-17afc51977fc/*!/payload/yupptvott_5_-1_e36fb4ed-5fc4-4e51-a9da-658f34ebe60c_MX_158.23.146.211_yupptv_1_channel_7132_-1/*~data=yupptvott_5_-1_e36fb4ed-5fc4-4e51-a9da-658f34ebe60c_MX_158.23.146.211_yupptv_1_channel_7132_-1~hmac=a59e3555773d274df9beea485035b85036ecfd39a26df2bf6a895c7988d2f504&ads.content_custom_3_param=yuppfastint&ads.ip=158.23.146.211&did=e36fb4ed-5fc4-4e51-a9da-658f34ebe60c&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=ENTERTAINMENT&ads.content_custom_1_param=FAST&ads.channel=7132&ads.channel_name=TeluguOne&ads.language=TEL&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
 #EXTINF:-1 tvg-name="Telugu One" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN400058AF_20260311T004509SQUARE.png" group-title="Entertainment",Telugu One
@@ -37,8 +31,6 @@ http://103.17.193.159:5001/live/692.m3u8
 http://103.17.193.159:5001/live/629.m3u8
 #EXTINF:-1 tvg-name="Star Maa" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/1759/1782290731759-h.jpg" group-title="Entertainment",Star Maa
 http://yolomax.pro/live/A1U3S8XPVM58B23/iHeFx423Ac/1019613.ts
-#EXTINF:-1 tvg-name="Vanitha" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/VANITHA-Logo--without-BG_2000_X_1125.png" group-title="Entertainment",Vanitha
-http://103.17.193.159:5001/live/775.m3u8
 #EXTINF:-1 tvg-name="Vanitha TV" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/VANITHA-Logo--without-BG_2000_X_1125.png" group-title="Entertainment",Vanitha TV
 https://cdn.pishow.tv/ott/live/393/master.m3u8
 #EXTINF:-1 tvg-name="Vanitha TV" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/VANITHA-Logo--without-BG_2000_X_1125.png" group-title="Entertainment",Vanitha TV
@@ -57,12 +49,8 @@ https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/c89fa6d6f5864ac29670d6f91cb7e32a/in
 http://103.17.193.159:5001/live/706.m3u8
 #EXTINF:-1 tvg-name="Disney Channel (720p) [Geo-blocked]" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/1540/1785251571540-h.jpg" group-title="Kids",Disney Channel (720p) [Geo-blocked]
 http://212.5.144.156/disney/index.m3u8
-#EXTINF:-1 tvg-name="Disney Channel (Poland) HD (1080p)" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/1540/1785251571540-h.jpg" group-title="Kids",Disney Channel (Poland) HD (1080p)
-http://185.227.34.179:8080/disney-channel-hd/index.m3u8
 #EXTINF:-1 tvg-name="Disney Channel" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/1540/1785251571540-h.jpg" group-title="Kids",Disney Channel
 https://alex4528.site/k7m2q9x4b8nc/stream.ts?id=249
-#EXTINF:-1 tvg-name="Disney Channel (Germany) (576p)" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/1540/1785251571540-h.jpg" group-title="Kids",Disney Channel (Germany) (576p)
-https://s6.hopslan.com/disneyX/index.m3u8
 #EXTINF:-1 tvg-name="ntv" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Fashion_TV_logo.svg/960px-Fashion_TV_logo.svg.png" group-title="Lifestyle",ntv
 https://dogus.daioncdn.net/ntv/ntv.m3u8?app=ntv_web
 #EXTINF:-1 tvg-name="NTV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Fashion_TV_logo.svg/960px-Fashion_TV_logo.svg.png" group-title="Lifestyle",NTV
@@ -179,12 +167,10 @@ https://mumt07.tangotv.in/zHjX9OFlMOJOTV/index.m3u8
 https://streams.tangotv.in/TV9TELUGU/ORIGIN/index.m3u8
 #EXTINF:-1 tvg-name="V6 News" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/V6%20News.png" group-title="News",V6 News
 https://mumt05.tangotv.in/87NeALx2V6NEWS/index.m3u8
-#EXTINF:-1 tvg-name="ETV (Guadeloupe) (1080p)" group-title="Other",ETV (Guadeloupe) (1080p)
-https://edge12.vedge.infomaniak.com/livecast/ik:etvgp/manifest.m3u8
+#EXTINF:-1 tvg-name="etv hd" group-title="Other",etv hd
+https://livegeorouus.akamaized.net/100823/etvhd_2500/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
 #EXTINF:-1 tvg-name="Calvary TV" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Calvary.png" group-title="Other",Calvary TV
 https://cdn.pishow.tv/ott/live/963/master.m3u8
-#EXTINF:-1 tvg-name="ETV (Estonia) (720p)" group-title="Other",ETV (Estonia) (720p)
-https://sb.err.ee/live/etv.m3u8
 #EXTINF:-1 tvg-name="SVBC Sri Venkateswara Bhakti Channel" tvg-logo="https://dtil.tmsimg.com/assets/s143889_ld_h9_ab.png?lock=720x540" group-title="Religious",SVBC Sri Venkateswara Bhakti Channel
 https://player.mslivestream.net/telugu/5d076e5c3d34cb8bb08e54a4bb7e223e.sdp/playlist.m3u8
 #EXTINF:-1 tvg-name="SVBC Tamil" tvg-logo="http://jenohdtv.gq/wp-content/uploads/2019/11/SVBC-Tamil.png" group-title="Religious",SVBC Tamil
@@ -201,6 +187,8 @@ https://mumbai-edge.smartplaytv.in/BhakthiTv/index.m3u8
 https://mumbai-edge.smartplaytv.in/Divyavani/index.m3u8
 #EXTINF:-1 tvg-name="PMC Telugu" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/PMC_Telugu.png" group-title="Religious",PMC Telugu
 https://mumbai-edge.smartplaytv.in/PMC/index.m3u8
+#EXTINF:-1 tvg-name="Chhaya Chitram Telugu" tvg-logo="https://papaji.freetvindia.com/media/channels/Chhaya_Chitram_Telugu.png" group-title="Religious",Chhaya Chitram Telugu
+https://samitaorigin.tangotv.in/CHHAYACHITRAMTELUGU/SAMITAORIGIN/index.m3u8
 #EXTINF:-1 tvg-name="CVR OM Spiritual" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/CVR_OM_Spiritual.png" group-title="Religious",CVR OM Spiritual
 http://103.17.193.159:5001/live/772.m3u8
 #EXTINF:-1 tvg-name="divyavani tv" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Divya_Vani.png" group-title="Religious",divyavani tv

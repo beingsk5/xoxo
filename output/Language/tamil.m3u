@@ -9,10 +9,8 @@ http://103.17.193.159:5001/live/418.m3u8
 https://live.olidigital.in/olitv/olitv/index.m3u8
 #EXTINF:-1 tvg-name="Kalaignar Murasu" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Murasu%20TV.png" group-title="Entertainment",Kalaignar Murasu
 https://yuppmedtaorire.akamaized.net/v1/master/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/murasu_nim_https/050522/murasu/playlist.m3u8
-#EXTINF:-1 tvg-name="Mega" tvg-logo="https://dtil.tmsimg.com/assets/s143425_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Mega
-https://unlimited2-cl-isp.dps.live/mega/mega.smil/playlist.m3u8
-#EXTINF:-1 tvg-name="Mega TV (Paraguay) (1080p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Mega%20TV.png" group-title="Entertainment",Mega TV (Paraguay) (1080p)
-https://www.desde-paraguay.com/mega.m3u8
+#EXTINF:-1 tvg-name="Mega TV SD" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Mega%20TV.png" group-title="Entertainment",Mega TV SD
+https://ott3.streann.com/loadbalancer/services/public/channels-secure/5e62b96e2cdcfac2dd8885dd/playlist.m3u8
 #EXTINF:-1 tvg-name="Raj TV" tvg-logo="https://dtil.tmsimg.com/assets/s143715_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Raj TV
 https://livestream.rajtv.tv/hlslive/Admin/px08241087/live/RAJTV/master_1.m3u8
 #EXTINF:-1 tvg-name="Colors Tamil HD" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/Colors_Transparent_16069908-8494-4eb4-bd40-5afca3969088.png" group-title="Entertainment",Colors Tamil HD
@@ -21,8 +19,6 @@ https://da86m1sqpm3o0.cloudfront.net/28072023/smil:colorstamilhd11.smil/playlist
 https://da86m1sqpm3o0.cloudfront.net/28072023/smil:starvijayuk.smil/playlist.m3u8
 #EXTINF:-1 tvg-name="Vissa TV" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Vissa%20TV.png" group-title="Entertainment",Vissa TV
 http://103.17.193.159:5001/live/734.m3u8
-#EXTINF:-1 tvg-name="Mega" tvg-logo="https://dtil.tmsimg.com/assets/s143425_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Mega
-https://cdn15.live-tv.cloud/ua_infinitas_tv/mega-abr/playlist.m3u8
 #EXTINF:-1 tvg-name="Colors Tamil" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Colors%20Tamil%20HD.png" group-title="Entertainment",Colors Tamil
 http://yolomax.pro/live/A1U3S8XPVM58B23/iHeFx423Ac/72101.ts
 #EXTINF:-1 tvg-name="Discovery Tamil" tvg-logo="https://dtil.tmsimg.com/assets/s143012_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Discovery Tamil
@@ -41,8 +37,6 @@ http://dsmqbfez.pardns.com/live/6CTB9BKG/4Q7Y9DFW/33621.ts
 http://yolomax.pro/live/A1U3S8XPVM58B23/iHeFx423Ac/72120.ts
 #EXTINF:-1 tvg-name="Vendhar TV" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Vendhar-transparent.png" group-title="Entertainment",Vendhar TV
 https://cdn.pishow.tv/ott/live/1271/master.m3u8
-#EXTINF:-1 tvg-name="Canal 3 KMK TV (720p)" tvg-logo="https://i.imgur.com/RyYmyWy.png" group-title="Entertainment",Canal 3 KMK TV (720p)
-https://live20.bozztv.com/giatv/giatv-KMKTV/KMKTV/chunks.m3u8
 #EXTINF:-1 tvg-name="Colors Tamil" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Colors%20Tamil%20HD.png" group-title="Entertainment",Colors Tamil
 https://da86m1sqpm3o0.cloudfront.net/28072023/smil:colorstamilhd11.smil/chunklist_b2628000.m3u8
 #EXTINF:-1 tvg-name="Kalaignar Murasu" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Murasu%20TV.png" group-title="Entertainment",Kalaignar Murasu
@@ -93,14 +87,10 @@ https://mumt04.tangotv.in/m18aqlK4DDTAMIL/index.m3u8
 http://103.17.193.159:5001/live/726.m3u8
 #EXTINF:-1 tvg-name="NH Tamil Gold" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN400061DB_20260623T015348SQUARE.png" group-title="Movies",NH Tamil Gold
 https://d3arbp6l7f096k.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/pb-gv6wgpbb4mgwk/playlist.m3u8?ads.ads_cdn=cf&ads.app_domain=APP_DOMAIN&ads.cdn=cf
-#EXTINF:-1 tvg-name="NKTV" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG002Z1SEP.png?lock=720x540" group-title="Movies",NKTV
-https://d2gvyg6lvauoko.cloudfront.net/230226/nktv/playlist.m3u8?hdnts=st=1792629848~exp=1792651448~acl=!*/230226/nktv/*!/payload/yupptvott_5_-1_c7dfc58d-9e0f-4507-9824-7db0aada781b_MX_158.23.146.211_yupptv_1_channel_7083_-1/*~data=yupptvott_5_-1_c7dfc58d-9e0f-4507-9824-7db0aada781b_MX_158.23.146.211_yupptv_1_channel_7083_-1~hmac=f07e06701c7690bd3f02b33e2945bffdc88a5f8d34de7447a4aef01fba4b3b25&ads.content_custom_3_param=yuppfastint&ads.ip=158.23.146.211&did=c7dfc58d-9e0f-4507-9824-7db0aada781b&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=NEWS&ads.content_custom_1_param=FAST&ads.channel=7083&ads.channel_name=NKTV&ads.language=ASM&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
-#EXTINF:-1 tvg-name="NKTV" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG002Z1SEP.png?lock=720x540" group-title="Movies",NKTV
-https://d2gvyg6lvauoko.cloudfront.net/230226/nktv/playlist.m3u8?hdnts=st=1792630556~exp=1792652156~acl=!*/230226/nktv/*!/payload/yupptvott_5_-1_5f123068-fc53-445d-9921-e1f4d48ca0f9_MX_158.23.146.211_yupptv_1_channel_7083_-1/*~data=yupptvott_5_-1_5f123068-fc53-445d-9921-e1f4d48ca0f9_MX_158.23.146.211_yupptv_1_channel_7083_-1~hmac=ddce70707502b497c42833c1ab816ff96723f5e0ef43d100cec9511000a1ba74&ads.content_custom_3_param=yuppfastint&ads.ip=158.23.146.211&did=5f123068-fc53-445d-9921-e1f4d48ca0f9&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=NEWS&ads.content_custom_1_param=FAST&ads.channel=7083&ads.channel_name=NKTV&ads.language=ASM&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
-#EXTINF:-1 tvg-name="NKTV" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG002Z1SEP.png?lock=720x540" group-title="Movies",NKTV
-https://d2gvyg6lvauoko.cloudfront.net/230226/nktv/playlist.m3u8?hdnts=st=1792631062~exp=1792652662~acl=!*/230226/nktv/*!/payload/yupptvott_5_-1_232c4a97-444c-4176-9953-e2dde8d757b8_MX_158.23.146.211_yupptv_1_channel_7083_-1/*~data=yupptvott_5_-1_232c4a97-444c-4176-9953-e2dde8d757b8_MX_158.23.146.211_yupptv_1_channel_7083_-1~hmac=196f82a4aeb28624caa363c0aae21f2eda74efa188f17e6c62c577d47883f581&ads.content_custom_3_param=yuppfastint&ads.ip=158.23.146.211&did=232c4a97-444c-4176-9953-e2dde8d757b8&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=NEWS&ads.content_custom_1_param=FAST&ads.channel=7083&ads.channel_name=NKTV&ads.language=ASM&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
 #EXTINF:-1 tvg-name="Raj Digital Plus" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Raj%20Digital%20Plus.png" group-title="Movies",Raj Digital Plus
 https://livestream.rajtv.tv/hlslive/Admin/px08241087/live/RajTV_Digital_plus/master_1.m3u8
+#EXTINF:-1 tvg-name="raj digital plus" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Raj%20Digital%20Plus.png" group-title="Movies",raj digital plus
+http://line.gofast-tv.me/play/live.php?mac=00:1A:79:ef:28:c8&stream=155908&extension=m3u8
 #EXTINF:-1 tvg-name="Raj Digital Plus" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Raj%20Digital%20Plus.png" group-title="Movies",Raj Digital Plus
 http://dsmqbfez.pardns.com/live/6CTB9BKG/4Q7Y9DFW/33583.ts
 #EXTINF:-1 tvg-name="Raj Digital Plus" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Raj%20Digital%20Plus.png" group-title="Movies",Raj Digital Plus
@@ -127,8 +117,6 @@ https://mumbai-edge.smartplaytv.in/7SMusic/index.m3u8
 https://mumt03.tangotv.in/Dsly5z3H7SMUSIC/index.m3u8
 #EXTINF:-1 tvg-name="Raj Musix Kannada" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Raj%20Musix%20Kannada.png" group-title="Music",Raj Musix Kannada
 https://mumt01.tangotv.in/O5aw8Zn3RAJMUSIXKANDA/index.m3u8
-#EXTINF:-1 tvg-name="Malai Murasu TV (1080p) [Geo-blocked]" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/MalaiMurasu%20Seithigal.png" group-title="News",Malai Murasu TV (1080p) [Geo-blocked]
-https://amg17783-amg17783c1-amgplt0173.playout.now3.amagi.tv/playlist/amg17783-amg17783c1-amgplt0173/playlist.m3u8
 #EXTINF:-1 tvg-name="News Tamil" tvg-logo="https://i.imgur.com/pGA2R8l.png" group-title="News",News Tamil
 https://vglivessai.akamaized.net/ptnr-yupptv/title-News_Tamil/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/bc657abd-5bf5-4526-9038-d42bbb9ca249/index.m3u8?hdnts=st=1792630531~exp=1792652131~acl=!*/ptnr-yupptv/title-News_Tamil/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/bc657abd-5bf5-4526-9038-d42bbb9ca249/*!/payload/yupptvott_5_-1_126472c4-1841-439c-b284-7b22f75e83d8_MX_158.23.146.211_yupptv_1_channel_7096_-1/*~data=yupptvott_5_-1_126472c4-1841-439c-b284-7b22f75e83d8_MX_158.23.146.211_yupptv_1_channel_7096_-1~hmac=c783715fdda35563d972c88dbc11164889ac5e4149548c6be9fce2bc6c6ddb39&ads.content_custom_3_param=yuppfastint&ads.ip=158.23.146.211&did=126472c4-1841-439c-b284-7b22f75e83d8&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=NEWS&ads.content_custom_1_param=FAST&ads.channel=7096&ads.channel_name=NewsTamil&ads.language=TAM&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
 #EXTINF:-1 tvg-name="Polimer News" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Polimer%20News.png" group-title="News",Polimer News

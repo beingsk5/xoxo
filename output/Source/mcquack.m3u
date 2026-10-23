@@ -1,18 +1,14 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
 #EXTINF:-1 tvg-name="Nat Geo Wild" tvg-logo="https://img10.hotstar.com/image/upload/sources/r1/cms/prod/5075/1785250005075-h.jpg" group-title="Documentary",Nat Geo Wild
 http://stream.mcquack.net/149/index.m3u8
-#EXTINF:-1 tvg-name="Animal Planet (Russia) (1080p)" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/AnimalPlanetHD_Transparent_d36c0ee3-3e3f-4e0c-b3b2-23bfb3c3c2b0.png" group-title="Documentary",Animal Planet (Russia) (1080p)
-http://stream.mcquack.net/114/index.m3u8
-#EXTINF:-1 tvg-name="Investigation Discovery (Russia) (1080p)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/InvestigationDiscoveryLogo2020.svg/960px-InvestigationDiscoveryLogo2020.svg.png" group-title="Documentary",Investigation Discovery (Russia) (1080p)
-http://stream.mcquack.net/205/index.m3u8
 #EXTINF:-1 tvg-name="National Geographic" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/3329/1786019023329-h.jpg" group-title="Documentary",National Geographic
 http://stream.mcquack.net/116/index.m3u8
 #EXTINF:-1 tvg-name="National Geographic HD" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/3329/1786019023329-h.jpg" group-title="Documentary",National Geographic HD
 http://stream.mcquack.net/116/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 tvg-name="Animal Planet HD" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/AnimalPlanetHD_Transparent_d36c0ee3-3e3f-4e0c-b3b2-23bfb3c3c2b0.png" group-title="Documentary",Animal Planet HD
+http://stream.mcquack.net/114/tracks-v1a1/mono.ts.m3u8
 #EXTINF:-1 tvg-name="Investigation Discovery HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/InvestigationDiscoveryLogo2020.svg/960px-InvestigationDiscoveryLogo2020.svg.png" group-title="Documentary",Investigation Discovery HD
 http://stream.mcquack.net/205/tracks-v1a1/mono.ts.m3u8
-#EXTINF:-1 tvg-name="Discovery Channel (Russia) (1080p)" tvg-logo="https://dtil.tmsimg.com/assets/s159106_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Discovery Channel (Russia) (1080p)
-http://stream.mcquack.net/177/index.m3u8
 #EXTINF:-1 tvg-name="Discovery Channel HD" tvg-logo="https://dtil.tmsimg.com/assets/s159106_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Discovery Channel HD
 http://stream.mcquack.net/177/tracks-v1a1/mono.ts.m3u8
 #EXTINF:-1 tvg-name="Nick Jr" tvg-logo="https://img10.hotstar.com/image/upload/sources/r1/cms/prod/1730/1785252911730-h.jpg" group-title="Kids",Nick Jr
@@ -23,8 +19,12 @@ http://stream.mcquack.net/220/tracks-v1a1/mono.ts.m3u8
 http://stream.mcquack.net/168/index.m3u8
 #EXTINF:-1 tvg-name="Zoom" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/TIMESPLAY/LIVECHANNEL/6904ba4039f3b175376a61de/images/LOGO_HD/LOGO_HD_KN-eM9VvQ_ZoomTV1_1.png" group-title="Music",Zoom
 http://stream.mcquack.net/327/index.m3u8
+#EXTINF:-1 tvg-name="Zoom (Израиль)" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/TIMESPLAY/LIVECHANNEL/6904ba4039f3b175376a61de/images/LOGO_HD/LOGO_HD_KN-eM9VvQ_ZoomTV1_1.png" group-title="Music",Zoom (Израиль)
+http://stream.mcquack.net/377/index.m3u8
 #EXTINF:-1 tvg-name="Al Jazeera English HD (576p)" group-title="News",Al Jazeera English HD (576p)
 http://stream.mcquack.net/131/index.m3u8
+#EXTINF:-1 tvg-name="Travel XP" group-title="Other",Travel XP
+http://stream.mcquack.net/451/index.m3u8
 #EXTINF:-1 tvg-name="Nat Geo Wild HD" group-title="Other",Nat Geo Wild HD
 http://stream.mcquack.net/149/tracks-v1a1/mono.ts.m3u8
 #EXTINF:-1 tvg-name="Travel XP HD" group-title="Other",Travel XP HD

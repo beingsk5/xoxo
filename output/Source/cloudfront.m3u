@@ -1,6 +1,8 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
 #EXTINF:-1 tvg-name="StarPlus (United Kingdom) (576p)" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/2384/1782291852384-h.jpg" group-title="Entertainment",StarPlus (United Kingdom) (576p)
 https://d1rc86nwwc9fag.cloudfront.net/260723/starplusuk_2500/chunks.m3u8
+#EXTINF:-1 tvg-name="Zee Bangla Sonar (576p)" tvg-logo="https://i.imgur.com/zTGTWa8.png" group-title="Entertainment",Zee Bangla Sonar (576p)
+https://d1g8wgjurz8via.cloudfront.net/bpk-tv/ColorsHD/default/ColorsHD.m3u8
 #EXTINF:-1 tvg-name="we" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/We%20TV.png" group-title="Movies",we
 https://d2pnr7z8mre86q.cloudfront.net/WE_IFB_9/dash/manifest.mpd
 #EXTINF:-1 tvg-name="we" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/We%20TV.png" group-title="Movies",we
@@ -11,6 +13,8 @@ https://d2pnr7z8mre86q.cloudfront.net/WE_IFB_5/dash/manifest.mpd
 https://d2pnr7z8mre86q.cloudfront.net/WE_IFB_11/dash/manifest.mpd
 #EXTINF:-1 tvg-name="we" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/We%20TV.png" group-title="Movies",we
 https://d2pnr7z8mre86q.cloudfront.net/WE_IFB_9/hls/index.m3u8
+#EXTINF:-1 tvg-name="Zee Cinema (576p)" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022HVX3.png?lock=720x540" group-title="Movies",Zee Cinema (576p)
+https://d1g8wgjurz8via.cloudfront.net/bpk-tv/NGCHD/default/NGCHD.m3u8
 #EXTINF:-1 tvg-name="Zoom" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/TIMESPLAY/LIVECHANNEL/6904ba4039f3b175376a61de/images/LOGO_HD/LOGO_HD_KN-eM9VvQ_ZoomTV1_1.png" group-title="Music",Zoom
 https://d3p8ecnk6t4t73.cloudfront.net/scheduler/scheduleMaster/316.m3u8
 #EXTINF:-1 tvg-name="CNN International" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/cnn-us.png" group-title="News",CNN International
@@ -19,22 +23,10 @@ https://ds2c506obo7m8.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a
 https://d3bp6dwmpbdajl.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-ury0meh5m4nzm/index.m3u8
 #EXTINF:-1 tvg-name="public tv(top tv /karnataka news 24x7)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/News%2024.png" group-title="News",public tv(top tv /karnataka news 24x7)
 https://d9quh89lh7dtw.cloudfront.net/public-output/index.m3u8
-#EXTINF:-1 tvg-name="CNA (Singapore) (1080p) [Geo-blocked]" group-title="News",CNA (Singapore) (1080p) [Geo-blocked]
-https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index.m3u8
 #EXTINF:-1 tvg-name="Omroep Zeeland" group-title="News",Omroep Zeeland
 http://d3isaxd2t6q8zm.cloudfront.net/live/omroepzeeland/tv/index.m3u8
 #EXTINF:-1 tvg-name="ZEE HINDUSTAN" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Zee_Bharat_2025.svg/960px-Zee_Bharat_2025.svg.png" group-title="News",ZEE HINDUSTAN
 https://d1hp2yai3k4ork.cloudfront.net/index_4.m3u8
-#EXTINF:-1 tvg-name="ANIME x HIDIVE (720p) [Geo-blocked]" group-title="Other",ANIME x HIDIVE (720p) [Geo-blocked]
-https://d3f088nnrrvkwf.cloudfront.net/v1/amc_anime_x_hidive_1/samsungheadend_us/latest/main/hls/playlist.m3u8
-#EXTINF:-1 tvg-name="Bark TV (US)" group-title="Other",Bark TV (US)
-https://dapdwco2fkcoa.cloudfront.net/hls/barkt.m3u8?ads.xumo_channelId=88887756&ads.xumo_streamId=88887756&ads.csid=vidaa_usca_triplebmediabarktv_ssai&ads.caid=TripleBMediaBarkTV&ads.appName=%7BADS.APP_NAME%7D&ads.appVersion=1&ads._fw_app_bundle=%7BADS.APP_BUNDLE%7D&ads._fw_content_category=IAB1-7&ads._fw_content_genre=television&ads._fw_content_language=en&ads._fw_content_rating=tv-pg&ads._fw_deviceMake=%7BADS.BRAND_NAME%7D&ads._fw_device_model=%7BADS.DEVICE_OSV%7D&ads._fw_devicetype=%7BADS.DEVICE_TYPE%7D&ads._fw_coppa=0&ads._fw_gdpr_consent=%7BADS.GDPR_CONSENT%7D&ads._fw_gdpr=%7BADS.GDPR%7D&ads._fw_is_lat=%7BADS.DNT%7D&ads._fw_us_privacy=%7BADS.US_PRIVACY%7D&ads._fw_h_x_country=%7BADS.DEVICE_COUNTRY%7D&ads._fw_player_width=%7BADS.W%7D&ads._fw_player_height=%7BADS.H%7D&ads.vauth=%7BADS.VAUTH%7D&ads.xumo_contentId=4222&ads.xumo_contentName=TripleBMediaBarkTV&ads.xumo_ifa=%7BADS.IFA%7D&ads.xumo_ifaType=%7BADS.IFA_TYPE%7D&ads.xumo_providerId=4222&ads.xumo_providerName=TripleBMediaBarkTV&ads.client_section=tripleb_barktv&ads.vidaa_providername=tripleb&ads._fw_app_store_url=%7BADS.APP_STORE_URL%7D&ads.vidaa_ads_param=1188362017&ads.vidaa_ads_contentType=600007&ads.vidaa_ads_contentId=9606
-#EXTINF:-1 tvg-name="prod" group-title="Other",prod
-https://dq1c55erlhlb2.cloudfront.net/out/v1/prod-mtai-live-shared/prod_mta1_world_main/prod_mta1_world_main-origin-v1/index-hls.m3u8
-#EXTINF:-1 tvg-name="Real Crime (1080p) [Geo-blocked]" group-title="Other",Real Crime (1080p) [Geo-blocked]
-https://d1qznhvm4vjve7.cloudfront.net/playlist.m3u8
-#EXTINF:-1 tvg-name="WSOC Charlotte (1080p) [Geo-blocked]" group-title="Other",WSOC Charlotte (1080p) [Geo-blocked]
-https://d1q60ra9vxbqm1.cloudfront.net/playlist.m3u8
 #EXTINF:-1 tvg-name="sant wani" group-title="Other",sant wani
 https://d1msejlow1t3l4.cloudfront.net/fta/santwani/playlist.m3u8
 #EXTINF:-1 tvg-name="DD Sports" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Sports.png" group-title="Sports",DD Sports

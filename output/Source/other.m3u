@@ -3,18 +3,10 @@
 http://45.132.87.69:8080/cartoon_network/index.m3u8
 #EXTINF:-1 tvg-name="Cartoon Network" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_2010_logo.svg/960px-Cartoon_Network_2010_logo.svg.png" group-title="Animation",Cartoon Network
 http://5.188.159.128:8070/Cartoon_Network/tracks-v1a1/mono.m3u8
-#EXTINF:-1 tvg-name="Discovery Turbo (United States) (720p)" tvg-logo="https://dtil.tmsimg.com/assets/s159108_ld_h15_aa.png?lock=720x540" group-title="Auto",Discovery Turbo (United States) (720p)
-http://41.205.93.154/ESPNNEWS/index.m3u8
 #EXTINF:-1 tvg-name="food food tv" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Food%20Food.png" group-title="Cooking",food food tv
 http://23.237.104.106:8080/USA_FOOD_NETWORK/tracks-v1a1/mono.m3u8
-#EXTINF:-1 tvg-name="National Geographic (Croatia) (1080p)" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/3329/1786019023329-h.jpg" group-title="Documentary",National Geographic (Croatia) (1080p)
-http://176.61.157.250/NationalGeographic/index.m3u8
-#EXTINF:-1 tvg-name="National Geographic (Mexico) (1080p)" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/3329/1786019023329-h.jpg" group-title="Documentary",National Geographic (Mexico) (1080p)
-http://138.121.15.230:9002/NAT-GEO/index.m3u8
 #EXTINF:-1 tvg-name="National Geographic (720p)" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/3329/1786019023329-h.jpg" group-title="Documentary",National Geographic (720p)
 http://212.5.144.156:8080/natgeo/index.m3u8
-#EXTINF:-1 tvg-name="Animal Planet Latin America HD (720p) [Geo-blocked]" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/AnimalPlanetHD_Transparent_d36c0ee3-3e3f-4e0c-b3b2-23bfb3c3c2b0.png" group-title="Documentary",Animal Planet Latin America HD (720p) [Geo-blocked]
-http://15.204.246.24:8080/AnimalPlanetHD/index.m3u8
 #EXTINF:-1 tvg-name="Animal Planet HD" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/AnimalPlanetHD_Transparent_d36c0ee3-3e3f-4e0c-b3b2-23bfb3c3c2b0.png" group-title="Documentary",Animal Planet HD
 http://195.64.140.147:10032/32
 #EXTINF:-1 tvg-name="Investigation Discovery HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/InvestigationDiscoveryLogo2020.svg/960px-InvestigationDiscoveryLogo2020.svg.png" group-title="Documentary",Investigation Discovery HD
@@ -23,56 +15,30 @@ http://195.64.140.147:10152/152
 http://23.237.104.106:8080/USA_MTV/index.m3u8
 #EXTINF:-1 tvg-name="MTV Live (720p)" tvg-logo="https://img10.hotstar.com/image/upload/sources/r1/cms/prod/8633/1786020488633-h.jpg" group-title="Entertainment",MTV Live (720p)
 http://23.237.104.106:8080/USA_MTV_LIVE/index.m3u8
-#EXTINF:-1 tvg-name="Mango (576p)" tvg-logo="https://i.imgur.com/neZm4CY.png" group-title="Entertainment",Mango (576p)
+#EXTINF:-1 tvg-name="Mango (India) (576p)" tvg-logo="https://i.imgur.com/neZm4CY.png" group-title="Entertainment",Mango (India) (576p)
 https://stmv6.voxtvhd.com.br/cinehindi/cinehindi/playlist.m3u8
-#EXTINF:-1 tvg-name="Mega" tvg-logo="https://dtil.tmsimg.com/assets/s143425_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Mega
-https://unlimited2-cl-isp.dps.live/mega/mega.smil/playlist.m3u8
 #EXTINF:-1 tvg-name="Discovery Channel" tvg-logo="https://dtil.tmsimg.com/assets/s159106_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Discovery Channel
 http://5.188.159.128:8070/DiscoveryChannel/tracks-v1a1/mono.m3u8
-#EXTINF:-1 tvg-name="Discovery World Brazil (720p) [Geo-blocked]" group-title="Entertainment",Discovery World Brazil (720p) [Geo-blocked]
-http://15.204.246.24:8080/DiscoveryWorldHD/index.m3u8
-#EXTINF:-1 tvg-name="Discovery Channel (United States) (1080p) [Geo-blocked]" tvg-logo="https://dtil.tmsimg.com/assets/s159106_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Discovery Channel (United States) (1080p) [Geo-blocked]
-http://212.5.144.156:8080/discovery/index.m3u8
 #EXTINF:-1 tvg-name="Discovery Channel HD" tvg-logo="https://dtil.tmsimg.com/assets/s159106_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Discovery Channel HD
 http://195.64.140.147:10151/151
 #EXTINF:-1 tvg-name="Disney Channel (720p) [Geo-blocked]" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/1540/1785251571540-h.jpg" group-title="Kids",Disney Channel (720p) [Geo-blocked]
 http://212.5.144.156/disney/index.m3u8
 #EXTINF:-1 tvg-name="Nickelodeon (India) (576p)" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/6807/1784039246807-h.jpg" group-title="Kids",Nickelodeon (India) (576p)
 http://103.185.24.134:3001/NICK/index.m3u8
-#EXTINF:-1 tvg-name="CBeebies (Poland) (576p)" group-title="Kids",CBeebies (Poland) (576p)
-http://92.114.85.87:8017/play/a004/index.m3u8
-#EXTINF:-1 tvg-name="Disney Channel (Poland) HD (1080p)" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/1540/1785251571540-h.jpg" group-title="Kids",Disney Channel (Poland) HD (1080p)
-http://185.227.34.179:8080/disney-channel-hd/index.m3u8
-#EXTINF:-1 tvg-name="Discovery Kids Latin America Brazil (720p) [Geo-blocked]" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Discovery%20Kids.png" group-title="Kids",Discovery Kids Latin America Brazil (720p) [Geo-blocked]
-http://15.204.246.24:8080/DiscoveryKidsHD/index.m3u8
-#EXTINF:-1 tvg-name="TLC (Hungary)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/TLC%20HD.png" group-title="Lifestyle",TLC (Hungary)
-http://88.212.15.17/live/tlc_hungary/index.m3u8
-#EXTINF:-1 tvg-name="KTV (South Korea) (1080p)" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG002Z1SEP.png?lock=720x540" group-title="Movies",KTV (South Korea) (1080p)
-https://hlive.ktv.go.kr/live/klive_h.stream/playlist.m3u8
 #EXTINF:-1 tvg-name="Bollywood HD (576p)" group-title="Movies",Bollywood HD (576p)
 http://176.118.197.101/Bollywood_HD/index.m3u8
 #EXTINF:-1 tvg-name="Gold Star" group-title="Movies",Gold Star
 https://moviethls.wns.live/hls/stream.m3u8
 #EXTINF:-1 tvg-name="TOP Cinema HD" group-title="Movies",TOP Cinema HD
 http://185.221.213.254/live/stream112.php?q=h0c5Eyuek0CppzJQmzPiyBmI9DfhNnGVuNxzdYNOfd-NZXVzxn-5nG-V_i8HN8fO9ze5z1Bh16QpAKZwItuZl0JfcfAMo2Q4gnT2RqveSew
-#EXTINF:-1 tvg-name="Eska Rock TV (1080p)" group-title="Music",Eska Rock TV (1080p)
-http://92.114.85.87:8016/play/a005/index.m3u8
-#EXTINF:-1 tvg-name="Zoom (Colombia) (1080p)" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/TIMESPLAY/LIVECHANNEL/6904ba4039f3b175376a61de/images/LOGO_HD/LOGO_HD_KN-eM9VvQ_ZoomTV1_1.png" group-title="Music",Zoom (Colombia) (1080p)
-http://138.121.15.230:9002/ZOOM/index.m3u8
-#EXTINF:-1 tvg-name="CBS News Colorado" group-title="News",CBS News Colorado
-https://amd-mediator-eolq3tk4la-uk.a.run.app/cbs/map.m3u8?am.originUrl=https%3A%2F%2Fdai.google.com%2Flinear%2Fhls%2Fevent%2FE9CkyheTSKeGiOiICU_JBQ%2Fmaster.m3u8&imafw_csid=desktop_web&imafw__fw_did=&imafw__fw_is_lat=&imafw__fw_vcid2=&imafw__fw_app_bundle=&imafw__fw_us_privacy=1YNY&height=1080&ip_addr=185.217.168.164&page_url=https%25253A%25252F%25252Flocalnow.com%25252Fchannels%25252Fcbs-news-chicago-hyperlocal&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F122.0.0.0%20Safari%2F537.36&width=1920&app_version=0.0.0
 #EXTINF:-1 tvg-name="NHK World-Japan HD" group-title="News",NHK World-Japan HD
 https://nhk.lls.pbs.org/index.m3u8
-#EXTINF:-1 tvg-name="Oplot TV SD (1080p) [Geo-blocked]" group-title="News",Oplot TV SD (1080p) [Geo-blocked]
-http://31.131.139.253:9002/oplot_hd/index.m3u8
 #EXTINF:-1 tvg-name="tv 24" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/TV24.png" group-title="News",tv 24
 http://15.204.246.24:8080/CinecanalHD/index.m3u8
 #EXTINF:-1 tvg-name="tv 24" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/TV24.png" group-title="News",tv 24
 http://15.204.246.24:8080/NatGeoHD/index.m3u8
-#EXTINF:-1 tvg-name="Novorossiya TV (1080p) [Geo-blocked]" group-title="News",Novorossiya TV (1080p) [Geo-blocked]
-http://31.131.139.253:9002/novoros/index.m3u8
-#EXTINF:-1 tvg-name="Oplot TV (1080p) [Geo-blocked]" group-title="News",Oplot TV (1080p) [Geo-blocked]
-http://31.131.141.195:8000/play/a006/index.m3u8
+#EXTINF:-1 tvg-name="tv 24" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/TV24.png" group-title="News",tv 24
+http://15.204.246.24:8080/CHVHD/index.m3u8
 #EXTINF:-1 tvg-name="10 tv" tvg-logo="https://dtil.tmsimg.com/assets/s142495_ld_h15_aa.png?lock=720x540" group-title="News",10 tv
 http://81.171.10.42:1935/liveD/DStream.sdp/chunklist_w819085920.m3u8
 #EXTINF:-1 tvg-name="Reporter (720p)" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="News",Reporter (720p)
@@ -83,10 +49,6 @@ http://awaazindia.livebox.co.in/AwaazIndaTVhls/Live.m3u8
 https://live.topnews.co.th/hls/topnews_a_720.m3u8
 #EXTINF:-1 tvg-name="Power TV" tvg-logo="https://cdn.powergroup.com.tr/image/360x360/powerapp/channels/v3/logo_44.png" group-title="News",Power TV
 https://livetv.powerapp.com.tr/powerTV/powerhd.smil/playlist.m3u8
-#EXTINF:-1 tvg-name="CNN HD (720p) [Geo-blocked]" group-title="News",CNN HD (720p) [Geo-blocked]
-http://212.5.144.156:8080/cnn/index.m3u8
-#EXTINF:-1 tvg-name="360" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/KhabharBharat360.png" group-title="News",360
-http://185.221.213.254/live/stream112.php?q=h0c5Eyuek0CppzJQmzPiyBmI9DfhNnGVuNxzdYNOfd-tCxR8oFTDnKzCqDxOzYJt08WbZNwZ6ktf5bRtdXrSy3IrPVlB3RYEmPkdr78_rNQ
 #EXTINF:-1 tvg-name="tv 24" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/TV24.png" group-title="News",tv 24
 http://61.138.82.196:808/hls/24/index.m3u8
 #EXTINF:-1 tvg-name="99 tv" group-title="Other",99 tv
@@ -103,28 +65,14 @@ http://158.69.124.9:1935/5aabtv/5aabtv/playlist.m3u8
 http://158.69.124.9:1935/sardaritv/sardaritv/playlist.m3u8
 #EXTINF:-1 tvg-name="We TV (1080p)" group-title="Other",We TV (1080p)
 http://23.237.104.106:8080/USA_WE_TV/index.m3u8
-#EXTINF:-1 tvg-name="WORLD HD" group-title="Other",WORLD HD
-http://185.57.68.33/232/index.m3u8
 #EXTINF:-1 tvg-name="GSTV (720p)" group-title="Other",GSTV (720p)
 https://japaneast.av.mk.io/mediakindcdn-mediakind/ca01a143-f823-4432-b670-c22ff9643ce4/index.qfm/manifest(format=m3u8-cmaf)
-#EXTINF:-1 tvg-name="HBO+ Latin America (720p) [Geo-blocked]" group-title="Other",HBO+ Latin America (720p) [Geo-blocked]
-http://15.204.246.24:8080/HBOPlusHD/index.m3u8
-#EXTINF:-1 tvg-name="10 HD" group-title="Other",10 HD
-https://i.mjh.nz/.r/10-nsw.m3u8
 #EXTINF:-1 tvg-name="Bollywood HD" group-title="Other",Bollywood HD
 http://45.159.94.49:8080/play/live.php?mac=00:1A:79:0F:46:C6&stream=869451&extension=ts
-#EXTINF:-1 tvg-name="6 TV Gorlovka (720p) [Geo-blocked]" group-title="Other",6 TV Gorlovka (720p) [Geo-blocked]
-http://91.214.48.158:4022/udp/224.2.2.4:10000
-#EXTINF:-1 tvg-name="360 HD" group-title="Other",360 HD
-http://185.221.213.254/live/stream112.php?q=h0c5Eyuek0CppzJQmzPiyBmI9DfhNnGVuNxzdYNOfd9ssyKJuQoiDQFde-j43g82TfelkhQmQ6Lk5puU6c1OnV3riXOaJUcMIbLg-Pq_E5g
 #EXTINF:-1 tvg-name="Bollywood HD" group-title="Other",Bollywood HD
 http://185.221.213.254/live/stream112.php?q=h0c5Eyuek0CppzJQmzPiyBmI9DfhNnGVuNxzdYNOfd9ssyKJuQoiDQFde-j43g82TglQ6QupvsjzmaF14fmDpTACWFDWkqFBmkC3oLinlBk
 #EXTINF:-1 tvg-name="Bollywood HD orig" group-title="Other",Bollywood HD orig
 http://185.221.213.254/live/stream112.php?q=h0c5Eyuek0CppzJQmzPiyBmI9DfhNnGVuNxzdYNOfd-EeeZuSIwEhDAlo0Tul56Vp6CeiEb6jNbIs_OvxsxLFyHHSrtv1x3dWo7ORCoOukU
-#EXTINF:-1 tvg-name="Folk TV" group-title="Other",Folk TV
-https://stream.nasatv.com.mk/folktv/hls/folktv_live.m3u8
-#EXTINF:-1 tvg-name="ETV (Estonia) (720p)" group-title="Other",ETV (Estonia) (720p)
-https://sb.err.ee/live/etv.m3u8
 #EXTINF:-1 tvg-name="GOD TV" group-title="Religious",GOD TV
 https://ott.god.tv/live/us/master.m3u8
 #EXTINF:-1 tvg-name="Eurosport 1 HD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_EUROSPORT_HD/images/LOGO_HD/image.png" group-title="Sports",Eurosport 1 HD
@@ -133,10 +81,6 @@ http://178.134.1.158:8081/eurosport/index.m3u8
 http://62.89.17.130:4451/play/a01m/index.m3u8
 #EXTINF:-1 tvg-name="Eurosport 2" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_EUROSPORT_HD/images/LOGO_HD/image.png" group-title="Sports",Eurosport 2
 http://5.188.159.128:8070/eurosport2/index.m3u8
-#EXTINF:-1 tvg-name="TJK TV (1080p)" group-title="Sports",TJK TV (1080p)
-https://tjktv-live.tjk.org/tjktv.m3u8
-#EXTINF:-1 tvg-name="Teletrak TV (720p)" group-title="Sports",Teletrak TV (720p)
-https://unlimited6-cl.dps.live/sportinghd/sportinghd.smil/playlist.m3u8
 #EXTINF:-1 tvg-name="Eurosport 1" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_EUROSPORT_HD/images/LOGO_HD/image.png" group-title="Sports",Eurosport 1
 http://62.89.17.130:4451/play/a01d/index.m3u8
 #EXTINF:-1 tvg-name="EUROSPORT 1" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_EUROSPORT_HD/images/LOGO_HD/image.png" group-title="Sports",EUROSPORT 1
