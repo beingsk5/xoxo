@@ -15,6 +15,8 @@ http://195.64.140.147:10152/152
 http://23.237.104.106:8080/USA_MTV/index.m3u8
 #EXTINF:-1 tvg-name="MTV Live (720p)" tvg-logo="https://img10.hotstar.com/image/upload/sources/r1/cms/prod/8633/1786020488633-h.jpg" group-title="Entertainment",MTV Live (720p)
 http://23.237.104.106:8080/USA_MTV_LIVE/index.m3u8
+#EXTINF:-1 tvg-name="PTC Punjabi Canada (1080p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/PTC%20Punjabi.png" group-title="Entertainment",PTC Punjabi Canada (1080p)
+https://stream.ottlive.co.in/ptccanada/index.m3u8
 #EXTINF:-1 tvg-name="Mango (India) (576p)" tvg-logo="https://i.imgur.com/neZm4CY.png" group-title="Entertainment",Mango (India) (576p)
 https://stmv6.voxtvhd.com.br/cinehindi/cinehindi/playlist.m3u8
 #EXTINF:-1 tvg-name="Discovery Channel" tvg-logo="https://dtil.tmsimg.com/assets/s159106_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Discovery Channel
@@ -37,8 +39,6 @@ https://nhk.lls.pbs.org/index.m3u8
 http://15.204.246.24:8080/CinecanalHD/index.m3u8
 #EXTINF:-1 tvg-name="tv 24" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/TV24.png" group-title="News",tv 24
 http://15.204.246.24:8080/NatGeoHD/index.m3u8
-#EXTINF:-1 tvg-name="tv 24" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/TV24.png" group-title="News",tv 24
-http://15.204.246.24:8080/CHVHD/index.m3u8
 #EXTINF:-1 tvg-name="10 tv" tvg-logo="https://dtil.tmsimg.com/assets/s142495_ld_h15_aa.png?lock=720x540" group-title="News",10 tv
 http://81.171.10.42:1935/liveD/DStream.sdp/chunklist_w819085920.m3u8
 #EXTINF:-1 tvg-name="Reporter (720p)" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="News",Reporter (720p)
@@ -47,6 +47,8 @@ http://cdn1.live-tv.od.ua:8081/31chod/31chod-abr/31chod/31chod/playlist.m3u8
 http://awaazindia.livebox.co.in/AwaazIndaTVhls/Live.m3u8
 #EXTINF:-1 tvg-name="Top News (720p)" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/P_News.png" group-title="News",Top News (720p)
 https://live.topnews.co.th/hls/topnews_a_720.m3u8
+#EXTINF:-1 tvg-name="Janataa TV Kannada" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/janataanews.png" group-title="News",Janataa TV Kannada
+https://live1.ottlive.co.in/janataanews/index.m3u8
 #EXTINF:-1 tvg-name="Power TV" tvg-logo="https://cdn.powergroup.com.tr/image/360x360/powerapp/channels/v3/logo_44.png" group-title="News",Power TV
 https://livetv.powerapp.com.tr/powerTV/powerhd.smil/playlist.m3u8
 #EXTINF:-1 tvg-name="tv 24" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/TV24.png" group-title="News",tv 24
@@ -63,8 +65,12 @@ http://5.188.159.128:8070/DiscoveryChannel/index.m3u8
 http://158.69.124.9:1935/5aabtv/5aabtv/playlist.m3u8
 #EXTINF:-1 tvg-name="group-title="Punjabi",Sardari TV" group-title="Other",group-title="Punjabi",Sardari TV
 http://158.69.124.9:1935/sardaritv/sardaritv/playlist.m3u8
+#EXTINF:-1 tvg-name="GTA Tamil" group-title="Other",GTA Tamil
+http://144.217.77.42:8888/gta_tamil/index.m3u8
 #EXTINF:-1 tvg-name="We TV (1080p)" group-title="Other",We TV (1080p)
 http://23.237.104.106:8080/USA_WE_TV/index.m3u8
+#EXTINF:-1 tvg-name="JK TV Kannada" group-title="Other",JK TV Kannada
+http://account18.livebox.co.in/jktvkannadahls/live.m3u8
 #EXTINF:-1 tvg-name="GSTV (720p)" group-title="Other",GSTV (720p)
 https://japaneast.av.mk.io/mediakindcdn-mediakind/ca01a143-f823-4432-b670-c22ff9643ce4/index.qfm/manifest(format=m3u8-cmaf)
 #EXTINF:-1 tvg-name="Bollywood HD" group-title="Other",Bollywood HD
@@ -73,6 +79,8 @@ http://45.159.94.49:8080/play/live.php?mac=00:1A:79:0F:46:C6&stream=869451&exten
 http://185.221.213.254/live/stream112.php?q=h0c5Eyuek0CppzJQmzPiyBmI9DfhNnGVuNxzdYNOfd9ssyKJuQoiDQFde-j43g82TglQ6QupvsjzmaF14fmDpTACWFDWkqFBmkC3oLinlBk
 #EXTINF:-1 tvg-name="Bollywood HD orig" group-title="Other",Bollywood HD orig
 http://185.221.213.254/live/stream112.php?q=h0c5Eyuek0CppzJQmzPiyBmI9DfhNnGVuNxzdYNOfd-EeeZuSIwEhDAlo0Tul56Vp6CeiEb6jNbIs_OvxsxLFyHHSrtv1x3dWo7ORCoOukU
+#EXTINF:-1 tvg-name="Zoom TV (576i)" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/OM_TV.png" group-title="Religious",Zoom TV (576i)
+http://92.114.85.87:8001/play/a00y/index.m3u8
 #EXTINF:-1 tvg-name="GOD TV" group-title="Religious",GOD TV
 https://ott.god.tv/live/us/master.m3u8
 #EXTINF:-1 tvg-name="Eurosport 1 HD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_EUROSPORT_HD/images/LOGO_HD/image.png" group-title="Sports",Eurosport 1 HD

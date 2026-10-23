@@ -11,6 +11,8 @@ https://live.olidigital.in/olitv/olitv/index.m3u8
 https://yuppmedtaorire.akamaized.net/v1/master/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/murasu_nim_https/050522/murasu/playlist.m3u8
 #EXTINF:-1 tvg-name="Mega TV SD" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Mega%20TV.png" group-title="Entertainment",Mega TV SD
 https://ott3.streann.com/loadbalancer/services/public/channels-secure/5e62b96e2cdcfac2dd8885dd/playlist.m3u8
+#EXTINF:-1 tvg-name="Tamil Oli TV" tvg-logo="https://i.ibb.co/XfvTQyJn/main-removebg-preview.png" group-title="Entertainment",Tamil Oli TV
+https://view.rcserver.in/tmp_hls7/tamilolitv/index.m3u8
 #EXTINF:-1 tvg-name="Raj TV" tvg-logo="https://dtil.tmsimg.com/assets/s143715_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Raj TV
 https://livestream.rajtv.tv/hlslive/Admin/px08241087/live/RAJTV/master_1.m3u8
 #EXTINF:-1 tvg-name="Colors Tamil HD" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/Colors_Transparent_16069908-8494-4eb4-bd40-5afca3969088.png" group-title="Entertainment",Colors Tamil HD
@@ -153,8 +155,14 @@ https://streams.tangotv.in/NEWSTAMIL24X7/ORIGIN/index.m3u8
 https://mumt04.tangotv.in/m18aqlK4RAJNEWSTELUGU/index.m3u8
 #EXTINF:-1 tvg-name="Tamil Janam" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Janam_Tamil.png" group-title="News",Tamil Janam
 https://mumt01.tangotv.in/O5aw8Zn3JANAMTVTAMIL/index.m3u8
+#EXTINF:-1 tvg-name="shalini tv" tvg-logo="https://i.imgur.com/fDdG6Y2.png" group-title="Other",shalini tv
+http://ipcloud.live:8080/shalinitv/shalinitv/index.m3u8
 #EXTINF:-1 tvg-name="V Tamil" tvg-logo="https://i.ibb.co/r5p2yMm/14579702231.png" group-title="Religious",V Tamil
 https://hlsstream.olidigital.in/vtv/vtv/index.m3u8
+#EXTINF:-1 tvg-name="jothi tv" tvg-logo="https://dtil.tmsimg.com/assets/s143239_ld_h15_aa.png?lock=720x540" group-title="Religious",jothi tv
+http://jothi.inet.moe/jothitv/index.m3u8
+#EXTINF:-1 tvg-name="Zoom TV (576i)" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/OM_TV.png" group-title="Religious",Zoom TV (576i)
+http://92.114.85.87:8001/play/a00y/index.m3u8
 #EXTINF:-1 tvg-name="Sairam TV" group-title="Religious",Sairam TV
 https://cdn.pishow.tv/ott/live/1611/master.m3u8
 #EXTINF:-1 tvg-name="Aastha Tamil" tvg-logo="https://i.imgur.com/YQK9ewf.png" group-title="Religious",Aastha Tamil
@@ -167,3 +175,5 @@ http://yolomax.pro/live/A1U3S8XPVM58B23/iHeFx423Ac/72160.ts
 https://ktismaservers.in:3466/live/hosannattvhindhilive.m3u8
 #EXTINF:-1 tvg-name="Life TV (India) KBCT" tvg-logo="https://i.ibb.co/v1C0bdR/logo-1.png" group-title="Religious",Life TV (India) KBCT
 https://lifetv.livebox.co.in/lifetvhls/lifetv.m3u8
+#EXTINF:-1 tvg-name="V Tamil" tvg-logo="https://i.ibb.co/r5p2yMm/14579702231.png" group-title="Religious",V Tamil
+https://3.proxy.nellaiiptv.com/NOTV/VTV1/index.m3u8?token=GTR

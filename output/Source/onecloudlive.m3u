@@ -1,0 +1,5 @@
+#EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
+#EXTINF:-1 tvg-name="Salaam TV" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Salaam_TV_Hindi_2000_X_1125_transpharent.png" group-title="News",Salaam TV
+https://stream.onecloudlive.in/salamtv/salamtvhd/index.m3u8
+#EXTINF:-1 tvg-name="Super TV" group-title="Other",Super TV
+https://stream.onecloudlive.in/superstartv/superstarhd/index.m3u8

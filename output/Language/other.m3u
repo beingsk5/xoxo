@@ -1,6 +1,10 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
 #EXTINF:-1 tvg-name="Zee One (1080p)" group-title="Entertainment",Zee One (1080p)
 https://amg17931-zee-amg17931c6-samsung-au-8872.playouts.now.amagi.tv/playlist/amg17931-asiatvusaltdfast-zeeworld-samsungau/playlist.m3u8
+#EXTINF:-1 tvg-name="Zee One French (720p)" group-title="Entertainment",Zee One French (720p)
+https://7689426c.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/U2Ftc3VuZy1mcl9aZWVNYWdpY19ITFM/playlist.m3u8
+#EXTINF:-1 tvg-name="Zee One German (720p)" group-title="Entertainment",Zee One German (720p)
+https://e4955b54.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/U2Ftc3VuZy1kZV9aZWVPbmVfSExT/playlist.m3u8
 #EXTINF:-1 tvg-name="DD9 chandana (kannada)" group-title="Entertainment",DD9 chandana (kannada)
 http://103.17.193.159:5001/live/713.m3u8
 #EXTINF:-1 tvg-name="DD Oriya" group-title="Entertainment",DD Oriya
@@ -61,6 +65,8 @@ https://stream.onecloudlive.in/successtv/successtvhd/index.m3u8
 https://2-fss-2.streamhoster.com/pl_120/206508-3261972-1/playlist.m3u8
 #EXTINF:-1 tvg-name="Raj Music Kannada" group-title="Music",Raj Music Kannada
 http://103.17.193.159:5001/live/743.m3u8
+#EXTINF:-1 tvg-name="Eye Tamil Music" group-title="Music",Eye Tamil Music
+https://2.proxy.nellaiiptv.com/EyeMedia/music/index.m3u8
 #EXTINF:-1 tvg-name="Raj Music Malayalam" group-title="Music",Raj Music Malayalam
 http://103.17.193.159:5001/live/739.m3u8
 #EXTINF:-1 tvg-name="Raj Music Telugu" group-title="Music",Raj Music Telugu
@@ -93,12 +99,16 @@ https://vglivessai.akamaized.net/sg/v1/master/611d79b11b77e2f571934fd80ca1413453
 https://vglivessai.akamaized.net/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/1cd73d38-bbd2-4d81-9ba7-58293f2e65a8/index.m3u8?hdnts=st=1792630571~exp=1792652171~acl=!*/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/1cd73d38-bbd2-4d81-9ba7-58293f2e65a8/*!/payload/yupptvott_5_-1_126472c4-1841-439c-b284-7b22f75e83d8_MX_158.23.146.211_yupptv_1_channel_7174_-1/*~data=yupptvott_5_-1_126472c4-1841-439c-b284-7b22f75e83d8_MX_158.23.146.211_yupptv_1_channel_7174_-1~hmac=c636f071f4cc08aae574995de6e982d2724cc65ff082c86bd4ed853c38f4f3ab&ads.content_custom_3_param=yuppfastint&ads.ip=158.23.146.211&did=126472c4-1841-439c-b284-7b22f75e83d8&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=NEWS&ads.content_custom_1_param=FAST&ads.channel=7174&ads.channel_name=WPNWorldPunjabiNews&ads.language=PUN&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
 #EXTINF:-1 tvg-name="WPN World Punjabi News" group-title="News",WPN World Punjabi News
 https://vglivessai.akamaized.net/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/1cd73d38-bbd2-4d81-9ba7-58293f2e65a8/index.m3u8?hdnts=st=1792631077~exp=1792652677~acl=!*/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/1cd73d38-bbd2-4d81-9ba7-58293f2e65a8/*!/payload/yupptvott_5_-1_7dc98b50-e574-45a6-a574-9b4e2331e9e0_MX_158.23.146.211_yupptv_1_channel_7174_-1/*~data=yupptvott_5_-1_7dc98b50-e574-45a6-a574-9b4e2331e9e0_MX_158.23.146.211_yupptv_1_channel_7174_-1~hmac=43c16a5faa7ad8e0f2f8e1639b928ac4b11615dfdf1d7d3e089e689a117fa808&ads.content_custom_3_param=yuppfastint&ads.ip=158.23.146.211&did=7dc98b50-e574-45a6-a574-9b4e2331e9e0&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=NEWS&ads.content_custom_1_param=FAST&ads.channel=7174&ads.channel_name=WPNWorldPunjabiNews&ads.language=PUN&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
+#EXTINF:-1 tvg-name="News 80 Tamil" group-title="News",News 80 Tamil
+https://3.proxy.nellaiiptv.com/NOTV/NEWS80/index.m3u8?token=GTR
 #EXTINF:-1 tvg-name="News18 MP Chhattisgarh" group-title="News",News18 MP Chhattisgarh
 http://103.17.193.159:5001/live/529.m3u8
 #EXTINF:-1 tvg-name="News18 UP Uttarakhand" group-title="News",News18 UP Uttarakhand
 http://103.17.193.159:5001/live/530.m3u8
 #EXTINF:-1 tvg-name="tv9 Telemaremma (576p)" group-title="News",tv9 Telemaremma (576p)
 https://rtmp-live-ingest-us-east-1-universe-dacast-com.akamaized.net/transmuxv1/streams/2095a288-1384-ed2e-5da0-278ccbb72295.m3u8
+#EXTINF:-1 tvg-name="One Kannada News" group-title="News",One Kannada News
+https://mars.streambridge.cloud/onekannadanews/live/playlist.m3u8
 #EXTINF:-1 tvg-name="News 18 India" group-title="News",News 18 India
 http://103.17.193.159:5001/live/231.m3u8
 #EXTINF:-1 tvg-name="24 TV (720p)" group-title="News",24 TV (720p)
@@ -147,16 +157,28 @@ http://cdn19.live247stream.com/channely/tv/playlist.m3u8
 http://cdn.samtv.ca/ptv24/index.m3u8
 #EXTINF:-1 tvg-name="group-title="Punjabi",Sardari TV" group-title="Other",group-title="Punjabi",Sardari TV
 http://158.69.124.9:1935/sardaritv/sardaritv/playlist.m3u8
+#EXTINF:-1 tvg-name="GTA Tamil" group-title="Other",GTA Tamil
+http://144.217.77.42:8888/gta_tamil/index.m3u8
+#EXTINF:-1 tvg-name="Omroep Zeeland (1080p)" group-title="Other",Omroep Zeeland (1080p)
+https://d3isaxd2t6q8zm.cloudfront.net/live/omroepzeeland/tv/index.m3u8
+#EXTINF:-1 tvg-name="Sony KAL Hindi (1080p)" group-title="Other",Sony KAL Hindi (1080p)
+https://wurlsonypicturestv.global.transmit.live/hls/68deeb1c0238cda82df543dd/v1/spt_sonykal_1/lg_us/latest/main/hls/playlist.m3u8
 #EXTINF:-1 tvg-name="The Pet Collective India" group-title="Other",The Pet Collective India
 https://the-pet-collective-international-in.samsung.wurl.tv/playlist.m3u8
 #EXTINF:-1 tvg-name="Young Bollywood" group-title="Other",Young Bollywood
 https://amg00143-younghollywoodl-younghollywood-xiaomi-8k5gd.amagi.tv/playlist/amg00143-younghollywoodl-younghollywood-xiaomi/playlist.m3u8
 #EXTINF:-1 tvg-name="Ghaint Punjabi (Asia)" group-title="Other",Ghaint Punjabi (Asia)
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01412-xiaomiasia-ghaintpunjab-xiaomi/playlist.m3u8
+#EXTINF:-1 tvg-name="RJ Tamil" group-title="Other",RJ Tamil
+https://ipcloud.live/rjtamiltv/rjtamil/index.m3u8
 #EXTINF:-1 tvg-name="TV9 Telegu (IN)" group-title="Other",TV9 Telegu (IN)
 https://amg01106-tv9-amg01106c5-xiaomi-in-1184.playouts.now.amagi.tv/playlist/amg01106-tv9fast-tv9telugu-xiaomiin/playlist.m3u8
 #EXTINF:-1 tvg-name="group-title="Punjabi",Toronto 360" group-title="Other",group-title="Punjabi",Toronto 360
 http://toronto3.live247stream.com/toronto360/tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Aadhavan Tamil TV" group-title="Other",Aadhavan Tamil TV
+http://aadhavantamiltv.phoenixcreations.online/aadhavantamiltv/aadhavantamiltv/index.m3u8
+#EXTINF:-1 tvg-name="Virat TV" group-title="Other",Virat TV
+https://venus.streambridge.link:8047/kannada/virattv/index.m3u8
 #EXTINF:-1 tvg-name="ABN TV India (540p)" group-title="Other",ABN TV India (540p)
 https://mediaserver.abnvideos.com/streams/abntvindia.m3u8
 #EXTINF:-1 tvg-name="Canal 13 Esquipulas (720p)" group-title="Other",Canal 13 Esquipulas (720p)
@@ -171,6 +193,8 @@ https://d1msejlow1t3l4.cloudfront.net/fta/vtvgujarati/playlist.m3u8?hdnts=st=179
 https://tv91.hostingnuclear.com:19360/xhunestv/xhunestv.m3u8
 #EXTINF:-1 tvg-name="titanfile" group-title="Other",titanfile
 https://zee5vod.akamaized.net/drm1/titanfile/dash/MOVIES/V2PRIME/4K/ATMOS/SAM_BAHADUR/SAM_BAHADUR_4K_15012024_hi_ce3bf342a1a084e007dbd6555abf5519/manifest.mpd?c3.ri=6901304522390387240?%7CdrmScheme=clearkey&drmLicense=785ab7573f0032dbae2a1ed021657f75:e35650a3facdc46ca5e5cc0d9d03b641
+#EXTINF:-1 tvg-name="JK TV Kannada" group-title="Other",JK TV Kannada
+http://account18.livebox.co.in/jktvkannadahls/live.m3u8
 #EXTINF:-1 tvg-name="Tamil TV" group-title="Other",Tamil TV
 https://ktismaservers.in:3220/hybrid/play.m3u8
 #EXTINF:-1 tvg-name="Wild Flix Hindi" group-title="Other",Wild Flix Hindi
@@ -181,16 +205,26 @@ https://cc-zko1curyce7jh.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da6
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01412-xiaomiasia-zeebihar-xiaomi/playlist.m3u8
 #EXTINF:-1 tvg-name="Zee Taas (Asia)" group-title="Other",Zee Taas (Asia)
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01412-xiaomiasia-zeetaas-xiaomi/playlist.m3u8
+#EXTINF:-1 tvg-name="Swastik Kannada" group-title="Other",Swastik Kannada
+https://mumbai-edge.smartplaytv.in/swastik/index.m3u8
 #EXTINF:-1 tvg-name="ME24 Tamil" group-title="Other",ME24 Tamil
 https://stream.onecloudlive.in/orange/ME24TAMIL/index.m3u8
+#EXTINF:-1 tvg-name="Shine Kannada TV" group-title="Other",Shine Kannada TV
+https://cloud.dndcommunication.in/shinekannada/shinekannada/playlist.m3u8
+#EXTINF:-1 tvg-name="TV 9 Nusantara (720p)" group-title="Other",TV 9 Nusantara (720p)
+https://5bf7b725107e5.streamlock.net/tv9/tv9/playlist.m3u8
 #EXTINF:-1 tvg-name="VTV Gujarati" group-title="Other",VTV Gujarati
 https://d1msejlow1t3l4.cloudfront.net/fta/vtvgujarati/playlist.m3u8?hdnts=st=1792629828~exp=1792651428~acl=!*/fta/vtvgujarati/*!/payload/yupptvott_5_-1_c7dfc58d-9e0f-4507-9824-7db0aada781b_MX_158.23.146.211_yupptv_1_channel_6420_-1/*~data=yupptvott_5_-1_c7dfc58d-9e0f-4507-9824-7db0aada781b_MX_158.23.146.211_yupptv_1_channel_6420_-1~hmac=5982df6afefea8a08b1f5aad922c81c8654b148ec80cdfe34cc0a29c2c269db5&ads.content_custom_3_param=yuppfastint&ads.ip=158.23.146.211&did=c7dfc58d-9e0f-4507-9824-7db0aada781b&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=NEWS&ads.content_custom_1_param=FAST&ads.channel=6420&ads.channel_name=VTVGujarati&ads.language=GUJ&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
 #EXTINF:-1 tvg-name="Bollywood HD" group-title="Other",Bollywood HD
 http://stream-msk-10.ott.tricolor.tv/dtv/id640_MSKSG-PVR-1--Bollywood/03/plst.m3u8?drmreq=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBfdHlwZSI6ImFwdHBfb3R0IiwiY2xhc3MiOiJCUk9XU0VSIiwiZHJlaWQiOiIzNjAyNTUwNDI2MjA5MSIsImV4cCI6MTc1NTkyNzUyNSwiaHdpZCI6IjVlODA1NGRlZmQxNGRjZWVhNzA0MmZmMzFhMGRiMzg2YWRmZDMwZWY0MDRmZWEwM2I0YWIyZjU2OWM2YWY3OWMiLCJsYXN0X3JlcV9kYXRlIjoxNzU1MzIyNzI1LCJzZXNzaW9uX2lkIjoiNTQyZWEyMzk1MDdjZDgzMmYxYjY2ZWIzODJlNTJiODYiLCJ0b2tlbl90eXBlIjoiQ29udGVudEFjY2Vzc1Rva2VuIiwidHlwZSI6Ik1PWklMTEEifQ.T5fKBBALOpi3-OAwkSZROfKzpWim3nZi4iIMz7AyaXs
+#EXTINF:-1 tvg-name="Eye Tamil Comedy" group-title="Other",Eye Tamil Comedy
+https://2.proxy.nellaiiptv.com/EyeMedia/comedy/index.m3u8
 #EXTINF:-1 tvg-name="1.FM – Bombay Beats India Radio" group-title="Other",1.FM – Bombay Beats India Radio
 http://strm112.1.fm/bombaybeats_mobile_mp3
 #EXTINF:-1 tvg-name="Travel XP Hindi" group-title="Other",Travel XP Hindi
 https://alex4528.site/k7m2q9x4b8nc/stream.ts?id=70970
+#EXTINF:-1 tvg-name="Eye Tamil" group-title="Other",Eye Tamil
+https://2.proxy.nellaiiptv.com/EyeMedia/EyeTV/index.m3u8
 #EXTINF:-1 tvg-name="Bollywood HD" group-title="Other",Bollywood HD
 http://45.159.94.49:8080/play/live.php?mac=00:1A:79:0F:46:C6&stream=869451&extension=ts
 #EXTINF:-1 tvg-name="MBC Bollywood" group-title="Other",MBC Bollywood
@@ -215,6 +249,8 @@ http://103.17.193.159:5001/live/575.m3u8
 http://103.17.193.159:5001/live/576.m3u8
 #EXTINF:-1 tvg-name="History 18 Telugu" group-title="Other",History 18 Telugu
 http://yolomax.pro/live/A1U3S8XPVM58B23/iHeFx423Ac/551759.ts
+#EXTINF:-1 tvg-name="Selva Tamil TV" group-title="Other",Selva Tamil TV
+https://stream.sscloud7.in/live/selvatamiltv/index.mpd
 #EXTINF:-1 tvg-name="Urdu 1" group-title="Other",Urdu 1
 http://yolomax.pro/live/A1U3S8XPVM58B23/iHeFx423Ac/63108.ts
 #EXTINF:-1 tvg-name="Bollywood HD" group-title="Other",Bollywood HD
@@ -223,6 +259,10 @@ http://185.221.213.254/live/stream112.php?q=h0c5Eyuek0CppzJQmzPiyBmI9DfhNnGVuNxz
 http://185.221.213.254/live/stream112.php?q=h0c5Eyuek0CppzJQmzPiyBmI9DfhNnGVuNxzdYNOfd-EeeZuSIwEhDAlo0Tul56Vp6CeiEb6jNbIs_OvxsxLFyHHSrtv1x3dWo7ORCoOukU
 #EXTINF:-1 tvg-name="MNTV (Tamil)" group-title="Other",MNTV (Tamil)
 https://www.khuwemultimedia.com/hls/mntv/mntv.m3u8
+#EXTINF:-1 tvg-name="V Tamil [VK Digital]" group-title="Other",V Tamil [VK Digital]
+https://real-vk.proxy.nellaiiptv.com/VTV/index.m3u8
+#EXTINF:-1 tvg-name="Telemax Tamil" group-title="Other",Telemax Tamil
+https://real-vk.proxy.nellaiiptv.com/TELEMAX/index.m3u8
 #EXTINF:-1 tvg-name="7X Punjabi" group-title="Other",7X Punjabi
 https://cdn2.in/7xPunjabihls/live.m3u8
 #EXTINF:-1 tvg-name="DD Vyas" group-title="Other",DD Vyas
@@ -231,6 +271,10 @@ http://playhls.media.nic.in/live/vyas-360p/index.m3u8
 https://mntv.livebox.co.in/mntvhls/live.m3u8
 #EXTINF:-1 tvg-name="TV9 MR" group-title="Other",TV9 MR
 https://dyjmyiv3bp2ez.cloudfront.net/pub-iotv9marlygv8h/liveabr/pub-iotv9marlygv8h/live_720p/chunks.m3u8
+#EXTINF:-1 tvg-name="Индийское кино" group-title="Other",Индийское кино
+https://mhd128.iptv2022.com/p/-cjB3YypC08x8kpUaFFulw,1743195605/streaming/india/324/1/tracks-v5a1/mono.m3u8
+#EXTINF:-1 tvg-name="Индия" group-title="Other",Индия
+https://mhd128.iptv2022.com/p/kxk9fzninJ2VBq9MwWyXDw,1743195606/streaming/zeetv/324/1/tracks-v5a1/mono.m3u8
 #EXTINF:-1 tvg-name="All India Radio - AIR FM Gold" group-title="Other",All India Radio - AIR FM Gold
 http://airhlspush.pc.cdn.bitgravity.com/httppush/hlspbaudio005/hlspbaudio005_Auto.m3u8
 #EXTINF:-1 tvg-name="All India Radio - AIR Hyderabad FM Rainbow" group-title="Other",All India Radio - AIR Hyderabad FM Rainbow
@@ -241,6 +285,8 @@ http://air.pc.cdn.bitgravity.com/air/live/pbaudio022/playlist.m3u8
 https://air.pc.cdn.bitgravity.com/air/live/pbaudio021/playlist.m3u8
 #EXTINF:-1 tvg-name="Tamil Ratna" group-title="Other",Tamil Ratna
 https://mumt04.tangotv.in/m18aqlK4TAMILRATNAM/index.m3u8
+#EXTINF:-1 tvg-name="Britain Tamil Bhakthi" group-title="Religious",Britain Tamil Bhakthi
+http://btc.inet.moe/live/btctv/index.m3u8
 #EXTINF:-1 tvg-name="Madani Channel Urdu SD" group-title="Religious",Madani Channel Urdu SD
 https://streaming.madanichannel.tv/static/streaming-playlists/hls/b9790f10-cb0d-4e30-82bf-84a756234e58/master.m3u8
 #EXTINF:-1 tvg-name="ABN Urdu (540p)" group-title="Religious",ABN Urdu (540p)
@@ -249,6 +295,8 @@ https://mediaserver.abnvideos.com/streams/abnurdu.m3u8
 https://online.godstands.tv:5443/WebRTCApp/streams/PunjabiStreaming.m3u8
 #EXTINF:-1 tvg-name="God Stands TV Urdu" group-title="Religious",God Stands TV Urdu
 https://online.godstands.tv:5443/WebRTCApp/streams/UrduStreaming.m3u8
+#EXTINF:-1 tvg-name="Tamil Pirai TV" group-title="Religious",Tamil Pirai TV
+https://kayal.inet.moe/kayal/kayaltv/index.m3u8
 #EXTINF:-1 tvg-name="God Stands TV Hindi" group-title="Religious",God Stands TV Hindi
 https://online.godstands.tv:5443/WebRTCApp/streams/HindiStreaming.m3u8
 #EXTINF:-1 tvg-name="Peace TV Urdu (1080p)" group-title="Religious",Peace TV Urdu (1080p)
