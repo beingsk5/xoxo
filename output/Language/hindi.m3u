@@ -413,6 +413,8 @@ http://stream.mcquack.net/220/index.m3u8
 http://fortv.cc:8080/live/yd6H5yb2kK/nrkVd2ex3X/57349.ts
 #EXTINF:-1 tvg-name="Nick Jr" tvg-logo="https://img10.hotstar.com/image/upload/sources/r1/cms/prod/1730/1785252911730-h.jpg" group-title="Kids",Nick Jr
 http://stream.mcquack.net/220/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 tvg-name="Disney Junior (India) (576p)" tvg-logo="https://plain-apac-prod-public.komododecks.com/202609/07/kDx5CloMCE4tFekQtkOQ/image.png" group-title="Kids",Disney Junior (India) (576p)
+http://103.151.60.162:2122/play/a016/index.m3u8?hls=
 #EXTINF:-1 tvg-name="Hungama" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Hungama_TV.svg/960px-Hungama_TV.svg.png" group-title="Kids",Hungama
 http://103.135.253.32:8080/HUNGAMA/index.m3u8
 #EXTINF:-1 tvg-name="Hungama TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Hungama_TV.svg/960px-Hungama_TV.svg.png" group-title="Kids",Hungama TV
@@ -1115,6 +1117,8 @@ https://alex4528.site/k7m2q9x4b8nc/stream.ts?id=134318
 https://stream8.cinerama.uz/1040/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-name="Discovery Science" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Discovery%20Science.png" group-title="Science",Discovery Science
 https://tvsen3.aynaott.com/Zht5VqBb/index.m3u8
+#EXTINF:-1 tvg-name="CR | Star Sports 1 Hindi" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Sports",CR | Star Sports 1 Hindi
+https://starsportshindiii.pages.dev/index.m3u8
 #EXTINF:-1 tvg-name="DD Sports HD" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Sports.png" group-title="Sports",DD Sports HD
 https://cdn.pishow.tv/ott/live/1161/master.m3u8
 #EXTINF:-1 tvg-name="---Live(DD Sports)---" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Sports.png" group-title="Sports",---Live(DD Sports)---

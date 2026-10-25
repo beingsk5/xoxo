@@ -3,6 +3,8 @@
 http://103.151.60.162:2122/play/a00w/index.m3u8
 #EXTINF:-1 tvg-name="Star Jalsha" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Star-Jalsha--2000-x-1125--Transparent.png" group-title="Entertainment",Star Jalsha
 http://103.151.60.162:2122/play/a00w/index.m3u8?hls
+#EXTINF:-1 tvg-name="Star Jalsha (576p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Star-Jalsha--2000-x-1125--Transparent.png" group-title="Entertainment",Star Jalsha (576p)
+http://103.151.60.162:2122/play/a00w/index.m3u8?hls=
 #EXTINF:-1 tvg-name="Maa Gold" tvg-logo="https://dtil.tmsimg.com/assets/s143822_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Maa Gold
 http://yolomax.pro/live/A1U3S8XPVM58B23/iHeFx423Ac/1019601.ts
 #EXTINF:-1 tvg-name="Rang TV" tvg-logo="https://raw.githubusercontent.com/saeidrahmanbd/BDIX-IPTV/main/logos/rang.png" group-title="Entertainment",Rang TV
@@ -79,6 +81,8 @@ https://streams.tangotv.in/RENGONI/ORIGIN/index.m3u8
 https://live.villagetv.net/villagetv/hd/index.m3u8
 #EXTINF:-1 tvg-name="Village TV" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/VillageTV.png" group-title="Religious",Village TV
 https://villagetv.applelive.in/villagetv/villagetv/index.m3u8
+#EXTINF:-1 tvg-name="Star Sports 1" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/7482/1782284567482-h.jpg" group-title="Sports",Star Sports 1
+https://footfytv.pro/proxy/direct?url=https://flussonic.defineatoz.com/Starsports1/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-name="Star Sports Select 2 HD (720p)" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Sports",Star Sports Select 2 HD (720p)
 http://tvsen7.aynascope.net/ssport2hd/index.m3u8
 #EXTINF:-1 tvg-name="Star Sports Select 1" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/1176/1783001141176-h.jpg" group-title="Sports",Star Sports Select 1
@@ -95,3 +99,7 @@ https://alex4528.site/k7m2q9x4b8nc/stream.ts?id=293
 https://alex4528.site/k7m2q9x4b8nc/stream.ts?id=295
 #EXTINF:-1 tvg-name="Star Sports 2 Telugu HD" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Sports",Star Sports 2 Telugu HD
 https://real-vk.proxy.nellaiiptv.com/SDMEDIA/index.m3u8
+#EXTINF:-1 tvg-name="Star Sports Select 1 HD (1080p)" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Sports",Star Sports Select 1 HD (1080p)
+http://103.151.60.162:2122/play/a026/index.m3u8?hls=
+#EXTINF:-1 tvg-name="Star Sports Select 2 HD (1080p)" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Sports",Star Sports Select 2 HD (1080p)
+http://103.151.60.162:2122/play/a027/index.m3u8?hls=

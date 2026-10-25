@@ -115,6 +115,8 @@ https://d2gvyg6lvauoko.cloudfront.net/230226/studioyuva/playlist.m3u8?hdnts=st=1
 https://d2gvyg6lvauoko.cloudfront.net/230226/studioyuva/playlist.m3u8?hdnts=st=1792925558~exp=1792947158~acl=!*/230226/studioyuva/*!/payload/yupptvott_5_-1_7833b8f0-6c81-4851-8173-f73eb9d835e9_US_20.83.175.149_yupptv_1_channel_7107_-1/*~data=yupptvott_5_-1_7833b8f0-6c81-4851-8173-f73eb9d835e9_US_20.83.175.149_yupptv_1_channel_7107_-1~hmac=664fa665e4c3e2ed5a2b6e468bbc3913506ad288ed32b03a9205725bbd5ea6e2&ads.content_custom_3_param=yuppfastint&ads.ip=20.83.175.149&did=7833b8f0-6c81-4851-8173-f73eb9d835e9&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=ENTERTAINMENT&ads.content_custom_1_param=FAST&ads.channel=7107&ads.channel_name=StudioYuva&ads.language=TEL&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
 #EXTINF:-1 tvg-name="Sony Aath" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG002YP08L.png?lock=720x540" group-title="Entertainment",Sony Aath
 http://103.151.60.162:2122/play/a023/index.m3u8?hls
+#EXTINF:-1 tvg-name="Sony Aath (576p)" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG002YP08L.png?lock=720x540" group-title="Entertainment",Sony Aath (576p)
+http://103.151.60.162:2122/play/a023/index.m3u8?hls=
 #EXTINF:-1 tvg-name="SONY AATH HD" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG002YP08L.png?lock=720x540" group-title="Entertainment",SONY AATH HD
 https://live20.bozztv.com/giatvplayout7/giatv-209611/index.m3u8
 #EXTINF:-1 tvg-name="Sony Aath" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG002YP08L.png?lock=720x540" group-title="Entertainment",Sony Aath
@@ -187,8 +189,6 @@ https://cdn.pishow.tv/ott/live/1013/master.m3u8
 https://cdn.pishow.tv/ott/live/230/master.m3u8
 #EXTINF:-1 tvg-name="Shemaroo TV" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SHEMAROO_TV/images/LOGO_HD/image.png" group-title="Entertainment",Shemaroo TV
 http://yolomax.pro/live/A1U3S8XPVM58B23/iHeFx423Ac/1020236.ts
-#EXTINF:-1 tvg-name="Sony Aath" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG002YP08L.png?lock=720x540" group-title="Entertainment",Sony Aath
-https://stream.ottplus.live/live/sony_aath_abr/index.m3u8
 #EXTINF:-1 tvg-name="Sony TV" tvg-logo="https://dtil.tmsimg.com/assets/s159096_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Sony TV
 https://alex4528.site/k7m2q9x4b8nc/stream.ts?id=193
 #EXTINF:-1 tvg-name="Star Suvarna" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/6396/1782290646396-h.jpg" group-title="Entertainment",Star Suvarna
@@ -311,6 +311,8 @@ https://5k8q87azdy4v-hls-live.wmncdn.net/MAKKAL/271ddf829afeece44d8732757fba1a66
 http://103.17.193.159:5001/live/897.m3u8
 #EXTINF:-1 tvg-name="Nick" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/6807/1784039246807-h.jpg" group-title="Kids",Nick
 http://103.135.253.32:8080/NICK/index.m3u8
+#EXTINF:-1 tvg-name="Disney International HD (576p)" tvg-logo="https://plain-apac-prod-public.komododecks.com/202609/07/FAoDDiaq0WPescE65173/image.png" group-title="Kids",Disney International HD (576p)
+http://103.151.60.162:2122/play/a018/index.m3u8?hls=
 #EXTINF:-1 tvg-name="Kushi TV" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Kushi_TV.png" group-title="Kids",Kushi TV
 http://dsmqbfez.pardns.com/live/6CTB9BKG/4Q7Y9DFW/5868.ts
 #EXTINF:-1 tvg-name="Disney International HD" tvg-logo="https://plain-apac-prod-public.komododecks.com/202609/07/FAoDDiaq0WPescE65173/image.png" group-title="Kids",Disney International HD
@@ -367,6 +369,8 @@ http://103.135.253.32:8080/STAR-MOVIES/index.m3u8
 http://live.balajibroadband.com:3500/live/1393.m3u8
 #EXTINF:-1 tvg-name="Jalsha Movies HD" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/1445/1782291521445-h.jpg" group-title="Movies",Jalsha Movies HD
 http://103.151.60.162:2122/play/a00x/index.m3u8?hls
+#EXTINF:-1 tvg-name="Jalsha Movies SD" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/1445/1782291521445-h.jpg" group-title="Movies",Jalsha Movies SD
+https://iptvlive-beta.vercel.app/jalsha-movies/index.m3u8
 #EXTINF:-1 tvg-name="Sony Pix HD" tvg-logo="https://dtil.tmsimg.com/assets/s143803_ld_h15_aa.png?lock=720x540" group-title="Movies",Sony Pix HD
 http://103.17.193.159:5001/live/762.m3u8
 #EXTINF:-1 tvg-name="Colors Cineplex Superhits" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_COLORS_CINEPLEX_SUPERHITS/images/LOGO_HD/image.png" group-title="Movies",Colors Cineplex Superhits
@@ -1381,6 +1385,8 @@ http://103.17.193.159:5001/live/476.m3u8
 https://drk6xq0vhn.gpcdn.net/live/ten_1_hd_720/index.m3u8
 #EXTINF:-1 tvg-name="Sony Ten 2" tvg-logo="https://dtil.tmsimg.com/assets/s157592_ld_h15_aa.png?lock=720x540" group-title="Sports",Sony Ten 2
 https://drk6xq0vhn.gpcdn.net/live/ten_2_hd_720/index.m3u8
+#EXTINF:-1 tvg-name="Sony Sports Ten 1 (576p)" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Sports",Sony Sports Ten 1 (576p)
+http://103.151.60.162:2122/play/a01c/index.m3u8?hls=
 #EXTINF:-1 tvg-name="EUROSPORT 1" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_EUROSPORT_HD/images/LOGO_HD/image.png" group-title="Sports",EUROSPORT 1
 http://45.159.94.49:8080/play/live.php?mac=00:1A:79:0F:46:C6&stream=1105338&extension=ts
 #EXTINF:-1 tvg-name="Eurosport 1 FHD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_EUROSPORT_HD/images/LOGO_HD/image.png" group-title="Sports",Eurosport 1 FHD
@@ -1399,6 +1405,8 @@ http://line.tivi-one.net:80/play/live.php?mac=A0:BB:3E:75:52:64&stream=1031934&e
 https://stream3.cinerama.uz/1452/mono.m3u8
 #EXTINF:-1 tvg-name="Sony Max HD" tvg-logo="https://dtil.tmsimg.com/assets/s157593_ld_h15_aa.png?lock=720x540" group-title="Sports",Sony Max HD
 http://103.151.60.162:2122/play/a014/index.m3u8?hls
+#EXTINF:-1 tvg-name="Sony Sports Ten 2 (576p)" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Sports",Sony Sports Ten 2 (576p)
+http://103.151.60.162:2122/play/a01b/index.m3u8?hls=
 #EXTINF:-1 tvg-name="Sony Sports Ten 3 Hindi" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0025TCMR.png?lock=720x540" group-title="Sports",Sony Sports Ten 3 Hindi
 http://103.151.60.162:2122/play/a01t/index.m3u8?hls
 #EXTINF:-1 tvg-name="Sony Ten 1" tvg-logo="https://dtil.tmsimg.com/assets/s157591_ld_h15_aa.png?lock=720x540" group-title="Sports",Sony Ten 1
@@ -1409,6 +1417,8 @@ https://stream.ottplus.live/live/ten_2_hd_abr/live/ten_2_hd_720/index.m3u8
 https://alex4528.site/k7m2q9x4b8nc/stream.ts?id=132883
 #EXTINF:-1 tvg-name="Eurosport 1 HD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_EUROSPORT_HD/images/LOGO_HD/image.png" group-title="Sports",Eurosport 1 HD
 http://195.64.140.147:10114/114
+#EXTINF:-1 tvg-name="Sony Sports Ten 3 Hindi (576p)" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Sports",Sony Sports Ten 3 Hindi (576p)
+http://103.151.60.162:2122/play/a01t/index.m3u8?hls=
 #EXTINF:-1 tvg-name="Sony Ten 2" tvg-logo="https://dtil.tmsimg.com/assets/s157592_ld_h15_aa.png?lock=720x540" group-title="Sports",Sony Ten 2
 https://stream.ottplus.live/live/ten_2_hd_abr/live/ten_2_hd_720/chunks.m3u8
 #EXTINF:-1 tvg-name="Travelxp Tamil" tvg-logo="https://i.imgur.com/vAYMHAp.png" group-title="Travel",Travelxp Tamil

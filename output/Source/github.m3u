@@ -221,8 +221,6 @@ https://drk6xq0vhn.gpcdn.net/live/sony_aath_abr/index.m3u8
 https://drk6xq0vhn.gpcdn.net/live/sub_hd_abr/index.m3u8
 #EXTINF:-1 tvg-name="Zee Bangla" tvg-logo="https://i.imgur.com/zTGTWa8.png" group-title="Entertainment",Zee Bangla
 https://drk6xq0vhn.gpcdn.net/live/zee_bangla_720/index.m3u8
-#EXTINF:-1 tvg-name="Zee Bangla" tvg-logo="https://i.imgur.com/zTGTWa8.png" group-title="Entertainment",Zee Bangla
-http://103.135.253.32:8080/ZEE-BANGLA-HD/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-name="Punjabi TV" tvg-logo="https://papaji.freetvindia.com/media/PunjabiTV.png" group-title="Entertainment",Punjabi TV
 https://mumt07.tangotv.in/zHjX9OFlPUNJABITV/index.m3u8
 #EXTINF:-1 tvg-name="Zee Bangla Sonar" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/ZeeBanglaSonar_Transparent_6bea30f2-39ba-462c-a2c8-317d68f08519.png" group-title="Entertainment",Zee Bangla Sonar
@@ -297,8 +295,6 @@ http://dsmqbfez.pardns.com/live/6CTB9BKG/4Q7Y9DFW/33592.ts
 https://tv.kbhub.online/AS-BANGLADESH/BD-RANG-TV-HD.ts
 #EXTINF:-1 tvg-name="Shemaroo TV" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SHEMAROO_TV/images/LOGO_HD/image.png" group-title="Entertainment",Shemaroo TV
 http://yolomax.pro/live/A1U3S8XPVM58B23/iHeFx423Ac/1020236.ts
-#EXTINF:-1 tvg-name="Sony Aath" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG002YP08L.png?lock=720x540" group-title="Entertainment",Sony Aath
-https://stream.ottplus.live/live/sony_aath_abr/index.m3u8
 #EXTINF:-1 tvg-name="Sony Pal USA" tvg-logo="https://dtil.tmsimg.com/assets/s157973_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Sony Pal USA
 http://dsmqbfez.pardns.com/live/6CTB9BKG/4Q7Y9DFW/1084807.ts
 #EXTINF:-1 tvg-name="Sony TV" tvg-logo="https://dtil.tmsimg.com/assets/s159096_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Sony TV
@@ -695,6 +691,10 @@ https://d1g8wgjurz8via.cloudfront.net/bpk-tv/ColorsHD/default/master2.m3u8
 https://tv.kbhub.online/Movies/Hindi-Classic-24.m3u8
 #EXTINF:-1 tvg-name="Zee Cinema" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022HVX3.png?lock=720x540" group-title="Movies",Zee Cinema
 http://103.151.60.162:2122/play/a024/index.m3u8
+#EXTINF:-1 tvg-name="Colors Bangla Cinema" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/4599/1782289524599-h.jpg" group-title="Movies",Colors Bangla Cinema
+https://footfytv.pro/proxy/direct?url=https://footfytv.pro/proxy/direct?url=http://103.114.11.37:8081/Colors-bangla-cinema/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-name="Jalsha Movies SD" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/1445/1782291521445-h.jpg" group-title="Movies",Jalsha Movies SD
+https://iptvlive-beta.vercel.app/jalsha-movies/index.m3u8
 #EXTINF:-1 tvg-name="Sony Pix HD" tvg-logo="https://dtil.tmsimg.com/assets/s143803_ld_h15_aa.png?lock=720x540" group-title="Movies",Sony Pix HD
 http://103.17.193.159:5001/live/762.m3u8
 #EXTINF:-1 tvg-name="Hindi Movie Classic 24" group-title="Movies",Hindi Movie Classic 24
@@ -1591,6 +1591,8 @@ https://alex4528.site/k7m2q9x4b8nc/stream.ts?id=134318
 https://tvsen3.aynaott.com/Zht5VqBb/index.m3u8
 #EXTINF:-1 tvg-name="eurosport hd" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_EUROSPORT_HD/images/LOGO_HD/image.png" group-title="Sports",eurosport hd
 https://food-dlvr-ott.akamaized.net/primary/2/39a7e16da8744ad7a3fbeecf7c6473ed/index_27.m3u8
+#EXTINF:-1 tvg-name="Star Sports 1" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/7482/1782284567482-h.jpg" group-title="Sports",Star Sports 1
+https://footfytv.pro/proxy/direct?url=https://flussonic.defineatoz.com/Starsports1/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-name="Sony Sports Ten 2 KB" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Sports",Sony Sports Ten 2 KB
 http://103.151.60.162:2122/play/a01b/index.m3u8?hls
 #EXTINF:-1 tvg-name="Star Sports Select 1" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/1176/1783001141176-h.jpg" group-title="Sports",Star Sports Select 1

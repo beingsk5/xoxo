@@ -21,14 +21,28 @@ http://23.237.104.106:8080/USA_MTV_LIVE/index.m3u8
 https://stream.ottlive.co.in/ptccanada/index.m3u8
 #EXTINF:-1 tvg-name="Mango (India) (576p)" tvg-logo="https://i.imgur.com/neZm4CY.png" group-title="Entertainment",Mango (India) (576p)
 https://stmv6.voxtvhd.com.br/cinehindi/cinehindi/playlist.m3u8
+#EXTINF:-1 tvg-name="Sony Aath (576p)" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG002YP08L.png?lock=720x540" group-title="Entertainment",Sony Aath (576p)
+http://103.151.60.162:2122/play/a023/index.m3u8?hls=
+#EXTINF:-1 tvg-name="Zee Bangla (576p)" tvg-logo="https://i.imgur.com/zTGTWa8.png" group-title="Entertainment",Zee Bangla (576p)
+http://103.151.60.162:2122/play/a011/index.m3u8?hls=
 #EXTINF:-1 tvg-name="mega tv" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Mega%20TV.png" group-title="Entertainment",mega tv
 https://unlimited2-cl-isp.dps.live/mega/mega.smil/playlist.m3u8
 #EXTINF:-1 tvg-name="Discovery Channel" tvg-logo="https://dtil.tmsimg.com/assets/s159106_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Discovery Channel
 http://5.188.159.128:8070/DiscoveryChannel/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-name="Star Jalsha (576p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Star-Jalsha--2000-x-1125--Transparent.png" group-title="Entertainment",Star Jalsha (576p)
+http://103.151.60.162:2122/play/a00w/index.m3u8?hls=
+#EXTINF:-1 tvg-name="Zee Bangla HD (1080p)" tvg-logo="https://i.imgur.com/zTGTWa8.png" group-title="Entertainment",Zee Bangla HD (1080p)
+http://103.151.60.162:2122/play/a02p/index.m3u8?hls=
+#EXTINF:-1 tvg-name="Colors Bangla Cinema (576p)" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/Colors_Transparent_16069908-8494-4eb4-bd40-5afca3969088.png" group-title="Entertainment",Colors Bangla Cinema (576p)
+http://103.151.60.162:2122/play/a02m/index.m3u8?hls=
 #EXTINF:-1 tvg-name="Discovery Channel HD" tvg-logo="https://dtil.tmsimg.com/assets/s159106_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Discovery Channel HD
 http://195.64.140.147:10151/151
 #EXTINF:-1 tvg-name="Disney Channel (720p) [Geo-blocked]" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/1540/1785251571540-h.jpg" group-title="Kids",Disney Channel (720p) [Geo-blocked]
 http://212.5.144.156/disney/index.m3u8
+#EXTINF:-1 tvg-name="Disney International HD (576p)" tvg-logo="https://plain-apac-prod-public.komododecks.com/202609/07/FAoDDiaq0WPescE65173/image.png" group-title="Kids",Disney International HD (576p)
+http://103.151.60.162:2122/play/a018/index.m3u8?hls=
+#EXTINF:-1 tvg-name="Disney Junior (India) (576p)" tvg-logo="https://plain-apac-prod-public.komododecks.com/202609/07/kDx5CloMCE4tFekQtkOQ/image.png" group-title="Kids",Disney Junior (India) (576p)
+http://103.151.60.162:2122/play/a016/index.m3u8?hls=
 #EXTINF:-1 tvg-name="Hungama Kids 6" group-title="Kids",Hungama Kids 6
 http://xtv.ooo:8080/live/927382370/837382809/150480.m3u8
 #EXTINF:-1 tvg-name="Bollywood HD (576p)" group-title="Movies",Bollywood HD (576p)
@@ -109,6 +123,8 @@ http://62.89.17.130:4451/play/a01m/index.m3u8
 http://5.188.159.128:8070/eurosport2/index.m3u8
 #EXTINF:-1 tvg-name="Eurosport 1" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_EUROSPORT_HD/images/LOGO_HD/image.png" group-title="Sports",Eurosport 1
 http://62.89.17.130:4451/play/a01d/index.m3u8
+#EXTINF:-1 tvg-name="Sony Sports Ten 1 (576p)" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Sports",Sony Sports Ten 1 (576p)
+http://103.151.60.162:2122/play/a01c/index.m3u8?hls=
 #EXTINF:-1 tvg-name="EUROSPORT 1" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_EUROSPORT_HD/images/LOGO_HD/image.png" group-title="Sports",EUROSPORT 1
 http://45.159.94.49:8080/play/live.php?mac=00:1A:79:0F:46:C6&stream=1105338&extension=ts
 #EXTINF:-1 tvg-name="Eurosport 1 FHD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_EUROSPORT_HD/images/LOGO_HD/image.png" group-title="Sports",Eurosport 1 FHD
@@ -117,5 +133,13 @@ http://45.159.94.49:8080/play/live.php?mac=00:1A:79:0F:46:C6&stream=869561&exten
 http://45.159.94.49:8080/play/live.php?mac=00:1A:79:0F:46:C6&stream=1105337&extension=ts
 #EXTINF:-1 tvg-name="Eurosport 2 FHD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_EUROSPORT_HD/images/LOGO_HD/image.png" group-title="Sports",Eurosport 2 FHD
 http://45.159.94.49:8080/play/live.php?mac=00:1A:79:0F:46:C6&stream=869560&extension=ts
+#EXTINF:-1 tvg-name="Sony Sports Ten 2 (576p)" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Sports",Sony Sports Ten 2 (576p)
+http://103.151.60.162:2122/play/a01b/index.m3u8?hls=
 #EXTINF:-1 tvg-name="Eurosport 1 HD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_EUROSPORT_HD/images/LOGO_HD/image.png" group-title="Sports",Eurosport 1 HD
 http://195.64.140.147:10114/114
+#EXTINF:-1 tvg-name="Sony Sports Ten 3 Hindi (576p)" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Sports",Sony Sports Ten 3 Hindi (576p)
+http://103.151.60.162:2122/play/a01t/index.m3u8?hls=
+#EXTINF:-1 tvg-name="Star Sports Select 1 HD (1080p)" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Sports",Star Sports Select 1 HD (1080p)
+http://103.151.60.162:2122/play/a026/index.m3u8?hls=
+#EXTINF:-1 tvg-name="Star Sports Select 2 HD (1080p)" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Sports",Star Sports Select 2 HD (1080p)
+http://103.151.60.162:2122/play/a027/index.m3u8?hls=
