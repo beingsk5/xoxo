@@ -1,12 +1,12 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
 #EXTINF:-1 tvg-name="Safari TV" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Safari%20TV.png" group-title="Documentary",Safari TV
-http://yolomax.pro/live/A1U3S8XPVM58B23/iHeFx423Ac/418616.ts
-#EXTINF:-1 tvg-name="Safari TV" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Safari%20TV.png" group-title="Documentary",Safari TV
 https://mumt04.tangotv.in/m18aqlK4SAFARITV/index.m3u8
 #EXTINF:-1 tvg-name="Safari TV" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Safari%20TV.png" group-title="Documentary",Safari TV
 https://j78dp346yq5r-hls-live.5centscdn.com/safari/live.stream/playlist.m3u8
 #EXTINF:-1 tvg-name="Mazhavil Manorama HD" tvg-logo="https://dtil.tmsimg.com/assets/s147769_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Mazhavil Manorama HD
 http://103.175.73.12:8080/live/245/master.m3u8
+#EXTINF:-1 tvg-name="Mazhavil Manorama" tvg-logo="https://dtil.tmsimg.com/assets/s147769_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Mazhavil Manorama
+https://cdn.pishow.tv/ott/live/1479/master.m3u8
 #EXTINF:-1 tvg-name="Mazhavil Manorama" tvg-logo="https://dtil.tmsimg.com/assets/s147769_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Mazhavil Manorama
 https://yuppmedtaorire.akamaized.net/v1/master/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/mazhavilmanorama_nim_https/050522/mazhavilmanorama/playlist.m3u8
 #EXTINF:-1 tvg-name="Asianet News (360p)" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/7408/1782289617408-h.jpg" group-title="Entertainment",Asianet News (360p)
@@ -15,18 +15,12 @@ https://asianetnews.vgcdn.net/ptnr-Embed/v1/manifest/611d79b11b77e2f571934fd80ca
 https://d3eyhgoylams0m.cloudfront.net/v1/manifest/93ce20f0f52760bf38be911ff4c91ed02aa2fd92/ed7bd2c7-8d10-4051-b397-2f6b90f99acb/562ee8f9-9950-48a0-ba1d-effa00cf0478/2.m3u8
 #EXTINF:-1 tvg-name="Mazhavil Manorama HD" tvg-logo="https://dtil.tmsimg.com/assets/s147769_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Mazhavil Manorama HD
 https://mmtv-vglivessai.akamaized.net/v1/master/673630b269b766886555eebfddd4f27f3de3ab50/f8a0827f-030f-4a0d-b7e5-338996c09a5b/index.m3u8
-#EXTINF:-1 tvg-name="Asianet Plus" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Asianet%20Plus.png" group-title="Entertainment",Asianet Plus
-http://dsmqbfez.pardns.com/live/6CTB9BKG/4Q7Y9DFW/89817.ts
 #EXTINF:-1 tvg-name="Darshana TV" tvg-logo="https://dtil.tmsimg.com/assets/s142774_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Darshana TV
 https://cdn.pishow.tv/ott/live/1453/master.m3u8
 #EXTINF:-1 tvg-name="Mazhavil Manorama" tvg-logo="https://dtil.tmsimg.com/assets/s147769_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Mazhavil Manorama
 http://dsmqbfez.pardns.com/live/6CTB9BKG/4Q7Y9DFW/33541.ts
-#EXTINF:-1 tvg-name="Zee Keralam" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG00239LE2.png?lock=720x540" group-title="Entertainment",Zee Keralam
-http://yolomax.pro/live/A1U3S8XPVM58B23/iHeFx423Ac/63882.ts
 #EXTINF:-1 tvg-name="Asianet HD" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/7408/1782289617408-h.jpg" group-title="Entertainment",Asianet HD
 https://da86m1sqpm3o0.cloudfront.net/28072023/smil:starasianet.smil/chunklist_b1928000.m3u8
-#EXTINF:-1 tvg-name="Asianet" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/7408/1782289617408-h.jpg" group-title="Entertainment",Asianet
-http://yolomax.pro/live/A1U3S8XPVM58B23/iHeFx423Ac/1126364.ts
 #EXTINF:-1 tvg-name="Darshana TV" tvg-logo="https://dtil.tmsimg.com/assets/s142774_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Darshana TV
 https://yuppparoriglin.akamaized.net/181224/smil:darshanatv.smil/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
 #EXTINF:-1 tvg-name="DD Malayalam" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Malayalam.png" group-title="Entertainment",DD Malayalam
@@ -55,8 +49,6 @@ https://live.cmr24.fm/TVI/HD/playlist.m3u8
 https://stream.ottplus.live/live/sony_ent_sd_abr/index.m3u8
 #EXTINF:-1 tvg-name="Color Vision (720p) [Geo-blocked]" tvg-logo="https://i.imgur.com/YozqNL3.jpg" group-title="General",Color Vision (720p) [Geo-blocked]
 https://cdn4.wind.do/streams/colorvision/colorvision_master.m3u8
-#EXTINF:-1 tvg-name="NKR TV Kannada" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/NKRTV.png" group-title="General",NKR TV Kannada
-https://stream.ottlive.co.in/nkrtv/index.m3u8
 #EXTINF:-1 tvg-name="NKR TV Kannada (576p)" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/NKRTV.png" group-title="General",NKR TV Kannada (576p)
 https://mumt05.tangotv.in/87NeALx2NKRTV/index.m3u8
 #EXTINF:-1 tvg-name="Jeevan TV" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Jeevan_TV.png" group-title="General",Jeevan TV
@@ -77,14 +69,8 @@ https://mumt01.tangotv.in/O5aw8Zn3KAIRALI/index.m3u8
 https://streams.tangotv.in/KAIRALI/ORIGIN/index.m3u8
 #EXTINF:-1 tvg-name="Discovery Kids Gujarati" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Discovery%20Kids.png" group-title="Kids",Discovery Kids Gujarati
 http://dsmqbfez.pardns.com/live/6CTB9BKG/4Q7Y9DFW/132295.ts
-#EXTINF:-1 tvg-name="Discovery Kids Tamil" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Discovery%20Kids.png" group-title="Kids",Discovery Kids Tamil
-http://dsmqbfez.pardns.com/live/6CTB9BKG/4Q7Y9DFW/132242.ts
-#EXTINF:-1 tvg-name="Discovery Kids Telugu" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Discovery%20Kids.png" group-title="Kids",Discovery Kids Telugu
-http://yolomax.pro/live/A1U3S8XPVM58B23/iHeFx423Ac/606156.ts
 #EXTINF:-1 tvg-name="Kappa TV" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Kappa%20TV.png" group-title="Lifestyle",Kappa TV
 https://d1msejlow1t3l4.cloudfront.net/fta/kappatv/playlist.m3u8?hdnts=st%3D1783658363~exp%3D1783679963~acl%3D%21%2A%2Ffta%2Fkappatv%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_172.212.163.17_yuppfast_2_channel_166_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_172.212.163.17_yuppfast_2_channel_166_-1~hmac%3Df840bc76e2aa5e0e762a83c8d025ae7c64b4b2e16ff94189478f323c1694e880
-#EXTINF:-1 tvg-name="Kappa TV" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Kappa%20TV.png" group-title="Lifestyle",Kappa TV
-http://yolomax.pro/live/A1U3S8XPVM58B23/iHeFx423Ac/285816.ts
 #EXTINF:-1 tvg-name="Kappa TV (Music)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Kappa%20TV.png" group-title="Lifestyle",Kappa TV (Music)
 https://cdn.pishow.tv/ott/live/1123/master.m3u8
 #EXTINF:-1 tvg-name="Kappa TV" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Kappa%20TV.png" group-title="Lifestyle",Kappa TV
@@ -105,8 +91,6 @@ https://d2pnr7z8mre86q.cloudfront.net/WE_IFB_11/dash/manifest.mpd
 https://d2pnr7z8mre86q.cloudfront.net/WE_IFB_1/dash/manifest.mpd
 #EXTINF:-1 tvg-name="Asianet Movies" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/7227/1782288617227-h.jpg" group-title="Movies",Asianet Movies
 http://dsmqbfez.pardns.com/live/6CTB9BKG/4Q7Y9DFW/291172.ts
-#EXTINF:-1 tvg-name="Asianet Movies" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/7227/1782288617227-h.jpg" group-title="Movies",Asianet Movies
-http://yolomax.pro/live/A1U3S8XPVM58B23/iHeFx423Ac/34747.ts
 #EXTINF:-1 tvg-name="Raj Musix Malayalam" tvg-logo="https://dtil.tmsimg.com/assets/s143706_ld_h15_aa.png?lock=720x540" group-title="Music",Raj Musix Malayalam
 https://cdn.pishow.tv/ott/live/1073/master.m3u8
 #EXTINF:-1 tvg-name="Raj Musix Malayalam" tvg-logo="https://dtil.tmsimg.com/assets/s143706_ld_h15_aa.png?lock=720x540" group-title="Music",Raj Musix Malayalam
@@ -147,10 +131,10 @@ https://cdn.pishow.tv/ott/live/1297/master.m3u8
 https://stream.ottlive.co.in/bigtvmalayalam/index.m3u8
 #EXTINF:-1 tvg-name="News18 Gujarati" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/News18%20Gujarati.png" group-title="News",News18 Gujarati
 https://n18syndication.akamaized.net/bpk-tv/News18_Gujarati_NW18_MOB/output01/master.m3u8
+#EXTINF:-1 tvg-name="Reporter TV" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/REPORTER-logo_2000_X_1125-Transpharent.png" group-title="News",Reporter TV
+https://yuppnimresmum.akamaized.net/050522/reporter/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
 #EXTINF:-1 tvg-name="Big TV 24x7" tvg-logo="https://yt3.googleusercontent.com/blnfLkIGphkSPHfWy4SVOVyHlrWSAEn2pArAS5wdH7tYmXAFD4dVMGLtSmZr5R5CNl1d2cUuDw=s512-c-k-c0x00ffffff-no-rj" group-title="News",Big TV 24x7
 https://d2gvyg6lvauoko.cloudfront.net/230226/bigtvmalyalam/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
-#EXTINF:-1 tvg-name="Reporter TV" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/REPORTER-logo_2000_X_1125-Transpharent.png" group-title="News",Reporter TV
-https://segment.yuppcdn.net/050522/reporter/playlist.m3u8
 #EXTINF:-1 tvg-name="Kairali News" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/KAIRALI-NEWS.png" group-title="News",Kairali News
 https://cdn.pishow.tv/ott/live/1469/master.m3u8
 #EXTINF:-1 tvg-name="Reporter TV" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/REPORTER-logo_2000_X_1125-Transpharent.png" group-title="News",Reporter TV

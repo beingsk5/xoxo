@@ -5,14 +5,10 @@ http://103.151.60.162:2122/play/a00w/index.m3u8
 http://103.151.60.162:2122/play/a00w/index.m3u8?hls
 #EXTINF:-1 tvg-name="Star Jalsha (576p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Star-Jalsha--2000-x-1125--Transparent.png" group-title="Entertainment",Star Jalsha (576p)
 http://103.151.60.162:2122/play/a00w/index.m3u8?hls=
-#EXTINF:-1 tvg-name="Maa Gold" tvg-logo="https://dtil.tmsimg.com/assets/s143822_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Maa Gold
-http://yolomax.pro/live/A1U3S8XPVM58B23/iHeFx423Ac/1019601.ts
 #EXTINF:-1 tvg-name="Rang TV" tvg-logo="https://raw.githubusercontent.com/saeidrahmanbd/BDIX-IPTV/main/logos/rang.png" group-title="Entertainment",Rang TV
 https://tv.kbhub.online/AS-BANGLADESH/BD-RANG-TV-HD.ts
 #EXTINF:-1 tvg-name="Star Jalsha" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Star-Jalsha--2000-x-1125--Transparent.png" group-title="Entertainment",Star Jalsha
 https://tv.kbhub.online/AS-BANGLADESH/BD-STAR-JALSHA-FHD.ts
-#EXTINF:-1 tvg-name="Star Maa Gold" tvg-logo="https://dtil.tmsimg.com/assets/s143822_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Star Maa Gold
-http://yolomax.pro/live/A1U3S8XPVM58B23/iHeFx423Ac/34433.ts
 #EXTINF:-1 tvg-name="Star Maa Gold" tvg-logo="https://dtil.tmsimg.com/assets/s143822_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Star Maa Gold
 http://yolomax.pro/live/A1U3S8XPVM58B23/iHeFx423Ac/1019614.ts
 #EXTINF:-1 tvg-name="Star Jalsha HD" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Star-Jalsha--2000-x-1125--Transparent.png" group-title="Entertainment",Star Jalsha HD
@@ -39,10 +35,6 @@ http://103.151.60.162:2122/play/a02l/index.m3u8
 http://103.135.253.32:8080/STAR-MOVIES-SEL/index.m3u8
 #EXTINF:-1 tvg-name="Star gold romance HD" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/6567/1784547656567-h.jpg" group-title="Movies",Star gold romance HD
 http://tv.cloudcdn.me:80/live.ts?channelId=128485&uid=7133&deviceMac=00:1A:79:4A:02:91
-#EXTINF:-1 tvg-name="Star Maa Movies" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/2722/1782288522722-h.jpg" group-title="Movies",Star Maa Movies
-http://yolomax.pro/live/A1U3S8XPVM58B23/iHeFx423Ac/551217.ts
-#EXTINF:-1 tvg-name="Star Utsav Movies" tvg-logo="https://dtil.tmsimg.com/assets/s143856_ld_h15_aa.png?lock=720x540" group-title="Movies",Star Utsav Movies
-https://alex4528.site/k7m2q9x4b8nc/stream.ts?id=133029
 #EXTINF:-1 tvg-name="India Voice" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/India_Voice.png" group-title="News",India Voice
 https://mumt04.tangotv.in/m18aqlK4INDIAVOICE/index.m3u8
 #EXTINF:-1 tvg-name="India Voice" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/India_Voice.png" group-title="News",India Voice
@@ -66,6 +58,8 @@ https://d1msejlow1t3l4.cloudfront.net/fta/rengonitv/playlist.m3u8?hdnts=st=17926
 #EXTINF:-1 tvg-name="Rengoni TV" tvg-logo="https://dtil.tmsimg.com/assets/s143722_ld_h15_aa.png?lock=720x540" group-title="Other",Rengoni TV
 https://d1msejlow1t3l4.cloudfront.net/fta/rengonitv/playlist.m3u8?hdnts=st=1792622408~exp=1792644008~acl=!*/fta/rengonitv/*!/payload/yupptvott_5_-1_145d466c-e75e-4691-9d3f-020f24dd374e_US_20.163.133.225_yupptv_1_channel_6649_-1/*~data=yupptvott_5_-1_145d466c-e75e-4691-9d3f-020f24dd374e_US_20.163.133.225_yupptv_1_channel_6649_-1~hmac=1ba9c2e36eeba121b2320c5182d5cdf091831d6ddfca8b231adee960d018de32&ads.content_custom_3_param=yuppfastint&ads.ip=20.163.133.225&did=145d466c-e75e-4691-9d3f-020f24dd374e&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=ENTERTAINMENT&ads.content_custom_1_param=FAST&ads.channel=6649&ads.channel_name=RengoniTV&ads.language=ASM&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
 #EXTINF:-1 tvg-name="Rengoni" tvg-logo="https://dtil.tmsimg.com/assets/s143722_ld_h15_aa.png?lock=720x540" group-title="Other",Rengoni
+http://103.175.73.12:8080/live/709/master.m3u8
+#EXTINF:-1 tvg-name="Rengoni" tvg-logo="https://dtil.tmsimg.com/assets/s143722_ld_h15_aa.png?lock=720x540" group-title="Other",Rengoni
 https://d1msejlow1t3l4.cloudfront.net/fta/rengonitv/playlist.m3u8
 #EXTINF:-1 tvg-name="Tarang TV Odia" tvg-logo="https://dtil.tmsimg.com/assets/s143718_ld_h15_aa.png?lock=720x540" group-title="Other",Tarang TV Odia
 http://dsmqbfez.pardns.com/live/6CTB9BKG/4Q7Y9DFW/5764.ts
@@ -77,8 +71,6 @@ https://streams.tangotv.in/RENGONI/ORIGIN/index.m3u8
 https://live.villagetv.net/villagetv/hd/index.m3u8
 #EXTINF:-1 tvg-name="Village TV" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/VillageTV.png" group-title="Religious",Village TV
 https://villagetv.applelive.in/villagetv/villagetv/index.m3u8
-#EXTINF:-1 tvg-name="Star Sports 1" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/7482/1782284567482-h.jpg" group-title="Sports",Star Sports 1
-https://footfytv.pro/proxy/direct?url=https://flussonic.defineatoz.com/Starsports1/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-name="Star Sports Select 2 HD (720p)" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Sports",Star Sports Select 2 HD (720p)
 http://tvsen7.aynascope.net/ssport2hd/index.m3u8
 #EXTINF:-1 tvg-name="Star Sports Select 1" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/1176/1783001141176-h.jpg" group-title="Sports",Star Sports Select 1
@@ -89,8 +81,6 @@ http://103.151.60.162:2122/play/a00v/index.m3u8?hls
 http://103.151.60.162:2122/play/a026/index.m3u8?hls
 #EXTINF:-1 tvg-name="Star Sports Select 2 HD" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Sports",Star Sports Select 2 HD
 http://103.151.60.162:2122/play/a027/index.m3u8?hls
-#EXTINF:-1 tvg-name="Star Sports 1" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/7482/1782284567482-h.jpg" group-title="Sports",Star Sports 1
-https://alex4528.site/k7m2q9x4b8nc/stream.ts?id=293
 #EXTINF:-1 tvg-name="Star Sports 1 Hindi" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/8867/1782284658867-h.jpg" group-title="Sports",Star Sports 1 Hindi
 https://alex4528.site/k7m2q9x4b8nc/stream.ts?id=295
 #EXTINF:-1 tvg-name="Star Sports 2 Telugu HD" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Sports",Star Sports 2 Telugu HD
