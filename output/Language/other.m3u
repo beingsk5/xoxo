@@ -5,8 +5,6 @@ https://amg17931-zee-amg17931c6-samsung-au-8872.playouts.now.amagi.tv/playlist/a
 https://7689426c.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/U2Ftc3VuZy1mcl9aZWVNYWdpY19ITFM/playlist.m3u8
 #EXTINF:-1 tvg-name="Zee One German (720p)" group-title="Entertainment",Zee One German (720p)
 https://e4955b54.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/U2Ftc3VuZy1kZV9aZWVPbmVfSExT/playlist.m3u8
-#EXTINF:-1 tvg-name="God Stands Kids Club TV Urdu" group-title="Kids",God Stands Kids Club TV Urdu
-https://online.godstands.tv:5443/WebRTCApp/streams/KidsUrdu.m3u8
 #EXTINF:-1 tvg-name="Nick Junior Gujarati" group-title="Kids",Nick Junior Gujarati
 http://dsmqbfez.pardns.com/live/6CTB9BKG/4Q7Y9DFW/132300.ts
 #EXTINF:-1 tvg-name="Nick Junior Telugu" group-title="Kids",Nick Junior Telugu
@@ -161,6 +159,8 @@ https://amg01106-tv9-amg01106c5-xiaomi-in-1184.playouts.now.amagi.tv/playlist/am
 http://toronto3.live247stream.com/toronto360/tv/playlist.m3u8
 #EXTINF:-1 tvg-name="Aadhavan Tamil TV" group-title="Other",Aadhavan Tamil TV
 http://aadhavantamiltv.phoenixcreations.online/aadhavantamiltv/aadhavantamiltv/index.m3u8
+#EXTINF:-1 tvg-name="tvg-name="xiaomi" tvg-language="Hindi" tvg-country="IN" tvg-logo="" tvg-chno="xiaomi" group-title="",xiaomi" group-title="Other",tvg-name="xiaomi" tvg-language="Hindi" tvg-country="IN" tvg-logo="" tvg-chno="xiaomi" group-title="",xiaomi
+https://mix.drmlive.net/mix/xiaomi-66224.m3u8
 #EXTINF:-1 tvg-name="Virat TV" group-title="Other",Virat TV
 https://venus.streambridge.link:8047/kannada/virattv/index.m3u8
 #EXTINF:-1 tvg-name="ABN TV India (540p)" group-title="Other",ABN TV India (540p)
@@ -187,6 +187,8 @@ https://turkmedya-live.ercdn.net/tv24/tv24_720p.m3u8
 https://hls02ns.antenaplay.ro/hls/bollywood-clasic-sd/index.m3u8
 #EXTINF:-1 tvg-name="enter 10 bangla" group-title="Other",enter 10 bangla
 https://iptvlive.ahmed-bd-org.workers.dev/enter-10-bangla-1/index.m3u8
+#EXTINF:-1 tvg-name="Hegyvidék TV (Buda TV)" group-title="Other",Hegyvidék TV (Buda TV)
+http://budatv.streaming.aiproduction.hu/playlist.m3u
 #EXTINF:-1 tvg-name="JK TV Kannada" group-title="Other",JK TV Kannada
 http://account18.livebox.co.in/jktvkannadahls/live.m3u8
 #EXTINF:-1 tvg-name="MOV | Bollywood OLD" group-title="Other",MOV | Bollywood OLD
@@ -217,8 +219,6 @@ http://stream-msk-10.ott.tricolor.tv/dtv/id640_MSKSG-PVR-1--Bollywood/03/plst.m3
 http://strm112.1.fm/bombaybeats_mobile_mp3
 #EXTINF:-1 tvg-name="Eye Tamil" group-title="Other",Eye Tamil
 https://2.proxy.nellaiiptv.com/EyeMedia/EyeTV/index.m3u8
-#EXTINF:-1 tvg-name="Asian TV" group-title="Other",Asian TV
-https://tv.kbhub.online/AS-INDIA-BANGLA/IN-ASIAN-TV.ts
 #EXTINF:-1 tvg-name="BTV World" group-title="Other",BTV World
 https://tv.kbhub.online/AS-INDIA-BANGLA/IN-BTV-WORLD-HD.ts
 #EXTINF:-1 tvg-name="Discovery Bangla" group-title="Other",Discovery Bangla
@@ -277,14 +277,14 @@ http://air.pc.cdn.bitgravity.com/air/live/pbaudio022/playlist.m3u8
 https://air.pc.cdn.bitgravity.com/air/live/pbaudio021/playlist.m3u8
 #EXTINF:-1 tvg-name="Tamil Ratna" group-title="Other",Tamil Ratna
 https://mumt04.tangotv.in/m18aqlK4TAMILRATNAM/index.m3u8
+#EXTINF:-1 tvg-name="MahdawiounTV (1080p) [Geo-blocked]" group-title="Religious",MahdawiounTV (1080p) [Geo-blocked]
+https://live.mahdawioun.tv/stream/mahdawioun/playlist.m3u8
 #EXTINF:-1 tvg-name="Britain Tamil Bhakthi" group-title="Religious",Britain Tamil Bhakthi
 http://btc.inet.moe/live/btctv/index.m3u8
 #EXTINF:-1 tvg-name="Madani Channel Urdu SD" group-title="Religious",Madani Channel Urdu SD
 https://streaming.madanichannel.tv/static/streaming-playlists/hls/b9790f10-cb0d-4e30-82bf-84a756234e58/master.m3u8
 #EXTINF:-1 tvg-name="ABN Urdu (540p)" group-title="Religious",ABN Urdu (540p)
 https://mediaserver.abnvideos.com/streams/abnurdu.m3u8
-#EXTINF:-1 tvg-name="God Stands TV Punjabi" group-title="Religious",God Stands TV Punjabi
-https://online.godstands.tv:5443/WebRTCApp/streams/PunjabiStreaming.m3u8
 #EXTINF:-1 tvg-name="Tamil Pirai TV" group-title="Religious",Tamil Pirai TV
 https://kayal.inet.moe/kayal/kayaltv/index.m3u8
 #EXTINF:-1 tvg-name="Peace TV Urdu" group-title="Religious",Peace TV Urdu
