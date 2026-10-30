@@ -82,7 +82,7 @@ https://cdn.pishow.tv/ott/live/1017/master.m3u8
 #EXTINF:-1 tvg-name="DD Bangla" tvg-logo="https://dtil.tmsimg.com/assets/s142778_ld_h15_aa.png?lock=720x540" group-title="General",DD Bangla
 https://iptvlive.ahmed-bd-org.workers.dev/dd-bangla-1/index.m3u8
 #EXTINF:-1 tvg-name="DD Bangla" tvg-logo="https://dtil.tmsimg.com/assets/s142778_ld_h15_aa.png?lock=720x540" group-title="General",DD Bangla
-https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/7ff57cc9046b4c188b51a0d506f36e7f/index_3.m3u8
+http://dvltv.cc:80/play/uxN8_xYmP3o_GFqK372_h36-T1aOFds32t_y40kVcsA
 #EXTINF:-1 tvg-name="DD Tripura" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD-Tripura-Logo_2000_X_1125_Transpharent.png" group-title="General",DD Tripura
 https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/52b998e9510d41c29ad2ceca8ea3d849/index_3.m3u8
 #EXTINF:-1 tvg-name="DD Tripura" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD-Tripura-Logo_2000_X_1125_Transpharent.png" group-title="General",DD Tripura
@@ -148,6 +148,8 @@ https://streams.tangotv.in/9XM/ORIGIN/index.m3u8
 #EXTINF:-1 tvg-name="Ramdhenu" tvg-logo="https://dtil.tmsimg.com/assets/s143717_ld_h15_aa.png?lock=720x540" group-title="Music",Ramdhenu
 https://mumt01.tangotv.in/O5aw8Zn3RAMDHENU/mpegts
 #EXTINF:-1 tvg-name="Sangeet Bangla" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Sangeet%20Bangla.png" group-title="Music",Sangeet Bangla
+http://dvltv.cc:80/play/uxN8_xYmP3o_GFqK372_h_7wPmPTsXVGwUN6yfW44Og
+#EXTINF:-1 tvg-name="Sangeet Bangla" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Sangeet%20Bangla.png" group-title="Music",Sangeet Bangla
 https://tvsen6.aynaott.com/hT5jHczt/index.m3u8
 #EXTINF:-1 tvg-name="Sangeet Bangla" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Sangeet%20Bangla.png" group-title="Music",Sangeet Bangla
 https://mumt05.tangotv.in/87NeALx2SANGEETBANGLA/tracks-v1a1/mono.m3u8
@@ -155,8 +157,6 @@ https://mumt05.tangotv.in/87NeALx2SANGEETBANGLA/tracks-v1a1/mono.m3u8
 https://fta.ektv.in/live/155/master.m3u8
 #EXTINF:-1 tvg-name="Dhoom Music Bangla" tvg-logo="https://dtil.tmsimg.com/assets/s142882_ld_h15_aa.png?lock=720x540" group-title="Music",Dhoom Music Bangla
 https://mumt06.tangotv.in/qYyB8fXVDHOOMMUSIC/index.m3u8
-#EXTINF:-1 tvg-name="Sangeet Bangla" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Sangeet%20Bangla.png" group-title="Music",Sangeet Bangla
-https://mumt05.tangotv.in/87NeALx2SANGEETBANGLA/index.m3u8
 #EXTINF:-1 tvg-name="9X Jalwa" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_9X_JALWA/images/LOGO_HD/image.png" group-title="Music",9X Jalwa
 https://fta.ektv.in/live/161/master.m3u8
 #EXTINF:-1 tvg-name="Orange Bangla" tvg-logo="https://i.imgur.com/wjSaHj5.png" group-title="Music",Orange Bangla
@@ -171,8 +171,6 @@ https://d1msejlow1t3l4.cloudfront.net/fta/ctvnakdplus/playlist.m3u8?hdnts=st=179
 https://amg01448-samsungin-news18bangla-samsungin-ad-qy.amagi.tv/playlist/amg01448-samsungin-news18bangla-samsungin/playlist.m3u8
 #EXTINF:-1 tvg-name="ABP Ananda" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/ABP_Ananda_logo.svg/500px-ABP_Ananda_logo.svg.png" group-title="News",ABP Ananda
 https://amg01448-samsungin-abpananda-samsungin-ad-pw.amagi.tv/playlist/amg01448-samsungin-abpananda-samsungin/playlist.m3u8
-#EXTINF:-1 tvg-name="ABP Ananda (Asia)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/ABP_Ananda_logo.svg/500px-ABP_Ananda_logo.svg.png" group-title="News",ABP Ananda (Asia)
-https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01412-xiaomiasia-abpananda-xiaomi/playlist.m3u8
 #EXTINF:-1 tvg-name="Star Bharat" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/8704/1782288318704-h.jpg" group-title="News",Star Bharat
 http://103.135.253.32:8080/STAR-BHARAT/index.m3u8
 #EXTINF:-1 tvg-name="Calcutta News" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG002EF87T.png?lock=720x540" group-title="News",Calcutta News
@@ -195,6 +193,8 @@ https://mumt03.tangotv.in/Dsly5z3HCTVNAKDPLUS/index.m3u8
 https://cdn.pishow.tv/ott/live/448/master.m3u8
 #EXTINF:-1 tvg-name="Calcutta News" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG002EF87T.png?lock=720x540" group-title="News",Calcutta News
 https://d1msejlow1t3l4.cloudfront.net/fta/calcuttanews/playlist.m3u8?hdnts=st=1792630562~exp=1792652162~acl=!*/fta/calcuttanews/*!/payload/yupptvott_5_-1_5ce22167-f950-409a-bb7b-efaee90ab0a2_MX_158.23.146.211_yupptv_1_channel_6643_-1/*~data=yupptvott_5_-1_5ce22167-f950-409a-bb7b-efaee90ab0a2_MX_158.23.146.211_yupptv_1_channel_6643_-1~hmac=4a23685b88aba2705fdad34c7341017d121152e97e004f3cdff96be7ad7026fe&ads.content_custom_3_param=yuppfastint&ads.ip=158.23.146.211&did=5ce22167-f950-409a-bb7b-efaee90ab0a2&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=NEWS&ads.content_custom_1_param=FAST&ads.channel=6643&ads.channel_name=CalcuttaNews&ads.language=BEN&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
+#EXTINF:-1 tvg-name="ABP ANANDA" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/ABP_Ananda_logo.svg/500px-ABP_Ananda_logo.svg.png" group-title="News",ABP ANANDA
+http://dvltv.cc:80/play/uxN8_xYmP3o_GFqK372_h4-tmDKCltDUTfS7qf-GYGk
 #EXTINF:-1 tvg-name="Zee 24 Ghanta" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022KGXP.png?lock=720x540" group-title="News",Zee 24 Ghanta
 https://d2dsoyvkr33m05.cloudfront.net/index_4.m3u8
 #EXTINF:-1 tvg-name="Zee 24 Ghanta" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022KGXP.png?lock=720x540" group-title="News",Zee 24 Ghanta
