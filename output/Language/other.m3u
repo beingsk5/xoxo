@@ -21,8 +21,6 @@ https://streams2.sofast.tv/ptnr-yupptv/title-BOLLYWOOD-4U-ENG_yupptv/v1/master/6
 https://jmp2.uk/stvp-IN3800010SH
 #EXTINF:-1 tvg-name="KCM (1080p) [Geo-blocked]" group-title="Movies",KCM (1080p) [Geo-blocked]
 https://amg02159-amg02159c7-samsung-in-4001.playouts.now.amagi.tv/playlist/amg02159-kcglobal-kcm-samsungin/playlist.m3u8
-#EXTINF:-1 tvg-name="South Indian Movies" group-title="Movies",South Indian Movies
-https://tv.kbhub.online/Movies/South-India-Movie.m3u8
 #EXTINF:-1 tvg-name="Bollywood Classic Romania (576p)" group-title="Movies",Bollywood Classic Romania (576p)
 https://hls02ns.antenaplay.ro/hls/bollywood-sd/index.m3u8
 #EXTINF:-1 tvg-name="TOP Cinema HD" group-title="Movies",TOP Cinema HD
@@ -33,8 +31,6 @@ http://26f2f4cd.amazzin.pw/iptv/DVLCNQPW5YSR36/13004/index.m3u8
 https://xykt-fix.github.io/cinerama_edge01/hls/BOLLYWOOD_RU/Movie009.m3u8
 #EXTINF:-1 tvg-name="Bollywood HD (576p)" group-title="Movies",Bollywood HD (576p)
 http://176.118.197.101/Bollywood_HD/index.m3u8
-#EXTINF:-1 tvg-name="Hindi Classic 24" tvg-logo="https://raw.githubusercontent.com/saeidrahmanbd/BDIX-IPTV/main/logos/hindi-movie-classic-24.png" group-title="Movies",Hindi Classic 24
-https://tv.kbhub.online/Movies/Hindi-Classic-24.m3u8
 #EXTINF:-1 tvg-name="Hindi Movie Classic 24" group-title="Movies",Hindi Movie Classic 24
 https://vods2.aynaott.com/hindimovies/index.m3u8
 #EXTINF:-1 tvg-name="MBC Bollywood" group-title="Movies",MBC Bollywood
@@ -165,6 +161,8 @@ https://mix.drmlive.net/mix/xiaomi-66224.m3u8
 https://venus.streambridge.link:8047/kannada/virattv/index.m3u8
 #EXTINF:-1 tvg-name="ABN TV India (540p)" group-title="Other",ABN TV India (540p)
 https://mediaserver.abnvideos.com/streams/abntvindia.m3u8
+#EXTINF:-1 tvg-name="Canal 13 Esquipulas SD" group-title="Other",Canal 13 Esquipulas SD
+https://tv91.hostingnuclear.com:19360/intercable/intercable.m3u8
 #EXTINF:-1 tvg-name="Enter 10 Bangla" group-title="Other",Enter 10 Bangla
 https://live-bangla.akamaized.net/liveabr/pub-iobanglakp3sff/live_720p/chunks.m3u8
 #EXTINF:-1 tvg-name="group-title="Punjabi",PTV Pardesi" group-title="Other",group-title="Punjabi",PTV Pardesi
@@ -209,20 +207,24 @@ https://stream.onecloudlive.in/orange/ME24TAMIL/index.m3u8
 https://cloud.dndcommunication.in/shinekannada/shinekannada/playlist.m3u8
 #EXTINF:-1 tvg-name="TV 9 Nusantara (720p)" group-title="Other",TV 9 Nusantara (720p)
 https://5bf7b725107e5.streamlock.net/tv9/tv9/playlist.m3u8
+#EXTINF:-1 tvg-name="balajibroadband" group-title="Other",balajibroadband
+http://live.balajibroadband.com:3500/live/3444.m3u8
 #EXTINF:-1 tvg-name="VTV Gujarati" group-title="Other",VTV Gujarati
 https://d1msejlow1t3l4.cloudfront.net/fta/vtvgujarati/playlist.m3u8?hdnts=st=1792629828~exp=1792651428~acl=!*/fta/vtvgujarati/*!/payload/yupptvott_5_-1_c7dfc58d-9e0f-4507-9824-7db0aada781b_MX_158.23.146.211_yupptv_1_channel_6420_-1/*~data=yupptvott_5_-1_c7dfc58d-9e0f-4507-9824-7db0aada781b_MX_158.23.146.211_yupptv_1_channel_6420_-1~hmac=5982df6afefea8a08b1f5aad922c81c8654b148ec80cdfe34cc0a29c2c269db5&ads.content_custom_3_param=yuppfastint&ads.ip=158.23.146.211&did=c7dfc58d-9e0f-4507-9824-7db0aada781b&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=NEWS&ads.content_custom_1_param=FAST&ads.channel=6420&ads.channel_name=VTVGujarati&ads.language=GUJ&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
+#EXTINF:-1 tvg-name="balajibroadband" group-title="Other",balajibroadband
+http://live.balajibroadband.com:3500/live/3418.m3u8
 #EXTINF:-1 tvg-name="Bollywood HD" group-title="Other",Bollywood HD
 http://stream-msk-10.ott.tricolor.tv/dtv/id640_MSKSG-PVR-1--Bollywood/03/plst.m3u8?drmreq=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBfdHlwZSI6ImFwdHBfb3R0IiwiY2xhc3MiOiJCUk9XU0VSIiwiZHJlaWQiOiIzNjAyNTUwNDI2MjA5MSIsImV4cCI6MTc1NTkyNzUyNSwiaHdpZCI6IjVlODA1NGRlZmQxNGRjZWVhNzA0MmZmMzFhMGRiMzg2YWRmZDMwZWY0MDRmZWEwM2I0YWIyZjU2OWM2YWY3OWMiLCJsYXN0X3JlcV9kYXRlIjoxNzU1MzIyNzI1LCJzZXNzaW9uX2lkIjoiNTQyZWEyMzk1MDdjZDgzMmYxYjY2ZWIzODJlNTJiODYiLCJ0b2tlbl90eXBlIjoiQ29udGVudEFjY2Vzc1Rva2VuIiwidHlwZSI6Ik1PWklMTEEifQ.T5fKBBALOpi3-OAwkSZROfKzpWim3nZi4iIMz7AyaXs
 #EXTINF:-1 tvg-name="1.FM – Bombay Beats India Radio" group-title="Other",1.FM – Bombay Beats India Radio
 http://strm112.1.fm/bombaybeats_mobile_mp3
+#EXTINF:-1 tvg-name="balajibroadband" group-title="Other",balajibroadband
+http://live.balajibroadband.com:3500/live/1345.m3u8
 #EXTINF:-1 tvg-name="Eye Tamil" group-title="Other",Eye Tamil
 https://2.proxy.nellaiiptv.com/EyeMedia/EyeTV/index.m3u8
 #EXTINF:-1 tvg-name="BTV World" group-title="Other",BTV World
 https://tv.kbhub.online/AS-INDIA-BANGLA/IN-BTV-WORLD-HD.ts
 #EXTINF:-1 tvg-name="Discovery Bangla" group-title="Other",Discovery Bangla
 https://tv.kbhub.online/AS-INDIA-BANGLA/IN-DISCOVERY-FHD-BANGLA.ts
-#EXTINF:-1 tvg-name="ETV Bangla" group-title="Other",ETV Bangla
-https://tv.kbhub.online/AS-INDIA-BANGLA/IN-ETV-BANGAL-HD.ts
 #EXTINF:-1 tvg-name="ITV Bangla" group-title="Other",ITV Bangla
 https://tv.kbhub.online/AS-INDIA-BANGLA/IN-ITV-BANGLA-HD.ts
 #EXTINF:-1 tvg-name="MBC Bollywood" group-title="Other",MBC Bollywood

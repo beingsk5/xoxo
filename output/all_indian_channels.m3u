@@ -85,6 +85,8 @@ https://otv.hibridcdn.net/otv/tv_abr/playlist.m3u8
 https://livetv.tarangplus.in/otv-origin/live/playlist.m3u8
 #EXTINF:-1 tvg-name="DD Punjabi" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Punjabi.png" group-title="Culture",DD Punjabi
 https://d3eyhgoylams0m.cloudfront.net/v1/manifest/93ce20f0f52760bf38be911ff4c91ed02aa2fd92/ed7bd2c7-8d10-4051-b397-2f6b90f99acb/20c8ad14-a158-4a42-8889-e032d070856e/2.m3u8
+#EXTINF:-1 tvg-name="Jaya TV" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Jaya%20TV%20HD.png" group-title="Culture",Jaya TV
+http://zyamka.akadatel.com/iptv/6KPA5QMR4XYRDA/6696/index.m3u8
 #EXTINF:-1 tvg-name="DD Bharati" tvg-logo="https://dtil.tmsimg.com/assets/s142779_ld_h15_aa.png?lock=720x540" group-title="Culture",DD Bharati
 https://cdn.pishow.tv/ott/live/10/master.m3u8
 #EXTINF:-1 tvg-name="DD Bharati" tvg-logo="https://dtil.tmsimg.com/assets/s142779_ld_h15_aa.png?lock=720x540" group-title="Culture",DD Bharati
@@ -149,10 +151,10 @@ http://mfe01.cliptv.az/dash/Animal_Planet_HD345wer.ism/playlist.mpd
 http://dsmqbfez.pardns.com/live/6CTB9BKG/4Q7Y9DFW/5872.ts
 #EXTINF:-1 tvg-name="Investigation Discovery" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/InvestigationDiscoveryLogo2020.svg/960px-InvestigationDiscoveryLogo2020.svg.png" group-title="Documentary",Investigation Discovery
 https://stream.ottplus.live/live/id_hd_abr/index.m3u8
+#EXTINF:-1 tvg-name="animal planet hd" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/AnimalPlanetHD_Transparent_d36c0ee3-3e3f-4e0c-b3b2-23bfb3c3c2b0.png" group-title="Documentary",animal planet hd
+http://nexusconnects.org:80/play/live.php?mac=00:1A:79:A2:B8:2E&stream=944624&extension=m3u8
 #EXTINF:-1 tvg-name="History TV18 HD" tvg-logo="https://dtil.tmsimg.com/assets/s143133_ld_h15_aa.png?lock=720x540" group-title="Documentary",History TV18 HD
 https://techtraveleat.in/stream.m3u8?id=historytv18eng
-#EXTINF:-1 tvg-name="Investigation Discovery HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/InvestigationDiscoveryLogo2020.svg/960px-InvestigationDiscoveryLogo2020.svg.png" group-title="Documentary",Investigation Discovery HD
-http://195.64.140.147:10152/152
 #EXTINF:-1 tvg-name="Animal Planet HD" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/AnimalPlanetHD_Transparent_d36c0ee3-3e3f-4e0c-b3b2-23bfb3c3c2b0.png" group-title="Documentary",Animal Planet HD
 http://stream.mcquack.net/114/tracks-v1a1/mono.ts.m3u8
 #EXTINF:-1 tvg-name="Investigation Discovery HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/InvestigationDiscoveryLogo2020.svg/960px-InvestigationDiscoveryLogo2020.svg.png" group-title="Documentary",Investigation Discovery HD
@@ -163,6 +165,8 @@ https://d1g8wgjurz8via.cloudfront.net/bpk-tv/Investigationdiscovery2/default/man
 https://mumt04.tangotv.in/m18aqlK4SAFARITV/index.m3u8
 #EXTINF:-1 tvg-name="Safari TV" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Safari%20TV.png" group-title="Documentary",Safari TV
 https://j78dp346yq5r-hls-live.5centscdn.com/safari/live.stream/playlist.m3u8
+#EXTINF:-1 tvg-name="Safari TV" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Safari%20TV.png" group-title="Documentary",Safari TV
+https://fta.ektv.in/live/410/master.m3u8
 #EXTINF:-1 tvg-name="BVG (576p)" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/BVG.png" group-title="Education",BVG (576p)
 https://mumt05.tangotv.in/87NeALx2BVG/index.m3u8
 #EXTINF:-1 tvg-name="DD Kisan" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Kisan.png" group-title="Education",DD Kisan
@@ -264,11 +268,11 @@ https://d1msejlow1t3l4.cloudfront.net/fta/pasand/playlist.m3u8?hdnts=st=17926197
 #EXTINF:-1 tvg-name="PASAND" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Pasand-Logo--transparent.png" group-title="Entertainment",PASAND
 https://d1msejlow1t3l4.cloudfront.net/fta/pasand/playlist.m3u8?hdnts=st=1792622386~exp=1792643986~acl=!*/fta/pasand/*!/payload/yupptvott_5_-1_145d466c-e75e-4691-9d3f-020f24dd374e_US_20.163.133.225_yupptv_1_channel_6392_-1/*~data=yupptvott_5_-1_145d466c-e75e-4691-9d3f-020f24dd374e_US_20.163.133.225_yupptv_1_channel_6392_-1~hmac=f11a0741b125a2e0246697c5cf44268464f93b3e76104d9ad7f02f52941b1847&ads.content_custom_3_param=yuppfastint&ads.ip=20.163.133.225&did=145d466c-e75e-4691-9d3f-020f24dd374e&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=ENTERTAINMENT&ads.content_custom_1_param=FAST&ads.channel=6392&ads.channel_name=PASAND&ads.language=BHO&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
 #EXTINF:-1 tvg-name="Studio Yuva" tvg-logo="https://i.imgur.com/BOhgz2T.png" group-title="Entertainment",Studio Yuva
-https://d2gvyg6lvauoko.cloudfront.net/230226/studioyuva/playlist.m3u8?hdnts=st=1793276613~exp=1793298213~acl=!*/230226/studioyuva/*!/payload/yupptvott_5_-1_9bd1485c-d351-4e76-8520-b9e17b88b6cb_US_52.176.138.179_yupptv_1_channel_7107_-1/*~data=yupptvott_5_-1_9bd1485c-d351-4e76-8520-b9e17b88b6cb_US_52.176.138.179_yupptv_1_channel_7107_-1~hmac=6f82e1a39c5c020a15b536c132ef73839ae740330e4974367b3acce514ab504d&ads.content_custom_3_param=yuppfastint&ads.ip=52.176.138.179&did=9bd1485c-d351-4e76-8520-b9e17b88b6cb&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=ENTERTAINMENT&ads.content_custom_1_param=FAST&ads.channel=7107&ads.channel_name=StudioYuva&ads.language=TEL&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
-#EXTINF:-1 tvg-name="Studio Yuva" tvg-logo="https://i.imgur.com/BOhgz2T.png" group-title="Entertainment",Studio Yuva
 https://d2gvyg6lvauoko.cloudfront.net/230226/studioyuva/playlist.m3u8?hdnts=st=1793367448~exp=1793389048~acl=!*/230226/studioyuva/*!/payload/yupptvott_5_-1_39a8f48e-4f39-46a6-8d7a-cdf017ce1d69_US_74.235.149.145_yupptv_1_channel_7107_-1/*~data=yupptvott_5_-1_39a8f48e-4f39-46a6-8d7a-cdf017ce1d69_US_74.235.149.145_yupptv_1_channel_7107_-1~hmac=9c2c2349993a3f6a44fdbddcb3a0fa8ee31c15889e70b644f8e6dc6f4769f169&ads.content_custom_3_param=yuppfastint&ads.ip=74.235.149.145&did=39a8f48e-4f39-46a6-8d7a-cdf017ce1d69&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=ENTERTAINMENT&ads.content_custom_1_param=FAST&ads.channel=7107&ads.channel_name=StudioYuva&ads.language=TEL&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
 #EXTINF:-1 tvg-name="Studio Yuva" tvg-logo="https://i.imgur.com/BOhgz2T.png" group-title="Entertainment",Studio Yuva
 https://d2gvyg6lvauoko.cloudfront.net/230226/studioyuva/playlist.m3u8?hdnts=st=1793368277~exp=1793389877~acl=!*/230226/studioyuva/*!/payload/yupptvott_5_-1_10e4ab0a-6df9-4461-97c3-c3ea724ba451_US_74.235.149.145_yupptv_1_channel_7107_-1/*~data=yupptvott_5_-1_10e4ab0a-6df9-4461-97c3-c3ea724ba451_US_74.235.149.145_yupptv_1_channel_7107_-1~hmac=f43facc7a6aa7df374a65bdc7f959e25951ab08fb015cd26ecccb4d42125a8b2&ads.content_custom_3_param=yuppfastint&ads.ip=74.235.149.145&did=10e4ab0a-6df9-4461-97c3-c3ea724ba451&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=ENTERTAINMENT&ads.content_custom_1_param=FAST&ads.channel=7107&ads.channel_name=StudioYuva&ads.language=TEL&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
+#EXTINF:-1 tvg-name="Studio Yuva" tvg-logo="https://i.imgur.com/BOhgz2T.png" group-title="Entertainment",Studio Yuva
+https://d2gvyg6lvauoko.cloudfront.net/230226/studioyuva/playlist.m3u8?hdnts=st=1793449390~exp=1793470990~acl=!*/230226/studioyuva/*!/payload/yupptvott_5_-1_d674a819-b8ae-406e-8460-9189a92ff117_US_20.64.107.16_yupptv_1_channel_7107_-1/*~data=yupptvott_5_-1_d674a819-b8ae-406e-8460-9189a92ff117_US_20.64.107.16_yupptv_1_channel_7107_-1~hmac=7cad8f5657c92f1aee89c3a2e557cc76652004c55d9cdf58b28a7246d00e6876&ads.content_custom_3_param=yuppfastint&ads.ip=20.64.107.16&did=d674a819-b8ae-406e-8460-9189a92ff117&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=ENTERTAINMENT&ads.content_custom_1_param=FAST&ads.channel=7107&ads.channel_name=StudioYuva&ads.language=TEL&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
 #EXTINF:-1 tvg-name="Mazhavil Manorama" tvg-logo="https://dtil.tmsimg.com/assets/s147769_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Mazhavil Manorama
 https://cdn.pishow.tv/ott/live/1479/master.m3u8
 #EXTINF:-1 tvg-name="MTV SD" tvg-logo="https://img10.hotstar.com/image/upload/sources/r1/cms/prod/8633/1786020488633-h.jpg" group-title="Entertainment",MTV SD
@@ -284,9 +288,9 @@ https://stmv6.voxtvhd.com.br/cinehindi/cinehindi/playlist.m3u8
 #EXTINF:-1 tvg-name="Mazhavil Manorama" tvg-logo="https://dtil.tmsimg.com/assets/s147769_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Mazhavil Manorama
 https://yuppmedtaorire.akamaized.net/v1/master/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/mazhavilmanorama_nim_https/050522/mazhavilmanorama/playlist.m3u8
 #EXTINF:-1 tvg-name="Studio Yuva" tvg-logo="https://i.imgur.com/BOhgz2T.png" group-title="Entertainment",Studio Yuva
-https://d2gvyg6lvauoko.cloudfront.net/230226/studioyuva/playlist.m3u8?hdnts=st=1793198615~exp=1793220215~acl=!*/230226/studioyuva/*!/payload/yupptvott_5_-1_1774bb69-963d-4d83-9945-dbd26e6a14c5_US_20.84.158.9_yupptv_1_channel_7107_-1/*~data=yupptvott_5_-1_1774bb69-963d-4d83-9945-dbd26e6a14c5_US_20.84.158.9_yupptv_1_channel_7107_-1~hmac=daab268fd50e5502e2ea341954ea85203cdd232dc872ee73ca58bc9f09019516&ads.content_custom_3_param=yuppfastint&ads.ip=20.84.158.9&did=1774bb69-963d-4d83-9945-dbd26e6a14c5&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=ENTERTAINMENT&ads.content_custom_1_param=FAST&ads.channel=7107&ads.channel_name=StudioYuva&ads.language=TEL&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
+https://d2gvyg6lvauoko.cloudfront.net/230226/studioyuva/playlist.m3u8?hdnts=st=1793282163~exp=1793303763~acl=!*/230226/studioyuva/*!/payload/yupptvott_5_-1_04198b49-dd8e-44c5-94b3-80c047c51743_US_172.215.216.199_yupptv_1_channel_7107_-1/*~data=yupptvott_5_-1_04198b49-dd8e-44c5-94b3-80c047c51743_US_172.215.216.199_yupptv_1_channel_7107_-1~hmac=aef0ae12acd368e9bcbcc2152ae078bf6a3a664fc4c83e786e044a441da8db7e&ads.content_custom_3_param=yuppfastint&ads.ip=172.215.216.199&did=04198b49-dd8e-44c5-94b3-80c047c51743&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=ENTERTAINMENT&ads.content_custom_1_param=FAST&ads.channel=7107&ads.channel_name=StudioYuva&ads.language=TEL&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
 #EXTINF:-1 tvg-name="Studio Yuva" tvg-logo="https://i.imgur.com/BOhgz2T.png" group-title="Entertainment",Studio Yuva
-https://d2gvyg6lvauoko.cloudfront.net/230226/studioyuva/playlist.m3u8?hdnts=st=1793278376~exp=1793299976~acl=!*/230226/studioyuva/*!/payload/yupptvott_5_-1_612e1682-9ff6-48d3-814e-971dd4c5f9b3_US_52.176.138.179_yupptv_1_channel_7107_-1/*~data=yupptvott_5_-1_612e1682-9ff6-48d3-814e-971dd4c5f9b3_US_52.176.138.179_yupptv_1_channel_7107_-1~hmac=51c4226e8c08b609a687597be6926827bd6100aa2afd981f110aa4cef301e5fe&ads.content_custom_3_param=yuppfastint&ads.ip=52.176.138.179&did=612e1682-9ff6-48d3-814e-971dd4c5f9b3&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=ENTERTAINMENT&ads.content_custom_1_param=FAST&ads.channel=7107&ads.channel_name=StudioYuva&ads.language=TEL&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
+https://d2gvyg6lvauoko.cloudfront.net/230226/studioyuva/playlist.m3u8?hdnts=st=1793283317~exp=1793304917~acl=!*/230226/studioyuva/*!/payload/yupptvott_5_-1_39f3e480-c82b-4ef9-837d-60f51f1a41c5_US_52.165.101.86_yupptv_1_channel_7107_-1/*~data=yupptvott_5_-1_39f3e480-c82b-4ef9-837d-60f51f1a41c5_US_52.165.101.86_yupptv_1_channel_7107_-1~hmac=82afc8ef9b4f32f0d12d98438d3a9b93c290db81fad288b6ad481b5ae22daa81&ads.content_custom_3_param=yuppfastint&ads.ip=52.165.101.86&did=39f3e480-c82b-4ef9-837d-60f51f1a41c5&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=ENTERTAINMENT&ads.content_custom_1_param=FAST&ads.channel=7107&ads.channel_name=StudioYuva&ads.language=TEL&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
 #EXTINF:-1 tvg-name="Zee Bangla" tvg-logo="https://i.imgur.com/zTGTWa8.png" group-title="Entertainment",Zee Bangla
 https://d1rc86nwwc9fag.cloudfront.net/260723/smil:zeebangla.smil/chunklist_b896000.m3u8
 #EXTINF:-1 tvg-name="mega tv" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Mega%20TV.png" group-title="Entertainment",mega tv
@@ -303,6 +307,8 @@ https://asianetnews.vgcdn.net/ptnr-Embed/v1/manifest/611d79b11b77e2f571934fd80ca
 https://d3eyhgoylams0m.cloudfront.net/v1/manifest/93ce20f0f52760bf38be911ff4c91ed02aa2fd92/ed7bd2c7-8d10-4051-b397-2f6b90f99acb/562ee8f9-9950-48a0-ba1d-effa00cf0478/2.m3u8
 #EXTINF:-1 tvg-name="MTV" tvg-logo="https://img10.hotstar.com/image/upload/sources/r1/cms/prod/8633/1786020488633-h.jpg" group-title="Entertainment",MTV
 https://ma.anixa.tv/clips/stream/mtv/playlist.php
+#EXTINF:-1 tvg-name="Raj TV" tvg-logo="https://dtil.tmsimg.com/assets/s143715_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Raj TV
+http://zyamka.akadatel.com/iptv/6KPA5QMR4XYRDA/6700/index.m3u8
 #EXTINF:-1 tvg-name="Sony Aath" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG002YP08L.png?lock=720x540" group-title="Entertainment",Sony Aath
 http://isstnjz4.megogo.xyz/iptv/SNZC9Z4RPEYGA3/6641/index.m3u8
 #EXTINF:-1 tvg-name="Sony SAB" tvg-logo="https://dtil.tmsimg.com/assets/s159099_ld_h15_ab.png?lock=720x540" group-title="Entertainment",Sony SAB
@@ -319,6 +325,8 @@ https://tvsen6.aynaott.com/vhu6qz5Nsd/index.m3u8
 https://fta.ektv.in/live/245/master.m3u8
 #EXTINF:-1 tvg-name="Zee 24 Ghanta (Asia)" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_E24/images/LOGO_HD/image.png" group-title="Entertainment",Zee 24 Ghanta (Asia)
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01412-xiaomiasia-zee24ghantaa-xiaomi/playlist.m3u8
+#EXTINF:-1 tvg-name="star jalsha hd" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Star-Jalsha--2000-x-1125--Transparent.png" group-title="Entertainment",star jalsha hd
+http://vpn.streamhut.xyz:80/play/live.php?mac=00:1A:79:02:A0:F2&stream=225777&extension=m3u8
 #EXTINF:-1 tvg-name="Discovery Channel" tvg-logo="https://dtil.tmsimg.com/assets/s159106_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Discovery Channel
 http://5.188.159.128:8070/DiscoveryChannel/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-name="france 24" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_E24/images/LOGO_HD/image.png" group-title="Entertainment",france 24
@@ -385,8 +393,6 @@ https://da86m1sqpm3o0.cloudfront.net/28072023/smil:colorsme.smil/playlist.m3u8
 https://da86m1sqpm3o0.cloudfront.net/28072023/smil:colorstamilhd11.smil/playlist.m3u8
 #EXTINF:-1 tvg-name="Mazhavil Manorama HD" tvg-logo="https://dtil.tmsimg.com/assets/s147769_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Mazhavil Manorama HD
 https://mmtv-vglivessai.akamaized.net/v1/master/673630b269b766886555eebfddd4f27f3de3ab50/f8a0827f-030f-4a0d-b7e5-338996c09a5b/index.m3u8
-#EXTINF:-1 tvg-name="Spondon" tvg-logo="https://www.spondontv.com/wp-content/uploads/2025/10/cropped-SPONDON_Blue-Violet_1-copy-300x100.png" group-title="Entertainment",Spondon
-https://nktv.smartstream.video/smartstream-us/spondon/spondon/playlist.m3u8
 #EXTINF:-1 tvg-name="Star Vijay" tvg-logo="https://vignette.wikia.nocookie.net/logopedia/images/2/23/Vijay_tv.png/revision/latest?cb=20170719104859" group-title="Entertainment",Star Vijay
 https://da86m1sqpm3o0.cloudfront.net/28072023/smil:starvijayuk.smil/playlist.m3u8
 #EXTINF:-1 tvg-name="Zee Bangla HD" tvg-logo="https://i.imgur.com/zTGTWa8.png" group-title="Entertainment",Zee Bangla HD
@@ -423,6 +429,8 @@ http://stream.mcquack.net/177/tracks-v1a1/mono.ts.m3u8
 https://drk6xq0vhn.gpcdn.net/live/sony_aath_abr/index.m3u8
 #EXTINF:-1 tvg-name="Sony SAB" tvg-logo="https://dtil.tmsimg.com/assets/s159099_ld_h15_ab.png?lock=720x540" group-title="Entertainment",Sony SAB
 https://drk6xq0vhn.gpcdn.net/live/sub_hd_abr/index.m3u8
+#EXTINF:-1 tvg-name="star jalsha hd" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Star-Jalsha--2000-x-1125--Transparent.png" group-title="Entertainment",star jalsha hd
+http://cnametx.cdn-gold.cloud:80/play/live.php?mac=00:1B:79:FE:04:9B&stream=225805&extension=m3u8
 #EXTINF:-1 tvg-name="Zee Bangla" tvg-logo="https://i.imgur.com/zTGTWa8.png" group-title="Entertainment",Zee Bangla
 https://drk6xq0vhn.gpcdn.net/live/zee_bangla_720/index.m3u8
 #EXTINF:-1 tvg-name="Zee Bangla" tvg-logo="https://i.imgur.com/zTGTWa8.png" group-title="Entertainment",Zee Bangla
@@ -464,11 +472,11 @@ http://rgkkw.live:80/live/1Aoen7elp5/IgMJ60tmAa/355253.ts
 #EXTINF:-1 tvg-name="Colors Bangla" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/8049/1782291598049-h.jpg" group-title="Entertainment",Colors Bangla
 http://dsmqbfez.pardns.com/live/6CTB9BKG/4Q7Y9DFW/133492.ts
 #EXTINF:-1 tvg-name="Colors Bangla" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/8049/1782291598049-h.jpg" group-title="Entertainment",Colors Bangla
-https://tv.kbhub.online/Entertainment/Colors-Bangla-2.ts
-#EXTINF:-1 tvg-name="Colors Bangla" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/8049/1782291598049-h.jpg" group-title="Entertainment",Colors Bangla
 https://tv.kbhub.online/AS-INDIA-BANGLA/IN-COLORS-BANGLA-FHD.ts
 #EXTINF:-1 tvg-name="Colors Bangla" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/8049/1782291598049-h.jpg" group-title="Entertainment",Colors Bangla
 http://premiumtvs.space:80/live/1Aoen7elp5/IgMJ60tmAa/98882.ts
+#EXTINF:-1 tvg-name="colors cineplex hd" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/Colors_Transparent_16069908-8494-4eb4-bd40-5afca3969088.png" group-title="Entertainment",colors cineplex hd
+http://mag.max-cdn.com:80/play/live.php?mac=00:1B:79:47:7D:90&stream=944627&extension=m3u8
 #EXTINF:-1 tvg-name="Colors Gujrati TV" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/Colors_Transparent_16069908-8494-4eb4-bd40-5afca3969088.png" group-title="Entertainment",Colors Gujrati TV
 http://dsmqbfez.pardns.com/live/6CTB9BKG/4Q7Y9DFW/33468.ts
 #EXTINF:-1 tvg-name="Colors Infinity" tvg-logo="https://dtil.tmsimg.com/assets/s158150_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Colors Infinity
@@ -525,18 +533,18 @@ https://cdn.pishow.tv/ott/live/230/master.m3u8
 https://airtelapp.shemaroo.com/shemarooumang/smil:shemarooumangadp.smil/playlist.m3u8
 #EXTINF:-1 tvg-name="Sony Aath" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG002YP08L.png?lock=720x540" group-title="Entertainment",Sony Aath
 https://stream.ottplus.live/live/sony_aath_abr/index.m3u8
-#EXTINF:-1 tvg-name="Sony Aath" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG002YP08L.png?lock=720x540" group-title="Entertainment",Sony Aath
-https://tv.kbhub.online/AS-BANGLADESH/BD-SONY-AATH-HD.ts
 #EXTINF:-1 tvg-name="Star Jalsha" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Star-Jalsha--2000-x-1125--Transparent.png" group-title="Entertainment",Star Jalsha
-https://tv.kbhub.online/AS-BANGLADESH/BD-STAR-JALSHA-FHD.ts
+http://cdn98.com/play/live.php?mac=00:1A:79:99:54:11&stream=225805&extension=ts&play_token=o1cczsG9wV
+#EXTINF:-1 tvg-name="star jalsha hd" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Star-Jalsha--2000-x-1125--Transparent.png" group-title="Entertainment",star jalsha hd
+http://mag.max-cdn.com:80/play/live.php?mac=00:1B:79:47:7D:90&stream=908682&extension=m3u8
 #EXTINF:-1 tvg-name="Star Plus" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/2384/1782291852384-h.jpg" group-title="Entertainment",Star Plus
 http://dsmqbfez.pardns.com/live/6CTB9BKG/4Q7Y9DFW/97524.ts
 #EXTINF:-1 tvg-name="Star Vijay" tvg-logo="https://vignette.wikia.nocookie.net/logopedia/images/2/23/Vijay_tv.png/revision/latest?cb=20170719104859" group-title="Entertainment",Star Vijay
 http://dsmqbfez.pardns.com/live/6CTB9BKG/4Q7Y9DFW/33621.ts
 #EXTINF:-1 tvg-name="Sun Bangla" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG002Z0506.png?lock=720x540" group-title="Entertainment",Sun Bangla
 http://dsmqbfez.pardns.com/live/6CTB9BKG/4Q7Y9DFW/132122.ts
-#EXTINF:-1 tvg-name="Sun Bangla" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG002Z0506.png?lock=720x540" group-title="Entertainment",Sun Bangla
-https://tv.kbhub.online/AS-INDIA-BANGLA/IN-SUN-BANGLA-SD.ts
+#EXTINF:-1 tvg-name="sun bangla hd" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG002Z0506.png?lock=720x540" group-title="Entertainment",sun bangla hd
+http://line.watchtivo-8k.com:80/play/live.php?mac=00:1B:79:3D:2B:3E&stream=908685&extension=m3u8
 #EXTINF:-1 tvg-name="Tarang TV" tvg-logo="https://dtil.tmsimg.com/assets/s143927_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Tarang TV
 https://tv.kbhub.online/AS-INDIA-BANGLA/IN-TARANG-TV-HD.ts
 #EXTINF:-1 tvg-name="Vendhar TV" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Vendhar-transparent.png" group-title="Entertainment",Vendhar TV
@@ -547,8 +555,6 @@ http://dsmqbfez.pardns.com/live/6CTB9BKG/4Q7Y9DFW/97519.ts
 http://rgkkw.live:80/live/1Aoen7elp5/IgMJ60tmAa/203.ts
 #EXTINF:-1 tvg-name="Zee Bangla" tvg-logo="https://i.imgur.com/zTGTWa8.png" group-title="Entertainment",Zee Bangla
 http://dsmqbfez.pardns.com/live/6CTB9BKG/4Q7Y9DFW/132123.ts
-#EXTINF:-1 tvg-name="Zee Bangla" tvg-logo="https://i.imgur.com/zTGTWa8.png" group-title="Entertainment",Zee Bangla
-https://tv.kbhub.online/Entertainment/Zee-Bangla.ts
 #EXTINF:-1 tvg-name="Zee Bangla HD" tvg-logo="https://i.imgur.com/zTGTWa8.png" group-title="Entertainment",Zee Bangla HD
 https://tvsen6.aynaott.com/ZeeBangla/index.m3u8
 #EXTINF:-1 tvg-name="Zee Bangla Sonar" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/ZeeBanglaSonar_Transparent_6bea30f2-39ba-462c-a2c8-317d68f08519.png" group-title="Entertainment",Zee Bangla Sonar
@@ -571,6 +577,8 @@ https://live-dangal.akamaized.net/liveabr/pub-iodang10p4al/live_720p/chunks.m3u8
 http://mfe02.cliptv.az/dash/Discovery_Channel_HDqwer456y.ism/playlist.mpd
 #EXTINF:-1 tvg-name="Pasand TV" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Pasand-Logo--transparent.png" group-title="Entertainment",Pasand TV
 https://d1msejlow1t3l4.cloudfront.net/fta/pasand/playlist.m3u8
+#EXTINF:-1 tvg-name="sony aath" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG002YP08L.png?lock=720x540" group-title="Entertainment",sony aath
+http://tv.bdiptv.store/live/restream/restreamkk
 #EXTINF:-1 tvg-name="Star Jalsha HD" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Star-Jalsha--2000-x-1125--Transparent.png" group-title="Entertainment",Star Jalsha HD
 https://da86m1sqpm3o0.cloudfront.net/28072023/smil:starjalsha.smil/chunklist_b1928000.m3u8
 #EXTINF:-1 tvg-name="Star Maa HD" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/1759/1782290731759-h.jpg" group-title="Entertainment",Star Maa HD
@@ -583,6 +591,8 @@ https://da86m1sqpm3o0.cloudfront.net/28072023/smil:starpravah.smil/chunklist_b19
 https://da86m1sqpm3o0.cloudfront.net/28072023/smil:colorsaudev.smil/chunklist_b1928000.m3u8
 #EXTINF:-1 tvg-name="Colors" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/Colors_Transparent_16069908-8494-4eb4-bd40-5afca3969088.png" group-title="Entertainment",Colors
 http://dvltv.cc:80/play/uxN8_xYmP3o_GFqK372_h4472KDgDFWiSEhOynXf4lE
+#EXTINF:-1 tvg-name="Colors Bangla" tvg-logo="https://raw.githubusercontent.com/saeidrahmanbd/BDIX-IPTV/main/logos/colors-bangla.png" group-title="Entertainment",Colors Bangla
+http://103.172.29.30:9991/stream/channelid/1759751142
 #EXTINF:-1 tvg-name="Colors Gujarati" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/ColorsGujarati_Transparent_be98c08f-59cb-44a4-a08c-db34390b8dae.png" group-title="Entertainment",Colors Gujarati
 https://d1rc86nwwc9fag.cloudfront.net/260723/smil:etvguj1.smil/chunklist_b1928000.m3u8
 #EXTINF:-1 tvg-name="Colors Super" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/6181/1782290986181-h.jpg" group-title="Entertainment",Colors Super
@@ -591,8 +601,6 @@ https://d1rc86nwwc9fag.cloudfront.net/260723/smil:colorssuper1.smil/playlist.m3u
 https://yuppparoriglin.akamaized.net/181224/smil:darshanatv.smil/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
 #EXTINF:-1 tvg-name="DD Malayalam" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Malayalam.png" group-title="Entertainment",DD Malayalam
 https://d2lk5u59tns74c.cloudfront.net/out/v1/c313674ffced4c9a90f1bba436df2b9b/index.m3u8
-#EXTINF:-1 tvg-name="Discovery Channel HD" tvg-logo="https://dtil.tmsimg.com/assets/s159106_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Discovery Channel HD
-http://195.64.140.147:10151/151
 #EXTINF:-1 tvg-name="ETV Plus" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/ETV-plus-HD-Logo_2000_X_1125_Transpharent.png" group-title="Entertainment",ETV Plus
 https://yupplivegcpusa.yuppcdn.net/100823/smil:etvplus.smil/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
 #EXTINF:-1 tvg-name="Kalaignar Murasu" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Murasu%20TV.png" group-title="Entertainment",Kalaignar Murasu
@@ -607,6 +615,8 @@ https://da86m1sqpm3o0.cloudfront.net/28072023/smil:rupashibangla.smil/playlist.m
 https://airtelapp.shemaroo.com/shemarootv/smil:shemarootvadp.smil/playlist.m3u8
 #EXTINF:-1 tvg-name="Sony SAB" tvg-logo="https://dtil.tmsimg.com/assets/s159099_ld_h15_ab.png?lock=720x540" group-title="Entertainment",Sony SAB
 http://dvltv.cc:80/play/uxN8_xYmP3o_GFqK372_h4Q1vWDLG9pcFaMpqe3_YaA
+#EXTINF:-1 tvg-name="Star Plus" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/2384/1782291852384-h.jpg" group-title="Entertainment",Star Plus
+http://dvltv.cc:80/play/uxN8_xYmP3o_GFqK372_h-dIcdSPuu24_lvw5WC10RU
 #EXTINF:-1 tvg-name="Vanitha TV" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/VANITHA-Logo--without-BG_2000_X_1125.png" group-title="Entertainment",Vanitha TV
 https://cdn.pishow.tv/ott/live/393/master.m3u8
 #EXTINF:-1 tvg-name="Vendhar TV" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Vendhar-transparent.png" group-title="Entertainment",Vendhar TV
@@ -631,8 +641,14 @@ https://tvsen6.aynaott.com/U8SSRsqP/index.m3u8
 https://fta.ektv.in/live/680/master.m3u8
 #EXTINF:-1 tvg-name="discovery channel" tvg-logo="https://dtil.tmsimg.com/assets/s159106_ld_h15_aa.png?lock=720x540" group-title="Entertainment",discovery channel
 https://d1g8wgjurz8via.cloudfront.net/bpk-tv/Discoverychannel2/default/manifest.mpd
+#EXTINF:-1 tvg-name="Epic Bharat" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0032BW6T.png?lock=720x540" group-title="Entertainment",Epic Bharat
+https://fta.ektv.in/live/471/master.m3u8
 #EXTINF:-1 tvg-name="zee tv" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Zee_TV_Logo_2025.svg/960px-Zee_TV_Logo_2025.svg.png" group-title="Entertainment",zee tv
 https://d1g8wgjurz8via.cloudfront.net/bpk-tv/Zeetv/default/manifest.mpd
+#EXTINF:-1 tvg-name="colors cineplex hd" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/Colors_Transparent_16069908-8494-4eb4-bd40-5afca3969088.png" group-title="Entertainment",colors cineplex hd
+http://nexusconnects.org:80/play/live.php?mac=00:1A:79:A2:B8:2E&stream=944627&extension=m3u8
+#EXTINF:-1 tvg-name="star plus hd" tvg-logo="https://i.imgur.com/XUnWcZF.png" group-title="Entertainment",star plus hd
+http://line.watchtivo-8k.com:80/play/live.php?mac=00:1B:79:3D:2B:3E&stream=671571&extension=m3u8
 #EXTINF:-1 tvg-name="Siri Kannada" tvg-logo="https://dtil.tmsimg.com/assets/s143790_ld_h9_aa.png?lock=720x540" group-title="Entertainment",Siri Kannada
 https://mumt03.tangotv.in/Dsly5z3HSIRIKANNADA/index.m3u8
 #EXTINF:-1 tvg-name="Vanitha TV" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/VANITHA-Logo--without-BG_2000_X_1125.png" group-title="Entertainment",Vanitha TV
@@ -797,6 +813,8 @@ https://d1msejlow1t3l4.cloudfront.net/fta/jantv/playlist.m3u8?hdnts=st=179263106
 https://d1msejlow1t3l4.cloudfront.net/fta/news11bharat/playlist.m3u8?hdnts=st=1792629832~exp=1792651432~acl=!*/fta/news11bharat/*!/payload/yupptvott_5_-1_706609ab-56bc-49f2-817e-52ba0ff0a399_MX_158.23.146.211_yupptv_1_channel_6424_-1/*~data=yupptvott_5_-1_706609ab-56bc-49f2-817e-52ba0ff0a399_MX_158.23.146.211_yupptv_1_channel_6424_-1~hmac=f0950b6e782b23e5ab39ae2f6061d9ea79b1c9262c31a1e7bf827da80173dae9&ads.content_custom_3_param=yuppfastint&ads.ip=158.23.146.211&did=706609ab-56bc-49f2-817e-52ba0ff0a399&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=NEWS&ads.content_custom_1_param=FAST&ads.channel=6424&ads.channel_name=News11Bharat&ads.language=HIN&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
 #EXTINF:-1 tvg-name="MH One" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/mh1_Music.png" group-title="General",MH One
 https://samitaorigin.tangotv.in/MHONE/SAMITAORIGIN/index.m3u8
+#EXTINF:-1 tvg-name="NKR TV Kannada (1080p)" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/NKRTV.png" group-title="General",NKR TV Kannada (1080p)
+https://stream.ottlive.co.in/nkrtv/index.m3u8
 #EXTINF:-1 tvg-name="DD India" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20India.png" group-title="General",DD India
 https://d2gvyg6lvauoko.cloudfront.net/230226/ddindia/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
 #EXTINF:-1 tvg-name="Metro TV (India) KBCT" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Metro_TV.png" group-title="General",Metro TV (India) KBCT
@@ -973,6 +991,8 @@ https://fta.ektv.in/live/263/master.m3u8
 https://fta.ektv.in/live/678/master.m3u8
 #EXTINF:-1 tvg-name="Makkal TV" tvg-logo="https://dtil.tmsimg.com/assets/s143296_ld_h15_aa.png?lock=720x540" group-title="General",Makkal TV
 https://mumbai-edge.smartplaytv.in/MakkalTV/index.m3u8
+#EXTINF:-1 tvg-name="Dangal TV" tvg-logo="https://dtil.tmsimg.com/assets/s142771_ld_h9_aa.png?lock=720x540" group-title="General",Dangal TV
+https://tvsen3.aynaott.com/qPNg4LJK/index.m3u8
 #EXTINF:-1 tvg-name="DD Bihar" tvg-logo="https://dtil.tmsimg.com/assets/s142780_ld_h15_aa.png?lock=720x540" group-title="General",DD Bihar
 https://fta.ektv.in/live/172/master.m3u8
 #EXTINF:-1 tvg-name="DD India" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20India.png" group-title="General",DD India
@@ -997,8 +1017,6 @@ https://mumt04.tangotv.in/m18aqlK4MHONE/index.m3u8
 https://mumt05.tangotv.in/87NeALx2NANDIGHOSHATV/index.m3u8
 #EXTINF:-1 tvg-name="Mh 1 Prime" group-title="General",Mh 1 Prime
 https://streams.tangotv.in/MHONE/ORIGIN/index.m3u8
-#EXTINF:-1 tvg-name="Dangal TV" tvg-logo="https://dtil.tmsimg.com/assets/s142771_ld_h9_aa.png?lock=720x540" group-title="General",Dangal TV
-https://fta.ektv.in/live/17/master.m3u8
 #EXTINF:-1 tvg-name="DD Himachal Pradesh" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD-Himachal-Logo_2000_X_1125_Transpharent.png" group-title="General",DD Himachal Pradesh
 https://fta.ektv.in/live/575/master.m3u8
 #EXTINF:-1 tvg-name="DD Tamil" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/PHOTO-_HD_2000_X_1125_Transpharent.png" group-title="General",DD Tamil
@@ -1149,8 +1167,6 @@ https://cc-8hy4a26pz2uos.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da6
 https://da86m1sqpm3o0.cloudfront.net/28072023/smil:asianetmovies.smil/chunklist_b1928000.m3u8
 #EXTINF:-1 tvg-name="MN+" tvg-logo="https://raw.githubusercontent.com/saeidrahmanbd/BDIX-IPTV/main/logos/mn-plus.jpeg" group-title="Movies",MN+
 https://cdn4.skygo.mn/live/disk1/MNplus91/HLSv3-FTA/MNplus91.m3u8
-#EXTINF:-1 tvg-name="South Indian Movies" group-title="Movies",South Indian Movies
-https://tv.kbhub.online/Movies/South-India-Movie.m3u8
 #EXTINF:-1 tvg-name="B4U Movies" tvg-logo="https://dtil.tmsimg.com/assets/s140063_ld_h9_aa.png?lock=720x540" group-title="Movies",B4U Movies
 http://103.135.253.32:8080/B4U-MOVIES/index.m3u8
 #EXTINF:-1 tvg-name="Sony Max" tvg-logo="https://dtil.tmsimg.com/assets/s157590_ld_h15_aa.png?lock=720x540" group-title="Movies",Sony Max
@@ -1159,6 +1175,8 @@ http://103.135.253.32:8080/Sony-Max-HD/index.m3u8
 https://hls02ns.antenaplay.ro/hls/bollywood-sd/index.m3u8
 #EXTINF:-1 tvg-name="Epic Bhojpuri Digital" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/FILAMCHI_BHOJPURI_HINDI-transparent.png" group-title="Movies",Epic Bhojpuri Digital
 https://cc-8hy4a26pz2uos.akamaized.net/v1/manifest/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-8hy4a26pz2uos/45b71b91-51a1-4cfd-a422-c7f32efbf377/3.m3u8
+#EXTINF:-1 tvg-name="RAJ digital plus" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Raj%20Digital%20Plus.png" group-title="Movies",RAJ digital plus
+http://zyamka.akadatel.com/iptv/6KPA5QMR4XYRDA/6701/index.m3u8
 #EXTINF:-1 tvg-name="top" tvg-logo="https://i.imgur.com/NhD40Aj.png" group-title="Movies",top
 http://myott.top/stream/DT6QU63K5VX/192.m3u8?checkedby:iptvcat.com
 #EXTINF:-1 tvg-name="TOP Cinema HD" group-title="Movies",TOP Cinema HD
@@ -1169,6 +1187,8 @@ http://26f2f4cd.amazzin.pw/iptv/DVLCNQPW5YSR36/13004/index.m3u8
 https://tvsen6.aynaott.com/a2cKGQtB/index.m3u8
 #EXTINF:-1 tvg-name="B4U Kadak" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/B4U-Kadak-BLACK-transparent.png" group-title="Movies",B4U Kadak
 https://tvsen3.aynaott.com/X9E6bxg3/index.m3u8
+#EXTINF:-1 tvg-name="star gold hd" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/6567/1784547656567-h.jpg" group-title="Movies",star gold hd
+http://vpn.streamhut.xyz:80/play/live.php?mac=00:1A:79:02:A0:F2&stream=280778&extension=m3u8
 #EXTINF:-1 tvg-name="Bollywood HD Russia (576p)" group-title="Movies",Bollywood HD Russia (576p)
 https://xykt-fix.github.io/cinerama_edge01/hls/BOLLYWOOD_RU/Movie009.m3u8
 #EXTINF:-1 tvg-name="Shemaroo Josh" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/ShemarooJosh_Transparent_3506d79a-bad8-4c99-905d-9b917076ad43.png" group-title="Movies",Shemaroo Josh
@@ -1185,6 +1205,10 @@ https://epiconvh.akamaized.net/live/filamchi/master.m3u8
 http://103.135.253.32:8080/MN-PLUS/index.m3u8
 #EXTINF:-1 tvg-name="Movies Now" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/TIMESPLAY/LIVECHANNEL/6904ba4839f3b175376a61e2/images/LOGO_HD/LOGO_HD_hAgaZac_j_MoviesNow1_1.png" group-title="Movies",Movies Now
 http://103.135.253.32:8080/MOVIES-NOW/index.m3u8
+#EXTINF:-1 tvg-name="movies now hd" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/TIMESPLAY/LIVECHANNEL/6904ba4839f3b175376a61e2/images/LOGO_HD/LOGO_HD_hAgaZac_j_MoviesNow1_1.png" group-title="Movies",movies now hd
+https://times-ott-live.akamaized.net/moviesnow_wv_drm/index.mpd?__hdnea__=st=1786524310~exp=1786545910~acl=/*~hmac=e6b74e2af0ebc0ed9ff080a37b3a2f4846eda97325b621332f98e73bef516809
+#EXTINF:-1 tvg-name="romedy now" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/TIMESPLAY/LIVECHANNEL/6904ba3839f3b175376a61d9/images/LOGO_HD/LOGO_HD_pZo0YIZKB_RomedyNow1_1.png" group-title="Movies",romedy now
+https://times-ott-live.akamaized.net/romedynow_wv_drm/index.mpd?__hdnea__=st=1786524310~exp=1786545910~acl=/*~hmac=e6b74e2af0ebc0ed9ff080a37b3a2f4846eda97325b621332f98e73bef516809
 #EXTINF:-1 tvg-name="Star Movies" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/STAR_Movies_logo.svg/960px-STAR_Movies_logo.svg.png" group-title="Movies",Star Movies
 http://103.135.253.32:8080/STAR-MOVIES/index.m3u8
 #EXTINF:-1 tvg-name="Star Movies Select" tvg-logo="https://dtil.tmsimg.com/assets/s143830_ld_h15_aa.png?lock=720x540" group-title="Movies",Star Movies Select
@@ -1197,8 +1221,6 @@ https://d2pnr7z8mre86q.cloudfront.net/WE_IFB_12/dash/manifest.mpd
 https://d2pnr7z8mre86q.cloudfront.net/WE_IFB_5/dash/manifest.mpd
 #EXTINF:-1 tvg-name="we" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/We%20TV.png" group-title="Movies",we
 https://d2pnr7z8mre86q.cloudfront.net/WE_IFB_11/dash/manifest.mpd
-#EXTINF:-1 tvg-name="we" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/We%20TV.png" group-title="Movies",we
-https://d2pnr7z8mre86q.cloudfront.net/WE_IFB_8/hls/index.m3u8
 #EXTINF:-1 tvg-name="Sony WAH" tvg-logo="https://dtil.tmsimg.com/assets/s157974_ld_h15_aa.png?lock=720x540" group-title="Movies",Sony WAH
 http://live.balajibroadband.com:3500/live/1393.m3u8
 #EXTINF:-1 tvg-name="Zee Bangla Cinema" tvg-logo="https://i.postimg.cc/dtBRtL99/20240822_231732.png" group-title="Movies",Zee Bangla Cinema
@@ -1207,14 +1229,16 @@ https://d1g8wgjurz8via.cloudfront.net/bpk-tv/ColorsHD/default/master2.m3u8
 https://d1g8wgjurz8via.cloudfront.net/bpk-tv/NGCHD/default/NGCHD.m3u8
 #EXTINF:-1 tvg-name="Raj Digital Plus" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Raj%20Digital%20Plus.png" group-title="Movies",Raj Digital Plus
 https://livestream.rajtv.tv/hlslive/Admin/px08241087/live/RajTV_Digital_plus/master_1.m3u8
+#EXTINF:-1 tvg-name="we" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/We%20TV.png" group-title="Movies",we
+https://d2pnr7z8mre86q.cloudfront.net/WE_IFB_1/dash/manifest.mpd
 #EXTINF:-1 tvg-name="zee cinema hd" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022HVX3.png?lock=720x540" group-title="Movies",zee cinema hd
 https://d1g8wgjurz8via.cloudfront.net/bpk-tv/Zeecinemahd/default/manifest.mpd
 #EXTINF:-1 tvg-name="Goldmines Movies" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/GoldminesMovies_Transparent_9b7db248-999e-4200-a459-6cc594650f3d.png" group-title="Movies",Goldmines Movies
 http://103.175.73.12:8080/live/51/51_0.m3u8
-#EXTINF:-1 tvg-name="Hindi Classic 24" tvg-logo="https://raw.githubusercontent.com/saeidrahmanbd/BDIX-IPTV/main/logos/hindi-movie-classic-24.png" group-title="Movies",Hindi Classic 24
-https://tv.kbhub.online/Movies/Hindi-Classic-24.m3u8
 #EXTINF:-1 tvg-name="Goldmines" tvg-logo="https://dtil.tmsimg.com/assets/s143087_ld_h15_aa.png?lock=720x540" group-title="Movies",Goldmines
 https://tvsen3.aynaott.com/VamXuQH8/index.m3u8
+#EXTINF:-1 tvg-name="star movies hd" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/STAR_Movies_logo.svg/960px-STAR_Movies_logo.svg.png" group-title="Movies",star movies hd
+http://rgkkw.live:8080/live/4dfoydR2gZ/clever3still/98872&format=.m3u8.ts
 #EXTINF:-1 tvg-name="Jalsha Movies SD" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/1445/1782291521445-h.jpg" group-title="Movies",Jalsha Movies SD
 https://iptvlive-beta.vercel.app/jalsha-movies/index.m3u8
 #EXTINF:-1 tvg-name="Zee Cinema APAC" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022HVX3.png?lock=720x540" group-title="Movies",Zee Cinema APAC
@@ -1283,8 +1307,6 @@ http://dsmqbfez.pardns.com/live/6CTB9BKG/4Q7Y9DFW/96674.ts
 https://cdn.pishow.tv/ott/live/1459/master.m3u8
 #EXTINF:-1 tvg-name="Goldmines Movies" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/GoldminesMovies_Transparent_9b7db248-999e-4200-a459-6cc594650f3d.png" group-title="Movies",Goldmines Movies
 https://cdn.pishow.tv/ott/live/1461/master.m3u8
-#EXTINF:-1 tvg-name="KTV Tamil" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG002Z1SEP.png?lock=720x540" group-title="Movies",KTV Tamil
-https://tv.kbhub.online/AS-INDIA-BANGLA/IN-KTV-BANGLA.ts
 #EXTINF:-1 tvg-name="Maha Movie" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Maha_Movies.png" group-title="Movies",Maha Movie
 https://cdn.pishow.tv/ott/live/10007/master.m3u8
 #EXTINF:-1 tvg-name="Manoranjan Grand" tvg-logo="https://dtil.tmsimg.com/assets/s143302_ld_h15_aa.png?lock=720x540" group-title="Movies",Manoranjan Grand
@@ -1303,6 +1325,10 @@ http://dsmqbfez.pardns.com/live/6CTB9BKG/4Q7Y9DFW/96663.ts
 https://alex4528.site/k7m2q9x4b8nc/stream.ts?id=189
 #EXTINF:-1 tvg-name="Star Gold 2" tvg-logo="https://dtil.tmsimg.com/assets/s158297_ld_h15_aa.png?lock=720x540" group-title="Movies",Star Gold 2
 http://dsmqbfez.pardns.com/live/6CTB9BKG/4Q7Y9DFW/33617.ts
+#EXTINF:-1 tvg-name="star gold 2 hd" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/6567/1784547656567-h.jpg" group-title="Movies",star gold 2 hd
+http://mag.max-cdn.com:80/play/live.php?mac=00:1B:79:47:7D:90&stream=372926&extension=m3u8
+#EXTINF:-1 tvg-name="star gold hd" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/6567/1784547656567-h.jpg" group-title="Movies",star gold hd
+http://103.176.90.140:80/play/live.php?mac=00:1A:79:9A:5F:23&stream=155970&extension=m3u8
 #EXTINF:-1 tvg-name="Star gold romance HD" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/6567/1784547656567-h.jpg" group-title="Movies",Star gold romance HD
 http://tv.cloudcdn.me:80/live.ts?channelId=128485&uid=7133&deviceMac=00:1A:79:4A:02:91
 #EXTINF:-1 tvg-name="Star Movies" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/STAR_Movies_logo.svg/960px-STAR_Movies_logo.svg.png" group-title="Movies",Star Movies
@@ -1337,8 +1363,6 @@ http://fortv.cc:8080/live/yd6H5yb2kK/nrkVd2ex3X/125795.ts
 http://103.172.29.30:9991/stream/channelid/14180834
 #EXTINF:-1 tvg-name="Colors Cineplex" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/3042/1782291173042-h.jpg" group-title="Movies",Colors Cineplex
 https://d1rc86nwwc9fag.cloudfront.net/260723/smil:rishteycineplexukdev.smil/chunklist_b1928000.m3u8
-#EXTINF:-1 tvg-name="Colors Cineplex" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/3042/1782291173042-h.jpg" group-title="Movies",Colors Cineplex
-http://dvltv.cc:80/play/uxN8_xYmP3o_GFqK372_h0afj5-wDFVIeR4D2HICXwM
 #EXTINF:-1 tvg-name="ETV Cinema" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/ETV-cinema-HD-Logo_2000_X_1125_Transpharent.png" group-title="Movies",ETV Cinema
 https://yupplivegcpusa.yuppcdn.net/100823/smil:etvcinema.smil/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
 #EXTINF:-1 tvg-name="Goldmines 2" group-title="Movies",Goldmines 2
@@ -1357,8 +1381,14 @@ http://fortv.cc:8080/live/yd6H5yb2kK/nrkVd2ex3X/125814.ts
 https://d1taaads3ztvmu.cloudfront.net/120723/smil:studiooneplus.smil/chunklist_b1928000.m3u8
 #EXTINF:-1 tvg-name="zee talkies" tvg-logo="https://i.imgur.com/GowDXFz.png" group-title="Movies",zee talkies
 https://d1g8wgjurz8via.cloudfront.net/bpk-tv/Zeetalkies/default/manifest.mpd
+#EXTINF:-1 tvg-name="action cinema" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022K5ZV.png?lock=720x540" group-title="Movies",action cinema
+http://192.142.44.52:80/play/live.php?mac=00:1A:79:32:72:0C&stream=365958&extension=m3u8
 #EXTINF:-1 tvg-name="Bollywood Cinema" tvg-logo="https://i.ibb.co/qM7WZSK0/Eros-Universe-Bollywood-Cinema.png" group-title="Movies",Bollywood Cinema
 https://live20.bozztv.com/giatvplayout7/giatv-209593/index.m3u8
+#EXTINF:-1 tvg-name="star gold 2 hd" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/6567/1784547656567-h.jpg" group-title="Movies",star gold 2 hd
+http://line.watchtivo-8k.com:80/play/live.php?mac=00:1B:79:3D:2B:3E&stream=372926&extension=m3u8
+#EXTINF:-1 tvg-name="star gold hd" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/6567/1784547656567-h.jpg" group-title="Movies",star gold hd
+http://mag.ugoiptv.com:80/play/live.php?mac=00:1a:79:f9:4f:1c&stream=280766&extension=m3u8
 #EXTINF:-1 tvg-name="Bhojpuri Cinema" tvg-logo="https://dtil.tmsimg.com/assets/s142713_ld_h15_aa.png?lock=720x540" group-title="Movies",Bhojpuri Cinema
 https://live-bhojpuri.akamaized.net/liveabr/pub-iobhojpuqbu6yj/live_720p/chunks.m3u8
 #EXTINF:-1 tvg-name="Gold Star" group-title="Movies",Gold Star
@@ -1379,6 +1409,8 @@ https://fta.ektv.in/live/43/43_0.m3u8
 https://fta.ektv.in/live/51/51_0.m3u8
 #EXTINF:-1 tvg-name="Manoranjan Movies" tvg-logo="https://dtil.tmsimg.com/assets/s143303_ld_h15_aa.png?lock=720x540" group-title="Movies",Manoranjan Movies
 https://fta.ektv.in/live/47/47_0.m3u8
+#EXTINF:-1 tvg-name="star gold select hd" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/6567/1784547656567-h.jpg" group-title="Movies",star gold select hd
+http://line.watchtivo-8k.com:80/play/live.php?mac=00:1B:79:3D:2B:3E&stream=737325&extension=m3u8
 #EXTINF:-1 tvg-name="Epic Bhojpuri" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/FILAMCHI_BHOJPURI_HINDI-transparent.png" group-title="Movies",Epic Bhojpuri
 https://mumt01.tangotv.in/O5aw8Zn3EPICBHOJPURI/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-name="Goldmines" tvg-logo="https://dtil.tmsimg.com/assets/s143087_ld_h15_aa.png?lock=720x540" group-title="Movies",Goldmines
@@ -1445,6 +1477,8 @@ https://fta.ektv.in/live/213/master.m3u8
 https://fta.ektv.in/live/49/49_0.m3u8
 #EXTINF:-1 tvg-name="B4U Bhojpuri" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN39000307N_20260623T013644SQUARE.png" group-title="Movies",B4U Bhojpuri
 https://fta.ektv.in/live/174/master.m3u8
+#EXTINF:-1 tvg-name="Epic Bhojpuri" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/FILAMCHI_BHOJPURI_HINDI-transparent.png" group-title="Movies",Epic Bhojpuri
+https://fta.ektv.in/live/467/master.m3u8
 #EXTINF:-1 tvg-name="MH One Movies" group-title="Movies",MH One Movies
 https://fta.ektv.in/live/639/master.m3u8
 #EXTINF:-1 tvg-name="All Time Movies" tvg-logo="https://yt3.googleusercontent.com/U4INXhwmEUOABHoemQBpI6C9t4jb9iBmDvZ3ZT3lAb9Au_jVl32NL8XDpy-9cBjRJ2LP69Ovzg=s900-c-k-c0x00ffffff-no-rj" group-title="Movies",All Time Movies
@@ -1525,6 +1559,8 @@ https://yuppnimrestreammum.akamaized.net/181224/smil:bogglebollywood.smil/playli
 http://6n3yope4d9ok-hls-live.5centscdn.com/vaanavil/TV.stream/playlist.m3u8
 #EXTINF:-1 tvg-name="Epic Music" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Showbox-LOGO_2000_X_1125_Transpharent.png" group-title="Music",Epic Music
 https://cc-3cyxq80qusspd.akamaized.net/v1/manifest/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-3cyxq80qusspd/d68f6612-3a4e-4ed4-9853-fc41801678d1/2.m3u8
+#EXTINF:-1 tvg-name="Raj Musix" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Raj%20Musix%20Kannada.png" group-title="Music",Raj Musix
+http://zyamka.akadatel.com/iptv/6KPA5QMR4XYRDA/6702/index.m3u8
 #EXTINF:-1 tvg-name="Vaanavil TV" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Vaanavil_TV.png" group-title="Music",Vaanavil TV
 https://6n3yope4d9ok-hls-live.5centscdn.com/vaanavil/TV.stream/chunks.m3u8
 #EXTINF:-1 tvg-name="9X Tashan" tvg-logo="https://dtil.tmsimg.com/assets/s142504_ld_h15_aa.png?lock=720x540" group-title="Music",9X Tashan
@@ -1533,8 +1569,6 @@ https://yupplivegcp2.yuppcdn.net/28072023/smil:9xtashan.smil/playlist.m3u8?hdnts
 https://wiselp.wiseplayout.com/9X_Jalwa/master.m3u8
 #EXTINF:-1 tvg-name="9X Jalwa" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_9X_JALWA/images/LOGO_HD/image.png" group-title="Music",9X Jalwa
 https://d3kdywbtdfbp9z.cloudfront.net/v1/manifest/93ce20f0f52760bf38be911ff4c91ed02aa2fd92/dff423e0-3c82-46d6-9ecb-3baa96b5694a/70fca4d1-156e-4c03-baa4-9a4b602e33d5/0.m3u8
-#EXTINF:-1 tvg-name="9X Jalwa" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_9X_JALWA/images/LOGO_HD/image.png" group-title="Music",9X Jalwa
-https://tv.kbhub.online/Music/9X-Jalwa.m3u8
 #EXTINF:-1 tvg-name="9X Jhakaas" tvg-logo="https://dtil.tmsimg.com/assets/s90012_ld_h15_aa.png?lock=720x540" group-title="Music",9X Jhakaas
 https://wiselp.wiseplayout.com/9X_Jhakaas/master.m3u8
 #EXTINF:-1 tvg-name="B4U Music" tvg-logo="https://dtil.tmsimg.com/assets/s158141_ld_h15_aa.png?lock=720x540" group-title="Music",B4U Music
@@ -1571,6 +1605,8 @@ http://stream-msk-10.ott.tricolor.tv/dtv/id640_MSKSG-PVR-1--Bollywood/03/plst.m3
 https://iptvlive.ahmed-bd-org.workers.dev/ptc-music-1/index.m3u8
 #EXTINF:-1 tvg-name="Punjabi Beats HD" tvg-logo="https://i.imgur.com/1Za9gNQ.jpg" group-title="Music",Punjabi Beats HD
 https://mumt01.tangotv.in/O5aw8Zn3STVHARYANANEWS/index.m3u8
+#EXTINF:-1 tvg-name="Punjabi Hits" tvg-logo="https://dtil.tmsimg.com/assets/s143691_ld_h15_aa.png?lock=720x540" group-title="Music",Punjabi Hits
+https://stream.ottlive.co.in/punjabihits/index.m3u8
 #EXTINF:-1 tvg-name="Zoom (Израиль)" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/TIMESPLAY/LIVECHANNEL/6904ba4039f3b175376a61de/images/LOGO_HD/LOGO_HD_KN-eM9VvQ_ZoomTV1_1.png" group-title="Music",Zoom (Израиль)
 http://stream.mcquack.net/377/index.m3u8
 #EXTINF:-1 tvg-name="Mastiii" tvg-logo="https://i.imgur.com/lxgXHx4.png" group-title="Music",Mastiii
@@ -1589,8 +1625,6 @@ https://mumt07.tangotv.in/zHjX9OFlPUNJABIMUSICHD/index.m3u8
 https://mumt01.tangotv.in/O5aw8Zn39XTASHAN/index.m3u8
 #EXTINF:-1 tvg-name="Epic Music" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Showbox-LOGO_2000_X_1125_Transpharent.png" group-title="Music",Epic Music
 https://mumt04.tangotv.in/m18aqlK4EPICMUSIC/index.m3u8
-#EXTINF:-1 tvg-name="Epic Music" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Showbox-LOGO_2000_X_1125_Transpharent.png" group-title="Music",Epic Music
-https://streams.tangotv.in/EPICMUSIC/ORIGIN/index.m3u8
 #EXTINF:-1 tvg-name="Hindi Hits" tvg-logo="https://i.postimg.cc/ryC1Y2K4/Capture.png" group-title="Music",Hindi Hits
 https://samitaorigin.tangotv.in/HINDIHITS/SAMITAORIGIN/index.m3u8
 #EXTINF:-1 tvg-name="Music India" tvg-logo="https://dtil.tmsimg.com/assets/s143563_ld_h15_aa.png?lock=720x540" group-title="Music",Music India
@@ -1617,10 +1651,6 @@ http://dsmqbfez.pardns.com/live/6CTB9BKG/4Q7Y9DFW/97544.ts
 https://cdn.pishow.tv/ott/live/415/master.m3u8
 #EXTINF:-1 tvg-name="Dhoom Music Bangla" tvg-logo="https://dtil.tmsimg.com/assets/s142882_ld_h15_aa.png?lock=720x540" group-title="Music",Dhoom Music Bangla
 https://cdn.pishow.tv/ott/live/1456/master.m3u8
-#EXTINF:-1 tvg-name="Dhoom Music Bangla" tvg-logo="https://dtil.tmsimg.com/assets/s142882_ld_h15_aa.png?lock=720x540" group-title="Music",Dhoom Music Bangla
-https://tv.kbhub.online/AS-INDIA-BANGLA/IN-DHOOM-MUSIC-HD.ts
-#EXTINF:-1 tvg-name="Dhoom Music Bangla" tvg-logo="https://dtil.tmsimg.com/assets/s142882_ld_h15_aa.png?lock=720x540" group-title="Music",Dhoom Music Bangla
-https://tv.kbhub.online/AS-BANGLADESH/BD-DHOOM-MUSIC-HD.ts
 #EXTINF:-1 tvg-name="Gemini Music Telugu" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_GEMINI_MUSIC_HD/images/LOGO_HD/image.png" group-title="Music",Gemini Music Telugu
 http://dsmqbfez.pardns.com/live/6CTB9BKG/4Q7Y9DFW/5870.ts
 #EXTINF:-1 tvg-name="Music India" tvg-logo="https://dtil.tmsimg.com/assets/s143563_ld_h15_aa.png?lock=720x540" group-title="Music",Music India
@@ -1657,10 +1687,14 @@ https://cdn.pishow.tv/ott/live/1229/master.m3u8
 https://6n3yope4d9ok-hls-live.5centscdn.com/vaanavil/TV.stream/playlist.m3u8
 #EXTINF:-1 tvg-name="Zoom" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/TIMESPLAY/LIVECHANNEL/6904ba4039f3b175376a61de/images/LOGO_HD/LOGO_HD_KN-eM9VvQ_ZoomTV1_1.png" group-title="Music",Zoom
 https://alex4528.site/k7m2q9x4b8nc/stream.ts?id=121
+#EXTINF:-1 tvg-name="Epic Music" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Showbox-LOGO_2000_X_1125_Transpharent.png" group-title="Music",Epic Music
+https://fta.ektv.in/live/469/master.m3u8
 #EXTINF:-1 tvg-name="Dhool TV" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/DhoolTV.png" group-title="Music",Dhool TV
 https://d1msejlow1t3l4.cloudfront.net/fta/subhartitv/playlist.m3u8
 #EXTINF:-1 tvg-name="Zoom Music" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/TIMESPLAY/LIVECHANNEL/6904ba4039f3b175376a61de/images/LOGO_HD/LOGO_HD_KN-eM9VvQ_ZoomTV1_1.png" group-title="Music",Zoom Music
 https://d2esfk1pb9cdob.cloudfront.net/chunklist_1.m3u8
+#EXTINF:-1 tvg-name="9X Jalwa" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_9X_JALWA/images/LOGO_HD/image.png" group-title="Music",9X Jalwa
+http://dvltv.cc:80/play/uxN8_xYmP3o_GFqK372_hyDISIvjt0sesuWEVKQD2d0
 #EXTINF:-1 tvg-name="9XM" tvg-logo="https://dtil.tmsimg.com/assets/s77447_ld_h15_aa.png?lock=720x540" group-title="Music",9XM
 https://streams.tangotv.in/9XM/ORIGIN/index.m3u8
 #EXTINF:-1 tvg-name="Ramdhenu" tvg-logo="https://dtil.tmsimg.com/assets/s143717_ld_h15_aa.png?lock=720x540" group-title="Music",Ramdhenu
@@ -1729,10 +1763,8 @@ https://live-hls-apps-aje-v3-fa.getaj.net/AJE/index.m3u8
 https://live-hls-web-aje-fa.getaj.net/AJE/index.m3u8
 #EXTINF:-1 tvg-name="Asianet News" tvg-logo="https://dtil.tmsimg.com/assets/s142679_ld_h15_aa.png?lock=720x540" group-title="News",Asianet News
 https://amg13737-amg13737c1-amgplt0016.playout.now3.amagi.tv/playlist/amg13737-amg13737c1-amgplt0016/playlist.m3u8
-#EXTINF:-1 tvg-name="BBC News" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/BBC_Gujarati.png" group-title="News",BBC News
-https://b638a299.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/Vml6aW9fQkJDTmV3c19ITFM/playlist.m3u8?ads.wurl_channel=1655&ads.wurl_name=BBCNews&ads.coppa=0&ads.psid=%7bADID%7d&ads.targetopt=%7bTARGETOPT%7d&ads.us_privacy=%7bUSPRIVACY%7d&ads.ifa_type=%7bIFATYPE%7d&ads.lmt=%7bLMT%7d&ads.app_bundle=%7bAPP_BUNDLE%7d&ads.app_name=%7bAPP_NAME%7d&ads.app_store_url=%7bAPP_STORE_URL%7d&ads.url=%7bDOMAIN%7d&ads.w=%7bWIDTH%7d&ads.h=%7bHEIGHT%7d&ads.device_make=%7bDEVICE_MAKE%7d&ads.vizdartoken=eyJhdWQiOiI5OCIsIndmcGNpZCI6NDE5MjUxMjY1NX0
-#EXTINF:-1 tvg-name="BBC News" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/BBC_Gujarati.png" group-title="News",BBC News
-https://jmp2.uk/stvp-US4000033L
+#EXTINF:-1 tvg-name="bbc news" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/BBC_Gujarati.png" group-title="News",bbc news
+https://vs-hls-push-ww-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_news_channel_hd/mobile_wifi_main_hd_abr_v2.m3u8
 #EXTINF:-1 tvg-name="BBC News (1080p) [Geo-blocked]" group-title="News",BBC News (1080p) [Geo-blocked]
 https://pb-iiczlgfysam0q.akamaized.net/v1/amcnetworks_bbcnews_1/samsungheadend_us/latest/main/hls/playlist.m3u8
 #EXTINF:-1 tvg-name="chardikala time tv" tvg-logo="https://i.imgur.com/yxpeWnY.png" group-title="News",chardikala time tv
@@ -1957,6 +1989,8 @@ https://vglivessai.akamaized.net/sg/v1/master/611d79b11b77e2f571934fd80ca1413453
 https://vg-zeefta.akamaized.net/ptnr-yupptv/title-zeenews/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/8744f9fb-d696-4204-9795-5215ad930c39/main.m3u8
 #EXTINF:-1 tvg-name="zee news hd" tvg-logo="https://image.airtel.tv/grandslam/content/2025_06_17/LOGO_X99oIa_Fm_Znews_logo-for-larg.png" group-title="News",zee news hd
 https://vg-zeefta.akamaized.net/ptnr-yupptv/title-zeenews/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/8744f9fb-d696-4204-9795-5215ad930c39/main.m3u8?ads.channel=1501&ads.content_custom_1_param=FAST&ads.user=2&ads.content_custom_3_param=YuppFastIndia&hdnts=st=1757248874~exp=1757270474~acl=!*/ptnr-yupptv/title-zeenews/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/8744f9fb-d696-4204-9795-5215ad930c39/*!/payload/yupptvott_5_-1_f22a9ff995a34b88_IN_171.76.87.153_yuppfast_2_channel_13_-1/*~data=yupptvott_5_-1_f22a9ff995a34b88_IN_171.76.87.153_yuppfast_2_channel_13_-1~hmac=8f2edb00612097d45ee13a95a2a198d6a4072bf4313aa1a718d71cc17694f8ad&ads.network_name=yuppfast&ads.app_store_url=&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=NEWS&ads.channel_name=ZeeNews&ads.language=HIN&ads.user=0
+#EXTINF:-1 tvg-name="bbc news" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/BBC_Gujarati.png" group-title="News",bbc news
+https://vs-hls-push-ww-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_news_channel_hd/mobile_wifi_main_sd_abr_v2.m3u8
 #EXTINF:-1 tvg-name="10 tv" tvg-logo="https://dtil.tmsimg.com/assets/s142495_ld_h15_aa.png?lock=720x540" group-title="News",10 tv
 http://81.171.10.42:1935/liveD/DStream.sdp/chunklist_w819085920.m3u8
 #EXTINF:-1 tvg-name="Anaadi TV" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Anaadi-TV-HINDI-transparent.png" group-title="News",Anaadi TV
@@ -1977,8 +2011,6 @@ https://d1msejlow1t3l4.cloudfront.net/fta/bansalnews/playlist.m3u8?hdnts=st=1792
 https://d1msejlow1t3l4.cloudfront.net/fta/bharatsamachar/playlist.m3u8?hdnts=st=1792631047~exp=1792652647~acl=!*/fta/bharatsamachar/*!/payload/yupptvott_5_-1_be3cb83a-7417-4393-9fb3-ab35d616cfa6_MX_158.23.146.211_yupptv_1_channel_6426_-1/*~data=yupptvott_5_-1_be3cb83a-7417-4393-9fb3-ab35d616cfa6_MX_158.23.146.211_yupptv_1_channel_6426_-1~hmac=a54169ed382bfd80cb5b41c2663cb9ecda548cd73f9ef593677ef02ecb07c1f0&ads.content_custom_3_param=yuppfastint&ads.ip=158.23.146.211&did=be3cb83a-7417-4393-9fb3-ab35d616cfa6&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=NEWS&ads.content_custom_1_param=FAST&ads.channel=6426&ads.channel_name=BharatSamachar&ads.language=HIN&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
 #EXTINF:-1 tvg-name="euro news" group-title="News",euro news
 https://cdn-euronews.akamaized.net/live/eds/africanews-en/25049/index.m3u8
-#EXTINF:-1 tvg-name="euro news" group-title="News",euro news
-https://cdn-euronews.akamaized.net/live/eds/euronews-pt/25040/index.m3u8
 #EXTINF:-1 tvg-name="i news" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e6/Janasri_News_Channel_Logo.jpg" group-title="News",i news
 https://www.milenial.news/salida/milenial.m3u8
 #EXTINF:-1 tvg-name="india today" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/INDIA-TODAY_transparent.png" group-title="News",india today
@@ -2121,6 +2153,8 @@ https://ssai.vgcdn.net/v1/master/tv9yupptv/tv9telugu/main.m3u8?hdnts=st=17926310
 https://segment.yuppcdn.net/110322/channel24/playlist.m3u8
 #EXTINF:-1 tvg-name="Awaaz India TV (720p)" tvg-logo="https://i.ytimg.com/vi/8BzmlfZm2xU/hqdefault.jpg" group-title="News",Awaaz India TV (720p)
 http://awaazindia.livebox.co.in/AwaazIndaTVhls/Live.m3u8
+#EXTINF:-1 tvg-name="euro news" group-title="News",euro news
+https://hls02ns.antenaplay.ro/hls/euronews-ro-sd/index.m3u8
 #EXTINF:-1 tvg-name="ABP Ananda" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/ABP_Ananda_logo.svg/500px-ABP_Ananda_logo.svg.png" group-title="News",ABP Ananda
 https://amg01448-samsungin-abpananda-samsungin-ad-pw.amagi.tv/playlist/amg01448-samsungin-abpananda-samsungin/playlist.m3u8
 #EXTINF:-1 tvg-name="Asianet News" tvg-logo="https://dtil.tmsimg.com/assets/s142679_ld_h15_aa.png?lock=720x540" group-title="News",Asianet News
@@ -2157,8 +2191,6 @@ https://vglivessai.akamaized.net/sg/v1/master/611d79b11b77e2f571934fd80ca1413453
 https://amg00644-amg00644c1-ondemandkorea-amesia-10266.playouts.now.amagi.tv/playlist/amg00644-tvtodaynetworkltdfast-indiatoday-ondemandkoreaamesia/playlist.m3u8
 #EXTINF:-1 tvg-name="tv 24" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/TV24.png" group-title="News",tv 24
 https://tv.ensonhaber.com/tv24/tv24.m3u8
-#EXTINF:-1 tvg-name="Live Times" tvg-logo="https://www.livetimes.news/wp-content/uploads/2021/11/LT-logoConverted-01.png" group-title="News",Live Times
-https://stream.ottlive.co.in/livetimetv/index.m3u8
 #EXTINF:-1 tvg-name="NDTV Marathi" tvg-logo="https://dtil.tmsimg.com/assets/s166276_ld_h15_aa.png?lock=720x540" group-title="News",NDTV Marathi
 https://web-ndtv-marathi.akamaized.net/hls/live/2110470/ndtvmarathi/master_1.m3u8
 #EXTINF:-1 tvg-name="ndtv marathi" tvg-logo="https://dtil.tmsimg.com/assets/s166276_ld_h15_aa.png?lock=720x540" group-title="News",ndtv marathi
@@ -2209,6 +2241,8 @@ https://mumt06.tangotv.in/qYyB8fXVREPUBLICBHARAT/index.m3u8
 https://mumt06.tangotv.in/qYyB8fXVWPNWORLDPUNJABI/index.m3u8
 #EXTINF:-1 tvg-name="Zee Wion (Asia)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/WION.png" group-title="News",Zee Wion (Asia)
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01412-xiaomiasia-zeewion-xiaomi/playlist.m3u8
+#EXTINF:-1 tvg-name="4TV News" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/4_TV.png" group-title="News",4TV News
+https://cdn.pishow.tv/ott/live/1007/master.m3u8
 #EXTINF:-1 tvg-name="900 Chanakya news india (national)" group-title="News",900 Chanakya news india (national)
 https://newsliveindia.com:4433/chanakyanational/index.m3u8
 #EXTINF:-1 tvg-name="Good News Today" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/GNT-Logo-2021_AT_FONT-transparent.png" group-title="News",Good News Today
@@ -2255,6 +2289,8 @@ https://mumbai-edge.smartplaytv.in/CVRNews/index.m3u8
 https://mumbai-edge.smartplaytv.in/DDNews/index.m3u8
 #EXTINF:-1 tvg-name="DD News HD" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20News.png" group-title="News",DD News HD
 https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/0811cd8c37ca4c409d5385a6cd2fa18b/index.m3u8
+#EXTINF:-1 tvg-name="India Daily Live (1080p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/IndiaDaily24x7_2025_transparent.png" group-title="News",India Daily Live (1080p)
+https://indiadaily.ottlive.co.in/indiadailylive/index.m3u8
 #EXTINF:-1 tvg-name="India TV Speed News" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_INDIA_TV_SPEED_NEWS/images/LOGO_HD/image.png" group-title="News",India TV Speed News
 https://cc-lyf4c0hwzg5dd.akamaized.net/v1/vglive-sk-479089/main.m3u8
 #EXTINF:-1 tvg-name="Mahaa News" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Mahaa-News-logo_2000_X_1125-Transpharent.png" group-title="News",Mahaa News
@@ -2389,6 +2425,8 @@ https://cdn.pishow.tv/ott/live/1049/master.m3u8
 https://freem3u.xyz/api/live/play.m3u8?vid=106
 #EXTINF:-1 tvg-name="RT India" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/Russia-today-logo.svg" group-title="News",RT India
 https://rt-india.rttv.com/dvr/rtindia/playlist.m3u8
+#EXTINF:-1 tvg-name="Vistaar News" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Vistaar-Logo_2000_X_1125_Transpharent.png" group-title="News",Vistaar News
+https://stream.ottlive.co.in/vistaartv/index.m3u8
 #EXTINF:-1 tvg-name="WION" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/WION.png" group-title="News",WION
 https://wion-klowdtv.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-name="Aaj Ki Khabar" tvg-logo="https://m.media-amazon.com/images/I/71q8sOMPwHL.png" group-title="News",Aaj Ki Khabar
@@ -2483,8 +2521,12 @@ https://cdn4.skygo.mn/live/disk1/TV9HD/HLSv3-FTA/TV9HD.m3u8
 https://vg-zeefta.akamaized.net/ptnr-yupptv/title-zeedelhincr/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/cc483a15-1b39-4642-872d-5d08d362ed01/main.m3u8
 #EXTINF:-1 tvg-name="Zee Punjab Haryana Himachal" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022KHKS.png?lock=720x540" group-title="News",Zee Punjab Haryana Himachal
 https://vg-zeefta.akamaized.net/ptnr-yupptv/title-zeepunjabharyanahima/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/65eed269-2f3a-4dd0-ac89-d18959af28e3/main.m3u8
+#EXTINF:-1 tvg-name="Aaj Ki Khabar" tvg-logo="https://m.media-amazon.com/images/I/71q8sOMPwHL.png" group-title="News",Aaj Ki Khabar
+https://stream.ottlive.co.in/aajkikhabar/index.m3u8
 #EXTINF:-1 tvg-name="ABP Asmita" tvg-logo="https://dtil.tmsimg.com/assets/s142519_ld_h15_aa.png?lock=720x540" group-title="News",ABP Asmita
 https://d2l4ar6y3mrs4k.cloudfront.net/live-streaming/asmita-livetv/master.m3u8
+#EXTINF:-1 tvg-name="Big TV 24x7" tvg-logo="https://yt3.googleusercontent.com/blnfLkIGphkSPHfWy4SVOVyHlrWSAEn2pArAS5wdH7tYmXAFD4dVMGLtSmZr5R5CNl1d2cUuDw=s512-c-k-c0x00ffffff-no-rj" group-title="News",Big TV 24x7
+https://stream.ottlive.co.in/bigtvmalayalam/index.m3u8
 #EXTINF:-1 tvg-name="BRK News" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/brk-news.png" group-title="News",BRK News
 https://mumbai-edge.smartplaytv.in/BRKNEWS/index.m3u8
 #EXTINF:-1 tvg-name="India TV" tvg-logo="https://dtil.tmsimg.com/assets/s143199_ld_h15_aa.png?lock=720x540" group-title="News",India TV
@@ -2811,6 +2853,8 @@ https://fta.ektv.in/live/89/89_0.m3u8
 https://fta.ektv.in/live/96/96_0.m3u8
 #EXTINF:-1 tvg-name="Janta TV" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Janta%20TV.png" group-title="News",Janta TV
 https://fta.ektv.in/live/106/106_0.m3u8
+#EXTINF:-1 tvg-name="star bharat hd" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/8704/1782288318704-h.jpg" group-title="News",star bharat hd
+http://line.watchtivo-8k.com:80/play/live.php?mac=00:1B:79:3D:2B:3E&stream=943734&extension=m3u8
 #EXTINF:-1 tvg-name="Aaj Tak HD" tvg-logo="https://i.imgur.com/gS9Qkfy.png" group-title="News",Aaj Tak HD
 https://aajtakhdlive-amd.akamaized.net/hls/live/2014415/aajtakhd/aajtakhdlive/live_1080p/chunks.m3u8
 #EXTINF:-1 tvg-name="ABP News" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/ABP_News_logo.svg/500px-ABP_News_logo.svg.png" group-title="News",ABP News
@@ -3003,6 +3047,8 @@ https://fta.ektv.in/live/740/master.m3u8
 https://fta.ektv.in/live/689/master.m3u8
 #EXTINF:-1 tvg-name="Mh 1 News" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/MH%20One%20News.png" group-title="News",Mh 1 News
 https://fta.ektv.in/live/643/master.m3u8
+#EXTINF:-1 tvg-name="Munsif TV" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Munsif_TV.png" group-title="News",Munsif TV
+https://fta.ektv.in/live/598/master.m3u8
 #EXTINF:-1 tvg-name="NE News" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/NE-NEWS-logo_2000_X_1125_Transpharent.png" group-title="News",NE News
 https://fta.ektv.in/live/681/master.m3u8
 #EXTINF:-1 tvg-name="News State Punjab Haryana Himachal" group-title="News",News State Punjab Haryana Himachal
@@ -3039,6 +3085,8 @@ http://99.27.51.147:8080/M6/index.m3u8
 http://99.27.51.147:8080/Gulli/index.m3u8
 #EXTINF:-1 tvg-name="99 tv" group-title="Other",99 tv
 https://ms2.mx-cd.net/dtv-11/99-660295/WOS.smil/playlist.m3u8
+#EXTINF:-1 tvg-name="99 tv" group-title="Other",99 tv
+https://ms7.mx-cd.net/tv/99-660295/WOS.smil/playlist.m3u8
 #EXTINF:-1 tvg-name="asiatvlimited" group-title="Other",asiatvlimited
 https://988fd7ad.wurl.com/v1/asiatvlimited_zeeone_1/ohlscdn_us/latest/main/hls/playlist.m3u8?hdnts=st=1792073377~exp=1792076377~acl=/v1/asiatvlimited_zeeone_1/ohlscdn_us/latest/main/hls/*~id=5c5efa1f-495a-4919-b997-cd177a818ce9~data=non-ssai_5c5efa1f-495a-4919-b997-cd177a818ce9~hmac=35de08c4a19df6468ba05944611c8c22d4c59c8e0528ee07f832dd63a5721906&req_id=non-ssai_5c5efa1f-495a-4919-b997-cd177a818ce9
 #EXTINF:-1 tvg-name="asiatvlimited" group-title="Other",asiatvlimited
@@ -3089,6 +3137,8 @@ http://144.217.77.42:8888/gta_tamil/index.m3u8
 https://mn-nl.mncdn.com/alhiwar_live/smil:alhiwar.smil/playlist.m3u8
 #EXTINF:-1 tvg-name="nl tv" group-title="Other",nl tv
 https://odmedia-mojitv-1-nl.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="nl tv" group-title="Other",nl tv
+http://media.rtvutrecht.nl/live/rtvutrecht/ustad/index.m3u8
 #EXTINF:-1 tvg-name="Omroep Zeeland (1080p)" group-title="Other",Omroep Zeeland (1080p)
 https://d3isaxd2t6q8zm.cloudfront.net/live/omroepzeeland/tv/index.m3u8
 #EXTINF:-1 tvg-name="on tv" group-title="Other",on tv
@@ -3175,10 +3225,14 @@ http://wms.shared.streamshow.it/supertv/mp4:supertv/playlist.m3u8
 https://venus.streambridge.link:8047/kannada/virattv/index.m3u8
 #EXTINF:-1 tvg-name="ABN TV India (540p)" group-title="Other",ABN TV India (540p)
 https://mediaserver.abnvideos.com/streams/abntvindia.m3u8
+#EXTINF:-1 tvg-name="Canal 13 Esquipulas SD" group-title="Other",Canal 13 Esquipulas SD
+https://tv91.hostingnuclear.com:19360/intercable/intercable.m3u8
 #EXTINF:-1 tvg-name="Enter 10 Bangla" group-title="Other",Enter 10 Bangla
 https://live-bangla.akamaized.net/liveabr/pub-iobanglakp3sff/live_720p/chunks.m3u8
 #EXTINF:-1 tvg-name="group-title="Punjabi",PTV Pardesi" group-title="Other",group-title="Punjabi",PTV Pardesi
 http://stream.pardesitv.online/pardesi/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-name="in- sync" group-title="Other",in- sync
+https://d1msejlow1t3l4.cloudfront.net/fta/insync/playlist.m3u8
 #EXTINF:-1 tvg-name="k tv-hd" group-title="Other",k tv-hd
 http://media4.tripsmarter.com:1935/LiveTV/KTVHD/chunklist_w363623166.m3u8
 #EXTINF:-1 tvg-name="Protidin Time" group-title="Other",Protidin Time
@@ -3199,6 +3253,8 @@ https://d1msejlow1t3l4.cloudfront.net/fta/vtvgujarati/playlist.m3u8?hdnts=st=179
 https://tv91.hostingnuclear.com:19360/xhunestv/xhunestv.m3u8
 #EXTINF:-1 tvg-name="etv hd" group-title="Other",etv hd
 https://livegeorouus.akamaized.net/100823/etvhd_2500/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
+#EXTINF:-1 tvg-name="K-TV (720p)" group-title="Other",K-TV (720p)
+https://d1pz8zear993v8.cloudfront.net/hlsme/kathtv.m3u8
 #EXTINF:-1 tvg-name="titanfile" group-title="Other",titanfile
 https://zee5vod.akamaized.net/drm1/titanfile/dash/MOVIES/V2PRIME/4K/ATMOS/SAM_BAHADUR/SAM_BAHADUR_4K_15012024_hi_ce3bf342a1a084e007dbd6555abf5519/manifest.mpd?c3.ri=6901304522390387240?%7CdrmScheme=clearkey&drmLicense=785ab7573f0032dbae2a1ed021657f75:e35650a3facdc46ca5e5cc0d9d03b641
 #EXTINF:-1 tvg-name="24 TV" group-title="Other",24 TV
@@ -3213,6 +3269,8 @@ http://budatv.streaming.aiproduction.hu/playlist.m3u
 http://account18.livebox.co.in/jktvkannadahls/live.m3u8
 #EXTINF:-1 tvg-name="MOV | Bollywood OLD" group-title="Other",MOV | Bollywood OLD
 https://vods2.aynaott.com/hindimovies/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 tvg-name="nl tv" group-title="Other",nl tv
+https://tv.beatfm.nl/live.m3u8
 #EXTINF:-1 tvg-name="Tamil TV" group-title="Other",Tamil TV
 https://ktismaservers.in:3220/hybrid/play.m3u8
 #EXTINF:-1 tvg-name="Wild Flix Hindi" group-title="Other",Wild Flix Hindi
@@ -3223,6 +3281,8 @@ https://cc-zko1curyce7jh.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da6
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01412-xiaomiasia-zeebihar-xiaomi/playlist.m3u8
 #EXTINF:-1 tvg-name="Zee Taas (Asia)" group-title="Other",Zee Taas (Asia)
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01412-xiaomiasia-zeetaas-xiaomi/playlist.m3u8
+#EXTINF:-1 tvg-name="nat geo wild hd" group-title="Other",nat geo wild hd
+http://vpn.streamhut.xyz:80/play/live.php?mac=00:1A:79:02:A0:F2&stream=155989&extension=m3u8
 #EXTINF:-1 tvg-name="Swastik Kannada" group-title="Other",Swastik Kannada
 https://mumbai-edge.smartplaytv.in/swastik/index.m3u8
 #EXTINF:-1 tvg-name="Rongeen TV" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Rongeen-Logo--without-BG_2000_X_1125.png" group-title="Other",Rongeen TV
@@ -3239,10 +3299,14 @@ https://streams.tangotv.in/SAAMTV/ORIGIN/index.m3u8
 https://cloud.dndcommunication.in/shinekannada/shinekannada/playlist.m3u8
 #EXTINF:-1 tvg-name="TV 9 Nusantara (720p)" group-title="Other",TV 9 Nusantara (720p)
 https://5bf7b725107e5.streamlock.net/tv9/tv9/playlist.m3u8
+#EXTINF:-1 tvg-name="balajibroadband" group-title="Other",balajibroadband
+http://live.balajibroadband.com:3500/live/3444.m3u8
 #EXTINF:-1 tvg-name="GSTV (720p)" group-title="Other",GSTV (720p)
 https://japaneast.av.mk.io/mediakindcdn-mediakind/ca01a143-f823-4432-b670-c22ff9643ce4/index.qfm/manifest(format=m3u8-cmaf)
 #EXTINF:-1 tvg-name="Travel XP" group-title="Other",Travel XP
 http://stream.mcquack.net/451/index.m3u8
+#EXTINF:-1 tvg-name="nl tv" group-title="Other",nl tv
+https://server-23.stream-server.nl:1936/Magic-PowerRadio/Magic-PowerRadio/playlist.m3u8
 #EXTINF:-1 tvg-name="Protidin Time" group-title="Other",Protidin Time
 https://d1msejlow1t3l4.cloudfront.net/fta/protidintime/playlist.m3u8?hdnts=st=1792629856~exp=1792651456~acl=!*/fta/protidintime/*!/payload/yupptvott_5_-1_c7dfc58d-9e0f-4507-9824-7db0aada781b_MX_158.23.146.211_yupptv_1_channel_6648_-1/*~data=yupptvott_5_-1_c7dfc58d-9e0f-4507-9824-7db0aada781b_MX_158.23.146.211_yupptv_1_channel_6648_-1~hmac=4dc360ba3e7799ac8dcb0b91a19c2f1be5ed00c5e34b4bded1ead009d5a5b0e8&ads.content_custom_3_param=yuppfastint&ads.ip=158.23.146.211&did=c7dfc58d-9e0f-4507-9824-7db0aada781b&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=NEWS&ads.content_custom_1_param=FAST&ads.channel=6648&ads.channel_name=ProtidinTime&ads.language=ASM&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
 #EXTINF:-1 tvg-name="Protidin Time" group-title="Other",Protidin Time
@@ -3253,6 +3317,8 @@ https://d1msejlow1t3l4.cloudfront.net/fta/totaltv/playlist.m3u8?hdnts=st=1792629
 https://d1msejlow1t3l4.cloudfront.net/fta/totaltv/playlist.m3u8?hdnts=st=1792630560~exp=1792652160~acl=!*/fta/totaltv/*!/payload/yupptvott_5_-1_27ada39d-7433-4a99-9f95-4677d7af0c7b_MX_158.23.146.211_yupptv_1_channel_6629_-1/*~data=yupptvott_5_-1_27ada39d-7433-4a99-9f95-4677d7af0c7b_MX_158.23.146.211_yupptv_1_channel_6629_-1~hmac=293efb617c7f69baa4bf118aa8f94addaf647d661a3f6e49c871e7fcd670d71b&ads.content_custom_3_param=yuppfastint&ads.ip=158.23.146.211&did=27ada39d-7433-4a99-9f95-4677d7af0c7b&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=NEWS&ads.content_custom_1_param=FAST&ads.channel=6629&ads.channel_name=TotalTV&ads.language=HIN&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
 #EXTINF:-1 tvg-name="VTV Gujarati" group-title="Other",VTV Gujarati
 https://d1msejlow1t3l4.cloudfront.net/fta/vtvgujarati/playlist.m3u8?hdnts=st=1792629828~exp=1792651428~acl=!*/fta/vtvgujarati/*!/payload/yupptvott_5_-1_c7dfc58d-9e0f-4507-9824-7db0aada781b_MX_158.23.146.211_yupptv_1_channel_6420_-1/*~data=yupptvott_5_-1_c7dfc58d-9e0f-4507-9824-7db0aada781b_MX_158.23.146.211_yupptv_1_channel_6420_-1~hmac=5982df6afefea8a08b1f5aad922c81c8654b148ec80cdfe34cc0a29c2c269db5&ads.content_custom_3_param=yuppfastint&ads.ip=158.23.146.211&did=c7dfc58d-9e0f-4507-9824-7db0aada781b&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=NEWS&ads.content_custom_1_param=FAST&ads.channel=6420&ads.channel_name=VTVGujarati&ads.language=GUJ&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
+#EXTINF:-1 tvg-name="balajibroadband" group-title="Other",balajibroadband
+http://live.balajibroadband.com:3500/live/3418.m3u8
 #EXTINF:-1 tvg-name="jai hind" group-title="Other",jai hind
 https://yuppnimrestreammum.akamaized.net/260723/smil:jaihind1.smil/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
 #EXTINF:-1 tvg-name="protidin time" group-title="Other",protidin time
@@ -3291,6 +3357,8 @@ http://stream.mcquack.net/149/tracks-v1a1/mono.ts.m3u8
 https://airtelapp.shemaroo.com/marathibana/smil:marathibanaadp.smil/playlist.m3u8
 #EXTINF:-1 tvg-name="Travel XP HD" group-title="Other",Travel XP HD
 http://stream.mcquack.net/451/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 tvg-name="balajibroadband" group-title="Other",balajibroadband
+http://live.balajibroadband.com:3500/live/1345.m3u8
 #EXTINF:-1 tvg-name="Eye Tamil" group-title="Other",Eye Tamil
 https://2.proxy.nellaiiptv.com/EyeMedia/EyeTV/index.m3u8
 #EXTINF:-1 tvg-name="Saam TV" tvg-logo="https://dtil.tmsimg.com/assets/s143735_ld_h15_aa.png?lock=720x540" group-title="Other",Saam TV
@@ -3319,8 +3387,6 @@ https://cdn.pishow.tv/ott/live/963/master.m3u8
 https://tv.kbhub.online/AS-INDIA-BANGLA/IN-DISCOVERY-FHD-BANGLA.ts
 #EXTINF:-1 tvg-name="DISCOVERY HD" group-title="Other",DISCOVERY HD
 http://line.tivi-one.net:80/play/live.php?mac=A0:BB:3E:75:52:64&stream=1031931&extension=ts&play_token=9C0hndElOQ
-#EXTINF:-1 tvg-name="ETV Bangla" group-title="Other",ETV Bangla
-https://tv.kbhub.online/AS-INDIA-BANGLA/IN-ETV-BANGAL-HD.ts
 #EXTINF:-1 tvg-name="Fast1" tvg-logo="https://papaji.freetvindia.com/media/channels/fast1.png" group-title="Other",Fast1
 https://cdn.pishow.tv/ott/live/10008/master.m3u8
 #EXTINF:-1 tvg-name="ITV Bangla" group-title="Other",ITV Bangla
@@ -3371,16 +3437,18 @@ https://etv.publichs.com/live5.stream/playlist.m3u8
 http://dvltv.cc:80/play/uxN8_xYmP3o_GFqK372_hyj3xSUY11c4KRmsOI-L4ZY
 #EXTINF:-1 tvg-name="Selva Tamil TV" group-title="Other",Selva Tamil TV
 https://stream.sscloud7.in/live/selvatamiltv/index.mpd
+#EXTINF:-1 tvg-name="TRAVEL XP HD" group-title="Other",TRAVEL XP HD
+http://dvltv.cc:80/play/uxN8_xYmP3o_GFqK372_h0tVFpbXcwZ9FZ_8b3j62Ek
 #EXTINF:-1 tvg-name="Bollywood HD" group-title="Other",Bollywood HD
 http://185.221.213.254/live/stream112.php?q=h0c5Eyuek0CppzJQmzPiyBmI9DfhNnGVuNxzdYNOfd9ssyKJuQoiDQFde-j43g82TglQ6QupvsjzmaF14fmDpTACWFDWkqFBmkC3oLinlBk
 #EXTINF:-1 tvg-name="Bollywood HD orig" group-title="Other",Bollywood HD orig
 http://185.221.213.254/live/stream112.php?q=h0c5Eyuek0CppzJQmzPiyBmI9DfhNnGVuNxzdYNOfd-EeeZuSIwEhDAlo0Tul56Vp6CeiEb6jNbIs_OvxsxLFyHHSrtv1x3dWo7ORCoOukU
+#EXTINF:-1 tvg-name="cbeebies" group-title="Other",cbeebies
+http://gotit14.xyz:80/live/2F635BX/ZJX02CY
 #EXTINF:-1 tvg-name="CNA" group-title="Other",CNA
 https://live1.mediadesk.al/cnatvlive.m3u8
 #EXTINF:-1 tvg-name="MNTV (Tamil)" group-title="Other",MNTV (Tamil)
 https://www.khuwemultimedia.com/hls/mntv/mntv.m3u8
-#EXTINF:-1 tvg-name="nl tv" group-title="Other",nl tv
-https://nl.livekadeh.com/hls2/vilayet.m3u8
 #EXTINF:-1 tvg-name="Sai TV" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SAI_TV/images/LOGO_HD/image.png" group-title="Other",Sai TV
 https://mumt03.tangotv.in/Dsly5z3HSAITV/index.m3u8
 #EXTINF:-1 tvg-name="Salvation TV (India) KBCT" group-title="Other",Salvation TV (India) KBCT
@@ -3393,6 +3461,8 @@ http://stream.mcquack.net/100/tracks-v1a1/mono.ts.m3u8?ads=1&filter.tracks=v1a1
 https://rtmp.win:3929/live/epiruslive.m3u8
 #EXTINF:-1 tvg-name="Arirang Korea" tvg-logo="../Channel/logo/Arirang.png" group-title="Other",Arirang Korea
 https://cdn-01.bonus-tv.ru/arirang_edge/playlist.m3u8
+#EXTINF:-1 tvg-name="Sarv Dharm Sangam" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SARV_DHARAM_SANGAM/images/LOGO_HD/image.png" group-title="Other",Sarv Dharm Sangam
+https://fta.ektv.in/live/630/master.m3u8
 #EXTINF:-1 tvg-name="Taaza TV" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Taaza_TV.png" group-title="Other",Taaza TV
 https://tvsen3.aynaott.com/yRMLky2j/index.m3u8
 #EXTINF:-1 tvg-name="V Tamil [VK Digital]" group-title="Other",V Tamil [VK Digital]
@@ -3459,8 +3529,12 @@ https://fta.ektv.in/live/662/master.m3u8
 https://fta.ektv.in/live/306/master.m3u8
 #EXTINF:-1 tvg-name="Rengoni" tvg-logo="https://dtil.tmsimg.com/assets/s143722_ld_h15_aa.png?lock=720x540" group-title="Other",Rengoni
 https://fta.ektv.in/live/709/master.m3u8
+#EXTINF:-1 tvg-name="Shubh TV" tvg-logo="https://dtil.tmsimg.com/assets/s143783_ld_h15_aa.png?lock=720x540" group-title="Other",Shubh TV
+https://fta.ektv.in/live/626/master.m3u8
 #EXTINF:-1 tvg-name="Taaza TV" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Taaza_TV.png" group-title="Other",Taaza TV
 https://fta.ektv.in/live/591/master.m3u8
+#EXTINF:-1 tvg-name="Tehzeeb TV" tvg-logo="https://i.imgur.com/PCVOdup.png" group-title="Other",Tehzeeb TV
+https://fta.ektv.in/live/636/master.m3u8
 #EXTINF:-1 tvg-name="MahdawiounTV (1080p) [Geo-blocked]" group-title="Religious",MahdawiounTV (1080p) [Geo-blocked]
 https://live.mahdawioun.tv/stream/mahdawioun/playlist.m3u8
 #EXTINF:-1 tvg-name="SVBC Sri Venkateswara Bhakti Channel" tvg-logo="https://dtil.tmsimg.com/assets/s143889_ld_h9_ab.png?lock=720x540" group-title="Religious",SVBC Sri Venkateswara Bhakti Channel
@@ -3639,6 +3713,8 @@ https://alex4528.site/k7m2q9x4b8nc/stream.ts?id=132857
 https://villagetv.applelive.in/villagetv/villagetv/index.m3u8
 #EXTINF:-1 tvg-name="Aastha Telugu" tvg-logo="https://dtil.tmsimg.com/assets/s158136_ld_h15_aa.png?lock=720x540" group-title="Religious",Aastha Telugu
 https://mumbai-edge.smartplaytv.in/AasthaTelugu/index.m3u8
+#EXTINF:-1 tvg-name="Hare Krsna TV" tvg-logo="https://dtil.tmsimg.com/assets/s143102_ld_h15_aa.png?lock=720x540" group-title="Religious",Hare Krsna TV
+https://fta.ektv.in/live/617/master.m3u8
 #EXTINF:-1 tvg-name="Peace of Mind TV" tvg-logo="https://dtil.tmsimg.com/assets/s143646_ld_h15_aa.png?lock=720x540" group-title="Religious",Peace of Mind TV
 https://mumbai-edge.smartplaytv.in/PeaceOfMind/index.m3u8
 #EXTINF:-1 tvg-name="Aastha Bhajan" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Aastha%20Bhajan.png" group-title="Religious",Aastha Bhajan
@@ -3681,8 +3757,12 @@ https://aasthaott.akamaized.net/110923/smil:aasthagujrati.smil/playlist.m3u8
 https://aasthaott.akamaized.net/110923/smil:aasthatelugu.smil/playlist.m3u8
 #EXTINF:-1 tvg-name="Vedic" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Vedic.png" group-title="Religious",Vedic
 https://aasthaott.akamaized.net/110923/smil:vedic.smil/playlist.m3u8
+#EXTINF:-1 tvg-name="Shubhsandesh TV" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SHUBHSANDESH_TV/images/LOGO_HD/image.png" group-title="Religious",Shubhsandesh TV
+https://fta.ektv.in/live/627/master.m3u8
 #EXTINF:-1 tvg-name="Anand TV" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Anand_TV.png" group-title="Religious",Anand TV
 https://fta.ektv.in/live/770/master.m3u8
+#EXTINF:-1 tvg-name="Divyavani TV" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Divya_Vani.png" group-title="Religious",Divyavani TV
+https://fta.ektv.in/live/382/master.m3u8
 #EXTINF:-1 tvg-name="Sanskar TV" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Sanskar.png" group-title="Religious",Sanskar TV
 https://fta.ektv.in/live/165/master.m3u8
 #EXTINF:-1 tvg-name="Satsang TV" tvg-logo="https://dtil.tmsimg.com/assets/s143766_ld_h15_aa.png?lock=720x540" group-title="Religious",Satsang TV
@@ -3745,6 +3825,10 @@ https://mumt03.tangotv.in/Dsly5z3HSVBC2TAMIL/index.m3u8
 https://mumt05.tangotv.in/87NeALx2VEDIC/index.m3u8
 #EXTINF:-1 tvg-name="Channel WIN" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Channel-Win-transparent.png" group-title="Religious",Channel WIN
 https://fta.ektv.in/live/648/master.m3u8
+#EXTINF:-1 tvg-name="Fateh TV" tvg-logo="https://i.imgur.com/c4ItNkB.png" group-title="Religious",Fateh TV
+https://fta.ektv.in/live/635/master.m3u8
+#EXTINF:-1 tvg-name="Hope Channel India" tvg-logo="https://i.imgur.com/wPzPUrK.png" group-title="Religious",Hope Channel India
+https://fta.ektv.in/live/634/master.m3u8
 #EXTINF:-1 tvg-name="GoodNews TV" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_GOODNEWS_TV/images/LOGO_HD/image.png" group-title="Religious",GoodNews TV
 https://bpgdlwwar3ze-hls-live.wmncdn.net/goodnews/live.stream/playlist.m3u8
 #EXTINF:-1 tvg-name="Hope Channel India" tvg-logo="https://i.imgur.com/wPzPUrK.png" group-title="Religious",Hope Channel India
@@ -3757,16 +3841,18 @@ http://6284rn2xr7xv-hls-live.wmncdn.net/shubhsandeshtv1/live123.stream/index.m3u
 https://fta.ektv.in/live/343/master.m3u8
 #EXTINF:-1 tvg-name="Aastha Gujarati" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Aastha_Tamil.png" group-title="Religious",Aastha Gujarati
 https://fta.ektv.in/live/372/master.m3u8
+#EXTINF:-1 tvg-name="Awakening TV" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Awakening-logo-transparent.png" group-title="Religious",Awakening TV
+https://fta.ektv.in/live/633/master.m3u8
 #EXTINF:-1 tvg-name="CVR OM Spiritual" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/CVR_OM_Spiritual.png" group-title="Religious",CVR OM Spiritual
 https://fta.ektv.in/live/705/master.m3u8
-#EXTINF:-1 tvg-name="Hare Krsna TV" tvg-logo="https://dtil.tmsimg.com/assets/s143102_ld_h15_aa.png?lock=720x540" group-title="Religious",Hare Krsna TV
-https://fta.ektv.in/live/259/master.m3u8
 #EXTINF:-1 tvg-name="Nireekshana TV" tvg-logo="https://i.imgur.com/nGJv6QR.png" group-title="Religious",Nireekshana TV
 https://fta.ektv.in/live/706/master.m3u8
 #EXTINF:-1 tvg-name="Paras Gold" tvg-logo="https://dtil.tmsimg.com/assets/s143642_ld_h15_aa.png?lock=720x540" group-title="Religious",Paras Gold
 https://fta.ektv.in/live/167/master.m3u8
 #EXTINF:-1 tvg-name="PTC Simran" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/PTC%20Simran.png" group-title="Religious",PTC Simran
 https://fta.ektv.in/live/183/master.m3u8
+#EXTINF:-1 tvg-name="Vedic" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Vedic.png" group-title="Religious",Vedic
+https://fta.ektv.in/live/628/master.m3u8
 #EXTINF:-1 tvg-name="Shubhsandesh TV" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SHUBHSANDESH_TV/images/LOGO_HD/image.png" group-title="Religious",Shubhsandesh TV
 https://6284rn2xr7xv-hls-live.wmncdn.net/shubhsandeshtv1/live123.stream/index.m3u8
 #EXTINF:-1 tvg-name="Aastha Telugu" tvg-logo="https://dtil.tmsimg.com/assets/s158136_ld_h15_aa.png?lock=720x540" group-title="Religious",Aastha Telugu
@@ -3858,12 +3944,8 @@ https://real-vk.proxy.nellaiiptv.com/SDMEDIA/index.m3u8
 #EXTINF:-1 tvg-name="Sony Ten 2" tvg-logo="https://dtil.tmsimg.com/assets/s157592_ld_h15_aa.png?lock=720x540" group-title="Sports",Sony Ten 2
 https://stream.ottplus.live/live/ten_2_hd_abr/live/ten_2_hd_720/chunks.m3u8
 #EXTINF:-1 tvg-name="TravelXP HD" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Travelxp%20HD.png" group-title="Travel",TravelXP HD
-https://mhd128.iptv2022.com/p/001yGlyUlv-f_3FLijIZmQ,1756587621/streaming/travelxp/324/1/index.m3u8
-#EXTINF:-1 tvg-name="TravelXP HD" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Travelxp%20HD.png" group-title="Travel",TravelXP HD
 https://mhd128.iptv2022.com/p/aKHJk8HreQSkPYyBEKrwfQ,1756933214/streaming/travelxp/324/1/index.m3u8
 #EXTINF:-1 tvg-name="Travelxp HD" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Travelxp%20HD.png" group-title="Travel",Travelxp HD
 https://amg00416-amg00416c9-samsung-in-4882.playouts.now.amagi.tv/playlist/amg00416-travelxp-travelxphd-samsungin/playlist.m3u8
-#EXTINF:-1 tvg-name="TravelXP HD" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Travelxp%20HD.png" group-title="Travel",TravelXP HD
-https://mhd128.iptv2022.com/p/CDdCPFsxrPUOdzF0gIsf0w,1755723617/streaming/travelxp/324/1/index.m3u8
 #EXTINF:-1 tvg-name="WeatherSpy (India) KBCT" tvg-logo="https://i.imgur.com/KIEKOt1.png" group-title="Weather",WeatherSpy (India) KBCT
 https://jukin-weatherspy-2-in.samsung.wurl.tv/playlist.m3u8

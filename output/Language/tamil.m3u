@@ -1,4 +1,6 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
+#EXTINF:-1 tvg-name="Jaya TV" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Jaya%20TV%20HD.png" group-title="Culture",Jaya TV
+http://zyamka.akadatel.com/iptv/6KPA5QMR4XYRDA/6696/index.m3u8
 #EXTINF:-1 tvg-name="mega tv" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Mega%20TV.png" group-title="Entertainment",mega tv
 http://15.204.196.147:22880/MEGA2-MEGAMEDIA-EE.UU-PROVEEDOR/index.m3u8
 #EXTINF:-1 tvg-name="Oli TV (India) (1080p)" tvg-logo="https://i.ibb.co/XfvTQyJn/main-removebg-preview.png" group-title="Entertainment",Oli TV (India) (1080p)
@@ -9,6 +11,8 @@ https://yuppmedtaorire.akamaized.net/v1/master/a0d007312bfd99c47f76b77ae26b1ccda
 https://unlimited2-cl-isp.dps.live/mega/mega.smil/playlist.m3u8
 #EXTINF:-1 tvg-name="Mega TV SD" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Mega%20TV.png" group-title="Entertainment",Mega TV SD
 https://ott3.streann.com/loadbalancer/services/public/channels-secure/5e62b96e2cdcfac2dd8885dd/playlist.m3u8
+#EXTINF:-1 tvg-name="Raj TV" tvg-logo="https://dtil.tmsimg.com/assets/s143715_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Raj TV
+http://zyamka.akadatel.com/iptv/6KPA5QMR4XYRDA/6700/index.m3u8
 #EXTINF:-1 tvg-name="Tamil Oli TV" tvg-logo="https://i.ibb.co/XfvTQyJn/main-removebg-preview.png" group-title="Entertainment",Tamil Oli TV
 https://view.rcserver.in/tmp_hls7/tamilolitv/index.m3u8
 #EXTINF:-1 tvg-name="Raj TV" tvg-logo="https://dtil.tmsimg.com/assets/s143715_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Raj TV
@@ -71,12 +75,14 @@ https://mumt04.tangotv.in/m18aqlK4DDTAMIL/index.m3u8
 https://fta.ektv.in/live/679/master.m3u8
 #EXTINF:-1 tvg-name="NH Tamil Gold" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN400061DB_20260623T015348SQUARE.png" group-title="Movies",NH Tamil Gold
 https://d3arbp6l7f096k.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/pb-gv6wgpbb4mgwk/playlist.m3u8?ads.ads_cdn=cf&ads.app_domain=APP_DOMAIN&ads.cdn=cf
+#EXTINF:-1 tvg-name="RAJ digital plus" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Raj%20Digital%20Plus.png" group-title="Movies",RAJ digital plus
+http://zyamka.akadatel.com/iptv/6KPA5QMR4XYRDA/6701/index.m3u8
 #EXTINF:-1 tvg-name="Raj Digital Plus" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Raj%20Digital%20Plus.png" group-title="Movies",Raj Digital Plus
 https://livestream.rajtv.tv/hlslive/Admin/px08241087/live/RajTV_Digital_plus/master_1.m3u8
-#EXTINF:-1 tvg-name="KTV Tamil" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG002Z1SEP.png?lock=720x540" group-title="Movies",KTV Tamil
-https://tv.kbhub.online/AS-INDIA-BANGLA/IN-KTV-BANGLA.ts
 #EXTINF:-1 tvg-name="Raj Digital Plus" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Raj%20Digital%20Plus.png" group-title="Movies",Raj Digital Plus
 http://dsmqbfez.pardns.com/live/6CTB9BKG/4Q7Y9DFW/33583.ts
+#EXTINF:-1 tvg-name="Raj Musix" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Raj%20Musix%20Kannada.png" group-title="Music",Raj Musix
+http://zyamka.akadatel.com/iptv/6KPA5QMR4XYRDA/6702/index.m3u8
 #EXTINF:-1 tvg-name="Raj Musix Tamil" tvg-logo="https://dtil.tmsimg.com/assets/s143707_ld_h15_aa.png?lock=720x540" group-title="Music",Raj Musix Tamil
 https://livestream.rajtv.tv/hlslive/Admin/px08241087/live/Raj_Musix/master_1.m3u8
 #EXTINF:-1 tvg-name="7S Music" tvg-logo="https://i.imgur.com/zDiIhdN.png" group-title="Music",7S Music

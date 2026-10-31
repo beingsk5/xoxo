@@ -41,10 +41,10 @@ https://d2pnr7z8mre86q.cloudfront.net/WE_IFB_12/dash/manifest.mpd
 https://d2pnr7z8mre86q.cloudfront.net/WE_IFB_5/dash/manifest.mpd
 #EXTINF:-1 tvg-name="we" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/We%20TV.png" group-title="Movies",we
 https://d2pnr7z8mre86q.cloudfront.net/WE_IFB_11/dash/manifest.mpd
-#EXTINF:-1 tvg-name="we" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/We%20TV.png" group-title="Movies",we
-https://d2pnr7z8mre86q.cloudfront.net/WE_IFB_8/hls/index.m3u8
 #EXTINF:-1 tvg-name="Zee Cinema (576p)" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022HVX3.png?lock=720x540" group-title="Movies",Zee Cinema (576p)
 https://d1g8wgjurz8via.cloudfront.net/bpk-tv/NGCHD/default/NGCHD.m3u8
+#EXTINF:-1 tvg-name="we" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/We%20TV.png" group-title="Movies",we
+https://d2pnr7z8mre86q.cloudfront.net/WE_IFB_1/dash/manifest.mpd
 #EXTINF:-1 tvg-name="zee cinema hd" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022HVX3.png?lock=720x540" group-title="Movies",zee cinema hd
 https://d1g8wgjurz8via.cloudfront.net/bpk-tv/Zeecinemahd/default/manifest.mpd
 #EXTINF:-1 tvg-name="zee talkies" tvg-logo="https://i.imgur.com/GowDXFz.png" group-title="Movies",zee talkies
@@ -83,10 +83,14 @@ https://d1g8wgjurz8via.cloudfront.net/bpk-tv/Zeebiharjharkhand/default/manifest.
 https://d1hp2yai3k4ork.cloudfront.net/index_4.m3u8
 #EXTINF:-1 tvg-name="Omroep Zeeland (1080p)" group-title="Other",Omroep Zeeland (1080p)
 https://d3isaxd2t6q8zm.cloudfront.net/live/omroepzeeland/tv/index.m3u8
+#EXTINF:-1 tvg-name="in- sync" group-title="Other",in- sync
+https://d1msejlow1t3l4.cloudfront.net/fta/insync/playlist.m3u8
 #EXTINF:-1 tvg-name="sant wani" group-title="Other",sant wani
 https://d1msejlow1t3l4.cloudfront.net/fta/santwani/playlist.m3u8
 #EXTINF:-1 tvg-name="total tv" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_TOTAL_TV/images/LOGO_HD/image.png" group-title="Other",total tv
 https://d1msejlow1t3l4.cloudfront.net/fta/totaltv/playlist.m3u8
+#EXTINF:-1 tvg-name="K-TV (720p)" group-title="Other",K-TV (720p)
+https://d1pz8zear993v8.cloudfront.net/hlsme/kathtv.m3u8
 #EXTINF:-1 tvg-name="zeeanmol" group-title="Other",zeeanmol
 https://d1g8wgjurz8via.cloudfront.net/bpk-tv/Zeeanmol/default/manifest.mpd
 #EXTINF:-1 tvg-name="zeehindustan" group-title="Other",zeehindustan
