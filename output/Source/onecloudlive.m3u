@@ -1,5 +1,11 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
 #EXTINF:-1 tvg-name="Salaam TV" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Salaam_TV_Hindi_2000_X_1125_transpharent.png" group-title="News",Salaam TV
 https://stream.onecloudlive.in/salamtv/salamtvhd/index.m3u8
+#EXTINF:-1 tvg-name="R Plus TV" tvg-logo="https://i.imgur.com/XUnWcZF.png" group-title="Other",R Plus TV
+https://live2.onecloudlive.in/rplustv/rplus/index.m3u8?origin=github.com/amazeyourself
 #EXTINF:-1 tvg-name="Super TV" group-title="Other",Super TV
 https://stream.onecloudlive.in/superstartv/superstarhd/index.m3u8
+#EXTINF:-1 tvg-name="T Tamil TV" group-title="Other",T Tamil TV
+https://live4.onecloudlive.in/tamil/live/index.m3u8?origin=github.com/amazeyourself
+#EXTINF:-1 tvg-name="ME24 Tamil" group-title="Other",ME24 Tamil
+https://stream.onecloudlive.in/orange/ME24TAMIL/index.m3u8?origin=github.com/amazeyourself
