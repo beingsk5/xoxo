@@ -27,6 +27,8 @@ https://stream.ottplus.live/live/sony_yay_abr/index.m3u8
 https://unknown-playlists.vercel.app/super-hungama.m3u8
 #EXTINF:-1 tvg-name="Sony YaY" tvg-logo="https://i.postimg.cc/jSBDsbBX/20240823_021324.png" group-title="Animation",Sony YaY
 https://stream.ottplus.live/live/sony_yay_abr/live/sony_yay_720/chunks.m3u8
+#EXTINF:-1 tvg-name="super hungama" tvg-logo="https://plain-apac-prod-public.komododecks.com/202609/07/lNjbGo0Rcgz3vhfoyTN7/image.png" group-title="Animation",super hungama
+https://livetvbox.live/live/15008/15008
 #EXTINF:-1 tvg-name="Discovery Turbo (720p) (eng4)  (English) (Auto)" tvg-logo="https://dtil.tmsimg.com/assets/s159108_ld_h15_aa.png?lock=720x540" group-title="Auto",Discovery Turbo (720p) (eng4)  (English) (Auto)
 http://41.205.93.154/ESPNNEWS/index.m3u8
 #EXTINF:-1 tvg-name="Discovery Turbo" tvg-logo="https://dtil.tmsimg.com/assets/s159108_ld_h15_aa.png?lock=720x540" group-title="Auto",Discovery Turbo
@@ -113,7 +115,7 @@ https://d1g8wgjurz8via.cloudfront.net/bpk-tv/Investigationdiscovery2/default/man
 https://mumt05.tangotv.in/87NeALx2BVG/index.m3u8
 #EXTINF:-1 tvg-name="DD Kisan" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Kisan.png" group-title="Education",DD Kisan
 https://cdn.pishow.tv/ott/live/9/master.m3u8
-#EXTINF:-1 tvg-name="DD Kisan (576p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Kisan.png" group-title="Education",DD Kisan (576p)
+#EXTINF:-1 tvg-name="DD Kisan" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Kisan.png" group-title="Education",DD Kisan
 https://cdn.pishow.tv/ott/live/223/master.m3u8
 #EXTINF:-1 tvg-name="DD Kisan" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Kisan.png" group-title="Education",DD Kisan
 https://d2lk5u59tns74c.cloudfront.net/out/v1/4f053f2c12a24641bf701fb7f2376750/index.m3u8
@@ -133,6 +135,8 @@ http://media4.tripsmarter.com:1935/LiveTV/MTVHD/playlist.m3u8
 https://rtmp.streams.ovh:8081/mtv/index.m3u8
 #EXTINF:-1 tvg-name="MTV Live (720p)" tvg-logo="https://img10.hotstar.com/image/upload/sources/r1/cms/prod/8633/1786020488633-h.jpg" group-title="Entertainment",MTV Live (720p)
 http://23.237.104.106:8080/USA_MTV_LIVE/index.m3u8
+#EXTINF:-1 tvg-name="Star Plus" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/2384/1782291852384-h.jpg" group-title="Entertainment",Star Plus
+http://103.135.253.32:8080/STAR-PLUS/index.m3u8
 #EXTINF:-1 tvg-name="StarPlus (United Kingdom) (576p)" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/2384/1782291852384-h.jpg" group-title="Entertainment",StarPlus (United Kingdom) (576p)
 https://d1rc86nwwc9fag.cloudfront.net/260723/starplusuk_2500/chunks.m3u8
 #EXTINF:-1 tvg-name="Zee TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Zee_TV_Logo_2025.svg/960px-Zee_TV_Logo_2025.svg.png" group-title="Entertainment",Zee TV
@@ -163,6 +167,8 @@ http://iptvcasomsapi.jprdigital.in/x-media/C0065/master.m3u8
 https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/3e22a9c278db4e3eb779afd42e41b0a6/index.m3u8
 #EXTINF:-1 tvg-name="Star Plus" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/2384/1782291852384-h.jpg" group-title="Entertainment",Star Plus
 http://103.135.253.32:8080/STAR-PLUS/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-name="mtv hd" tvg-logo="https://img10.hotstar.com/image/upload/sources/r1/cms/prod/8633/1786020488633-h.jpg" group-title="Entertainment",mtv hd
+https://mtv.sunplex.live/MAASRANGA/index.m3u8
 #EXTINF:-1 tvg-name="Colors" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/Colors_Transparent_16069908-8494-4eb4-bd40-5afca3969088.png" group-title="Entertainment",Colors
 http://iptvcasomsapi.jprdigital.in/x-media/C0459/master.m3u8
 #EXTINF:-1 tvg-name="Colors MENA HD" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/Colors_Transparent_16069908-8494-4eb4-bd40-5afca3969088.png" group-title="Entertainment",Colors MENA HD
@@ -371,6 +377,10 @@ http://stream.mcquack.net/220/tracks-v1a1/mono.ts.m3u8
 http://103.135.253.32:8080/HUNGAMA/index.m3u8
 #EXTINF:-1 tvg-name="Sonic Gujarati" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/6294/1782290926294-h.jpg" group-title="Kids",Sonic Gujarati
 http://dsmqbfez.pardns.com/live/6CTB9BKG/4Q7Y9DFW/132297.ts
+#EXTINF:-1 tvg-name="hungama tv" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Hungama_TV.svg/960px-Hungama_TV.svg.png" group-title="Kids",hungama tv
+https://starshare.live:443/live/04494/04494
+#EXTINF:-1 tvg-name="hungama tv" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Hungama_TV.svg/960px-Hungama_TV.svg.png" group-title="Kids",hungama tv
+https://live6.ostv.pro/live/15008/15008
 #EXTINF:-1 tvg-name="NDTV Good Times" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_GOOD_TIMES/images/LOGO_HD/image.png" group-title="Lifestyle",NDTV Good Times
 https://amg01448-samsungin-ndtvgoodtimes-samsungin-ad-gp.amagi.tv/playlist/amg01448-samsungin-ndtvgoodtimes-samsungin/playlist.m3u8
 #EXTINF:-1 tvg-name="NDTV Good Times" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_GOOD_TIMES/images/LOGO_HD/image.png" group-title="Lifestyle",NDTV Good Times

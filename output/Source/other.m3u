@@ -51,6 +51,8 @@ https://nhk.lls.pbs.org/index.m3u8
 http://15.204.246.24:8080/CinecanalHD/index.m3u8
 #EXTINF:-1 tvg-name="tv 24" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/TV24.png" group-title="News",tv 24
 http://15.204.246.24:8080/NatGeoHD/index.m3u8
+#EXTINF:-1 tvg-name="tv 24" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/TV24.png" group-title="News",tv 24
+http://15.204.246.24:8080/CHVHD/index.m3u8
 #EXTINF:-1 tvg-name="10 tv" tvg-logo="https://dtil.tmsimg.com/assets/s142495_ld_h15_aa.png?lock=720x540" group-title="News",10 tv
 http://81.171.10.42:1935/liveD/DStream.sdp/chunklist_w819085920.m3u8
 #EXTINF:-1 tvg-name="Reporter (720p)" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="News",Reporter (720p)
@@ -75,12 +77,12 @@ https://legitpro.co.in/cnnnews/index.m3u8
 https://a.files.bbci.co.uk/ms6/live/3441A116-B12E-4D2F-ACA8-C1984642FA4B/audio/simulcast/hls/nonuk/audio_syndication_vlow_sbr_v1/cfs/bbc_world_service_news_internet.m3u8
 #EXTINF:-1 tvg-name="Big TV 24x7 (1080p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/BIGTV%20Logo_2000_X_1125_Transpharent.png" group-title="News",Big TV 24x7 (1080p)
 https://stream.ottlive.co.in/bigtvmalayalam/index.m3u8
-#EXTINF:-1 tvg-name="Live Times (720p)" tvg-logo="https://www.livetimes.news/wp-content/uploads/2021/11/LT-logoConverted-01.png" group-title="News",Live Times (720p)
-https://stream.ottlive.co.in/livetimetv/index.m3u8
 #EXTINF:-1 tvg-name="Living India News (1080p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/India%20News.png" group-title="News",Living India News (1080p)
 https://stream.ottlive.co.in/livingindia/index.m3u8
 #EXTINF:-1 tvg-name="News Leader (576p)" tvg-logo="https://img-cdn.publive.online/fit-in/360x280/filters:format(webp)/newsleaderlive/media/agency_attachments/2026/04/15/2026-04-15t100517555z-news-leader-640-480-1-sarvajeet-singh-chauhan-2026-04-15-15-35-17.png" group-title="News",News Leader (576p)
 https://stream.ottlive.co.in/newsleader/index.m3u8
+#EXTINF:-1 tvg-name="10 tv" tvg-logo="https://dtil.tmsimg.com/assets/s142495_ld_h15_aa.png?lock=720x540" group-title="News",10 tv
+https://i.mjh.nz/.r/10-nsw.m3u8
 #EXTINF:-1 tvg-name="tv 24" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/TV24.png" group-title="News",tv 24
 http://61.138.82.196:808/hls/24/index.m3u8
 #EXTINF:-1 tvg-name="99 tv" group-title="Other",99 tv
@@ -115,8 +117,6 @@ http://account18.livebox.co.in/jktvkannadahls/live.m3u8
 http://sb.err.ee/live/etv.m3u8
 #EXTINF:-1 tvg-name="GSTV (720p)" group-title="Other",GSTV (720p)
 https://japaneast.av.mk.io/mediakindcdn-mediakind/ca01a143-f823-4432-b670-c22ff9643ce4/index.qfm/manifest(format=m3u8-cmaf)
-#EXTINF:-1 tvg-name="Seven" group-title="Other",Seven
-https://i.mjh.nz/.r/seven-syd.m3u8
 #EXTINF:-1 tvg-name="Bollywood HD" group-title="Other",Bollywood HD
 http://185.221.213.254/live/stream112.php?q=h0c5Eyuek0CppzJQmzPiyBmI9DfhNnGVuNxzdYNOfd9ssyKJuQoiDQFde-j43g82TglQ6QupvsjzmaF14fmDpTACWFDWkqFBmkC3oLinlBk
 #EXTINF:-1 tvg-name="Bollywood HD orig" group-title="Other",Bollywood HD orig

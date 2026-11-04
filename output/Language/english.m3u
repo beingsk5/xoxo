@@ -93,6 +93,8 @@ https://d2o8pibksxtln6.cloudfront.net/live/media/Zee_Tamil_HD/hls/Zee_Tamil_HD.m
 https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/6e14bac6d0384e129521a4d005188bfb/index.m3u8
 #EXTINF:-1 tvg-name="Sony Entertainment Television HD" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Entertainment",Sony Entertainment Television HD
 http://38.96.178.205/SONYHD/index.m3u8
+#EXTINF:-1 tvg-name="Shemaroo TV" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SHEMAROO_TV/images/LOGO_HD/image.png" group-title="Entertainment",Shemaroo TV
+https://tvsen3.aynaott.com/27jCLCUX/index.m3u8
 #EXTINF:-1 tvg-name="Sony PAL" tvg-logo="https://dtil.tmsimg.com/assets/s157973_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Sony PAL
 http://live.balajibroadband.com:3500/live/474.m3u8
 #EXTINF:-1 tvg-name="Sun Bangla" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG002Z0506.png?lock=720x540" group-title="Entertainment",Sun Bangla
@@ -181,12 +183,12 @@ https://mumt04.tangotv.in/m18aqlK4PTCPUNJABIGOLD/index.m3u8
 https://streams.tangotv.in/PTCPUNJABIGOLD/ORIGIN/index.m3u8
 #EXTINF:-1 tvg-name="Manoranjan TV" tvg-logo="https://dtil.tmsimg.com/assets/s143304_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Manoranjan TV
 https://fta.ektv.in/live/23/master.m3u8
-#EXTINF:-1 tvg-name="Shemaroo TV" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SHEMAROO_TV/images/LOGO_HD/image.png" group-title="Entertainment",Shemaroo TV
-https://fta.ektv.in/live/274/master.m3u8
 #EXTINF:-1 tvg-name="Amrita TV" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Amrita%20TV.png" group-title="Entertainment",Amrita TV
 https://fta.ektv.in/live/698/master.m3u8
 #EXTINF:-1 tvg-name="E 24" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_E24/images/LOGO_HD/image.png" group-title="Entertainment",E 24
 https://fta.ektv.in/live/159/master.m3u8
+#EXTINF:-1 tvg-name="Hi Dost!" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Hi_Dost.png" group-title="Entertainment",Hi Dost!
+https://fta.ektv.in/live/713/master.m3u8
 #EXTINF:-1 tvg-name="Pasand TV" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Pasand-Logo--transparent.png" group-title="Entertainment",Pasand TV
 https://fta.ektv.in/live/708/master.m3u8
 #EXTINF:-1 tvg-name="Anjan TV" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/anjan-transparent.png" group-title="Entertainment",Anjan TV
@@ -483,6 +485,8 @@ https://nhk.lls.pbs.org/index.m3u8
 http://15.204.246.24:8080/CinecanalHD/index.m3u8
 #EXTINF:-1 tvg-name="tv 24" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/TV24.png" group-title="News",tv 24
 http://15.204.246.24:8080/NatGeoHD/index.m3u8
+#EXTINF:-1 tvg-name="tv 24" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/TV24.png" group-title="News",tv 24
+http://15.204.246.24:8080/CHVHD/index.m3u8
 #EXTINF:-1 tvg-name="v tv news" group-title="News",v tv news
 https://cc-3448kp65yhc5w.akamaized.net/WWBI/Amagi/ETV_News_IN/playlist.m3u8
 #EXTINF:-1 tvg-name="i news" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e6/Janasri_News_Channel_Logo.jpg" group-title="News",i news
@@ -755,8 +759,6 @@ https://mumbai-edge.smartplaytv.in/CVREnglishNews/index.m3u8
 https://samitaorigin.tangotv.in/PUBLICFIRST/SAMITAORIGIN/index.m3u8
 #EXTINF:-1 tvg-name="Assam Talks" tvg-logo="https://dtil.tmsimg.com/assets/s142683_ld_h15_aa.png?lock=720x540" group-title="News",Assam Talks
 https://cdn.pishow.tv/ott/live/258/master.m3u8
-#EXTINF:-1 tvg-name="Live Times (720p)" tvg-logo="https://www.livetimes.news/wp-content/uploads/2021/11/LT-logoConverted-01.png" group-title="News",Live Times (720p)
-https://stream.ottlive.co.in/livetimetv/index.m3u8
 #EXTINF:-1 tvg-name="NewsX World" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/NewsX%20World_Transparent_f60e2692-58f4-43f7-b254-4a64c64cc253.png" group-title="News",NewsX World
 https://cdn.pishow.tv/ott/live/1049/master.m3u8
 #EXTINF:-1 tvg-name="NHK World-Japan HD (1080p)" group-title="News",NHK World-Japan HD (1080p)
@@ -765,8 +767,6 @@ https://freem3u.xyz/api/live/play.m3u8?vid=106
 https://rt-india.rttv.com/dvr/rtindia/playlist.m3u8
 #EXTINF:-1 tvg-name="WION" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/WION.png" group-title="News",WION
 https://wion-klowdtv.amagi.tv/playlist.m3u8
-#EXTINF:-1 tvg-name="10 tv" tvg-logo="https://dtil.tmsimg.com/assets/s142495_ld_h15_aa.png?lock=720x540" group-title="News",10 tv
-https://media.nw18.com/media-assets/tmtbv0/023c45f9-2b6f-4a39-93b7-7d9bcd856bc8/10-2026/30-2026/deRiD7KPYX-VijayvsDhanushmp4-F61b8OC7So/manifest.m3u8
 #EXTINF:-1 tvg-name="Aaj Tak HD" tvg-logo="https://i.imgur.com/gS9Qkfy.png" group-title="News",Aaj Tak HD
 https://feeds.intoday.in/aajtak/api/aajtakhd/master.m3u8
 #EXTINF:-1 tvg-name="BIG TV" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/BIGTV%20Logo_2000_X_1125_Transpharent.png" group-title="News",BIG TV
@@ -781,8 +781,6 @@ https://vglivessai.akamaized.net/sg/v1/master/611d79b11b77e2f571934fd80ca1413453
 https://n18syndication.akamaized.net/bpk-tv/News18_Kerala_NW18_MOB/output01/master.m3u8
 #EXTINF:-1 tvg-name="Salaam TV" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Salaam_TV_Hindi_2000_X_1125_transpharent.png" group-title="News",Salaam TV
 https://vg-zeefta.akamaized.net/ptnr-yupptv/title-zeesalaam/v1/manifest/611d79b11b77e2f571934fd80ca1413453772ac7/426c6db7-595e-4aa8-859c-7e86ed2811d0/af896be5-4743-41fc-8b6a-eb05e44f3a6e/3.m3u8
-#EXTINF:-1 tvg-name="tv 24" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/TV24.png" group-title="News",tv 24
-https://media.nw18.com/media-assets/tmtbv0/c9129fd3-4158-42ca-9084-f8f22ca414c3/03-2026/24-2026/XDChe8t55S-1322mp4-StAHnXax3B/manifest.m3u8
 #EXTINF:-1 tvg-name="v tv news" group-title="News",v tv news
 https://mrtvott.com/cache/MRTV-NEWS-HD/master.m3u8
 #EXTINF:-1 tvg-name="Assam Talks (576p)" tvg-logo="https://dtil.tmsimg.com/assets/s142683_ld_h15_aa.png?lock=720x540" group-title="News",Assam Talks (576p)
@@ -815,6 +813,8 @@ https://alex4528.site/k7m2q9x4b8nc/stream.ts?id=144
 https://d1rc86nwwc9fag.cloudfront.net/vglive-sk-293160/master.m3u8
 #EXTINF:-1 tvg-name="India Today" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/INDIA-TODAY_transparent.png" group-title="News",India Today
 https://livehub-voidnet.onrender.com/cluster/streamcore/in/INDIATODAY_StreamOrchestrator.m3u8
+#EXTINF:-1 tvg-name="10 tv" tvg-logo="https://dtil.tmsimg.com/assets/s142495_ld_h15_aa.png?lock=720x540" group-title="News",10 tv
+https://i.mjh.nz/.r/10-nsw.m3u8
 #EXTINF:-1 tvg-name="ABP News" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/ABP_News_logo.svg/500px-ABP_News_logo.svg.png" group-title="News",ABP News
 https://mumt04.tangotv.in/m18aqlK4ABPNEWS/index.m3u8
 #EXTINF:-1 tvg-name="ANB News" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/ANB%20News.png" group-title="News",ANB News
@@ -1067,8 +1067,6 @@ https://d1msejlow1t3l4.cloudfront.net/fta/insync/playlist.m3u8
 http://media4.tripsmarter.com:1935/LiveTV/KTVHD/chunklist_w363623166.m3u8
 #EXTINF:-1 tvg-name="Protidin Time" group-title="Other",Protidin Time
 https://d1msejlow1t3l4.cloudfront.net/fta/protidintime/playlist.m3u8?hdnts=st=1792631071~exp=1792652671~acl=!*/fta/protidintime/*!/payload/yupptvott_5_-1_780d5285-daab-44d1-8826-f3f4bc385006_MX_158.23.146.211_yupptv_1_channel_6648_-1/*~data=yupptvott_5_-1_780d5285-daab-44d1-8826-f3f4bc385006_MX_158.23.146.211_yupptv_1_channel_6648_-1~hmac=114e18c016932fe7c2fd1dde6a96adc2101b82ca2480a9d10ab2288f3836146d&ads.content_custom_3_param=yuppfastint&ads.ip=158.23.146.211&did=780d5285-daab-44d1-8826-f3f4bc385006&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=NEWS&ads.content_custom_1_param=FAST&ads.channel=6648&ads.channel_name=ProtidinTime&ads.language=ASM&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
-#EXTINF:-1 tvg-name="K-TV (720p)" group-title="Other",K-TV (720p)
-https://d1pz8zear993v8.cloudfront.net/hlsme/kathtv.m3u8
 #EXTINF:-1 tvg-name="Rongeen TV" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Rongeen-Logo--without-BG_2000_X_1125.png" group-title="Other",Rongeen TV
 https://server.thelegitpro.in/rongeentv/rongeentv/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-name="super tv" group-title="Other",super tv
