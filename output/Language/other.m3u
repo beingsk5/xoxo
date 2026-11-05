@@ -62,6 +62,8 @@ https://streams2.sofast.tv/ptnr-yupptv/title-BOLLYWOOD-4U-ENG_yupptv/v1/master/6
 #EXTINF:-1 tvg-name="NEWS | Times Of India" group-title="News",NEWS | Times Of India
 https://live.sli.ke/live/npnhm84gz9/master.m3u8
 #EXTINF:-1 tvg-name="JJ News Tamil" group-title="News",JJ News Tamil
+https://hlsstream.olidigital.in/jjtvnewstamil/jjtvnewstamil/index.m3u8
+#EXTINF:-1 tvg-name="JJ News Tamil" group-title="News",JJ News Tamil
 https://hlsstream.olidigital.in/jjtvnewstamil/jjtvnewstamil/index.m3u8?origin=github.com/amazeyourself
 #EXTINF:-1 tvg-name="News 18 Gujarati Geo" group-title="News",News 18 Gujarati Geo
 https://amg00866-amg00866c7-xiaomi-in-3551.playouts.now.amagi.tv/playlist.m3u8
@@ -139,6 +141,8 @@ http://cdn19.live247stream.com/channely/tv/playlist.m3u8
 http://cdn.samtv.ca/ptv24/index.m3u8
 #EXTINF:-1 tvg-name="group-title="Punjabi",Sardari TV" group-title="Other",group-title="Punjabi",Sardari TV
 http://158.69.124.9:1935/sardaritv/sardaritv/playlist.m3u8
+#EXTINF:-1 tvg-name="group-title="Telugu",Yoga TV -Swamiji" group-title="Other",group-title="Telugu",Yoga TV -Swamiji
+http://stream.swamiji.tv/YogaIPTV/smil:YogaStream.smil/playlist.m3u8
 #EXTINF:-1 tvg-name="GTA Tamil" group-title="Other",GTA Tamil
 http://144.217.77.42:8888/gta_tamil/index.m3u8
 #EXTINF:-1 tvg-name="GTA Tamil" group-title="Other",GTA Tamil
@@ -157,8 +161,6 @@ https://live-bangla.akamaized.net/liveabr/playlist.m3u8
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01412-xiaomiasia-ghaintpunjab-xiaomi/playlist.m3u8
 #EXTINF:-1 tvg-name="RJ Tamil" group-title="Other",RJ Tamil
 https://ipcloud.live/rjtamiltv/rjtamil/index.m3u8
-#EXTINF:-1 tvg-name="RV Tamil" group-title="Other",RV Tamil
-https://ipcloud.live/rvtv/rvtvhd/index.m3u8
 #EXTINF:-1 tvg-name="TV9 Telegu (IN)" group-title="Other",TV9 Telegu (IN)
 https://amg01106-tv9-amg01106c5-xiaomi-in-1184.playouts.now.amagi.tv/playlist/amg01106-tv9fast-tv9telugu-xiaomiin/playlist.m3u8
 #EXTINF:-1 tvg-name="group-title="Punjabi",Toronto 360" group-title="Other",group-title="Punjabi",Toronto 360
@@ -211,6 +213,8 @@ https://online.godstands.tv:5443/WebRTCApp/streams/UrduStreaming.m3u8
 http://budatv.streaming.aiproduction.hu/playlist.m3u
 #EXTINF:-1 tvg-name="JK TV Kannada" group-title="Other",JK TV Kannada
 http://account18.livebox.co.in/jktvkannadahls/live.m3u8
+#EXTINF:-1 tvg-name="like Gecko) Chrome/147.0.0.0 Safari/537.36" group-title="04. Hindi",The Q India (576p)" group-title="Other",like Gecko) Chrome/147.0.0.0 Safari/537.36" group-title="04. Hindi",The Q India (576p)
+http://103.175.73.12:8080/live/25/25_0.m3u8
 #EXTINF:-1 tvg-name="ME24 Tamil" group-title="Other",ME24 Tamil
 https://stream.onecloudlive.in/orange/ME24TAMIL/index.m3u8?origin=github.com/amazeyourself
 #EXTINF:-1 tvg-name="MOV | Bollywood OLD" group-title="Other",MOV | Bollywood OLD
