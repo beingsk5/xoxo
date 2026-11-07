@@ -7,6 +7,8 @@ http://41.205.93.154/ESPNNEWS/index.m3u8
 http://23.237.104.106:8080/USA_FOOD_NETWORK/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-name="National Geographic (720p)" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/3329/1786019023329-h.jpg" group-title="Documentary",National Geographic (720p)
 http://212.5.144.156:8080/natgeo/index.m3u8
+#EXTINF:-1 tvg-name="Investigation Discovery (1080p) [Geo-blocked]" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/InvestigationDiscoveryLogo2020.svg/960px-InvestigationDiscoveryLogo2020.svg.png" group-title="Documentary",Investigation Discovery (1080p) [Geo-blocked]
+http://212.5.144.156:8080/id/index.m3u8
 #EXTINF:-1 tvg-name="mega tv" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Mega%20TV.png" group-title="Entertainment",mega tv
 http://15.204.196.147:22880/MEGA2-MEGAMEDIA-EE.UU-PROVEEDOR/index.m3u8
 #EXTINF:-1 tvg-name="MTV (1080p)" tvg-logo="https://img10.hotstar.com/image/upload/sources/r1/cms/prod/8633/1786020488633-h.jpg" group-title="Entertainment",MTV (1080p)
@@ -25,6 +27,8 @@ http://5.188.159.128:8070/DiscoveryChannel/tracks-v1a1/mono.m3u8
 http://163.61.226.31:9981/stream/channelid/297962113?profile=pass
 #EXTINF:-1 tvg-name="Disney Channel (720p) [Geo-blocked]" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/1540/1785251571540-h.jpg" group-title="Kids",Disney Channel (720p) [Geo-blocked]
 http://212.5.144.156/disney/index.m3u8
+#EXTINF:-1 tvg-name="Disney Channel (720p)" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/1540/1785251571540-h.jpg" group-title="Kids",Disney Channel (720p)
+http://190.14.10.19:16000/play/a06z/index.m3u8
 #EXTINF:-1 tvg-name="Bollywood HD (576p)" group-title="Movies",Bollywood HD (576p)
 http://176.118.197.101/Bollywood_HD/index.m3u8
 #EXTINF:-1 tvg-name="Gold Star" group-title="Movies",Gold Star
@@ -49,6 +53,8 @@ http://cdn1.live-tv.od.ua:8081/31chod/31chod-abr/31chod/31chod/playlist.m3u8
 http://190.14.10.19:16000/play/a02d/index.m3u8
 #EXTINF:-1 tvg-name="Awaaz India TV (720p)" tvg-logo="https://i.ytimg.com/vi/8BzmlfZm2xU/hqdefault.jpg" group-title="News",Awaaz India TV (720p)
 http://awaazindia.livebox.co.in/AwaazIndaTVhls/Live.m3u8
+#EXTINF:-1 tvg-name="BIG TV (1080p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/BIGTV%20Logo_2000_X_1125_Transpharent.png" group-title="News",BIG TV (1080p)
+https://stream.ottlive.co.in/bigtv/index.m3u8
 #EXTINF:-1 tvg-name="Top News (720p)" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/P_News.png" group-title="News",Top News (720p)
 https://live.topnews.co.th/hls/topnews_a_720.m3u8
 #EXTINF:-1 tvg-name="Janataa TV Kannada" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/janataanews.png" group-title="News",Janataa TV Kannada
@@ -57,6 +63,8 @@ https://live1.ottlive.co.in/janataanews/index.m3u8
 https://legitpro.co.in/cnnnews/index.m3u8
 #EXTINF:-1 tvg-name="news world" tvg-logo="https://www.lyngsat.com/logo/tv/nn/news_world_in.png" group-title="News",news world
 https://a.files.bbci.co.uk/ms6/live/3441A116-B12E-4D2F-ACA8-C1984642FA4B/audio/simulcast/hls/nonuk/audio_syndication_vlow_sbr_v1/cfs/bbc_world_service_news_internet.m3u8
+#EXTINF:-1 tvg-name="Sakshi TV (1080p)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Sakshi_tv.jpg/960px-Sakshi_tv.jpg" group-title="News",Sakshi TV (1080p)
+https://stream.ottlive.co.in/sakshitv/index.m3u8
 #EXTINF:-1 tvg-name="10 tv" tvg-logo="https://dtil.tmsimg.com/assets/s142495_ld_h15_aa.png?lock=720x540" group-title="News",10 tv
 https://i.mjh.nz/.r/10-nsw.m3u8
 #EXTINF:-1 tvg-name="tv 24" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/TV24.png" group-title="News",tv 24
@@ -113,3 +121,11 @@ http://62.89.17.130:4451/play/a01m/index.m3u8
 http://5.188.159.128:8070/eurosport2/index.m3u8
 #EXTINF:-1 tvg-name="Eurosport 1" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_EUROSPORT_HD/images/LOGO_HD/image.png" group-title="Sports",Eurosport 1
 http://62.89.17.130:4451/play/a01d/index.m3u8
+#EXTINF:-1 tvg-name="Sony Sports Ten 4" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0025T4PV.png?lock=720x540" group-title="Sports",Sony Sports Ten 4
+http://xtv.ooo:8080/global/global/167595.m3u8
+#EXTINF:-1 tvg-name="Sony Sports Ten 5" tvg-logo="https://dtil.tmsimg.com/assets/s157593_ld_h15_aa.png?lock=720x540" group-title="Sports",Sony Sports Ten 5
+http://xtv.ooo:8080/live/76223335/53332267/167580.m3u8
+#EXTINF:-1 tvg-name="Star Sports 1 HD" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Sports",Star Sports 1 HD
+http://xtv.ooo:8080/live/76223335/53332267/167575.m3u8
+#EXTINF:-1 tvg-name="Star Sports 2 FHD" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Sports",Star Sports 2 FHD
+http://xtv.ooo:8080/live/76223335/53332267/167576.m3u8
