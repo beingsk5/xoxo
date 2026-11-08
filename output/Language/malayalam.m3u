@@ -7,6 +7,8 @@ https://j78dp346yq5r-hls-live.5centscdn.com/safari/live.stream/playlist.m3u8
 https://fta.ektv.in/live/410/master.m3u8
 #EXTINF:-1 tvg-name="Mazhavil Manorama HD" tvg-logo="https://dtil.tmsimg.com/assets/s147769_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Mazhavil Manorama HD
 http://103.175.73.12:8080/live/245/master.m3u8
+#EXTINF:-1 tvg-name="Asianet HD" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/7408/1782289617408-h.jpg" group-title="Entertainment",Asianet HD
+https://listas-m3u8.github.io/iptv/128.19.173.10:8888/ASIANETHD.m3u8
 #EXTINF:-1 tvg-name="Mazhavil Manorama" tvg-logo="https://dtil.tmsimg.com/assets/s147769_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Mazhavil Manorama
 https://cdn.pishow.tv/ott/live/1479/master.m3u8
 #EXTINF:-1 tvg-name="Mazhavil Manorama" tvg-logo="https://dtil.tmsimg.com/assets/s147769_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Mazhavil Manorama
@@ -75,8 +77,6 @@ https://d1taaads3ztvmu.cloudfront.net/120723/smil:jeevan.smil/chunklist_b1928000
 https://oqgdrkxby4rm-hls-live.5centscdn.com/kaumudytv/live.stream/playlist.m3u8
 #EXTINF:-1 tvg-name="Kairali TV" tvg-logo="https://dtil.tmsimg.com/assets/s143247_ld_h15_aa.png?lock=720x540" group-title="General",Kairali TV
 https://streams.tangotv.in/KAIRALI/ORIGIN/index.m3u8
-#EXTINF:-1 tvg-name="Discovery Kids Gujarati" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Discovery%20Kids.png" group-title="Kids",Discovery Kids Gujarati
-http://dsmqbfez.pardns.com/live/6CTB9BKG/4Q7Y9DFW/132295.ts
 #EXTINF:-1 tvg-name="Kappa TV" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Kappa%20TV.png" group-title="Lifestyle",Kappa TV
 https://d1msejlow1t3l4.cloudfront.net/fta/kappatv/playlist.m3u8?hdnts=st%3D1783658363~exp%3D1783679963~acl%3D%21%2A%2Ffta%2Fkappatv%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_172.212.163.17_yuppfast_2_channel_166_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_172.212.163.17_yuppfast_2_channel_166_-1~hmac%3Df840bc76e2aa5e0e762a83c8d025ae7c64b4b2e16ff94189478f323c1694e880
 #EXTINF:-1 tvg-name="Kappa TV (Music)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Kappa%20TV.png" group-title="Lifestyle",Kappa TV (Music)
@@ -103,8 +103,6 @@ http://iptvcasomsapi.jprdigital.in/x-media/C0476/master.m3u8
 http://dsmqbfez.pardns.com/live/6CTB9BKG/4Q7Y9DFW/291172.ts
 #EXTINF:-1 tvg-name="Raj Musix Malayalam" tvg-logo="https://dtil.tmsimg.com/assets/s143706_ld_h15_aa.png?lock=720x540" group-title="Music",Raj Musix Malayalam
 https://cdn.pishow.tv/ott/live/1073/master.m3u8
-#EXTINF:-1 tvg-name="Raj Musix Malayalam" tvg-logo="https://dtil.tmsimg.com/assets/s143706_ld_h15_aa.png?lock=720x540" group-title="Music",Raj Musix Malayalam
-http://dsmqbfez.pardns.com/live/6CTB9BKG/4Q7Y9DFW/33586.ts
 #EXTINF:-1 tvg-name="Raj Musix Malayalam (576p)" tvg-logo="https://dtil.tmsimg.com/assets/s143706_ld_h15_aa.png?lock=720x540" group-title="Music",Raj Musix Malayalam (576p)
 https://mumt04.tangotv.in/m18aqlK4RAJMUSIXMALAYALAM/index.m3u8
 #EXTINF:-1 tvg-name="Asianet News" tvg-logo="https://dtil.tmsimg.com/assets/s142679_ld_h15_aa.png?lock=720x540" group-title="News",Asianet News
