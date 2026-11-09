@@ -35,8 +35,6 @@ https://vods2.aynaott.com/hindimovies/index.m3u8
 http://dvltv.cc:80/play/uxN8_xYmP3o_GFqK372_h8nQLecNylgrBLkUaUiQAyw
 #EXTINF:-1 tvg-name="Gold Star" group-title="Movies",Gold Star
 https://moviethls.wns.live/hls/stream.m3u8
-#EXTINF:-1 tvg-name="TOP Cinema HD" group-title="Movies",TOP Cinema HD
-http://185.221.213.254/live/stream112.php?q=h0c5Eyuek0CppzJQmzPiyBmI9DfhNnGVuNxzdYNOfd-NZXVzxn-5nG-V_i8HN8fO9ze5z1Bh16QpAKZwItuZl0JfcfAMo2Q4gnT2RqveSew
 #EXTINF:-1 tvg-name="Hindi Movies" group-title="Movies",Hindi Movies
 https://live20.bozztv.com/giatvplayout7/giatv-209612/tracks-v1a1/mono.ts.m3u8
 #EXTINF:-1 tvg-name="Eye Tamil Music" group-title="Music",Eye Tamil Music
@@ -229,6 +227,8 @@ http://103.175.73.12:8080/live/25/25_0.m3u8
 https://stream.onecloudlive.in/orange/ME24TAMIL/index.m3u8?origin=github.com/amazeyourself
 #EXTINF:-1 tvg-name="MOV | Bollywood OLD" group-title="Other",MOV | Bollywood OLD
 https://vods2.aynaott.com/hindimovies/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 tvg-name="OTV Live" tvg-logo="https://i.ibb.co/Df7tfrbW/Odisha-TV-logo-svg.png" group-title="Other",OTV Live
+https://livetv.tarangplus.in/otv-origin/live/otv-origin/live_720p/chunks.m3u8
 #EXTINF:-1 tvg-name="Tamil TV" group-title="Other",Tamil TV
 https://ktismaservers.in:3220/hybrid/play.m3u8
 #EXTINF:-1 tvg-name="TV Color Canal 36" group-title="Other",TV Color Canal 36
@@ -285,10 +285,6 @@ https://stream.sscloud7.in/live/selvatamiltv/index.mpd
 https://stream.sscloud7.in/live/selvatamiltv/index.mpd?origin=github.com/amazeyourself
 #EXTINF:-1 tvg-name="Индийское кино" group-title="Other",Индийское кино
 https://mhd116.iptv2022.com/p/pwbCaK1wmK9He2LOjOKMhA,1688072412/streaming/india/324/1/index.m3u8
-#EXTINF:-1 tvg-name="Bollywood HD" group-title="Other",Bollywood HD
-http://185.221.213.254/live/stream112.php?q=h0c5Eyuek0CppzJQmzPiyBmI9DfhNnGVuNxzdYNOfd9ssyKJuQoiDQFde-j43g82TglQ6QupvsjzmaF14fmDpTACWFDWkqFBmkC3oLinlBk
-#EXTINF:-1 tvg-name="Bollywood HD orig" group-title="Other",Bollywood HD orig
-http://185.221.213.254/live/stream112.php?q=h0c5Eyuek0CppzJQmzPiyBmI9DfhNnGVuNxzdYNOfd-EeeZuSIwEhDAlo0Tul56Vp6CeiEb6jNbIs_OvxsxLFyHHSrtv1x3dWo7ORCoOukU
 #EXTINF:-1 tvg-name="MNTV (Tamil)" group-title="Other",MNTV (Tamil)
 https://www.khuwemultimedia.com/hls/mntv/mntv.m3u8
 #EXTINF:-1 tvg-name="V Tamil [VK Digital]" group-title="Other",V Tamil [VK Digital]
