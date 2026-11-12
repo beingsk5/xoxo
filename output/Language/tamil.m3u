@@ -89,7 +89,11 @@ https://cdn.pishow.tv/ott/live/1433/master.m3u8
 https://cdn.pishow.tv/ott/live/1245/master.m3u8
 #EXTINF:-1 tvg-name="Sairam TV (576p)" group-title="Religious",Sairam TV (576p)
 https://cdn.pishow.tv/ott/live/1611/master.m3u8
+#EXTINF:-1 tvg-name="tamil" tvg-logo="https://i.imgur.com/YQK9ewf.png" group-title="Religious",tamil
+http://144.217.77.42:8888/gta_tamil/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-name="Life TV (India) KBCT" tvg-logo="https://i.ibb.co/v1C0bdR/logo-1.png" group-title="Religious",Life TV (India) KBCT
 https://lifetv.livebox.co.in/lifetvhls/lifetv.m3u8
 #EXTINF:-1 tvg-name="Hosanna TV Hindi" tvg-logo="https://i.imgur.com/VYorU1L.png" group-title="Religious",Hosanna TV Hindi
 https://ktismaservers.in:3466/live/hosannattvhindhilive.m3u8
+#EXTINF:-1 tvg-name="Sony Sports Ten 4" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0025T4PV.png?lock=720x540" group-title="Sports",Sony Sports Ten 4
+http://xtv.ooo:8080/global/global/167595.m3u8
