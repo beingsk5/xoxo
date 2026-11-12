@@ -1,3 +1,5 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
-#EXTINF:-1 tvg-name="ntv" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Fashion_TV_logo.svg/960px-Fashion_TV_logo.svg.png" group-title="Lifestyle",ntv
+#EXTINF:-1 tvg-name="NTV (backup)" tvg-logo="https://i.ibb.co/9c7MvWX/ntv.png" group-title="Other",NTV (backup)
+http://dogus.daioncdn.net/ntv/ntv.m3u8?ce=3&&app=7c4bb802-0c41-409e-8cd2-799984995694
+#EXTINF:-1 tvg-name="NTV HD" group-title="Other",NTV HD
 https://dogus.daioncdn.net/ntv/ntv.m3u8?app=ntv_web

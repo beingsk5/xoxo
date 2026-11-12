@@ -1,9 +1,13 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
-#EXTINF:-1 tvg-name="DY 365 (576p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DY%20365.png" group-title="News",DY 365 (576p)
-https://cdn.pishow.tv/ott/live/1624/master.m3u8
+#EXTINF:-1 tvg-name="Kerala Vision (576p)" tvg-logo="https://i.imgur.com/SWNjyyp.png" group-title="Entertainment",Kerala Vision (576p)
+https://cdn.pishow.tv/ott/live/243/master.m3u8
+#EXTINF:-1 tvg-name="NHK World-Japan (1080p)" group-title="News",NHK World-Japan (1080p)
+https://cdn.pishow.tv/ott/live/455/master.m3u8
 #EXTINF:-1 tvg-name="HMTV (India) (720p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/HM%20TV.png" group-title="News",HMTV (India) (720p)
 https://cdn.pishow.tv/ott/live/280/master.m3u8
-#EXTINF:-1 tvg-name="NHK World-Japan (1080p)" group-title="Other",NHK World-Japan (1080p)
-https://cdn.pishow.tv/ott/live/455/master.m3u8
+#EXTINF:-1 tvg-name="Calvary TV (576p)" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Calvary.png" group-title="Other",Calvary TV (576p)
+https://cdn.pishow.tv/ott/live/963/master.m3u8
+#EXTINF:-1 tvg-name="Sairam TV (576p)" group-title="Religious",Sairam TV (576p)
+https://cdn.pishow.tv/ott/live/1611/master.m3u8
 #EXTINF:-1 tvg-name="GOD TV (576p)" group-title="Religious",GOD TV (576p)
 https://cdn.pishow.tv/ott/live/1391/master.m3u8

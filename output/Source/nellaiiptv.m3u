@@ -1,25 +1,3 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
-#EXTINF:-1 tvg-name="Eye Tamil Music" group-title="Music",Eye Tamil Music
-https://2.proxy.nellaiiptv.com/EyeMedia/music/index.m3u8?origin=github.com/amazeyourself
-#EXTINF:-1 tvg-name="Eye Tamil Music" group-title="Music",Eye Tamil Music
-https://2.proxy.nellaiiptv.com/EyeMedia/music/index.m3u8
-#EXTINF:-1 tvg-name="V Tamil [VK Digital]" group-title="Other",V Tamil [VK Digital]
-https://real-vk.proxy.nellaiiptv.com/VTV/index.m3u8?origin=github.com/amazeyourself
-#EXTINF:-1 tvg-name="whistle tv" group-title="Other",whistle tv
-http://whistletv1.stream.nellaiiptv.com:80/live/whistletv1/index.m3u8?origin=github.com/amazeyourself
-#EXTINF:-1 tvg-name="Telemax Tamil" group-title="Other",Telemax Tamil
-https://real-vk.proxy.nellaiiptv.com/TELEMAX/index.m3u8?origin=github.com/amazeyourself
-#EXTINF:-1 tvg-name="Eye Tamil Comedy" group-title="Other",Eye Tamil Comedy
-https://2.proxy.nellaiiptv.com/EyeMedia/comedy/index.m3u8
-#EXTINF:-1 tvg-name="Eye Tamil" group-title="Other",Eye Tamil
-https://2.proxy.nellaiiptv.com/EyeMedia/EyeTV/index.m3u8?origin=github.com/amazeyourself
-#EXTINF:-1 tvg-name="Eye Tamil Comedy" group-title="Other",Eye Tamil Comedy
-https://2.proxy.nellaiiptv.com/EyeMedia/comedy/index.m3u8?origin=github.com/amazeyourself
-#EXTINF:-1 tvg-name="Eye Tamil" group-title="Other",Eye Tamil
-https://2.proxy.nellaiiptv.com/EyeMedia/EyeTV/index.m3u8
-#EXTINF:-1 tvg-name="V Tamil [NOTV]" group-title="Other",V Tamil [NOTV]
-https://3.proxy.nellaiiptv.com/NOTV/VTV1/index.m3u8?origin=github.com/amazeyourself&token=GTR
-#EXTINF:-1 tvg-name="V Tamil [VK Digital]" group-title="Other",V Tamil [VK Digital]
-https://real-vk.proxy.nellaiiptv.com/VTV/index.m3u8
-#EXTINF:-1 tvg-name="Telemax Tamil" group-title="Other",Telemax Tamil
-https://real-vk.proxy.nellaiiptv.com/TELEMAX/index.m3u8
+#EXTINF:-1 tvg-name="Star Sports 2 Telugu HD (576p)" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Sports",Star Sports 2 Telugu HD (576p)
+https://real-vk.proxy.nellaiiptv.com/SDMEDIA/index.m3u8

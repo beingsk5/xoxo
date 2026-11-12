@@ -1,7 +1,0 @@
-#EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
-#EXTINF:-1 tvg-name="SUPER HUNGAMA" tvg-logo="https://plain-apac-prod-public.komododecks.com/202609/07/lNjbGo0Rcgz3vhfoyTN7/image.png" group-title="Animation",SUPER HUNGAMA
-https://unknown-playlists.vercel.app/super-hungama.m3u8
-#EXTINF:-1 tvg-name="Disney Junior" tvg-logo="https://plain-apac-prod-public.komododecks.com/202609/07/kDx5CloMCE4tFekQtkOQ/image.png" group-title="Kids",Disney Junior
-https://directv-iptv-player.vercel.app/api/stream?url=http%3A%2F%2F212.5.144.156%3A8080%2Fdisneyjr%2Ftracks-v1a1%2Fmono.m3u8
-#EXTINF:-1 tvg-name="Hungama Kids 5" group-title="Kids",Hungama Kids 5
-https://unknown-playlists.vercel.app/hungama-by-stevosure.m3u8
