@@ -1,4 +1,6 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
+#EXTINF:-1 tvg-name="Animal Planet" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/AnimalPlanetHD_Transparent_d36c0ee3-3e3f-4e0c-b3b2-23bfb3c3c2b0.png" group-title="Documentary",Animal Planet
+http://213.91.179.28:8000/play/a05r
 #EXTINF:-1 tvg-name="National Geographic" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/3329/1786019023329-h.jpg" group-title="Documentary",National Geographic
 http://213.91.179.28:8000/play/a0ct
 #EXTINF:-1 tvg-name="MTV Live (720p)" tvg-logo="https://img10.hotstar.com/image/upload/sources/r1/cms/prod/8633/1786020488633-h.jpg" group-title="Entertainment",MTV Live (720p)
@@ -13,6 +15,8 @@ http://163.61.226.31:9981/stream/channelid/1709941389?profile=pass
 http://163.61.226.31:9981/stream/channelid/2039746374?profile=pass
 #EXTINF:-1 tvg-name="Colors Rishtey (576p)" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/Colors_Transparent_16069908-8494-4eb4-bd40-5afca3969088.png" group-title="Entertainment",Colors Rishtey (576p)
 http://163.61.226.31:9981/stream/channelid/297962113?profile=pass
+#EXTINF:-1 tvg-name="Discovery Channel" tvg-logo="https://dtil.tmsimg.com/assets/s159106_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Discovery Channel
+http://213.91.179.28:8000/play/a044
 #EXTINF:-1 tvg-name="Star Utsav (576p)" tvg-logo="https://dtil.tmsimg.com/assets/s159132_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Star Utsav (576p)
 http://163.61.226.31:9981/stream/channelid/894286890?profile=pass
 #EXTINF:-1 tvg-name="Star Utsav Movies (576p)" tvg-logo="https://dtil.tmsimg.com/assets/s159132_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Star Utsav Movies (576p)
@@ -31,8 +35,12 @@ http://163.61.226.31:9981/stream/channelid/1743466790?profile=pass
 https://nhk.lls.pbs.org/index.m3u8
 #EXTINF:-1 tvg-name="POWER TV" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/POWER_LOGO-ENGLISH-PNG-transparent.png" group-title="News",POWER TV
 http://livetv.powerapp.com.tr/powerTV/powerhd.smil/playlist.m3u8
+#EXTINF:-1 tvg-name="i news" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e6/Janasri_News_Channel_Logo.jpg" group-title="News",i news
+http://103.190.133.68:1935/news21live/live/playlist.m3u8
 #EXTINF:-1 tvg-name="Reporter (720p)" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="News",Reporter (720p)
 http://cdn1.live-tv.od.ua:8081/31chod/31chod-abr/31chod/31chod/playlist.m3u8
+#EXTINF:-1 tvg-name="i news" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e6/Janasri_News_Channel_Logo.jpg" group-title="News",i news
+https://c.mjh.nz/abc-news.m3u8
 #EXTINF:-1 tvg-name="Bharat Express (480p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Bharat-Expess-Transparent.png" group-title="News",Bharat Express (480p)
 https://stream1.livebox.co.in/VCAREhls/live.m3u8
 #EXTINF:-1 tvg-name="Top News (720p)" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/P_News.png" group-title="News",Top News (720p)
@@ -75,6 +83,8 @@ https://stream.ottlive.co.in/newsleader/index.m3u8
 https://stream.ottlive.co.in/munsiftv/index.m3u8
 #EXTINF:-1 tvg-name="We TV (1080p)" group-title="Other",We TV (1080p)
 http://23.237.104.106:8080/USA_WE_TV/index.m3u8
+#EXTINF:-1 tvg-name="NTV HD" group-title="Other",NTV HD
+https://cdn.ntv.ru/ntv0/playlist.m3u8
 #EXTINF:-1 tvg-name="GSTV (720p)" group-title="Other",GSTV (720p)
 https://japaneast.av.mk.io/mediakindcdn-mediakind/ca01a143-f823-4432-b670-c22ff9643ce4/index.qfm/manifest(format=m3u8-cmaf)
 #EXTINF:-1 tvg-name="Rengoni" tvg-logo="https://dtil.tmsimg.com/assets/s143722_ld_h15_aa.png?lock=720x540" group-title="Other",Rengoni

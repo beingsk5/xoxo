@@ -29,12 +29,16 @@ https://yuppmedtaorire.akamaized.net/v1/master/a0d007312bfd99c47f76b77ae26b1ccda
 https://web-ndtv-marathi.akamaized.net/hls/live/2110470/ndtvmarathi/chunklist_1.m3u8
 #EXTINF:-1 tvg-name="tv9 Telemaremma (576p)" group-title="News",tv9 Telemaremma (576p)
 https://rtmp-live-ingest-us-east-1-universe-dacast-com.akamaized.net/transmuxv1/streams/2095a288-1384-ed2e-5da0-278ccbb72295.m3u8
+#EXTINF:-1 tvg-name="ABC Australia" group-title="Other",ABC Australia
+https://abc-news-dmd-streams-1.akamaized.net/out/v1/701126012d044971b3fa89406a440133/index.m3u8
 #EXTINF:-1 tvg-name="etv hd" group-title="Other",etv hd
 https://cc-uyh1ow5zouoio.akamaized.net/WWBI/Amagi/ETV_Josh_IN/playlist.m3u8
 #EXTINF:-1 tvg-name="titanfile" group-title="Other",titanfile
 https://zee5vod.akamaized.net/drm1/titanfile/dash/MOVIES/V2PRIME/4K/ATMOS/SAM_BAHADUR/SAM_BAHADUR_4K_15012024_hi_ce3bf342a1a084e007dbd6555abf5519/manifest.mpd?c3.ri=6901304522390387240?%7CdrmScheme=clearkey&drmLicense=785ab7573f0032dbae2a1ed021657f75:e35650a3facdc46ca5e5cc0d9d03b641
 #EXTINF:-1 tvg-name="Aastha Bhajan (480p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Aastha.png" group-title="Religious",Aastha Bhajan (480p)
 https://aasthaott.akamaized.net/110923/smil:bhajan.smil/playlist.m3u8
+#EXTINF:-1 tvg-name="Aastha Kannada SD" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Aastha.png" group-title="Religious",Aastha Kannada SD
+https://aasthaott.akamaized.net/110923/smil:aasthakannada.smil/playlist.m3u8
 #EXTINF:-1 tvg-name="Aastha Telugu (480p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Aastha.png" group-title="Religious",Aastha Telugu (480p)
 https://aasthaott.akamaized.net/110923/smil:aasthatelugu.smil/playlist.m3u8
 #EXTINF:-1 tvg-name="Vedic (480p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Vedic.png" group-title="Religious",Vedic (480p)

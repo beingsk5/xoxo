@@ -1,12 +1,18 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
 #EXTINF:-1 tvg-name="Discovery Turbo TV" tvg-logo="https://dtil.tmsimg.com/assets/s159108_ld_h15_aa.png?lock=720x540" group-title="Auto",Discovery Turbo TV
 https://dbrb49pjoymg4.cloudfront.net/10001/99951438/hls/playlist.m3u8?ads.xumo_channelId=99951438&ads._fw_ifa_type=[IFA_TYPE]&ads._fw_did=[IFA]&ads.amznappId=[AMZN_APP_ID]&ads.lat=[LAT]&ads.lon=[LON]&ads.os=[OS]&ads.osv=[OS_VERSION]&ads.asnw=&ads.caid=WBDMotorTrendFASTTV&ads.csid=xumo_[PLATFORM]_WBDMotorTrendFASTTV_ssai&ads._fw_is_lat=[IS_LAT]&ads._fw_us_privacy=[CCPA_Value]&ads._fw_coppa=0&ads.genre=[CONTENT_IMDB_GENRE]&ads._fw_content_category=[IAB_content_category]&ads._fw_content_language=[content_language]&ads._fw_content_genre=[content_genre]&ads._fw_content_rating=[content_rating]&ads.xumo_contentId=4240&ads.xumo_contentName=WBDMotorTrendFASTTV&ads.xumo_providerId=4240&ads.xumo_providerName=WBDMotorTrendFASTTV&ads._fw_deviceMake=[device_make]&ads._fw_device_model=[device_model]&ads.channelId=99951438&ads.xumo_platform=[PLATFORM]&ads.site_id=[publica_site_id]&ads.appName=xumo&ads.appVersion=[APP_VERSION]&ads._fw_app_bundle=[app_bundle]&ads._fw_app_store_url=[app_store_url]
+#EXTINF:-1 tvg-name="DD Punjabi" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Punjabi.png" group-title="Culture",DD Punjabi
+https://d3eyhgoylams0m.cloudfront.net/v1/manifest/93ce20f0f52760bf38be911ff4c91ed02aa2fd92/ed7bd2c7-8d10-4051-b397-2f6b90f99acb/20c8ad14-a158-4a42-8889-e032d070856e/2.m3u8
 #EXTINF:-1 tvg-name="StarPlus (United Kingdom) (576p)" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/2384/1782291852384-h.jpg" group-title="Entertainment",StarPlus (United Kingdom) (576p)
 https://d1rc86nwwc9fag.cloudfront.net/260723/starplusuk_2500/chunks.m3u8
 #EXTINF:-1 tvg-name="Asianet Movies (396p)" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/7408/1782289617408-h.jpg" group-title="Entertainment",Asianet Movies (396p)
 https://da86m1sqpm3o0.cloudfront.net/28072023/smil:asianetmovies.smil/chunklist_b1928000.m3u8
+#EXTINF:-1 tvg-name="DD Malayalam" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Malayalam.png" group-title="Entertainment",DD Malayalam
+https://d3eyhgoylams0m.cloudfront.net/v1/manifest/93ce20f0f52760bf38be911ff4c91ed02aa2fd92/ed7bd2c7-8d10-4051-b397-2f6b90f99acb/562ee8f9-9950-48a0-ba1d-effa00cf0478/2.m3u8
 #EXTINF:-1 tvg-name="DD Tripura" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD-Tripura-Logo_2000_X_1125_Transpharent.png" group-title="General",DD Tripura
 https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/52b998e9510d41c29ad2ceca8ea3d849/index_3.m3u8
+#EXTINF:-1 tvg-name="DD Chandana" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Chandana.png" group-title="General",DD Chandana
+https://d3eyhgoylams0m.cloudfront.net/v1/manifest/93ce20f0f52760bf38be911ff4c91ed02aa2fd92/ed7bd2c7-8d10-4051-b397-2f6b90f99acb/3829f99b-4951-4a9d-98c1-dbc3acfe5193/2.m3u8
 #EXTINF:-1 tvg-name="DD Jharkhand" tvg-logo="https://dtil.tmsimg.com/assets/s142787_ld_h15_aa.png?lock=720x540" group-title="General",DD Jharkhand
 https://d3eyhgoylams0m.cloudfront.net/v1/manifest/93ce20f0f52760bf38be911ff4c91ed02aa2fd92/ed7bd2c7-8d10-4051-b397-2f6b90f99acb/2c6c5c20-6afe-47c4-934f-a0d7002cb151/2.m3u8
 #EXTINF:-1 tvg-name="Sharnam TV (576p)" tvg-logo="https://papaji.freetvindia.com/media/channels/SarnamTV.png" group-title="Music",Sharnam TV (576p)
@@ -29,5 +35,9 @@ https://d1msejlow1t3l4.cloudfront.net/fta/suryasamachar/playlist.m3u8
 https://d1msejlow1t3l4.cloudfront.net/fta/swarajexpresssmbc/playlist.m3u8
 #EXTINF:-1 tvg-name="Jai Maharashtra (576p)" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Jai_Maharashtra.png" group-title="News",Jai Maharashtra (576p)
 https://d1msejlow1t3l4.cloudfront.net/fta/jaimaharashtra/playlist.m3u8
+#EXTINF:-1 tvg-name="10 tv" tvg-logo="https://dtil.tmsimg.com/assets/s142495_ld_h15_aa.png?lock=720x540" group-title="News",10 tv
+https://d13nthg2ntx8f7.cloudfront.net/content/2017/10/59e70a937669610a37240100_147386_main.smil/manifest.m3u8
 #EXTINF:-1 tvg-name="Omroep Zeeland (1080p)" group-title="Other",Omroep Zeeland (1080p)
 https://d3isaxd2t6q8zm.cloudfront.net/live/omroepzeeland/tv/index.m3u8
+#EXTINF:-1 tvg-name="K-TV (720p)" group-title="Other",K-TV (720p)
+https://d1pz8zear993v8.cloudfront.net/hlsme/kathtv.m3u8

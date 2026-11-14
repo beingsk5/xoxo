@@ -47,6 +47,8 @@ https://cdn.pishow.tv/ott/live/21/master.m3u8
 https://d2lk5u59tns74c.cloudfront.net/out/v1/26e915d6d12b4a06822c5e33c088ed56/index.m3u8
 #EXTINF:-1 tvg-name="DD Yadagiri" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Yadagiri.png" group-title="General",DD Yadagiri
 https://fta.ektv.in/live/678/master.m3u8
+#EXTINF:-1 tvg-name="DISNEY CHANNEL [IN]" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/1540/1785251571540-h.jpg" group-title="Kids",DISNEY CHANNEL [IN]
+http://rgkkw.live:80/live/1Aoen7elp5/IgMJ60tmAa/19741.ts
 #EXTINF:-1 tvg-name="Disney Channel" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/1540/1785251571540-h.jpg" group-title="Kids",Disney Channel
 http://193.33.39.108:9019/play/a00n?checkedby:iptvcat.net
 #EXTINF:-1 tvg-name="Disney Channel" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/1540/1785251571540-h.jpg" group-title="Kids",Disney Channel
@@ -127,6 +129,8 @@ https://cc-uyh1ow5zouoio.akamaized.net/WWBI/Amagi/ETV_Josh_IN/playlist.m3u8
 http://dogus.daioncdn.net/ntv/ntv.m3u8?ce=3&&app=7c4bb802-0c41-409e-8cd2-799984995694
 #EXTINF:-1 tvg-name="NTV HD" group-title="Other",NTV HD
 https://dogus.daioncdn.net/ntv/ntv.m3u8?app=ntv_web
+#EXTINF:-1 tvg-name="NTV HD" group-title="Other",NTV HD
+https://cdn.ntv.ru/ntv0/playlist.m3u8
 #EXTINF:-1 tvg-name="Calvary TV (576p)" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Calvary.png" group-title="Other",Calvary TV (576p)
 https://cdn.pishow.tv/ott/live/963/master.m3u8
 #EXTINF:-1 tvg-name="SVBC Sri Venkateswara Bhakti Channel" tvg-logo="https://dtil.tmsimg.com/assets/s143889_ld_h9_ab.png?lock=720x540" group-title="Religious",SVBC Sri Venkateswara Bhakti Channel
