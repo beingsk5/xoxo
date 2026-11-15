@@ -13,6 +13,8 @@ https://segment.yuppcdn.net/050522/murasu/playlist.m3u8
 https://d1taaads3ztvmu.cloudfront.net/120723/smil:polimertv.smil/chunklist_b1928000.m3u8
 #EXTINF:-1 tvg-name="Vendhar TV" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Vendhar-transparent.png" group-title="Entertainment",Vendhar TV
 https://d1taaads3ztvmu.cloudfront.net/120723/smil:vendhartv.smil/chunklist_b1928000.m3u8
+#EXTINF:-1 tvg-name="Mega TV (1080p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Mega%20TV.png" group-title="Entertainment",Mega TV (1080p)
+https://www.desde-paraguay.com/mega.m3u8
 #EXTINF:-1 tvg-name="Mega TV" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Mega%20TV.png" group-title="Entertainment",Mega TV
 https://ott3.streann.com/loadbalancer/services/public/channels-secure/5e62b96e2cdcfac2dd8885dd/playlist.m3u8
 #EXTINF:-1 tvg-name="MK Six (576p)" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/MK_Six.png" group-title="Entertainment",MK Six (576p)
@@ -65,6 +67,8 @@ https://vglivessai.akamaized.net/ptnr-yupptv/title-News_Tamil/sg/v1/master/611d7
 https://d1rc86nwwc9fag.cloudfront.net/110322/polimernews/110322/polimernews_1800/chunks.m3u8
 #EXTINF:-1 tvg-name="Polimer News" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Polimer%20News.png" group-title="News",Polimer News
 https://segment.yuppcdn.net/110322/polimernews/playlist.m3u8
+#EXTINF:-1 tvg-name="Raj News Telugu (576p)" tvg-logo="https://dtil.tmsimg.com/assets/s143709_ld_h9_ab.png?lock=720x540" group-title="News",Raj News Telugu (576p)
+https://mumt04.tangotv.in/m18aqlK4RAJNEWSTELUGU/index.m3u8
 #EXTINF:-1 tvg-name="News18 Punjab/Haryana/Himachal" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/News18PunjabHaryana_Transparent_2db63f4f-2442-45d8-9a4d-c83cf34188c7.png" group-title="News",News18 Punjab/Haryana/Himachal
 https://n18syndication.akamaized.net/bpk-tv/News18_Punjab_Haryana_HP_NW18_MOB/output01/master.m3u8
 #EXTINF:-1 tvg-name="Raj News Malayalam KBCT" tvg-logo="https://dtil.tmsimg.com/assets/s143709_ld_h9_ab.png?lock=720x540" group-title="News",Raj News Malayalam KBCT
@@ -81,6 +85,8 @@ https://cdn.pishow.tv/ott/live/279/master.m3u8
 https://streams.tangotv.in/NEWSTAMIL24X7/ORIGIN/index.m3u8
 #EXTINF:-1 tvg-name="Polimer News" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Polimer%20News.png" group-title="News",Polimer News
 https://streams.tangotv.in/POLIMERNEWS/ORIGIN/index.m3u8
+#EXTINF:-1 tvg-name="News Tamil 24x7 (1080p)" tvg-logo="https://dtil.tmsimg.com/assets/s143623_ld_h15_aa.png?lock=720x540" group-title="News",News Tamil 24x7 (1080p)
+https://stream.ottlive.co.in/newstamil/index.m3u8
 #EXTINF:-1 tvg-name="Polimer News" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Polimer%20News.png" group-title="News",Polimer News
 https://mumt05.tangotv.in/87NeALx2POLIMERNEWS/index.m3u8
 #EXTINF:-1 tvg-name="Puthiya Thalaimurai Express" tvg-logo="https://www.lyngsat.com/logo/tv/pp/puthiya-thalaimurai-express-in.png" group-title="News",Puthiya Thalaimurai Express
@@ -99,5 +105,7 @@ http://144.217.77.42:8888/gta_tamil/tracks-v1a1/mono.m3u8
 https://lifetv.livebox.co.in/lifetvhls/lifetv.m3u8
 #EXTINF:-1 tvg-name="Hosanna TV Hindi" tvg-logo="https://i.imgur.com/VYorU1L.png" group-title="Religious",Hosanna TV Hindi
 https://ktismaservers.in:3466/live/hosannattvhindhilive.m3u8
+#EXTINF:-1 tvg-name="Sairam TV (576p)" group-title="Religious",Sairam TV (576p)
+https://mumt04.tangotv.in/m18aqlK4SAIRAMTV/index.m3u8
 #EXTINF:-1 tvg-name="Sony Sports Ten 4" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0025T4PV.png?lock=720x540" group-title="Sports",Sony Sports Ten 4
 http://xtv.ooo:8080/global/global/167595.m3u8

@@ -1,4 +1,6 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
+#EXTINF:-1 tvg-name="National Geographic (576p)" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/3329/1786019023329-h.jpg" group-title="Documentary",National Geographic (576p)
+http://stream.mcquack.net/116/index.m3u8
 #EXTINF:-1 tvg-name="Nick JR" tvg-logo="https://img10.hotstar.com/image/upload/sources/r1/cms/prod/1730/1785252911730-h.jpg" group-title="Kids",Nick JR
 http://stream.mcquack.net/262/index.m3u8
 #EXTINF:-1 tvg-name="Al Jazeera English HD (576p)" group-title="News",Al Jazeera English HD (576p)
@@ -7,3 +9,5 @@ http://stream.mcquack.net/131/index.m3u8
 http://stream.mcquack.net/100/tracks-v1a1/mono.ts.m3u8?ads=1&filter.tracks=v1a1
 #EXTINF:-1 tvg-name="tv 100" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/TV_100.png" group-title="Other",tv 100
 http://stream.mcquack.net/100/tracks-v1a1/mono.ts.m3u8?ads=1&amp;filter.tracks=v1a1
+#EXTINF:-1 tvg-name="Travelxp HD (1080p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Travelxp%20HD.png" group-title="Travel",Travelxp HD (1080p)
+http://stream.mcquack.net/451/index.m3u8
