@@ -47,14 +47,12 @@ https://cdn.pishow.tv/ott/live/21/master.m3u8
 https://d2lk5u59tns74c.cloudfront.net/out/v1/26e915d6d12b4a06822c5e33c088ed56/index.m3u8
 #EXTINF:-1 tvg-name="DD Yadagiri" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Yadagiri.png" group-title="General",DD Yadagiri
 https://fta.ektv.in/live/678/master.m3u8
+#EXTINF:-1 tvg-name="disney channel hd" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/1540/1785251571540-h.jpg" group-title="Kids",disney channel hd
+https://fl5.moveonjoy.com/DISNEY/tracks-v1a1/mono.ts.m3u8
 #EXTINF:-1 tvg-name="DISNEY CHANNEL [IN]" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/1540/1785251571540-h.jpg" group-title="Kids",DISNEY CHANNEL [IN]
 http://rgkkw.live:80/live/1Aoen7elp5/IgMJ60tmAa/19741.ts
 #EXTINF:-1 tvg-name="Disney Channel" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/1540/1785251571540-h.jpg" group-title="Kids",Disney Channel
 http://193.33.39.108:9019/play/a00n?checkedby:iptvcat.net
-#EXTINF:-1 tvg-name="Disney Channel" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/1540/1785251571540-h.jpg" group-title="Kids",Disney Channel
-http://213.91.179.28:8000/play/a059?checkedby:iptvcat.net
-#EXTINF:-1 tvg-name="Disney Channel (576i)" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/1540/1785251571540-h.jpg" group-title="Kids",Disney Channel (576i)
-http://87.120.179.187:8000/play/a010?checkedby:iptvcat.net
 #EXTINF:-1 tvg-name="NTV" tvg-logo="https://i.ibb.co/9c7MvWX/ntv.png" group-title="Lifestyle",NTV
 http://dygvideo.dygdigital.com/live/hls/ntv4puhu?m3u8
 #EXTINF:-1 tvg-name="NTV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Fashion_TV_logo.svg/960px-Fashion_TV_logo.svg.png" group-title="Lifestyle",NTV
@@ -125,6 +123,8 @@ https://cdn.pishow.tv/ott/live/389/master.m3u8
 https://fta.ektv.in/live/693/master.m3u8
 #EXTINF:-1 tvg-name="etv hd" group-title="Other",etv hd
 https://cc-uyh1ow5zouoio.akamaized.net/WWBI/Amagi/ETV_Josh_IN/playlist.m3u8
+#EXTINF:-1 tvg-name="etv hd" group-title="Other",etv hd
+https://cc-wie8j8y69d2uy.akamaized.net/WWBI/Amagi/ETV_Comedy_IN/playlist.m3u8
 #EXTINF:-1 tvg-name="NTV (backup)" tvg-logo="https://i.ibb.co/9c7MvWX/ntv.png" group-title="Other",NTV (backup)
 http://dogus.daioncdn.net/ntv/ntv.m3u8?ce=3&&app=7c4bb802-0c41-409e-8cd2-799984995694
 #EXTINF:-1 tvg-name="NTV HD" group-title="Other",NTV HD

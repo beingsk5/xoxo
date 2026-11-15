@@ -27,6 +27,8 @@ https://cdn.pishow.tv/ott/live/10006/master.m3u8
 https://cdn.smartstream.video/smartstream-us/jonakk/jonakk/playlist.m3u8
 #EXTINF:-1 tvg-name="Star Movies Select" tvg-logo="https://dtil.tmsimg.com/assets/s143830_ld_h15_aa.png?lock=720x540" group-title="Movies",Star Movies Select
 https://livetv.shamon-cable.net:8443/Star-movies-select/index.m3u8
+#EXTINF:-1 tvg-name="Star Movies Select" tvg-logo="https://dtil.tmsimg.com/assets/s143830_ld_h15_aa.png?lock=720x540" group-title="Movies",Star Movies Select
+http://103.114.11.37:8081/Star-movies-select/index.m3u8?token=sboxcast
 #EXTINF:-1 tvg-name="Star Maa Movies" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/2722/1782288522722-h.jpg" group-title="Movies",Star Maa Movies
 http://iptvcasomsapi.jprdigital.in/x-media/C0479/master.m3u8
 #EXTINF:-1 tvg-name="Star Maa Music" tvg-logo="https://dtil.tmsimg.com/assets/s143828_ld_h15_aa.png?lock=720x540" group-title="Music",Star Maa Music

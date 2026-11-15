@@ -51,6 +51,8 @@ http://cdn4.live247stream.com/urdu/tv/playlist.m3u8
 http://93.184.10.248/MBCBollywood/index.m3u8
 #EXTINF:-1 tvg-name="Canal 13 Esquipulas" group-title="Other",Canal 13 Esquipulas
 https://tv91.hostingnuclear.com:19360/intercable/intercable.m3u8
+#EXTINF:-1 tvg-name="webobjects" group-title="Other",webobjects
+https://play-edge.itunes.apple.com/WebObjects/MZPlayLocal.woa/hls/subscription/playlist.m3u8?cc=US&svcId=tvs.vds.4105&a=1652275585&isExternal=true&brandId=tvs.sbd.4000&id=516360924&l=en-US&aec=UHD
 #EXTINF:-1 tvg-name="XHUNES-TDT (720p)" group-title="Other",XHUNES-TDT (720p)
 https://tv91.hostingnuclear.com:19360/xhunestv/xhunestv.m3u8
 #EXTINF:-1 tvg-name="CNBC TV 18 (IN) Geo" group-title="Other",CNBC TV 18 (IN) Geo
@@ -77,20 +79,30 @@ https://vg-zeefta.akamaized.net/ptnr-yupptv/title-zeesalaam/v1/manifest/611d79b1
 http://103.175.73.12:8080/live/25/25_0.m3u8
 #EXTINF:-1 tvg-name="tvg-name="Squidbillies" tvg-logo="https://i.pinimg.com/originals/d6/8c/dd/d68cdd473f7a56f574b7514e24fbc1ce.jpg",24/7 - Squidbillies" group-title="Other",tvg-name="Squidbillies" tvg-logo="https://i.pinimg.com/originals/d6/8c/dd/d68cdd473f7a56f574b7514e24fbc1ce.jpg",24/7 - Squidbillies
 https://adultswim-vodlive.cdn.turner.com/live/squidbillies/stream_7.m3u8
+#EXTINF:-1 tvg-name="webobjects" group-title="Other",webobjects
+https://play-edge.itunes.apple.com/WebObjects/MZPlayLocal.woa/hls/subscription/playlist.m3u8?cc=US&svcId=tvs.vds.4105&a=6814614927&isExternal=true&brandId=tvs.sbd.4000&id=1507430275&l=en-US&aec=UHD
+#EXTINF:-1 tvg-name="webobjects" group-title="Other",webobjects
+https://play-edge.itunes.apple.com/WebObjects/MZPlayLocal.woa/hls/subscription/playlist.m3u8?cc=US&svcId=tvs.vds.4105&a=6814913302&isExternal=true&brandId=tvs.sbd.4000&id=1528499085&l=en-US&aec=UHD
+#EXTINF:-1 tvg-name="webobjects" group-title="Other",webobjects
+https://play-edge.itunes.apple.com/WebObjects/MZPlayLocal.woa/hls/subscription/playlist.m3u8?cc=US&svcId=tvs.vds.4105&a=6814938634&isExternal=true&brandId=tvs.sbd.4000&id=1528498821&l=en-US&aec=UHD
+#EXTINF:-1 tvg-name="webobjects" group-title="Other",webobjects
+https://play-edge.itunes.apple.com/WebObjects/MZPlayLocal.woa/hls/subscription/playlist.m3u8?cc=US&svcId=tvs.vds.4105&a=6815831407&isExternal=true&brandId=tvs.sbd.4000&id=1513203620&l=en-US&aec=UHD
 #EXTINF:-1 tvg-name="DD Vyas" group-title="Other",DD Vyas
 http://playhls.media.nic.in/live/vyas-360p/index.m3u8
 #EXTINF:-1 tvg-name="Индийское кино" group-title="Other",Индийское кино
 https://mhd128.iptv2022.com/p/-cjB3YypC08x8kpUaFFulw,1743195605/streaming/india/324/1/tracks-v5a1/mono.m3u8
 #EXTINF:-1 tvg-name="Индия" group-title="Other",Индия
 https://mhd128.iptv2022.com/p/kxk9fzninJ2VBq9MwWyXDw,1743195606/streaming/zeetv/324/1/tracks-v5a1/mono.m3u8
+#EXTINF:-1 tvg-name="AIR Malayalam" group-title="Other",AIR Malayalam
+http://air.pc.cdn.bitgravity.com/air/live/pbaudio230/playlist.m3u8
 #EXTINF:-1 tvg-name="seq 42607352" group-title="Other",seq 42607352
 https://vg-zeefta.akamaized.net/ptnr-yupptv/title-zee24kalak/v1/manifest/611d79b11b77e2f571934fd80ca1413453772ac7/497f7199-758d-495d-9d2f-a5489231c428/14b7c8ec-16da-47f2-8d7e-5bbaec67b3e2/3.m3u8
-#EXTINF:-1 tvg-name="miraz6755" group-title="Other",miraz6755
-https://bdixtv24.site/toffee/live.php?id=sony_sports_1_hd&e=.m3u8
 #EXTINF:-1 tvg-name="NTV Malayalam" group-title="Other",NTV Malayalam
 https://stream.logichost.in/NTV/live/chunklist_w1420234415.m3u8
-#EXTINF:-1 tvg-name="miraz6755" group-title="Other",miraz6755
-https://deencooper.space/JIO/stream.php?ck=5f5f68646e65615f5f3d73743d313733363334303637397e6578703d313733363432373037397e61636c3d2f2a7e686d61633d35323736313164346436386464373833616137363265623865373532393731383234353365623234323336623662333365323735383737653336613063366232&cid=1369&key=JITENDRAUNATTI&id=Colors_Bangla_SD_MOB-audio_98836_eng=98800-video=1272000.m3u8
+#EXTINF:-1 tvg-name="Radio Suno Tamil" group-title="Other",Radio Suno Tamil
+https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO_SUNO_TAMIL_S01.mp3
+#EXTINF:-1 tvg-name="All India Radio AIR Punjabi" group-title="Other",All India Radio AIR Punjabi
+https://air.pc.cdn.bitgravity.com/air/live/pbaudio138/chunklist.m3u8
 #EXTINF:-1 tvg-name="Fazal TV (1080p)" group-title="Religious",Fazal TV (1080p)
 http://cdn9.live247stream.com/punjabitvcanada/tv/playlist.m3u8
 #EXTINF:-1 tvg-name="Imam Hussein 4 TV Urdu" group-title="Religious",Imam Hussein 4 TV Urdu
