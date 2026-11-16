@@ -17,8 +17,6 @@ http://xtv.ooo:8080/live/Jawad1994/03112371534/245898.m3u8
 http://cdn98.com/play/live.php?extension=ts&mac=00:1A:79:99:54:11&play_token=o1cczsG9wV&stream=225805
 #EXTINF:-1 tvg-name="Star Jalsha (576p) [Geo-blocked]" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Star-Jalsha--2000-x-1125--Transparent.png" group-title="Entertainment",Star Jalsha (576p) [Geo-blocked]
 http://cdn98.com/play/live.php?mac=00:1A:79:99:54:11&stream=225805&extension=ts&play_token=o1cczsG9wV
-#EXTINF:-1 tvg-name="Star Utsav Movies (576p)" tvg-logo="https://dtil.tmsimg.com/assets/s159132_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Star Utsav Movies (576p)
-http://163.61.226.31:9981/stream/channelid/1225596390?profile=pass
 #EXTINF:-1 tvg-name="Jonack" tvg-logo="https://dtil.tmsimg.com/assets/s143238_ld_h15_aa.png?lock=720x540" group-title="General",Jonack
 https://samitaorigin.tangotv.in/JONAKTV/SAMITAORIGIN/index.m3u8
 #EXTINF:-1 tvg-name="DD Assam" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20North%20East.png" group-title="General",DD Assam
@@ -35,6 +33,10 @@ https://livetv.shamon-cable.net:8443/Star-movies-select/index.m3u8
 http://103.114.11.37:8081/Star-movies-select/index.m3u8?token=sboxcast
 #EXTINF:-1 tvg-name="Star Maa Movies" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/2722/1782288522722-h.jpg" group-title="Movies",Star Maa Movies
 http://iptvcasomsapi.jprdigital.in/x-media/C0479/master.m3u8
+#EXTINF:-1 tvg-name="Star Gold Romance" tvg-logo="https://dtil.tmsimg.com/assets/s158298_ld_h15_aa.png?lock=720x540" group-title="Movies",Star Gold Romance
+http://tv.trexiptv.com/play/live.php?mac=00:1A:79:5A:1C:B8&stream=156033&extension=m3u8&play_token=CjajAH1JIr
+#EXTINF:-1 tvg-name="Star Utsav Movies" tvg-logo="https://dtil.tmsimg.com/assets/s143856_ld_h15_aa.png?lock=720x540" group-title="Movies",Star Utsav Movies
+http://tv.trexiptv.com/play/live.php?mac=00:1A:79:5A:1C:B8&stream=1112131&extension=m3u8&play_token=19lN2YqIw2
 #EXTINF:-1 tvg-name="Star Maa Music" tvg-logo="https://dtil.tmsimg.com/assets/s143828_ld_h15_aa.png?lock=720x540" group-title="Music",Star Maa Music
 http://iptvcasomsapi.jprdigital.in/x-media/C0481/master.m3u8
 #EXTINF:-1 tvg-name="India Voice" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/India_Voice.png" group-title="News",India Voice
@@ -73,7 +75,13 @@ https://fta.ektv.in/live/709/master.m3u8
 https://live.villagetv.net/villagetv/hd/index.m3u8
 #EXTINF:-1 tvg-name="Star Sports 2 Telugu HD (576p)" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Sports",Star Sports 2 Telugu HD (576p)
 https://real-vk.proxy.nellaiiptv.com/SDMEDIA/index.m3u8
+#EXTINF:-1 tvg-name="Star Sports 1 (3)" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Sports",Star Sports 1 (3)
+http://tv.trexiptv.com/play/live.php?mac=00:1a:79:4b:66:ae&stream=155968&extension=ts&play_token=otM0DQF4Ff
 #EXTINF:-1 tvg-name="Star Sports 1 HD" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Sports",Star Sports 1 HD
 http://xtv.ooo:8080/live/76223335/53332267/167575.m3u8
 #EXTINF:-1 tvg-name="Star Sports 2 FHD" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Sports",Star Sports 2 FHD
 http://xtv.ooo:8080/live/76223335/53332267/167576.m3u8
+#EXTINF:-1 tvg-name="Star Sports Select HD1" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Sports",Star Sports Select HD1
+http://tv.trexiptv.com/play/live.php?mac=00:1a:79:4b:66:ae&stream=155972&extension=ts&play_token=otM0DQF4Ff
+#EXTINF:-1 tvg-name="Star Sports Select HD2" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Sports",Star Sports Select HD2
+http://tv.trexiptv.com/play/live.php?mac=00:1a:79:4b:66:ae&stream=155973&extension=ts&play_token=otM0DQF4Ff
