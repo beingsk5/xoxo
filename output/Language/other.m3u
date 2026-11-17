@@ -5,12 +5,10 @@ https://amg17931-zee-amg17931c6-samsung-au-8872.playouts.now.amagi.tv/playlist/a
 https://7689426c.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/U2Ftc3VuZy1mcl9aZWVNYWdpY19ITFM/playlist.m3u8
 #EXTINF:-1 tvg-name="Zee One German (720p)" group-title="Entertainment",Zee One German (720p)
 https://e4955b54.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/U2Ftc3VuZy1kZV9aZWVPbmVfSExT/playlist.m3u8
+#EXTINF:-1 tvg-name="India (576p)" group-title="Entertainment",India (576p)
+https://fs.uplink.kz/india/mono.m3u8?token=onlinetv
 #EXTINF:-1 tvg-name="God Stands Kids Club TV Urdu" group-title="Kids",God Stands Kids Club TV Urdu
 https://online.godstands.tv:5443/WebRTCApp/streams/KidsUrdu.m3u8
-#EXTINF:-1 tvg-name="HUNGAMA HD" group-title="Kids",HUNGAMA HD
-http://tv.trexiptv.com/play/live.php?mac=00:1A:79:5A:1C:B8&stream=1112134&extension=m3u8&play_token=19lN2YqIw2
-#EXTINF:-1 tvg-name="Hungama Kids 6" group-title="Kids",Hungama Kids 6
-http://xtv.ooo:8080/live/927382370/837382809/150480.m3u8
 #EXTINF:-1 tvg-name="Bollywood HD Russia (576p)" group-title="Movies",Bollywood HD Russia (576p)
 https://xykt-fix.github.io/cinerama_edge01/hls/BOLLYWOOD_RU/Movie009.m3u8
 #EXTINF:-1 tvg-name="Hindi Movie Classic 24" group-title="Movies",Hindi Movie Classic 24
@@ -51,6 +49,8 @@ http://cdn19.live247stream.com/channely/tv/playlist.m3u8
 http://cdn.samtv.ca/ptv24/index.m3u8
 #EXTINF:-1 tvg-name="group-title="Punjabi",Sardari TV" group-title="Other",group-title="Punjabi",Sardari TV
 http://158.69.124.9:1935/sardaritv/sardaritv/playlist.m3u8
+#EXTINF:-1 tvg-name="Imam Hussein TV 4 Urdu" group-title="Other",Imam Hussein TV 4 Urdu
+https://live.imamhossaintv.com/live/ih4.m3u8
 #EXTINF:-1 tvg-name="Omroep Zeeland (1080p)" group-title="Other",Omroep Zeeland (1080p)
 https://d3isaxd2t6q8zm.cloudfront.net/live/omroepzeeland/tv/index.m3u8
 #EXTINF:-1 tvg-name="Sony KAL Hindi (1080p)" group-title="Other",Sony KAL Hindi (1080p)
@@ -71,8 +71,6 @@ http://158.69.124.9:1935/5aabtv/5aabtv/playlist.m3u8
 http://toronto3.live247stream.com/toronto360/tv/playlist.m3u8
 #EXTINF:-1 tvg-name="Urdu TV Toronto" group-title="Other",Urdu TV Toronto
 http://cdn4.live247stream.com/urdu/tv/playlist.m3u8
-#EXTINF:-1 tvg-name="MBC Bollywood" group-title="Other",MBC Bollywood
-http://93.184.10.248/MBCBollywood/index.m3u8
 #EXTINF:-1 tvg-name="Canal 13 Esquipulas" group-title="Other",Canal 13 Esquipulas
 https://tv91.hostingnuclear.com:19360/intercable/intercable.m3u8
 #EXTINF:-1 tvg-name="group-title="Punjabi",PTV Pardesi" group-title="Other",group-title="Punjabi",PTV Pardesi
@@ -87,6 +85,8 @@ https://tv91.hostingnuclear.com:19360/xhunestv/xhunestv.m3u8
 https://amg00866-amg00866c9-lg-in-4409.playouts.now.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-name="titanfile" group-title="Other",titanfile
 https://zee5vod.akamaized.net/drm1/titanfile/dash/MOVIES/V2PRIME/4K/ATMOS/SAM_BAHADUR/SAM_BAHADUR_4K_15012024_hi_ce3bf342a1a084e007dbd6555abf5519/manifest.mpd?c3.ri=6901304522390387240?%7CdrmScheme=clearkey&drmLicense=785ab7573f0032dbae2a1ed021657f75:e35650a3facdc46ca5e5cc0d9d03b641
+#EXTINF:-1 tvg-name="titanfile" group-title="Other",titanfile
+https://zee5vod.akamaized.net/drm1/titanfile/dash/MOVIES/V2PRIME/4K/ATMOS/SAM_BAHADUR/SAM_BAHADUR_4K_15012024_hi_ce3bf342a1a084e007dbd6555abf5519/manifest.mpd?c3.ri=6901304522390387240
 #EXTINF:-1 tvg-name="24 TV" group-title="Other",24 TV
 https://turkmedya-live.ercdn.net/tv24/tv24_720p.m3u8
 #EXTINF:-1 tvg-name="7X Punjabi" group-title="Other",7X Punjabi
@@ -109,6 +109,8 @@ http://103.175.73.12:8080/live/25/25_0.m3u8
 https://adultswim-vodlive.cdn.turner.com/live/squidbillies/stream_7.m3u8
 #EXTINF:-1 tvg-name="DD Vyas" group-title="Other",DD Vyas
 http://playhls.media.nic.in/live/vyas-360p/index.m3u8
+#EXTINF:-1 tvg-name="DD Vyas" group-title="Other",DD Vyas
+https://playhls.media.nic.in/live/vyas-360p/index.m3u8
 #EXTINF:-1 tvg-name="Индийское кино" group-title="Other",Индийское кино
 https://mhd128.iptv2022.com/p/-cjB3YypC08x8kpUaFFulw,1743195605/streaming/india/324/1/tracks-v5a1/mono.m3u8
 #EXTINF:-1 tvg-name="TV 9 Nusantara (720p)" group-title="Other",TV 9 Nusantara (720p)
@@ -127,8 +129,6 @@ https://stream.logichost.in/NTV/live/chunklist_w1420234415.m3u8
 https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO_SUNO_TAMIL_S01.mp3
 #EXTINF:-1 tvg-name="All India Radio AIR Punjabi" group-title="Other",All India Radio AIR Punjabi
 https://air.pc.cdn.bitgravity.com/air/live/pbaudio138/chunklist.m3u8
-#EXTINF:-1 tvg-name="STARJALSHA" group-title="Other",STARJALSHA
-http://tv.trexiptv.com/play/live.php?mac=00:1a:79:4b:66:ae&stream=155770&extension=ts&play_token=otM0DQF4Ff
 #EXTINF:-1 tvg-name="Imam Hussein 4 TV Urdu" group-title="Religious",Imam Hussein 4 TV Urdu
 http://live.imamhossaintv.com/live/ih4.m3u8
 #EXTINF:-1 tvg-name="Imam Hussein 4 TV Urdu" group-title="Religious",Imam Hussein 4 TV Urdu
