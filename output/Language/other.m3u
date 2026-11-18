@@ -9,6 +9,8 @@ https://e4955b54.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/U2Ftc3
 https://fs.uplink.kz/india/mono.m3u8?token=onlinetv
 #EXTINF:-1 tvg-name="God Stands Kids Club TV Urdu" group-title="Kids",God Stands Kids Club TV Urdu
 https://online.godstands.tv:5443/WebRTCApp/streams/KidsUrdu.m3u8
+#EXTINF:-1 tvg-name="FashionTV (India) KBCT" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Fashion_TV_logo.svg/960px-Fashion_TV_logo.svg.png" group-title="Lifestyle",FashionTV (India) KBCT
+http://163.61.226.31:9981/stream/channelid/448803688?profile=pass
 #EXTINF:-1 tvg-name="Bollywood HD Russia (576p)" group-title="Movies",Bollywood HD Russia (576p)
 https://xykt-fix.github.io/cinerama_edge01/hls/BOLLYWOOD_RU/Movie009.m3u8
 #EXTINF:-1 tvg-name="Hindi Movie Classic 24" group-title="Movies",Hindi Movie Classic 24
@@ -79,8 +81,6 @@ http://stream.pardesitv.online/pardesi/tracks-v1a1/mono.m3u8
 https://tv91.hostingnuclear.com:19360/telecosta/telecosta.m3u8
 #EXTINF:-1 tvg-name="TV Color Canal 36 (720p)" group-title="Other",TV Color Canal 36 (720p)
 https://video.compuwebecuador.com:3067/live/tvcolorlive.m3u8
-#EXTINF:-1 tvg-name="XHUNES-TDT (720p)" group-title="Other",XHUNES-TDT (720p)
-https://tv91.hostingnuclear.com:19360/xhunestv/xhunestv.m3u8
 #EXTINF:-1 tvg-name="CNBC TV 18 (IN) Geo" group-title="Other",CNBC TV 18 (IN) Geo
 https://amg00866-amg00866c9-lg-in-4409.playouts.now.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-name="titanfile" group-title="Other",titanfile
@@ -101,6 +101,8 @@ https://moviethls.wns.live/hls/stream.m3u8
 http://budatv.streaming.aiproduction.hu/playlist.m3u
 #EXTINF:-1 tvg-name="MNTV (Tamil)" group-title="Other",MNTV (Tamil)
 https://www.khuwemultimedia.com/hls/mntv/mntv.m3u8
+#EXTINF:-1 tvg-name="seq 32510571" group-title="Other",seq 32510571
+https://janya-ndtv.akamaized.net/ptnr-monitoring/vglive-sk-238731/ndtvmarathi_1500k.m3u8
 #EXTINF:-1 tvg-name="seq 42587808" group-title="Other",seq 42587808
 https://vg-zeefta.akamaized.net/ptnr-yupptv/title-zeesalaam/v1/manifest/611d79b11b77e2f571934fd80ca1413453772ac7/426c6db7-595e-4aa8-859c-7e86ed2811d0/af896be5-4743-41fc-8b6a-eb05e44f3a6e/3.m3u8
 #EXTINF:-1 tvg-name="The Q India (576p)" group-title="Other",The Q India (576p)
