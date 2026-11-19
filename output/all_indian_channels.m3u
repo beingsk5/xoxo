@@ -2485,8 +2485,6 @@ https://vglivessai.akamaized.net/sg/v1/master/611d79b11b77e2f571934fd80ca1413453
 https://d2g1vdc6ozl2o8.cloudfront.net/out/v1/0a0dc7d7911b4fddbb4dfc963fdd4b9e/index.m3u8
 #EXTINF:-1 tvg-name="Sony KAL Hindi (1080p)" group-title="Other",Sony KAL Hindi (1080p)
 https://wurlsonypicturestv.global.transmit.live/hls/68deeb1c0238cda82df543dd/v1/spt_sonykal_1/lg_us/latest/main/hls/playlist.m3u8
-#EXTINF:-1 tvg-name="stage" group-title="Other",stage
-https://stage-playlistserver.aws.syncbak.com/spl/cbshls/2.0/master.m3u8?api_token=eyJhbGciOiJIUzI1NiIsImtpZCI6IjVhNDcwMDI0MmNkZDRkNzViYmMxYzExMzE2YWI2MTE0IiwidHlwIjoiSldUIn0.eyJiYXNlQ2hhbm5lbElkIjoxNDEsIm12cGRJZCI6IkFsbEFjY2VzcyIsImR0cCI6OCwiZXhwIjoxNzk1MTA2ODE3LCJpc3MiOiJDQlMuY29tIiwiYXVkIjoicGxheWxpc3RzZXJ2ZXIuYXdzLnN5bmNiYWsuY29tIiwibWQ1IjoiZTdlMDRkZmJjMWFlNjZiZTViY2ExYjMwOTcwYjBhYTkiLCJpcCI6IjE3Mi4yMDMuOTQuMTM4IiwiZGMiOnsiNjBGUFMiOnRydWV9LCJldWEiOmZhbHNlLCJlaWQiOmZhbHNlLCJpYXQiOjE3OTUxMDY3Mjd9.LL4sDOrU8MTpS26XUKbKny5JiyQJ56v-BZ0UV6R7cmY
 #EXTINF:-1 tvg-name="Taaza TV" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Taaza_TV.png" group-title="Other",Taaza TV
 https://live.we2live.in/taazatv/live/playlist.m3u8
 #EXTINF:-1 tvg-name="The Pet Collective India (720p)" group-title="Other",The Pet Collective India (720p)
@@ -3089,6 +3087,12 @@ https://mumt07.tangotv.in/zHjX9OFlDDSPORTS/index.m3u8
 https://fta.ektv.in/live/280/master.m3u8
 #EXTINF:-1 tvg-name="DD Sports" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Sports.png" group-title="Sports",DD Sports
 https://cdn.pishow.tv/ott/live/13/master.m3u8
+#EXTINF:-1 tvg-name="Sony Sports 1" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Sports",Sony Sports 1
+https://toffee.aliflaila.live/channel/18.m3u8
+#EXTINF:-1 tvg-name="Sony Sports 2" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Sports",Sony Sports 2
+https://toffee.aliflaila.live/channel/3.m3u8
+#EXTINF:-1 tvg-name="Sony Sports 5" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Sports",Sony Sports 5
+https://toffee.aliflaila.live/channel/14.m3u8
 #EXTINF:-1 tvg-name="Star Sports 1 Telugu" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/6361/1782284846361-h.jpg" group-title="Sports",Star Sports 1 Telugu
 http://iptvcasomsapi.jprdigital.in/x-media/C0421/master.m3u8
 #EXTINF:-1 tvg-name="Star Sports 2 Telugu HD (576p)" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Sports",Star Sports 2 Telugu HD (576p)
