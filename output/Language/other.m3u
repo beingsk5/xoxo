@@ -57,6 +57,8 @@ https://live.imamhossaintv.com/live/ih4.m3u8
 https://d3isaxd2t6q8zm.cloudfront.net/live/omroepzeeland/tv/index.m3u8
 #EXTINF:-1 tvg-name="Sony KAL Hindi (1080p)" group-title="Other",Sony KAL Hindi (1080p)
 https://wurlsonypicturestv.global.transmit.live/hls/68deeb1c0238cda82df543dd/v1/spt_sonykal_1/lg_us/latest/main/hls/playlist.m3u8
+#EXTINF:-1 tvg-name="stage" group-title="Other",stage
+https://stage-playlistserver.aws.syncbak.com/spl/cbshls/2.0/master.m3u8?api_token=eyJhbGciOiJIUzI1NiIsImtpZCI6IjVhNDcwMDI0MmNkZDRkNzViYmMxYzExMzE2YWI2MTE0IiwidHlwIjoiSldUIn0.eyJiYXNlQ2hhbm5lbElkIjoxNDEsIm12cGRJZCI6IkFsbEFjY2VzcyIsImR0cCI6OCwiZXhwIjoxNzk1MTA2ODE3LCJpc3MiOiJDQlMuY29tIiwiYXVkIjoicGxheWxpc3RzZXJ2ZXIuYXdzLnN5bmNiYWsuY29tIiwibWQ1IjoiZTdlMDRkZmJjMWFlNjZiZTViY2ExYjMwOTcwYjBhYTkiLCJpcCI6IjE3Mi4yMDMuOTQuMTM4IiwiZGMiOnsiNjBGUFMiOnRydWV9LCJldWEiOmZhbHNlLCJlaWQiOmZhbHNlLCJpYXQiOjE3OTUxMDY3Mjd9.LL4sDOrU8MTpS26XUKbKny5JiyQJ56v-BZ0UV6R7cmY
 #EXTINF:-1 tvg-name="The Pet Collective India (720p)" group-title="Other",The Pet Collective India (720p)
 https://the-pet-collective-international-in.samsung.wurl.tv/playlist.m3u8
 #EXTINF:-1 tvg-name="Wild Flix Hindi" group-title="Other",Wild Flix Hindi
@@ -125,14 +127,20 @@ https://mhd128.iptv2022.com/p/kxk9fzninJ2VBq9MwWyXDw,1743195606/streaming/zeetv/
 http://air.pc.cdn.bitgravity.com/air/live/pbaudio230/playlist.m3u8
 #EXTINF:-1 tvg-name="All India Radio - Chennai FM Rainbow 101.4" group-title="Other",All India Radio - Chennai FM Rainbow 101.4
 http://air.pc.cdn.bitgravity.com/air/live/pbaudio022/playlist.m3u8
+#EXTINF:-1 tvg-name="Bollywood HD" group-title="Other",Bollywood HD
+http://stream-msk-10.ott.tricolor.tv/dtv/id640_MSKSG-PVR-1--Bollywood/03/plst.m3u8?drmreq=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBfdHlwZSI6ImFwdHBfb3R0IiwiY2xhc3MiOiJCUk9XU0VSIiwiZHJlaWQiOiI0MDAyNTUwMDc4MjQwNyIsImV4cCI6MTY4ODE4OTgwOSwiaHdpZCI6ImI2YjQ3YmM4NWZhNWJmZDI5Mzk3MTg2MzFmMzZiNzg3YzYwZGYwNzdhZmRhZDM5ZTZmZTQ5NWRhMTI0NTBlYjIiLCJsYXN0X3JlcV9kYXRlIjoxNjg3NTg1MDA5LCJzZXNzaW9uX2lkIjoiMzY0ZDhmNmNiNjkyNmUzYzFmNGZmYjE4NDMzOTY0OTciLCJ0b2tlbl90eXBlIjoiQ29udGVudEFjY2Vzc1Rva2VuIiwidHlwZSI6Ik1PWklMTEEifQ.i6F_i9kbAPJtdObR59ST1tdZs0uO9bbqhKDfpgnK9cI
 #EXTINF:-1 tvg-name="seq 42607352" group-title="Other",seq 42607352
 https://vg-zeefta.akamaized.net/ptnr-yupptv/title-zee24kalak/v1/manifest/611d79b11b77e2f571934fd80ca1413453772ac7/497f7199-758d-495d-9d2f-a5489231c428/14b7c8ec-16da-47f2-8d7e-5bbaec67b3e2/3.m3u8
 #EXTINF:-1 tvg-name="1.FM – Bombay Beats India Radio" group-title="Other",1.FM – Bombay Beats India Radio
 http://strm112.1.fm/bombaybeats_mobile_mp3
+#EXTINF:-1 tvg-name="bdstreamz" group-title="Other",bdstreamz
+http://65.2.4.240/jioo.php?c=Rishtey&q=800&e=junk.m3u8
 #EXTINF:-1 tvg-name="NTV Malayalam" group-title="Other",NTV Malayalam
 https://stream.logichost.in/NTV/live/chunklist_w1420234415.m3u8
 #EXTINF:-1 tvg-name="Radio Suno Tamil" group-title="Other",Radio Suno Tamil
 https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO_SUNO_TAMIL_S01.mp3
+#EXTINF:-1 tvg-name="Индийское кино" group-title="Other",Индийское кино
+https://mhd116.iptv2022.com/p/pwbCaK1wmK9He2LOjOKMhA,1688072412/streaming/india/324/1/index.m3u8
 #EXTINF:-1 tvg-name="All India Radio AIR Punjabi" group-title="Other",All India Radio AIR Punjabi
 https://air.pc.cdn.bitgravity.com/air/live/pbaudio138/chunklist.m3u8
 #EXTINF:-1 tvg-name="All India Radio - AIR FM Gold" group-title="Other",All India Radio - AIR FM Gold
