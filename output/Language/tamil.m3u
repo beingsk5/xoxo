@@ -3,6 +3,8 @@
 https://live.jayatv.lk/hls/stream.m3u8
 #EXTINF:-1 tvg-name="Oli TV (India) (1080p)" tvg-logo="https://i.ibb.co/XfvTQyJn/main-removebg-preview.png" group-title="Entertainment",Oli TV (India) (1080p)
 https://live.olidigital.in/olitv/olitv/index.m3u8
+#EXTINF:-1 tvg-name="Oli TV (India) (1080p)" tvg-logo="https://i.ibb.co/XfvTQyJn/main-removebg-preview.png" group-title="Entertainment",Oli TV (India) (1080p)
+https://hlslive.olidigital.in/olitv/olitv/index.m3u8
 #EXTINF:-1 tvg-name="Star Vijay UK KBCT" tvg-logo="https://vignette.wikia.nocookie.net/logopedia/images/2/23/Vijay_tv.png/revision/latest?cb=20170719104859" group-title="Entertainment",Star Vijay UK KBCT
 https://da86m1sqpm3o0.cloudfront.net/28072023/smil:starvijayuk.smil/playlist.m3u8
 #EXTINF:-1 tvg-name="Kalaignar Murasu (396p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Murasu%20TV.png" group-title="Entertainment",Kalaignar Murasu (396p)
@@ -87,6 +89,8 @@ https://cdn.pishow.tv/ott/live/1279/master.m3u8
 https://cdn.pishow.tv/ott/live/1507/master.m3u8
 #EXTINF:-1 tvg-name="Raj News Telugu KBCT" tvg-logo="https://dtil.tmsimg.com/assets/s143709_ld_h9_ab.png?lock=720x540" group-title="News",Raj News Telugu KBCT
 https://cdn.pishow.tv/ott/live/279/master.m3u8
+#EXTINF:-1 tvg-name="Kalaignar Seithigal (576p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Seithigal-transparent.png" group-title="News",Kalaignar Seithigal (576p)
+https://yuppnimresmum.akamaized.net/120723/smil:seithagal.smil/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
 #EXTINF:-1 tvg-name="News Tamil 24x7" tvg-logo="https://dtil.tmsimg.com/assets/s143623_ld_h15_aa.png?lock=720x540" group-title="News",News Tamil 24x7
 https://streams.tangotv.in/NEWSTAMIL24X7/ORIGIN/index.m3u8
 #EXTINF:-1 tvg-name="Polimer News" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Polimer%20News.png" group-title="News",Polimer News
@@ -101,6 +105,8 @@ https://samitaorigin.tangotv.in/PUTHIYAEXPRESS/SAMITAORIGIN/index.m3u8
 https://cdn.pishow.tv/ott/live/1433/master.m3u8
 #EXTINF:-1 tvg-name="Polimer News" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Polimer%20News.png" group-title="News",Polimer News
 https://cdn.pishow.tv/ott/live/1245/master.m3u8
+#EXTINF:-1 tvg-name="mnadu" group-title="Other",mnadu
+https://cloudcdnplayer.mslivestream.net/mslivecdn/mnadu/index.m3u8
 #EXTINF:-1 tvg-name="tamil" tvg-logo="https://i.imgur.com/YQK9ewf.png" group-title="Religious",tamil
 http://player.mslivestream.net/tamil/ac206e74d75b285755ee4924df87d951.sdp/index.m3u8
 #EXTINF:-1 tvg-name="Sairam TV (576p)" group-title="Religious",Sairam TV (576p)
