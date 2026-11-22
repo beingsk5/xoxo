@@ -187,6 +187,8 @@ http://5k8q87azdy4v-hls-live.wmncdn.net/MAKKAL/271ddf829afeece44d8732757fba1a66.
 https://cdn.pishow.tv/ott/live/23/master.m3u8
 #EXTINF:-1 tvg-name="Jan TV" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/JAN-TV-LOGO-Transparent.png" group-title="General",Jan TV
 https://cdn.pishow.tv/ott/live/10004/master.m3u8
+#EXTINF:-1 tvg-name="KTV Bangla" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/channel/2f8e3b371c660faa2f43a7f0942948a4.png" group-title="General",KTV Bangla
+https://stream.ottlive.co.in/ktvbangla/index.m3u8
 #EXTINF:-1 tvg-name="DD Nagaland" tvg-logo="https://i.imgur.com/HUL4aF6.png" group-title="General",DD Nagaland
 https://d2lk5u59tns74c.cloudfront.net/out/v1/29c92e0bef954a6d9b0908d1be29c1f0/index.m3u8
 #EXTINF:-1 tvg-name="Makkal TV" tvg-logo="https://dtil.tmsimg.com/assets/s143296_ld_h15_aa.png?lock=720x540" group-title="General",Makkal TV
@@ -681,6 +683,8 @@ https://samitaorigin.tangotv.in/NEWSXWORLD/SAMITAORIGIN/index.m3u8
 https://cdn.pishow.tv/ott/live/471/master.m3u8
 #EXTINF:-1 tvg-name="ABP News" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/ABP_News_logo.svg/500px-ABP_News_logo.svg.png" group-title="News",ABP News
 https://cdn.pishow.tv/ott/live/1057/master.m3u8
+#EXTINF:-1 tvg-name="Bharat Express" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Bharat-Expess-Transparent.png" group-title="News",Bharat Express
+https://stream.ottlive.co.in/bharatexpress/index.m3u8
 #EXTINF:-1 tvg-name="Ind 24" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/IND_24.png" group-title="News",Ind 24
 https://livestream.jswk.online/ind24/live/index.m3u8
 #EXTINF:-1 tvg-name="News Live Bangla" tvg-logo="https://papaji.freetvindia.com/media/News_Live_Bangla.png" group-title="News",News Live Bangla
@@ -775,6 +779,8 @@ https://cdn.pishow.tv/ott/live/1612/master.m3u8
 https://tvsen3.aynaott.com/m94BZDYb/index.m3u8
 #EXTINF:-1 tvg-name="DY 365 (360p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DY%20365.png" group-title="News",DY 365 (360p)
 https://cdn.smartstream.video/smartstream-us/dy365/dy365/playlist.m3u8
+#EXTINF:-1 tvg-name="Munsif TV" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Munsif_TV.png" group-title="News",Munsif TV
+https://stream.ottlive.co.in/munsiftv/index.m3u8
 #EXTINF:-1 tvg-name="DD Mizoram" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD-Mizoram_2000_X_1125_transpharent.png" group-title="News",DD Mizoram
 https://d2lk5u59tns74c.cloudfront.net/out/v1/eea48c6b61074052a2fa8532ff795ff1/index.m3u8
 #EXTINF:-1 tvg-name="ANB News" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/ANB%20News.png" group-title="News",ANB News
@@ -787,8 +793,6 @@ https://fta.ektv.in/live/99/99_0.m3u8
 https://fta.ektv.in/live/107/107_0.m3u8
 #EXTINF:-1 tvg-name="TV9 Bharatvarsh" tvg-logo="https://dtil.tmsimg.com/assets/s144027_ld_h15_aa.png?lock=720x540" group-title="News",TV9 Bharatvarsh
 https://fta.ektv.in/live/92/92_0.m3u8
-#EXTINF:-1 tvg-name="Bharat Express" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Bharat-Expess-Transparent.png" group-title="News",Bharat Express
-https://fta.ektv.in/live/736/master.m3u8
 #EXTINF:-1 tvg-name="News India 24x7" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/08.INDIA-24x7(NEWS-HINDI)--2000-x-1125--Transpernt.png" group-title="News",News India 24x7
 https://fta.ektv.in/live/453/master.m3u8
 #EXTINF:-1 tvg-name="NewsX World" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/NewsX%20World_Transparent_f60e2692-58f4-43f7-b254-4a64c64cc253.png" group-title="News",NewsX World
