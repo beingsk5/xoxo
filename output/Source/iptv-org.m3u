@@ -191,8 +191,6 @@ https://streams.tangotv.in/MANORANJANTV/ORIGIN/index.m3u8
 https://mumt04.tangotv.in/m18aqlK4PTCPUNJABIGOLD/index.m3u8
 #EXTINF:-1 tvg-name="Punjabi TV" tvg-logo="https://papaji.freetvindia.com/media/PunjabiTV.png" group-title="Entertainment",Punjabi TV
 https://samitaorigin.tangotv.in/PUNJABITV/SAMITAORIGIN/index.m3u8
-#EXTINF:-1 tvg-name="Shemaroo TV" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SHEMAROO_TV/images/LOGO_HD/image.png" group-title="Entertainment",Shemaroo TV
-https://streams.tangotv.in/SHEMAROOTV/ORIGIN/index.m3u8
 #EXTINF:-1 tvg-name="DD National HD" tvg-logo="https://dtil.tmsimg.com/assets/s158252_ld_h9_aa.png?lock=720x540" group-title="Entertainment",DD National HD
 https://fta.ektv.in/live/15/master.m3u8
 #EXTINF:-1 tvg-name="Hi Dost!" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Hi_Dost.png" group-title="Entertainment",Hi Dost!
@@ -253,6 +251,8 @@ https://cdn.pishow.tv/ott/live/393/master.m3u8
 https://cdn.pishow.tv/ott/live/1271/master.m3u8
 #EXTINF:-1 tvg-name="Epic Bharat" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0032BW6T.png?lock=720x540" group-title="Entertainment",Epic Bharat
 https://fta.ektv.in/live/471/master.m3u8
+#EXTINF:-1 tvg-name="Shemaroo TV" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SHEMAROO_TV/images/LOGO_HD/image.png" group-title="Entertainment",Shemaroo TV
+https://tvsen6.aynaott.com/D3NDt6gn/index.m3u8
 #EXTINF:-1 tvg-name="GTC Punjabi" tvg-logo="https://media.thegtcnetwork.com/uploads/gtc-pujabin-s.jpg" group-title="Entertainment",GTC Punjabi
 https://fta.ektv.in/live/772/master.m3u8
 #EXTINF:-1 tvg-name="Nepal 1" tvg-logo="https://dtil.tmsimg.com/assets/s143584_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Nepal 1
@@ -433,8 +433,6 @@ https://fta.ektv.in/live/197/master.m3u8
 https://fta.ektv.in/live/172/master.m3u8
 #EXTINF:-1 tvg-name="DD Jharkhand" tvg-logo="https://dtil.tmsimg.com/assets/s142787_ld_h15_aa.png?lock=720x540" group-title="General",DD Jharkhand
 https://fta.ektv.in/live/573/master.m3u8
-#EXTINF:-1 tvg-name="DD Kashir" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Kashir.png" group-title="General",DD Kashir
-https://fta.ektv.in/live/248/master.m3u8
 #EXTINF:-1 tvg-name="DD Madhya Pradesh" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Madhya%20Pradesh.png" group-title="General",DD Madhya Pradesh
 https://fta.ektv.in/live/578/master.m3u8
 #EXTINF:-1 tvg-name="DD Uttar Pradesh" tvg-logo="https://dtil.tmsimg.com/assets/s142807_ld_h9_ab.png?lock=720x540" group-title="General",DD Uttar Pradesh
@@ -553,14 +551,14 @@ https://cdn.pishow.tv/ott/live/419/master.m3u8
 https://cdn.pishow.tv/ott/live/276/master.m3u8
 #EXTINF:-1 tvg-name="Jalsha Movies" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/1445/1782291521445-h.jpg" group-title="Movies",Jalsha Movies
 https://box.bbaria.net:8083/Jalsha_Movie/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-name="Goldmines Movies" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/GoldminesMovies_Transparent_9b7db248-999e-4200-a459-6cc594650f3d.png" group-title="Movies",Goldmines Movies
+https://tvsen3.aynaott.com/5CGfPvGp/index.m3u8
 #EXTINF:-1 tvg-name="Movies Now HD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/TIMESPLAY/LIVECHANNEL/6904ba4839f3b175376a61e2/images/LOGO_HD/LOGO_HD_hAgaZac_j_MoviesNow1_1.png" group-title="Movies",Movies Now HD
 http://116.90.120.149:8000/play/a11f/index.m3u8
 #EXTINF:-1 tvg-name="Goldmines Bollywood" tvg-logo="https://i.imgur.com/6mNQ9mM.png" group-title="Movies",Goldmines Bollywood
 https://streams.tangotv.in/GOLDMINESBOLLYWOOD/ORIGIN/index.m3u8
 #EXTINF:-1 tvg-name="Goldmines Bollywood" tvg-logo="https://i.imgur.com/6mNQ9mM.png" group-title="Movies",Goldmines Bollywood
 https://samitaorigin.tangotv.in/GOLDMINESBOLLYWOOD/SAMITAORIGIN/index.m3u8
-#EXTINF:-1 tvg-name="Goldmines Movies" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/GoldminesMovies_Transparent_9b7db248-999e-4200-a459-6cc594650f3d.png" group-title="Movies",Goldmines Movies
-https://streams.tangotv.in/GOLDMINEMOVIES/ORIGIN/index.m3u8
 #EXTINF:-1 tvg-name="Manoranjan Grand" tvg-logo="https://dtil.tmsimg.com/assets/s143302_ld_h15_aa.png?lock=720x540" group-title="Movies",Manoranjan Grand
 https://streams.tangotv.in/MANORANJANGRAND/ORIGIN/index.m3u8
 #EXTINF:-1 tvg-name="Bhojpuri Cinema" tvg-logo="https://dtil.tmsimg.com/assets/s142713_ld_h15_aa.png?lock=720x540" group-title="Movies",Bhojpuri Cinema
@@ -949,8 +947,6 @@ https://amg01448-samsungin-news18bangla-samsungin-ad-qy.amagi.tv/playlist/amg014
 https://n18syndication.akamaized.net/bpk-tv/News18_Bangla_NW18_MOB/output01/master.m3u8
 #EXTINF:-1 tvg-name="News9Live" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/News9_Transparent_0ebbb3fe-a786-401a-957d-2c37168aaa22.png" group-title="News",News9Live
 https://vg-tv9yupp.vgcdn.net/vglive-sk-526536/v1/019e01ace8511ea540a871e333268/019e01ad3da31ea55784752988551/main.m3u8
-#EXTINF:-1 tvg-name="Republic TV" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/REPUBLIC%20TV.png" group-title="News",Republic TV
-https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/2e31d831f08640ff92f65003bdc89991/index.m3u8
 #EXTINF:-1 tvg-name="WION" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/WION.png" group-title="News",WION
 http://vg-zeefta.akamaized.net/ptnr-yupptv/title-wion/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/20c3c0d9-0256-43fe-bca6-70fdd490b957/main.m3u8
 #EXTINF:-1 tvg-name="Zee News" tvg-logo="https://image.airtel.tv/grandslam/content/2025_06_17/LOGO_X99oIa_Fm_Znews_logo-for-larg.png" group-title="News",Zee News
@@ -1189,8 +1185,6 @@ https://d1msejlow1t3l4.cloudfront.net/fta/inh24x7/playlist.m3u8
 https://mumt01.tangotv.in/O5aw8Zn3INH24X7/index.m3u8
 #EXTINF:-1 tvg-name="Mahaa News" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Mahaa-News-logo_2000_X_1125-Transpharent.png" group-title="News",Mahaa News
 https://mumt07.tangotv.in/zHjX9OFlMAHAANEWS/index.m3u8
-#EXTINF:-1 tvg-name="Mh 1 News" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/MH%20One%20News.png" group-title="News",Mh 1 News
-https://mumt04.tangotv.in/m18aqlK4MHONENEWS/index.m3u8
 #EXTINF:-1 tvg-name="Moon TV" tvg-logo="https://i.imgur.com/3l25EZI.png" group-title="News",Moon TV
 https://samitaorigin.tangotv.in/MOONTV/SAMITAORIGIN/index.m3u8
 #EXTINF:-1 tvg-name="Munsif TV" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Munsif_TV.png" group-title="News",Munsif TV
@@ -1295,8 +1289,6 @@ https://mumt04.tangotv.in/m18aqlK4KHABARFAST/index.m3u8
 https://streams.tangotv.in/LIVINGINDIANEWS/ORIGIN/index.m3u8
 #EXTINF:-1 tvg-name="Mathrubhumi News" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Mathrubhumi%20News.png" group-title="News",Mathrubhumi News
 https://streams.tangotv.in/MATHRUBHUMINEWS/ORIGIN/index.m3u8
-#EXTINF:-1 tvg-name="Mh 1 News" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/MH%20One%20News.png" group-title="News",Mh 1 News
-https://streams.tangotv.in/MHONENEWS/ORIGIN/index.m3u8
 #EXTINF:-1 tvg-name="NDTV Rajasthan" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/NDTV-Rajasthan-logo-Transparent.png" group-title="News",NDTV Rajasthan
 https://samitaorigin.tangotv.in/NDTVRAJASTHAN/SAMITAORIGIN/index.m3u8
 #EXTINF:-1 tvg-name="News 1 India" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_NEWS_1_INDIA/images/LOGO_HD/image.png" group-title="News",News 1 India
@@ -1785,6 +1777,8 @@ https://fta.ektv.in/live/648/master.m3u8
 https://fta.ektv.in/live/705/master.m3u8
 #EXTINF:-1 tvg-name="Divyavani TV" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Divya_Vani.png" group-title="Religious",Divyavani TV
 https://fta.ektv.in/live/382/master.m3u8
+#EXTINF:-1 tvg-name="Fateh TV" tvg-logo="https://i.imgur.com/c4ItNkB.png" group-title="Religious",Fateh TV
+https://fta.ektv.in/live/635/master.m3u8
 #EXTINF:-1 tvg-name="Hare Krsna TV" tvg-logo="https://dtil.tmsimg.com/assets/s143102_ld_h15_aa.png?lock=720x540" group-title="Religious",Hare Krsna TV
 https://fta.ektv.in/live/259/master.m3u8
 #EXTINF:-1 tvg-name="Hope Channel India" tvg-logo="https://i.imgur.com/wPzPUrK.png" group-title="Religious",Hope Channel India

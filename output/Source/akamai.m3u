@@ -29,8 +29,6 @@ https://vg-indiatvyupp.akamaized.net/ptnr-yupptv/title-Indiatvmi/v1/master/611d7
 https://ndtv24x7elemarchana.akamaized.net/hls/live/2003678/ndtv24x7/master.m3u8
 #EXTINF:-1 tvg-name="v tv news" group-title="News",v tv news
 https://cc-3448kp65yhc5w.akamaized.net/WWBI/Amagi/ETV_News_IN/playlist.m3u8
-#EXTINF:-1 tvg-name="ndtv india" tvg-logo="https://dtil.tmsimg.com/assets/s157588_ld_h15_aa.png?lock=720x540" group-title="News",ndtv india
-https://ndtvindiaelemarchana.akamaized.net/hls/live/2003679/ndtvindia/master.m3u8
 #EXTINF:-1 tvg-name="News State Punjab Haryana Himachal (1080p)" group-title="News",News State Punjab Haryana Himachal (1080p)
 https://cc-bem7bmz6ukynx.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-bem7bmz6ukynx/nntv/nnpunj/index.m3u8?ads.device_did=%7BPSID%7D&ads.device_dnt=%7BTARGETOPT%7D&ads.app_domain=%7BAPP_DOMAIN%7D&ads.app_name=%7BAPP_NAME%7D&ads.ssai_vendor=SSSLIVE&ads.afsdk_params=%7BAFSDK_VALUE%7D&ads.service_id=IN300083R1
 #EXTINF:-1 tvg-name="Aaj Tak" tvg-logo="https://i.imgur.com/gS9Qkfy.png" group-title="News",Aaj Tak
@@ -83,6 +81,8 @@ https://yuppmedtaorire.akamaized.net/v1/master/a0d007312bfd99c47f76b77ae26b1ccda
 https://zee5vod.akamaized.net/drm1/titanfile/dash/MOVIES/V2PRIME/4K/ATMOS/SAM_BAHADUR/SAM_BAHADUR_4K_15012024_hi_ce3bf342a1a084e007dbd6555abf5519/manifest.mpd?c3.ri=6901304522390387240?%7CdrmScheme=clearkey&drmLicense=785ab7573f0032dbae2a1ed021657f75:e35650a3facdc46ca5e5cc0d9d03b641
 #EXTINF:-1 tvg-name="titanfile" group-title="Other",titanfile
 https://zee5vod.akamaized.net/drm1/titanfile/dash/MOVIES/V2PRIME/4K/ATMOS/SAM_BAHADUR/SAM_BAHADUR_4K_15012024_hi_ce3bf342a1a084e007dbd6555abf5519/manifest.mpd?c3.ri=6901304522390387240
+#EXTINF:-1 tvg-name="GSTV" tvg-logo="https://channel.rakuten.co.jp/service/img/logo/chlogo-with-number/118_gstv.png" group-title="Religious",GSTV
+https://rch01e-alive-hls.akamaized.net/15bcd044c531aa99/out/v1/339db39dc83c421f94a8cebb777e4d02/index.m3u8
 #EXTINF:-1 tvg-name="Aastha Bhajan (480p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Aastha.png" group-title="Religious",Aastha Bhajan (480p)
 https://aasthaott.akamaized.net/110923/smil:bhajan.smil/playlist.m3u8
 #EXTINF:-1 tvg-name="Aastha Gujarati (480p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Aastha.png" group-title="Religious",Aastha Gujarati (480p)
