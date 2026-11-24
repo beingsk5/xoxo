@@ -1,4 +1,6 @@
 #EXTM3U xmlns:tvg="http://www.xmltv.org/" xmlns:m3u="http://www.xns schemas.com/2008/playlist"
+#EXTINF:-1 tvg-name="france 24" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_E24/images/LOGO_HD/image.png" group-title="Entertainment",france 24
+https://production-france24-vidio-com.akamaized.net/live/F24_EN_HI_HLS/playlist.m3u8?hdnts=exp=1821164820~acl=/live/F24_EN_HI_HLS/*~hmac=b004f12cd9463be69a87341bcd3faeba9ebaa73028287cda0ac719086d4c5409
 #EXTINF:-1 tvg-name="Kalaignar Murasu (396p)" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Murasu%20TV.png" group-title="Entertainment",Kalaignar Murasu (396p)
 https://yuppmedtaorire.akamaized.net/v1/master/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/murasu_nim_https/050522/murasu/playlist.m3u8
 #EXTINF:-1 tvg-name="epic tv" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Epic-LOGO_2000_X_1125_transpharent.png" group-title="Entertainment",epic tv
@@ -17,12 +19,16 @@ https://cc-3cyxq80qusspd.akamaized.net/v1/manifest/3722c60a815c199d9c0ef36c5b73d
 https://yupprestreamliveus.akamaized.net/vglive-sk-355289/majha/master.m3u8
 #EXTINF:-1 tvg-name="bbc news" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/BBC_Gujarati.png" group-title="News",bbc news
 https://vs-hls-push-ww-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_news_channel_hd/mobile_wifi_main_hd_abr_v2.m3u8
+#EXTINF:-1 tvg-name="cnn news18" group-title="News",cnn news18
+https://n18syndication.akamaized.net/bpk-tv/CNN_News18_NW18_MOB/output01/index.m3u8
 #EXTINF:-1 tvg-name="euro news" group-title="News",euro news
 https://cdn-euronews.akamaized.net/live/eds/africanews-en/25049/index.m3u8
 #EXTINF:-1 tvg-name="euro news" group-title="News",euro news
 https://cdn-euronews.akamaized.net/live/eds/euronews-el/25068/index.m3u8
 #EXTINF:-1 tvg-name="euro news" group-title="News",euro news
 https://cdn-euronews.akamaized.net/live/eds/africanews-fr/25050/index.m3u8
+#EXTINF:-1 tvg-name="euro news" group-title="News",euro news
+https://production-euronews-vidio-com.akamaized.net/live/eds/euronews-en/27587/euronews-en.m3u8
 #EXTINF:-1 tvg-name="India TV" tvg-logo="https://dtil.tmsimg.com/assets/s143199_ld_h15_aa.png?lock=720x540" group-title="News",India TV
 https://vg-indiatvyupp.akamaized.net/ptnr-yupptv/title-Indiatvmi/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/9bb243fa-9ec5-4045-9d1d-0326debcace6/main.m3u8?ads.channel=115&ads.content_custom_1_param=FAST&ads.user=2&ads.content_custom_3_param=YuppFastIndia&hdnts=st=1757248765~exp=1757270365~acl=!*/ptnr-yupptv/title-Indiatvmi/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/9bb243fa-9ec5-4045-9d1d-0326debcace6/*!/payload/yupptvott_5_-1_f22a9ff995a34b88_IN_171.76.87.153_yuppfast_2_channel_231_-1/*~data=yupptvott_5_-1_f22a9ff995a34b88_IN_171.76.87.153_yuppfast_2_channel_231_-1~hmac=ae81c8001fb6488b9763a4f9f282b86219141dc0c77fd7e11aa7ee7fe81df7d2&ads.network_name=yuppfast&ads.app_store_url=&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=NEWS&ads.channel_name=IndiaTV&ads.language=HIN&ads.user=0
 #EXTINF:-1 tvg-name="ndtv24x7elemarchana" tvg-logo="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Ndtv-logo-new.svg/1280px-Ndtv-logo-new.svg.png" group-title="News",ndtv24x7elemarchana

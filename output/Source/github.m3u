@@ -5,6 +5,8 @@ https://yuppparoriglin.akamaized.net/181224/smil:wowkidztelgu.smil/playlist.m3u8
 https://tvsen3.aynaott.com/9tYGMmMS/index.m3u8
 #EXTINF:-1 tvg-name="Animal Planet" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/AnimalPlanetHD_Transparent_d36c0ee3-3e3f-4e0c-b3b2-23bfb3c3c2b0.png" group-title="Documentary",Animal Planet
 https://vodzong.mjunoon.tv:8087/streamtest/Animal-Planet-158-3/playlist.m3u8
+#EXTINF:-1 tvg-name="Animal Planet" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/AnimalPlanetHD_Transparent_d36c0ee3-3e3f-4e0c-b3b2-23bfb3c3c2b0.png" group-title="Documentary",Animal Planet
+http://27.124.71.27/Animal_Planet/index.m3u8
 #EXTINF:-1 tvg-name="history" tvg-logo="https://dtil.tmsimg.com/assets/s143133_ld_h15_aa.png?lock=720x540" group-title="Documentary",history
 https://n18syndication.akamaized.net/bpk-tv/History_TV18_Hindi_NW18_MOB/output01/master.m3u8
 #EXTINF:-1 tvg-name="History TV18" tvg-logo="https://dtil.tmsimg.com/assets/s143133_ld_h15_aa.png?lock=720x540" group-title="Documentary",History TV18
@@ -113,6 +115,8 @@ http://rgkkw.live:80/live/1Aoen7elp5/IgMJ60tmAa/203.ts
 http://rgkkw.live:80/live/1Aoen7elp5/IgMJ60tmAa/98881.ts
 #EXTINF:-1 tvg-name="zee bangla hd" tvg-logo="https://i.imgur.com/zTGTWa8.png" group-title="Entertainment",zee bangla hd
 http://xtv.ooo:8080/live/Jawad1994/03112371534/245893.m3u8
+#EXTINF:-1 tvg-name="DD Chandana KBCT" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Chandana.png" group-title="General",DD Chandana KBCT
+https://cdn.pishow.tv/ott/live/28/master.m3u8
 #EXTINF:-1 tvg-name="Vision (India) KBCT" tvg-logo="https://i.imgur.com/YozqNL3.jpg" group-title="General",Vision (India) KBCT
 http://103.85.204.205:1935/VISIONMEDIA/live/playlist.m3u8
 #EXTINF:-1 tvg-name="DD Goa" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD-Goa-Logo_2000_X_1125_Transpharent.png" group-title="General",DD Goa
@@ -143,8 +147,6 @@ https://streams.tangotv.in/KAIRALI/ORIGIN/index.m3u8
 https://streams.tangotv.in/MHONE/ORIGIN/index.m3u8
 #EXTINF:-1 tvg-name="MH One" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/mh1_Music.png" group-title="General",MH One
 https://samitaorigin.tangotv.in/MHONE/SAMITAORIGIN/index.m3u8
-#EXTINF:-1 tvg-name="DD Chandana KBCT" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Chandana.png" group-title="General",DD Chandana KBCT
-https://cdn.pishow.tv/ott/live/28/master.m3u8
 #EXTINF:-1 tvg-name="DD Sahyadri" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Sahyadri.png" group-title="General",DD Sahyadri
 https://fta.ektv.in/live/187/master.m3u8
 #EXTINF:-1 tvg-name="DD Saptagiri KBCT" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Saptagiri.png" group-title="General",DD Saptagiri KBCT
@@ -369,14 +371,20 @@ https://live.ekamraott.com/bharat/bharat/index.m3u8
 https://svs.itworkscdn.net/bloomberarlive/bloomberg.smil/playlist_dvr.m3u8
 #EXTINF:-1 tvg-name="4TV News (576p)" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/4_TV.png" group-title="News",4TV News (576p)
 https://cdn.pishow.tv/ott/live/1007/master.m3u8
+#EXTINF:-1 tvg-name="Sadhna Prime News" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Prime_News.png" group-title="News",Sadhna Prime News
+https://tvsen3.aynaott.com/P2hjvFHV/index.m3u8
 #EXTINF:-1 tvg-name="DD Mizoram" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD-Mizoram_2000_X_1125_transpharent.png" group-title="News",DD Mizoram
 https://d2lk5u59tns74c.cloudfront.net/out/v1/eea48c6b61074052a2fa8532ff795ff1/index.m3u8
 #EXTINF:-1 tvg-name="TV13 Gujarati KBCT" tvg-logo="https://www.tv13gujarati.com/assets/front/img/footer-logo.jpg" group-title="News",TV13 Gujarati KBCT
 https://live.wrencdn.in/wrencdn/hls/tv13_web/index.m3u8
+#EXTINF:-1 tvg-name="Travel XP" group-title="Other",Travel XP
+https://27c980761ff9437d929e64647afe183a.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenTV-eu_TravelXP/playlist.m3u8
 #EXTINF:-1 tvg-name="Wild Flix Hindi" group-title="Other",Wild Flix Hindi
 https://cc-qgrxgp51645lw.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-qgrxgp51645lw/IQJW/WBD/WildFlix_IN/WildFlix_IN.m3u8
 #EXTINF:-1 tvg-name="XXTreme Jobs Hindi" group-title="Other",XXTreme Jobs Hindi
 https://cc-zko1curyce7jh.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-zko1curyce7jh/IQJW/WBD/XXtremeJobs_IN/XXtremeJobs_IN.m3u8
+#EXTINF:-1 tvg-name="Enter 10 Bangla" group-title="Other",Enter 10 Bangla
+https://live-bangla.akamaized.net/liveabr/playlist.m3u8
 #EXTINF:-1 tvg-name="7X Punjabi" group-title="Other",7X Punjabi
 https://cdn2.in/7xPunjabihls/live.m3u8
 #EXTINF:-1 tvg-name="Bollywood OLD" group-title="Other",Bollywood OLD

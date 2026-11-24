@@ -17,10 +17,6 @@ http://38.96.178.205/STARPLUS/index.m3u8
 https://stmv6.voxtvhd.com.br/cinehindi/cinehindi/playlist.m3u8
 #EXTINF:-1 tvg-name="Public 4K TV HD" group-title="Entertainment",Public 4K TV HD
 http://103.180.240.141:8080/hls/main1/playlist.m3u8
-#EXTINF:-1 tvg-name="Colors Cineplex Bollywood (576p)" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/Colors_Transparent_16069908-8494-4eb4-bd40-5afca3969088.png" group-title="Entertainment",Colors Cineplex Bollywood (576p)
-http://163.61.226.31:9981/stream/channelid/1709941389?profile=pass
-#EXTINF:-1 tvg-name="Discovery Channel" tvg-logo="https://dtil.tmsimg.com/assets/s159106_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Discovery Channel
-http://213.91.179.28:8000/play/a044
 #EXTINF:-1 tvg-name="MBC TV" tvg-logo="https://dtil.tmsimg.com/assets/s135691_ld_h15_aa.png?lock=720x540" group-title="General",MBC TV
 http://123.254.72.24:1935/tvlive/livestream2/playlist.m3u8
 #EXTINF:-1 tvg-name="Disney Channel HD (1080p)" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/1540/1785251571540-h.jpg" group-title="Kids",Disney Channel HD (1080p)
@@ -51,6 +47,8 @@ https://live.topnews.co.th/hls/topnews_a_720.m3u8
 https://indiadaily.ottlive.co.in/indiadailylive/index.m3u8
 #EXTINF:-1 tvg-name="10 tv" tvg-logo="https://dtil.tmsimg.com/assets/s142495_ld_h15_aa.png?lock=720x540" group-title="News",10 tv
 http://45.184.109.10/live/69393EAE6ADBC65A68F942022362A202/69.m3u8
+#EXTINF:-1 tvg-name="10 tv" tvg-logo="https://dtil.tmsimg.com/assets/s142495_ld_h15_aa.png?lock=720x540" group-title="News",10 tv
+http://45.184.109.10/live/69393EAE6ADBC65A68F942022362A202/37.m3u8
 #EXTINF:-1 tvg-name="News Leader (576p)" tvg-logo="https://img-cdn.publive.online/fit-in/360x280/filters:format(webp)/newsleaderlive/media/agency_attachments/2026/04/15/2026-04-15t100517555z-news-leader-640-480-1-sarvajeet-singh-chauhan-2026-04-15-15-35-17.png" group-title="News",News Leader (576p)
 https://stream.ottlive.co.in/newsleader/index.m3u8
 #EXTINF:-1 tvg-name="group-title="Punjabi",Sardari TV" group-title="Other",group-title="Punjabi",Sardari TV
