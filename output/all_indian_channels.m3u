@@ -779,8 +779,6 @@ https://cdn.pishow.tv/ott/live/16/master.m3u8
 https://cdn.pishow.tv/ott/live/31/master.m3u8
 #EXTINF:-1 tvg-name="DD Rajasthan" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Rajasthan.png" group-title="General",DD Rajasthan
 https://cdn.pishow.tv/ott/live/34/master.m3u8
-#EXTINF:-1 tvg-name="DD Uttar Pradesh" tvg-logo="https://dtil.tmsimg.com/assets/s142807_ld_h9_ab.png?lock=720x540" group-title="General",DD Uttar Pradesh
-https://cdn.pishow.tv/ott/live/36/master.m3u8
 #EXTINF:-1 tvg-name="DD Uttarakhand" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD-Uttarakhand-Logo_2000_X_1125_Transpharent.png" group-title="General",DD Uttarakhand
 https://cdn.pishow.tv/ott/live/17/master.m3u8
 #EXTINF:-1 tvg-name="DD Yadagiri" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Yadagiri.png" group-title="General",DD Yadagiri
@@ -815,6 +813,8 @@ https://fta.ektv.in/live/384/master.m3u8
 https://cdn.smartstream.video/smartstream-us/jonakk/jonakk/playlist.m3u8
 #EXTINF:-1 tvg-name="MBC TV" tvg-logo="https://dtil.tmsimg.com/assets/s135691_ld_h15_aa.png?lock=720x540" group-title="General",MBC TV
 https://samitaorigin.tangotv.in/MBCTV/SAMITAORIGIN/index.m3u8
+#EXTINF:-1 tvg-name="Jonack" tvg-logo="https://dtil.tmsimg.com/assets/s143238_ld_h15_aa.png?lock=720x540" group-title="General",Jonack
+https://fta.ektv.in/live/676/master.m3u8
 #EXTINF:-1 tvg-name="DD Bangla" tvg-logo="https://dtil.tmsimg.com/assets/s142778_ld_h15_aa.png?lock=720x540" group-title="General",DD Bangla
 https://fta.ektv.in/live/197/master.m3u8
 #EXTINF:-1 tvg-name="DD Bihar" tvg-logo="https://dtil.tmsimg.com/assets/s142780_ld_h15_aa.png?lock=720x540" group-title="General",DD Bihar
@@ -2617,8 +2617,6 @@ https://tv91.hostingnuclear.com:19360/intercable/intercable.m3u8
 http://stream.pardesitv.online/pardesi/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-name="k tv-hd" group-title="Other",k tv-hd
 http://media4.tripsmarter.com:1935/LiveTV/KTVHD/chunklist_w363623166.m3u8
-#EXTINF:-1 tvg-name="Telecosta (Guatemala) (720p)" group-title="Other",Telecosta (Guatemala) (720p)
-https://tv91.hostingnuclear.com:19360/telecosta/telecosta.m3u8
 #EXTINF:-1 tvg-name="TRAVEL XP 4K" group-title="Other",TRAVEL XP 4K
 https://travelxp-travelxp-1-eu.rakuten.wurl.tv/3000.m3u8
 #EXTINF:-1 tvg-name="TV Color Canal 36 (720p)" group-title="Other",TV Color Canal 36 (720p)
