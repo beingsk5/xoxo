@@ -61,5 +61,11 @@ https://d1msejlow1t3l4.cloudfront.net/fta/rengonitv/playlist.m3u8
 https://fta.ektv.in/live/709/master.m3u8
 #EXTINF:-1 tvg-name="Village TV" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/VillageTV.png" group-title="Religious",Village TV
 https://live.villagetv.net/villagetv/hd/index.m3u8
+#EXTINF:-1 tvg-name="Star Sports 1 HD" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Sports",Star Sports 1 HD
+http://103.114.11.37:8081/Star-sports-1/index.m3u8?token=scn
+#EXTINF:-1 tvg-name="Star Sports Select 1" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/1176/1783001141176-h.jpg" group-title="Sports",Star Sports Select 1
+http://103.114.11.37:8081/Star-select-1/index.m3u8?token=scn
+#EXTINF:-1 tvg-name="Star Sports Select 2" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/7266/1783001217266-h.jpg" group-title="Sports",Star Sports Select 2
+http://103.114.11.37:8081/Star-select-2/index.m3u8?token=scn
 #EXTINF:-1 tvg-name="Star Sports 2 Telugu" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/2716/1783000912716-h.jpg" group-title="Sports",Star Sports 2 Telugu
 https://real-vk.proxy.nellaiiptv.com/SDMEDIA/index.m3u8
