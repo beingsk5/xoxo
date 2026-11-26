@@ -3,6 +3,8 @@
 https://yuppnimresmum.akamaized.net/28072023/smil:zeekannadahd.smil/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
 #EXTINF:-1 tvg-name="Public 4K TV HD" group-title="Entertainment",Public 4K TV HD
 http://103.180.240.141:8080/hls/main1/playlist.m3u8
+#EXTINF:-1 tvg-name="Siri Kannada (576p)" tvg-logo="https://dtil.tmsimg.com/assets/s143790_ld_h9_aa.png?lock=720x540" group-title="Entertainment",Siri Kannada (576p)
+https://samitaorigin.tangotv.in/SIRIKANNADA/SAMITAORIGIN/index.m3u8
 #EXTINF:-1 tvg-name="Siri Kannada All Time KBCT" tvg-logo="https://dtil.tmsimg.com/assets/s143790_ld_h9_aa.png?lock=720x540" group-title="Entertainment",Siri Kannada All Time KBCT
 https://mumt07.tangotv.in/zHjX9OFlSIRIKANNADAALLTIME/index.m3u8
 #EXTINF:-1 tvg-name="DD Chandana KBCT" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20Chandana.png" group-title="General",DD Chandana KBCT
@@ -43,6 +45,8 @@ https://asianet-prasarbharati.vgcdn.net/out/v1/bd05c931d9d94d288bbe455cc0f7e229/
 https://mumbai-edge.smartplaytv.in/republickannada/index.m3u8
 #EXTINF:-1 tvg-name="freedom tv" tvg-logo="https://yt3.googleusercontent.com/4o1pSWEU0iYmY3mzG2I3z8PCpnaoPhfcvoPftrnie9vHlvx8wspjeV37-ZXTPkaS9SmRMJFtYK0=w544-c-h544-k-c0x00ffffff-no-l90-rj" group-title="News",freedom tv
 https://freedomtv.in/live/freedomtv/index.m3u8
+#EXTINF:-1 tvg-name="Republic Kannada (576p)" tvg-logo="https://dtil.tmsimg.com/assets/s142883_ld_h15_aa.png?lock=720x540" group-title="News",Republic Kannada (576p)
+https://streams.tangotv.in/REPUBLICKANNADA/ORIGIN/index.m3u8
 #EXTINF:-1 tvg-name="TV5 Kannada" tvg-logo="https://dtil.tmsimg.com/assets/s144024_ld_h15_aa.png?lock=720x540" group-title="News",TV5 Kannada
 https://yuppnimresmum.akamaized.net/050522/tv5kannada/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
 #EXTINF:-1 tvg-name="News18 Kannada" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/News18%20Kannada.png" group-title="News",News18 Kannada
@@ -65,5 +69,3 @@ https://fta.ektv.in/live/692/master.m3u8
 https://fta.ektv.in/live/241/master.m3u8
 #EXTINF:-1 tvg-name="Aaseervatham TV (576p)" tvg-logo="https://i.imgur.com/GlfrYs7.png" group-title="Religious",Aaseervatham TV (576p)
 https://mumt04.tangotv.in/m18aqlK4AASEERVATHAMTV/index.m3u8
-#EXTINF:-1 tvg-name="Star Sports 1 Telugu" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/6361/1782284846361-h.jpg" group-title="Sports",Star Sports 1 Telugu
-http://iptvcasomsapi.jprdigital.in/x-media/C0421/master.m3u8

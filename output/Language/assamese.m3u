@@ -11,6 +11,8 @@ https://mumt01.tangotv.in/O5aw8Zn3PEARTV/index.m3u8
 https://fta.ektv.in/live/695/master.m3u8
 #EXTINF:-1 tvg-name="star jalsha hd" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Star-Jalsha--2000-x-1125--Transparent.png" group-title="Entertainment",star jalsha hd
 http://xtv.ooo:8080/live/Jawad1994/03112371534/245898.m3u8
+#EXTINF:-1 tvg-name="Star Jalsha" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Star-Jalsha--2000-x-1125--Transparent.png" group-title="Entertainment",Star Jalsha
+http://live.ftpbdlive.com:8080/live/FTPBD-LIVETV/FTPBD-2026/58.m3u8
 #EXTINF:-1 tvg-name="Jonack" tvg-logo="https://dtil.tmsimg.com/assets/s143238_ld_h15_aa.png?lock=720x540" group-title="General",Jonack
 https://samitaorigin.tangotv.in/JONAKTV/SAMITAORIGIN/index.m3u8
 #EXTINF:-1 tvg-name="DD Assam" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20North%20East.png" group-title="General",DD Assam
@@ -23,10 +25,8 @@ https://cdn.pishow.tv/ott/live/10006/master.m3u8
 https://cdn.smartstream.video/smartstream-us/jonakk/jonakk/playlist.m3u8
 #EXTINF:-1 tvg-name="Jonack" tvg-logo="https://dtil.tmsimg.com/assets/s143238_ld_h15_aa.png?lock=720x540" group-title="General",Jonack
 https://fta.ektv.in/live/676/master.m3u8
-#EXTINF:-1 tvg-name="Star Maa Movies" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/2722/1782288522722-h.jpg" group-title="Movies",Star Maa Movies
-http://iptvcasomsapi.jprdigital.in/x-media/C0479/master.m3u8
-#EXTINF:-1 tvg-name="Star Maa Music" tvg-logo="https://dtil.tmsimg.com/assets/s143828_ld_h15_aa.png?lock=720x540" group-title="Music",Star Maa Music
-http://iptvcasomsapi.jprdigital.in/x-media/C0481/master.m3u8
+#EXTINF:-1 tvg-name="India Voice (576p)" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/India_Voice.png" group-title="News",India Voice (576p)
+https://mumt04.tangotv.in/m18aqlK4INDIAVOICE/index.m3u8
 #EXTINF:-1 tvg-name="India Voice" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/India_Voice.png" group-title="News",India Voice
 https://d1msejlow1t3l4.cloudfront.net/fta/indiavoice/playlist.m3u8
 #EXTINF:-1 tvg-name="India Voice" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/India_Voice.png" group-title="News",India Voice
@@ -63,11 +63,19 @@ https://d1msejlow1t3l4.cloudfront.net/fta/rengonitv/playlist.m3u8
 https://fta.ektv.in/live/709/master.m3u8
 #EXTINF:-1 tvg-name="Village TV" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/VillageTV.png" group-title="Religious",Village TV
 https://live.villagetv.net/villagetv/hd/index.m3u8
+#EXTINF:-1 tvg-name="Village TV (576p)" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/VillageTV.png" group-title="Religious",Village TV (576p)
+https://villagetv.applelive.in/villagetv/villagetv/index.m3u8
 #EXTINF:-1 tvg-name="Star Sports 1 HD" tvg-logo="https://i.imgur.com/55SK22l.png" group-title="Sports",Star Sports 1 HD
 http://103.114.11.37:8081/Star-sports-1/index.m3u8?token=scn
 #EXTINF:-1 tvg-name="Star Sports Select 1" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/1176/1783001141176-h.jpg" group-title="Sports",Star Sports Select 1
 http://103.114.11.37:8081/Star-select-1/index.m3u8?token=scn
 #EXTINF:-1 tvg-name="Star Sports Select 2" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/7266/1783001217266-h.jpg" group-title="Sports",Star Sports Select 2
 http://103.114.11.37:8081/Star-select-2/index.m3u8?token=scn
+#EXTINF:-1 tvg-name="Star Sports 2" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/7957/1783000567957-h.jpg" group-title="Sports",Star Sports 2
+http://live.ftpbdlive.com:8080/live/FTPBD-LIVETV/FTPBD-2026/6.m3u8
+#EXTINF:-1 tvg-name="Star Sports Select 2" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/7266/1783001217266-h.jpg" group-title="Sports",Star Sports Select 2
+http://live.ftpbdlive.com:8080/live/FTPBD-LIVETV/FTPBD-2026/8.m3u8
 #EXTINF:-1 tvg-name="Star Sports 2 Telugu" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/2716/1783000912716-h.jpg" group-title="Sports",Star Sports 2 Telugu
 https://real-vk.proxy.nellaiiptv.com/SDMEDIA/index.m3u8
+#EXTINF:-1 tvg-name="Star Sports Select 1" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/1176/1783001141176-h.jpg" group-title="Sports",Star Sports Select 1
+http://live.ftpbdlive.com:8080/live/FTPBD-LIVETV/FTPBD-2026/7.m3u8

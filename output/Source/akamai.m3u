@@ -73,6 +73,8 @@ https://livegeoroueu.akamaized.net/120723/smil:mediaone3.smil/playlist.m3u8?hdnt
 https://vg-zeefta.akamaized.net/ptnr-yupptv/title-zeenews/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/8744f9fb-d696-4204-9795-5215ad930c39/main.m3u8?ads.channel=1501&ads.content_custom_1_param=FAST&ads.user=2&ads.content_custom_3_param=YuppFastIndia&hdnts=st=1757248874~exp=1757270474~acl=!*/ptnr-yupptv/title-zeenews/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/8744f9fb-d696-4204-9795-5215ad930c39/*!/payload/yupptvott_5_-1_f22a9ff995a34b88_IN_171.76.87.153_yuppfast_2_channel_13_-1/*~data=yupptvott_5_-1_f22a9ff995a34b88_IN_171.76.87.153_yuppfast_2_channel_13_-1~hmac=8f2edb00612097d45ee13a95a2a198d6a4072bf4313aa1a718d71cc17694f8ad&ads.network_name=yuppfast&ads.app_store_url=&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=NEWS&ads.channel_name=ZeeNews&ads.language=HIN&ads.user=0
 #EXTINF:-1 tvg-name="tv9 Telemaremma (576p)" group-title="News",tv9 Telemaremma (576p)
 https://rtmp-live-ingest-us-east-1-universe-dacast-com.akamaized.net/transmuxv1/streams/2095a288-1384-ed2e-5da0-278ccbb72295.m3u8
+#EXTINF:-1 tvg-name="brk news" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/brk-news.png" group-title="News",brk news
+https://prodamdnewsencoding.akamaized.net/NBC_News_Digital/f_vert_brk_macys_parade_reax_261125/1/abs/index.m3u8
 #EXTINF:-1 tvg-name="ABC Australia" group-title="Other",ABC Australia
 https://abc-news-dmd-streams-1.akamaized.net/out/v1/701126012d044971b3fa89406a440133/index.m3u8
 #EXTINF:-1 tvg-name="etv hd" group-title="Other",etv hd
@@ -81,6 +83,8 @@ https://cc-uyh1ow5zouoio.akamaized.net/WWBI/Amagi/ETV_Josh_IN/playlist.m3u8
 https://cc-wie8j8y69d2uy.akamaized.net/WWBI/Amagi/ETV_Comedy_IN/playlist.m3u8
 #EXTINF:-1 tvg-name="flowers (suryansh melody)" group-title="Other",flowers (suryansh melody)
 https://yuppmedtaorire.akamaized.net/v1/master/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/flowers_nim_https/050522/flowers/playlist.m3u8
+#EXTINF:-1 tvg-name="etv hd" group-title="Other",etv hd
+https://livegeorouus.akamaized.net/100823/etvhd_2500/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
 #EXTINF:-1 tvg-name="titanfile" group-title="Other",titanfile
 https://zee5vod.akamaized.net/drm1/titanfile/dash/MOVIES/V2PRIME/4K/ATMOS/SAM_BAHADUR/SAM_BAHADUR_4K_15012024_hi_ce3bf342a1a084e007dbd6555abf5519/manifest.mpd?c3.ri=6901304522390387240?%7CdrmScheme=clearkey&drmLicense=785ab7573f0032dbae2a1ed021657f75:e35650a3facdc46ca5e5cc0d9d03b641
 #EXTINF:-1 tvg-name="titanfile" group-title="Other",titanfile
