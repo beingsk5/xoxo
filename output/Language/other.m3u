@@ -27,10 +27,16 @@ https://streams2.sofast.tv/ptnr-yupptv/title-BOLLYWOOD-4U-ENG_yupptv/v1/master/6
 http://d3isaxd2t6q8zm.cloudfront.net/live/omroepzeeland/tv/index.m3u8
 #EXTINF:-1 tvg-name="Times Of India" group-title="News",Times Of India
 https://live.sli.ke/live/npnhm84gz9/master.m3u8
+#EXTINF:-1 tvg-name="WPN World Punjabi News" group-title="News",WPN World Punjabi News
+https://vglivessai.akamaized.net/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/1cd73d38-bbd2-4d81-9ba7-58293f2e65a8/index.m3u8?hdnts=st=1795881133~exp=1795902733~acl=!*/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/1cd73d38-bbd2-4d81-9ba7-58293f2e65a8/*!/payload/yupptvott_5_-1_80b95a6e-e307-4aa0-a5fc-b919f48b349e_IN_20.99.246.102_yupptv_1_channel_7174_-1/*~data=yupptvott_5_-1_80b95a6e-e307-4aa0-a5fc-b919f48b349e_IN_20.99.246.102_yupptv_1_channel_7174_-1~hmac=cd0d2ff4e7db0e139d11a4507ba41b9b551e934f889937a98e8b5a7179c3fedb&ads.content_custom_3_param=yuppfastindia&ads.ip=20.99.246.102&did=80b95a6e-e307-4aa0-a5fc-b919f48b349e&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=NEWS&ads.content_custom_1_param=FAST&ads.channel=7174&ads.channel_name=WPNWorldPunjabiNews&ads.language=PUN&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
 #EXTINF:-1 tvg-name="24 TV (720p)" group-title="News",24 TV (720p)
 https://turkmedya-live.ercdn.net/tv24/tv24.m3u8
+#EXTINF:-1 tvg-name="TV9 News" group-title="News",TV9 News
+https://ssai.vgcdn.net/v1/master/tv9yupptv/tv9telugu/main.m3u8?hdnts=st=1795881071~exp=1795902671~acl=!*/v1/master/tv9yupptv/tv9telugu/*!/payload/yupptvott_5_-1_d732a340-5a8a-46ea-900e-9636c59b60b6_IN_20.99.246.102_yupptv_1_channel_1317_-1/*~data=yupptvott_5_-1_d732a340-5a8a-46ea-900e-9636c59b60b6_IN_20.99.246.102_yupptv_1_channel_1317_-1~hmac=59b76d10e74bead078d3cedf829c4e34115ef9d5b9c7d59f64a5916d79fec545&ads.content_custom_3_param=yuppfastindia&ads.ip=20.99.246.102&did=d732a340-5a8a-46ea-900e-9636c59b60b6&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=NEWS&ads.content_custom_1_param=FAST&ads.channel=1317&ads.channel_name=TV9News&ads.language=TEL&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
 #EXTINF:-1 tvg-name="tv9 Telemaremma (576p)" group-title="News",tv9 Telemaremma (576p)
 https://rtmp-live-ingest-us-east-1-universe-dacast-com.akamaized.net/transmuxv1/streams/2095a288-1384-ed2e-5da0-278ccbb72295.m3u8
+#EXTINF:-1 tvg-name="News7 Tamil" group-title="News",News7 Tamil
+https://yuppnimresmum.akamaized.net/240122/news7dev/playlist.m3u8?hdnts=st=1795881080~exp=1795902680~acl=!*/240122/news7dev/*!/payload/yupptvott_5_-1_d732a340-5a8a-46ea-900e-9636c59b60b6_IN_20.99.246.102_yupptv_1_channel_2248_-1/*~data=yupptvott_5_-1_d732a340-5a8a-46ea-900e-9636c59b60b6_IN_20.99.246.102_yupptv_1_channel_2248_-1~hmac=0eb3f8e540ed464f76b9288e4e805facd35f83ca584aad7a883032d8a3061aa1&ads.content_custom_3_param=yuppfastindia&ads.ip=20.99.246.102&did=d732a340-5a8a-46ea-900e-9636c59b60b6&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=NEWS&ads.content_custom_1_param=FAST&ads.channel=2248&ads.channel_name=News7Tamil&ads.language=TAM&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
 #EXTINF:-1 tvg-name="amg01106" group-title="Other",amg01106
 https://amg01106-tv9-amg01106c7-xiaomi-in-1186.playouts.now.amagi.tv/playlist/amg01106-tv9fast-tv9gujarathi-xiaomiin/playlist.m3u8
 #EXTINF:-1 tvg-name="BOLLYWOOD 4U" group-title="Other",BOLLYWOOD 4U
@@ -77,8 +83,12 @@ http://158.69.124.9:1935/5aabtv/5aabtv/playlist.m3u8
 http://toronto3.live247stream.com/toronto360/tv/playlist.m3u8
 #EXTINF:-1 tvg-name="Urdu TV Toronto" group-title="Other",Urdu TV Toronto
 http://cdn4.live247stream.com/urdu/tv/playlist.m3u8
+#EXTINF:-1 tvg-name="VTV Gujarati" group-title="Other",VTV Gujarati
+https://d1msejlow1t3l4.cloudfront.net/fta/vtvgujarati/playlist.m3u8?hdnts=st=1795881101~exp=1795902701~acl=!*/fta/vtvgujarati/*!/payload/yupptvott_5_-1_e6033d83-9dc0-45a4-8690-5f28f3cc9ab7_IN_20.99.246.102_yupptv_1_channel_6420_-1/*~data=yupptvott_5_-1_e6033d83-9dc0-45a4-8690-5f28f3cc9ab7_IN_20.99.246.102_yupptv_1_channel_6420_-1~hmac=53dd7ce8f68c94e714c1f5690a6436f11a3f8411dc8cd8c6648f88a4b23ad519&ads.content_custom_3_param=yuppfastindia&ads.ip=20.99.246.102&did=e6033d83-9dc0-45a4-8690-5f28f3cc9ab7&ads.app_store_url=&ads.network_name=yupptv&ads.app_bundle=&ads.content_livestream=1&ads.content_genre=NEWS&ads.content_custom_1_param=FAST&ads.channel=6420&ads.channel_name=VTVGujarati&ads.language=GUJ&content_custom_2_param=fusion-web&ads.user=2&ads.ua=Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:128.0)Gecko/20100101Firefox/128.0
 #EXTINF:-1 tvg-name="Canal 13 Esquipulas" group-title="Other",Canal 13 Esquipulas
 https://tv91.hostingnuclear.com:19360/intercable/intercable.m3u8
+#EXTINF:-1 tvg-name="Fazal TV" group-title="Other",Fazal TV
+http://cdn9.live247stream.com:80/punjabitvcanada/tv/fazal/1/chunks.m3u8
 #EXTINF:-1 tvg-name="group-title="Punjabi",PTV Pardesi" group-title="Other",group-title="Punjabi",PTV Pardesi
 http://stream.pardesitv.online/pardesi/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-name="TV Color Canal 36 (720p)" group-title="Other",TV Color Canal 36 (720p)
@@ -127,16 +137,12 @@ https://cdn.drt.vn/live/285a27750861b964c27af22091662a74f2f/chunklist.m3u8
 https://mhd128.iptv2022.com/p/kxk9fzninJ2VBq9MwWyXDw,1743195606/streaming/zeetv/324/1/tracks-v5a1/mono.m3u8
 #EXTINF:-1 tvg-name="AIR Malayalam" group-title="Other",AIR Malayalam
 http://air.pc.cdn.bitgravity.com/air/live/pbaudio230/playlist.m3u8
-#EXTINF:-1 tvg-name="All India Radio - Chennai FM Rainbow 101.4" group-title="Other",All India Radio - Chennai FM Rainbow 101.4
-http://air.pc.cdn.bitgravity.com/air/live/pbaudio022/playlist.m3u8
 #EXTINF:-1 tvg-name="like Gecko) Chrome/144.0.0.0 Safari/537.36" group-title="General",TV9 (Mongolia) (1080p)" group-title="Other",like Gecko) Chrome/144.0.0.0 Safari/537.36" group-title="General",TV9 (Mongolia) (1080p)
 https://cdn4.skygo.mn/live/disk1/TV9HD/DASH-FTA/TV9HD.mpd
 #EXTINF:-1 tvg-name="Bollywood HD" group-title="Other",Bollywood HD
 http://stream-msk-10.ott.tricolor.tv/dtv/id640_MSKSG-PVR-1--Bollywood/03/plst.m3u8?drmreq=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBfdHlwZSI6ImFwdHBfb3R0IiwiY2xhc3MiOiJCUk9XU0VSIiwiZHJlaWQiOiI0MDAyNTUwMDc4MjQwNyIsImV4cCI6MTY4ODE4OTgwOSwiaHdpZCI6ImI2YjQ3YmM4NWZhNWJmZDI5Mzk3MTg2MzFmMzZiNzg3YzYwZGYwNzdhZmRhZDM5ZTZmZTQ5NWRhMTI0NTBlYjIiLCJsYXN0X3JlcV9kYXRlIjoxNjg3NTg1MDA5LCJzZXNzaW9uX2lkIjoiMzY0ZDhmNmNiNjkyNmUzYzFmNGZmYjE4NDMzOTY0OTciLCJ0b2tlbl90eXBlIjoiQ29udGVudEFjY2Vzc1Rva2VuIiwidHlwZSI6Ik1PWklMTEEifQ.i6F_i9kbAPJtdObR59ST1tdZs0uO9bbqhKDfpgnK9cI
 #EXTINF:-1 tvg-name="seq 42607352" group-title="Other",seq 42607352
 https://vg-zeefta.akamaized.net/ptnr-yupptv/title-zee24kalak/v1/manifest/611d79b11b77e2f571934fd80ca1413453772ac7/497f7199-758d-495d-9d2f-a5489231c428/14b7c8ec-16da-47f2-8d7e-5bbaec67b3e2/3.m3u8
-#EXTINF:-1 tvg-name="Seven" group-title="Other",Seven
-https://i.mjh.nz/.r/seven-syd.m3u8
 #EXTINF:-1 tvg-name="1.FM – Bombay Beats India Radio" group-title="Other",1.FM – Bombay Beats India Radio
 http://strm112.1.fm/bombaybeats_mobile_mp3
 #EXTINF:-1 tvg-name="NTV Malayalam" group-title="Other",NTV Malayalam
